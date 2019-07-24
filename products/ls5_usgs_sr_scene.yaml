@@ -1,0 +1,244 @@
+description: Landsat 5 USGS Collection 1 Level2 Surface Reflectance USARD. 30m UTM
+    based projection.
+measurements:
+-   aliases:
+    - band_1
+    - sr_band1
+    dtype: int16
+    name: blue
+    nodata: -9999
+    units: reflectance
+-   aliases:
+    - band_2
+    - sr_band2
+    dtype: int16
+    name: green
+    nodata: -9999
+    units: reflectance
+-   aliases:
+    - band_3
+    - sr_band3
+    dtype: int16
+    name: red
+    nodata: -9999
+    units: reflectance
+-   aliases:
+    - band_4
+    - sr_band4
+    dtype: int16
+    name: nir
+    nodata: -9999
+    units: reflectance
+-   aliases:
+    - band_5
+    - sr_band5
+    dtype: int16
+    name: swir1
+    nodata: -9999
+    units: reflectance
+-   aliases:
+    - band_7
+    - sr_band7
+    dtype: int16
+    name: swir2
+    nodata: -9999
+    units: reflectance
+-   aliases:
+    - atmos_op
+    dtype: uint8
+    name: sr_atmos_opacity
+    nodata: 0
+    units: '1'
+-   aliases:
+    - pixel_qa
+    dtype: uint16
+    flags_definition:
+        cirrus_confidence:
+            bits:
+            - 8
+            - 9
+            values:
+                '0': none
+                '1': low
+                '2': medium
+                '3': high
+        clear:
+            bits: 1
+            values:
+                '0': no_clear_land
+                '1': clear_land
+        cloud:
+            bits: 5
+            values:
+                '0': no_cloud
+                '1': cloud
+        cloud_confidence:
+            bits:
+            - 6
+            - 7
+            values:
+                '0': none
+                '1': low
+                '2': medium
+                '3': high
+        cloud_shadow:
+            bits: 3
+            values:
+                '0': no_cloud_shadow
+                '1': cloud_shadow
+        nodata:
+            bits: 0
+            values:
+                '0': false
+                '1': true
+        pixel_qa:
+            bits:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            description: Level 2 Pixel Quality Band
+            values:
+                '1': Fill
+                '1024': Unused
+                '128': Cloud Confidence High Bit
+                '16': Snow
+                '16384': Unused
+                '2': Clear
+                '2048': Unused
+                '256': Unused
+                '32': Cloud
+                '32786': Unused
+                '4': Water
+                '4096': Unused
+                '512': Unused
+                '64': Cloud Confidence Low Bit
+                '8': Cloud shadow
+                '8192': Unused
+        snow:
+            bits: 4
+            values:
+                '0': no_snow
+                '1': snow
+        terrain_occlusion:
+            bits: 10
+            values:
+                '0': no_occlusion
+                '1': occlusion
+        water:
+            bits: 2
+            values:
+                '0': no_water
+                '1': water
+    name: pixel_qa
+    nodata: 1
+    units: bit_index
+-   aliases:
+    - radsat_qa
+    dtype: uint8
+    flags_definition:
+        radsat_qa:
+            bits:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            description: Radiometric Saturation QA
+            values:
+                '1': Data Fill Flag
+                '128': Band 7 Data Saturation Flag
+                '16': Band 4 Data Saturation Flag
+                '2': Band 1 Data Saturation Flag
+                '32': Band 5 Data Saturation Flag
+                '4': Band 2 Data Saturation Flag
+                '64': Band 6 Data Saturation Flag
+                '8': Band 3 Data Saturation Flag
+    name: radsat_qa
+    nodata: 1
+    units: bit_index
+-   aliases:
+    - pixel_qa
+    dtype: uint16
+    flags_definition:
+        cirrus_confidence:
+            bits:
+            - 8
+            - 9
+            values:
+                '0': none
+                '1': low
+                '2': medium
+                '3': high
+        clear:
+            bits: 1
+            values:
+                '0': no_clear_land
+                '1': clear_land
+        cloud:
+            bits: 5
+            values:
+                '0': no_cloud
+                '1': cloud
+        cloud_confidence:
+            bits:
+            - 6
+            - 7
+            values:
+                '0': none
+                '1': low
+                '2': medium
+                '3': high
+        cloud_shadow:
+            bits: 3
+            values:
+                '0': no_cloud_shadow
+                '1': cloud_shadow
+        nodata:
+            bits: 0
+            values:
+                '0': false
+                '1': true
+        snow:
+            bits: 4
+            values:
+                '0': no_snow
+                '1': snow
+        terrain_occlusion:
+            bits: 10
+            values:
+                '0': no_occlusion
+                '1': occlusion
+        water:
+            bits: 2
+            values:
+                '0': no_water
+                '1': water
+    name: sr_cloud_qa
+    nodata: 1
+    units: bit_index
+metadata:
+    format:
+        name: GeoTIFF
+    instrument:
+        name: TM
+    platform:
+        code: LANDSAT_5
+    product_type: LEVEL2_USGS
+metadata_type: eo
+name: ls5_usgs_sr_scene
