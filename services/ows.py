@@ -158,41 +158,50 @@ layer_cfg = [
                 # The name of the measurement band for the pixel-quality product
                 # (Only required if pq_dataset is set)
                 "pq_band": "pixel_qa",
-                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
-                # to actual imagery occurs.
-                "min_zoom_factor": 500.0,
-                "max_datasets_wms": 6,
-                # max_datasets_wcs is the WCS equivalent of max_datasets_wms.  The main requirement for setting this
-                # value is to avoid gateway timeouts on overly large WCS requests (and reduce server load).
-                "max_datasets_wcs": 16,
+                "min_zoom_factor": 35.0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
                 "zoomed_out_fill_colour": [150, 180, 200, 160],
-                #
-                "extent_mask_func": "datacube_wms.ogc_utils.mask_by_val",
+                # Time Zone.  In hours added to UTC (maybe negative)
+                # Used for rounding off scene times to a date.
+                # 9 is good value for imagery of Australia.
+                "time_zone": 9,
+                # Extent mask function
+                # Determines what portions of dataset is potentially meaningful data.
+                "extent_mask_func": lambda data, band: data[band] != data[band].attrs['nodata'],
+
+                # Flags listed here are ignored in GetFeatureInfo requests.
+                # (defaults to empty list)
                 "ignore_info_flags": [],
-                # Include an additional list of utc dates in the WMS Get Feature Info
-                # HACK: only used for GSKY non-solar day lookup
-                "feature_info_include_utc_dates": True,
-                # Set to true if the band product dataset extents include nodata regions.
-                "data_manual_merge": False,
-                # Set to true if the pq product dataset extents include nodata regions.
-                "pq_manual_merge": False,
-                # Bands to always fetch from the Datacube, even if it is not used by the active style.
-                # Useful for when a particular band is always needed for the extent_mask_func,
-                "always_fetch_bands": [ ],
-                # Apply corrections for solar angle, for "Level 1" products.
-                # (Defaults to false - should not be used for NBAR/NBAR-T or other Analysis Ready products
+                "data_manual_merge": True,
+                "always_fetch_bands": [],
                 "apply_solar_corrections": False,
-                # If this value is set then WCS works exclusively with the configured
-                # date and advertises no time dimension in GetCapabilities.
-                # Intended mostly for WCS debugging.
-                "wcs_sole_time": "2017-01-01",
-                "native_wcs_crs": "EPSG:3577",
-                # The resolution (x,y) for WCS.
-                # This is the number of CRS units (e.g. degrees, metres) per pixel in the horizontal and vertical
-                # directions for the native resolution.  E.g. for a EPSG:3577  (25.0,25.0) for Landsat-8 and (10.0,10.0 for Sentinel-2)
-                "native_wcs_resolution": [ 25.0, 25.0 ],
+                # Define layer wide legend graphic if no style is passed
+                # to GetLegendGraphic
+                "legend": {
+                    # "url": ""
+                    "styles": ["ndvi", "ndwi", "mndwi"]
+                },
+                "wcs_default_bands": ["red", "green", "blue"],
+                # A function that extracts the "sub-product" id (e.g. path number) from a dataset. Function should return a (small) integer
+                # If None or not specified, the product has no sub-layers.
+                # "sub_product_extractor": lambda ds: int(s3_path_pattern.search(ds.uris[0]).group("path")),
+                # A prefix used to describe the sub-layer in the GetCapabilities response.
+                # E.g. sub-layer 109 will be described as "Landsat Path 109"
+                # "sub_product_label": "Landsat Path",
+
+                # Bands to include in time-dimension "pixel drill".
+                # Don't activate in production unless you really know what you're doing.
+                # "band_drill": ["nir", "red", "green", "blue"],
+
+                # Styles.
+                #
+                # See band_mapper.py
+                #
+                # The various available spectral bands, and ways to combine them
+                # into a single rgb image.
+                # The examples here are ad hoc
+                #
                 "styles": [
                     # Examples of styles which are linear combinations of the available spectral bands.
                     #
@@ -518,7 +527,7 @@ layer_cfg = [
                 # The name of the measurement band for the pixel-quality product
                 # (Only required if pq_dataset is set)
                 "pq_band": "pixel_qa",
-"min_zoom_factor": 35.0,
+                "min_zoom_factor": 35.0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
                 "zoomed_out_fill_colour": [150, 180, 200, 160],
