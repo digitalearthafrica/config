@@ -122,8 +122,7 @@ service_cfg = {
     # this will set the rasterio env
     # GDAL Config for GTiff Georeferencing
     # See https://www.gdal.org/frmt_gtiff.html#georeferencing
-    "geotiff_georeference_source": "INTERNAL",
-    }
+    "geotiff_georeference_source": "INTERNAL"
 }
 
 layer_cfg = [
