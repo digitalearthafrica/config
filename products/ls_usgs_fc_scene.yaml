@@ -1,0 +1,35 @@
+name: ls_usgs_fc_scene
+description: 'Landsat Fractional Cover based on USGS Level 2 Scenes'
+metadata_type: eo
+
+metadata:
+  format:
+    name: GeoTiff
+  product_type: fractional_cover
+
+measurements:
+  - name: BS
+    aliases:
+      - bare
+    dtype: int16
+    nodata: -1
+    units: percent
+  - name: PV
+    aliases:
+      - green_veg
+    dtype: int16
+    nodata: -1
+    units: percent
+  - name: NPV
+    aliases:
+      - dead_veg
+    dtype: int16
+    nodata: -1
+    units: percent
+  - name: UE
+    aliases:
+      - err
+    dtype: int16
+    nodata: -1
+    units: '1'
+
