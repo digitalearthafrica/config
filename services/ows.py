@@ -1293,17 +1293,17 @@ layer_cfg = [
                     "nodata",
                     # "noncontiguous",
                 ],
-                "wcs_default_bands": ["wet"],
+                "wcs_default_bands": ["water"],
                 "styles": [
                     {
                         "name": "observations",
-                        "title": "Water Observed",
+                        "title": "Observations",
                         "abstract": "Classified as water by the decision tree",
                         "value_map": {
                             "water": [
                                 {
                                     "title": "Invalid",
-                                    "abstract": "Slope or Cloud or Cloud Shadow",
+                                    "abstract": "Slope or Cloud",
                                     "flags": {
                                         "or": {
                                             "cloud_shadow": True,
@@ -1354,7 +1354,7 @@ layer_cfg = [
                             "water": [
                                 {
                                     "title": "Invalid",
-                                    "abstract": "Slope or Cloud or Cloud Shadow",
+                                    "abstract": "Slope or Cloud",
                                     "flags": {
                                         "or": {
                                             "cloud_shadow": True,
@@ -1405,7 +1405,7 @@ layer_cfg = [
                 # MUST be defined in the styles list above.
                 # (Looks like Terria assumes this is the first style in the list, but this is not required
                 # by the standard.)
-                "default_style": "wet",
+                "default_style": "observations",
             }
         ]
     },
