@@ -12,12 +12,12 @@
     },
     "catalog": [
        {
-          "name": "Digital Earth Africa",
+          "name": "Analysis ready datasets",
           "type": "group",
           "preserveOrder": true,
           "items": [
              {
-                "name": "USGS Landsat",
+                "name": "Surface Reflectance",
                 "type": "group",
                 "preserveOrder": true,
                 "items": [
@@ -30,7 +30,6 @@
                       "linkedWcsCoverage": "ls5_usgs_sr_scene",
                       "ignoreUnknownTileErrors": true,
                       "opacity": 1,
-                      "featureTimesProperty": "data_available_for_dates",
                       "featureInfoTemplate": {
                          "formats": {
                             "lat": {
@@ -52,7 +51,6 @@
                     "linkedWcsCoverage": "ls7_usgs_sr_scene",
                     "ignoreUnknownTileErrors": true,
                     "opacity": 1,
-                    "featureTimesProperty": "data_available_for_dates",
                     "featureInfoTemplate": {
                        "formats": {
                           "lat": {
@@ -74,7 +72,6 @@
                     "linkedWcsCoverage": "ls8_usgs_sr_scene",
                     "ignoreUnknownTileErrors": true,
                     "opacity": 1,
-                    "featureTimesProperty": "data_available_for_dates",
                     "featureInfoTemplate": {
                        "formats": {
                           "lat": {
@@ -88,8 +85,8 @@
                     }
                  }
                 ]
-             }
-             
+             },
+
           ]
        }
     ]
