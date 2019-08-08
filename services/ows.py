@@ -1274,7 +1274,7 @@ layer_cfg = [
                 "pq_band": "water",
                 # Min zoom factor - sets the zoom level where the cutover from indicative polygons
                 # to actual imagery occurs.
-                "min_zoom_factor": 500.0,
+                "min_zoom_factor": 35.0,
                 "max_datasets_wms": 6,
                 # max_datasets_wcs is the WCS equivalent of max_datasets_wms.  The main requirement for setting this
                 # value is to avoid gateway timeouts on overly large WCS requests (and reduce server load).
