@@ -1474,13 +1474,13 @@ layer_cfg = [
                         "title": "Fractional Cover",
                         "abstract": "Fractional cover representation, with green vegetation in green, dead vegetation in blue, and bare soil in red",
                         "components": {
-                            "bare": {
+                            "red": {
                                 "BS": 1.0
                             },
-                            "green_veg": {
+                            "green": {
                                 "PV": 1.0
                             },
-                            "dead_veg": {
+                            "blue": {
                                 "NPV": 1.0
                             }
                         },
