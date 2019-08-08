@@ -89,6 +89,8 @@ service_cfg = {
     "keywords": [
         "landsat",
         "africa",
+        "WOfS",
+        "fractional-cover",
         "time-series",
     ],
     "contact_info": {
@@ -496,248 +498,6 @@ layer_cfg = [
                 # (Looks like Terria assumes this is the first style in the list, but this is
                 #  not required by the standard.)
                 "default_style": "simple_rgb",
-            },
-            {
-                # Included as a keyword  for the layer
-                "label": "USGS",
-                # Included as a keyword  for the layer
-                "type": "Water Observations from Space",
-                # Included as a keyword  for the layer
-                "variant": "",
-                "abstract": """Historic Flood Mapping Water Observations from Space""",
-                # The WMS name for the layer
-                "name": "ls_usgs_wofs_scene",
-                # The Datacube name for the associated data product
-                "product_name": "ls_usgs_wofs_scene",
-                # The Datacube name for the associated pixel-quality product (optional)
-                # The name of the associated Datacube pixel-quality product
-                "pq_dataset": "ls_usgs_wofs_scene",
-                # The name of the measurement band for the pixel-quality product
-                # (Only required if pq_dataset is set)
-                "pq_band": "water",
-                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
-                # to actual imagery occurs.
-                "min_zoom_factor": 500.0,
-                "max_datasets_wms": 6,
-                # max_datasets_wcs is the WCS equivalent of max_datasets_wms.  The main requirement for setting this
-                # value is to avoid gateway timeouts on overly large WCS requests (and reduce server load).
-                "max_datasets_wcs": 16,
-                # The fill-colour of the indicative polygons when zoomed out.
-                # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
-                "zoomed_out_fill_colour": [200, 180, 180, 160],
-                # Extent mask function
-                # Determines what portions of dataset is potentially meaningful data.
-                "extent_mask_func": "datacube_wms.ogc_utils.mask_by_bitflag",
-                # (Defaults to false)
-                "pq_manual_merge": False,
-                # Flags listed here are ignored in GetFeatureInfo requests.
-                # (defaults to empty list)
-                "ignore_flags_info": [
-                    "nodata",
-                    # "noncontiguous",
-                ],
-                "styles": [
-                    {
-                        "name": "observations",
-                        "title": "Water Observed",
-                        "abstract": "Classified as water by the decision tree",
-                        "value_map": {
-                            "water": [
-                                {
-                                    "title": "Invalid",
-                                    "abstract": "Slope or Cloud or Cloud Shadow",
-                                    "flags": {
-                                        "or": {
-                                            "cloud_shadow": True,
-                                            "cloud": True,
-                                            "nodata": True
-                                        }
-                                    },
-                                    "color": "#707070"
-                                },
-                                {
-                                    # Possible Sea Glint, also mark as invalid
-                                    "title": "Invalid_Dry",
-                                    "abstract": "Possible Sea Glint, also mark as invalid",
-                                    "flags": {
-                                        "dry": True,
-                                        "sea": True
-                                    },
-                                    "color": "#707070"
-                                },
-                                {
-                                    "title": "Dry",
-                                    "abstract": "Dry",
-                                    "flags": {
-                                        "dry": True,
-                                        "sea": False,
-                                    },
-                                    "color": "#D99694"
-                                },
-                                {
-                                    "title": "Wet",
-                                    "abstract": "Wet or Sea",
-                                    "flags": {
-                                        "or": {
-                                            "wet": True,
-                                            "sea": True
-                                        }
-                                    },
-                                    "color": "#4F81BD"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "wet",
-                        "title": "Wet Only",
-                        "abstract": "Clear and Wet",
-                        "value_map": {
-                            "water": [
-                                {
-                                    "title": "Invalid",
-                                    "abstract": "Slope or Cloud or Cloud Shadow",
-                                    "flags": {
-                                        "or": {
-                                            "cloud_shadow": True,
-                                            "cloud": True,
-                                            "nodata": True,
-                                        }
-                                    },
-                                    "color": "#707070",
-                                    "mask": True
-                                },
-                                {
-                                    # Possible Sea Glint, also mark as invalid
-                                    "title": "Invalid_Dry",
-                                    "abstract": "Possible Sea Glint, also mark as invalid",
-                                    "flags": {
-                                        "dry": True,
-                                        "sea": True
-                                    },
-                                    "color": "#707070",
-                                    "mask": True
-                                },
-                                {
-                                    "title": "Dry",
-                                    "abstract": "Dry",
-                                    "flags": {
-                                        "dry": True,
-                                        "sea": False,
-                                    },
-                                    "color": "#D99694",
-                                    "mask": True
-                                },
-                                {
-                                    "title": "Wet",
-                                    "abstract": "Wet or Sea",
-                                    "flags": {
-                                        "or": {
-                                            "wet": True,
-                                            "sea": True
-                                        }
-                                    },
-                                    "color": "#4F81BD"
-                                }
-                            ]
-                        }
-                    }
-                ],
-                # Default style (if request does not specify style)
-                # MUST be defined in the styles list above.
-                # (Looks like Terria assumes this is the first style in the list, but this is not required
-                # by the standard.)
-                "default_style": "observations",
-            },
-            {
-                # Included as a keyword  for the layer
-                "label": "USGS",
-                # Included as a keyword  for the layer
-                "type": "Fractional Cover",
-                # Included as a keyword  for the layer
-                "variant": "",
-                "abstract": """
-    Landsat Fractional Cover based on USGS Level 2 Scenes. Data is only visible at higher resolutions; when zoomed-out the available area will be displayed as a shaded region.
-    Fractional cover provides information about the the proportions of green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.), and bare areas.
-    Fractional cover provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
-    The fractional cover algorithm was developed by the Joint Remote Sensing Research Program, for more information please see data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Fractional+Cover
-    Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena.
-    This product contains Fractional Cover dervied from the Landsat 5, 7 and 8 satellites
-    For service status information, see https://status.dea.ga.gov.au""",
-                # The WMS name for the layer
-                "name": "ls_usgs_fc_scene",
-                # The Datacube name for the associated data product
-                # "multi_product": False,
-                "product_name": "ls_usgs_fc_scene",
-                # The Datacube name for the associated pixel-quality product (optional)
-                # The name of the associated Datacube pixel-quality product
-                "pq_dataset": "ls_usgs_wofs_scene",
-                # The name of the measurement band for the pixel-quality product
-                # (Only required if pq_dataset is set)
-                "pq_band": "water",
-                # Fuse function for pq data
-                "pq_fuse_func": "datacube_wms.wms_utils.wofls_fuser",
-                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
-                # to actual imagery occurs.
-                "min_zoom_factor": 10.0,
-                # The fill-colour of the indicative polygons when zoomed out.
-                # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
-                "zoomed_out_fill_colour": [150, 180, 200, 160],
-                # Time Zone.  In hours added to UTC (maybe negative)
-                # Used for rounding off scene times to a date.
-                # Timezone 2 is for Central Africa Time.
-                "time_zone": 2,
-                # Extent mask function
-                # Determines what portions of dataset is potentially meaningful data.
-                "extent_mask_func": lambda data, band: (data[band] != data[band].attrs['nodata']),
-                # Flags listed here are ignored in GetFeatureInfo requests.
-                # (defaults to empty list)
-                "ignore_info_flags": [],
-                "legend": {
-                    "url": "https://data.dea.ga.gov.au/fractional-cover/fc-percentile/annual/v2.1.0/fcp_legend.png",
-                },
-                "wcs_default_bands": ["BS", "PV", "NPV"],
-                "styles": [
-                    {
-                        "name": "simple_fc",
-                        "title": "Fractional Cover",
-                        "abstract": "Fractional cover representation, with green vegetation in green, dead vegetation in blue, and bare soil in red",
-                        "components": {
-                            "bare": {
-                                "BS": 1.0
-                            },
-                            "green_veg": {
-                                "PV": 1.0
-                            },
-                            "dead_veg": {
-                                "NPV": 1.0
-                            },
-                            "err": {
-                                "UE": 1.0
-                            }
-                        },
-                        "scale_range": [0.0, 100.0],
-                        "pq_masks": [
-                            {
-                                "flags": {
-                                    'dry': True
-                                },
-                            },
-                            {
-                                "flags": {
-                                    "cloud_shadow": False,
-                                    "cloud": False,
-                                    "sea": False
-                                }
-                            },
-                        ]
-                    }
-                ],
-                # Default style (if request does not specify style)
-                # MUST be defined in the styles list above.
-                # (Looks like Terria assumes this is the first style in the list, but this is not required
-                # by the standard.)
-                "default_style": "simple_fc",
             }
         ]
     },
@@ -1480,6 +1240,272 @@ layer_cfg = [
                 # (Looks like Terria assumes this is the first style in the list, but this is
                 #  not required by the standard.)
                 "default_style": "simple_rgb",
+            }
+        ]
+    },
+    {
+        # Name and title of the platform layer.
+        # Platform layers are not mappable. The name is for internal server use only.
+        "name": "WOfS",
+        "title": "Water Observations from Space",
+        "abstract": "Water Observations from Space",
+
+        # Products available for this platform.
+        # For each product, the "name" is the Datacube name, and the label is used
+        # to describe the label to end-users.
+        "products": [
+            {
+                # Included as a keyword  for the layer
+                "label": "USGS",
+                # Included as a keyword  for the layer
+                "type": "Water Observations from Space",
+                # Included as a keyword  for the layer
+                "variant": "",
+                "abstract": """Historic Flood Mapping Water Observations from Space""",
+                # The WMS name for the layer
+                "name": "ls_usgs_wofs_scene",
+                # The Datacube name for the associated data product
+                "product_name": "ls_usgs_wofs_scene",
+                # The Datacube name for the associated pixel-quality product (optional)
+                # The name of the associated Datacube pixel-quality product
+                "pq_dataset": "ls_usgs_wofs_scene",
+                # The name of the measurement band for the pixel-quality product
+                # (Only required if pq_dataset is set)
+                "pq_band": "water",
+                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
+                # to actual imagery occurs.
+                "min_zoom_factor": 500.0,
+                "max_datasets_wms": 6,
+                # max_datasets_wcs is the WCS equivalent of max_datasets_wms.  The main requirement for setting this
+                # value is to avoid gateway timeouts on overly large WCS requests (and reduce server load).
+                "max_datasets_wcs": 16,
+                # The fill-colour of the indicative polygons when zoomed out.
+                # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
+                "zoomed_out_fill_colour": [200, 180, 180, 160],
+                # Extent mask function
+                # Determines what portions of dataset is potentially meaningful data.
+                "extent_mask_func": "datacube_wms.ogc_utils.mask_by_bitflag",
+                # (Defaults to false)
+                "pq_manual_merge": False,
+                # Flags listed here are ignored in GetFeatureInfo requests.
+                # (defaults to empty list)
+                "ignore_flags_info": [
+                    "nodata",
+                    # "noncontiguous",
+                ],
+                "wcs_default_bands": ["wet"],
+                "styles": [
+                    {
+                        "name": "observations",
+                        "title": "Water Observed",
+                        "abstract": "Classified as water by the decision tree",
+                        "value_map": {
+                            "water": [
+                                {
+                                    "title": "Invalid",
+                                    "abstract": "Slope or Cloud or Cloud Shadow",
+                                    "flags": {
+                                        "or": {
+                                            "cloud_shadow": True,
+                                            "cloud": True,
+                                            "nodata": True
+                                        }
+                                    },
+                                    "color": "#707070"
+                                },
+                                {
+                                    # Possible Sea Glint, also mark as invalid
+                                    "title": "Invalid_Dry",
+                                    "abstract": "Possible Sea Glint, also mark as invalid",
+                                    "flags": {
+                                        "dry": True,
+                                        "sea": True
+                                    },
+                                    "color": "#707070"
+                                },
+                                {
+                                    "title": "Dry",
+                                    "abstract": "Dry",
+                                    "flags": {
+                                        "dry": True,
+                                        "sea": False,
+                                    },
+                                    "color": "#D99694"
+                                },
+                                {
+                                    "title": "Wet",
+                                    "abstract": "Wet or Sea",
+                                    "flags": {
+                                        "or": {
+                                            "wet": True,
+                                            "sea": True
+                                        }
+                                    },
+                                    "color": "#4F81BD"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "wet",
+                        "title": "Wet Only",
+                        "abstract": "Clear and Wet",
+                        "value_map": {
+                            "water": [
+                                {
+                                    "title": "Invalid",
+                                    "abstract": "Slope or Cloud or Cloud Shadow",
+                                    "flags": {
+                                        "or": {
+                                            "cloud_shadow": True,
+                                            "cloud": True,
+                                            "nodata": True,
+                                        }
+                                    },
+                                    "color": "#707070",
+                                    "mask": True
+                                },
+                                {
+                                    # Possible Sea Glint, also mark as invalid
+                                    "title": "Invalid_Dry",
+                                    "abstract": "Possible Sea Glint, also mark as invalid",
+                                    "flags": {
+                                        "dry": True,
+                                        "sea": True
+                                    },
+                                    "color": "#707070",
+                                    "mask": True
+                                },
+                                {
+                                    "title": "Dry",
+                                    "abstract": "Dry",
+                                    "flags": {
+                                        "dry": True,
+                                        "sea": False,
+                                    },
+                                    "color": "#D99694",
+                                    "mask": True
+                                },
+                                {
+                                    "title": "Wet",
+                                    "abstract": "Wet or Sea",
+                                    "flags": {
+                                        "or": {
+                                            "wet": True,
+                                            "sea": True
+                                        }
+                                    },
+                                    "color": "#4F81BD"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                # Default style (if request does not specify style)
+                # MUST be defined in the styles list above.
+                # (Looks like Terria assumes this is the first style in the list, but this is not required
+                # by the standard.)
+                "default_style": "wet",
+            }
+        ]
+    },
+    {
+        # Name and title of the platform layer.
+        # Platform layers are not mappable. The name is for internal server use only.
+        "name": "Fractional Cover",
+        "title": "Landsat Fractional Cover",
+        "abstract": "Landsat Fractional Cover based on USGS Level 2 Scenes",
+
+        # Products available for this platform.
+        # For each product, the "name" is the Datacube name, and the label is used
+        # to describe the label to end-users.
+        "products": [
+            {
+                # Included as a keyword  for the layer
+                "label": "USGS",
+                # Included as a keyword  for the layer
+                "type": "Fractional Cover",
+                # Included as a keyword  for the layer
+                "variant": "",
+                "abstract": """
+        Landsat Fractional Cover based on USGS Level 2 Scenes. Data is only visible at higher resolutions; when zoomed-out the available area will be displayed as a shaded region.
+        Fractional cover provides information about the the proportions of green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.), and bare areas.
+        Fractional cover provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
+        The fractional cover algorithm was developed by the Joint Remote Sensing Research Program, for more information please see data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Fractional+Cover
+        Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena.
+        This product contains Fractional Cover dervied from the Landsat 5, 7 and 8 satellites
+        For service status information, see https://status.dea.ga.gov.au""",
+                # The WMS name for the layer
+                "name": "ls_usgs_fc_scene",
+                # The Datacube name for the associated data product
+                # "multi_product": False,
+                "product_name": "ls_usgs_fc_scene",
+                # The Datacube name for the associated pixel-quality product (optional)
+                # The name of the associated Datacube pixel-quality product
+                "pq_dataset": "ls_usgs_wofs_scene",
+                # The name of the measurement band for the pixel-quality product
+                # (Only required if pq_dataset is set)
+                "pq_band": "water",
+                # Fuse function for pq data
+                "pq_fuse_func": "datacube_wms.wms_utils.wofls_fuser",
+                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
+                # to actual imagery occurs.
+                "min_zoom_factor": 10.0,
+                # The fill-colour of the indicative polygons when zoomed out.
+                # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
+                "zoomed_out_fill_colour": [150, 180, 200, 160],
+                # Time Zone.  In hours added to UTC (maybe negative)
+                # Used for rounding off scene times to a date.
+                # Timezone 2 is for Central Africa Time.
+                "time_zone": 2,
+                # Extent mask function
+                # Determines what portions of dataset is potentially meaningful data.
+                "extent_mask_func": lambda data, band: (data[band] != data[band].attrs['nodata']),
+                # Flags listed here are ignored in GetFeatureInfo requests.
+                # (defaults to empty list)
+                "ignore_info_flags": [],
+                "legend": {
+                    "url": "https://data.dea.ga.gov.au/fractional-cover/fc-percentile/annual/v2.1.0/fcp_legend.png",
+                },
+                "wcs_default_bands": ["BS", "PV", "NPV"],
+                "styles": [
+                    {
+                        "name": "simple_fc",
+                        "title": "Fractional Cover",
+                        "abstract": "Fractional cover representation, with green vegetation in green, dead vegetation in blue, and bare soil in red",
+                        "components": {
+                            "bare": {
+                                "BS": 1.0
+                            },
+                            "green_veg": {
+                                "PV": 1.0
+                            },
+                            "dead_veg": {
+                                "NPV": 1.0
+                            }
+                        },
+                        "scale_range": [0.0, 100.0],
+                        "pq_masks": [
+                            {
+                                "flags": {
+                                    'dry': True
+                                },
+                            },
+                            {
+                                "flags": {
+                                    "cloud_shadow": False,
+                                    "cloud": False,
+                                    "sea": False
+                                }
+                            },
+                        ]
+                    }
+                ],
+                # Default style (if request does not specify style)
+                # MUST be defined in the styles list above.
+                # (Looks like Terria assumes this is the first style in the list, but this is not required
+                # by the standard.)
+                "default_style": "simple_fc",
             }
         ]
     }
