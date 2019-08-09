@@ -1269,6 +1269,8 @@ layer_cfg = [
                 "name": "ls_usgs_wofs_scene",
                 # The Datacube name for the associated data product
                 "product_name": "ls_usgs_wofs_scene",
+                "fuse_func": "datacube_wms.wms_utils.wofls_fuser",
+                "pq_fuse_func": "datacube_wms.wms_utils.wofls_fuser",
                 # The Datacube name for the associated pixel-quality product (optional)
                 # The name of the associated Datacube pixel-quality product
                 "pq_dataset": "ls_usgs_wofs_scene",
