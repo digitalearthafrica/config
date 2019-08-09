@@ -1541,7 +1541,7 @@ layer_cfg = [
             # The WMS name for the layer
             "name": "Water Observations from Space Statistics",
             # The Datacube name for the associated data product
-            "product_name": "wofs_summary",
+            "product_name": "ls_usgs_wofs_summary",
             "abstract": """
             Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product which combines WOfS observations into summary products that help the understanding of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ? 2018). The water detected for each location is summed through time and then compared to the number of clear observations of that location. The result is a percentage value of the number of times water was observed at the location. The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time (water summary).
 
@@ -1711,9 +1711,9 @@ layer_cfg = [
             # Included as a keyword  for the layer
             "variant": "25m",
             # The WMS name for the layer
-            "name": "wofs_summary_wet",
+            "name": "WOfS Summary Wet",
             # The Datacube name for the associated data product
-            "product_name": "wofs_summary",
+            "product_name": "ls_usgs_wofs_summary",
             "abstract": """
             Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products which help the understanding of surface water across Africa.  The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time.
 
@@ -1825,9 +1825,9 @@ layer_cfg = [
             # Included as a keyword  for the layer
             "variant": "25m",
             # The WMS name for the layer
-            "name": "wofs_summary_clear",
+            "name": "WOfS Summary Clear",
             # The Datacube name for the associated data product
-            "product_name": "wofs_summary",
+            "product_name": "ls_usgs_wofs_summary",
             "abstract": """
             Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products which help the understanding of surface water across Africa.  The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time.
 
