@@ -1543,7 +1543,7 @@ layer_cfg = [
             # The Datacube name for the associated data product
             "product_name": "ls_usgs_wofs_summary",
             "abstract": """
-            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product which combines WOfS observations into summary products that help the understanding of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ? 2018). The water detected for each location is summed through time and then compared to the number of clear observations of that location. The result is a percentage value of the number of times water was observed at the location. The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time (water summary).
+            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product which combines WOfS observations into summary products that help the understanding of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ? 2018). The water detected for each location is summed through time and then compared to the number of clear observations of that location. The result is a percentage value of the number of times water was observed at the location. The layers available are: the count of dry observations; the count of wet observations; the percentage of wet observations over time (water summary).
 
             This layer contains the Water Summary: the percentage of clear observations which were detected as wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to appear transparent, few clear observations of water correlate with red and yellow colours, deep blue and purple correspond to an area being wet through 90%-100% of clear observations.
 
@@ -1715,7 +1715,7 @@ layer_cfg = [
             # The Datacube name for the associated data product
             "product_name": "ls_usgs_wofs_summary",
             "abstract": """
-            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products which help the understanding of surface water across Africa.  The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time.
+            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products which help the understanding of surface water across Africa.  The layers available are: the count of dry observations; the count of wet observations; the percentage of wet observations over time.
 
             This layer contains Wet Count: how many times water was detected in observations that were clear. No clear observations of water causes an area to appear transparent, 1-50 total clear observations of water correlate with red and yellow colours, 100 clear observations of water correlate with green, 200 clear observations of water correlates with light blue, 300 clear observations of water correlates to deep blue and 400 and over observations of clear water correlate to purple.
 
@@ -1742,7 +1742,7 @@ layer_cfg = [
             "styles": [
                 {
                     "name": "water_observations",
-                    "title": "Wet Count",
+                    "title": "Count Wet",
                     "abstract": "WOfS summary showing the count of water observations",
                     "needed_bands": ["count_wet"],
                     "color_ramp": [
@@ -1821,17 +1821,17 @@ layer_cfg = [
             # Included as a keyword  for the layer
             "label": "WOfS Statistics",
             # Included as a keyword  for the layer
-            "type": "Clear Count",
+            "type": "Dry Count",
             # Included as a keyword  for the layer
             "variant": "25m",
             # The WMS name for the layer
-            "name": "WOfS Summary Clear",
+            "name": "WOfS Summary Dry",
             # The Datacube name for the associated data product
             "product_name": "ls_usgs_wofs_summary",
             "abstract": """
-            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products which help the understanding of surface water across Africa.  The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time.
+            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products which help the understanding of surface water across Africa.  The layers available are: the count of dry observations; the count of wet observations; the percentage of wet observations over time.
 
-            This layer contains Clear Count: how many times an area could be clearly seen (ie. not affected by clouds, shadows or other satellite observation problems). No clear observations causes an area to appear transparent, 1-300 total clear observations of water correlate with red and yellow colours, 400 clear observations correlates with light green, 800 clear observations and above correlates with dark green.
+            This layer contains Dry Count: how many times an area could be seen Dry (ie. not affected by clouds, shadows or other satellite observation problems).
 
             As no confidence filtering is applied to this product, it is affected by noise where mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The confidence layer and filtered summary are contained in the Water Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of the water summary.""",
             "min_zoom_factor": 15.0,
@@ -1850,15 +1850,15 @@ layer_cfg = [
             "ignore_info_flags": [],
             "legend": {
                 # "url": ""
-                "styles": ["clear_observations"]
+                "styles": ["dry_observations"]
             },
-            "wcs_default_bands": ["count_clear"],
+            "wcs_default_bands": ["count_dry"],
             "styles": [
                 {
-                    "name": "clear_observations",
-                    "title": "Clear Count",
-                    "abstract": "WOfS summary showing the count of clear observations",
-                    "needed_bands": ["count_clear"],
+                    "name": "dry_observations",
+                    "title": "Count Dry",
+                    "abstract": "WOfS summary showing the count of dry observations",
+                    "needed_bands": ["count_dry"],
                     "color_ramp": [
                         {
                             "value": 0,
@@ -1930,7 +1930,7 @@ layer_cfg = [
 
             # (Looks like Terria assumes this is the first style in the list, but this is
             #  not required by the standard.)
-            "default_style": "clear_observations",
+            "default_style": "dry_observations",
         }
      ]
    }
