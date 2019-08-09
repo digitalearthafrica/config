@@ -1319,7 +1319,10 @@ layer_cfg = [
                                     "abstract": "Possible Sea Glint, also mark as invalid",
                                     "flags": {
                                         "dry": True,
-                                        "sea": True
+                                        "sea": True,
+                                        "cloud_shadow": False,
+                                        "cloud": False,
+                                        "nodata": False
                                     },
                                     "color": "#707070"
                                 },
@@ -1329,6 +1332,9 @@ layer_cfg = [
                                     "flags": {
                                         "dry": True,
                                         "sea": False,
+                                        "cloud_shadow": False,
+                                        "cloud": False,
+                                        "nodata": False
                                     },
                                     "color": "#D99694"
                                 },
