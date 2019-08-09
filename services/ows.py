@@ -1307,8 +1307,7 @@ layer_cfg = [
                                     "flags": {
                                         "or": {
                                             "cloud_shadow": True,
-                                            "cloud": True,
-                                            "nodata": True
+                                            "cloud": True
                                         }
                                     },
                                     "color": "#707070"
