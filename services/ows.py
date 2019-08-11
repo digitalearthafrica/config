@@ -1544,7 +1544,7 @@ layer_cfg = [
             # Included as a keyword  for the layer
             "variant": "25m",
             # The WMS name for the layer
-            "name": "Water Observations from Space Statistics",
+            "name": "wofs_annual_summary_statistics",
             # The Datacube name for the associated data product
             "product_name": "ls_usgs_wofs_summary",
             "abstract": """
@@ -1716,7 +1716,7 @@ layer_cfg = [
             # Included as a keyword  for the layer
             "variant": "25m",
             # The WMS name for the layer
-            "name": "WOfS Summary Wet",
+            "name": "wofs_annual_summary_wet",
             # The Datacube name for the associated data product
             "product_name": "ls_usgs_wofs_summary",
             "abstract": """
@@ -1830,7 +1830,7 @@ layer_cfg = [
             # Included as a keyword  for the layer
             "variant": "25m",
             # The WMS name for the layer
-            "name": "WOfS Summary Dry",
+            "name": "wofs_annual_summary_dry",
             # The Datacube name for the associated data product
             "product_name": "ls_usgs_wofs_summary",
             "abstract": """
