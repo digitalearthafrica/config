@@ -48,6 +48,11 @@ service_cfg = {
             "horizontal_coord": "x",
             "vertical_coord": "y",
         },
+        "EPSG:102022": {  
+            "geographic": False,
+            "horizontal_coord": "x",
+            "vertical_coord": "y",
+        },
     },
 
     ## Required config for WCS
