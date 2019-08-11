@@ -1256,7 +1256,7 @@ layer_cfg = [
         # Platform layers are not mappable. The name is for internal server use only.
         "name": "WOfS",
         "title": "Water Observations from Space",
-        "abstract": "Water Observations from Space",
+        "abstract": "Daily Observations",
 
         # Products available for this platform.
         # For each product, the "name" is the Datacube name, and the label is used
