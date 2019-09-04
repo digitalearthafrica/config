@@ -30,7 +30,7 @@
                       "linkedWcsCoverage": "ls5_usgs_sr_scene",
                       "ignoreUnknownTileErrors": true,
                       "opacity": 1,
-					  "featureTimesProperty": "data_available_for_dates",
+                      "featureTimesProperty": "data_available_for_dates",
                       "featureInfoTemplate": {
                          "formats": {
                             "lat": {
@@ -52,7 +52,7 @@
                     "linkedWcsCoverage": "ls7_usgs_sr_scene",
                     "ignoreUnknownTileErrors": true,
                     "opacity": 1,
-					"featureTimesProperty": "data_available_for_dates",
+                    "featureTimesProperty": "data_available_for_dates",
                     "featureInfoTemplate": {
                        "formats": {
                           "lat": {
@@ -74,7 +74,7 @@
                     "linkedWcsCoverage": "ls8_usgs_sr_scene",
                     "ignoreUnknownTileErrors": true,
                     "opacity": 1,
-					"featureTimesProperty": "data_available_for_dates",
+                    "featureTimesProperty": "data_available_for_dates",
                     "featureInfoTemplate": {
                        "formats": {
                           "lat": {
@@ -110,7 +110,7 @@
                       "linkedWcsCoverage": "ls_usgs_wofs_scene",
                       "ignoreUnknownTileErrors": true,
                       "opacity": 1,
-					  "featureTimesProperty": "data_available_for_dates"
+                      "featureTimesProperty": "data_available_for_dates"
                    },
                    {
                        "name": "Summary of water observations (Annual)",
@@ -121,7 +121,7 @@
                        "linkedWcsCoverage": "wofs_annual_summary_statistics",
                        "ignoreUnknownTileErrors": true,
                        "opacity": 1,
-					   "featureTimesProperty": "data_available_for_dates"
+                       "featureTimesProperty": "data_available_for_dates"
                     },
                     {
                        "name": "Count of dry observations (Annual)",
@@ -132,7 +132,7 @@
                        "linkedWcsCoverage": "wofs_annual_summary_dry",
                        "ignoreUnknownTileErrors": true,
                        "opacity": 1,
-					   "featureTimesProperty": "data_available_for_dates"
+                       "featureTimesProperty": "data_available_for_dates"
                     },
                     {
                        "name": "Count of wet observations (Annual)",
@@ -143,7 +143,7 @@
                        "linkedWcsCoverage": "wofs_annual_summary_wet",
                        "ignoreUnknownTileErrors": true,
                        "opacity": 1,
-					   "featureTimesProperty": "data_available_for_dates"
+                       "featureTimesProperty": "data_available_for_dates"
                     }
                 ]
              },
@@ -161,7 +161,7 @@
                       "linkedWcsCoverage": "ls_usgs_fc_scene",
                       "ignoreUnknownTileErrors": true,
                       "opacity": 1,
-					  "featureTimesProperty": "data_available_for_dates"
+                      "featureTimesProperty": "data_available_for_dates"
                    }
                 ]
              }
