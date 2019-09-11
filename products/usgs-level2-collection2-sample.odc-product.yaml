@@ -1,0 +1,111 @@
+name: usgs_ls8c_level2_2
+metadata:
+  product:
+    href: https://collections.dea.ga.gov.au/product/usgs_ls8c_level2_2
+    name: usgs_ls8c_level2_2
+description: Sample USGS Level 2 Collection 2 Landsat
+measurements:
+- name: b1
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases:
+  - coastal_aerosol
+- name: b2
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases:
+  - blue
+- name: b3
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases:
+  - green
+- name: b4
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases:
+  - red
+- name: b5
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases:
+  - nir
+- name: b6
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases:
+  - swir_1
+- name: b7
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases:
+  - swir_2
+- name: b10
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases:
+  - st_b10
+- name: thermal_radiance
+  dtype: int16
+  units: "1"
+  nodata: -9999
+  aliases: []
+- name: upwell_radiance
+  dtype: int16
+  units: "1"
+  nodata: -9999
+  aliases: []
+- name: downwell_radiance
+  dtype: int16
+  units: "1"
+  nodata: -9999
+  aliases: []
+- name: atmospheric_transmittance
+  dtype: int16
+  units: "1"
+  nodata: -9999
+  aliases: []
+- name: emissivity
+  dtype: int16
+  units: "1"
+  nodata: -9999
+  aliases: []
+- name: emissivity_stdev
+  dtype: int16
+  units: "1"
+  nodata: -9999
+  aliases: []
+- name: cloud_distance
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases: []
+- name: quality_l2_aerosol
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases: []
+- name: quality_l2_surface_temperature
+  dtype: int16
+  units: "1"
+  nodata: -9999
+  aliases: []
+- name: quality_l1_pixel
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases: []
+- name: quality_l1_radiometric_saturation
+  dtype: uint16
+  units: "1"
+  nodata: 0
+  aliases: []
+metadata_type: eo3_landsat_ard
