@@ -5,107 +5,117 @@ metadata:
     name: usgs_ls8c_level2_2
 description: Sample USGS Level 2 Collection 2 Landsat
 measurements:
-- name: b1
+- name: coastal_aerosol
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - coastal_aerosol
-- name: b2
+  - b1
+  - band_1
+- name: blue
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - blue
-- name: b3
+  - b2
+  - band_2
+- name: green
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - green
-- name: b4
+  - b3
+  - band_3
+- name: red
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - red
-- name: b5
+  - b4
+  - band_4
+- name: nir
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - nir
-- name: b6
+  - b5
+  - band_5
+- name: swir_1
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - swir_1
-- name: b7
+  - b6
+  - band_6
+- name: swir_2
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - swir_2
-- name: b10
+  - b7
+  - band_7
+- name: surface_temperature
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
+  - b10
+  - band_10
   - st_b10
 - name: thermal_radiance
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases: []
 - name: upwell_radiance
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases: []
 - name: downwell_radiance
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases: []
 - name: atmospheric_transmittance
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases: []
 - name: emissivity
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases: []
 - name: emissivity_stdev
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases: []
 - name: cloud_distance
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases: []
 - name: quality_l2_aerosol
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases: []
 - name: quality_l2_surface_temperature
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases: []
 - name: quality_l1_pixel
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases: []
 - name: quality_l1_radiometric_saturation
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases: []
 metadata_type: eo3_landsat_ard
+
