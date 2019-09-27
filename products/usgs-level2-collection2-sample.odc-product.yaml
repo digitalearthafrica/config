@@ -47,6 +47,7 @@ measurements:
   aliases:
   - b6
   - band_6
+  - swir1
 - name: swir_2
   dtype: uint16
   units: '1'
@@ -54,6 +55,7 @@ measurements:
   aliases:
   - b7
   - band_7
+  - swir2
 - name: surface_temperature
   dtype: uint16
   units: '1'
