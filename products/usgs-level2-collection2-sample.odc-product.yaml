@@ -103,13 +103,13 @@ measurements:
 - name: cloud_distance
   dtype: int16
   units: Kilometers
-  nodata: 0
+  nodata: -9999
   aliases:
     - st_cdist
 - name: quality_l2_aerosol
   dtype: uint8
   units: bit_index
-  nodata: 0
+  nodata: 1
   aliases:
     - aerosol_qa
   flags_definition:
@@ -166,7 +166,7 @@ measurements:
     - st_qa
 - name: quality_l1_pixel
   dtype: uint16
-  nodata: 0
+  nodata: 1
   aliases:
     - pixel_qa
   units: 'bit_index'
