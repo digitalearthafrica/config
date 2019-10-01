@@ -101,7 +101,7 @@ measurements:
   aliases:
     - st_emsd
 - name: cloud_distance
-  dtype: uint16
+  dtype: int16
   units: Kilometers
   nodata: 0
   aliases:
