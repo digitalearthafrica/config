@@ -5,87 +5,98 @@ metadata:
     name: usgs_ls8c_level2_2
 description: Sample USGS Level 2 Collection 2 Landsat
 measurements:
-- name: b1
+- name: coastal_aerosol
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - coastal_aerosol
-- name: b2
+  - b1
+  - band_1
+- name: blue
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - blue
-- name: b3
+  - b2
+  - band_2
+- name: green
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - green
-- name: b4
+  - b3
+  - band_3
+- name: red
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - red
-- name: b5
+  - b4
+  - band_4
+- name: nir
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - nir
-- name: b6
+  - b5
+  - band_5
+- name: swir_1
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - swir_1
-- name: b7
+  - b6
+  - band_6
+  - swir1
+- name: swir_2
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
-  - swir_2
-- name: b10
+  - b7
+  - band_7
+  - swir2
+- name: surface_temperature
   dtype: uint16
   units: "Kelvin"
   nodata: 0
   aliases:
+  - b10
+  - band_10
   - st_b10
 - name: thermal_radiance
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases:
     - st_trad
 - name: upwell_radiance
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases:
     - st_urad
 - name: downwell_radiance
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases:
     - st_drad
 - name: atmospheric_transmittance
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases:
     - st_atran
 - name: emissivity
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases:
     - st_emis
 - name: emissivity_stdev
   dtype: int16
-  units: "1"
+  units: '1'
   nodata: -9999
   aliases:
     - st_emsd
@@ -254,7 +265,7 @@ measurements:
         3: high
 - name: quality_l1_radiometric_saturation
   dtype: uint16
-  units: "1"
+  units: '1'
   nodata: 0
   aliases:
     - radsat_qa
@@ -326,3 +337,4 @@ measurements:
         0: no_occlusion
         1: occlusion
 metadata_type: eo3_landsat_ard
+
