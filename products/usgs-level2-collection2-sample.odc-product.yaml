@@ -49,7 +49,7 @@ measurements:
   - swir_2
 - name: b10
   dtype: uint16
-  units: "1"
+  units: "Kelvin"
   nodata: 0
   aliases:
   - st_b10
@@ -57,55 +57,272 @@ measurements:
   dtype: int16
   units: "1"
   nodata: -9999
-  aliases: []
+  aliases:
+    - st_trad
 - name: upwell_radiance
   dtype: int16
   units: "1"
   nodata: -9999
-  aliases: []
+  aliases:
+    - st_urad
 - name: downwell_radiance
   dtype: int16
   units: "1"
   nodata: -9999
-  aliases: []
+  aliases:
+    - st_drad
 - name: atmospheric_transmittance
   dtype: int16
   units: "1"
   nodata: -9999
-  aliases: []
+  aliases:
+    - st_atran
 - name: emissivity
   dtype: int16
   units: "1"
   nodata: -9999
-  aliases: []
+  aliases:
+    - st_emis
 - name: emissivity_stdev
   dtype: int16
   units: "1"
   nodata: -9999
-  aliases: []
+  aliases:
+    - st_emsd
 - name: cloud_distance
   dtype: uint16
-  units: "1"
+  units: "Kilometers"
   nodata: 0
-  aliases: []
+  aliases:
+    - st_cdist
 - name: quality_l2_aerosol
-  dtype: uint16
-  units: "1"
+  dtype: uint8
+  units: "bit_index"
   nodata: 0
-  aliases: []
+  aliases:
+    - aerosol_qa
+  flags_definition:
+    aerosol_qa:
+      bits: [0,1,2,3,4,5,6,7]
+      description: Aerosol QA
+      values:
+        1: Fill
+        2: Valid Aerosol Retrieval
+        4: Water
+        8: Cloud or Cirrus
+        16: Cloud Shadow
+        32: Interpolated Aerosol
+        64: Aerosol Level Low Bit
+        128: Aerosol Level High Bit
+    nodata:
+      bits: 0
+      values:
+        0: false
+        1: true
+    valid_aerosol:
+      bits: 1
+      values:
+        0: not_valid
+        1: valid
+    water:
+      bits: 2
+      values:
+        0: not_water
+        1: water
+    cloud_or_cirrus:
+      bits: 3
+      values:
+        0: not_cloud_or_cirrus
+        1: cloud_or_cirrus
+    cloud_shadow:
+      bits: 4
+      values:
+        0: not_cloud_shadow
+        1: cloud_shadow
+    interpolated_aerosol:
+      bits: 5
+      values:
+        0: not_aerosol_interpolated
+        1: aerosol_interpolated
+    aerosol_level:
+      bits: [6, 7]
+      values:
+        0: climatology
+        1: low
+        2: medium
+        3: high
 - name: quality_l2_surface_temperature
   dtype: int16
-  units: "1"
+  units: "Kelvin"
   nodata: -9999
-  aliases: []
+  aliases:
+    - st_qa
 - name: quality_l1_pixel
   dtype: uint16
-  units: "1"
   nodata: 0
-  aliases: []
+  aliases:
+    - pixel_qa
+  units: 'bit_index'
+  flags_definition:
+    pixel_qa:
+      bits: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      description: Level 1 Pixel Quality Band
+      values:
+        1: Fill
+        2: Dilated Cloud
+        4: Cirrus
+        8: Cloud
+        16: Cloud Shadow
+        32: Snow
+        64: Clear
+        128: Water
+        256: Cloud Confidence Low Bit
+        512: Cloud Confidence High Bit
+        1024: Cloud Shadow Confidence Low Bit
+        2048: Cloud Shadow Confidence High Bit
+        4096: Snow/Ice Confidence Low Bit
+        8192: Snow/Ice Confidence High Bit
+        16384: Cirrus Confidence Low Bit
+        32786: Cirrus Confidence High Bit
+    nodata:
+      bits: 0
+      values:
+        0: false
+        1: true
+    dilated_cloud:
+      bits: 1
+      values:
+        0: not_dilated
+        1: dilated
+    cirrus:
+      bits: 2
+      values:
+        0: not_high_confidence
+        1: high_confidence
+    cloud:
+      bits: 3
+      values:
+        0: not_high_confidence
+        1: high_confidence
+    cloud_shadow:
+      bits: 4
+      values:
+        0: not_high_confidence
+        1: high_confidence
+    snow:
+      bits: 5
+      values:
+        0: not_high_confidence
+        1: high_confidence
+    clear:
+      bits: 6
+      values:
+        0: false
+        1: true
+    water:
+      bits: 7
+      values:
+        0: land_or_cloud
+        1: water
+    cloud_confidence:
+      bits: [8, 9]
+      values:
+        0: none
+        1: low
+        2: medium
+        3: high
+    cloud_shadow_confidence:
+      bits: [10, 11]
+      values:
+        0: none
+        1: low
+        2: reserved
+        3: high
+    snow_ice_confidence:
+      bits: [12, 13]
+      values:
+        0: none
+        1: low
+        2: reserved
+        3: high
+    cirrus_confidence:
+      bits: [14, 15]
+      values:
+        0: none
+        1: low
+        2: reserved
+        3: high
 - name: quality_l1_radiometric_saturation
   dtype: uint16
   units: "1"
   nodata: 0
-  aliases: []
+  aliases:
+    - radsat_qa
+  units: 'bit_index'
+  flags_definition:
+    radsat_qa:
+      bits: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      description: Level 1 Radiometric Saturation QA Band
+      values:
+        1: Band 1 Data Saturation
+        2: Band 2 Data Saturation
+        4: Band 3 Data Saturation
+        8: Band 4 Data Saturation
+        16: Band 5 Data Saturation
+        32: Band 6 Data Saturation
+        64: Band 7 Data Saturation
+        128: Unused
+        256: Band 9 Data Saturation
+        512: Unused
+        1024: Unused
+        2048: Terrain Occlusion
+        4096: Unused
+        8192: Unused
+        16384: Unused
+        32786: Unused
+    band_1_saturation:
+      bits: 0
+      values:
+        0: no_saturation
+        1: saturation
+    band_2_saturation:
+      bits: 1
+      values:
+        0: no_saturation
+        1: saturation
+    band_3_saturation:
+      bits: 2
+      values:
+        0: no_saturation
+        1: saturation
+    band_4_saturation:
+      bits: 3
+      values:
+        0: no_saturation
+        1: saturation
+    band_5_saturation:
+      bits: 4
+      values:
+        0: no_saturation
+        1: saturation
+    band_6_saturation:
+      bits: 5
+      values:
+        0: no_saturation
+        1: saturation
+    band_7_saturation:
+      bits: 6
+      values:
+        0: no_saturation
+        1: saturation
+    band_9_saturation:
+      bits: 8
+      values:
+        0: no_saturation
+        1: saturation
+    terrain_occlusion:
+      bits: 11
+      values:
+        0: no_occlusion
+        1: occlusion
 metadata_type: eo3_landsat_ard
