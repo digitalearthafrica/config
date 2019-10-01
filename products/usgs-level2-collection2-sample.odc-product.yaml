@@ -58,7 +58,7 @@ measurements:
   - swir2
 - name: surface_temperature
   dtype: uint16
-  units: "Kelvin"
+  units: Kelvin
   nodata: 0
   aliases:
   - b10
@@ -102,29 +102,25 @@ measurements:
     - st_emsd
 - name: cloud_distance
   dtype: uint16
-  units: "Kilometers"
+  units: Kilometers
   nodata: 0
   aliases:
     - st_cdist
 - name: quality_l2_aerosol
   dtype: uint8
-  units: "bit_index"
+  units: bit_index
   nodata: 0
   aliases:
     - aerosol_qa
   flags_definition:
-    aerosol_qa:
-      bits: [0,1,2,3,4,5,6,7]
-      description: Aerosol QA
-      values:
-        1: Fill
-        2: Valid Aerosol Retrieval
-        4: Water
-        8: Cloud or Cirrus
-        16: Cloud Shadow
-        32: Interpolated Aerosol
-        64: Aerosol Level Low Bit
-        128: Aerosol Level High Bit
+    # 0: Fill
+    # 1: Valid Aerosol Retrieval
+    # 2: Water
+    # 3: Cloud or Cirrus
+    # 4: Cloud Shadow
+    # 5: Interpolated Aerosol
+    # 6-7: Aerosol Level 2-bit:
+    #      0: Climatology, 1-3: Low,Medium,High
     nodata:
       bits: 0
       values:
@@ -164,7 +160,7 @@ measurements:
         3: high
 - name: quality_l2_surface_temperature
   dtype: int16
-  units: "Kelvin"
+  units: Kelvin
   nodata: -9999
   aliases:
     - st_qa
@@ -175,26 +171,18 @@ measurements:
     - pixel_qa
   units: 'bit_index'
   flags_definition:
-    pixel_qa:
-      bits: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-      description: Level 1 Pixel Quality Band
-      values:
-        1: Fill
-        2: Dilated Cloud
-        4: Cirrus
-        8: Cloud
-        16: Cloud Shadow
-        32: Snow
-        64: Clear
-        128: Water
-        256: Cloud Confidence Low Bit
-        512: Cloud Confidence High Bit
-        1024: Cloud Shadow Confidence Low Bit
-        2048: Cloud Shadow Confidence High Bit
-        4096: Snow/Ice Confidence Low Bit
-        8192: Snow/Ice Confidence High Bit
-        16384: Cirrus Confidence Low Bit
-        32786: Cirrus Confidence High Bit
+    # 0: Fill
+    # 1: Dilated Cloud
+    # 2: Cirrus
+    # 3: Cloud
+    # 4: Cloud Shadow
+    # 5: Snow
+    # 6: Clear
+    # 7: Water
+    # 8-9: Cloud Confidence 2-bit
+    # 10-11: Cloud Shadow Confidence 2-bit 
+    # 12-13: Snow/Ice Confidence 2-bit 
+    # 14-15: Cirrus Confidence 2-bit
     nodata:
       bits: 0
       values:
@@ -271,26 +259,18 @@ measurements:
     - radsat_qa
   units: 'bit_index'
   flags_definition:
-    radsat_qa:
-      bits: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-      description: Level 1 Radiometric Saturation QA Band
-      values:
-        1: Band 1 Data Saturation
-        2: Band 2 Data Saturation
-        4: Band 3 Data Saturation
-        8: Band 4 Data Saturation
-        16: Band 5 Data Saturation
-        32: Band 6 Data Saturation
-        64: Band 7 Data Saturation
-        128: Unused
-        256: Band 9 Data Saturation
-        512: Unused
-        1024: Unused
-        2048: Terrain Occlusion
-        4096: Unused
-        8192: Unused
-        16384: Unused
-        32786: Unused
+    # 0: Band 1 Data Saturation
+    # 1: Band 2 Data Saturation
+    # 2: Band 3 Data Saturation
+    # 3: Band 4 Data Saturation
+    # 4: Band 5 Data Saturation
+    # 5: Band 6 Data Saturation
+    # 6: Band 7 Data Saturation
+    # 7: Unused
+    # 8: Band 9 Data Saturation
+    # 9-10: Unused
+    # 11: Terrain Occlusion
+    # 12-15: Unused
     band_1_saturation:
       bits: 0
       values:
