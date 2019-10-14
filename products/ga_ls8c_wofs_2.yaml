@@ -1,0 +1,55 @@
+name: ga_ls8c_wofs_2
+description: Historic Flood Mapping Water Observations from Space
+metadata_type: eo3_landsat_ard
+
+metadata:
+    product:
+       name: ga_ls8c_wofs_2
+       href: https://collections.dea.ga.gov.au/product/ga_ls8c_wofs_2
+
+measurements:
+      - name: 'water'
+        dtype: uint8
+        units: '1'
+        nodata: 1
+        flags_definition:
+            dry:
+                bits: [7, 6, 5, 0]
+                values:
+                    0: true
+                description: 'Clear and dry'
+            wet:
+                bits: [7, 6, 5, 0]
+                values:
+                    128: true
+                description: 'Clear and Wet'
+            nodata:
+                bits: 0
+                values:
+                    0: false
+                    1: true
+                description: No data
+            sea:
+                bits: 2
+                values:
+                    0: false
+                    1: true
+                description: Sea
+            cloud_shadow:
+                bits: 5
+                values:
+                    0: false
+                    1: true
+                description: Cloud shadow
+            cloud:
+                bits: 6
+                values:
+                    0: false
+                    1: true
+                description: Cloudy
+            water_observed:
+                bits: 7
+                values:
+                    0: false
+                    1: true
+                description: Classified as water by the decision tree
