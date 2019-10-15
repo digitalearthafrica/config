@@ -14,12 +14,12 @@ measurements:
         nodata: 1
         flags_definition:
             dry:
-                bits: [7, 6, 5, 0]
+                bits: [7, 6, 5, 1, 0]
                 values:
                     0: true
                 description: 'Clear and dry'
             wet:
-                bits: [7, 6, 5, 0]
+                bits: [7, 6, 5, 1, 0]
                 values:
                     128: true
                 description: 'Clear and Wet'
@@ -29,6 +29,12 @@ measurements:
                     0: false
                     1: true
                 description: No data
+            contiguous:
+                bits: 1
+                values:
+                  0: true
+                  1: false
+                description: Contiguity
             sea:
                 bits: 2
                 values:
