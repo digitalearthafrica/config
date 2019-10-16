@@ -37,7 +37,7 @@ measurements:
       nodata: 0
       units: '1'
     - name: 'linci'
-      aliases: [incidence angle, linci, incidence]
+      aliases: [local incidence angle, linci, incidence]
       dtype: uint8
       nodata: 0
       units: '1'
