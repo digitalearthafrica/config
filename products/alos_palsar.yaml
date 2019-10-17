@@ -5,11 +5,11 @@ metadata_type: eo
 storage:
     crs: EPSG:4326
     resolution:
-        lon: 0.000222222222222
-        lat: -0.000222222222222
+        longitude: 0.000222222222222
+        latitude: -0.000222222222222
     tile_size:
-        lon: 5
-        lat: 5
+        longitude: 5
+        latitude: 5
 
 metadata:
     platform:
