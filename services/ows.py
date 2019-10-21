@@ -52,6 +52,11 @@ service_cfg = {
             "horizontal_coord": "x",
             "vertical_coord": "y",
         },
+        "EPSG:6933": { # Cylindrical equal area
+            "geographic": False,
+            "horizontal_coord": "x",
+            "vertical_coord": "y",
+        },
     },
 
     # Required config for WCS
