@@ -148,6 +148,35 @@
                 ]
              },
              {
+               "name": "C2 Water",
+               "type": "group",
+               "preserveOrder": true,
+               "items": [
+                  {
+                      "name": "Summary of water observations (Annual)",
+                      "type": "wms",
+                      "layers": "wofs_2_annual_summary_statistics",
+                      "url": "https://ows.digitalearth.africa/",
+                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                      "linkedWcsCoverage": "wofs_annual_summary_statistics",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureTimesProperty": "data_available_for_dates"
+                   },
+                   {
+                      "name": "Count of wet observations (Annual)",
+                      "type": "wms",
+                      "layers": "wofs_2_annual_summary_wet",
+                      "url": "https://ows.digitalearth.africa/",
+                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                      "linkedWcsCoverage": "wofs_annual_summary_wet",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "featureTimesProperty": "data_available_for_dates"
+                   }
+               ]
+            },
+             {
                 "name": "Forests and vegetation",
                 "type": "group",
                 "preserveOrder": true,
