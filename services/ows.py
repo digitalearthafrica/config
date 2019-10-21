@@ -1921,51 +1921,39 @@ layer_cfg = [
                                 "alpha": 0.0
                             },
                             {
-                                "value": 0.002,
+                                "value": 0.02,
                                 "color": "#000000",
                                 "alpha": 0.0
                             },
                             {
-                                "value": 0.005,
+                                "value": 0.05,
                                 "color": "#8e0101",
                                 "alpha": 0.25
                             },
                             {
-                                "value": 0.01,
+                                "value": 0.1,
                                 "color": "#cf2200",
                                 "alpha": 0.75
                             },
                             {
-                                "value": 0.02,
+                                "value": 0.2,
                                 "color": "#e38400"
                             },
                             {
-                                "value": 0.05,
+                                "value": 0.3,
                                 "color": "#e3df00"
                             },
                             {
-                                "value": 0.1,
+                                "value": 0.4,
                                 "color": "#a6e300"
                             },
                             {
-                                "value": 0.2,
-                                "color": "#62e300"
-                            },
-                            {
-                                "value": 0.3,
+                                "value": 0.5,
                                 "color": "#00e32d"
                             },
                             {
-                                "value": 0.4,
-                                "color": "#00e384"
-                            },
-                            {
-                                "value": 0.5,
-                                "color": "#00e3c8"
-                            },
-                            {
                                 "value": 0.6,
-                                "color": "#00c5e3"
+                                "color": "#00e3c8"
                             },
                             {
                                 "value": 0.7,
