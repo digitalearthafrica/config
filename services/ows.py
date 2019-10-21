@@ -1861,7 +1861,7 @@ layer_cfg = [
                 # Included as a keyword  for the layer
                 "type": "Water Summary",
                 # Included as a keyword  for the layer
-                "variant": "25m",
+                "variant": "30m",
                 # The WMS name for the layer
                 "name": "wofs_2_annual_summary_statistics",
                 # The Datacube name for the associated data product
@@ -2046,7 +2046,7 @@ layer_cfg = [
                 # Included as a keyword  for the layer
                 "type": "Wet Count",
                 # Included as a keyword  for the layer
-                "variant": "25m",
+                "variant": "30m",
                 # The WMS name for the layer
                 "name": "wofs_2_annual_summary_wet",
                 # The Datacube name for the associated data product
