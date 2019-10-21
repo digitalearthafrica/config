@@ -1862,7 +1862,7 @@ layer_cfg = [
         "products": [
             {
                 # Included as a keyword  for the layer
-                "label": "WOfS C2 Statistics",
+                "label": "WOfS C2 Annual Statistics",
                 # Included as a keyword  for the layer
                 "type": "Water Summary",
                 # Included as a keyword  for the layer
@@ -1873,10 +1873,10 @@ layer_cfg = [
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
                 "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
                 the WOfS product which combines WOfS observations into summary products that help the understanding 
-                of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ? 
-                2018). The water detected for each location is summed through time and then compared to the number of 
-                clear observations of that location. The result is a percentage value of the number of times water 
-                was observed at the location. The layers available are: the count of dry observations; the count of 
+                of surface water across Africa. The water detected for each location is summed through time and then 
+                compared to the number of clear observations of that location. 
+                The result is a percentage value of the number of times water 
+                was observed at the location. The layers available are: the count of 
                 wet observations; the percentage of wet observations over time (water summary). 
 
                 This layer contains the Water Summary: the percentage of clear observations which were detected as 
@@ -2047,7 +2047,7 @@ layer_cfg = [
             },
             {
                 # Included as a keyword  for the layer
-                "label": "WOfS C2 Statistics",
+                "label": "WOfS C2 Annual Statistics",
                 # Included as a keyword  for the layer
                 "type": "Wet Count",
                 # Included as a keyword  for the layer
@@ -2058,8 +2058,8 @@ layer_cfg = [
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
                 "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
                 the WOfS product that combines the many years of WOfS observations into summary products which help 
-                the understanding of surface water across Africa.  The layers available are: the count of dry 
-                observations; the count of wet observations; the percentage of wet observations over time. 
+                the understanding of surface water across Africa.  The layers available are: 
+                the count of wet observations; the percentage of wet observations over time. 
 
             This layer contains Wet Count: how many times water was detected in observations that were clear. No 
             clear observations of water causes an area to appear transparent, 1-50 total clear observations of water 
