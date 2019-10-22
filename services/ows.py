@@ -2091,51 +2091,55 @@ layer_cfg = [
                                 "alpha": 0
                             },
                             {
-                                "value": 2,
-                                "color": "#890000"
+                                # purely for legend display
+                                # we should not get fractional
+                                # values in this styles
+                                "value": 0.2,
+                                "color": "#990000",
+                                "alpha": 1
                             },
                             {
-                                "value": 5,
+                                "value": 2,
                                 "color": "#990000"
                             },
                             {
-                                "value": 10,
+                                "value": 2,
+                                "color": "#990000"
+                            },
+                            {
+                                "value": 4,
                                 "color": "#E38400"
                             },
                             {
-                                "value": 25,
+                                "value": 6,
                                 "color": "#E3DF00"
                             },
                             {
-                                "value": 50,
-                                "color": "#A6E300"
-                            },
-                            {
-                                "value": 100,
+                                "value": 8,
                                 "color": "#00E32D"
                             },
                             {
-                                "value": 150,
+                                "value": 10,
                                 "color": "#00E3C8"
                             },
                             {
-                                "value": 200,
+                                "value": 12,
                                 "color": "#0097E3"
                             },
                             {
-                                "value": 250,
+                                "value": 14,
                                 "color": "#005FE3"
                             },
                             {
-                                "value": 300,
+                                "value": 16,
                                 "color": "#000FE3"
                             },
                             {
-                                "value": 350,
+                                "value": 18,
                                 "color": "#000EA9"
                             },
                             {
-                                "value": 400,
+                                "value": 20,
                                 "color": "#5700E3",
                                 "legend": {
                                     "prefix": ">"
@@ -2145,7 +2149,7 @@ layer_cfg = [
                         "legend": {
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100
+                            "major_ticks": 10
                         }
                     }
                 ],
