@@ -1889,7 +1889,7 @@ layer_cfg = [
                 interpret on its own. The confidence layer and filtered summary are contained in the Water 
                 Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of 
                 the water summary.""",
-                "min_zoom_factor": 15.0,
+                "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
                 "zoomed_out_fill_colour": [150, 180, 200, 160],
@@ -2071,7 +2071,7 @@ layer_cfg = [
             have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The 
             confidence layer and filtered summary are contained in the Water Observations from Space Statistics 
             Filtered Summary product, which provide a noise-reduced view of the water summary.""",
-                "min_zoom_factor": 15.0,
+                "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
                 "zoomed_out_fill_colour": [150, 180, 200, 160],
