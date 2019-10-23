@@ -1921,51 +1921,39 @@ layer_cfg = [
                                 "alpha": 0.0
                             },
                             {
-                                "value": 0.002,
+                                "value": 0.02,
                                 "color": "#000000",
                                 "alpha": 0.0
                             },
                             {
-                                "value": 0.005,
+                                "value": 0.05,
                                 "color": "#8e0101",
                                 "alpha": 0.25
                             },
                             {
-                                "value": 0.01,
+                                "value": 0.1,
                                 "color": "#cf2200",
                                 "alpha": 0.75
                             },
                             {
-                                "value": 0.02,
+                                "value": 0.2,
                                 "color": "#e38400"
                             },
                             {
-                                "value": 0.05,
+                                "value": 0.3,
                                 "color": "#e3df00"
                             },
                             {
-                                "value": 0.1,
+                                "value": 0.4,
                                 "color": "#a6e300"
                             },
                             {
-                                "value": 0.2,
-                                "color": "#62e300"
-                            },
-                            {
-                                "value": 0.3,
+                                "value": 0.5,
                                 "color": "#00e32d"
                             },
                             {
-                                "value": 0.4,
-                                "color": "#00e384"
-                            },
-                            {
-                                "value": 0.5,
-                                "color": "#00e3c8"
-                            },
-                            {
                                 "value": 0.6,
-                                "color": "#00c5e3"
+                                "color": "#00e3c8"
                             },
                             {
                                 "value": 0.7,
@@ -2103,51 +2091,55 @@ layer_cfg = [
                                 "alpha": 0
                             },
                             {
-                                "value": 2,
-                                "color": "#890000"
+                                # purely for legend display
+                                # we should not get fractional
+                                # values in this styles
+                                "value": 0.2,
+                                "color": "#990000",
+                                "alpha": 1
                             },
                             {
-                                "value": 5,
+                                "value": 2,
                                 "color": "#990000"
                             },
                             {
-                                "value": 10,
+                                "value": 2,
+                                "color": "#990000"
+                            },
+                            {
+                                "value": 4,
                                 "color": "#E38400"
                             },
                             {
-                                "value": 25,
+                                "value": 6,
                                 "color": "#E3DF00"
                             },
                             {
-                                "value": 50,
-                                "color": "#A6E300"
-                            },
-                            {
-                                "value": 100,
+                                "value": 8,
                                 "color": "#00E32D"
                             },
                             {
-                                "value": 150,
+                                "value": 10,
                                 "color": "#00E3C8"
                             },
                             {
-                                "value": 200,
+                                "value": 12,
                                 "color": "#0097E3"
                             },
                             {
-                                "value": 250,
+                                "value": 14,
                                 "color": "#005FE3"
                             },
                             {
-                                "value": 300,
+                                "value": 16,
                                 "color": "#000FE3"
                             },
                             {
-                                "value": 350,
+                                "value": 18,
                                 "color": "#000EA9"
                             },
                             {
-                                "value": 400,
+                                "value": 20,
                                 "color": "#5700E3",
                                 "legend": {
                                     "prefix": ">"
@@ -2157,7 +2149,7 @@ layer_cfg = [
                         "legend": {
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100
+                            "major_ticks": 10
                         }
                     }
                 ],
