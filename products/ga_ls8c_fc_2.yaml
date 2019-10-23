@@ -1,0 +1,34 @@
+name:  ga_ls8c_wofs_2
+description: Landsat Fractional Cover based on USGS Scenes
+metadata_type: eo3_landsat_ard
+
+metadata:
+    name: ga_ls8c_fc_2
+  product_type: fractional_cover
+
+measurements:
+  - name: BS
+    aliases:
+      - bare
+    dtype: int16
+    nodata: -1
+    units: percent
+  - name: PV
+    aliases:
+      - green_veg
+    dtype: int16
+    nodata: -1
+    units: percent
+  - name: NPV
+    aliases:
+      - dead_veg
+    dtype: int16
+    nodata: -1
+    units: percent
+  - name: UE
+    aliases:
+      - err
+    dtype: int16
+    nodata: -1
+    units: '1'
+
