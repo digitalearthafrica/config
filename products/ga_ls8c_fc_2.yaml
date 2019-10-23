@@ -1,10 +1,11 @@
-name:  ga_ls8c_wofs_2
+name:  ga_ls8c_fc_2
 description: Landsat Fractional Cover based on USGS Scenes
-metadata_type: eo3_landsat_ard
+
 
 metadata:
-    name: ga_ls8c_fc_2
-  product_type: fractional_cover
+    product
+	name: ga_ls8c_fc_2
+    	href: https://collections.dea.ga.gov.au/product/ga_ls8c_fc_2
 
 measurements:
   - name: BS
