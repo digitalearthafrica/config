@@ -2274,4 +2274,150 @@ layer_cfg = [
             }
         ]
     },
+    {
+        # Name and title of the platform layer.
+        # Platform layers are not mappable. The name is for internal server use only.
+        "name": "ALOS/PALSAR Mosaic",
+        "title": "ALOS/PALSAR",
+        "abstract": "Annual mosaic of ALOS/PALSAR and ALOS-2/PALSAR-2 data",
+
+        # Products available for this platform.
+        # For each product, the "name" is the Datacube name, and the label is used
+        # to describe the label to end-users.
+        "products": [
+            {
+                # Included as a keyword  for the layer
+                "label": "JAXA",
+                # Included as a keyword  for the layer
+                "type": "Synthetic aperture radar",
+                # Included as a keyword  for the layer
+                "variant": "",
+                "abstract": """The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset
+                that combines data from many images captured by JAXA's PALSAR and PALSAR two sensors on 
+                ALOS-1 and ALOS-2 satellites respectively. For more information, see: 
+                https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/DatasetDescription_PALSAR2_Mosaic_FNF_revH.pdf""",
+                # The WMS name for the layer
+                "name": "alos_palsar_mosaic",
+                # The Datacube name for the associated data product
+                # "multi_product": False,
+                "product_name": "alos_palsar_mosaic",
+                # The Datacube name for the associated pixel-quality product (optional)
+                # The name of the associated Datacube pixel-quality product
+                "pq_dataset": "alos_palsar_mosaic",
+                # The name of the measurement band for the pixel-quality product
+                # (Only required if pq_dataset is set)
+                "pq_band": "mask",
+                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
+                # to actual imagery occurs.
+                "min_zoom_factor": 10.0,
+                # The fill-colour of the indicative polygons when zoomed out.
+                # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
+                "zoomed_out_fill_colour": [150, 180, 200, 160],
+                # Time Zone.  In hours added to UTC (maybe negative)
+                # Used for rounding off scene times to a date.
+                # Central Africa Timezone (UTC+2).
+                "time_zone": 2,
+                # Extent mask function
+                # Determines what portions of dataset is potentially meaningful data.
+                "extent_mask_func": lambda data, band: (data[band] != data[band].attrs['nodata']),
+                # Flags listed here are ignored in GetFeatureInfo requests.
+                # (defaults to empty list)
+                "ignore_info_flags": [],
+                "legend": {
+                    "styles": ["HH", "HV"]
+                    # "url": "",
+                },
+                "wcs_default_bands": ["HH", "HV", "mask"],
+                "styles": [
+                    {
+                        "name": "HH",
+                        "title": "HH",
+                        "abstract": "HH band",
+                        "needed_bands": ["HH"],
+                        "color_ramp": [
+                            {
+                                "value": 0,
+                                "color": "#f7fcf5",
+                                "alpha": 0
+                            },
+                            {
+                                "value": 600,
+                                "color": "#d5efcf"
+                            },
+                            {
+                                "value": 900,
+                                "color": "#9ed898"
+                            },
+                            {
+                                "value": 1500,
+                                "color": "#54b567"
+                            },
+                            {
+                                "value": 2000,
+                                "color": "#1d8641"
+                            },
+                            {
+                                "value": 15000,
+                                "color": "#00441b",
+                                "legend": {
+                                    "prefix": ">"
+                                }
+                            }
+                        ],
+                        "legend": {
+                            "radix_point": 0,
+                            "scale_by": 1,
+                            "major_ticks": 100
+                        }
+                    },
+                    {
+                        "name": "HV",
+                        "title": "HV",
+                        "abstract": "HV band",
+                        "needed_bands": ["HV"],
+                        "color_ramp": [
+                            {
+                                "value": 0,
+                                "color": "#f7fcf5",
+                                "alpha": 0
+                            },
+                            {
+                                "value": 600,
+                                "color": "#d5efcf"
+                            },
+                            {
+                                "value": 900,
+                                "color": "#9ed898"
+                            },
+                            {
+                                "value": 1500,
+                                "color": "#54b567"
+                            },
+                            {
+                                "value": 2000,
+                                "color": "#1d8641"
+                            },
+                            {
+                                "value": 15000,
+                                "color": "#00441b",
+                                "legend": {
+                                    "prefix": ">"
+                                }
+                            }
+                        ],
+                        "legend": {
+                            "radix_point": 0,
+                            "scale_by": 1,
+                            "major_ticks": 100
+                        }
+                    }
+                ],
+                # Default style (if request does not specify style)
+                # MUST be defined in the styles list above.
+                # (Looks like Terria assumes this is the first style in the list, but this is not required
+                # by the standard.)
+                "default_style": "HH",
+            }
+        ]
+    }
 ]
