@@ -3,9 +3,9 @@ description: Landsat Fractional Cover based on USGS Scenes
 
 
 metadata:
-    product
-	name: ga_ls8c_fc_2
-    	href: https://collections.dea.ga.gov.au/product/ga_ls8c_fc_2
+    product:
+        name: ga_ls8c_fc_2
+        href: https://collections.dea.ga.gov.au/product/ga_ls8c_fc_2
 
 measurements:
   - name: BS
