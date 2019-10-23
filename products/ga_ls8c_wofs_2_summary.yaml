@@ -1,0 +1,36 @@
+name: ga_ls8c_wofs_2_summary
+description: Water Observations from Space Full History Statistics
+metadata_type: eo3
+
+metadata:
+  product:
+    name: ga_ls8c_wofs_2_summary
+
+storage:
+    crs: EPSG:6933
+    resolution:
+        x: 30
+        y: -30
+    tile_size:
+        x: 150000.0
+        y: 150000.0
+
+measurements:
+- name: count_wet
+  aliases:
+  - wet
+  dtype: int16
+  nodata: -1
+  units: '1'
+- name: count_clear
+  aliases:
+  - clear
+  dtype: int16
+  nodata: -1
+  units: '1'
+- name: frequency
+  aliases:
+  - freq
+  dtype: float32
+  nodata: .nan
+  units: '1'
