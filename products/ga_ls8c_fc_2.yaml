@@ -23,7 +23,7 @@ measurements:
     units: percent
   - name: npv
     aliases:
-      - dead_veg
+      - dry_veg
     dtype: int16
     nodata: -1
     units: percent
