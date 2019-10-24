@@ -9,25 +9,25 @@ metadata:
 
 
 measurements:
-  - name: BS
+  - name: bs
     aliases:
       - bare
     dtype: int16
     nodata: -1
     units: percent
-  - name: PV
+  - name: pv
     aliases:
       - green_veg
     dtype: int16
     nodata: -1
     units: percent
-  - name: NPV
+  - name: npv
     aliases:
       - dead_veg
     dtype: int16
     nodata: -1
     units: percent
-  - name: UE
+  - name: ue
     aliases:
       - err
     dtype: int16
