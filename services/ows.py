@@ -128,7 +128,7 @@ service_cfg = {
     # extent covering much of Africa for all
     # temporal extents
     # False by default (calculate spatial extents)
-    "use_default_extent": True,
+    "use_default_extent": False,
     # If using GeoTIFFs as storage
     # this will set the rasterio env
     # GDAL Config for GTiff Georeferencing
