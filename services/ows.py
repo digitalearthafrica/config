@@ -1430,6 +1430,8 @@ layer_cfg = [
                 "name": "wofs_annual_summary_statistics",
                 # The Datacube name for the associated data product
                 "product_name": "ls_usgs_wofs_summary",
+                # required to support eo3 metadata format
+                "time_resolution": "year",
                 "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
                 the WOfS product which combines WOfS observations into summary products that help the understanding 
                 of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ? 
@@ -1615,6 +1617,8 @@ layer_cfg = [
                 "name": "wofs_annual_summary_wet",
                 # The Datacube name for the associated data product
                 "product_name": "ls_usgs_wofs_summary",
+                # required to support eo3 metadata format
+                "time_resolution": "year",
                 "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
                 the WOfS product that combines the many years of WOfS observations into summary products which help 
                 the understanding of surface water across Africa.  The layers available are: the count of dry 
@@ -1738,6 +1742,8 @@ layer_cfg = [
                 "name": "wofs_annual_summary_dry",
                 # The Datacube name for the associated data product
                 "product_name": "ls_usgs_wofs_summary",
+                # required to support eo3 metadata format
+                "time_resolution": "year",
                 "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
                 the WOfS product that combines the many years of WOfS observations into summary products which help 
                 the understanding of surface water across Africa.  The layers available are: the count of dry 
@@ -1871,6 +1877,8 @@ layer_cfg = [
                 "name": "wofs_2_annual_summary_statistics",
                 # The Datacube name for the associated data product
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
+                # required to support eo3 metadata format
+                "time_resolution": "year",
                 "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
                 the WOfS product which combines WOfS observations into summary products that help the understanding 
                 of surface water across Africa. The water detected for each location is summed through time and then 
@@ -2044,6 +2052,8 @@ layer_cfg = [
                 "name": "wofs_2_annual_summary_wet",
                 # The Datacube name for the associated data product
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
+                # required to support eo3 metadata format
+                "time_resolution": "year",
                 "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
                 the WOfS product that combines the many years of WOfS observations into summary products which help 
                 the understanding of surface water across Africa.  The layers available are: 
