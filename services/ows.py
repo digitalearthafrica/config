@@ -2412,24 +2412,24 @@ layer_cfg = [
                         }
                     },
                     {
-                        "name": "alexs_magic_blue",
+                        "name": "hh_hv_hh_over_hv",
                         "title": "HH, HV and HH/HV",
                         "abstract": "False colour representation of HH, HV and HH over HV for R, G and B respectively",
-                        # Mixing ration between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
+                        # Mixing ratio between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
                         "component_ratio": 0.5,
                         "index_function": lambda data: (data["hh"] / data["hv"]),
                         "needed_bands": ["hh", "hv"],
                         "range": [0.01, 2.0],
                         "components": {
-                             "red": {
-                                  "hh": 1.0
-                              },
-                             "green": {
-                                  "hv": 1.0
-                              },
-                             "blue": {
-                                  "hh": 0.0
-                              }
+                            "red": {
+                                "hh": 1.0
+                            },
+                            "green": {
+                                "hv": 1.0
+                            },
+                            "blue": {
+                                "hh": 0.0
+                            }
                         },
                         "scale_range": [0.0, 5000.0],
                         "color_ramp": [
@@ -2438,14 +2438,43 @@ layer_cfg = [
                                 "color": "#000000",
                             },
                             {
-                                "value": 10.0,
-                                "color": "#0000ff",
-                                "legend": {
-                                    "prefix": ">"
-                                }
+                                "value": 6.0,
+                                "color": "#0000ff"
                             }
                         ],
-                     },
+                    },,
+                    {
+                        "name": "hh_hv_hv_over_hh",
+                        "title": "HH, HV and HV/HH",
+                        "abstract": "False colour representation of HH, HV and HV over HH for R, G and B respectively",
+                        # Mixing ratio between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
+                        "component_ratio": 0.5,
+                        "index_function": lambda data: (data["hh"] / data["hv"]),
+                        "needed_bands": ["hh", "hv"],
+                        "range": [0.01, 2.0],
+                        "components": {
+                            "red": {
+                                "hh": 1.0
+                            },
+                            "green": {
+                                "hv": 1.0
+                            },
+                            "blue": {
+                                "hh": 0.0
+                            }
+                        },
+                        "scale_range": [0.0, 5000.0],
+                        "color_ramp": [
+                            {
+                                "value": 0.0,
+                                "color": "#000000",
+                            },
+                            {
+                                "value": 0.6,
+                                "color": "#0000ff"
+                            }
+                        ],
+                    },
                 ],
                 # Default style (if request does not specify style)
                 # MUST be defined in the styles list above.
