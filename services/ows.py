@@ -2412,7 +2412,7 @@ layer_cfg = [
                         }
                     },
                     {
-                        "name": "alexs_magic_blue",
+                        "name": "hh_hv_hh_over_hv",
                         "title": "HH, HV and HH/HV",
                         "abstract": "False colour representation of HH, HV and HH over HV for R, G and B respectively",
                         # Mixing ration between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
