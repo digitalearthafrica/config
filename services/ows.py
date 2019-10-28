@@ -2324,16 +2324,57 @@ layer_cfg = [
                 # (defaults to empty list)
                 "ignore_info_flags": [],
                 "legend": {
-                    "styles": ["HH", "HV"]
+                    "styles": ["hh", "hv"]
                     # "url": "",
                 },
-                "wcs_default_bands": ["HH", "HV", "mask"],
+                "wcs_default_bands": ["hh", "hv", "mask"],
                 "styles": [
                     {
-                        "name": "HH",
-                        "title": "HH",
+                        "name": "hh",
+                        "title": "hh",
                         "abstract": "HH band",
-                        "needed_bands": ["HH"],
+                        "needed_bands": ["hh"],
+                        "color_ramp": [
+                            {
+                                "value": 0,
+                                "color": "#0061b0",
+                                "alpha": 0
+                            },
+                            {
+                                "value": 600,
+                                "color": "#d5efcf"
+                            },
+                            {
+                                "value": 900,
+                                "color": "#9ed898"
+                            },
+                            {
+                                "value": 1500,
+                                "color": "#54b567"
+                            },
+                            {
+                                "value": 2000,
+                                "color": "#1d8641"
+                            },
+                            {
+                                "value": 15000,
+                                "color": "#00441b",
+                                "legend": {
+                                    "prefix": ">"
+                                }
+                            }
+                        ],
+                        "legend": {
+                            "radix_point": 0,
+                            "scale_by": 1,
+                            "major_ticks": 100
+                        }
+                    },
+                    {
+                        "name": "hv",
+                        "title": "hv",
+                        "abstract": "hv band",
+                        "needed_bands": ["hv"],
                         "color_ramp": [
                             {
                                 "value": 0,
@@ -2371,52 +2412,46 @@ layer_cfg = [
                         }
                     },
                     {
-                        "name": "HV",
-                        "title": "HV",
-                        "abstract": "HV band",
-                        "needed_bands": ["HV"],
+                        "name": "alexs_magic_blue",
+                        "title": "RGB plus quotient",
+                        "abstract": "Weird thing Alex asked about",
+                        # Mixing ration between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
+                        "component_ratio": 0.5,
+                        "index_function": lambda data: (data["hh"] / data["hv"]),
+                        "needed_bands": ["hh", "hv"],
+                        "range": [0.01, 2.0],
+                        "components": {
+                             "red": {
+                                  "hh": 1.0
+                              },
+                             "green": {
+                                  "hv": 1.0
+                              },
+                             "blue": {
+                                  "hh": 0.0
+                              }
+                        },
+                        "scale_range": [0.0, 5000.0],
                         "color_ramp": [
                             {
-                                "value": 0,
-                                "color": "#f7fcf5",
-                                "alpha": 0
+                                "value": 0.0,
+                                "color": "#000000",
                             },
                             {
-                                "value": 600,
-                                "color": "#d5efcf"
-                            },
-                            {
-                                "value": 900,
-                                "color": "#9ed898"
-                            },
-                            {
-                                "value": 1500,
-                                "color": "#54b567"
-                            },
-                            {
-                                "value": 2000,
-                                "color": "#1d8641"
-                            },
-                            {
-                                "value": 15000,
-                                "color": "#00441b",
+                                "value": 10.0,
+                                "color": "#0000ff",
                                 "legend": {
                                     "prefix": ">"
                                 }
                             }
                         ],
-                        "legend": {
-                            "radix_point": 0,
-                            "scale_by": 1,
-                            "major_ticks": 100
-                        }
-                    }
+                     },
                 ],
                 # Default style (if request does not specify style)
                 # MUST be defined in the styles list above.
                 # (Looks like Terria assumes this is the first style in the list, but this is not required
                 # by the standard.)
-                "default_style": "HH",
+                "default_style": "hh",
             }
         ]
     }
