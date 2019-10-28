@@ -2331,7 +2331,7 @@ layer_cfg = [
                 "styles": [
                     {
                         "name": "hh",
-                        "title": "hh",
+                        "title": "HH",
                         "abstract": "HH band",
                         "needed_bands": ["hh"],
                         "color_ramp": [
@@ -2372,8 +2372,8 @@ layer_cfg = [
                     },
                     {
                         "name": "hv",
-                        "title": "hv",
-                        "abstract": "hv band",
+                        "title": "HV",
+                        "abstract": "HV band",
                         "needed_bands": ["hv"],
                         "color_ramp": [
                             {
@@ -2413,8 +2413,8 @@ layer_cfg = [
                     },
                     {
                         "name": "alexs_magic_blue",
-                        "title": "RGB plus quotient",
-                        "abstract": "Weird thing Alex asked about",
+                        "title": "HH, HV and HH/HV",
+                        "abstract": "False colour representation of HH, HV and HH over HV for R, G and B respectively",
                         # Mixing ration between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
                         "component_ratio": 0.5,
                         "index_function": lambda data: (data["hh"] / data["hv"]),
