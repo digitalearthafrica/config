@@ -2748,7 +2748,7 @@ layer_cfg = [
                                 "color": "#0000ff"
                             }
                         ],
-                    },,
+                    },
                     {
                         "name": "hh_hv_hv_over_hh",
                         "title": "HH, HV and HV/HH",
