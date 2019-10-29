@@ -116,129 +116,129 @@
                      ]
                   }
                ]
-            },
+            }
+         ]
+      },
+      {
+         "name": "DE Africa Products",
+         "type": "group",
+         "preserveOrder": true,
+         "items": [
             {
-               "name": "DE Africa Products",
+               "name": "Water",
                "type": "group",
                "preserveOrder": true,
                "items": [
                   {
-                     "name": "Water",
-                     "type": "group",
-                     "preserveOrder": true,
-                     "items": [
-                        {
-                           "name": "Individual water observations",
-                           "type": "wms",
-                           "layers": "ls_usgs_wofs_scene",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "ls_usgs_wofs_scene",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1,
-                           "featureTimesProperty": "data_available_for_dates"
-                        },
-                        {
-                           "name": "Summary of water observations (Annual)",
-                           "type": "wms",
-                           "layers": "wofs_annual_summary_statistics",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "wofs_annual_summary_statistics",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1,
-                           "featureTimesProperty": "data_available_for_dates"
-                        },
-                        {
-                           "name": "Count of dry observations (Annual)",
-                           "type": "wms",
-                           "layers": "wofs_annual_summary_dry",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "wofs_annual_summary_dry",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1,
-                           "featureTimesProperty": "data_available_for_dates"
-                        },
-                        {
-                           "name": "Count of wet observations (Annual)",
-                           "type": "wms",
-                           "layers": "wofs_annual_summary_wet",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "wofs_annual_summary_wet",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1,
-                           "featureTimesProperty": "data_available_for_dates"
-                        }
-                     ]
+                     "name": "Individual water observations",
+                     "type": "wms",
+                     "layers": "ls_usgs_wofs_scene",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "ls_usgs_wofs_scene",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
                   },
                   {
-                     "name": "C2 Water",
-                     "type": "group",
-                     "preserveOrder": true,
-                     "items": [
-                        {
-                           "name": "Summary of water observations (Annual)",
-                           "type": "wms",
-                           "layers": "wofs_2_annual_summary_statistics",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "wofs_2_annual_summary_statistics",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1,
-                           "featureTimesProperty": "data_available_for_dates"
-                        },
-                        {
-                           "name": "Count of wet observations (Annual)",
-                           "type": "wms",
-                           "layers": "wofs_2_annual_summary_wet",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "wofs_2_annual_summary_wet",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1,
-                           "featureTimesProperty": "data_available_for_dates"
-                        },
-                        {
-                           "name": "Summary of water observations (All Time)",
-                           "type": "wms",
-                           "layers": "wofs_2_summary_statistics",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "wofs_2_summary_statistics",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1
-                        },
-                        {
-                           "name": "Count of wet observations (All Time)",
-                           "type": "wms",
-                           "layers": "wofs_2_summary_wet",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "wofs_2_summary_wet",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1
-                        }
-                     ]
+                     "name": "Summary of water observations (Annual)",
+                     "type": "wms",
+                     "layers": "wofs_annual_summary_statistics",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_annual_summary_statistics",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
                   },
                   {
-                     "name": "Forests and vegetation",
-                     "type": "group",
-                     "preserveOrder": true,
-                     "items": [
-                        {
-                           "name": "Individual fractional cover observations",
-                           "type": "wms",
-                           "layers": "ls_usgs_fc_scene",
-                           "url": "https://ows.digitalearth.africa/",
-                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                           "linkedWcsCoverage": "ls_usgs_fc_scene",
-                           "ignoreUnknownTileErrors": true,
-                           "opacity": 1,
-                           "featureTimesProperty": "data_available_for_dates"
-                        }
-                     ]
+                     "name": "Count of dry observations (Annual)",
+                     "type": "wms",
+                     "layers": "wofs_annual_summary_dry",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_annual_summary_dry",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
+                  },
+                  {
+                     "name": "Count of wet observations (Annual)",
+                     "type": "wms",
+                     "layers": "wofs_annual_summary_wet",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_annual_summary_wet",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
+                  }
+               ]
+            },
+            {
+               "name": "C2 Water",
+               "type": "group",
+               "preserveOrder": true,
+               "items": [
+                  {
+                     "name": "Summary of water observations (Annual)",
+                     "type": "wms",
+                     "layers": "wofs_2_annual_summary_statistics",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_2_annual_summary_statistics",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
+                  },
+                  {
+                     "name": "Count of wet observations (Annual)",
+                     "type": "wms",
+                     "layers": "wofs_2_annual_summary_wet",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_2_annual_summary_wet",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
+                  },
+                  {
+                     "name": "Summary of water observations (All Time)",
+                     "type": "wms",
+                     "layers": "wofs_2_summary_statistics",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_2_summary_statistics",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1
+                  },
+                  {
+                     "name": "Count of wet observations (All Time)",
+                     "type": "wms",
+                     "layers": "wofs_2_summary_wet",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_2_summary_wet",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1
+                  }
+               ]
+            },
+            {
+               "name": "Forests and vegetation",
+               "type": "group",
+               "preserveOrder": true,
+               "items": [
+                  {
+                     "name": "Individual fractional cover observations",
+                     "type": "wms",
+                     "layers": "ls_usgs_fc_scene",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "ls_usgs_fc_scene",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
                   }
                ]
             }
