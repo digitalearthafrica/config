@@ -2607,6 +2607,8 @@ layer_cfg = [
                 # The Datacube name for the associated data product
                 # "multi_product": False,
                 "product_name": "alos_palsar_mosaic",
+                # fix prime meridian and equator issues
+                "time_resolution": "year",
                 # The Datacube name for the associated pixel-quality product (optional)
                 # The name of the associated Datacube pixel-quality product
                 "pq_dataset": "alos_palsar_mosaic",
