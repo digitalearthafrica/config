@@ -93,26 +93,28 @@
                   "preserveOrder": true,
                   "items": [
                      {
-                      "name": "ALOS/PALSAR Annual Mosaic",
-                      "type": "wms",
-                      "layers": "alos_palsar_mosaic",
-                      "url": "https://ows.digitalearth.africa/",
-                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                      "linkedWcsCoverage": "alos_palsar_mosaic",
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1,
-                      "featureTimesProperty": "data_available_for_dates",
-                      "featureInfoTemplate": {
-                         "formats": {
-                            "lat": {
-                               "maximumFractionDigits": 2
-                            },
-                            "lon": {
-                               "maximumFractionDigits": 2
-                            }
-                         }
-                      }
-                   }
+                        "name": "ALOS/PALSAR Annual Mosaic",
+                        "type": "wms",
+                        "layers": "alos_palsar_mosaic",
+                        "url": "https://ows.digitalearth.africa/",
+                        "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                        "linkedWcsCoverage": "alos_palsar_mosaic",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1,
+                        "featureTimesProperty": "data_available_for_dates",
+                        "featureInfoTemplate": {
+                           "formats": {
+                              "lat": {
+                                 "maximumFractionDigits": 2
+                              },
+                              "lon": {
+                                 "maximumFractionDigits": 2
+                              }
+                           }
+                        }
+                     }
+                  ]
+                 }
                 ]
              }
           ]
