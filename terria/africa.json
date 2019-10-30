@@ -172,6 +172,17 @@
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
                      "featureTimesProperty": "data_available_for_dates"
+                  },
+                  {
+                     "name": "Summary of Clear Observations (Annual)",
+                     "type": "wms",
+                     "layers": "wofs_annual_summary_clear",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_annual_summary_clear",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
                   }
                ]
             },
@@ -203,6 +214,17 @@
                      "featureTimesProperty": "data_available_for_dates"
                   },
                   {
+                     "name": "Count of Clear Observations (Annual)",
+                     "type": "wms",
+                     "layers": "wofs_2_annual_summary_clear",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_2_annual_summary_clear",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
+                  },
+                  {
                      "name": "Summary of Water Observations (All Time)",
                      "type": "wms",
                      "layers": "wofs_2_summary_statistics",
@@ -219,6 +241,16 @@
                      "url": "https://ows.digitalearth.africa/",
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "wofs_2_summary_wet",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1
+                  },
+                  {
+                     "name": "Count of Clear Observations (All Time)",
+                     "type": "wms",
+                     "layers": "wofs_2_summary_clear",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "wofs_2_summary_clear",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1
                   }
