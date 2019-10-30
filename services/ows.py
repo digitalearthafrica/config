@@ -2791,5 +2791,181 @@ layer_cfg = [
                 "default_style": "hh",
             }
         ]
+    },
+        {
+        # Name and title of the platform layer.
+        # Platform layers are not mappable. The name is for internal server use only.
+        "name": "SRTM",
+        "title": "Shuttle Radar Topography Mission",
+        "abstract": "Digital elevation model from NASA's SRTM",
+
+        # Products available for this platform.
+        # For each product, the "name" is the Datacube name, and the label is used
+        # to describe the label to end-users.
+        "products": [
+            {
+                # Included as a keyword  for the layer
+                "label": "NASA",
+                # Included as a keyword  for the layer
+                "type": "Digital elevation model",
+                # Included as a keyword  for the layer
+                "variant": "",
+                "abstract": """NASA has released version 2 of the Shuttle Radar Topography Mission 
+                digital topographic data (also known as the "finished" version). Version 2 is the 
+                result of a substantial editing effort by the National Geospatial Intelligence Agency 
+                and exhibits well-defined water bodies and coastlines and the absence of spikes and 
+                wells (single pixel errors), although some areas of missing data ('voids') are still 
+                present. The Version 2 directory also contains the vector coastline mask derived by
+                 NGA during the editing, called the SRTM Water Body Data (SWBD), in ESRI Shapefile 
+                 format. For more information, see: https://www2.jpl.nasa.gov/srtm/""",
+                # The WMS name for the layer
+                "name": "srtm",
+                # The Datacube name for the associated data product
+                # "multi_product": False,
+                "product_name": "srtm",
+                # fix prime meridian and equator issues
+                "time_resolution": "year",
+                # The Datacube name for the associated pixel-quality product (optional)
+                # The name of the associated Datacube pixel-quality product
+                #"pq_dataset": "srtm",
+                # The name of the measurement band for the pixel-quality product
+                # (Only required if pq_dataset is set)
+                #"pq_band": "elevation",
+                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
+                # to actual imagery occurs.
+                "min_zoom_factor": 10.0,
+                # The fill-colour of the indicative polygons when zoomed out.
+                # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
+                "zoomed_out_fill_colour": [150, 180, 200, 160],
+                # Time Zone.  In hours added to UTC (maybe negative)
+                # Used for rounding off scene times to a date.
+                # Central Africa Timezone (UTC+2).
+                "time_zone": 2,
+                # Extent mask function
+                # Determines what portions of dataset is potentially meaningful data.
+                "extent_mask_func": lambda data, band: (data[band] != data[band].attrs['nodata']),
+                # Flags listed here are ignored in GetFeatureInfo requests.
+                # (defaults to empty list)
+                "ignore_info_flags": [],
+                "legend": {
+                    "styles": ["greyscale", "colours"]
+                    # "url": "",
+                },
+                "wcs_default_bands": ["elevation"],
+                "styles": [
+                    {
+                        "name": "greyscale",
+                        "title": "Greyscale",
+                        "abstract": "Greyscale elevation",
+                        "needed_bands": ["elevation"],
+                        "color_ramp": [
+                            {
+                                "value": -0,
+                                "color": "#383838",
+                                "alpha": 0.0
+                            },
+                            {
+                                "value": 0,
+                                "color": "#383838"
+                            },
+                            {
+                                "value": 250,
+                                "color": "#5e5e5e"
+                            },
+                            {
+                                "value": 500,
+                                "color": "#858585"
+                            },
+                            {
+                                "value": 1000,
+                                "color": "#adadad"
+                            },
+                            {
+                                "value": 2000,
+                                "color": "#d4d4d4"
+                            },
+                            {
+                                "value": 4000,
+                                "color": "#fafafa",
+                                "legend": {
+                                    "prefix": ">"
+                                }
+                            }
+                        ],
+                        "legend": {
+                            "radix_point": 0,
+                            "scale_by": 1,
+                            "major_ticks": 100
+                        }
+                    },
+                    {
+                        "name": "colours",
+                        "title": "Coloured",
+                        "abstract": "Coloured elevation",
+                        "needed_bands": ["elevation"],
+                        "color_ramp": [
+                            {
+                                "value": -0,
+                                "color": "#ebf5ff",
+                                "alpha": 0.0
+                            },
+                            {
+                                "value": 0,
+                                "color": "#ebf5ff"
+                            },
+                            {
+                                "value": 0.1,
+                                "color": "#41c23c"
+                            },
+                            {
+                                "value": 200,
+                                "color": "#f9a80e"
+                            },
+                            {
+                                "value": 750,
+                                "color": "#cb5f3e"
+                            },
+                            {
+                                "value": 1500,
+                                "color": "#9d387d"
+                            },
+                            {
+                                "value": 2000,
+                                "color": "#ba6daa"
+                            },
+                            {
+                                "value": 2500,
+                                "color": "#ba6daa"
+                            },
+                            {
+                                "value": 3000,
+                                "color": "#d7a2d6"
+                            },
+                            {
+                                "value": 4000,
+                                "color": "#e6c8e6"
+                            },
+                            {
+                                "value": 4500,
+                                "color": "#e6c8e6",
+                                "legend": {
+                                    "prefix": ">"
+                                }
+                            }
+                        ],
+                        "legend": {
+                            "radix_point": 0,
+                            "scale_by": 1,
+                            "major_ticks": 100
+                        }
+                    },
+                ],
+                # Default style (if request does not specify style)
+                # MUST be defined in the styles list above.
+                # (Looks like Terria assumes this is the first style in the list, but this is not required
+                # by the standard.)
+                "default_style": "greyscale",
+            }
+        ]
     }
 ]
