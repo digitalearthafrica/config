@@ -262,8 +262,7 @@
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "srtm",
                      "ignoreUnknownTileErrors": true,
-                     "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "opacity": 1
                   }
                ]
             }
