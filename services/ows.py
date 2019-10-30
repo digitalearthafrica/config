@@ -162,9 +162,9 @@ layer_cfg = [
                 # The Datacube name for the associated data product
                 "product_name": "ls8_usgs_sr_scene",
                 "bands": {
-                    "blue": ["blue"],
-                    "green": ["green"],
-                    "red": ["red"],
+                    "blue": [],
+                    "green": [],
+                    "red": [],
                     "nir": ["near_infrared"],
                     "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
                     "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"]
@@ -528,9 +528,9 @@ layer_cfg = [
                 # The Datacube name for the associated data product
                 "product_name": "ls7_usgs_sr_scene",
                 "bands": {
-                    "blue": ["blue"],
-                    "green": ["green"],
-                    "red": ["red"],
+                    "blue": [],
+                    "green": [],
+                    "red": [],
                     "nir": ["near_infrared"],
                     "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
                     "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"]
@@ -893,9 +893,9 @@ layer_cfg = [
                 # The Datacube name for the associated data product
                 "product_name": "ls5_usgs_sr_scene",
                 "bands": {
-                    "blue": ["blue"],
-                    "green": ["green"],
-                    "red": ["red"],
+                    "blue": [],
+                    "green": [],
+                    "red": [],
                     "nir": ["near_infrared"],
                     "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
                     "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"]
