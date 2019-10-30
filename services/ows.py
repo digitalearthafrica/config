@@ -1854,8 +1854,7 @@ layer_cfg = [
                 #  not required by the standard.)
                 "default_style": "dry_observations",
             },
-            },
-                        {
+            {
                 # Included as a keyword  for the layer
                 "label": "WOfS Statistics",
                 # Included as a keyword  for the layer
