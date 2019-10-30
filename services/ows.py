@@ -38,6 +38,11 @@ service_cfg = {
             "horizontal_coord": "x",
             "vertical_coord": "y",
         },
+        "EPSG:3577": {  # GDA-94, Australian Albers. Not sure why, but it's require!
+            "geographic": False,
+            "horizontal_coord": "x",
+            "vertical_coord": "y",
+        },
         "EPSG:4326": {  # WGS-84
             "geographic": True,
             "vertical_coord_first": True
