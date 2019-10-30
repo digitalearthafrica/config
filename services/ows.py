@@ -2311,6 +2311,8 @@ layer_cfg = [
                 "name": "wofs_2_annual_summary_clear",
                 # The Datacube name for the associated data product
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
+                # required to support eo3 metadata format
+                "time_resolution": "year",
                 "abstract": """
                 Water Observations from Space - Annual Statistics is a set of annual statistical
                 summaries of the water observations contained in WOfS. The layers available are:
@@ -2745,6 +2747,8 @@ layer_cfg = [
                 "name": "wofs_2_summary_clear",
                 # The Datacube name for the associated data product
                 "product_name": "ga_ls8c_wofs_2_summary",
+                # required to support eo3 metadata format
+                "time_resolution": "year",
                 "abstract": """
                 Water Observations from Space - Annual Statistics is a set of annual statistical summaries
                 of the water observations contained in WOfS. The layers available are: the count of clear
