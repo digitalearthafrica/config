@@ -29,7 +29,7 @@ service_cfg = {
     "human_url": "https://digitalearth.africa",
     # Provide S3 data URL for data_links in GetFeatureinfo
     "s3_url": "https://data.digitalearth.africa",
-    # Provide S3 bucket name for data_links in GetFeatureinfo    
+    # Provide S3 bucket name for data_links in GetFeatureinfo
     "s3_bucket": "deafrica-data",
     # Supported co-ordinate reference systems
     "published_CRSs": {
@@ -42,17 +42,7 @@ service_cfg = {
             "geographic": True,
             "vertical_coord_first": True
         },
-        "EPSG:3577": {  # GDA-94, internal representation
-            "geographic": False,
-            "horizontal_coord": "x",
-            "vertical_coord": "y",
-        },
-        "EPSG:102022": {
-            "geographic": False,
-            "horizontal_coord": "x",
-            "vertical_coord": "y",
-        },
-        "EPSG:6933": { # Cylindrical equal area
+        "EPSG:6933": {  # Cylindrical equal area
             "geographic": False,
             "horizontal_coord": "x",
             "vertical_coord": "y",
@@ -143,10 +133,10 @@ layer_cfg = [
         # Platform layers are not mappable. The name is for internal server use only.
         "name": "Surface Reflectance",
         "title": "Landsat",
-        "abstract": """Landsat represents a collection of space-based land remote sensing data. Surface reflectance 
-        measures incoming solar radiation reflected from the Earth to the Landsat sensor, which improves comparison 
-        between multiple images over the same region. This helps us detect Earth surface changes. This dataset 
-        includes Landsat 8 US Geological Survey Collection 1 Higher Level SR scene processed using LaSRC. 30m UTM 
+        "abstract": """Landsat represents a collection of space-based land remote sensing data. Surface reflectance
+        measures incoming solar radiation reflected from the Earth to the Landsat sensor, which improves comparison
+        between multiple images over the same region. This helps us detect Earth surface changes. This dataset
+        includes Landsat 8 US Geological Survey Collection 1 Higher Level SR scene processed using LaSRC. 30m UTM
         based projection.""",
         "products": [
             {
@@ -1432,23 +1422,23 @@ layer_cfg = [
                 "product_name": "ls_usgs_wofs_summary",
                 # required to support eo3 metadata format
                 "time_resolution": "year",
-                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
-                the WOfS product which combines WOfS observations into summary products that help the understanding 
-                of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ? 
-                2018). The water detected for each location is summed through time and then compared to the number of 
-                clear observations of that location. The result is a percentage value of the number of times water 
-                was observed at the location. The layers available are: the count of dry observations; the count of 
-                wet observations; the percentage of wet observations over time (water summary). 
+                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
+                the WOfS product which combines WOfS observations into summary products that help the understanding
+                of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ?
+                2018). The water detected for each location is summed through time and then compared to the number of
+                clear observations of that location. The result is a percentage value of the number of times water
+                was observed at the location. The layers available are: the count of dry observations; the count of
+                wet observations; the percentage of wet observations over time (water summary).
 
-                This layer contains the Water Summary: the percentage of clear observations which were detected as 
-                wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to 
-                appear transparent, few clear observations of water correlate with red and yellow colours, 
-                deep blue and purple correspond to an area being wet through 90%-100% of clear observations. 
+                This layer contains the Water Summary: the percentage of clear observations which were detected as
+                wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to
+                appear transparent, few clear observations of water correlate with red and yellow colours,
+                deep blue and purple correspond to an area being wet through 90%-100% of clear observations.
 
-                As no confidence filtering is applied to this product, it is affected by noise where 
-                mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to 
-                interpret on its own. The confidence layer and filtered summary are contained in the Water 
-                Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of 
+                As no confidence filtering is applied to this product, it is affected by noise where
+                mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to
+                interpret on its own. The confidence layer and filtered summary are contained in the Water
+                Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of
                 the water summary.""",
                 "min_zoom_factor": 15.0,
                 # The fill-colour of the indicative polygons when zoomed out.
@@ -1619,20 +1609,20 @@ layer_cfg = [
                 "product_name": "ls_usgs_wofs_summary",
                 # required to support eo3 metadata format
                 "time_resolution": "year",
-                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
-                the WOfS product that combines the many years of WOfS observations into summary products which help 
-                the understanding of surface water across Africa.  The layers available are: the count of dry 
-                observations; the count of wet observations; the percentage of wet observations over time. 
+                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
+                the WOfS product that combines the many years of WOfS observations into summary products which help
+                the understanding of surface water across Africa.  The layers available are: the count of dry
+                observations; the count of wet observations; the percentage of wet observations over time.
 
-            This layer contains Wet Count: how many times water was detected in observations that were clear. No 
-            clear observations of water causes an area to appear transparent, 1-50 total clear observations of water 
-            correlate with red and yellow colours, 100 clear observations of water correlate with green, 
-            200 clear observations of water correlates with light blue, 300 clear observations of water correlates to 
-            deep blue and 400 and over observations of clear water correlate to purple. 
+            This layer contains Wet Count: how many times water was detected in observations that were clear. No
+            clear observations of water causes an area to appear transparent, 1-50 total clear observations of water
+            correlate with red and yellow colours, 100 clear observations of water correlate with green,
+            200 clear observations of water correlates with light blue, 300 clear observations of water correlates to
+            deep blue and 400 and over observations of clear water correlate to purple.
 
-            As no confidence filtering is applied to this product, it is affected by noise where mis-classifications 
-            have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The 
-            confidence layer and filtered summary are contained in the Water Observations from Space Statistics 
+            As no confidence filtering is applied to this product, it is affected by noise where mis-classifications
+            have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The
+            confidence layer and filtered summary are contained in the Water Observations from Space Statistics
             Filtered Summary product, which provide a noise-reduced view of the water summary.""",
                 "min_zoom_factor": 15.0,
                 # The fill-colour of the indicative polygons when zoomed out.
@@ -1744,17 +1734,17 @@ layer_cfg = [
                 "product_name": "ls_usgs_wofs_summary",
                 # required to support eo3 metadata format
                 "time_resolution": "year",
-                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
-                the WOfS product that combines the many years of WOfS observations into summary products which help 
-                the understanding of surface water across Africa.  The layers available are: the count of dry 
-                observations; the count of wet observations; the percentage of wet observations over time. 
+                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
+                the WOfS product that combines the many years of WOfS observations into summary products which help
+                the understanding of surface water across Africa.  The layers available are: the count of dry
+                observations; the count of wet observations; the percentage of wet observations over time.
 
-            This layer contains Dry Count: how many times an area could be seen Dry (ie. not affected by clouds, 
-            shadows or other satellite observation problems). 
+            This layer contains Dry Count: how many times an area could be seen Dry (ie. not affected by clouds,
+            shadows or other satellite observation problems).
 
-            As no confidence filtering is applied to this product, it is affected by noise where mis-classifications 
-            have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The 
-            confidence layer and filtered summary are contained in the Water Observations from Space Statistics 
+            As no confidence filtering is applied to this product, it is affected by noise where mis-classifications
+            have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The
+            confidence layer and filtered summary are contained in the Water Observations from Space Statistics
             Filtered Summary product, which provide a noise-reduced view of the water summary.""",
                 "min_zoom_factor": 15.0,
                 # The fill-colour of the indicative polygons when zoomed out.
@@ -1856,7 +1846,7 @@ layer_cfg = [
             }
         ]
     },
-        {
+    {
         # Name and title of the platform layer.
         # Platform layers are not mappable. The name is for internal server use only.
         "name": "WOfS Collection2",
@@ -1887,15 +1877,15 @@ layer_cfg = [
                 was observed at the location. The layers available are: the count of 
                 wet observations; the percentage of wet observations over time (water summary). 
 
-                This layer contains the Water Summary: the percentage of clear observations which were detected as 
-                wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to 
-                appear transparent, few clear observations of water correlate with red and yellow colours, 
-                deep blue and purple correspond to an area being wet through 90%-100% of clear observations. 
+                This layer contains the Water Summary: the percentage of clear observations which were detected as
+                wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to
+                appear transparent, few clear observations of water correlate with red and yellow colours,
+                deep blue and purple correspond to an area being wet through 90%-100% of clear observations.
 
-                As no confidence filtering is applied to this product, it is affected by noise where 
-                mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to 
-                interpret on its own. The confidence layer and filtered summary are contained in the Water 
-                Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of 
+                As no confidence filtering is applied to this product, it is affected by noise where
+                mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to
+                interpret on its own. The confidence layer and filtered summary are contained in the Water
+                Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of
                 the water summary.""",
                 "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
@@ -2054,20 +2044,20 @@ layer_cfg = [
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
                 # required to support eo3 metadata format
                 "time_resolution": "year",
-                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
-                the WOfS product that combines the many years of WOfS observations into summary products which help 
-                the understanding of surface water across Africa.  The layers available are: 
-                the count of wet observations; the percentage of wet observations over time. 
+                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
+                the WOfS product that combines the many years of WOfS observations into summary products which help
+                the understanding of surface water across Africa.  The layers available are:
+                the count of wet observations; the percentage of wet observations over time.
 
-                This layer contains Wet Count: how many times water was detected in observations that were clear. No 
-                clear observations of water causes an area to appear transparent, 1-50 total clear observations of water 
-                correlate with red and yellow colours, 100 clear observations of water correlate with green, 
-                200 clear observations of water correlates with light blue, 300 clear observations of water correlates to 
-                deep blue and 400 and over observations of clear water correlate to purple. 
+                This layer contains Wet Count: how many times water was detected in observations that were clear. No
+                clear observations of water causes an area to appear transparent, 1-50 total clear observations of water
+                correlate with red and yellow colours, 100 clear observations of water correlate with green,
+                200 clear observations of water correlates with light blue, 300 clear observations of water correlates to
+                deep blue and 400 and over observations of clear water correlate to purple.
 
-                As no confidence filtering is applied to this product, it is affected by noise where mis-classifications 
-                have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The 
-                confidence layer and filtered summary are contained in the Water Observations from Space Statistics 
+                As no confidence filtering is applied to this product, it is affected by noise where mis-classifications
+                have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The
+                confidence layer and filtered summary are contained in the Water Observations from Space Statistics
                 Filtered Summary product, which provide a noise-reduced view of the water summary.""",
                 "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
@@ -2170,7 +2160,7 @@ layer_cfg = [
                 #  not required by the standard.)
                 "default_style": "water_observations",
             },
-                        {
+            {
                 # Included as a keyword  for the layer
                 "label": "WOfS C2 Statistics",
                 # Included as a keyword  for the layer
@@ -2183,23 +2173,23 @@ layer_cfg = [
                 "product_name": "ga_ls8c_wofs_2_summary",
                 # required to support eo3 metadata format
                 "time_resolution": "year",
-                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
-                the WOfS product which combines WOfS observations into summary products that help the understanding 
-                of surface water across Africa. The water detected for each location is summed through time and then 
-                compared to the number of clear observations of that location. 
-                The result is a percentage value of the number of times water 
-                was observed at the location. The layers available are: the count of 
-                wet observations; the percentage of wet observations over time (water summary). 
+                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
+                the WOfS product which combines WOfS observations into summary products that help the understanding
+                of surface water across Africa. The water detected for each location is summed through time and then
+                compared to the number of clear observations of that location.
+                The result is a percentage value of the number of times water
+                was observed at the location. The layers available are: the count of
+                wet observations; the percentage of wet observations over time (water summary).
 
-                This layer contains the Water Summary: the percentage of clear observations which were detected as 
-                wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to 
-                appear transparent, few clear observations of water correlate with red and yellow colours, 
-                deep blue and purple correspond to an area being wet through 90%-100% of clear observations. 
+                This layer contains the Water Summary: the percentage of clear observations which were detected as
+                wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to
+                appear transparent, few clear observations of water correlate with red and yellow colours,
+                deep blue and purple correspond to an area being wet through 90%-100% of clear observations.
 
-                As no confidence filtering is applied to this product, it is affected by noise where 
-                mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to 
-                interpret on its own. The confidence layer and filtered summary are contained in the Water 
-                Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of 
+                As no confidence filtering is applied to this product, it is affected by noise where
+                mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to
+                interpret on its own. The confidence layer and filtered summary are contained in the Water
+                Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of
                 the water summary.""",
                 "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
@@ -2358,20 +2348,20 @@ layer_cfg = [
                 "product_name": "ga_ls8c_wofs_2_summary",
                 # required to support eo3 metadata format
                 "time_resolution": "year",
-                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
-                the WOfS product that combines the many years of WOfS observations into summary products which help 
-                the understanding of surface water across Africa.  The layers available are: 
-                the count of wet observations; the percentage of wet observations over time. 
+                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
+                the WOfS product that combines the many years of WOfS observations into summary products which help
+                the understanding of surface water across Africa.  The layers available are:
+                the count of wet observations; the percentage of wet observations over time.
 
-                This layer contains Wet Count: how many times water was detected in observations that were clear. No 
-                clear observations of water causes an area to appear transparent, 1-50 total clear observations of water 
-                correlate with red and yellow colours, 100 clear observations of water correlate with green, 
-                200 clear observations of water correlates with light blue, 300 clear observations of water correlates to 
-                deep blue and 400 and over observations of clear water correlate to purple. 
+                This layer contains Wet Count: how many times water was detected in observations that were clear. No
+                clear observations of water causes an area to appear transparent, 1-50 total clear observations of water
+                correlate with red and yellow colours, 100 clear observations of water correlate with green,
+                200 clear observations of water correlates with light blue, 300 clear observations of water correlates to
+                deep blue and 400 and over observations of clear water correlate to purple.
 
-                As no confidence filtering is applied to this product, it is affected by noise where mis-classifications 
-                have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The 
-                confidence layer and filtered summary are contained in the Water Observations from Space Statistics 
+                As no confidence filtering is applied to this product, it is affected by noise where mis-classifications
+                have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The
+                confidence layer and filtered summary are contained in the Water Observations from Space Statistics
                 Filtered Summary product, which provide a noise-reduced view of the water summary.""",
                 "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
@@ -2494,16 +2484,16 @@ layer_cfg = [
                 "type": "Fractional Cover",
                 # Included as a keyword  for the layer
                 "variant": "",
-                "abstract": """Landsat Fractional Cover based on USGS Level 2 Scenes. Data is only visible at higher 
-                resolutions; when zoomed-out the available area will be displayed as a shaded region. Fractional 
+                "abstract": """Landsat Fractional Cover based on USGS Level 2 Scenes. Data is only visible at higher
+                resolutions; when zoomed-out the available area will be displayed as a shaded region. Fractional
                 cover provides information about the the proportions of green vegetation, non-green vegetation (
-                including deciduous trees during autumn, dry grass, etc.), and bare areas. Fractional cover provides 
-                insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over 
-                time. The fractional cover algorithm was developed by the Joint Remote Sensing Research Program, 
-                for more information please see 
-                data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Fractional+Cover Fractional Cover products 
-                use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. This 
-                product contains Fractional Cover derived from Landsat 5, Landsat 7, and Landsat 8 US Geological 
+                including deciduous trees during autumn, dry grass, etc.), and bare areas. Fractional cover provides
+                insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over
+                time. The fractional cover algorithm was developed by the Joint Remote Sensing Research Program,
+                for more information please see
+                data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Fractional+Cover Fractional Cover products
+                use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. This
+                product contains Fractional Cover derived from Landsat 5, Landsat 7, and Landsat 8 US Geological
                 Survey Collection 1 Level2 Surface Reflectance USARD, 30m UTM based projection.""",
                 # The WMS name for the layer
                 "name": "ls_usgs_fc_scene",
@@ -2599,8 +2589,8 @@ layer_cfg = [
                 # Included as a keyword  for the layer
                 "variant": "",
                 "abstract": """The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset
-                that combines data from many images captured by JAXA's PALSAR and PALSAR two sensors on 
-                ALOS-1 and ALOS-2 satellites respectively. For more information, see: 
+                that combines data from many images captured by JAXA's PALSAR and PALSAR two sensors on
+                ALOS-1 and ALOS-2 satellites respectively. For more information, see:
                 https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/DatasetDescription_PALSAR2_Mosaic_FNF_revH.pdf""",
                 # The WMS name for the layer
                 "name": "alos_palsar_mosaic",
@@ -2792,7 +2782,7 @@ layer_cfg = [
             }
         ]
     },
-        {
+    {
         # Name and title of the platform layer.
         # Platform layers are not mappable. The name is for internal server use only.
         "name": "SRTM",
@@ -2810,13 +2800,13 @@ layer_cfg = [
                 "type": "Digital elevation model",
                 # Included as a keyword  for the layer
                 "variant": "",
-                "abstract": """NASA has released version 2 of the Shuttle Radar Topography Mission 
-                digital topographic data (also known as the "finished" version). Version 2 is the 
-                result of a substantial editing effort by the National Geospatial Intelligence Agency 
-                and exhibits well-defined water bodies and coastlines and the absence of spikes and 
-                wells (single pixel errors), although some areas of missing data ('voids') are still 
+                "abstract": """NASA has released version 2 of the Shuttle Radar Topography Mission
+                digital topographic data (also known as the "finished" version). Version 2 is the
+                result of a substantial editing effort by the National Geospatial Intelligence Agency
+                and exhibits well-defined water bodies and coastlines and the absence of spikes and
+                wells (single pixel errors), although some areas of missing data ('voids') are still
                 present. The Version 2 directory also contains the vector coastline mask derived by
-                 NGA during the editing, called the SRTM Water Body Data (SWBD), in ESRI Shapefile 
+                 NGA during the editing, called the SRTM Water Body Data (SWBD), in ESRI Shapefile
                  format. For more information, see: https://www2.jpl.nasa.gov/srtm/""",
                 # The WMS name for the layer
                 "name": "srtm",
@@ -2827,10 +2817,10 @@ layer_cfg = [
                 "time_resolution": "year",
                 # The Datacube name for the associated pixel-quality product (optional)
                 # The name of the associated Datacube pixel-quality product
-                #"pq_dataset": "srtm",
+                # "pq_dataset": "srtm",
                 # The name of the measurement band for the pixel-quality product
                 # (Only required if pq_dataset is set)
-                #"pq_band": "elevation",
+                # "pq_band": "elevation",
                 # Min zoom factor - sets the zoom level where the cutover from indicative polygons
                 # to actual imagery occurs.
                 "min_zoom_factor": 10.0,
@@ -2893,6 +2883,7 @@ layer_cfg = [
                             }
                         ],
                         "legend": {
+                            "title": "Elevation ",
                             "radix_point": 0,
                             "scale_by": 1,
                             "major_ticks": 100,
@@ -2947,9 +2938,10 @@ layer_cfg = [
                             }
                         ],
                         "legend": {
+                            "title": "Elevation ",
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100,
+                            "major_ticks": 500,
                             "units": "m"
                         }
                     },
