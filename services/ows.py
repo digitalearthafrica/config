@@ -1886,7 +1886,7 @@ layer_cfg = [
                 with light green, 800 clear observations and above correlates with dark green.
                 For more information please see:
                 https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf""",
-                "min_zoom_factor": 15.0,
+                "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
                 "zoomed_out_fill_colour": [150, 180, 200, 160],
@@ -2332,7 +2332,7 @@ layer_cfg = [
                 observations and above correlates with dark green.
                 For more information please see:
                 https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf""",
-                "min_zoom_factor": 15.0,
+                "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
                 "zoomed_out_fill_colour": [150, 180, 200, 160],
@@ -2742,7 +2742,7 @@ layer_cfg = [
                 # Included as a keyword  for the layer
                 "variant": "25m",
                 # The WMS name for the layer
-                "name": "wofs_2_annual_summary_clear",
+                "name": "wofs_2_summary_clear",
                 # The Datacube name for the associated data product
                 "product_name": "ga_ls8c_wofs_2_summary",
                 "abstract": """
@@ -2763,7 +2763,7 @@ layer_cfg = [
                 above correlates with dark green.
                 For more information please see:
                 https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf""",
-                "min_zoom_factor": 15.0,
+                "min_zoom_factor": 0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
                 "zoomed_out_fill_colour": [150, 180, 200, 160],
