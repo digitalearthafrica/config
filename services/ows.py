@@ -1865,13 +1865,27 @@ layer_cfg = [
                 "name": "wofs_annual_summary_clear",
                 # The Datacube name for the associated data product
                 "product_name": "ls_usgs_wofs_summary",
-                "abstract": """                
-                Water Observations from Space - Annual Statistics is a set of annual statistical summaries of the water observations contained in WOfS. The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time.
-                This product is Water Observations from Space - Annual Statistics, a set of annual statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products that help the understanding of surface water across Australia. As no confidence filtering is applied to this product, it is affected by noise where misclassifications have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own.
-                The confidence layer and filtered summary are contained in the Water Observations from Space Statistics - Filtered Summary product, which provide a noise-reduced view of the water summary.
-                This layer contains Water Summary: what percentage of clear observations were detected as wet (ie. the ratio of wet to clear as a percentage). No clear observations causes an area to appear transparent, 1-300 total clear observations of water correlate with red and yellow colours, 400 clear observations correlates with light green, 800 clear observations and above correlates with dark green.
-                For more information please see: https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf
-                For service status information, see https://status.dea.ga.gov.au""",
+                "abstract": """
+                Water Observations from Space - Annual Statistics is a set of annual statistical
+                summaries of the water observations contained in WOfS. The layers available are:
+                the count of clear observations; the count of wet observations; the percentage of
+                wet observations over time.
+                This product is Water Observations from Space - Annual Statistics, a set of annual
+                statistical summaries of the WOfS product that combines the many years of WOfS observations
+                into summary products that help the understanding of surface water across Australia.
+                As no confidence filtering is applied to this product, it is affected by noise where
+                misclassifications have occurred in the WOfS water classifications, and hence can be
+                difficult to interpret on its own.
+                The confidence layer and filtered summary are contained in the Water Observations
+                from Space Statistics - Filtered Summary product, which provide a noise-reduced
+                view of the water summary.
+                This layer contains Water Summary: what percentage of clear observations were
+                detected as wet (ie. the ratio of wet to clear as a percentage). No clear
+                observations causes an area to appear transparent, 1-300 total clear observations
+                of water correlate with red and yellow colours, 400 clear observations correlates
+                with light green, 800 clear observations and above correlates with dark green.
+                For more information please see:
+                https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf""",
                 "min_zoom_factor": 15.0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
@@ -1995,13 +2009,13 @@ layer_cfg = [
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
                 # required to support eo3 metadata format
                 "time_resolution": "year",
-                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
-                the WOfS product which combines WOfS observations into summary products that help the understanding 
-                of surface water across Africa. The water detected for each location is summed through time and then 
-                compared to the number of clear observations of that location. 
-                The result is a percentage value of the number of times water 
-                was observed at the location. The layers available are: the count of 
-                wet observations; the percentage of wet observations over time (water summary). 
+                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
+                the WOfS product which combines WOfS observations into summary products that help the understanding
+                of surface water across Africa. The water detected for each location is summed through time and then
+                compared to the number of clear observations of that location.
+                The result is a percentage value of the number of times water
+                was observed at the location. The layers available are: the count of
+                wet observations; the percentage of wet observations over time (water summary).
 
                 This layer contains the Water Summary: the percentage of clear observations which were detected as
                 wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to
@@ -2297,13 +2311,27 @@ layer_cfg = [
                 "name": "wofs_2_annual_summary_clear",
                 # The Datacube name for the associated data product
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
-                "abstract": """                
-                Water Observations from Space - Annual Statistics is a set of annual statistical summaries of the water observations contained in WOfS. The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time.
-                This product is Water Observations from Space - Annual Statistics, a set of annual statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products that help the understanding of surface water across Australia. As no confidence filtering is applied to this product, it is affected by noise where misclassifications have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own.
-                The confidence layer and filtered summary are contained in the Water Observations from Space Statistics - Filtered Summary product, which provide a noise-reduced view of the water summary.
-                This layer contains Water Summary: what percentage of clear observations were detected as wet (ie. the ratio of wet to clear as a percentage). No clear observations causes an area to appear transparent, 1-300 total clear observations of water correlate with red and yellow colours, 400 clear observations correlates with light green, 800 clear observations and above correlates with dark green.
-                For more information please see: https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf
-                For service status information, see https://status.dea.ga.gov.au""",
+                "abstract": """
+                Water Observations from Space - Annual Statistics is a set of annual statistical
+                summaries of the water observations contained in WOfS. The layers available are:
+                the count of clear observations; the count of wet observations; the percentage of
+                wet observations over time.
+                This product is Water Observations from Space - Annual Statistics, a set of annual
+                statistical summaries of the WOfS product that combines the many years of WOfS
+                observations into summary products that help the understanding of surface water
+                across Australia. As no confidence filtering is applied to this product, it is
+                affected by noise where misclassifications have occurred in the WOfS water classifications,
+                and hence can be difficult to interpret on its own.
+                The confidence layer and filtered summary are contained in the Water Observations
+                from Space Statistics - Filtered Summary product, which provide a noise-reduced view
+                of the water summary.
+                This layer contains Water Summary: what percentage of clear observations were detected
+                as wet (ie. the ratio of wet to clear as a percentage). No clear observations causes
+                an area to appear transparent, 1-300 total clear observations of water correlate with
+                red and yellow colours, 400 clear observations correlates with light green, 800 clear
+                observations and above correlates with dark green.
+                For more information please see:
+                https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf""",
                 "min_zoom_factor": 15.0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
@@ -2706,7 +2734,7 @@ layer_cfg = [
                 #  not required by the standard.)
                 "default_style": "water_observations",
             },
-                        {
+            {
                 # Included as a keyword  for the layer
                 "label": "WOfS C2 Statistics",
                 # Included as a keyword  for the layer
@@ -2717,13 +2745,24 @@ layer_cfg = [
                 "name": "wofs_2_annual_summary_clear",
                 # The Datacube name for the associated data product
                 "product_name": "ga_ls8c_wofs_2_summary",
-                "abstract": """                
-                Water Observations from Space - Annual Statistics is a set of annual statistical summaries of the water observations contained in WOfS. The layers available are: the count of clear observations; the count of wet observations; the percentage of wet observations over time.
-                This product is Water Observations from Space - Annual Statistics, a set of annual statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products that help the understanding of surface water across Australia. As no confidence filtering is applied to this product, it is affected by noise where misclassifications have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own.
-                The confidence layer and filtered summary are contained in the Water Observations from Space Statistics - Filtered Summary product, which provide a noise-reduced view of the water summary.
-                This layer contains Water Summary: what percentage of clear observations were detected as wet (ie. the ratio of wet to clear as a percentage). No clear observations causes an area to appear transparent, 1-300 total clear observations of water correlate with red and yellow colours, 400 clear observations correlates with light green, 800 clear observations and above correlates with dark green.
-                For more information please see: https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf
-                For service status information, see https://status.dea.ga.gov.au""",
+                "abstract": """
+                Water Observations from Space - Annual Statistics is a set of annual statistical summaries
+                of the water observations contained in WOfS. The layers available are: the count of clear
+                observations; the count of wet observations; the percentage of wet observations over time.
+                This product is Water Observations from Space - Annual Statistics, a set of annual statistical
+                summaries of the WOfS product that combines the many years of WOfS observations into summary
+                products that help the understanding of surface water across Australia. As no confidence filtering
+                is applied to this product, it is affected by noise where misclassifications have occurred in
+                the WOfS water classifications, and hence can be difficult to interpret on its own.
+                The confidence layer and filtered summary are contained in the Water Observations from
+                Space Statistics - Filtered Summary product, which provide a noise-reduced view of the water summary.
+                This layer contains Water Summary: what percentage of clear observations were detected as wet
+                (ie. the ratio of wet to clear as a percentage). No clear observations causes an area to
+                appear transparent, 1-300 total clear observations of water correlate with red and yellow
+                colours, 400 clear observations correlates with light green, 800 clear observations and
+                above correlates with dark green.
+                For more information please see:
+                https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf""",
                 "min_zoom_factor": 15.0,
                 # The fill-colour of the indicative polygons when zoomed out.
                 # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
