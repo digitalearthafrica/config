@@ -243,6 +243,31 @@
                ]
             }
          ]
+      },
+      {
+         "name": "Ancillary data",
+         "type": "group",
+         "preserveOrder": true,
+         "items": [
+            {
+               "name": "Elevation models",
+               "type": "group",
+               "preserveOrder": true,
+               "items": [
+                  {
+                     "name": "SRTM",
+                     "type": "wms",
+                     "layers": "srtm",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "srtm",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
+                  }
+               ]
+            }
+         ]
       }
    ]
 }
