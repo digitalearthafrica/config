@@ -2865,7 +2865,7 @@ layer_cfg = [
                                 "alpha": 0.0
                             },
                             {
-                                "value": 0,
+                                "value": 0.1,
                                 "color": "#383838"
                             },
                             {
@@ -2895,7 +2895,8 @@ layer_cfg = [
                         "legend": {
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100
+                            "major_ticks": 100,
+                            "units": "m"
                         }
                     },
                     {
@@ -2910,7 +2911,7 @@ layer_cfg = [
                                 "alpha": 0.0
                             },
                             {
-                                "value": 0,
+                                "value": 0.1,
                                 "color": "#ebf5ff"
                             },
                             {
@@ -2934,10 +2935,6 @@ layer_cfg = [
                                 "color": "#ba6daa"
                             },
                             {
-                                "value": 2500,
-                                "color": "#ba6daa"
-                            },
-                            {
                                 "value": 3000,
                                 "color": "#d7a2d6"
                             },
@@ -2956,7 +2953,8 @@ layer_cfg = [
                         "legend": {
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100
+                            "major_ticks": 100,
+                            "units": "m"
                         }
                     },
                 ],
