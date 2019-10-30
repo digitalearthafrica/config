@@ -1879,13 +1879,13 @@ layer_cfg = [
                 "product_name": "ga_ls8c_wofs_2_annual_summary",
                 # required to support eo3 metadata format
                 "time_resolution": "year",
-                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of 
-                the WOfS product which combines WOfS observations into summary products that help the understanding 
-                of surface water across Africa. The water detected for each location is summed through time and then 
-                compared to the number of clear observations of that location. 
-                The result is a percentage value of the number of times water 
-                was observed at the location. The layers available are: the count of 
-                wet observations; the percentage of wet observations over time (water summary). 
+                "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
+                the WOfS product which combines WOfS observations into summary products that help the understanding
+                of surface water across Africa. The water detected for each location is summed through time and then
+                compared to the number of clear observations of that location.
+                The result is a percentage value of the number of times water
+                was observed at the location. The layers available are: the count of
+                wet observations; the percentage of wet observations over time (water summary).
 
                 This layer contains the Water Summary: the percentage of clear observations which were detected as
                 wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to
@@ -2951,7 +2951,7 @@ layer_cfg = [
                             "title": "Elevation ",
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 500,
+                            "major_ticks": 400,
                             "units": "m"
                         }
                     },
