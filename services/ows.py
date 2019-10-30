@@ -2865,7 +2865,7 @@ layer_cfg = [
                                 "alpha": 0.0
                             },
                             {
-                                "value": 0,
+                                "value": 0.1,
                                 "color": "#383838"
                             },
                             {
@@ -2895,7 +2895,8 @@ layer_cfg = [
                         "legend": {
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100
+                            "major_ticks": 100,
+                            "units": "m"
                         }
                     },
                     {
@@ -2906,48 +2907,40 @@ layer_cfg = [
                         "color_ramp": [
                             {
                                 "value": -0,
-                                "color": "#ebf5ff",
+                                "color": "#e1f2ff",
                                 "alpha": 0.0
-                            },
-                            {
-                                "value": 0,
-                                "color": "#ebf5ff"
                             },
                             {
                                 "value": 0.1,
                                 "color": "#41c23c"
                             },
                             {
-                                "value": 200,
+                                "value": 150,
                                 "color": "#f9a80e"
                             },
                             {
-                                "value": 750,
+                                "value": 300,
                                 "color": "#cb5f3e"
                             },
                             {
-                                "value": 1500,
+                                "value": 400,
                                 "color": "#9d387d"
                             },
                             {
-                                "value": 2000,
+                                "value": 500,
                                 "color": "#ba6daa"
                             },
                             {
-                                "value": 2500,
-                                "color": "#ba6daa"
-                            },
-                            {
-                                "value": 3000,
+                                "value": 900,
                                 "color": "#d7a2d6"
                             },
                             {
-                                "value": 4000,
+                                "value": 1200,
                                 "color": "#e6c8e6"
                             },
                             {
-                                "value": 4500,
-                                "color": "#e6c8e6",
+                                "value": 4000,
+                                "color": "#ffecf9",
                                 "legend": {
                                     "prefix": ">"
                                 }
@@ -2956,7 +2949,8 @@ layer_cfg = [
                         "legend": {
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100
+                            "major_ticks": 100,
+                            "units": "m"
                         }
                     },
                 ],
