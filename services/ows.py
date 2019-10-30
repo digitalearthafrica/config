@@ -161,15 +161,14 @@ layer_cfg = [
                 "name": "ls8_usgs_sr_scene",
                 # The Datacube name for the associated data product
                 "product_name": "ls8_usgs_sr_scene",
-                # "bands": {
-                #    "red": ["crimson"],
-                #    "green": [],
-                #    "blue": ["azure"],
-                #    "nir": ["near_infrared"],
-                #    "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
-                #    "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"],
-                #    "coastal_aerosol": ["far_blue"],
-                # },
+                "bands": {
+                    "blue": ["blue"],
+                    "green": ["green"],
+                    "red": ["red"],
+                    "nir": ["near_infrared"],
+                    "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
+                    "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"]
+                },
                 # "pq_dataset": "ls8_usgs_sr_scene",
                 # The name of the measurement band for the pixel-quality product
                 # (Only required if pq_dataset is set)
@@ -528,14 +527,14 @@ layer_cfg = [
                 "name": "ls7_usgs_sr_scene",
                 # The Datacube name for the associated data product
                 "product_name": "ls7_usgs_sr_scene",
-                # "bands": {
-                #    "red": ["crimson"],
-                #    "green": [],
-                #    "blue": ["azure"],
-                #    "nir": ["near_infrared"],
-                #    "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
-                #    "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"]
-                # },
+                "bands": {
+                    "blue": ["blue"],
+                    "green": ["green"],
+                    "red": ["red"],
+                    "nir": ["near_infrared"],
+                    "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
+                    "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"]
+                },
                 # "pq_dataset": "ls7_usgs_sr_scene",
                 # The name of the measurement band for the pixel-quality product
                 # (Only required if pq_dataset is set)
@@ -893,14 +892,14 @@ layer_cfg = [
                 "name": "ls5_usgs_sr_scene",
                 # The Datacube name for the associated data product
                 "product_name": "ls5_usgs_sr_scene",
-                # "bands": {
-                #   "red": ["crimson"],
-                #    "green": [],
-                #    "blue": ["azure"],
-                #    "nir": ["near_infrared"],
-                #    "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
-                #    "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"]
-                # },
+                "bands": {
+                    "blue": ["blue"],
+                    "green": ["green"],
+                    "red": ["red"],
+                    "nir": ["near_infrared"],
+                    "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
+                    "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"]
+                },
                 # "pq_dataset": "ls5_usgs_sr_scene",
                 # The name of the measurement band for the pixel-quality product
                 # (Only required if pq_dataset is set)
