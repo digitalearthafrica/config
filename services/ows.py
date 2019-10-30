@@ -2795,9 +2795,9 @@ layer_cfg = [
         {
         # Name and title of the platform layer.
         # Platform layers are not mappable. The name is for internal server use only.
-        "name": "DEM",
-        "title": "DEM",
-        "abstract": "Annual mosaic of ALOS/PALSAR and ALOS-2/PALSAR-2 data",
+        "name": "SRTM",
+        "title": "Shuttle Radar Topography Mission",
+        "abstract": "Digital elevation model from NASA's SRTM",
 
         # Products available for this platform.
         # For each product, the "name" is the Datacube name, and the label is used
@@ -2805,15 +2805,19 @@ layer_cfg = [
         "products": [
             {
                 # Included as a keyword  for the layer
-                "label": "JAXA",
+                "label": "NASA",
                 # Included as a keyword  for the layer
-                "type": "Synthetic aperture radar",
+                "type": "Digital elevation model",
                 # Included as a keyword  for the layer
                 "variant": "",
-                "abstract": """The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset
-                that combines data from many images captured by JAXA's PALSAR and PALSAR two sensors on
-                ALOS-1 and ALOS-2 satellites respectively. For more information, see:
-                https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/DatasetDescription_PALSAR2_Mosaic_FNF_revH.pdf""",
+                "abstract": """NASA has released version 2 of the Shuttle Radar Topography Mission 
+                digital topographic data (also known as the "finished" version). Version 2 is the 
+                result of a substantial editing effort by the National Geospatial Intelligence Agency 
+                and exhibits well-defined water bodies and coastlines and the absence of spikes and 
+                wells (single pixel errors), although some areas of missing data ('voids') are still 
+                present. The Version 2 directory also contains the vector coastline mask derived by
+                 NGA during the editing, called the SRTM Water Body Data (SWBD), in ESRI Shapefile 
+                 format. For more information, see: https://www2.jpl.nasa.gov/srtm/""",
                 # The WMS name for the layer
                 "name": "srtm",
                 # The Datacube name for the associated data product
@@ -2844,15 +2848,15 @@ layer_cfg = [
                 # (defaults to empty list)
                 "ignore_info_flags": [],
                 "legend": {
-                    "styles": ["robbit", "alex"]
+                    "styles": ["greyscale", "colours"]
                     # "url": "",
                 },
                 "wcs_default_bands": ["elevation"],
                 "styles": [
                     {
-                        "name": "robbit",
-                        "title": "Elevation Robbit",
-                        "abstract": "Elevation Band",
+                        "name": "greyscale",
+                        "title": "Greyscale",
+                        "abstract": "Greyscale elevation",
                         "needed_bands": ["elevation"],
                         "color_ramp": [
                             {
@@ -2890,9 +2894,9 @@ layer_cfg = [
                         }
                     },
                     {
-                        "name": "alex",
-                        "title": "Elevation Alex",
-                        "abstract": "Elevation Band",
+                        "name": "colours",
+                        "title": "Coloured",
+                        "abstract": "Coloured elevation",
                         "needed_bands": ["elevation"],
                         "color_ramp": [
                             {
@@ -2950,7 +2954,7 @@ layer_cfg = [
                 # MUST be defined in the styles list above.
                 # (Looks like Terria assumes this is the first style in the list, but this is not required
                 # by the standard.)
-                "default_style": "robbit",
+                "default_style": "greyscale",
             }
         ]
     }
