@@ -38,7 +38,12 @@ service_cfg = {
             "horizontal_coord": "x",
             "vertical_coord": "y",
         },
-        "EPSG:3577": {  # GDA-94, Australian Albers. Not sure why, but it's require!
+        "EPSG:3577": {  # GDA-94, Australian Albers. Not sure why, but it's required!
+            "geographic": False,
+            "horizontal_coord": "x",
+            "vertical_coord": "y",
+        },
+        "EPSG:102022": {  # Deprecated, but it's requred as it was update_ranges'd against
             "geographic": False,
             "horizontal_coord": "x",
             "vertical_coord": "y",
