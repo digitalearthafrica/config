@@ -2860,8 +2860,13 @@ layer_cfg = [
                         "needed_bands": ["elevation"],
                         "color_ramp": [
                             {
-                                "value": 0,
+                                "value": -0,
                                 "color": "#383838",
+                                "alpha": 0.0
+                            },
+                            {
+                                "value": 0,
+                                "color": "#383838"
                             },
                             {
                                 "value": 250,
@@ -2900,8 +2905,13 @@ layer_cfg = [
                         "needed_bands": ["elevation"],
                         "color_ramp": [
                             {
-                                "value": 0,
+                                "value": -0,
                                 "color": "#ebf5ff",
+                                "alpha": 0.0
+                            },
+                            {
+                                "value": 0,
+                                "color": "#ebf5ff"
                             },
                             {
                                 "value": 0.1,
