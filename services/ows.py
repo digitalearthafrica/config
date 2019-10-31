@@ -3035,8 +3035,7 @@ layer_cfg = [
                         "color_ramp": [
                             {
                                 "value": 0,
-                                "color": "#f7fcf5",
-                                "alpha": 0
+                                "color": "#f7fcf5"
                             },
                             {
                                 "value": 750,
@@ -3084,8 +3083,7 @@ layer_cfg = [
                         "color_ramp": [
                             {
                                 "value": 0,
-                                "color": "#f7fcf5",
-                                "alpha": 0
+                                "color": "#f7fcf5"
                             },
                             {
                                 "value": 250,
