@@ -3086,7 +3086,7 @@ layer_cfg = [
                                 "color": "#f7fcf5"
                             },
                             {
-                                "value": 150,
+                                "value": 250,
                                 "color": "#e2f4dd"
                             },
                             {
@@ -3102,11 +3102,11 @@ layer_cfg = [
                                 "color": "#60ba6c"
                             },
                             {
-                                "value": 1500,
+                                "value": 2000,
                                 "color": "#329b51"
                             },
                             {
-                                "value": 3000,
+                                "value": 3500,
                                 "color": "#0c7835"
                             },
                             {
