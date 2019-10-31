@@ -12,7 +12,7 @@
    },
    "catalog": [
       {
-         "name": "Analysis Ready Datasets",
+         "name": "Analysis Ready Data",
          "type": "group",
          "preserveOrder": true,
          "items": [
@@ -90,7 +90,7 @@
                ]
             },
             {
-               "name": "Synthetic Aperture Radar",
+               "name": "Radar Backscatter",
                "type": "group",
                "preserveOrder": true,
                "items": [
@@ -125,7 +125,7 @@
          "preserveOrder": true,
          "items": [
             {
-               "name": "Water",
+               "name": "Water (Development)",
                "type": "group",
                "preserveOrder": true,
                "items": [
@@ -187,7 +187,7 @@
                ]
             },
             {
-               "name": "Continental Water (Landsat 8)",
+               "name": "Water (Provisional)",
                "type": "group",
                "preserveOrder": true,
                "items": [
@@ -257,7 +257,7 @@
                ]
             },
             {
-               "name": "Forests and Vegetation",
+               "name": "Vegetation (Development)",
                "type": "group",
                "preserveOrder": true,
                "items": [
@@ -287,7 +287,7 @@
                "preserveOrder": true,
                "items": [
                   {
-                     "name": "SRTM",
+                     "name": "Elevation (SRTM)",
                      "type": "wms",
                      "layers": "srtm",
                      "url": "https://ows.digitalearth.africa/",
