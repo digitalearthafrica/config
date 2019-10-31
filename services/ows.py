@@ -3046,23 +3046,23 @@ layer_cfg = [
                                 "color": "#c0e6b9"
                             },
                             {
-                                "value": 1250,
+                                "value": 1500,
                                 "color": "#94d390"
                             },
                             {
-                                "value": 1500,
+                                "value": 2500,
                                 "color": "#60ba6c"
                             },
                             {
-                                "value": 1750,
+                                "value": 4000,
                                 "color": "#329b51"
                             },
                             {
-                                "value": 2500,
+                                "value": 6000,
                                 "color": "#0c7835"
                             },
                             {
-                                "value": 5000,
+                                "value": 8000,
                                 "color": "#00441b",
                                 "legend": {
                                     "prefix": ">"
@@ -3086,7 +3086,7 @@ layer_cfg = [
                                 "color": "#f7fcf5"
                             },
                             {
-                                "value": 250,
+                                "value": 150,
                                 "color": "#e2f4dd"
                             },
                             {
@@ -3094,23 +3094,23 @@ layer_cfg = [
                                 "color": "#c0e6b9"
                             },
                             {
-                                "value": 400,
+                                "value": 500,
                                 "color": "#94d390"
                             },
                             {
-                                "value": 500,
+                                "value": 800,
                                 "color": "#60ba6c"
                             },
                             {
-                                "value": 700,
+                                "value": 1500,
                                 "color": "#329b51"
                             },
                             {
-                                "value": 1000,
+                                "value": 3000,
                                 "color": "#0c7835"
                             },
                             {
-                                "value": 3000,
+                                "value": 4500,
                                 "color": "#00441b",
                                 "legend": {
                                     "prefix": ">"
