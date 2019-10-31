@@ -3035,27 +3035,35 @@ layer_cfg = [
                         "color_ramp": [
                             {
                                 "value": 0,
-                                "color": "#0061b0",
+                                "color": "#f7fcf5",
                                 "alpha": 0
                             },
                             {
-                                "value": 600,
-                                "color": "#d5efcf"
+                                "value": 750,
+                                "color": "#e2f4dd"
                             },
                             {
-                                "value": 900,
-                                "color": "#9ed898"
+                                "value": 1000,
+                                "color": "#c0e6b9"
+                            },
+                            {
+                                "value": 1250,
+                                "color": "#94d390"
                             },
                             {
                                 "value": 1500,
-                                "color": "#54b567"
+                                "color": "#60ba6c"
                             },
                             {
-                                "value": 2000,
-                                "color": "#1d8641"
+                                "value": 1750,
+                                "color": "#329b51"
                             },
                             {
-                                "value": 15000,
+                                "value": 2500,
+                                "color": "#0c7835"
+                            },
+                            {
+                                "value": 5000,
                                 "color": "#00441b",
                                 "legend": {
                                     "prefix": ">"
@@ -3065,7 +3073,7 @@ layer_cfg = [
                         "legend": {
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100
+                            "major_ticks": 500
                         }
                     },
                     {
@@ -3080,23 +3088,31 @@ layer_cfg = [
                                 "alpha": 0
                             },
                             {
-                                "value": 600,
-                                "color": "#d5efcf"
+                                "value": 250,
+                                "color": "#e2f4dd"
                             },
                             {
-                                "value": 900,
-                                "color": "#9ed898"
+                                "value": 300,
+                                "color": "#c0e6b9"
                             },
                             {
-                                "value": 1500,
-                                "color": "#54b567"
+                                "value": 400,
+                                "color": "#94d390"
                             },
                             {
-                                "value": 2000,
-                                "color": "#1d8641"
+                                "value": 500,
+                                "color": "#60ba6c"
                             },
                             {
-                                "value": 15000,
+                                "value": 700,
+                                "color": "#329b51"
+                            },
+                            {
+                                "value": 1000,
+                                "color": "#0c7835"
+                            },
+                            {
+                                "value": 3000,
                                 "color": "#00441b",
                                 "legend": {
                                     "prefix": ">"
@@ -3106,7 +3122,7 @@ layer_cfg = [
                         "legend": {
                             "radix_point": 0,
                             "scale_by": 1,
-                            "major_ticks": 100
+                            "major_ticks": 500
                         }
                     },
                     {
@@ -3350,7 +3366,7 @@ layer_cfg = [
                 # MUST be defined in the styles list above.
                 # (Looks like Terria assumes this is the first style in the list, but this is not required
                 # by the standard.)
-                "default_style": "greyscale",
+                "default_style": "colours",
             }
         ]
     }
