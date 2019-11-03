@@ -2991,6 +2991,8 @@ layer_cfg = [
                 "abstract": """Landsat annual geomedian.""",
                 # The WMS name for the layer
                 "name": "ga_ls8c_gm_2_annual",
+                # fix prime meridian and equator issues
+                "time_resolution": "year",
                 # The Datacube name for the associated data product
                 # "multi_product": False,
                 "product_name": "ga_ls8c_gm_2_annual",
