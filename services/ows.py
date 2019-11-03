@@ -3020,7 +3020,7 @@ layer_cfg = [
                 # (defaults to empty list)
                 "ignore_info_flags": [],
                 "legend": {
-                    "styles": []
+                    "styles": ["simple_rgb"]
                     # "url": "https://data.dea.ga.gov.au/fractional-cover/fc-percentile/annual/v2.1.0/fcp_legend.png",
                 },
                 "wcs_default_bands": ["red", "green", "blue"],
