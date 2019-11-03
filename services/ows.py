@@ -2997,7 +2997,7 @@ layer_cfg = [
                 "product_name": "ga_ls8c_gm_2_annual",
                 # The Datacube name for the associated pixel-quality product (optional)
                 # The name of the associated Datacube pixel-quality product
-                "pq_dataset": "ga_ls8c_gm_2_annual",
+                # "pq_dataset": "ga_ls8c_gm_2_annual",
                 # The name of the measurement band for the pixel-quality product
                 # (Only required if pq_dataset is set)
                 # "pq_band": "water",
