@@ -3046,7 +3046,7 @@ layer_cfg = [
                         "abstract": "False Colour image with SWIR1->Red, NIR->Green, and Green->Blue",
                         "components": {
                             "red": {
-                                "swir1": 1.0
+                                "swir_1": 1.0
                             },
                             "green": {
                                 "nir": 1.0
@@ -3171,9 +3171,9 @@ layer_cfg = [
                         "title": "MNDWI - Green, SWIR",
                         "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
                                     "well with the existence of water (Xu 2006)",
-                        "index_function": lambda data: (data["green"] - data["swir1"]) / (
-                                data["green"] + data["swir1"]),
-                        "needed_bands": ["green", "swir1"],
+                        "index_function": lambda data: (data["green"] - data["swir_1"]) / (
+                                data["green"] + data["swir_1"]),
+                        "needed_bands": ["green", "swir_1"],
                         "color_ramp": [
                             {
                                 "value": -0.1,
@@ -3275,35 +3275,35 @@ layer_cfg = [
                         "scale_range": [7272.0, 18181.0]
                     },
                     {
-                        "name": "swir1",
+                        "name": "swir_1",
                         "title": "Shortwave Infrared (SWIR) - 1610",
                         "abstract": "Short wave infra-red band 1, centered on 1610nm",
                         "components": {
                             "red": {
-                                "swir1": 1.0
+                                "swir_1": 1.0
                             },
                             "green": {
-                                "swir1": 1.0
+                                "swir_1": 1.0
                             },
                             "blue": {
-                                "swir1": 1.0
+                                "swir_1": 1.0
                             }
                         },
                         "scale_range": [7272.0, 18181.0]
                     },
                     {
-                        "name": "swir2",
+                        "name": "swir_2",
                         "title": "Shortwave Infrared (SWIR) - 2200",
                         "abstract": "Short wave infra-red band 2, centered on 2200nm",
                         "components": {
                             "red": {
-                                "swir2": 1.0
+                                "swir_2": 1.0
                             },
                             "green": {
-                                "swir2": 1.0
+                                "swir_2": 1.0
                             },
                             "blue": {
-                                "swir2": 1.0
+                                "swir_2": 1.0
                             }
                         },
                         "scale_range": [7272.0, 18181.0]
