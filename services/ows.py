@@ -2973,7 +2973,7 @@ layer_cfg = [
     {
         # Name and title of the platform layer.
         # Platform layers are not mappable. The name is for internal server use only.
-        "name": "Geomedian",
+        "name": "Annual Geomedian",
         "title": "Annual Geometric Median",
         "abstract": "Landsat Geomedian based on USGS Provisional Collection 2 Level 2 Scenes",
         # Products available for this platform.
@@ -3020,6 +3020,7 @@ layer_cfg = [
                 # (defaults to empty list)
                 "ignore_info_flags": [],
                 "legend": {
+                    "styles": []
                     # "url": "https://data.dea.ga.gov.au/fractional-cover/fc-percentile/annual/v2.1.0/fcp_legend.png",
                 },
                 "wcs_default_bands": ["red", "green", "blue"],
