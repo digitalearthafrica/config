@@ -2976,7 +2976,6 @@ layer_cfg = [
         "name": "Geomedian",
         "title": "Annual Geometric Median",
         "abstract": "Landsat Geomedian based on USGS Provisional Collection 2 Level 2 Scenes",
-
         # Products available for this platform.
         # For each product, the "name" is the Datacube name, and the label is used
         # to describe the label to end-users.
@@ -3023,7 +3022,7 @@ layer_cfg = [
                 "legend": {
                     # "url": "https://data.dea.ga.gov.au/fractional-cover/fc-percentile/annual/v2.1.0/fcp_legend.png",
                 },
-                "wcs_default_bands": ["red", "greeb", "blue"],
+                "wcs_default_bands": ["red", "green", "blue"],
                 "styles": [
                     {
                         "name": "simple_rgb",
