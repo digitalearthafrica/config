@@ -1903,13 +1903,13 @@ layer_cfg = [
                     # "url": ""
                     "styles": ["annual_clear_observations"]
                 },
-                "wcs_default_bands": ["count_clear"],
+                "wcs_default_bands": ["count_dry"],
                 "styles": [
                     {
                         "name": "annual_clear_observations",
                         "title": "Clear Count",
                         "abstract": "WOfS annual summary showing the count of clear observations",
-                        "needed_bands": ["count_clear"],
+                        "needed_bands": ["count_dry"],
                         "color_ramp": [
                             {
                                 "value": 0,
