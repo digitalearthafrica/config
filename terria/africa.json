@@ -273,6 +273,24 @@
                      "featureTimesProperty": "data_available_for_dates"
                   }
                ]
+            },
+            {
+               "name": "Cloud Free Mosaic (Development)",
+               "type": "group",
+               "preserveOrder": true,
+               "items": [
+                  {
+                     "name": "Geometric median",
+                     "type": "wms",
+                     "layers": "ga_ls8c_gm_2_annual",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "ga_ls8c_gm_2_annual",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates"
+                  }
+               ]
             }
          ]
       },

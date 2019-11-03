@@ -2973,6 +2973,352 @@ layer_cfg = [
     {
         # Name and title of the platform layer.
         # Platform layers are not mappable. The name is for internal server use only.
+        "name": "Geomedian",
+        "title": "Annual Geometric Median",
+        "abstract": "Landsat Geomedian based on USGS Provisional Collection 2 Level 2 Scenes",
+
+        # Products available for this platform.
+        # For each product, the "name" is the Datacube name, and the label is used
+        # to describe the label to end-users.
+        "products": [
+            {
+                # Included as a keyword  for the layer
+                "label": "USGS",
+                # Included as a keyword  for the layer
+                "type": "Annual Geomedian",
+                # Included as a keyword  for the layer
+                "variant": "",
+                "abstract": """Landsat annual geomedian.""",
+                # The WMS name for the layer
+                "name": "ga_ls8c_gm_2_annual",
+                # The Datacube name for the associated data product
+                # "multi_product": False,
+                "product_name": "ga_ls8c_gm_2_annual",
+                # The Datacube name for the associated pixel-quality product (optional)
+                # The name of the associated Datacube pixel-quality product
+                "pq_dataset": "ga_ls8c_gm_2_annual",
+                # The name of the measurement band for the pixel-quality product
+                # (Only required if pq_dataset is set)
+                # "pq_band": "water",
+                # Fuse function for pq data
+                # "pq_fuse_func": "datacube_wms.wms_utils.wofls_fuser",
+                # Min zoom factor - sets the zoom level where the cutover from indicative polygons
+                # to actual imagery occurs.
+                "min_zoom_factor": 10.0,
+                # The fill-colour of the indicative polygons when zoomed out.
+                # Triplets (rgb) or quadruplets (rgba) of integers 0-255.
+                "zoomed_out_fill_colour": [150, 180, 200, 160],
+                # Time Zone.  In hours added to UTC (maybe negative)
+                # Used for rounding off scene times to a date.
+                # Central Africa Timezone (UTC+2).
+                "time_zone": 2,
+                # Extent mask function
+                # Determines what portions of dataset is potentially meaningful data.
+                "extent_mask_func": lambda data, band: (data[band] != data[band].attrs['nodata']),
+                # Flags listed here are ignored in GetFeatureInfo requests.
+                # (defaults to empty list)
+                "ignore_info_flags": [],
+                "legend": {
+                    # "url": "https://data.dea.ga.gov.au/fractional-cover/fc-percentile/annual/v2.1.0/fcp_legend.png",
+                },
+                "wcs_default_bands": ["red", "greeb", "blue"],
+                "styles": [
+                    {
+                        "name": "simple_rgb",
+                        "title": "Simple RGB",
+                        "abstract": "Simple true-colour image, using the red, green and blue bands",
+                        "components": {
+                            "red": {
+                                "red": 1.0
+                            },
+                            "green": {
+                                "green": 1.0
+                            },
+                            "blue": {
+                                "blue": 1.0
+                            }
+                        },
+                        # The raw band value range to be compressed to an 8 bit range for the output image tiles.
+                        # Band values outside this range are clipped to 0 or 255 as appropriate.
+                        "scale_range": [7272.0, 18181.0]
+                    },
+                    {
+                        "name": "infrared_green",
+                        "title": "False colour - Green, SWIR, NIR",
+                        "abstract": "False Colour image with SWIR1->Red, NIR->Green, and Green->Blue",
+                        "components": {
+                            "red": {
+                                "swir1": 1.0
+                            },
+                            "green": {
+                                "nir": 1.0
+                            },
+                            "blue": {
+                                "green": 1.0
+                            }
+                        },
+                        "scale_range": [7272.0, 18181.0]
+                    },
+                    #
+                    # Examples of non-linear heat-mapped styles.
+                    {
+                        "name": "ndvi",
+                        "title": "NDVI - Red, NIR",
+                        "abstract": "Normalised Difference Vegetation Index - a derived index that correlates well "
+                                    "with the existence of vegetation",
+                        "index_function": lambda data: (data["nir"] - data["red"]) / (data["nir"] + data["red"]),
+                        "needed_bands": ["red", "nir"],
+                        "color_ramp": [
+                            {
+                                "value": -0.0,
+                                "color": "#8F3F20",
+                                "alpha": 0.0
+                            },
+                            {
+                                "value": 0.0,
+                                "color": "#8F3F20",
+                                "alpha": 1.0
+                            },
+                            {
+                                "value": 0.1,
+                                "color": "#A35F18"
+                            },
+                            {
+                                "value": 0.2,
+                                "color": "#B88512"
+                            },
+                            {
+                                "value": 0.3,
+                                "color": "#CEAC0E"
+                            },
+                            {
+                                "value": 0.4,
+                                "color": "#E5D609"
+                            },
+                            {
+                                "value": 0.5,
+                                "color": "#FFFF0C"
+                            },
+                            {
+                                "value": 0.6,
+                                "color": "#C3DE09"
+                            },
+                            {
+                                "value": 0.7,
+                                "color": "#88B808"
+                            },
+                            {
+                                "value": 0.8,
+                                "color": "#529400"
+                            },
+                            {
+                                "value": 0.9,
+                                "color": "#237100"
+                            },
+                            {
+                                "value": 1.0,
+                                "color": "#114D04"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ndwi",
+                        "title": "NDWI - Green, NIR",
+                        "abstract": "Normalised Difference Water Index - a derived index that correlates well with "
+                                    "the existence of water (McFeeters 1996)",
+                        "index_function": lambda data: (data["green"] - data["nir"]) / (data["nir"] + data["green"]),
+                        "needed_bands": ["green", "nir"],
+                        "color_ramp": [
+                            {
+                                "value": -0.1,
+                                "color": "#f7fbff",
+                                "alpha": 0.0
+                            },
+                            {
+                                "value": 0.0,
+                                "color": "#d8e7f5",
+                                "legend": {
+                                    "prefix": "<"
+                                }
+                            },
+                            {
+                                "value": 0.1,
+                                "color": "#b0d2e8"
+                            },
+                            {
+                                "value": 0.2,
+                                "color": "#73b3d8",
+                                "legend": {}
+                            },
+                            {
+                                "value": 0.3,
+                                "color": "#3e8ec4"
+                            },
+                            {
+                                "value": 0.4,
+                                "color": "#1563aa",
+                                "legend": {}
+                            },
+                            {
+                                "value": 0.5,
+                                "color": "#08306b",
+                                "legend": {
+                                    "prefix": ">"
+                                }
+                            }
+                        ],
+                    },
+                    {
+                        "name": "mndwi",
+                        "title": "MNDWI - Green, SWIR",
+                        "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
+                                    "well with the existence of water (Xu 2006)",
+                        "index_function": lambda data: (data["green"] - data["swir1"]) / (
+                                data["green"] + data["swir1"]),
+                        "needed_bands": ["green", "swir1"],
+                        "color_ramp": [
+                            {
+                                "value": -0.1,
+                                "color": "#f7fbff",
+                                "alpha": 0.0
+                            },
+                            {
+                                "value": 0.0,
+                                "color": "#d8e7f5"
+                            },
+                            {
+                                "value": 0.2,
+                                "color": "#b0d2e8"
+                            },
+                            {
+                                "value": 0.4,
+                                "color": "#73b3d8"
+                            },
+                            {
+                                "value": 0.6,
+                                "color": "#3e8ec4"
+                            },
+                            {
+                                "value": 0.8,
+                                "color": "#1563aa"
+                            },
+                            {
+                                "value": 1.0,
+                                "color": "#08306b"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "blue",
+                        "title": "Blue - 480",
+                        "abstract": "Blue band, centered on 480nm",
+                        "components": {
+                            "red": {
+                                "blue": 1.0
+                            },
+                            "green": {
+                                "blue": 1.0
+                            },
+                            "blue": {
+                                "blue": 1.0
+                            }
+                        },
+                        "scale_range": [7272.0, 18181.0]
+                    },
+                    {
+                        "name": "green",
+                        "title": "Green - 560",
+                        "abstract": "Green band, centered on 560nm",
+                        "components": {
+                            "red": {
+                                "green": 1.0
+                            },
+                            "green": {
+                                "green": 1.0
+                            },
+                            "blue": {
+                                "green": 1.0
+                            }
+                        },
+                        "scale_range": [7272.0, 18181.0]
+                    },
+                    {
+                        "name": "red",
+                        "title": "Red - 660",
+                        "abstract": "Red band, centered on 660nm",
+                        "components": {
+                            "red": {
+                                "red": 1.0
+                            },
+                            "green": {
+                                "red": 1.0
+                            },
+                            "blue": {
+                                "red": 1.0
+                            }
+                        },
+                        "scale_range": [7272.0, 18181.0]
+                    },
+                    {
+                        "name": "nir",
+                        "title": "Near Infrared (NIR) - 870",
+                        "abstract": "Near infra-red band, centered on 870nm",
+                        "components": {
+                            "red": {
+                                "nir": 1.0
+                            },
+                            "green": {
+                                "nir": 1.0
+                            },
+                            "blue": {
+                                "nir": 1.0
+                            }
+                        },
+                        "scale_range": [7272.0, 18181.0]
+                    },
+                    {
+                        "name": "swir1",
+                        "title": "Shortwave Infrared (SWIR) - 1610",
+                        "abstract": "Short wave infra-red band 1, centered on 1610nm",
+                        "components": {
+                            "red": {
+                                "swir1": 1.0
+                            },
+                            "green": {
+                                "swir1": 1.0
+                            },
+                            "blue": {
+                                "swir1": 1.0
+                            }
+                        },
+                        "scale_range": [7272.0, 18181.0]
+                    },
+                    {
+                        "name": "swir2",
+                        "title": "Shortwave Infrared (SWIR) - 2200",
+                        "abstract": "Short wave infra-red band 2, centered on 2200nm",
+                        "components": {
+                            "red": {
+                                "swir2": 1.0
+                            },
+                            "green": {
+                                "swir2": 1.0
+                            },
+                            "blue": {
+                                "swir2": 1.0
+                            }
+                        },
+                        "scale_range": [7272.0, 18181.0]
+                    }
+                ],
+                # Default style (if request does not specify style)
+                "default_style": "simple_rgb",
+            }
+        ]
+    },
+    {
+        # Name and title of the platform layer.
+        # Platform layers are not mappable. The name is for internal server use only.
         "name": "ALOS/PALSAR Mosaic",
         "title": "ALOS/PALSAR",
         "abstract": "Annual mosaic of ALOS/PALSAR and ALOS-2/PALSAR-2 data",
