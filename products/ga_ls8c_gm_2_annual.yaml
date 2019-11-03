@@ -17,26 +17,47 @@ storage:
 
 measurements:
 - name: red 
-  dtype: int16
+  dtype: uint16
   nodata: 0 
   units: '1'
+  aliases:
+  - b4
+  - band_4
 - name: green 
-  dtype: int16
+  dtype: uint16
   nodata: 0 
   units: '1'
+  aliases:
+  - b3
+  - band_3
 - name: blue 
-  dtype: int16
+  dtype: uint16
   nodata: 0 
   units: '1'
+  aliases:
+  - b2
+  - band_2
 - name: nir 
-  dtype: int16
+  dtype: uint16
   nodata: 0 
   units: '1'
+  aliases:
+  - b5
+  - band_5
 - name: swir_1 
-  dtype: int16
+  dtype: uint16
   nodata: 0 
   units: '1'
+  aliases:
+  - b6
+  - band_6
+  - swir1
 - name: swir_2 
-  dtype: int16
+  dtype: uint16
   nodata: 0 
   units: '1'
+  aliases:
+  - b7
+  - band_7
+  - swir2
+
