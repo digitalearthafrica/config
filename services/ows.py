@@ -2925,7 +2925,7 @@ layer_cfg = [
                 # (defaults to empty list)
                 "ignore_info_flags": [],
                 "legend": {
-                    "url": "https://data.dea.ga.gov.au/fractional-cover/fc-percentile/annual/v2.1.0/fcp_legend.png",
+                    "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
                 },
                 "wcs_default_bands": ["BS", "PV", "NPV"],
                 "styles": [
