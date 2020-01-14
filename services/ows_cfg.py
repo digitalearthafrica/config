@@ -2000,12 +2000,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_flags_info": [
-                                "nodata",
-                                # "noncontiguous",
-                            ],                            
-                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2045,9 +2039,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2086,9 +2077,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2124,9 +2112,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },                        
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2171,9 +2156,6 @@ ows_cfg = {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
                             "manual_merge": True,
-                        },
-                        "flags": {
-                            "ignore_info_flags": [],
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2222,9 +2204,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },                        
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2312,9 +2291,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2341,9 +2317,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2369,9 +2342,6 @@ ows_cfg = {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
                             "manual_merge": True,
-                        },
-                        "flags": {
-                            "ignore_info_flags": [],
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2418,9 +2388,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },                        
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2488,9 +2455,6 @@ ows_cfg = {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
                             "manual_merge": True,
-                        },
-                        "flags": {
-                            "ignore_info_flags": [],
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2573,9 +2537,6 @@ ows_cfg = {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
                             "manual_merge": True,
-                        },
-                        "flags": {
-                            "ignore_info_flags": [],
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
