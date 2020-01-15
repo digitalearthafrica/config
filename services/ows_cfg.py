@@ -773,6 +773,80 @@ style_wofs_count_wet = {
     }
 }
 
+style_wofs_water_annual_wet = {
+    "name": "water_observations",
+    "title": "Count Wet",
+    "abstract": "WOfS summary showing the count of water observations",
+    "needed_bands": ["count_wet"],
+    "color_ramp": [
+        {
+            "value": 0,
+            "color": "#666666",
+            "alpha": 0
+        },
+        {
+            # purely for legend display
+            # we should not get fractional
+            # values in this styles
+            "value": 0.2,
+            "color": "#990000",
+            "alpha": 1
+        },
+        {
+            "value": 2,
+            "color": "#990000"
+        },
+        {
+            "value": 2,
+            "color": "#990000"
+        },
+        {
+            "value": 4,
+            "color": "#E38400"
+        },
+        {
+            "value": 6,
+            "color": "#E3DF00"
+        },
+        {
+            "value": 8,
+            "color": "#00E32D"
+        },
+        {
+            "value": 10,
+            "color": "#00E3C8"
+        },
+        {
+            "value": 12,
+            "color": "#0097E3"
+        },
+        {
+            "value": 14,
+            "color": "#005FE3"
+        },
+        {
+            "value": 16,
+            "color": "#000FE3"
+        },
+        {
+            "value": 18,
+            "color": "#000EA9"
+        },
+        {
+            "value": 20,
+            "color": "#5700E3",
+            "legend": {
+                "prefix": ">"
+            }
+        }
+    ],
+    "legend": {
+        "radix_point": 0,
+        "scale_by": 1,
+        "major_ticks": 10
+    }
+}
+
 style_wofs_frequency = {
     "name": "WOfS_frequency",
     "title": " Water Summary",
@@ -1581,7 +1655,7 @@ style_alos_hh_over_hv = {
     # Mixing ratio between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
     "component_ratio": 0.5,
     "index_function": {
-        "function": "datacube_ows.band_utils.norm_diff",
+        "function": "datacube_ows.band_utils.band_quotient",
         "pass_product_cfg": True,
         "kwargs": {
             "band1": "hh",
@@ -1621,7 +1695,7 @@ style_alos_hv_over_hh = {
     # Mixing ratio between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
     "component_ratio": 0.5,
     "index_function": {
-        "function": "datacube_ows.band_utils.norm_diff",
+        "function": "datacube_ows.band_utils.band_quotient",
         "pass_product_cfg": True,
         "kwargs": {
             "band1": "hh",
@@ -2241,7 +2315,7 @@ ows_cfg = {
                         "styling": {
                             "default_style": "water_observations",
                             "styles": [
-                                    style_wofs_count_wet,
+                                    style_wofs_water_annual_wet,
                             ]
                         }
                     },
@@ -2410,12 +2484,6 @@ ows_cfg = {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["BS", "PV", "NPV"]
-                        },
-                        "flags": {
-                            "dataset": "ls_usgs_wofs_scene",
-                            "band": "Water",
-                            "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
-                            "ignore_info_flags": [],
                         },
                         "styling": {
                             "default_style": "simple_fc",
