@@ -1902,9 +1902,6 @@ ows_cfg = {
                             "manual_merge": True,
                             "apply_solar_corrections": False,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -1933,9 +1930,6 @@ ows_cfg = {
                             "manual_merge": True,
                             "apply_solar_corrections": False,
                         },
-                        "flags": {
-                            "ignore_info_flags": [],
-                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -1963,9 +1957,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                             "apply_solar_corrections": False,
-                        },
-                        "flags": {
-                            "ignore_info_flags": [],
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2242,10 +2233,6 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
-                        "flags": {
-                            "ignore_time": True,
-                            "ignore_info_flags": [],
-                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2425,7 +2412,7 @@ ows_cfg = {
                             "default_bands": ["BS", "PV", "NPV"]
                         },
                         "flags": {
-                            "datasets": "ls_usgs_wofs_scene",
+                            "dataset": "ls_usgs_wofs_scene",
                             "band": "Water",
                             "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
                             "ignore_info_flags": [],
