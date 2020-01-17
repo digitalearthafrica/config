@@ -4,6 +4,9 @@ metadata_type: eo
 
 storage:
     crs: EPSG:4326
+    resolution:
+        longitude: 0.000180668000000
+        latitude: -0.000180668000000
 
 metadata:
     platform:
