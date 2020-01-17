@@ -1538,7 +1538,10 @@ style_fc_simple = {
                 "sea": False
             }
         },
-    ]
+    ],
+    "legend": {
+        "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
+    }
 }
 
 
