@@ -370,7 +370,7 @@ style_ls_mndwi = {
         "pass_product_cfg": True,
         "kwargs": {
             "band1": "green",
-            "band2": "swir_1"
+            "band2": "swir1"
         }
     },
     "needed_bands": ["green", "swir1"],
