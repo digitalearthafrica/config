@@ -370,7 +370,7 @@ style_ls_mndwi = {
         "pass_product_cfg": True,
         "kwargs": {
             "band1": "green",
-            "band2": "swir_1"
+            "band2": "swir1"
         }
     },
     "needed_bands": ["green", "swir1"],
@@ -777,6 +777,13 @@ style_wofs_water_annual_wet = {
     "name": "water_observations",
     "title": "Count Wet",
     "abstract": "WOfS summary showing the count of water observations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "pass_product_cfg": True,
+        "kwargs": {
+            "band": "count_wet",
+        }
+    },
     "needed_bands": ["count_wet"],
     "color_ramp": [
         {
