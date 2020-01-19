@@ -132,6 +132,26 @@ style_ls_simple_rgb = {
         "scale_range": [0.0, 3000.0]
 }
 
+style_gals_simple_rgb = {
+        "name": "simple_rgb",
+        "title": "Simple RGB",
+        "abstract": "Simple true-colour image, using the red, green and blue bands",
+        "components": {
+            "red": {
+                "red": 1.0
+            },
+            "green": {
+                "green": 1.0
+            },
+            "blue": {
+                "blue": 1.0
+            }
+        },
+        # The raw band value range to be compressed to an 8 bit range for the output image tiles.
+        # Band values outside this range are clipped to 0 or 255 as appropriate.
+        "scale_range": [7272.0, 18181.0]
+}
+
 style_fc_simple_rgb  = {
         "name": "simple_rgb",
         "title": "Simple RGB",
@@ -2490,6 +2510,11 @@ ows_cfg = {
                             "always_fetch_bands": [],
                             "manual_merge": True,
                         },
+                        "flags":{
+                            "dataset": "ls_usgs_wofs_scene",
+                            "band": "water",
+                            "ignore_info_flags": [],
+                        },
                         "wcs": {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
@@ -2529,7 +2554,7 @@ ows_cfg = {
                         "styling": {
                             "default_style": "simple_rgb",
                             "styles": [
-                                style_ls_simple_rgb,
+                                style_gals_simple_rgb,
                                 style_gals_irg, 
                                 style_ls_ndvi, style_ls_ndwi, 
                                 style_gals_mndwi,
