@@ -1349,22 +1349,22 @@ style_wofs_obs = {
                 "abstract": "Slope or Cloud",
                 "flags": {
                     "or": {
-                      "terrain_or_low_angle": True,
-                      "cloud_shadow": True,
-                      "cloud": True,
-                      "high_slope": True,
-                      "noncontiguous": True
+                        "cloud_shadow": True,
+                        "cloud": True
                     }
                 },
                 "color": "#707070"
             },
             {
                 # Possible Sea Glint, also mark as invalid
-                "title": "",
-                "abstract": "",
+                "title": "Invalid_Dry",
+                "abstract": "Possible Sea Glint, also mark as invalid",
                 "flags": {
                     "dry": True,
-                    "sea": True
+                    "sea": True,
+                    "cloud_shadow": False,
+                    "cloud": False,
+                    "nodata": False
                 },
                 "color": "#707070"
             },
@@ -1374,6 +1374,9 @@ style_wofs_obs = {
                 "flags": {
                     "dry": True,
                     "sea": False,
+                    "cloud_shadow": False,
+                    "cloud": False,
+                    "nodata": False
                 },
                 "color": "#D99694"
             },
@@ -1381,10 +1384,10 @@ style_wofs_obs = {
                 "title": "Wet",
                 "abstract": "Wet or Sea",
                 "flags": {
-                  "or": {
-                    "wet": True,
-                    "sea": True
-                  }
+                    "or": {
+                        "wet": True,
+                        "sea": True
+                    }
                 },
                 "color": "#4F81BD"
             }
@@ -1403,11 +1406,9 @@ style_wofs_obs_wet_only = {
                 "abstract": "Slope or Cloud",
                 "flags": {
                     "or": {
-                      "terrain_or_low_angle": True,
-                      "cloud_shadow": True,
-                      "cloud": True,
-                      "high_slope": True,
-                      "noncontiguous": True
+                        "cloud_shadow": True,
+                        "cloud": True,
+                        "nodata": True,
                     }
                 },
                 "color": "#707070",
@@ -1415,8 +1416,8 @@ style_wofs_obs_wet_only = {
             },
             {
                 # Possible Sea Glint, also mark as invalid
-                "title": "",
-                "abstract": "",
+                "title": "Invalid_Dry",
+                "abstract": "Possible Sea Glint, also mark as invalid",
                 "flags": {
                     "dry": True,
                     "sea": True
@@ -1438,10 +1439,10 @@ style_wofs_obs_wet_only = {
                 "title": "Wet",
                 "abstract": "Wet or Sea",
                 "flags": {
-                  "or": {
-                    "wet": True,
-                    "sea": True
-                  }
+                    "or": {
+                        "wet": True,
+                        "sea": True
+                    }
                 },
                 "color": "#4F81BD"
             }
