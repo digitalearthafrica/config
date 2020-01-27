@@ -1552,8 +1552,6 @@ style_fc_simple = {
         },
         {
             "flags": {
-                "terrain_or_low_angle": False,
-                "high_slope": False,
                 "cloud_shadow": False,
                 "cloud": False,
                 "sea": False
