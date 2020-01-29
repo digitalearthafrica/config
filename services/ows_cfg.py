@@ -102,6 +102,7 @@ bands_fc = {
     "BS": [ "bare_soil" ],
     "PV": [ "photosynthetic_vegetation", "green_vegetation" ],
     "NPV": [ "non_photosynthetic_vegetation", "brown_vegetation" ],
+    'UE': []
 }
 
 
@@ -112,7 +113,9 @@ bands_elevation = {
 bands_alos = {
     "hh": [],
     "hv": [],
-    "mask": []
+    "mask": [],
+    "date": [],
+    "linci": []
 }
 # Style
 style_ls_simple_rgb = {
