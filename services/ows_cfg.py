@@ -102,7 +102,7 @@ bands_fc = {
     "BS": [ "bare_soil" ],
     "PV": [ "photosynthetic_vegetation", "green_vegetation" ],
     "NPV": [ "non_photosynthetic_vegetation", "brown_vegetation" ],
-    'UE': []
+    "UE": []
 }
 
 
@@ -2649,7 +2649,7 @@ ows_cfg = {
                         "abstract": """	Landsat Fractional Cover based on USGS Level 2 Scenes. Data is only visible at higher resolutions; when zoomed-out the available area will be displayed as a shaded region. Fractional cover provides information about the the proportions of green vegetation, non-green vegetation ( including deciduous trees during autumn, dry grass, etc.), and bare areas. Fractional cover provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time. The fractional cover algorithm was developed by the Joint Remote Sensing Research Program, for more information please see data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Fractional+Cover Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. This product contains Fractional Cover derived from Landsat 5, Landsat 7, and Landsat 8 US Geological Survey Collection 1 Level2 Surface Reflectance USARD, 30m UTM based projection.""",
                         "product_name": "ls_usgs_fc_scene",
                         "bands": bands_fc,
-                        "resource_limits": reslim_landsat,
+                        "resource_limits": reslim_srmt,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
