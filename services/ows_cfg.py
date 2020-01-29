@@ -90,6 +90,12 @@ bands_wofs_frequency =  {
     "frequency": [],
 }
 
+bands_usgs_wofs_summary = {
+    "count_wet": [],
+    "count_dry": [],
+    "frequency": []
+}
+
 bands_wofs_2_annual_summary = {
     "frequency": [],
     "count_clear": [],
@@ -2278,7 +2284,7 @@ ows_cfg = {
                         Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of
                         the water summary.""",
                         "product_name": "ls_usgs_wofs_summary",
-                        "bands": bands_wofs_frequency,
+                        "bands": bands_usgs_wofs_summary,
                         "resource_limits": reslim_wofs_dry,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -2316,7 +2322,7 @@ ows_cfg = {
                             Filtered Summary product, which provide a noise-reduced view of the water summary.
                         """,
                         "product_name": "ls_usgs_wofs_summary",
-                        "bands": bands_wofs_wet,
+                        "bands": bands_usgs_wofs_summary,
                         "resource_limits": reslim_wofs_dry,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -2351,7 +2357,7 @@ ows_cfg = {
                             Filtered Summary product, which provide a noise-reduced view of the water summary.
                         """,
                         "product_name": "ls_usgs_wofs_summary",
-                        "bands": bands_wofs_dry,
+                        "bands": bands_usgs_wofs_summary,
                         "resource_limits": reslim_wofs_dry,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -2396,7 +2402,7 @@ ows_cfg = {
                             https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf
                         """,
                         "product_name": "ls_usgs_wofs_summary",
-                        "bands": bands_wofs_dry,
+                        "bands": bands_usgs_wofs_summary,
                         "resource_limits": reslim_wofs_dry,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
