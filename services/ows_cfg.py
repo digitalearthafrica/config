@@ -88,6 +88,8 @@ bands_wofs_wet = {
 
 bands_wofs_frequency =  {
     "frequency": [],
+    "count_dry": [],
+    "count_wet": []
 }
 
 bands_wofs_dry = {
@@ -102,7 +104,7 @@ bands_fc = {
     "BS": [ "bare_soil" ],
     "PV": [ "photosynthetic_vegetation", "green_vegetation" ],
     "NPV": [ "non_photosynthetic_vegetation", "brown_vegetation" ],
-    "UE": []
+    "UE": [ "unmixing_error" ]
 }
 
 
