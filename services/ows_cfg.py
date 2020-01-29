@@ -2284,12 +2284,13 @@ ows_cfg = {
                         Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of
                         the water summary.""",
                         "product_name": "ls_usgs_wofs_summary",
+                        "time_resolution": "year",
                         "bands": bands_usgs_wofs_summary,
                         "resource_limits": reslim_wofs_dry,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2322,12 +2323,13 @@ ows_cfg = {
                             Filtered Summary product, which provide a noise-reduced view of the water summary.
                         """,
                         "product_name": "ls_usgs_wofs_summary",
+                        "time_resolution": "year",
                         "bands": bands_usgs_wofs_summary,
                         "resource_limits": reslim_wofs_dry,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2357,12 +2359,13 @@ ows_cfg = {
                             Filtered Summary product, which provide a noise-reduced view of the water summary.
                         """,
                         "product_name": "ls_usgs_wofs_summary",
+                        "time_resolution": "year",
                         "bands": bands_usgs_wofs_summary,
                         "resource_limits": reslim_wofs_dry,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2449,6 +2452,7 @@ ows_cfg = {
                             the water summary.
                         """,
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
+                        "time_resolution": "year",
                         "bands": bands_wofs_2_annual_summary,
                         "resource_limits": reslim_wofs,
                         "image_processing": {
@@ -2532,6 +2536,7 @@ ows_cfg = {
                             https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf
                         """,
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
+                        "time_resolution": "year",
                         "bands": bands_wofs_2_annual_summary,
                         "resource_limits": reslim_wofs,
                         "image_processing": {
@@ -2559,6 +2564,7 @@ ows_cfg = {
                         """,
                         "product_name": "ga_ls8c_wofs_2_summary",
                         "bands": bands_wofs_2_annual_summary,
+                        "time_resolution": "year",
                         "resource_limits": reslim_wofs,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -2584,6 +2590,7 @@ ows_cfg = {
                             	Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products which help the understanding of surface water across Africa. The layers available are: the count of wet observations; the percentage of wet observations over time. This layer contains Wet Count: how many times water was detected in observations that were clear. No clear observations of water causes an area to appear transparent, 1-50 total clear observations of water correlate with red and yellow colours, 100 clear observations of water correlate with green, 200 clear observations of water correlates with light blue, 300 clear observations of water correlates to deep blue and 400 and over observations of clear water correlate to purple. As no confidence filtering is applied to this product, it is affected by noise where mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The confidence layer and filtered summary are contained in the Water Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of the water summary.
                         """,
                         "product_name": "ga_ls8c_wofs_2_summary",
+                        "time_resolution": "year",
                         "bands": bands_wofs_2_annual_summary,
                         "resource_limits": reslim_wofs,
                         "image_processing": {
@@ -2631,6 +2638,7 @@ ows_cfg = {
                         "product_name": "ga_ls8c_wofs_2_summary",
                         "bands": bands_wofs_2_annual_summary,
                         "resource_limits": reslim_wofs,
+                        "time_resolution": "year",
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
@@ -2697,6 +2705,7 @@ ows_cfg = {
                         "name": "ga_ls8c_gm_2_annual",
                         "abstract": """ Landsat 8 Surface Reflectance""",
                         "product_name": "ga_ls8c_gm_2_annual",
+                        "time_resolution": "year",
                         "bands": bands_ls8c,
                         "resource_limits": reslim_srmt,
                         "image_processing": {
@@ -2735,6 +2744,7 @@ ows_cfg = {
                         "name": "alos_palsar_mosaic",
                         "abstract": """The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR two sensors on ALOS-1 and ALOS-2 satellites respectively. For more information, see: https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/DatasetDescription_PALSAR2_Mosaic_FNF_revH.pdf""",
                         "product_name": "alos_palsar_mosaic",
+                        "time_resolution": "year",
                         "bands": bands_alos,
                         "resource_limits": reslim_alos_palsar,
                         "image_processing": {
@@ -2779,6 +2789,7 @@ ows_cfg = {
                             format. For more information, see: https://www2.jpl.nasa.gov/srtm/
                         """,
                         "product_name": "srtm",
+                        "time_resolution": "year",
                         "bands": bands_elevation,
                         "resource_limits": reslim_srmt,
                         "image_processing": {
