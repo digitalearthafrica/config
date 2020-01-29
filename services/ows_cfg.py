@@ -2651,6 +2651,7 @@ ows_cfg = {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
                             "manual_merge": True,
+                            "fuse_func": "datacube_ows.wms_utils.wofls_fuser"
                         },
                         "flags":{
                             "dataset": "ls_usgs_wofs_scene",
