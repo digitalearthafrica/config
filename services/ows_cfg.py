@@ -1851,9 +1851,7 @@ style_fc_simple = {
             }
         },
     ],
-    "legend": {
-        "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
-    }
+
 }
 
 
@@ -2820,6 +2818,9 @@ ows_cfg = {
                             "native_crs": "EPSG:3577",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["BS", "PV", "NPV"]
+                        },
+                        "legend": {
+                            "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
                         },
                         "styling": {
                             "default_style": "simple_fc",
