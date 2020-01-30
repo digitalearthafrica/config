@@ -2160,7 +2160,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": True, # True
                             "apply_solar_corrections": False,
                         },
                         "wcs": {
@@ -2188,7 +2188,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": True, # True
                             "apply_solar_corrections": False,
                         },
                         "wcs": {
@@ -2216,7 +2216,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": True, # True
                             "apply_solar_corrections": False,
                         },
                         "wcs": {
@@ -2250,7 +2250,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_bitflag",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2410,7 +2410,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2496,7 +2496,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2542,7 +2542,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2569,7 +2569,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2596,7 +2596,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2642,7 +2642,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2673,7 +2673,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                             "fuse_func": "datacube_ows.wms_utils.wofls_fuser"
                         },
                         "flags":{
@@ -2711,7 +2711,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
@@ -2750,7 +2750,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "flags":{
                             "dataset": "alos_palsar_mosaic",
@@ -2795,7 +2795,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "manual_merge": False,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
