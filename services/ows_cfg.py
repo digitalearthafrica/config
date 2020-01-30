@@ -1214,47 +1214,47 @@ style_wofs_annual_summary_frequency_blue = {
     "include_in_feature_info": False,
     "needed_bands": ["frequency"],
     "color_ramp": [
-                {
-                    "value": 0.0,
-                    "color": "#ffffff",
-                    "alpha": 0.0,
-                },
-                {
-                    "value": 0.001,
-                    "color": "#d5fef9",
-                    "alpha": 0.0,
-                },
-                {
-                    "value": 0.02,
-                    "color": "#d5fef9",
-                },
-                {
-                    "value": 0.2,
-                    "color": "#71e3ff"
-                },
-                {
-                    "value": 0.4,
-                    "color": "#01ccff"
-                },
-                {
-                    "value": 0.6,
-                    "color": "#0178ff"
-                },
-                {
-                    "value": 0.8,
-                    "color": "#2701ff"
-                },
-                {
-                    "value": 1.0,
-                    "color": "#5700e3"
-                }
-            ],
-            "legend": {
-                "units": "%",
-                "radix_point": 0,
-                "scale_by": 100.0,
-                "major_ticks": 0.1
-            }
+        {
+            "value": 0.0,
+            "color": "#ffffff",
+            "alpha": 0.0,
+        },
+        {
+            "value": 0.001,
+            "color": "#d5fef9",
+            "alpha": 0.0,
+        },
+        {
+            "value": 0.02,
+            "color": "#d5fef9",
+        },
+        {
+            "value": 0.2,
+            "color": "#71e3ff"
+        },
+        {
+            "value": 0.4,
+            "color": "#01ccff"
+        },
+        {
+            "value": 0.6,
+            "color": "#0178ff"
+        },
+        {
+            "value": 0.8,
+            "color": "#2701ff"
+        },
+        {
+            "value": 1.0,
+            "color": "#5700e3"
+        }
+    ],
+    "legend": {
+        "units": "%",
+        "radix_point": 0,
+        "scale_by": 100.0,
+        "major_ticks": 0.1
+    }
 
 }
 
@@ -2813,7 +2813,7 @@ ows_cfg = {
                         "flags":{
                             "dataset": "ls_usgs_wofs_scene",
                             "band": "water",
-                            "fuse_func": "datacube_ows.wms_utils.wofls_fuser,
+                            "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
                             "ignore_info_flags": [],
                         },
                         "wcs": {
