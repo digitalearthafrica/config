@@ -2624,6 +2624,7 @@ ows_cfg = {
                             Filtered Summary product, which provide a noise-reduced view of the water summary.
                         """,
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
+                        "time_resolution": "year",
                         "bands": bands_wofs_2_annual_summary,
                         "resource_limits": reslim_wofs,
                         "image_processing": {
