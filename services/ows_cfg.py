@@ -2847,7 +2847,7 @@ ows_cfg = {
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "manual_merge": True,
                         },
                         "wcs": {
                             "native_crs": "EPSG:3577",
