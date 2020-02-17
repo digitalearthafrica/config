@@ -4,7 +4,7 @@ metadata_type: eo
 
 metadata:
     platform:
-        code: JERS-1
+        code: JERS
     instrument:
         name: SAR
     product_type: gamma0
