@@ -1,4 +1,4 @@
-name: jers_sar_tile
+name: jers_sar_mosaic
 description: JERS-1 SAR annual mosaic tiles generated for use in the Data Cube - 25m pixel spacing, WGS84. These tiles are derived from the orignal JAXA mosaics with conversion to GeoTIFF.
 metadata_type: eo
 
