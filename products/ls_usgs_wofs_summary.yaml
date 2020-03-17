@@ -7,7 +7,7 @@ metadata:
     name: ls_usgs_wofs_summary
 
 storage:
-    crs: EPSG:102022
+    crs: ESRI:102022
     resolution:
         x: 30
         y: -30
