@@ -2806,10 +2806,11 @@ ows_cfg = {
                         "product_name": "ls_usgs_fc_scene",
                         "bands": bands_fc,
                         "resource_limits": reslim_srmt,
+                        #"time_resolution": "year",
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "manual_merge": True,
                         },
                         "flags":{
                             "dataset": "ls_usgs_wofs_scene",
@@ -2925,7 +2926,7 @@ ows_cfg = {
                             format. For more information, see: https://www2.jpl.nasa.gov/srtm/
                         """,
                         "product_name": "srtm",
-                        "time_resolution": "year",
+                        #"time_resolution": "year",
                         "bands": bands_elevation,
                         "resource_limits": reslim_srmt,
                         "image_processing": {
