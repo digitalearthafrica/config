@@ -149,7 +149,11 @@
                      "linkedWcsCoverage": "wofs_annual_summary_statistics",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "featureTimesProperty": "data_available_for_dates",
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                      }
                   },
                   {
                      "name": "Count of Dry Observations (Annual)",
@@ -160,7 +164,11 @@
                      "linkedWcsCoverage": "wofs_annual_summary_dry",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "featureTimesProperty": "data_available_for_dates",
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                      }
                   },
                   {
                      "name": "Count of Wet Observations (Annual)",
@@ -171,7 +179,11 @@
                      "linkedWcsCoverage": "wofs_annual_summary_wet",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "featureTimesProperty": "data_available_for_dates",
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                      }
                   },
                   {
                      "name": "Summary of Clear Observations (Annual)",
@@ -182,7 +194,11 @@
                      "linkedWcsCoverage": "wofs_annual_summary_clear",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "featureTimesProperty": "data_available_for_dates",
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                      }
                   }
                ]
             },
@@ -200,7 +216,11 @@
                      "linkedWcsCoverage": "wofs_2_annual_summary_statistics",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "featureTimesProperty": "data_available_for_dates",
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                      }
                   },
                   {
                      "name": "Count of Wet Observations (Annual)",
@@ -211,7 +231,11 @@
                      "linkedWcsCoverage": "wofs_2_annual_summary_wet",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "featureTimesProperty": "data_available_for_dates",
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                     }
                   },
                   {
                      "name": "Count of Clear Observations (Annual)",
@@ -222,7 +246,11 @@
                      "linkedWcsCoverage": "wofs_2_annual_summary_clear",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "featureTimesProperty": "data_available_for_dates",
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                     }
                   },
                   {
                      "name": "Summary of Water Observations (All Time)",
