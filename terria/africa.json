@@ -113,6 +113,10 @@
                               "maximumFractionDigits": 2
                            }
                         }
+                     },
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
                      }
                   }
                ]
@@ -260,7 +264,11 @@
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "wofs_2_summary_statistics",
                      "ignoreUnknownTileErrors": true,
-                     "opacity": 1
+                     "opacity": 1,
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                     }
                   },
                   {
                      "name": "Count of Wet Observations (All Time)",
@@ -270,7 +278,11 @@
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "wofs_2_summary_wet",
                      "ignoreUnknownTileErrors": true,
-                     "opacity": 1
+                     "opacity": 1,
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                     }
                   },
                   {
                      "name": "Count of Clear Observations (All Time)",
@@ -280,7 +292,11 @@
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "wofs_2_summary_clear",
                      "ignoreUnknownTileErrors": true,
-                     "opacity": 1
+                     "opacity": 1,
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                     }
                   }
                ]
             },
@@ -316,7 +332,11 @@
                      "linkedWcsCoverage": "ga_ls8c_gm_2_annual",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
-                     "featureTimesProperty": "data_available_for_dates"
+                     "featureTimesProperty": "data_available_for_dates",
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                     }
                   }
                ]
             }
@@ -340,7 +360,11 @@
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "srtm",
                      "ignoreUnknownTileErrors": true,
-                     "opacity": 1
+                     "opacity": 1,
+                     "dateFormat": {
+                        "currentTime": "'Year: 'yyyy",
+                        "timelineTic": "yyyy"
+                     }
                   }
                ]
             }
