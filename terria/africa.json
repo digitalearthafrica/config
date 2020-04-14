@@ -264,11 +264,7 @@
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "wofs_2_summary_statistics",
                      "ignoreUnknownTileErrors": true,
-                     "opacity": 1,
-                     "dateFormat": {
-                        "currentTime": "'Year: 'yyyy",
-                        "timelineTic": "yyyy"
-                     }
+                     "opacity": 1
                   },
                   {
                      "name": "Count of Wet Observations (All Time)",
@@ -278,11 +274,7 @@
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "wofs_2_summary_wet",
                      "ignoreUnknownTileErrors": true,
-                     "opacity": 1,
-                     "dateFormat": {
-                        "currentTime": "'Year: 'yyyy",
-                        "timelineTic": "yyyy"
-                     }
+                     "opacity": 1
                   },
                   {
                      "name": "Count of Clear Observations (All Time)",
@@ -292,11 +284,7 @@
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
                      "linkedWcsCoverage": "wofs_2_summary_clear",
                      "ignoreUnknownTileErrors": true,
-                     "opacity": 1,
-                     "dateFormat": {
-                        "currentTime": "'Year: 'yyyy",
-                        "timelineTic": "yyyy"
-                     }
+                     "opacity": 1
                   }
                ]
             },
