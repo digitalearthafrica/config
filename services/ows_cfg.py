@@ -2206,6 +2206,11 @@ ows_cfg = {
                 "geographic": False,
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
+            },
+            "ESRI:102022": {
+                "geographic": False,
+                "horizontal_coord": "x",
+                "vertical_coord": "y",                
             }
         },
         "allowed_urls": [
@@ -2428,7 +2433,8 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            #"native_crs": "EPSG:3577",
+                            "native_crs": "ESRI:102022",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["frequency"]
                         },
@@ -2467,7 +2473,8 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            #"native_crs": "EPSG:3577",
+                            "native_crs": "ESRI:102022",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_wet"]
                         },
@@ -2503,7 +2510,8 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            #"native_crs": "EPSG:3577",
+                            "native_crs": "ESRI:102022",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_dry"]
                         },
@@ -2548,7 +2556,8 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            #"native_crs": "EPSG:3577",
+                            "native_crs": "ESRI:102022",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_dry"]
                         },
