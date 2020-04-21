@@ -2193,11 +2193,6 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "EPSG:102022": {  # Deprecated, but it's requred as it was update_ranges'd against
-                "geographic": False,
-                "horizontal_coord": "x",
-                "vertical_coord": "y",
-            },
             "EPSG:4326": {  # WGS-84
                 "geographic": True,
                 "vertical_coord_first": True
