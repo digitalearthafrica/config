@@ -2299,7 +2299,7 @@ ows_cfg = {
                             "apply_solar_corrections": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:4326",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["red", "green", "blue"]
                         },
@@ -2327,7 +2327,7 @@ ows_cfg = {
                             "apply_solar_corrections": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:4326",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["red", "green", "blue"]
                         },
@@ -2355,7 +2355,7 @@ ows_cfg = {
                             "apply_solar_corrections": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:4326",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["red", "green", "blue"]
                         },
@@ -2388,7 +2388,7 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:4326",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["water"]
                         },
@@ -2428,7 +2428,6 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            #"native_crs": "EPSG:3577",
                             "native_crs": "ESRI:102022",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["frequency"]
@@ -2468,7 +2467,6 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            #"native_crs": "EPSG:3577",
                             "native_crs": "ESRI:102022",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_wet"]
@@ -2505,7 +2503,6 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            #"native_crs": "EPSG:3577",
                             "native_crs": "ESRI:102022",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_dry"]
@@ -2551,7 +2548,6 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            #"native_crs": "EPSG:3577",
                             "native_crs": "ESRI:102022",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_dry"]
@@ -2600,7 +2596,7 @@ ows_cfg = {
                             "manual_merge": True,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:6933",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["frequency"]
                         },
@@ -2639,7 +2635,7 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:6933",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_wet"]
                         },
@@ -2685,7 +2681,7 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:6933",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_clear"]
                         },
@@ -2712,7 +2708,7 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:6933",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["frequency"]
                         },
@@ -2739,7 +2735,7 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:6933",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_wet"]
                         },
@@ -2785,7 +2781,7 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:6933",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["count_clear"]
                         },
@@ -2823,7 +2819,7 @@ ows_cfg = {
                             "ignore_info_flags": [],
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:4326",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["BS", "PV", "NPV"]
                         },
@@ -2855,7 +2851,7 @@ ows_cfg = {
                             "manual_merge": True,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:6933",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["red", "green", "blue"]
                         },
@@ -2898,8 +2894,8 @@ ows_cfg = {
                             "band": "mask",
                             "ignore_info_flags": [],
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:3577",
+                        "wcs": {5
+                            "native_crs": "EPSG:4326",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["hh", "hv", "mask"]
                         },
@@ -2939,7 +2935,7 @@ ows_cfg = {
                             "manual_merge": False,
                         },
                         "wcs": {
-                            "native_crs": "EPSG:3577",
+                            "native_crs": "EPSG:4326",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["elevation"]
                         },
