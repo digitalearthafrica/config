@@ -5,7 +5,7 @@ metadata_type: eo3_landsat_ard
 metadata:
     product:
        name: ga_ls8c_wofs_2_terrain
-       href: https://collections.dea.ga.gov.au/product/ga_ls8c_wofs_2_terrain
+
 
 measurements:
       - name: 'water'
@@ -29,12 +29,12 @@ measurements:
                     0: false
                     1: true
                 description: No data
-            contiguous:
+            noncontiguous:
                 bits: 1
                 values:
-                  0: true
-                  1: false
-                description: Contiguity
+                  0: false
+                  1: true
+                description: At least one EO band is missing or saturated
             sea:
                 bits: 2
                 values:
@@ -46,7 +46,7 @@ measurements:
                 values:
                     0: false
                     1: true
-                description: terrain shadow or low solar angle
+                description: Terrain shadow or low solar angle
             high_slope:
                 bits: 4
                 values:
