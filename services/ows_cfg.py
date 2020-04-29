@@ -2894,7 +2894,8 @@ ows_cfg = {
                             "band": "mask",
                             "ignore_info_flags": [],
                         },
-                        "wcs": {5
+                        "wcs": {
+
                             "native_crs": "EPSG:4326",
                             "native_resolution": [25.0, 25.0],
                             "default_bands": ["hh", "hv", "mask"]
