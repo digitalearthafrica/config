@@ -52,7 +52,7 @@ reslim_wofs_dry = {
     },
     "wcs": {
         # "max_datasets": 16, # Defaults to no dataset limit
-    }    
+    }
 }
 reslim_alos_palsar = reslim_srmt
 
@@ -191,7 +191,7 @@ style_fc_simple_rgb  = {
                 },
                 "invert": True,
             },
-        ],    
+        ],
 }
 style_gals_irg = {
     "name": "infrared_green",
@@ -226,7 +226,7 @@ style_ls_irg = {
             "green": 1.0
         }
     },
-    "scale_range": [0.0, 3000.0]    
+    "scale_range": [0.0, 3000.0]
 }
 
 style_ls_ndvi = {
@@ -440,7 +440,7 @@ style_ls_mndwi = {
             "value": 1.0,
             "color": "#08306b"
         }
-    ]    
+    ]
 }
 
 style_gals_pure_blue = {
@@ -530,7 +530,7 @@ style_ls_pure_green = {
             "green": 1.0
         }
     },
-    "scale_range": [0.0, 3000.0]    
+    "scale_range": [0.0, 3000.0]
 }
 
 style_gals_pure_red = {
@@ -566,7 +566,7 @@ style_ls_pure_red = {
             "red": 1.0
         }
     },
-    "scale_range": [0.0, 3000.0]    
+    "scale_range": [0.0, 3000.0]
 }
 
 style_gals_pure_nir = {
@@ -710,7 +710,7 @@ style_ls_pure_swir2 = {
             "swir2": 1.0
         }
     },
-    "scale_range": [0.0, 3000.0]    
+    "scale_range": [0.0, 3000.0]
 }
 
 style_sentinel_pure_swir2 = {
@@ -1469,7 +1469,7 @@ style_wofs_annual_clear = {
         "scale_by": 1,
         "major_ticks": 10,
         "axes_position": [0.05, 0.5, 0.89, 0.15]
-    }    
+    }
 }
 
 style_annual_wofs_summary_frequency = {
@@ -1626,7 +1626,7 @@ style_seasonal_wofs_summary_frequency = {
         "radix_point": 0,
         "scale_by": 100.0,
         "major_ticks": 0.1
-    } 
+    }
 }
 
 
@@ -1967,7 +1967,7 @@ style_alos_hv = {
         "radix_point": 0,
         "scale_by": 1,
         "major_ticks": 500
-    }    
+    }
 }
 
 style_alos_hh_over_hv = {
@@ -2046,7 +2046,7 @@ style_alos_hv_over_hh = {
         {
             "value": 0.6,
             "color": "#0000ff"
-        }    
+        }
     ]
 }
 
@@ -2193,11 +2193,11 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "EPSG:102022": {  # Deprecated, but it's requred as it was update_ranges'd against
-                "geographic": False,
-                "horizontal_coord": "x",
-                "vertical_coord": "y",
-            },
+            # "EPSG:102022": {  # Deprecated, but it's requred as it was update_ranges'd against
+            #     "geographic": False,
+            #     "horizontal_coord": "x",
+            #     "vertical_coord": "y",
+            # },
             "EPSG:4326": {  # WGS-84
                 "geographic": True,
                 "vertical_coord_first": True
@@ -2210,7 +2210,7 @@ ows_cfg = {
             "ESRI:102022": {
                 "geographic": False,
                 "horizontal_coord": "x",
-                "vertical_coord": "y",                
+                "vertical_coord": "y",
             }
         },
         "allowed_urls": [
@@ -2244,7 +2244,7 @@ ows_cfg = {
             "email": "earth.observation@ga.gov.au",
         },
         "fees": "",
-        "access_constraints": "© Commonwealth of Australia (Geoscience Australia) 2018. " 
+        "access_constraints": "© Commonwealth of Australia (Geoscience Australia) 2018. "
                               "This product is released under the Creative Commons Attribution 4.0 International Licence. "
                               "http://creativecommons.org/licenses/by/4.0/legalcode",
     }, # END OF global SECTION
@@ -2375,7 +2375,7 @@ ows_cfg = {
                         }
                     },
                 ]
-            }, 
+            },
             {
                 "title": "Water Observations from Space",
                 "abstract": """WOfS""",
@@ -2406,7 +2406,7 @@ ows_cfg = {
                     },
                     {
                         "title": "Water Observations from Space 25m Water Summary (WOfS Statistics)",
-                        "name": "wofs_annual_summary_statistics",
+                        "name": "wofs_annual_summary_frequency",
                         "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
                         the WOfS product which combines WOfS observations into summary products that help the understanding
                         of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ?
@@ -2572,7 +2572,7 @@ ows_cfg = {
                     "layers": [
                     {
                         "title": "Water Observations from Space c2 30m Water Summary (WOfS C2 Annual Statistics)",
-                        "name": "wofs_2_annual_summary_statistics",
+                        "name": "wofs_2_annual_summary_frequency",
                         "abstract": """
                             Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
                             the WOfS product which combines WOfS observations into summary products that help the understanding
@@ -2699,7 +2699,7 @@ ows_cfg = {
                     },
                     {
                         "title": "Water Observations from Space c2 30m Water Summary (WOfS C2 Statistics)",
-                        "name": "wofs_2_summary_statistics",
+                        "name": "wofs_2_summary_frequency",
                         "abstract": """
 	                        Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product which combines WOfS observations into summary products that help the understanding of surface water across Africa. The water detected for each location is summed through time and then compared to the number of clear observations of that location. The result is a percentage value of the number of times water was observed at the location. The layers available are: the count of wet observations; the percentage of wet observations over time (water summary). This layer contains the Water Summary: the percentage of clear observations which were detected as wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to appear transparent, few clear observations of water correlate with red and yellow colours, deep blue and purple correspond to an area being wet through 90%-100% of clear observations. As no confidence filtering is applied to this product, it is affected by noise where mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The confidence layer and filtered summary are contained in the Water Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of the water summary.
                         """,
@@ -2835,7 +2835,7 @@ ows_cfg = {
                             ]
                         }
                     },
-                    
+
                 ]
             },
             {
@@ -2864,17 +2864,17 @@ ows_cfg = {
                             "default_style": "simple_rgb",
                             "styles": [
                                 style_gals_simple_rgb,
-                                style_gals_irg, 
-                                style_ls_ndvi, style_ls_ndwi, 
+                                style_gals_irg,
+                                style_ls_ndvi, style_ls_ndwi,
                                 style_gals_mndwi,
                                 style_gals_pure_blue, style_gals_pure_green, style_gals_pure_red,
-                                style_gals_pure_nir, 
-                                style_gals_pure_swir1, 
+                                style_gals_pure_nir,
+                                style_gals_pure_swir1,
                                 style_gals_pure_swir2,
                             ]
                         }
                     },
-                    
+
                 ]
             },
             {
@@ -2886,7 +2886,7 @@ ows_cfg = {
                         "name": "alos_palsar_mosaic",
                         "abstract": """The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR two sensors on ALOS-1 and ALOS-2 satellites respectively. For more information, see: https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/DatasetDescription_PALSAR2_Mosaic_FNF_revH.pdf""",
                         "product_name": "alos_palsar_mosaic",
-                        "time_resolution": "year",
+                        "time_resolution": "raw",
                         "bands": bands_alos,
                         "resource_limits": reslim_alos_palsar,
                         "image_processing": {
@@ -2912,7 +2912,7 @@ ows_cfg = {
                             ]
                         }
                     },
-                    
+
                 ]
             },
             {
@@ -2952,10 +2952,10 @@ ows_cfg = {
                             ]
                         }
                     },
-                    
+
                 ]
             },
         ]
-    }   
+    }
 ]
 }

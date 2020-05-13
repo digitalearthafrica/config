@@ -168,10 +168,10 @@
                   {
                      "name": "Annual water summary",
                      "type": "wms",
-                     "layers": "wofs_annual_summary_statistics",
+                     "layers": "wofs_annual_summary_frequency",
                      "url": "https://ows.digitalearth.africa/",
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                     "linkedWcsCoverage": "wofs_annual_summary_statistics",
+                     "linkedWcsCoverage": "wofs_annual_summary_frequency",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
                      "featureTimesProperty": "data_available_for_dates"
@@ -215,10 +215,10 @@
                   {
                      "name": "Annual water summary",
                      "type": "wms",
-                     "layers": "wofs_2_annual_summary_statistics",
+                     "layers": "wofs_2_annual_summary_frequency",
                      "url": "https://ows.digitalearth.africa/",
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                     "linkedWcsCoverage": "wofs_2_annual_summary_statistics",
+                     "linkedWcsCoverage": "wofs_2_annual_summary_frequency",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1,
                      "featureTimesProperty": "data_available_for_dates"
@@ -226,10 +226,10 @@
                   {
                      "name": "All time water summary",
                      "type": "wms",
-                     "layers": "wofs_2_summary_statistics",
+                     "layers": "wofs_2_summary_frequency",
                      "url": "https://ows.digitalearth.africa/",
                      "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                     "linkedWcsCoverage": "wofs_2_summary_statistics",
+                     "linkedWcsCoverage": "wofs_2_summary_frequency",
                      "ignoreUnknownTileErrors": true,
                      "opacity": 1
                   },
