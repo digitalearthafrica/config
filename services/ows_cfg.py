@@ -2886,7 +2886,7 @@ ows_cfg = {
                         "name": "alos_palsar_mosaic",
                         "abstract": """The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR two sensors on ALOS-1 and ALOS-2 satellites respectively. For more information, see: https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/DatasetDescription_PALSAR2_Mosaic_FNF_revH.pdf""",
                         "product_name": "alos_palsar_mosaic",
-                        "time_resolution": "raw",
+                        "time_resolution": "year",
                         "bands": bands_alos,
                         "resource_limits": reslim_alos_palsar,
                         "image_processing": {
