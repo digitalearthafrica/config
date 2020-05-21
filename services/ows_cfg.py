@@ -2526,42 +2526,6 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space 25m Dry Count (WOfS Statistics)",
-                        "name": "wofs_annual_summary_dry",
-                        "abstract": """
-                            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
-                            the WOfS product that combines the many years of WOfS observations into summary products which help
-                            the understanding of surface water across Africa.  The layers available are: the count of dry
-                            observations; the count of wet observations; the percentage of wet observations over time.
-                            This layer contains Dry Count: how many times an area could be seen Dry (ie. not affected by clouds,
-                            shadows or other satellite observation problems).
-                            As no confidence filtering is applied to this product, it is affected by noise where mis-classifications
-                            have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The
-                            confidence layer and filtered summary are contained in the Water Observations from Space Statistics
-                            Filtered Summary product, which provide a noise-reduced view of the water summary.
-                        """,
-                        "product_name": "ls_usgs_wofs_summary",
-                        "time_resolution": "year",
-                        "bands": bands_usgs_wofs_summary,
-                        "resource_limits": reslim_wofs_dry,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
-                        },
-                        "wcs": {
-                            "native_crs": "ESRI:102022",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["count_dry"]
-                        },
-                        "styling": {
-                            "default_style": "dry_observations",
-                            "styles": [
-                                    style_wofs_dry_observations,
-                            ]
-                        }
-                    },
-                    {
                         "title": "Water Observations from Space Annual Count of Clear Observations (Development)",
                         "name": "wofs_annual_summary_clear",
                         "abstract": """
