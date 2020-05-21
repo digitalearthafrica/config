@@ -2291,9 +2291,20 @@ ows_cfg = {
                         based projection.""",
                     "layers": [
                     {
-                        "title": "Landsat Surface Reflectance (Landsat 8)",
+                        "title": "Surface Reflectance Landsat 8 (USGS Collection 1)",
                         "name": "ls8_usgs_sr_scene",
-                        "abstract": """ Landsat 8 Surface Reflectance""",
+                        "abstract": """
+                            Overview: "Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+                            DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019. The surface reflectance values are scaled to be between 0 and 10,000.
+
+                            Lineage: This dataset is provided by United States Geological Survey (USGS).
+
+                            Accuracy and limitations: For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        """,
                         "product_name": "ls8_usgs_sr_scene",
                         "bands": bands_ls,
                         "resource_limits": reslim_landsat,
@@ -2319,9 +2330,20 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Landsat Surface Reflectance (Landsat 7)",
+                        "title": "Surface Reflectance Landsat 7 (USGS Collection 1)",
                         "name": "ls7_usgs_sr_scene",
-                        "abstract": """Landsat 7 Surface Reflectance""",
+                        "abstract": """
+                            Overview: "Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+                            DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1999 to 2019. The surface reflectance values are scaled to be between 0 and 10,000.
+
+                            Lineage: This dataset is provided by United States Geological Survey (USGS).
+
+                            Accuracy and limitations: For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        """,
                         "product_name": "ls7_usgs_sr_scene",
                         "bands": bands_ls,
                         "resource_limits": reslim_landsat,
@@ -2347,9 +2369,20 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Landsat Surface Reflectance (Landsat 5)",
+                        "title": "Surface Reflectance Landsat 5 (USGS Collection 1)",
                         "name": "ls5_usgs_sr_scene",
-                        "abstract": """Landsat 5 USGS Collection 1 Level2 Surface Reflectance USARD. 30m UTM based projection.""",
+                        "abstract": """
+                            Overview: "Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+                            DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2011. The surface reflectance values are scaled to be between 0 and 10,000.
+
+                            Lineage: This dataset is provided by United States Geological Survey (USGS).
+
+                            Accuracy and limitations: For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        """,
                         "product_name": "ls5_usgs_sr_scene",
                         "bands": bands_ls,
                         "resource_limits": reslim_landsat,
@@ -2381,9 +2414,23 @@ ows_cfg = {
                 "abstract": """WOfS""",
                 "layers": [
                     {
-                        "title": "Water Observations from Space wofls (USGS WOfS Daily Observations)",
+                        "title": "Water Observations from Space Feature Layer (Development)",
                         "name": "ls_usgs_wofs_scene",
-                        "abstract": """Historic Flood Mapping Water Observations from Space""",
+                        "abstract": """
+                            Overview: Water Observations from Space (WOfS) provides surface water observations derived from satellite imagery for all of Africa. The WOfS product allows users to get a better understanding of where water is normally present in a landscape, where water is seldom observed, and where inundation has occurred occasionally. Data is provided as Water Observation Feature Layers (WOFLs), in a 1 to 1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+
+                            Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+
+                            Application: Daily water observations can be used to map historical flood and to understand surface water dynamics.
+
+                            Accuracy and limitations: WOfS shows surface water on the day and time that satellite passed overhead, which might be before, during or after a flood peak. Given the time between satellite passes (approximately once every 16 days) it is unlikely that the satellite will capture the maximum extent of any given flood. Instead, it aims to provide large scale, regional information on surface water.
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        """,
                         "product_name": "ls_usgs_wofs_scene",
                         "bands": bands_wofs_obs,
                         "resource_limits": reslim_wofs_daily,
@@ -2405,24 +2452,23 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space 25m Water Summary (WOfS Statistics)",
+                        "title": "Water Observations from Space Annual Summary (Development)",
                         "name": "wofs_annual_summary_frequency",
-                        "abstract": """Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
-                        the WOfS product which combines WOfS observations into summary products that help the understanding
-                        of surface water across Africa. WOfS Statistics is calculated from the full depth time series (1984 ?
-                        2018). The water detected for each location is summed through time and then compared to the number of
-                        clear observations of that location. The result is a percentage value of the number of times water
-                        was observed at the location. The layers available are: the count of dry observations; the count of
-                        wet observations; the percentage of wet observations over time (water summary).
-                        This layer contains the Water Summary: the percentage of clear observations which were detected as
-                        wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to
-                        appear transparent, few clear observations of water correlate with red and yellow colours,
-                        deep blue and purple correspond to an area being wet through 90%-100% of clear observations.
-                        As no confidence filtering is applied to this product, it is affected by noise where
-                        mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to
-                        interpret on its own. The confidence layer and filtered summary are contained in the Water
-                        Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of
-                        the water summary.""",
+                        "abstract": """
+                            Overview: Annual water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) from each calendar year.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+
+                            Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+
+                            Application: The annual summaries can be used to understand year to year changes in surface water extent.
+
+                            Accuracy and limitations: WOfS shows surface water on the day and time that satellite passed overhead, which might be before, during or after a flood peak. Given the time between satellite passes (approximately once every 16 days) it is unlikely that the satellite will capture the maximum extent of any given flood. Instead, it aims to provide large scale, regional information on surface water.
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        """,
                         "product_name": "ls_usgs_wofs_summary",
                         "time_resolution": "year",
                         "bands": bands_usgs_wofs_summary,
@@ -2445,22 +2491,18 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space 25m Wet Count (WOfS Statistics)",
+                        "title": "Water Observations from Space Annual Count of Wet Observations (Development)",
                         "name": "wofs_annual_summary_wet",
                         "abstract": """
-                            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
-                            the WOfS product that combines the many years of WOfS observations into summary products which help
-                            the understanding of surface water across Africa.  The layers available are: the count of dry
-                            observations; the count of wet observations; the percentage of wet observations over time.
-                            This layer contains Wet Count: how many times water was detected in observations that were clear. No
-                            clear observations of water causes an area to appear transparent, 1-50 total clear observations of water
-                            correlate with red and yellow colours, 100 clear observations of water correlate with green,
-                            200 clear observations of water correlates with light blue, 300 clear observations of water correlates to
-                            deep blue and 400 and over observations of clear water correlate to purple.
-                            As no confidence filtering is applied to this product, it is affected by noise where mis-classifications
-                            have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The
-                            confidence layer and filtered summary are contained in the Water Observations from Space Statistics
-                            Filtered Summary product, which provide a noise-reduced view of the water summary.
+                            Overview: The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+
+                            Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
                         """,
                         "product_name": "ls_usgs_wofs_summary",
                         "time_resolution": "year",
@@ -2520,29 +2562,18 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space 25m Clear Count (WOfS Statistics)",
+                        "title": "Water Observations from Space Annual Count of Clear Observations (Development)",
                         "name": "wofs_annual_summary_clear",
                         "abstract": """
-                            Water Observations from Space - Annual Statistics is a set of annual statistical
-                            summaries of the water observations contained in WOfS. The layers available are:
-                            the count of clear observations; the count of wet observations; the percentage of
-                            wet observations over time.
-                            This product is Water Observations from Space - Annual Statistics, a set of annual
-                            statistical summaries of the WOfS product that combines the many years of WOfS observations
-                            into summary products that help the understanding of surface water across Australia.
-                            As no confidence filtering is applied to this product, it is affected by noise where
-                            misclassifications have occurred in the WOfS water classifications, and hence can be
-                            difficult to interpret on its own.
-                            The confidence layer and filtered summary are contained in the Water Observations
-                            from Space Statistics - Filtered Summary product, which provide a noise-reduced
-                            view of the water summary.
-                            This layer contains Water Summary: what percentage of clear observations were
-                            detected as wet (ie. the ratio of wet to clear as a percentage). No clear
-                            observations causes an area to appear transparent, 1-300 total clear observations
-                            of water correlate with red and yellow colours, 400 clear observations correlates
-                            with light green, 800 clear observations and above correlates with dark green.
-                            For more information please see:
-                            https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf
+                            Overview: The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+
+                            Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
                         """,
                         "product_name": "ls_usgs_wofs_summary",
                         "bands": bands_usgs_wofs_summary,
@@ -2571,25 +2602,10 @@ ows_cfg = {
                     "abstract": """WOfS""",
                     "layers": [
                     {
-                        "title": "Water Observations from Space c2 30m Water Summary (WOfS C2 Annual Statistics)",
+                        "title": "Water Observations from Space Annual Summary (Beta)",
                         "name": "wofs_2_annual_summary_frequency",
                         "abstract": """
-                            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
-                            the WOfS product which combines WOfS observations into summary products that help the understanding
-                            of surface water across Africa. The water detected for each location is summed through time and then
-                            compared to the number of clear observations of that location.
-                            The result is a percentage value of the number of times water
-                            was observed at the location. The layers available are: the count of
-                            wet observations; the percentage of wet observations over time (water summary).
-                            This layer contains the Water Summary: the percentage of clear observations which were detected as
-                            wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to
-                            appear transparent, few clear observations of water correlate with red and yellow colours,
-                            deep blue and purple correspond to an area being wet through 90%-100% of clear observations.
-                            As no confidence filtering is applied to this product, it is affected by noise where
-                            mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to
-                            interpret on its own. The confidence layer and filtered summary are contained in the Water
-                            Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of
-                            the water summary.
+                            Annual water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) from each calendar year.
                         """,
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
                         "time_resolution": "year",
@@ -2613,22 +2629,18 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space c2 30m Wet Count (WOfS C2 Annual Statistics)",
+                        "title": "Water Observations from Space Annual Count of Wet Observations (Beta)",
                         "name": "wofs_2_annual_summary_wet",
                         "abstract": """
-                            Water Observations from Space (WOfS) Statistics is a set of statistical summaries of
-                            the WOfS product that combines the many years of WOfS observations into summary products which help
-                            the understanding of surface water across Africa.  The layers available are:
-                            the count of wet observations; the percentage of wet observations over time.
-                            This layer contains Wet Count: how many times water was detected in observations that were clear. No
-                            clear observations of water causes an area to appear transparent, 1-50 total clear observations of water
-                            correlate with red and yellow colours, 100 clear observations of water correlate with green,
-                            200 clear observations of water correlates with light blue, 300 clear observations of water correlates to
-                            deep blue and 400 and over observations of clear water correlate to purple.
-                            As no confidence filtering is applied to this product, it is affected by noise where mis-classifications
-                            have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The
-                            confidence layer and filtered summary are contained in the Water Observations from Space Statistics
-                            Filtered Summary product, which provide a noise-reduced view of the water summary.
+                            Overview: The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+                            Lineage statement: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
                         """,
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
                         "time_resolution": "year",
@@ -2652,29 +2664,18 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space c2 25m Clear Count (WOfS C2 Annual Statistics)",
+                        "title": "Water Observations from Space Annual Count of Clear Observations (Beta)",
                         "name": "wofs_2_annual_summary_clear",
                         "abstract": """
-                            Water Observations from Space - Annual Statistics is a set of annual statistical
-                            summaries of the water observations contained in WOfS. The layers available are:
-                            the count of clear observations; the count of wet observations; the percentage of
-                            wet observations over time.
-                            This product is Water Observations from Space - Annual Statistics, a set of annual
-                            statistical summaries of the WOfS product that combines the many years of WOfS
-                            observations into summary products that help the understanding of surface water
-                            across Australia. As no confidence filtering is applied to this product, it is
-                            affected by noise where misclassifications have occurred in the WOfS water classifications,
-                            and hence can be difficult to interpret on its own.
-                            The confidence layer and filtered summary are contained in the Water Observations
-                            from Space Statistics - Filtered Summary product, which provide a noise-reduced view
-                            of the water summary.
-                            This layer contains Water Summary: what percentage of clear observations were detected
-                            as wet (ie. the ratio of wet to clear as a percentage). No clear observations causes
-                            an area to appear transparent, 1-300 total clear observations of water correlate with
-                            red and yellow colours, 400 clear observations correlates with light green, 800 clear
-                            observations and above correlates with dark green.
-                            For more information please see:
-                            https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf
+                            Overview: The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
                         """,
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
                         "time_resolution": "year",
@@ -2725,10 +2726,18 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space c2 30m Wet Count (WOfS C2 Statistics)",
+                        "title": "Water Observations from Space All Time Count of Wet Observations (Beta)",
                         "name": "wofs_2_summary_wet",
                         "abstract": """
-                            	Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product that combines the many years of WOfS observations into summary products which help the understanding of surface water across Africa. The layers available are: the count of wet observations; the percentage of wet observations over time. This layer contains Wet Count: how many times water was detected in observations that were clear. No clear observations of water causes an area to appear transparent, 1-50 total clear observations of water correlate with red and yellow colours, 100 clear observations of water correlate with green, 200 clear observations of water correlates with light blue, 300 clear observations of water correlates to deep blue and 400 and over observations of clear water correlate to purple. As no confidence filtering is applied to this product, it is affected by noise where mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The confidence layer and filtered summary are contained in the Water Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of the water summary.
+                            Overview: The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating all time water summary.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
                         """,
                         "product_name": "ga_ls8c_wofs_2_summary",
                         "time_resolution": "year",
@@ -2752,29 +2761,18 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space c2 25m Clear Count (WOfS C2 Statistics)",
+                        "title": "Water Observations from Space All Time Count of Clear Observations (Beta)",
                         "name": "wofs_2_summary_clear",
                         "abstract": """
-                            Water Observations from Space - Annual Statistics is a set of annual statistical
-                            summaries of the water observations contained in WOfS. The layers available are:
-                            the count of clear observations; the count of wet observations; the percentage of
-                            wet observations over time.
-                            This product is Water Observations from Space - Annual Statistics, a set of annual
-                            statistical summaries of the WOfS product that combines the many years of WOfS
-                            observations into summary products that help the understanding of surface water
-                            across Australia. As no confidence filtering is applied to this product, it is
-                            affected by noise where misclassifications have occurred in the WOfS water classifications,
-                            and hence can be difficult to interpret on its own.
-                            The confidence layer and filtered summary are contained in the Water Observations
-                            from Space Statistics - Filtered Summary product, which provide a noise-reduced view
-                            of the water summary.
-                            This layer contains Water Summary: what percentage of clear observations were detected
-                            as wet (ie. the ratio of wet to clear as a percentage). No clear observations causes
-                            an area to appear transparent, 1-300 total clear observations of water correlate with
-                            red and yellow colours, 400 clear observations correlates with light green, 800 clear
-                            observations and above correlates with dark green.
-                            For more information please see:
-                            https://data.dea.ga.gov.au/WOfS/annual_summary/v2.1.5/Product%20Description.pdf
+                            Overview: The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating all time water summary.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
                         """,
                         "product_name": "ga_ls8c_wofs_2_summary",
                         "bands": bands_wofs_2_annual_summary,
@@ -2805,9 +2803,21 @@ ows_cfg = {
                 "abstract": "Landsat Fractional Cover based on USGS Level 2 Scenes",
                 "layers": [
                     {
-                        "title": "Landsat Fractional Cover (USGS)",
+                        "title": "Fractional Cover (development)",
                         "name": "ls_usgs_fc_scene",
-                        "abstract": """	Landsat Fractional Cover based on USGS Level 2 Scenes. Data is only visible at higher resolutions; when zoomed-out the available area will be displayed as a shaded region. Fractional cover provides information about the the proportions of green vegetation, non-green vegetation ( including deciduous trees during autumn, dry grass, etc.), and bare areas. Fractional cover provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time. The fractional cover algorithm was developed by the Joint Remote Sensing Research Program, for more information please see data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Fractional+Cover Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. This product contains Fractional Cover derived from Landsat 5, Landsat 7, and Landsat 8 US Geological Survey Collection 1 Level2 Surface Reflectance USARD, 30m UTM based projection.""",
+                        "abstract": """
+                        	Overview: Fractional cover describes the landscape in terms of coverage by green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.) and bare soil. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+
+                            Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+
+                            Applications: Fractional cover allows users to understand the large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land surface process monitoring, land management practices, vegetation studies, fuel load estimation, ecosystem modelling, and rangeland condition.
+
+                            Reference: The fractional cover algorithm was developed by the Joint Remote Sensing Research Program, for more information see http://data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Seasonal+Fractional+Cover
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        """,
                         "product_name": "ls_usgs_fc_scene",
                         "bands": bands_fc,
                         "resource_limits": reslim_srmt,
@@ -2843,9 +2853,22 @@ ows_cfg = {
                     "abstract": "Landsat Geomedian based on USGS Provisional Collection 2 Level 2 Scenes",
                     "layers": [
                     {
-                        "title": "Landsat Surface Reflectance (Landsat 8)",
+                        "title": "Surface Reflectance Annual Geomedian Landsat 8 (Beta)",
                         "name": "ga_ls8c_gm_2_annual",
-                        "abstract": """ Landsat 8 Surface Reflectance""",
+                        "abstract": """
+                            Overview: "Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
+                            In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2018. The surface reflectance values are scaled to be between 0 and 65,455.
+
+                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+                            Applications: Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation.
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        """,
                         "product_name": "ga_ls8c_gm_2_annual",
                         "time_resolution": "year",
                         "bands": bands_ls8c,
@@ -2882,9 +2905,20 @@ ows_cfg = {
                     "abstract": """Annual mosaic of ALOS/PALSAR and ALOS-2/PALSAR-2 data""",
                     "layers": [
                     {
-                        "title": "ALOS/PALSAR Synthetic aperture radar (JAXA)",
+                        "title": "Radar Backscatter Annual Mosaic (ALOS/PALSAR)",
                         "name": "alos_palsar_mosaic",
-                        "abstract": """The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR two sensors on ALOS-1 and ALOS-2 satellites respectively. For more information, see: https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/DatasetDescription_PALSAR2_Mosaic_FNF_revH.pdf""",
+                        "abstract": """
+                            Overview: "Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared. 
+                            The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR-2 sensors on ALOS-1 and ALOS-2 satellites respectively.
+
+                            Features: This product is generated from L-band radar observations. It has a spatial resolution of 25 m and is available annually for 2007 to 2010 (ALOS/PALSAR) and 2015 to current (ALOS-2/PALSAR-2).
+
+                            Lineage: This product is part of a global dataset provided by the Japan Aerospace Exploration Agency (JAXA) Earth Observation Research Center.
+
+                            Reference: For more information on the product, see https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/fnf_index.htm
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        """,
                         "product_name": "alos_palsar_mosaic",
                         "time_resolution": "year",
                         "bands": bands_alos,
@@ -2920,16 +2954,18 @@ ows_cfg = {
                     "abstract": """Digital elevation model from NASA's SRTM<""",
                     "layers": [
                     {
-                        "title": "Shuttle Radar Topography Mission Digital elevation model (NASA)",
+                        "title": "Shuttle Radar Topography Mission Digital Elevation Model",
                         "name": "srtm",
-                        "abstract": """NASA has released version 2 of the Shuttle Radar Topography Mission
-                            digital topographic data (also known as the "finished" version). Version 2 is the
-                            result of a substantial editing effort by the National Geospatial Intelligence Agency
-                            and exhibits well-defined water bodies and coastlines and the absence of spikes and
-                            wells (single pixel errors), although some areas of missing data ('voids') are still
-                            present. The Version 2 directory also contains the vector coastline mask derived by
-                            NGA during the editing, called the SRTM Water Body Data (SWBD), in ESRI Shapefile
-                            format. For more information, see: https://www2.jpl.nasa.gov/srtm/
+                        "abstract": """
+                            Overview: A Digital Elevation Model (DEM) is a digital representation of Earth’s topography. It helps to understand the land surface characteristics in the height dimension. It is also used as an ancillary dataset to calculate illumination and viewing geometry of a satellite imagery. DE Africa provides access to the Shuttle Radar Topography Mission (SRTM) v 3.0 (SRTMGL1) product.
+
+                            Features: This elevation model has a spatial resolution of 30 m and is derived from data collected by NASA's Shuttle Radar Topography Mission in 2000.
+
+                            Lineage: This product is provided by NASA's Land Processes Distributed Active Archive Center (LP DAAC).
+
+                            Reference: For more information, see https://lpdaac.usgs.gov/products/srtmgl1v003/
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
                         """,
                         "product_name": "srtm",
                         #"time_resolution": "year",
