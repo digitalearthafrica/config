@@ -2711,10 +2711,22 @@ ows_cfg = {
                         }
                     },
                     {
-                        "title": "Water Observations from Space c2 30m Water Summary (WOfS C2 Statistics)",
+                        "title": "Water Observations from Space All Time Summary (Beta)",
                         "name": "wofs_2_summary_frequency",
                         "abstract": """
-	                        Water Observations from Space (WOfS) Statistics is a set of statistical summaries of the WOfS product which combines WOfS observations into summary products that help the understanding of surface water across Africa. The water detected for each location is summed through time and then compared to the number of clear observations of that location. The result is a percentage value of the number of times water was observed at the location. The layers available are: the count of wet observations; the percentage of wet observations over time (water summary). This layer contains the Water Summary: the percentage of clear observations which were detected as wet (ie. the ratio of wet to clear as a percentage). No clear observations of water causes an area to appear transparent, few clear observations of water correlate with red and yellow colours, deep blue and purple correspond to an area being wet through 90%-100% of clear observations. As no confidence filtering is applied to this product, it is affected by noise where mis-classifications have occurred in the WOfS water classifications, and hence can be difficult to interpret on its own. The confidence layer and filtered summary are contained in the Water Observations from Space Statistics Filtered Summary product, which provide a noise-reduced view of the water summary.
+	                        Overview: All time water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) over time. 
+
+                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+                            Applications: All time water summary can be used to understand water availability and flooding risk in a historical context.
+
+                            Accuracy and limitations: WOfS shows surface water on the day and time that satellite passed overhead, which might be before, during or after a flood peak. Given the time between satellite passes (approximately once every 16 days) it is unlikely that the satellite will capture the maximum extent of any given flood. Instead, it aims to provide large scale, regional information on surface water.
+
+                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
                         """,
                         "product_name": "ga_ls8c_wofs_2_summary",
                         "bands": bands_wofs_2_annual_summary,
