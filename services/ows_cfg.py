@@ -751,8 +751,12 @@ style_wofs_count_wet = {
             "alpha": 0
         },
         {
-            "value": 10,
-            "color": "#890000"
+            # purely for legend display
+            # we should not get fractional
+            # values in this styles
+            "value": 0.2,
+            "color": "#890000",
+            "alpha": 1
         },
         {
             "value": 20,
@@ -834,10 +838,6 @@ style_wofs_water_annual_wet = {
             "value": 0.2,
             "color": "#990000",
             "alpha": 1
-        },
-        {
-            "value": 2,
-            "color": "#990000"
         },
         {
             "value": 2,
