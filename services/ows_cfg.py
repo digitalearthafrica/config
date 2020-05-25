@@ -809,7 +809,7 @@ style_wofs_count_wet = {
     "legend": {
         "radix_point": 0,
         "scale_by": 1,
-        "major_ticks": 100
+        "major_ticks": 20
     }
 }
 
@@ -1389,7 +1389,7 @@ style_wofs_summary_clear = {
     "legend": {
         "radix_point": 0,
         "scale_by": 1,
-        "major_ticks": 10,
+        "major_ticks": 20,
         "axes_position": [0.05, 0.5, 0.89, 0.15]
     }
 }
