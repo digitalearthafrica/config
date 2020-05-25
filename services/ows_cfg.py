@@ -751,19 +751,19 @@ style_wofs_count_wet = {
             "alpha": 0
         },
         {
-            "value": 2,
+            "value": 10,
             "color": "#890000"
         },
         {
-            "value": 5,
+            "value": 20,
             "color": "#990000"
         },
         {
-            "value": 10,
+            "value": 30,
             "color": "#E38400"
         },
         {
-            "value": 25,
+            "value": 40,
             "color": "#E3DF00"
         },
         {
@@ -771,31 +771,31 @@ style_wofs_count_wet = {
             "color": "#A6E300"
         },
         {
-            "value": 100,
+            "value": 60,
             "color": "#00E32D"
         },
         {
-            "value": 150,
+            "value": 70,
             "color": "#00E3C8"
         },
         {
-            "value": 200,
+            "value": 80,
             "color": "#0097E3"
         },
         {
-            "value": 250,
+            "value": 90,
             "color": "#005FE3"
         },
         {
-            "value": 300,
+            "value": 100,
             "color": "#000FE3"
         },
         {
-            "value": 350,
+            "value": 110,
             "color": "#000EA9"
         },
         {
-            "value": 400,
+            "value": 120,
             "color": "#5700E3",
             "legend": {
                 "prefix": ">"
@@ -1338,48 +1338,48 @@ style_wofs_summary_clear = {
             # purely for legend display
             # we should not get fractional
             # values in this styles
-            "value": 0.2,
+            "value": 0,
             "color": "#B21800",
             "alpha": 1
         },
         {
-            "value": 1,
+            "value": 20,
             "color": "#B21800"
         },
         {
-            "value": 4,
+            "value": 30,
             "color": "#ef8500"
         },
         {
-            "value": 8,
+            "value": 40,
             "color": "#ffb800"
         },
         {
-            "value": 10,
+            "value": 60,
             "color": "#ffd000"
         },
         {
-            "value": 13,
+            "value": 80,
             "color": "#fff300"
         },
         {
-            "value": 16,
+            "value": 100,
             "color": "#fff300"
         },
         {
-            "value": 20,
+            "value": 120,
             "color": "#c1ec00"
         },
         {
-            "value": 24,
+            "value": 140,
             "color": "#6ee100"
         },
         {
-            "value": 28,
+            "value": 160,
             "color": "#39a500"
         },
         {
-            "value": 30,
+            "value": 180,
             "color": "#026900",
             "legend": {
                 "prefix": ">"
