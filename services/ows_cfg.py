@@ -2470,12 +2470,16 @@ ows_cfg = {
                         "title": "Water Observations from Space Annual Count of Wet Observations (Development)",
                         "name": "wofs_annual_summary_wet",
                         "abstract": """
-                            Overview: The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
-                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
-                            Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
-                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-                        """,
+Overview: The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
+
+Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+
+Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+
+Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
                         "product_name": "ls_usgs_wofs_summary",
                         "time_resolution": "year",
                         "bands": bands_usgs_wofs_summary,
@@ -2501,12 +2505,16 @@ ows_cfg = {
                         "title": "Water Observations from Space Annual Count of Clear Observations (Development)",
                         "name": "wofs_annual_summary_clear",
                         "abstract": """
-                            Overview: The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
-                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
-                            Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
-                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-                        """,
+Overview: The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
+
+Features: This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+
+Lineage: This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+
+Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
                         "product_name": "ls_usgs_wofs_summary",
                         "bands": bands_usgs_wofs_summary,
                         "resource_limits": reslim_wofs_dry,
@@ -2537,14 +2545,20 @@ ows_cfg = {
                         "title": "Water Observations from Space Annual Summary (Beta)",
                         "name": "wofs_2_annual_summary_frequency",
                         "abstract": """
-                            Overview: Annual water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) from each calendar year.
-                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
-                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
-                            Applications: The annual summaries can be used to understand year to year changes in surface water extent.
-                            Accuracy and limitations: WOfS shows surface water on the day and time that satellite passed overhead, which might be before, during or after a flood peak. Given the time between satellite passes (approximately once every 16 days) it is unlikely that the satellite will capture the maximum extent of any given flood. Instead, it aims to provide large scale, regional information on surface water.
-                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-                        """,
+Overview: Annual water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) from each calendar year.
+
+Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+Applications: The annual summaries can be used to understand year to year changes in surface water extent.
+
+Accuracy and limitations: WOfS shows surface water on the day and time that satellite passed overhead, which might be before, during or after a flood peak. Given the time between satellite passes (approximately once every 16 days) it is unlikely that the satellite will capture the maximum extent of any given flood. Instead, it aims to provide large scale, regional information on surface water.
+
+Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
                         "time_resolution": "year",
                         "bands": bands_wofs_2_annual_summary,
@@ -2570,12 +2584,16 @@ ows_cfg = {
                         "title": "Water Observations from Space Annual Count of Wet Observations (Beta)",
                         "name": "wofs_2_annual_summary_wet",
                         "abstract": """
-                            Overview: The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
-                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
-                            Lineage statement: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
-                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-                        """,
+Overview: The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
+
+Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+Lineage statement: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
                         "time_resolution": "year",
                         "bands": bands_wofs_2_annual_summary,
@@ -2601,12 +2619,16 @@ ows_cfg = {
                         "title": "Water Observations from Space Annual Count of Clear Observations (Beta)",
                         "name": "wofs_2_annual_summary_clear",
                         "abstract": """
-                            Overview: The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
-                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
-                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
-                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-                        """,
+Overview: The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
+
+Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
                         "product_name": "ga_ls8c_wofs_2_annual_summary",
                         "time_resolution": "year",
                         "bands": bands_wofs_2_annual_summary,
@@ -2632,14 +2654,20 @@ ows_cfg = {
                         "title": "Water Observations from Space All Time Summary (Beta)",
                         "name": "wofs_2_summary_frequency",
                         "abstract": """
-	                        Overview: All time water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) over time. 
-                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
-                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
-                            Applications: All time water summary can be used to understand water availability and flooding risk in a historical context.
-                            Accuracy and limitations: WOfS shows surface water on the day and time that satellite passed overhead, which might be before, during or after a flood peak. Given the time between satellite passes (approximately once every 16 days) it is unlikely that the satellite will capture the maximum extent of any given flood. Instead, it aims to provide large scale, regional information on surface water.
-                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-                        """,
+Overview: All time water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) over time. 
+
+Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+Applications: All time water summary can be used to understand water availability and flooding risk in a historical context.
+
+Accuracy and limitations: WOfS shows surface water on the day and time that satellite passed overhead, which might be before, during or after a flood peak. Given the time between satellite passes (approximately once every 16 days) it is unlikely that the satellite will capture the maximum extent of any given flood. Instead, it aims to provide large scale, regional information on surface water.
+
+Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
                         "product_name": "ga_ls8c_wofs_2_summary",
                         "bands": bands_wofs_2_annual_summary,
                         "time_resolution": "year",
@@ -2665,12 +2693,16 @@ ows_cfg = {
                         "title": "Water Observations from Space All Time Count of Wet Observations (Beta)",
                         "name": "wofs_2_summary_wet",
                         "abstract": """
-                            Overview: The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating all time water summary.
-                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
-                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
-                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-                        """,
+The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating all time water summary.
+
+Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
                         "product_name": "ga_ls8c_wofs_2_summary",
                         "time_resolution": "year",
                         "bands": bands_wofs_2_annual_summary,
@@ -2696,12 +2728,16 @@ ows_cfg = {
                         "title": "Water Observations from Space All Time Count of Clear Observations (Beta)",
                         "name": "wofs_2_summary_clear",
                         "abstract": """
-                            Overview: The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating all time water summary.
-                            Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
-                            Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
-                            Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-                            Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-                        """,
+The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating all time water summary.
+
+Features: This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
+
+Lineage: This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+
+Reference: For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+
+Data Access: This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
                         "product_name": "ga_ls8c_wofs_2_summary",
                         "bands": bands_wofs_2_annual_summary,
                         "resource_limits": reslim_wofs,
