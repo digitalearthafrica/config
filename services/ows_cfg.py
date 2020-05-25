@@ -2294,12 +2294,13 @@ ows_cfg = {
                         "title": "Surface Reflectance Landsat 8 (USGS Collection 1)",
                         "name": "ls8_usgs_sr_scene",
                         "abstract": """
-Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
-DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+"Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+
+DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.  "
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019. The surface reflectance values are scaled to be between 0 and 10,000.
 
-This dataset is provided by United States Geological Survey (USGS).
+It is provided by United States Geological Survey (USGS).
 
 For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
 
@@ -2333,12 +2334,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Surface Reflectance Landsat 7 (USGS Collection 1)",
                         "name": "ls7_usgs_sr_scene",
                         "abstract": """
-Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
-DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+"Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+
+DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.  "
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1999 to 2019. The surface reflectance values are scaled to be between 0 and 10,000.
 
-This dataset is provided by United States Geological Survey (USGS).
+It is provided by United States Geological Survey (USGS).
 
 For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
 
@@ -2372,12 +2374,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Surface Reflectance Landsat 5 (USGS Collection 1)",
                         "name": "ls5_usgs_sr_scene",
                         "abstract": """
-Definitive Surface Reflectance (Sentinel 2A and 2B combined)Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
-DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+"Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+
+DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.  "
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2011. The surface reflectance values are scaled to be between 0 and 10,000.
 
-This dataset is provided by United States Geological Survey (USGS).
+It is provided by United States Geological Survey (USGS).
 
 For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
 
@@ -2421,7 +2424,7 @@ Water Observations from Space (WOfS) provides surface water observations derived
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
 
-This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
 
 Daily water observations can be used to map historical flood and to understand surface water dynamics.
 
@@ -2459,7 +2462,7 @@ Annual water summary is one of the statistical summaries of the Water Observatio
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
 
-This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
 
 The annual summaries can be used to understand year to year changes in surface water extent.
 
@@ -2498,7 +2501,7 @@ The count of wet observations is one of the statistical summaries of the Water O
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
 
-This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
 
 For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
@@ -2533,7 +2536,7 @@ The count of clear observations is one of the statistical summaries of the Water
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
 
-This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
 
 For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
@@ -2573,7 +2576,7 @@ Annual water summary is one of the statistical summaries of the Water Observatio
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
 
-This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+It is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
 
 The annual summaries can be used to understand year to year changes in surface water extent.
 
@@ -2612,7 +2615,7 @@ The count of wet observations is one of the statistical summaries of the Water O
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
 
-This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+It is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
 
 For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
@@ -2647,7 +2650,7 @@ The count of clear observations is one of the statistical summaries of the Water
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
 
-This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+It is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
 
 For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
@@ -2682,7 +2685,7 @@ All time water summary is one of the statistical summaries of the Water Obs
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
 
-This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+It is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
 
 All time water summary can be used to understand water availability and flooding risk in a historical context.
 
@@ -2721,7 +2724,7 @@ The count of wet observations is one of the statistical summaries of the Water O
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
 
-This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+It is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
 
 For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
@@ -2756,7 +2759,7 @@ The count of clear observations is one of the statistical summaries of the Water
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
 
-This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+It is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
 
 For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
@@ -2798,7 +2801,7 @@ Fractional cover describes the landscape in terms of coverage by green vegetatio
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
 
-This product is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
 
 Fractional cover allows users to understand the large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land surface process monitoring, land management practices, vegetation studies, fuel load estimation, ecosystem modelling, and rangeland condition.
 
@@ -2844,12 +2847,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Surface Reflectance Annual Geomedian Landsat 8 (Beta)",
                         "name": "ga_ls8c_gm_2_annual",
                         "abstract": """
-Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
-In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
+Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
+
+In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2018. The surface reflectance values are scaled to be between 0 and 65,455.
 
-This product is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
+It is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
 
 Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation.
 
@@ -2896,12 +2900,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Radar Backscatter Annual Mosaic (ALOS/PALSAR)",
                         "name": "alos_palsar_mosaic",
                         "abstract": """
-Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared. 
-The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR-2 sensors on ALOS-1 and ALOS-2 satellites respectively.
+"Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared.
+
+The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR-2 sensors on ALOS-1 and ALOS-2 satellites respectively. "
 
 This product is generated from L-band radar observations. It has a spatial resolution of 25 m and is available annually for 2007 to 2010 (ALOS/PALSAR) and 2015 to current (ALOS-2/PALSAR-2).
 
-This product is part of a global dataset provided by the Japan Aerospace Exploration Agency (JAXA) Earth Observation Research Center.
+It is part of a global dataset provided by the Japan Aerospace Exploration Agency (JAXA) Earth Observation Research Center.
 
 For more information on the product, see https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/fnf_index.htm
 
@@ -2945,9 +2950,11 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Shuttle Radar Topography Mission Digital Elevation Model",
                         "name": "srtm",
                         "abstract": """
+A Digital Elevation Model (DEM) is a digital representation of Earth’s topography. It helps to understand the land surface characteristics in the height dimension. It is also used as an ancillary dataset to calculate illumination and viewing geometry of a satellite imagery. DE Africa provides access to the Shuttle Radar Topography Mission (SRTM) v 3.0 (SRTMGL1) product.
+
 This elevation model has a spatial resolution of 30 m and is derived from data collected by NASA's Shuttle Radar Topography Mission in 2000.
 
-This product is provided by NASA's Land Processes Distributed Active Archive Center (LP DAAC).
+It is provided by NASA's Land Processes Distributed Active Archive Center (LP DAAC).
 
 For more information, see https://lpdaac.usgs.gov/products/srtmgl1v003/
 
