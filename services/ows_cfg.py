@@ -2294,9 +2294,9 @@ ows_cfg = {
                         "title": "Surface Reflectance Landsat 8 (USGS Collection 1)",
                         "name": "ls8_usgs_sr_scene",
                         "abstract": """
-"Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
-DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.  "
+DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019. The surface reflectance values are scaled to be between 0 and 10,000.
 
@@ -2334,9 +2334,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Surface Reflectance Landsat 7 (USGS Collection 1)",
                         "name": "ls7_usgs_sr_scene",
                         "abstract": """
-"Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
-DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.  "
+DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1999 to 2019. The surface reflectance values are scaled to be between 0 and 10,000.
 
@@ -2374,9 +2374,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Surface Reflectance Landsat 5 (USGS Collection 1)",
                         "name": "ls5_usgs_sr_scene",
                         "abstract": """
-"Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
-DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.  "
+DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2011. The surface reflectance values are scaled to be between 0 and 10,000.
 
