@@ -1643,19 +1643,6 @@ style_wofs_obs = {
                 "color": "#707070"
             },
             {
-                # Possible Sea Glint, also mark as invalid
-                "title": "Invalid_Dry",
-                "abstract": "Possible Sea Glint, also mark as invalid",
-                "flags": {
-                    "dry": True,
-                    "sea": True,
-                    "cloud_shadow": False,
-                    "cloud": False,
-                    "nodata": False
-                },
-                "color": "#707070"
-            },
-            {
                 "title": "Dry",
                 "abstract": "Dry",
                 "flags": {
@@ -1697,17 +1684,6 @@ style_wofs_obs_wet_only = {
                         "cloud": True,
                         "nodata": True,
                     }
-                },
-                "color": "#707070",
-                "mask": True
-            },
-            {
-                # Possible Sea Glint, also mark as invalid
-                "title": "Invalid_Dry",
-                "abstract": "Possible Sea Glint, also mark as invalid",
-                "flags": {
-                    "dry": True,
-                    "sea": True
                 },
                 "color": "#707070",
                 "mask": True
