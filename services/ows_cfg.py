@@ -1046,10 +1046,6 @@ style_wofs_annual_summary_frequency = {
             "color": "#5700e3"
         }
     ],
-    "legend": {
-        "url": "https://data.dea.ga.gov.au/WOfS/filtered_summary/v2.1.0/wofs_full_summary_legend"
-                ".png",
-    }
 }
 
 style_wofs_annual_frequency = {
