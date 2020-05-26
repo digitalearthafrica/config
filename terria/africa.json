@@ -234,6 +234,16 @@
                      "opacity": 1
                   },
                   {
+                     "name": "Daily water observations",
+                     "type": "wms",
+                     "layers": "ga_ls8c_wofs_2",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "ga_ls8c_wofs_2",
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1
+                  },
+                  {
                      "name": "Annual water summary source data",
                      "type": "group",
                      "preserveOrder": true,
