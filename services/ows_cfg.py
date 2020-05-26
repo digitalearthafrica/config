@@ -1046,6 +1046,12 @@ style_wofs_annual_summary_frequency = {
             "color": "#5700e3"
         }
     ],
+    "legend": {
+        "units": "%",
+        "radix_point": 0,
+        "scale_by": 100.0,
+        "major_ticks": 0.1
+    }
 }
 
 style_wofs_annual_frequency = {
@@ -1130,6 +1136,12 @@ style_wofs_annual_frequency = {
             "color": "#5700e3"
         }
     ],
+    "legend": {
+        "units": "%",
+        "radix_point": 0,
+        "scale_by": 100.0,
+        "major_ticks": 0.1
+    }
 }
 
 style_wofs_frequency_blue = {
