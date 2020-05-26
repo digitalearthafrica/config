@@ -973,9 +973,6 @@ style_wofs_frequency = {
             "color": "#5700e3"
         }
     ],
-    "legend": {
-        "url": "https://data.dea.ga.gov.au/WOfS/filtered_summary/v2.1.0/wofs_full_summary_legend.png",
-    }
 }
 
 style_wofs_annual_summary_frequency = {
@@ -1137,9 +1134,6 @@ style_wofs_annual_frequency = {
             "color": "#5700e3"
         }
     ],
-    "legend": {
-        "url": "https://data.dea.ga.gov.au/WOfS/filtered_summary/v2.1.0/wofs_full_summary_legend.png",
-    }
 }
 
 style_wofs_frequency_blue = {
@@ -1649,19 +1643,6 @@ style_wofs_obs = {
                 "color": "#707070"
             },
             {
-                # Possible Sea Glint, also mark as invalid
-                "title": "Invalid_Dry",
-                "abstract": "Possible Sea Glint, also mark as invalid",
-                "flags": {
-                    "dry": True,
-                    "sea": True,
-                    "cloud_shadow": False,
-                    "cloud": False,
-                    "nodata": False
-                },
-                "color": "#707070"
-            },
-            {
                 "title": "Dry",
                 "abstract": "Dry",
                 "flags": {
@@ -1703,17 +1684,6 @@ style_wofs_obs_wet_only = {
                         "cloud": True,
                         "nodata": True,
                     }
-                },
-                "color": "#707070",
-                "mask": True
-            },
-            {
-                # Possible Sea Glint, also mark as invalid
-                "title": "Invalid_Dry",
-                "abstract": "Possible Sea Glint, also mark as invalid",
-                "flags": {
-                    "dry": True,
-                    "sea": True
                 },
                 "color": "#707070",
                 "mask": True
