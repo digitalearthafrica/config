@@ -193,7 +193,7 @@
                            "featureTimesProperty": "data_available_for_dates"
                         },
                         {
-                           "name": "Summary of clear observations",
+                           "name": "Count of clear observations",
                            "type": "wms",
                            "layers": "wofs_annual_summary_clear",
                            "url": "https://ows.digitalearth.africa/",
