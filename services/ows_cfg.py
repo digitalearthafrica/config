@@ -1432,7 +1432,7 @@ style_wofs_beta_summary_clear = {
             "color": "#ef8500"
         },
         {
-            "value": 9,
+            "value": 10,
             "color": "#ffb800"
         },
         {
@@ -1448,7 +1448,7 @@ style_wofs_beta_summary_clear = {
             "color": "#fff300"
         },
         {
-            "value": 21,
+            "value": 20,
             "color": "#c1ec00"
         },
         {
@@ -1471,7 +1471,6 @@ style_wofs_beta_summary_clear = {
         "radix_point": 0,
         "scale_by": 1,
         "major_ticks": 10,
-        "axes_position": [0.05, 0.5, 0.89, 0.15]
     }
 }
 
