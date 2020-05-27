@@ -1396,6 +1396,86 @@ style_wofs_summary_clear = {
     }
 }
 
+style_wofs_beta_summary_clear = {
+    "name": "annual_clear_observations",
+    "title": "Clear Count",
+    "abstract": "WOfS annual summary showing the count of clear observations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "pass_product_cfg": True,
+        "kwargs": {
+            "band": "count_clear",
+        }
+    },
+    "include_in_feature_info": False,
+    "needed_bands": ["count_clear"],
+    "color_ramp": [
+        {
+            "value": 0,
+            "color": "#FFFFFF",
+            "alpha": 0
+        },
+        {
+            # purely for legend display
+            # we should not get fractional
+            # values in this styles
+            "value": 0,
+            "color": "#B21800",
+            "alpha": 1
+        },
+        {
+            "value": 3,
+            "color": "#B21800"
+        },
+        {
+            "value": 6,
+            "color": "#ef8500"
+        },
+        {
+            "value": 9,
+            "color": "#ffb800"
+        },
+        {
+            "value": 12,
+            "color": "#ffd000"
+        },
+        {
+            "value": 15,
+            "color": "#fff300"
+        },
+        {
+            "value": 18,
+            "color": "#fff300"
+        },
+        {
+            "value": 21,
+            "color": "#c1ec00"
+        },
+        {
+            "value": 24,
+            "color": "#6ee100"
+        },
+        {
+            "value": 27,
+            "color": "#39a500"
+        },
+        {
+            "value": 30,
+            "color": "#026900",
+            "legend": {
+                "prefix": ">"
+            }
+        }
+    ],
+    "legend": {
+        "radix_point": 0,
+        "scale_by": 1,
+        "major_ticks": 10,
+        "axes_position": [0.05, 0.5, 0.89, 0.15]
+    }
+}
+
+
 style_wofs_annual_clear = {
     "name": "annual_clear_observations",
     "title": "Clear Count",
@@ -2509,75 +2589,75 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             ]
                         }
                     },
-                    {
-                        "title": "Water Observations from Space Annual Count of Wet Observations (Development)",
-                        "name": "wofs_annual_summary_wet",
-                        "abstract": """
-The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
+#                     {
+#                         "title": "Water Observations from Space Annual Count of Wet Observations (Development)",
+#                         "name": "wofs_annual_summary_wet",
+#                         "abstract": """
+# The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
 
-This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+# This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
 
-It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+# It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
 
-For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+# For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-""",
-                        "product_name": "ls_usgs_wofs_summary",
-                        "time_resolution": "year",
-                        "bands": bands_usgs_wofs_summary,
-                        "resource_limits": reslim_wofs_dry,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
-                        },
-                        "wcs": {
-                            "native_crs": "ESRI:102022",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["count_wet"]
-                        },
-                        "styling": {
-                            "default_style": "water_observations",
-                            "styles": [
-                                    style_wofs_count_wet,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Water Observations from Space Annual Count of Clear Observations (Development)",
-                        "name": "wofs_annual_summary_clear",
-                        "abstract": """
-The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
+# This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+# """,
+#                         "product_name": "ls_usgs_wofs_summary",
+#                         "time_resolution": "year",
+#                         "bands": bands_usgs_wofs_summary,
+#                         "resource_limits": reslim_wofs_dry,
+#                         "image_processing": {
+#                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+#                             "always_fetch_bands": [],
+#                             "manual_merge": False,
+#                         },
+#                         "wcs": {
+#                             "native_crs": "ESRI:102022",
+#                             "native_resolution": [25.0, 25.0],
+#                             "default_bands": ["count_wet"]
+#                         },
+#                         "styling": {
+#                             "default_style": "water_observations",
+#                             "styles": [
+#                                     style_wofs_count_wet,
+#                             ]
+#                         }
+#                     },
+#                     {
+#                         "title": "Water Observations from Space Annual Count of Clear Observations (Development)",
+#                         "name": "wofs_annual_summary_clear",
+#                         "abstract": """
+# The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
 
-This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+# This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
 
-It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+# It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
 
-For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+# For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-""",
-                        "product_name": "ls_usgs_wofs_summary",
-                        "bands": bands_usgs_wofs_summary,
-                        "resource_limits": reslim_wofs_dry,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
-                        },
-                        "wcs": {
-                            "native_crs": "ESRI:102022",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["count_dry"]
-                        },
-                        "styling": {
-                            "default_style": "annual_clear_observations",
-                            "styles": [
-                                    style_wofs_annual_clear,
-                            ]
-                        }
-                    },
+# This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+# """,
+#                         "product_name": "ls_usgs_wofs_summary",
+#                         "bands": bands_usgs_wofs_summary,
+#                         "resource_limits": reslim_wofs_dry,
+#                         "image_processing": {
+#                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+#                             "always_fetch_bands": [],
+#                             "manual_merge": False,
+#                         },
+#                         "wcs": {
+#                             "native_crs": "ESRI:102022",
+#                             "native_resolution": [25.0, 25.0],
+#                             "default_bands": ["count_dry"]
+#                         },
+#                         "styling": {
+#                             "default_style": "annual_clear_observations",
+#                             "styles": [
+#                                     style_wofs_annual_clear,
+#                             ]
+#                         }
+#                     },
                 ]
             },
             {
@@ -2689,7 +2769,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "styling": {
                             "default_style": "annual_clear_observations",
                             "styles": [
-                                    style_wofs_summary_clear,
+                                    style_wofs_beta_summary_clear,
                             ]
                         }
                     },
