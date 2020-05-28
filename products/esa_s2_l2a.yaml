@@ -1,5 +1,5 @@
 name: s2_l2a
-description: Sentinel-2a and Sentinel-2b imagery, processed to Level 2A (Surface Reflectance) and converted to Cloud-Optimized GeoTIFFs
+description: Sentinel-2a and Sentinel-2b imagery, processed to Level 2A (Surface Reflectance) and converted to Cloud Optimized GeoTIFFs
 metadata_type: eo3
 
 metadata:
@@ -108,7 +108,7 @@ measurements:
   nodata: 0
 
 - name: 'WVP'
-  aliases: [scene_water_vapour]
+  aliases: [scene_average_water_vapour]
   units: '1'
   dtype: uint16
   nodata: 0
