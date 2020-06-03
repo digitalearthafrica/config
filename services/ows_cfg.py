@@ -12,7 +12,7 @@ reslim_landsat = {
 
 
 
-reslim_srmt = {
+reslim_srtm = {
     "wms": {
         "zoomed_out_fill_colour": [150,180,200,160],
         "min_zoom_factor": 10.0,
@@ -54,7 +54,7 @@ reslim_wofs_dry = {
         # "max_datasets": 16, # Defaults to no dataset limit
     }
 }
-reslim_alos_palsar = reslim_srmt
+reslim_alos_palsar = reslim_srtm
 
 
 # bands
@@ -2501,7 +2501,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
                         "product_name": "s2_l2a",
                         "bands": bands_sentinel,
-                        "resource_limits": reslim_srmt,
+                        "resource_limits": reslim_srtm,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
@@ -2959,7 +2959,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
                         "product_name": "ls_usgs_fc_scene",
                         "bands": bands_fc,
-                        "resource_limits": reslim_srmt,
+                        "resource_limits": reslim_srtm,
                         #"time_resolution": "year",
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -3006,7 +3006,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "product_name": "ga_ls8c_gm_2_annual",
                         "time_resolution": "year",
                         "bands": bands_ls8c,
-                        "resource_limits": reslim_srmt,
+                        "resource_limits": reslim_srtm,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
@@ -3103,9 +3103,9 @@ For more information, see https://lpdaac.usgs.gov/products/srtmgl1v003/
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
                         "product_name": "srtm",
-                        #"time_resolution": "year",
+                        "time_resolution": "year",
                         "bands": bands_elevation,
-                        "resource_limits": reslim_srmt,
+                        "resource_limits": reslim_srtm,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
