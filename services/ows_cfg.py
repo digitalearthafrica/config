@@ -2516,7 +2516,10 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "styling": {
                             "default_style": "simple_rgb",
                             "styles": [
-                                style_ls_simple_rgb
+                                style_ls_simple_rgb,
+                                style_gals_irg, style_ls_ndvi, style_ls_ndwi, style_gals_mndwi,
+                                style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
+                                style_ls_pure_nir, style_gals_pure_swir1, style_gals_pure_swir2,
                             ]
                         }
                     },
