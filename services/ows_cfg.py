@@ -2271,11 +2271,6 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "EPSG:102022": {  # Deprecated, but it's requred as it was update_ranges'd against
-                "geographic": False,
-                "horizontal_coord": "x",
-                "vertical_coord": "y",
-            },
             "EPSG:4326": {  # WGS-84
                 "geographic": True,
                 "vertical_coord_first": True
@@ -2340,13 +2335,21 @@ ows_cfg = {
         "default_geographic_CRS": "EPSG:4326",
         "formats": {
             "GeoTIFF": {
-                "renderer": "datacube_ows.wcs_utils.get_tiff",
+                # "renderer": "datacube_ows.wcs_utils.get_tiff",
+                "renderers": {
+                    "1": "datacube_ows.wcs1_utils.get_tiff",
+                    "2": "datacube_ows.wcs2_utils.get_tiff",
+                },
                 "mime": "image/geotiff",
                 "extension": "tif",
                 "multi-time": False
             },
             "netCDF": {
-                "renderer": "datacube_ows.wcs_utils.get_netcdf",
+                # "renderer": "datacube_ows.wcs_utils.get_netcdf",
+                "renderers": {
+                    "1": "datacube_ows.wcs1_utils.get_netcdf",
+                    "2": "datacube_ows.wcs2_utils.get_netcdf",
+                },
                 "mime": "application/x-netcdf",
                 "extension": "nc",
                 "multi-time": True,
@@ -2498,7 +2501,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Surface Reflectance Sentinel-2",
                         "name": "s2_l2a",
                         "abstract": """
-"Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
 DE Africa provides Sentinel 2 Level-2A surface reflectance data from European Commission's Copernicus Programme. Sentinel-2 is an Earth observation mission that systematically acquires optical imagery at up to 10 m spatial resolution. The mission is based on a constellation of two identical satellites in the same orbit, 180° apart for optimal coverage and data delivery. Together, they cover all Earth's land surfaces, large islands, inland and coastal waters every 3-5 days. Each of the Sentinel-2 satellites carries a wide swath high-resolution multispectral imager with 13 spectral bands.
 
@@ -2512,7 +2515,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
                         "product_name": "s2_l2a",
                         "bands": bands_sentinel,
-                        "resource_limits": reslim_landsat,
+                        "resource_limits": reslim_srmt,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
