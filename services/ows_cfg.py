@@ -677,6 +677,7 @@ style_gals_pure_swir1 = {
     "scale_range": [7272.0, 18181.0]
 }
 
+
 style_s2_pure_swir1 = {
     "name": "swir_1",
     "title": "Shortwave Infrared (SWIR) - 1610",
@@ -780,6 +781,157 @@ style_ls_pure_swir2 = {
         },
         "blue": {
             "swir2": 1.0
+        }
+    },
+    "scale_range": [0.0, 3000.0]
+}
+
+style_s2_ndci = {
+    "name": "ndci",
+    "title": "NDCI - Red Edge, Red",
+    "abstract": "Normalised Difference Chlorophyll Index - a derived index that correlates well with the existence of chlorophyll",
+    "index_function": {
+        "function": "datacube_ows.band_utils.sentinel2_ndci",
+        "pass_product_cfg": True,
+        "kwargs": {
+            "b_red_edge": "red_edge_1",
+            "b_red": "red",
+            "b_green": "green",
+            "b_swir": "swir_2",
+        }
+    },
+    "needed_bands": ["red_edge_1", "red", "green", "swir_2"],
+    "color_ramp": [
+        {
+            "value": -0.1,
+            "color": "#1696FF",
+            "legend": {
+                "prefix" : "<"
+            }
+        },
+        {
+            "value": -0.1,
+            "color": "#1696FF"
+        },
+        {
+            "value": 0.0,
+            "color": "#00FFDF",
+            "legend": { }
+        },
+        {
+            "value": 0.1,
+            "color": "#FFF50E",
+        },
+        {
+            "value": 0.2,
+            "color": "#FFB50A",
+            "legend": { }
+        },
+        {
+            "value": 0.4,
+            "color": "#FF530D",
+        },
+        {
+            "value": 0.5,
+            "color": "#FF0000",
+            "legend": {
+                "prefix": ">"
+            }
+        }
+    ]
+}
+
+style_s2_pure_aerosol = {
+    "name": "aerosol",
+    "title": "Narrow Blue - 440",
+    "abstract": "Coastal Aerosol or Narrow Blue band, approximately 435nm to 450nm",
+    "components": {
+        "red": {
+            "coastal_aerosol": 1.0
+        },
+        "green": {
+            "coastal_aerosol": 1.0
+        },
+        "blue": {
+            "coastal_aerosol": 1.0
+        }
+    },
+    "scale_range": [0.0, 3000.0]
+}
+
+
+style_s2_pure_redge_1 = {
+    "name": "red_edge_1",
+    "title": "Vegetation Red Edge - 710",
+    "abstract": "Near infra-red band, centred on 710nm",
+
+    "components": {
+        "red": {
+            "red_edge_1": 1.0
+        },
+        "green": {
+            "red_edge_1": 1.0
+        },
+        "blue": {
+            "red_edge_1": 1.0
+        }
+    },
+    "scale_range": [0.0, 3000.0]
+}
+
+
+style_s2_pure_redge_2 = {
+    "name": "red_edge_2",
+    "title": "Vegetation Red Edge - 740",
+    "abstract": "Near infra-red band, centred on 740nm",
+
+    "components": {
+        "red": {
+            "red_edge_2": 1.0
+        },
+        "green": {
+            "red_edge_2": 1.0
+        },
+        "blue": {
+            "red_edge_2": 1.0
+        }
+    },
+    "scale_range": [0.0, 3000.0]
+}
+
+
+style_s2_pure_redge_3 = {
+    "name": "red_edge_3",
+    "title": "Vegetation Red Edge - 780",
+    "abstract": "Near infra-red band, centred on 780nm",
+
+    "components": {
+        "red": {
+            "red_edge_3": 1.0
+        },
+        "green": {
+            "red_edge_3": 1.0
+        },
+        "blue": {
+            "red_edge_3": 1.0
+        }
+    },
+    "scale_range": [0.0, 3000.0]
+}
+
+style_s2_pure_narrow_nir = {
+    "name": "narrow_nir",
+    "title": "Narrow Near Infrared - 870",
+    "abstract": "Near infra-red band, centred on 865nm",
+    "components": {
+        "red": {
+            "nir": 1.0
+        },
+        "green": {
+            "nir": 1.0
+        },
+        "blue": {
+            "nir": 1.0
         }
     },
     "scale_range": [0.0, 3000.0]
@@ -2572,9 +2724,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "default_style": "simple_rgb",
                             "styles": [
                                 style_ls_simple_rgb,
-                                style_s2_irg, style_ls_ndvi, style_ls_ndwi, style_gals_mndwi,
+                                style_s2_irg,
+                                style_ls_ndvi, style_ls_ndwi, style_gals_mndwi, style_s2_ndci,
+                                style_s2_pure_aerosol,
                                 style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
-                                style_ls_pure_nir, style_s2_pure_swir1, style_s2_pure_swir2,
+                                style_s2_pure_redge_1, style_s2_pure_redge_2, style_s2_pure_redge_3,
+                                style_ls_pure_nir, style_s2_pure_narrow_nir,
+                                style_s2_pure_swir1, style_s2_pure_swir2,
                             ]
                         }
                     },
