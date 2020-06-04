@@ -229,6 +229,24 @@ style_gals_irg = {
     "scale_range": [7272.0, 18181.0]
 }
 
+style_s2_irg = {
+    "name": "infrared_green",
+    "title": "False colour - Green, SWIR, NIR",
+    "abstract": "False Colour image with SWIR1->Red, NIR->Green, and Green->Blue",
+    "components": {
+        "red": {
+            "swir_1": 1.0
+        },
+        "green": {
+            "nir": 1.0
+        },
+        "blue": {
+            "green": 1.0
+        }
+    },
+    "scale_range": [0, 3000]
+}
+
 style_ls_irg = {
     "name": "infrared_green",
     "title": "False colour - Green, SWIR, NIR",
@@ -659,6 +677,24 @@ style_gals_pure_swir1 = {
     "scale_range": [7272.0, 18181.0]
 }
 
+style_s2_pure_swir1 = {
+    "name": "swir_1",
+    "title": "Shortwave Infrared (SWIR) - 1610",
+    "abstract": "Short wave infra-red band 1, centered on 1610nm",
+    "components": {
+        "red": {
+            "B11": 1.0
+        },
+        "green": {
+            "B11": 1.0
+        },
+        "blue": {
+            "B11": 1.0
+        }
+    },
+    "scale_range": [0.0, 3000.0]
+}
+
 style_ls_pure_swir1 = {
     "name": "swir1",
     "title": "Shortwave Infrared (SWIR) - 1650",
@@ -711,6 +747,24 @@ style_gals_pure_swir2 = {
         }
     },
     "scale_range": [7272.0, 18181.0]
+}
+
+style_s2_pure_swir2 = {
+    "name": "swir_2",
+    "title": "Shortwave Infrared (SWIR) - 2200",
+    "abstract": "Short wave infra-red band 2, centered on 2200nm",
+    "components": {
+        "red": {
+            "swir_2": 1.0
+        },
+        "green": {
+            "swir_2": 1.0
+        },
+        "blue": {
+            "swir_2": 1.0
+        }
+    },
+    "scale_range": [0, 3000.0]
 }
 
 style_ls_pure_swir2 = {
@@ -2501,6 +2555,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
                         "product_name": "s2_l2a",
                         "bands": bands_sentinel,
+                        "dynamic": True,
                         "resource_limits": reslim_srtm,
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -2517,9 +2572,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "default_style": "simple_rgb",
                             "styles": [
                                 style_ls_simple_rgb,
-                                style_gals_irg, style_ls_ndvi, style_ls_ndwi, style_gals_mndwi,
+                                style_s2_irg, style_ls_ndvi, style_ls_ndwi, style_gals_mndwi,
                                 style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
-                                style_ls_pure_nir, style_gals_pure_swir1, style_gals_pure_swir2,
+                                style_ls_pure_nir, style_s2_pure_swir1, style_s2_pure_swir2,
                             ]
                         }
                     },
