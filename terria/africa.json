@@ -205,36 +205,7 @@
                      "tileErrorThresholdBeforeDisabling": 100000,
                      "opacity": 1,
                      "featureTimesProperty": "data_available_for_dates"
-                  },
-                  // {
-                  //    "name": "Annual water summary source data",
-                  //    "type": "group",
-                  //    "preserveOrder": true,
-                  //    "items": [
-                  //       {
-                  //          "name": "Count of wet observations",
-                  //          "type": "wms",
-                  //          "layers": "wofs_annual_summary_wet",
-                  //          "url": "https://ows.digitalearth.africa/",
-                  //          "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                  //          "linkedWcsCoverage": "wofs_annual_summary_wet",
-                  //          "ignoreUnknownTileErrors": true,
-                  //          "opacity": 1,
-                  //          "featureTimesProperty": "data_available_for_dates"
-                  //       },
-                  //       {
-                  //          "name": "Count of clear observations",
-                  //          "type": "wms",
-                  //          "layers": "wofs_annual_summary_clear",
-                  //          "url": "https://ows.digitalearth.africa/",
-                  //          "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                  //          "linkedWcsCoverage": "wofs_annual_summary_clear",
-                  //          "ignoreUnknownTileErrors": true,
-                  //          "opacity": 1,
-                  //          "featureTimesProperty": "data_available_for_dates"
-                  //       }
-                  //    ]
-                  // },
+                  }
                ]
             },
             {
