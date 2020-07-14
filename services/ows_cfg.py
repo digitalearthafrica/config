@@ -2121,6 +2121,20 @@ style_fc_simple = {
         }
     },
     "scale_range": [0.0, 100.0],
+    "pq_masks": [
+        {
+            "flags": {
+                'dry': True
+            },
+        },
+        {
+            "flags": {
+                "cloud_shadow": False,
+                "cloud": False,
+                "sea": False
+            }
+        },
+    ],
     "legend": {
         "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
     }
@@ -3179,6 +3193,12 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
                             "manual_merge": True,
+                        },
+                        "flags":{
+                            "dataset": "ls_usgs_wofs_scene",
+                            "band": "water",
+                            "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
+                            "ignore_info_flags": [],
                         },
                         "wcs": {
                             "native_crs": "EPSG:4326",
