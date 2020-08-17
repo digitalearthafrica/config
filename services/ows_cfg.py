@@ -57,6 +57,13 @@ reslim_wofs_dry = {
 reslim_alos_palsar = reslim_srtm
 
 
+# Reusable Chunks 3. Legends
+legend_idx_0_1_5ticks = {
+        "begin": "0.0",
+        "end": "1.0",
+        "ticks_every": "0.2"
+}
+
 # bands
 
 bands_ls = {
@@ -329,7 +336,8 @@ style_ls_ndvi = {
             "value": 1.0,
             "color": "#114D04"
         }
-    ]
+    ],
+   "legend": legend_idx_0_1_5ticks,
 }
 
 style_ls_ndwi = {
@@ -383,7 +391,19 @@ style_ls_ndwi = {
                 "prefix": ">"
             }
         }
-    ]
+    ],
+    "legend": {
+        "begin": "0.0",
+        "end": "0.5",
+        "tick_labels": {
+            "0.0": {
+                "prefix": "<"
+            },
+            "0.5": {
+                "prefix": ">"
+            },
+        }
+    }
 }
 
 style_gals_mndwi = {
@@ -476,7 +496,8 @@ style_ls_mndwi = {
             "value": 1.0,
             "color": "#08306b"
         }
-    ]
+    ],
+    "legend": legend_idx_0_1_5ticks,
 }
 
 style_gals_pure_blue = {
@@ -3057,7 +3078,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "title": "Water Observations from Space All Time Summary (Beta)",
                         "name": "wofs_2_summary_frequency",
                         "abstract": """
-All time water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) over time. 
+All time water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) over time.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
 
@@ -3282,7 +3303,7 @@ The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines 
 
 This product is generated from L-band radar observations. It has a spatial resolution of 25 m and is available annually for 2007 to 2010 (ALOS/PALSAR) and 2015 to current (ALOS-2/PALSAR-2).
 
-It is part of a global dataset provided by the Japan Aerospace Exploration Agency (JAXA) Earth Observation Research Center.
+It is part of a global dataset provided by the Japan Aerospace Exploration Agency (JAXA) Earth Observation Research Center.
 
 For more information on the product, see https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/fnf_index.htm
 
