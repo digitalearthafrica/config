@@ -395,10 +395,14 @@ style_ls_ndwi = {
     "legend": {
         "begin": "0.0",
         "end": "0.5",
+        "decimal_places": 1,
+        "ticks": ["0.0", "0.2", "0.4", "0.5"],
         "tick_labels": {
             "0.0": {
                 "prefix": "<"
             },
+            "0.2": {"label": "0.2"},
+            "0.4": {"label": "0.4"},
             "0.5": {
                 "prefix": ">"
             },
@@ -449,7 +453,8 @@ style_gals_mndwi = {
             "value": 1.0,
             "color": "#08306b"
         }
-    ]
+    ],
+    "legend": legend_idx_0_1_5ticks,
 }
 
 style_ls_mndwi = {
@@ -1722,84 +1727,84 @@ style_wofs_beta_summary_clear = {
     }
 }
 
-
-style_wofs_annual_clear = {
-    "name": "annual_clear_observations",
-    "title": "Clear Count",
-    "abstract": "WOfS annual summary showing the count of clear observations",
-    "needed_bands": ["count_dry"],
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
-        "kwargs": {
-            "band": "count_dry",
-        }
-    },
-    "color_ramp": [
-        {
-            "value": 0,
-            "color": "#FFFFFF",
-            "alpha": 0
-        },
-        {
-            # purely for legend display
-            # we should not get fractional
-            # values in this styles
-            "value": 0.2,
-            "color": "#B21800",
-            "alpha": 1
-        },
-        {
-            "value": 1,
-            "color": "#B21800"
-        },
-        {
-            "value": 6,
-            "color": "#ef8500"
-        },
-        {
-            "value": 10,
-            "color": "#ffb800"
-        },
-        {
-            "value": 14,
-            "color": "#ffd000"
-        },
-        {
-            "value": 18,
-            "color": "#fff300"
-        },
-        {
-            "value": 22,
-            "color": "#fff300"
-        },
-        {
-            "value": 28,
-            "color": "#c1ec00"
-        },
-        {
-            "value": 32,
-            "color": "#6ee100"
-        },
-        {
-            "value": 36,
-            "color": "#39a500"
-        },
-        {
-            "value": 40,
-            "color": "#026900",
-            "legend": {
-                "prefix": ">"
-            }
-        }
-    ],
-    "legend": {
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 10,
-        "axes_position": [0.05, 0.5, 0.89, 0.15]
-    }
-}
+# The only layer that uses this style is disabled
+# style_wofs_annual_clear = {
+#     "name": "annual_clear_observations",
+#     "title": "Clear Count",
+#     "abstract": "WOfS annual summary showing the count of clear observations",
+#     "needed_bands": ["count_dry"],
+#     "index_function": {
+#         "function": "datacube_ows.band_utils.single_band",
+#         "pass_product_cfg": True,
+#         "kwargs": {
+#             "band": "count_dry",
+#         }
+#     },
+#     "color_ramp": [
+#         {
+#             "value": 0,
+#             "color": "#FFFFFF",
+#             "alpha": 0
+#         },
+#         {
+#             # purely for legend display
+#             # we should not get fractional
+#             # values in this styles
+#             "value": 0.2,
+#             "color": "#B21800",
+#             "alpha": 1
+#         },
+#         {
+#             "value": 1,
+#             "color": "#B21800"
+#         },
+#         {
+#             "value": 6,
+#             "color": "#ef8500"
+#         },
+#         {
+#             "value": 10,
+#             "color": "#ffb800"
+#         },
+#         {
+#             "value": 14,
+#             "color": "#ffd000"
+#         },
+#         {
+#             "value": 18,
+#             "color": "#fff300"
+#         },
+#         {
+#             "value": 22,
+#             "color": "#fff300"
+#         },
+#         {
+#             "value": 28,
+#             "color": "#c1ec00"
+#         },
+#         {
+#             "value": 32,
+#             "color": "#6ee100"
+#         },
+#         {
+#             "value": 36,
+#             "color": "#39a500"
+#         },
+#         {
+#             "value": 40,
+#             "color": "#026900",
+#             "legend": {
+#                 "prefix": ">"
+#             }
+#         }
+#     ],
+#     "legend": {
+#         "radix_point": 0,
+#         "scale_by": 1,
+#         "major_ticks": 10,
+#         "axes_position": [0.05, 0.5, 0.89, 0.15]
+#     }
+# }
 
 style_annual_wofs_summary_frequency = {
     "name": "annual_WOfS_frequency",
