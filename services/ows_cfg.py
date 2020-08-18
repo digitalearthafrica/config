@@ -2219,9 +2219,18 @@ style_alos_hh = {
         }
     ],
     "legend": {
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 500
+        "begin": 0,
+        "end": 8000,
+        "ticks": ["0", "2000", "4000", "6000", "8000"],
+        "tick_labels": {
+            "0": {"label": "0"},
+            "2500": {"label": "2000"},
+            "4000": {"label": "4000"},
+            "6000": {"label": "6000"},
+            "8000": {
+                "prefix": ">"
+            },
+        }
     }
 }
 
@@ -2275,9 +2284,18 @@ style_alos_hv = {
         }
     ],
     "legend": {
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 500
+        "begin": 0,
+        "end": 4500,
+        "ticks": ["0", "500", "2000", "3500", "4500"],
+        "tick_labels": {
+            "0": {"label": "0"},
+            "500": {"label": "500"},
+            "2000": {"label": "2000"},
+            "3500": {"label": "3500"},
+            "4500": {
+                "prefix": ">"
+            },
+        }
     }
 }
 
