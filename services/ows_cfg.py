@@ -61,7 +61,8 @@ reslim_alos_palsar = reslim_srtm
 legend_idx_0_1_5ticks = {
         "begin": "0.0",
         "end": "1.0",
-        "ticks_every": "0.2"
+        "ticks_every": "0.2",
+        "units": "unitless",
 }
 
 # bands
@@ -1134,9 +1135,9 @@ style_wofs_water_annual_wet = {
         }
     ],
     "legend": {
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 10
+        "begin": 0,
+        "end": 20,
+        "ticks_every": 10
     }
 }
 
