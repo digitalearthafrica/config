@@ -1,0 +1,28 @@
+name: ga_s2_clear_pixel_count
+description: Clear Pixel Count S2A/B
+
+metadata_type: eo3
+
+metadata:
+  product:
+    name: ga_s2_clear_pixel_count
+
+storage:
+    crs: EPSG:6933
+    resolution:
+      x: 20
+      y: -20
+    tile_size:
+      x: 96000
+      y: 96000
+
+measurements:
+- name: total
+  dtype: uint16
+  nodata: 0
+  units: '1'
+
+- name: clear
+  dtype: uint16
+  nodata: 0
+  units: '1'
