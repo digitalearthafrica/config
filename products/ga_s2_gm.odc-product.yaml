@@ -12,8 +12,8 @@ storage:
     x: 10
     y: -10
   tile_size:
-    x: 9600.0
-    y: 9600.0
+    x: 96000.0
+    y: 96000.0
 
 measurements:
 - name: 'B02'
