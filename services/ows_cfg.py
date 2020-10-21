@@ -2832,7 +2832,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
  """,
                         "product_name": "ga_s2_gm",
                         "bands": bands_s2_gm,
-                        "dynamic": True,
+                        "dynamic": False,
                         "resource_limits": reslim_srtm,
                         "time_resolution": "year",
                         "image_processing": {
