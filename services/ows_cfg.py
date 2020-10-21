@@ -2834,6 +2834,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "bands": bands_s2_gm,
                         "dynamic": True,
                         "resource_limits": reslim_srtm,
+                        "time_resolution": "year",
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                             "always_fetch_bands": [],
