@@ -126,7 +126,7 @@
                      "preserveOrder": true,
                      "items": [
                         {
-                           "name": "Annual median (Landsat 8)",
+                           "name": "Annual geomedian (Landsat 8)",
                            "type": "wms",
                            "layers": "ga_ls8c_gm_2_annual",
                            "url": "https://ows.digitalearth.africa/",
