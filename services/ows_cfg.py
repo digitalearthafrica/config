@@ -168,6 +168,14 @@ bands_alos = {
     "date": [],
     "linci": []
 }
+
+bands_jers = {
+    "hh": [],
+    "mask": [],
+    "date": [],
+    "linci": []
+}
+
 # Style
 style_ls_simple_rgb = {
         "name": "simple_rgb",
@@ -2809,6 +2817,60 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 ]
             },
             {
+                    "title": "Geomedian",
+                    "abstract": """Annual Median""",
+                    "layers": [
+                    {
+                        "title": "Surface Reflectance Annual Geomedian Sentinel-2 (Beta)",
+                        "name": "ga_s2_gm",
+                        "abstract": """
+Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
+
+In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
+
+This product has a spatial resolution of 10 m and a temporal coverage of 2019.
+
+It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2019.
+
+Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation.
+
+For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896
+
+This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+ """,
+                        "product_name": "ga_s2_gm",
+                        "low_res_product_name": "ga_s2_gm",
+                        "bands": bands_s2_gm,
+                        "dynamic": False,
+                        "resource_limits": reslim_srtm,
+                        "time_resolution": "year",
+                        "image_processing": {
+                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                            "always_fetch_bands": [],
+                            "manual_merge": True, # True
+                            "apply_solar_corrections": False,
+                        },
+                        "wcs": {
+                            "native_crs": "EPSG:6933",
+                            "native_resolution": [10.0, -10.0],
+                            "default_bands": ["red", "green", "blue"]
+                        },
+                        "styling": {
+                            "default_style": "simple_rgb",
+                            "styles": [
+                                style_ls_simple_rgb,
+                                style_s2_irg,
+                                style_ls_ndvi, style_ls_ndwi, style_gals_mndwi, style_s2_ndci,
+                                style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
+                                style_s2_pure_redge_1, style_s2_pure_redge_2, style_s2_pure_redge_3,
+                                style_ls_pure_nir, style_s2_pure_narrow_nir,
+                                style_s2_pure_swir1, style_s2_pure_swir2,
+                            ]
+                        }
+                    },
+                ]
+            },
+            {
                 "title": "Water Observations from Space",
                 "abstract": """WOfS""",
                 "layers": [
@@ -3323,54 +3385,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             ]
                         }
                     },
-                    {
-                        "title": "Surface Reflectance Annual Geomedian Sentinel-2 (Beta)",
-                        "name": "ga_s2_gm",
-                        "abstract": """
-Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
 
-In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
-
-This product has a spatial resolution of 10 m and a temporal coverage of 2019.
-
-It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2019.
-
-Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation.
-
-For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896
-
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
- """,
-                        "product_name": "ga_s2_gm",
-                        "low_res_product_name": "ga_s2_gm",
-                        "bands": bands_s2_gm,
-                        "dynamic": False,
-                        "resource_limits": reslim_srtm,
-                        "time_resolution": "year",
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True, # True
-                            "apply_solar_corrections": False,
-                        },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [10.0, -10.0],
-                            "default_bands": ["red", "green", "blue"]
-                        },
-                        "styling": {
-                            "default_style": "simple_rgb",
-                            "styles": [
-                                style_ls_simple_rgb,
-                                style_s2_irg,
-                                style_ls_ndvi, style_ls_ndwi, style_gals_mndwi, style_s2_ndci,
-                                style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
-                                style_s2_pure_redge_1, style_s2_pure_redge_2, style_s2_pure_redge_3,
-                                style_ls_pure_nir, style_s2_pure_narrow_nir,
-                                style_s2_pure_swir1, style_s2_pure_swir2,
-                            ]
-                        }
-                    },
                 ]
             },
             {
@@ -3417,6 +3432,52 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "default_style": "hh",
                             "styles": [
                                 style_alos_hh, style_alos_hv, style_alos_hh_over_hv, style_alos_hv_over_hh
+                            ]
+                        }
+                    },
+
+                ]
+            },
+            {
+                        "title": "Radar Backscatter Annual Mosaic (JERS)",
+                        "name": "jers_sar_mosaic",
+                        "abstract": """
+Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared.
+
+The JERS annual mosaic is generated from images acquired by the SAR sensor on the Japanese Earth Resources Satellite-1 (JERS-1) satellite.
+
+This product contains radar measurement in L-band and HH polarization. It has a spatial resolution of 25 m and is available for 1996. Data is provided as digital number (DN), which can be convereted to backscatter in decibel unit using 10*log10(𝐷𝑁^2)-84.66.
+
+It is part of a global dataset provided by the Japan Aerospace Exploration Agency (JAXA) Earth Observation Research Center.
+
+For more information on the product, see https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/fnf_index.htm
+
+This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+""",
+                        "product_name": "jers_sar_tile",
+                        "time_resolution": "year",
+                        "bands": bands_jers,
+                        "resource_limits": reslim_alos_palsar,
+                        "image_processing": {
+                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                            "always_fetch_bands": [],
+                            "manual_merge": False,
+                        },
+                        "flags":{
+                            "dataset": "jers_sar_tile",
+                            "band": "mask",
+                            "ignore_info_flags": [],
+                        },
+                        "wcs": {
+
+                            "native_crs": "EPSG:4326",
+                            "native_resolution": [25.0, 25.0],
+                            "default_bands": ["hh", "mask"]
+                        },
+                        "styling": {
+                            "default_style": "hh",
+                            "styles": [
+                                style_alos_hh
                             ]
                         }
                     },
