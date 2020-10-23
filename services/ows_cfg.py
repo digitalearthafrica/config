@@ -3397,7 +3397,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "styling": {
                             "default_style": "hh",
                             "styles": [
-                                style_alos_hh, style_alos_hv, style_alos_hv_over_hh
+                                style_alos_hh, style_alos_hv, style_alos_hv_over_hh,
+                                style_alos_radar_veg_idx
                             ]
                         }
                     },
