@@ -3300,7 +3300,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "low_res_product_name": "ga_s2_gm",
                         "bands": bands_s2_gm,
                         "dynamic": False,
-                        "resource_limits": reslim_srtm,
+                        "resource_limits": reslim_landsat,
                         "time_resolution": "year",
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
