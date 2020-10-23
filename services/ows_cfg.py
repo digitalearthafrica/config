@@ -2347,6 +2347,32 @@ style_alos_hv_over_hh = {
     },
 }
 
+style_alos_radar_veg_idx = {
+    "name": "rvi",
+    "title": "Radar Vegetation Index",
+    "abstract": "Radar Vegetation Index (HH,HV)",
+    "needed_bands": ["hh", "hv"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.radar_vegetation_index",
+        "mapped_bands": True,
+        "kwargs": {
+            "band_hv": "hv",
+            "band_hh": "hh",
+        }
+    },
+    "range": [ 0.2, 1.0 ],
+    "mpl_ramp": "viridis",
+    "legend": {
+        "begin": "0.2",
+        "end": "1.0",
+        "ticks_every": "0.1",
+        "tick_labels": {
+            "0.2": {"prefix": "<"},
+            "1.0": {"prefix": ">"},
+        }
+    }
+}
+
 
 style_greyscale = {
     "name": "greyscale",
@@ -3371,7 +3397,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "styling": {
                             "default_style": "hh",
                             "styles": [
-                                style_alos_hh, style_alos_hv, style_alos_hv_over_hh
+                                style_alos_hh, style_alos_hv, style_alos_hv_over_hh,
+                                style_alos_radar_veg_idx
                             ]
                         }
                     },
