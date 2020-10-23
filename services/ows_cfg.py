@@ -2312,84 +2312,31 @@ style_alos_hv = {
     }
 }
 
-style_alos_hh_over_hv = {
-    "name": "hh_hv_hh_over_hv",
-    "title": "HH, HV and HH/HV",
-    "abstract": "False colour representation of HH, HV and HH over HV for R, G and B respectively",
-    # Mixing ratio between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
-    "component_ratio": 0.5,
-    "index_function": {
-        "function": "datacube_ows.band_utils.band_quotient",
-        "pass_product_cfg": True,
-        "kwargs": {
-            "band1": "hh",
-            "band2": "hv"
-        }
-    },
-    "needed_bands": ["hh", "hv"],
-    "range": [0.01, 2.0],
-    "components": {
-        "red": {
-            "hh": 1.0
-        },
-        "green": {
-            "hv": 1.0
-        },
-        "blue": {
-            "hh": 0.0
-        }
-    },
-    "scale_range": [0.0, 5000.0],
-    "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#000000",
-        },
-        {
-            "value": 6.0,
-            "color": "#0000ff"
-        }
-    ],
-}
 
 style_alos_hv_over_hh = {
     "name": "hh_hv_hv_over_hh",
     "title": "HH, HV and HV/HH",
     "abstract": "False colour representation of HH, HV and HV over HH for R, G and B respectively",
-    # Mixing ratio between linear components and colour ramped index. 1.0 is fully linear components, 0.0 is fully colour ramp.
-    "component_ratio": 0.5,
-    "index_function": {
-        "function": "datacube_ows.band_utils.band_quotient",
-        "pass_product_cfg": True,
-        "kwargs": {
-            "band1": "hh",
-            "band2": "hv"
-        }
-    },
-    "needed_bands": ["hh", "hv"],
-    "range": [0.01, 2.0],
+    "additional_bands": [],
     "components": {
         "red": {
-            "hh": 1.0
+            "hh": 1.0,
+            "scale_range": [500, 10000]
         },
         "green": {
-            "hv": 1.0
+            "hv": 1.0,
+            "scale_range": [200, 4000]
         },
         "blue": {
-            "hh": 0.0
+            "function": "datacube_ows.band_utils.band_quotient",
+            "mapped_bands": True,
+            "kwargs": {
+                "band1": "hv",
+                "band2": "hh",
+                "scale_from": [0.1, 1.0]
+            }
         }
     },
-    "scale_range": [0.0, 5000.0],
-    "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#000000",
-        },
-        {
-            "value": 0.6,
-            "color": "#0000ff"
-        }
-    ]
 }
 
 
@@ -3416,7 +3363,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "styling": {
                             "default_style": "hh",
                             "styles": [
-                                style_alos_hh, style_alos_hv, style_alos_hh_over_hv, style_alos_hv_over_hh
+                                style_alos_hh, style_alos_hv, style_alos_hv_over_hh
                             ]
                         }
                     },
