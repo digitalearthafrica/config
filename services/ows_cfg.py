@@ -3428,10 +3428,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             ]
                         }
                     },
-
-                ]
-            },
-            {
+                     {
                         "title": "Radar Backscatter Annual Mosaic (JERS)",
                         "name": "jers_sar_mosaic",
                         "abstract": """
@@ -3472,10 +3469,11 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                                 style_alos_hh
                             ]
                         }
-                    },
+                    }
 
                 ]
             },
+
             {
                     "title": "Shuttle Radar Topography Mission",
                     "abstract": """Digital elevation model from NASA's SRTM<""",
