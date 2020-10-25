@@ -3332,7 +3332,13 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
  """,
                         "product_name": "ga_s2_gm",
-                        "low_res_product_name": "ga_s2_gm",
+                        # Low product name
+                        #
+                        # Leave commented until we have an appropriate summary product.
+                        # (Packaged like the main product, but with much much lower
+                        # resolution and much much higher area covered in each dataset.
+                        #
+                        # "low_res_product_name": "ga_s2_gm",
                         "bands": bands_s2_gm,
                         "dynamic": False,
                         "resource_limits": reslim_sentinel2,
