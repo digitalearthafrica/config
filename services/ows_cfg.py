@@ -10,6 +10,16 @@ reslim_landsat = {
     }
 }
 
+reslim_s2_gm = {
+    "wms": {
+        "zoomed_out_fill_colour": [150,180,200,160],
+        "min_zoom_factor": 95.0,
+        "max_datasets": 35, # Defaults to no dataset limit
+    },
+    "wcs": {
+        # "max_datasets": 16, # Defaults to no dataset limit
+    }
+}
 
 
 reslim_srtm = {
@@ -3326,7 +3336,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "low_res_product_name": "ga_s2_gm",
                         "bands": bands_s2_gm,
                         "dynamic": False,
-                        "resource_limits": reslim_landsat,
+                        "resource_limits": reslim_s2_gm,
                         "time_resolution": "year",
                         "image_processing": {
                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
