@@ -2197,7 +2197,70 @@ style_fc_simple = {
     }
 }
 
-
+style_jers_hh = {
+    "name": "hh",
+    "title": "HH",
+    "abstract": "HH band",
+    "needed_bands": ["hh"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "pass_product_cfg": True,
+        "kwargs": {
+            "band": "hh",
+        }
+    },
+    "color_ramp": [
+        {
+            "value": 0,
+            "color": "#f7fcf5"
+        },
+        {
+            "value": 908, # 750 * 1.21
+            "color": "#e2f4dd"
+        },
+        {
+            "value": 1210,
+            "color": "#c0e6b9"
+        },
+        {
+            "value": 1815,
+            "color": "#94d390"
+        },
+        {
+            "value": 3025,
+            "color": "#60ba6c"
+        },
+        {
+            "value": 4840,
+            "color": "#329b51"
+        },
+        {
+            "value": 7260,
+            "color": "#0c7835"
+        },
+        {
+            "value": 9680, # 8000 * 1.21
+            "color": "#00441b",
+            "legend": {
+                "prefix": ">"
+            }
+        }
+    ],
+    "legend": {
+        "begin": 0,
+        "end": 9680,
+        "ticks": ["0", "3025", "4840", "7260", "9680"],
+        "tick_labels": {
+            "0": {"label": "0"},
+            "3025": {"label": "3025"},
+            "4840": {"label": "4840"},
+            "7260": {"label": "7260"},
+            "9680": {
+                "prefix": ">"
+            },
+        }
+    }
+}
 
 style_alos_hh = {
     "name": "hh",
@@ -3304,8 +3367,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "styles": [
                                 style_gals_simple_rgb,
                                 style_gals_irg,
-                                style_ls_ndvi, style_ls_ndwi,
-                                style_gals_mndwi,
+                                # style_ls_ndvi, style_ls_ndwi,
+                                # style_gals_mndwi,
                                 style_gals_pure_blue, style_gals_pure_green, style_gals_pure_red,
                                 style_gals_pure_nir,
                                 style_gals_pure_swir1,
@@ -3455,7 +3518,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         "styling": {
                             "default_style": "hh",
                             "styles": [
-                                style_alos_hh
+                                style_jers_hh
                             ]
                         }
                     }
