@@ -13,7 +13,7 @@ reslim_landsat = {
 reslim_sentinel2 = {
     "wms": {
         "zoomed_out_fill_colour": [150,180,200,160],
-        "min_zoom_factor": 25.0, # defaults to 300!
+        "min_zoom_factor": 10.0, # defaults to 300!
         "max_datasets": 32, # Defaults to no dataset limit
     },
     "wcs": {
