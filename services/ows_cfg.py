@@ -2248,7 +2248,7 @@ style_jers_hh = {
     ],
     "legend": {
         "begin": 0,
-        "end": 8000,
+        "end": 9680,
         "ticks": ["0", "3025", "4840", "7260", "9680"],
         "tick_labels": {
             "0": {"label": "0"},
