@@ -3367,8 +3367,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "styles": [
                                 style_gals_simple_rgb,
                                 style_gals_irg,
-                                style_ls_ndvi, style_ls_ndwi,
-                                style_gals_mndwi,
+                                # style_ls_ndvi, style_ls_ndwi,
+                                # style_gals_mndwi,
                                 style_gals_pure_blue, style_gals_pure_green, style_gals_pure_red,
                                 style_gals_pure_nir,
                                 style_gals_pure_swir1,
