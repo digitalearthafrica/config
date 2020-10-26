@@ -167,6 +167,28 @@
                            }
                         }
                      }
+                  },
+                  {
+                     "name": "Annual Mosaic (JERS)",
+                     "type": "wms",
+                     "layers": "jers_mosaic",
+                     "url": "https://ows.digitalearth.africa/",
+                     "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                     "linkedWcsCoverage": "jers_mosaic",
+                     "tileErrorThresholdBeforeDisabling": 100000,
+                     "ignoreUnknownTileErrors": true,
+                     "opacity": 1,
+                     "featureTimesProperty": "data_available_for_dates",
+                     "featureInfoTemplate": {
+                        "formats": {
+                           "lat": {
+                              "maximumFractionDigits": 2
+                           },
+                           "lon": {
+                              "maximumFractionDigits": 2
+                           }
+                        }
+                     }
                   }
                ]
             }

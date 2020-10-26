@@ -3419,7 +3419,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                     },
                      {
                         "title": "Radar Backscatter Annual Mosaic (JERS)",
-                        "name": "jers_sar_mosaic",
+                        "name": "jers_mosaic",
                         "abstract": """
 Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared.
 The JERS annual mosaic is generated from images acquired by the SAR sensor on the Japanese Earth Resources Satellite-1 (JERS-1) satellite.
