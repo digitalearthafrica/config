@@ -121,17 +121,29 @@
                      ]
                   },
                   {
-                     "name": "Annual median",
+                     "name": "Annual",
                      "type": "group",
                      "preserveOrder": true,
                      "items": [
                         {
-                           "name": "Annual median (Landsat 8)",
+                           "name": "Annual geomedian (Landsat 8)",
                            "type": "wms",
                            "layers": "ga_ls8c_gm_2_annual",
                            "url": "https://ows.digitalearth.africa/",
                            "linkedWcsUrl": "https://ows.digitalearth.africa/",
                            "linkedWcsCoverage": "ga_ls8c_gm_2_annual",
+                           "tileErrorThresholdBeforeDisabling": 100000,
+                           "ignoreUnknownTileErrors": true,
+                           "opacity": 1,
+                           "featureTimesProperty": "data_available_for_dates"
+                        },
+                        {
+                           "name": "Annual geomedian (Sentinel-2)",
+                           "type": "wms",
+                           "layers": "ga_s2_gm",
+                           "url": "https://ows.digitalearth.africa/",
+                           "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                           "linkedWcsCoverage": "ga_s2_gm",
                            "tileErrorThresholdBeforeDisabling": 100000,
                            "ignoreUnknownTileErrors": true,
                            "opacity": 1,
