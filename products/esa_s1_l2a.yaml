@@ -1,5 +1,5 @@
 name: s1_l2a
-description: Sentinel 1 test
+description: Sentinel 1 Gamma-0
 metadata_type: eo3
 
 metadata:
@@ -19,14 +19,14 @@ measurements:
   dtype: float32
   nodata: .nan
 
-- name: 'angle'
-  aliases: [ANGLE]
+- name: 'linci'
+  aliases: [local_incidence_angle]
   units: '1'
   dtype: float32
   nodata: .nan
 
 - name: 'area'
-  aliases: [AREA, local_contributing_area]
+  aliases: [AREA, normalised_scattering_area]
   units: '1'
   dtype: float32
   nodata: .nan
