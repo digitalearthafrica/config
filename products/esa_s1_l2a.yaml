@@ -1,0 +1,46 @@
+name: s1_l2a
+description: Sentinel 1 test
+metadata_type: eo3
+
+metadata:
+  product:
+    name: sentinel-1
+
+measurements:
+- name: 'vv'
+  aliases: [VV]
+  units: '1'
+  dtype: float32
+  nodata: .nan
+
+- name: 'vh'
+  aliases: [VH]
+  units: '1'
+  dtype: float32
+  nodata: .nan
+
+- name: 'angle'
+  aliases: [ANGLE]
+  units: '1'
+  dtype: float32
+  nodata: .nan
+
+- name: 'area'
+  aliases: [AREA, local_contributing_area]
+  units: '1'
+  dtype: float32
+  nodata: .nan
+
+- name: 'mask'
+  aliases: [VH]
+  units: '1'
+  dtype: unit8
+  nodata: .nan
+  flags_definition:
+    qa:
+      bits: [0,1,2,3,4,5,6,7]
+      description: Sen2Cor Scene Classification
+      values:
+        0: no data
+        1: valid data
+        2: invalid data
