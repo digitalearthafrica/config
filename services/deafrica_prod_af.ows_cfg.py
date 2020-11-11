@@ -824,7 +824,8 @@ ows_cfg = {
             }
         },
         "allowed_urls": [
-                "https://ows.digitalearth.africa"
+                "https://ows-af.digitalearth.africa",
+                "https://ows-af-latest.digitalearth.africa"
         ],
         # Metadata to go straight into GetCapabilities documents
         "title": "Digital Earth Africa - OGC Web Services",
