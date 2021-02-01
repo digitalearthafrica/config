@@ -78,21 +78,18 @@ measurements:
 
 - name: 'SMAD'
   aliases: [smad, sdev, SDEV]
-  description: Cosine distance median absolute deviation
   units: '1'
   dtype: uint16
   nodata: 0
 
 - name: 'EMAD'
   aliases: [emad, edev, SDEV]
-  description: Euclidean distance median absloute deviation
   units: '1'
   dtype: uint16
   nodata: 0
 
 - name: 'BCMAD'
   aliases: [bcmad, bcdev, BCDEV]
-  description: Bray-Curtis distance medain absolute deviation
   units: '1'
   dtype: uint16
   nodata: 0
