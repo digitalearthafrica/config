@@ -80,19 +80,19 @@ measurements:
   aliases: [smad, sdev, SDEV]
   units: '1'
   dtype: float32
-  nodata: .na
+  nodata: .nan
 
 - name: 'EMAD'
   aliases: [emad, edev, SDEV]
   units: '1'
   dtype: float32
-  nodata: .na
+  nodata: .nan
 
 - name: 'BCMAD'
   aliases: [bcmad, bcdev, BCDEV]
   units: '1'
   dtype: float32
-  nodata: .na
+  nodata: .nan
 
 - name: 'COUNT'
   aliases: [count]
