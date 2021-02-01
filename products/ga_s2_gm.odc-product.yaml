@@ -9,8 +9,8 @@ metadata:
 storage:
   crs: EPSG:6933
   resolution:
-    x: 20
-    y: -20
+    x: 10
+    y: -10
   tile_size:
     x: 96000.0
     y: 96000.0
@@ -79,20 +79,20 @@ measurements:
 - name: 'SMAD'
   aliases: [smad, sdev, SDEV]
   units: '1'
-  dtype: uint16
-  nodata: 0
+  dtype: float32
+  nodata: .na
 
 - name: 'EMAD'
   aliases: [emad, edev, SDEV]
   units: '1'
-  dtype: uint16
-  nodata: 0
+  dtype: float32
+  nodata: .na
 
 - name: 'BCMAD'
   aliases: [bcmad, bcdev, BCDEV]
   units: '1'
-  dtype: uint16
-  nodata: 0
+  dtype: float32
+  nodata: .na
 
 - name: 'COUNT'
   aliases: [count]
