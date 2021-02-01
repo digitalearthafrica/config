@@ -9,8 +9,8 @@ metadata:
 storage:
   crs: EPSG:6933
   resolution:
-    x: 10
-    y: -10
+    x: 20
+    y: -20
   tile_size:
     x: 96000.0
     y: 96000.0
@@ -75,3 +75,31 @@ measurements:
   units: '1'
   dtype: uint16
   nodata: 0
+
+- name: 'SMAD'
+  aliases: [smad, sdev, SDEV]
+  description: Cosine distance median absolute deviation
+  units: '1'
+  dtype: uint16
+  nodata: 0
+
+- name: 'EMAD'
+  aliases: [emad, edev, SDEV]
+  description: Euclidean distance median absloute deviation
+  units: '1'
+  dtype: uint16
+  nodata: 0
+
+- name: 'BCMAD'
+  aliases: [bcmad, bcdev, BCDEV]
+  description: Bray-Curtis distance medain absolute deviation
+  units: '1'
+  dtype: uint16
+  nodata: 0
+
+- name: 'COUNT'
+  aliases: [count]
+  units: '1'
+  dtype: uint16
+  nodata: 0
+
