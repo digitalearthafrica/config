@@ -24,7 +24,7 @@ measurements:
 - name: 'angle'
   aliases: [ANGLE, local_incidence_angle]
   units: '1'
-  dtype: unit8
+  dtype: uint8
   nodata: 255
 
 - name: 'area'
