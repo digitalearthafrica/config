@@ -36,7 +36,7 @@ measurements:
 - name: 'mask'
   aliases: [MASK]
   units: '1'
-  dtype: unit8
+  dtype: uint8
   nodata: 0
   flags_definition:
     qa:
