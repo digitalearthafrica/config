@@ -1,6 +1,8 @@
-name: s1_l2a
-description: Sentinel 1 Gamma-0
+name: s1_nrb
+description: Sentinel 1 Gamma-0 normalised radar backscatter
 metadata_type: eo3
+
+license: CC-BY-4.0
 
 metadata:
   product:
@@ -19,11 +21,11 @@ measurements:
   dtype: float32
   nodata: .nan
 
-- name: 'linci'
-  aliases: [local_incidence_angle]
+- name: 'angle'
+  aliases: [ANGLE, local_incidence_angle]
   units: '1'
-  dtype: float32
-  nodata: .nan
+  dtype: unit8
+  nodata: 255
 
 - name: 'area'
   aliases: [AREA, normalised_scattering_area]
@@ -32,14 +34,13 @@ measurements:
   nodata: .nan
 
 - name: 'mask'
-  aliases: [VH]
+  aliases: [MASK]
   units: '1'
   dtype: unit8
-  nodata: .nan
+  nodata: 0
   flags_definition:
     qa:
       bits: [0,1,2,3,4,5,6,7]
-      description: Sen2Cor Scene Classification
       values:
         0: no data
         1: valid data
