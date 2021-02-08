@@ -83,7 +83,7 @@ measurements:
   nodata: .nan
 
 - name: 'EMAD'
-  aliases: [emad, edev, SDEV]
+  aliases: [emad, edev, EDEV]
   units: '1'
   dtype: float32
   nodata: .nan
