@@ -114,9 +114,9 @@ bands_s2_gm = {
     "B8A": ["band_8a", "nir_narrow", "nir_2"],
     "B11": ["band_11", "swir_1", "swir_16"],
     "B12": ["band_12", "swir_2", "swir_22"],
-    "SMAD": ["smad", "sdev", "SDEV"],
-    "EMAD": ["emad", "edev", "SDEV"],
-    "BCMAD": ["bcmad", "bcdev", "BCDEV"],
+    "SMAD": ["smad", "sdev"],
+    "EMAD": ["emad", "edev"],
+    "BCMAD": ["bcmad", "bcdev", "BCDEV"]
 }
 
 bands_ls8c = {
@@ -2937,7 +2937,8 @@ ows_cfg = {
             }
         },
         "allowed_urls": [
-                "https://ows.digitalearth.africa"
+                "https://ows.digitalearth.africa",
+                "https://ows-latest.digitalearth.africa",
         ],
         # Metadata to go straight into GetCapabilities documents
         "title": "Digital Earth Africa - OGC Web Services",
