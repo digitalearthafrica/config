@@ -1,46 +1,46 @@
 # reslim
 reslim_landsat = {
     "wms": {
-        "zoomed_out_fill_colour": [150,180,200,160],
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
         "min_zoom_factor": 35.0,
         # "max_datasets": 16, # Defaults to no dataset limit
     },
     "wcs": {
         # "max_datasets": 16, # Defaults to no dataset limit
-    }
+    },
 }
 
 reslim_sentinel2 = {
     "wms": {
-        "zoomed_out_fill_colour": [150,180,200,160],
-        "min_zoom_factor": 20.0, # defaults to 300!
-        "max_datasets": 64, # Defaults to no dataset limit
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
+        "min_zoom_factor": 20.0,  # defaults to 300!
+        "max_datasets": 64,  # Defaults to no dataset limit
     },
     "wcs": {
-        "max_datasets": 64, # Defaults to no dataset limit
-    }
+        "max_datasets": 64,  # Defaults to no dataset limit
+    },
 }
 
 reslim_srtm = {
     "wms": {
-        "zoomed_out_fill_colour": [150,180,200,160],
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
         "min_zoom_factor": 10.0,
         # "max_datasets": 16, # Defaults to no dataset limit
     },
     "wcs": {
         # "max_datasets": 16, # Defaults to no dataset limit
-    }
+    },
 }
 
 reslim_wofs = {
     "wms": {
-        "zoomed_out_fill_colour": [150,180,200,160],
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
         "min_zoom_factor": 0.0,
         # "max_datasets": 16, # Defaults to no dataset limit
     },
     "wcs": {
         # "max_datasets": 16, # Defaults to no dataset limit
-    }
+    },
 }
 reslim_wofs_daily = {
     "wms": {
@@ -49,29 +49,29 @@ reslim_wofs_daily = {
         "max_datasets_wms": 6,
     },
     "wcs": {
-        "max_datasets": 16, # Defaults to no dataset limit
-    }
+        "max_datasets": 16,  # Defaults to no dataset limit
+    },
 }
 
 reslim_wofs_dry = {
     "wms": {
-        "zoomed_out_fill_colour": [150,180,200,160],
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
         "min_zoom_factor": 15.0,
         # "max_datasets": 16, # Defaults to no dataset limit
     },
     "wcs": {
         # "max_datasets": 16, # Defaults to no dataset limit
-    }
+    },
 }
 reslim_alos_palsar = reslim_srtm
 
 
 # Reusable Chunks 3. Legends
 legend_idx_0_1_5ticks = {
-        "begin": "0.0",
-        "end": "1.0",
-        "ticks_every": "0.2",
-        "units": "unitless",
+    "begin": "0.0",
+    "end": "1.0",
+    "ticks_every": "0.2",
+    "units": "unitless",
 }
 
 # bands
@@ -79,10 +79,10 @@ legend_idx_0_1_5ticks = {
 bands_ls = {
     "red": [],
     "green": [],
-    "blue": [ ],
-    "nir": [ "near_infrared" ],
-    "swir1": [ "shortwave_infrared_1", "near_shortwave_infrared" ],
-    "swir2": [ "shortwave_infrared_2", "far_shortwave_infrared" ],
+    "blue": [],
+    "nir": ["near_infrared"],
+    "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
+    "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"],
 }
 
 bands_sentinel = {
@@ -100,7 +100,7 @@ bands_sentinel = {
     "B12": ["band_12", "swir_2", "swir_22"],
     "AOT": ["aerosol_optical_thickness"],
     "WVP": ["scene_average_water_vapour"],
-    "SCL": ["mask", "qa"]
+    "SCL": ["mask", "qa"],
 }
 
 bands_s2_gm = {
@@ -116,7 +116,7 @@ bands_s2_gm = {
     "B12": ["band_12", "swir_2", "swir_22"],
     "SMAD": ["smad", "sdev"],
     "EMAD": ["emad", "edev"],
-    "BCMAD": ["bcmad", "bcdev", "BCDEV"]
+    "BCMAD": ["bcmad", "bcdev", "BCDEV"],
 }
 
 bands_ls8c = {
@@ -137,35 +137,23 @@ bands_wofs_wet = {
     "count_wet": [],
 }
 
-bands_wofs_frequency =  {
+bands_wofs_frequency = {
     "frequency": [],
 }
 
-bands_usgs_wofs_summary = {
-    "count_wet": [],
-    "count_dry": [],
-    "frequency": []
-}
+bands_usgs_wofs_summary = {"count_wet": [], "count_dry": [], "frequency": []}
 
-bands_wofs_2_annual_summary = {
-    "frequency": [],
-    "count_clear": [],
-    "count_wet": []
-}
+bands_wofs_2_annual_summary = {"frequency": [], "count_clear": [], "count_wet": []}
 
-bands_wofs_dry = {
-    "count_dry": []
-}
+bands_wofs_dry = {"count_dry": []}
 
-bands_wofs_count_clear = {
-    "count_clear": []
-}
+bands_wofs_count_clear = {"count_clear": []}
 
 bands_fc = {
-    "BS": [ "bare_soil" ],
-    "PV": [ "photosynthetic_vegetation", "green_vegetation" ],
-    "NPV": [ "non_photosynthetic_vegetation", "brown_vegetation" ],
-    "UE": [ "unmixing_error" ]
+    "BS": ["bare_soil"],
+    "PV": ["photosynthetic_vegetation", "green_vegetation"],
+    "NPV": ["non_photosynthetic_vegetation", "brown_vegetation"],
+    "UE": ["unmixing_error"],
 }
 
 
@@ -173,101 +161,58 @@ bands_elevation = {
     "elevation": [],
 }
 
-bands_alos = {
-    "hh": [],
-    "hv": [],
-    "mask": [],
-    "date": [],
-    "linci": []
-}
+bands_alos = {"hh": [], "hv": [], "mask": [], "date": [], "linci": []}
 
-bands_jers = {
-    "hh": [],
-    "mask": [],
-    "date": [],
-    "linci": []
-}
+bands_jers = {"hh": [], "mask": [], "date": [], "linci": []}
 
 # Style
 style_ls_simple_rgb = {
-        "name": "simple_rgb",
-        "title": "Simple RGB",
-        "abstract": "Simple true-colour image, using the red, green and blue bands",
-        "components": {
-            "red": {
-                "red": 1.0
-            },
-            "green": {
-                "green": 1.0
-            },
-            "blue": {
-                "blue": 1.0
-            }
-        },
-        "scale_range": [0.0, 3000.0]
+    "name": "simple_rgb",
+    "title": "Simple RGB",
+    "abstract": "Simple true-colour image, using the red, green and blue bands",
+    "components": {"red": {"red": 1.0}, "green": {"green": 1.0}, "blue": {"blue": 1.0}},
+    "scale_range": [0.0, 3000.0],
 }
 
 style_gals_simple_rgb = {
-        "name": "simple_rgb",
-        "title": "Simple RGB",
-        "abstract": "Simple true-colour image, using the red, green and blue bands",
-        "components": {
-            "red": {
-                "red": 1.0
-            },
-            "green": {
-                "green": 1.0
-            },
-            "blue": {
-                "blue": 1.0
-            }
-        },
-        # The raw band value range to be compressed to an 8 bit range for the output image tiles.
-        # Band values outside this range are clipped to 0 or 255 as appropriate.
-        "scale_range": [7272.0, 18181.0]
+    "name": "simple_rgb",
+    "title": "Simple RGB",
+    "abstract": "Simple true-colour image, using the red, green and blue bands",
+    "components": {"red": {"red": 1.0}, "green": {"green": 1.0}, "blue": {"blue": 1.0}},
+    # The raw band value range to be compressed to an 8 bit range for the output image tiles.
+    # Band values outside this range are clipped to 0 or 255 as appropriate.
+    "scale_range": [7272.0, 18181.0],
 }
 
-style_fc_simple_rgb  = {
-        "name": "simple_rgb",
-        "title": "Simple RGB",
-        "abstract": "Simple true-colour image, using the red, green and blue bands",
-        "components": {
-            "red": {
-                "BS_PC_50": 1.0
+style_fc_simple_rgb = {
+    "name": "simple_rgb",
+    "title": "Simple RGB",
+    "abstract": "Simple true-colour image, using the red, green and blue bands",
+    "components": {
+        "red": {"BS_PC_50": 1.0},
+        "green": {"PV_PC_50": 1.0},
+        "blue": {"NPV_PC_50": 1.0},
+    },
+    "scale_range": [0.0, 100.0],
+    "pq_masks": [
+        {
+            "flags": {
+                "sea": True,
             },
-            "green": {
-                "PV_PC_50": 1.0
-            },
-            "blue": {
-                "NPV_PC_50": 1.0
-            }
+            "invert": True,
         },
-        "scale_range": [0.0, 100.0],
-        "pq_masks": [
-            {
-                "flags": {
-                    'sea': True,
-                },
-                "invert": True,
-            },
-        ],
+    ],
 }
 style_gals_irg = {
     "name": "infrared_green",
     "title": "False colour - Green, SWIR, NIR",
     "abstract": "False Colour image with SWIR1->Red, NIR->Green, and Green->Blue",
     "components": {
-        "red": {
-            "swir_1": 1.0
-        },
-        "green": {
-            "nir": 1.0
-        },
-        "blue": {
-            "green": 1.0
-        }
+        "red": {"swir_1": 1.0},
+        "green": {"nir": 1.0},
+        "blue": {"green": 1.0},
     },
-    "scale_range": [7272.0, 18181.0]
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_s2_irg = {
@@ -275,17 +220,11 @@ style_s2_irg = {
     "title": "False colour - Green, SWIR, NIR",
     "abstract": "False Colour image with SWIR1->Red, NIR->Green, and Green->Blue",
     "components": {
-        "red": {
-            "swir_1": 1.0
-        },
-        "green": {
-            "nir": 1.0
-        },
-        "blue": {
-            "green": 1.0
-        }
+        "red": {"swir_1": 1.0},
+        "green": {"nir": 1.0},
+        "blue": {"green": 1.0},
     },
-    "scale_range": [0, 3000]
+    "scale_range": [0, 3000],
 }
 
 style_ls_irg = {
@@ -293,17 +232,11 @@ style_ls_irg = {
     "title": "False colour - Green, SWIR, NIR",
     "abstract": "False Colour image with SWIR1->Red, NIR->Green, and Green->Blue",
     "components": {
-        "red": {
-            "swir1": 1.0
-        },
-        "green": {
-            "nir": 1.0
-        },
-        "blue": {
-            "green": 1.0
-        }
+        "red": {"swir1": 1.0},
+        "green": {"nir": 1.0},
+        "blue": {"green": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 style_ls_ndvi = {
@@ -313,65 +246,24 @@ style_ls_ndvi = {
     "index_function": {
         "function": "datacube_ows.band_utils.norm_diff",
         "pass_product_cfg": True,
-        "kwargs": {
-            "band1": "nir",
-            "band2": "red"
-        }
+        "kwargs": {"band1": "nir", "band2": "red"},
     },
     "needed_bands": ["red", "nir"],
     "color_ramp": [
-        {
-            "value": -0.0,
-            "color": "#8F3F20",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.0,
-            "color": "#8F3F20",
-            "alpha": 1.0
-        },
-        {
-            "value": 0.1,
-            "color": "#A35F18"
-        },
-        {
-            "value": 0.2,
-            "color": "#B88512"
-        },
-        {
-            "value": 0.3,
-            "color": "#CEAC0E"
-        },
-        {
-            "value": 0.4,
-            "color": "#E5D609"
-        },
-        {
-            "value": 0.5,
-            "color": "#FFFF0C"
-        },
-        {
-            "value": 0.6,
-            "color": "#C3DE09"
-        },
-        {
-            "value": 0.7,
-            "color": "#88B808"
-        },
-        {
-            "value": 0.8,
-            "color": "#529400"
-        },
-        {
-            "value": 0.9,
-            "color": "#237100"
-        },
-        {
-            "value": 1.0,
-            "color": "#114D04"
-        }
+        {"value": -0.0, "color": "#8F3F20", "alpha": 0.0},
+        {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
+        {"value": 0.1, "color": "#A35F18"},
+        {"value": 0.2, "color": "#B88512"},
+        {"value": 0.3, "color": "#CEAC0E"},
+        {"value": 0.4, "color": "#E5D609"},
+        {"value": 0.5, "color": "#FFFF0C"},
+        {"value": 0.6, "color": "#C3DE09"},
+        {"value": 0.7, "color": "#88B808"},
+        {"value": 0.8, "color": "#529400"},
+        {"value": 0.9, "color": "#237100"},
+        {"value": 1.0, "color": "#114D04"},
     ],
-   "legend": legend_idx_0_1_5ticks,
+    "legend": legend_idx_0_1_5ticks,
 }
 
 style_ls_ndwi = {
@@ -381,50 +273,17 @@ style_ls_ndwi = {
     "index_function": {
         "function": "datacube_ows.band_utils.norm_diff",
         "pass_product_cfg": True,
-        "kwargs": {
-            "band1": "green",
-            "band2": "nir"
-        }
+        "kwargs": {"band1": "green", "band2": "nir"},
     },
     "needed_bands": ["green", "nir"],
     "color_ramp": [
-        {
-            "value": -0.1,
-            "color": "#f7fbff",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.0,
-            "color": "#d8e7f5",
-            "legend": {
-                "prefix": "<"
-            }
-        },
-        {
-            "value": 0.1,
-            "color": "#b0d2e8"
-        },
-        {
-            "value": 0.2,
-            "color": "#73b3d8",
-            "legend": {}
-        },
-        {
-            "value": 0.3,
-            "color": "#3e8ec4"
-        },
-        {
-            "value": 0.4,
-            "color": "#1563aa",
-            "legend": {}
-        },
-        {
-            "value": 0.5,
-            "color": "#08306b",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
+        {"value": 0.0, "color": "#d8e7f5", "legend": {"prefix": "<"}},
+        {"value": 0.1, "color": "#b0d2e8"},
+        {"value": 0.2, "color": "#73b3d8", "legend": {}},
+        {"value": 0.3, "color": "#3e8ec4"},
+        {"value": 0.4, "color": "#1563aa", "legend": {}},
+        {"value": 0.5, "color": "#08306b", "legend": {"prefix": ">"}},
     ],
     "legend": {
         "begin": "0.0",
@@ -432,16 +291,12 @@ style_ls_ndwi = {
         "decimal_places": 1,
         "ticks": ["0.0", "0.2", "0.4", "0.5"],
         "tick_labels": {
-            "0.0": {
-                "prefix": "<"
-            },
+            "0.0": {"prefix": "<"},
             "0.2": {"label": "0.2"},
             "0.4": {"label": "0.4"},
-            "0.5": {
-                "prefix": ">"
-            },
-        }
-    }
+            "0.5": {"prefix": ">"},
+        },
+    },
 }
 
 style_gals_mndwi = {
@@ -451,42 +306,17 @@ style_gals_mndwi = {
     "index_function": {
         "function": "datacube_ows.band_utils.norm_diff",
         "pass_product_cfg": True,
-        "kwargs": {
-            "band1": "green",
-            "band2": "swir_1"
-        }
+        "kwargs": {"band1": "green", "band2": "swir_1"},
     },
     "needed_bands": ["green", "swir_1"],
     "color_ramp": [
-        {
-            "value": -0.1,
-            "color": "#f7fbff",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.0,
-            "color": "#d8e7f5"
-        },
-        {
-            "value": 0.2,
-            "color": "#b0d2e8"
-        },
-        {
-            "value": 0.4,
-            "color": "#73b3d8"
-        },
-        {
-            "value": 0.6,
-            "color": "#3e8ec4"
-        },
-        {
-            "value": 0.8,
-            "color": "#1563aa"
-        },
-        {
-            "value": 1.0,
-            "color": "#08306b"
-        }
+        {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
+        {"value": 0.0, "color": "#d8e7f5"},
+        {"value": 0.2, "color": "#b0d2e8"},
+        {"value": 0.4, "color": "#73b3d8"},
+        {"value": 0.6, "color": "#3e8ec4"},
+        {"value": 0.8, "color": "#1563aa"},
+        {"value": 1.0, "color": "#08306b"},
     ],
     "legend": legend_idx_0_1_5ticks,
 }
@@ -495,46 +325,21 @@ style_ls_mndwi = {
     "name": "mndwi",
     "title": "MNDWI - Green, SWIR",
     "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
-                "well with the existence of water (Xu 2006)",
+    "well with the existence of water (Xu 2006)",
     "index_function": {
         "function": "datacube_ows.band_utils.norm_diff",
         "pass_product_cfg": True,
-        "kwargs": {
-            "band1": "green",
-            "band2": "swir1"
-        }
+        "kwargs": {"band1": "green", "band2": "swir1"},
     },
     "needed_bands": ["green", "swir1"],
     "color_ramp": [
-        {
-            "value": -0.1,
-            "color": "#f7fbff",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.0,
-            "color": "#d8e7f5"
-        },
-        {
-            "value": 0.2,
-            "color": "#b0d2e8"
-        },
-        {
-            "value": 0.4,
-            "color": "#73b3d8"
-        },
-        {
-            "value": 0.6,
-            "color": "#3e8ec4"
-        },
-        {
-            "value": 0.8,
-            "color": "#1563aa"
-        },
-        {
-            "value": 1.0,
-            "color": "#08306b"
-        }
+        {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
+        {"value": 0.0, "color": "#d8e7f5"},
+        {"value": 0.2, "color": "#b0d2e8"},
+        {"value": 0.4, "color": "#73b3d8"},
+        {"value": 0.6, "color": "#3e8ec4"},
+        {"value": 0.8, "color": "#1563aa"},
+        {"value": 1.0, "color": "#08306b"},
     ],
     "legend": legend_idx_0_1_5ticks,
 }
@@ -543,54 +348,24 @@ style_gals_pure_blue = {
     "name": "blue",
     "title": "Blue - 480",
     "abstract": "Blue band, centered on 480nm",
-    "components": {
-        "red": {
-            "blue": 1.0
-        },
-        "green": {
-            "blue": 1.0
-        },
-        "blue": {
-            "blue": 1.0
-        }
-    },
-    "scale_range": [7272.0, 18181.0]
+    "components": {"red": {"blue": 1.0}, "green": {"blue": 1.0}, "blue": {"blue": 1.0}},
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_ls_pure_blue = {
     "name": "blue",
     "title": "Blue - 480",
     "abstract": "Blue band, centered on 480nm",
-    "components": {
-        "red": {
-            "blue": 1.0
-        },
-        "green": {
-            "blue": 1.0
-        },
-        "blue": {
-            "blue": 1.0
-        }
-    },
-    "scale_range": [0.0, 3000.0]
+    "components": {"red": {"blue": 1.0}, "green": {"blue": 1.0}, "blue": {"blue": 1.0}},
+    "scale_range": [0.0, 3000.0],
 }
 
 style_sentinel_pure_blue = {
     "name": "blue",
     "title": "Blue - 490",
     "abstract": "Blue band, centered on 490nm",
-    "components": {
-        "red": {
-            "blue": 1.0
-        },
-        "green": {
-            "blue": 1.0
-        },
-        "blue": {
-            "blue": 1.0
-        }
-    },
-    "scale_range": [0.0, 3000.0]
+    "components": {"red": {"blue": 1.0}, "green": {"blue": 1.0}, "blue": {"blue": 1.0}},
+    "scale_range": [0.0, 3000.0],
 }
 
 style_gals_pure_green = {
@@ -598,17 +373,11 @@ style_gals_pure_green = {
     "title": "Green - 560",
     "abstract": "Green band, centered on 560nm",
     "components": {
-        "red": {
-            "green": 1.0
-        },
-        "green": {
-            "green": 1.0
-        },
-        "blue": {
-            "green": 1.0
-        }
+        "red": {"green": 1.0},
+        "green": {"green": 1.0},
+        "blue": {"green": 1.0},
     },
-    "scale_range": [7272.0, 18181.0]
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_ls_pure_green = {
@@ -616,107 +385,51 @@ style_ls_pure_green = {
     "title": "Green - 560",
     "abstract": "Green band, centered on 560nm",
     "components": {
-        "red": {
-            "green": 1.0
-        },
-        "green": {
-            "green": 1.0
-        },
-        "blue": {
-            "green": 1.0
-        }
+        "red": {"green": 1.0},
+        "green": {"green": 1.0},
+        "blue": {"green": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 style_gals_pure_red = {
     "name": "red",
     "title": "Red - 660",
     "abstract": "Red band, centered on 660nm",
-    "components": {
-        "red": {
-            "red": 1.0
-        },
-        "green": {
-            "red": 1.0
-        },
-        "blue": {
-            "red": 1.0
-        }
-    },
-    "scale_range": [7272.0, 18181.0]
+    "components": {"red": {"red": 1.0}, "green": {"red": 1.0}, "blue": {"red": 1.0}},
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_ls_pure_red = {
     "name": "red",
     "title": "Red - 660",
     "abstract": "Red band, centered on 660nm",
-    "components": {
-        "red": {
-            "red": 1.0
-        },
-        "green": {
-            "red": 1.0
-        },
-        "blue": {
-            "red": 1.0
-        }
-    },
-    "scale_range": [0.0, 3000.0]
+    "components": {"red": {"red": 1.0}, "green": {"red": 1.0}, "blue": {"red": 1.0}},
+    "scale_range": [0.0, 3000.0],
 }
 
 style_gals_pure_nir = {
     "name": "nir",
     "title": "Near Infrared (NIR) - 840",
     "abstract": "Near infra-red band, centered on 840nm",
-    "components": {
-        "red": {
-            "nir": 1.0
-        },
-        "green": {
-            "nir": 1.0
-        },
-        "blue": {
-            "nir": 1.0
-        }
-    },
-    "scale_range": [7272.0, 18181.0]
+    "components": {"red": {"nir": 1.0}, "green": {"nir": 1.0}, "blue": {"nir": 1.0}},
+    "scale_range": [7272.0, 18181.0],
 }
 
-style_ls_pure_nir  = {
+style_ls_pure_nir = {
     "name": "nir",
     "title": "Near Infrared (NIR) - 840",
     "abstract": "Near infra-red band, centered on 840nm",
-    "components": {
-        "red": {
-            "nir": 1.0
-        },
-        "green": {
-            "nir": 1.0
-        },
-        "blue": {
-            "nir": 1.0
-        }
-    },
-    "scale_range": [0.0, 3000.0]
+    "components": {"red": {"nir": 1.0}, "green": {"nir": 1.0}, "blue": {"nir": 1.0}},
+    "scale_range": [0.0, 3000.0],
 }
 
 style_sentinel_pure_nir = {
     "name": "nir",
     "title": "Near Infrared (NIR) - 870",
     "abstract": "Near infra-red band, centered on 870nm",
-    "components": {
-        "red": {
-            "nir": 1.0
-        },
-        "green": {
-            "nir": 1.0
-        },
-        "blue": {
-            "nir": 1.0
-        }
-    },
-    "scale_range": [0.0, 3000.0]
+    "components": {"red": {"nir": 1.0}, "green": {"nir": 1.0}, "blue": {"nir": 1.0}},
+    "scale_range": [0.0, 3000.0],
 }
 
 style_gals_pure_swir1 = {
@@ -724,17 +437,11 @@ style_gals_pure_swir1 = {
     "title": "Shortwave Infrared (SWIR) - 1610",
     "abstract": "Short wave infra-red band 1, centered on 1610nm",
     "components": {
-        "red": {
-            "swir_1": 1.0
-        },
-        "green": {
-            "swir_1": 1.0
-        },
-        "blue": {
-            "swir_1": 1.0
-        }
+        "red": {"swir_1": 1.0},
+        "green": {"swir_1": 1.0},
+        "blue": {"swir_1": 1.0},
     },
-    "scale_range": [7272.0, 18181.0]
+    "scale_range": [7272.0, 18181.0],
 }
 
 
@@ -742,18 +449,8 @@ style_s2_pure_swir1 = {
     "name": "swir_1",
     "title": "Shortwave Infrared (SWIR) - 1610",
     "abstract": "Short wave infra-red band 1, centered on 1610nm",
-    "components": {
-        "red": {
-            "B11": 1.0
-        },
-        "green": {
-            "B11": 1.0
-        },
-        "blue": {
-            "B11": 1.0
-        }
-    },
-    "scale_range": [0.0, 3000.0]
+    "components": {"red": {"B11": 1.0}, "green": {"B11": 1.0}, "blue": {"B11": 1.0}},
+    "scale_range": [0.0, 3000.0],
 }
 
 style_ls_pure_swir1 = {
@@ -761,35 +458,23 @@ style_ls_pure_swir1 = {
     "title": "Shortwave Infrared (SWIR) - 1650",
     "abstract": "Short wave infra-red band 1, centered on 1650nm",
     "components": {
-        "red": {
-            "swir1": 1.0
-        },
-        "green": {
-            "swir1": 1.0
-        },
-        "blue": {
-            "swir1": 1.0
-        }
+        "red": {"swir1": 1.0},
+        "green": {"swir1": 1.0},
+        "blue": {"swir1": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
-style_sentinel_pure_swir1 =  {
+style_sentinel_pure_swir1 = {
     "name": "swir1",
     "title": "Shortwave Infrared (SWIR) - 1610",
     "abstract": "Short wave infra-red band 1, centered on 1610nm",
     "components": {
-        "red": {
-            "swir1": 1.0
-        },
-        "green": {
-            "swir1": 1.0
-        },
-        "blue": {
-            "swir1": 1.0
-        }
+        "red": {"swir1": 1.0},
+        "green": {"swir1": 1.0},
+        "blue": {"swir1": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 style_gals_pure_swir2 = {
@@ -797,17 +482,11 @@ style_gals_pure_swir2 = {
     "title": "Shortwave Infrared (SWIR) - 2200",
     "abstract": "Short wave infra-red band 2, centered on 2200nm",
     "components": {
-        "red": {
-            "swir_2": 1.0
-        },
-        "green": {
-            "swir_2": 1.0
-        },
-        "blue": {
-            "swir_2": 1.0
-        }
+        "red": {"swir_2": 1.0},
+        "green": {"swir_2": 1.0},
+        "blue": {"swir_2": 1.0},
     },
-    "scale_range": [7272.0, 18181.0]
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_s2_pure_swir2 = {
@@ -815,17 +494,11 @@ style_s2_pure_swir2 = {
     "title": "Shortwave Infrared (SWIR) - 2200",
     "abstract": "Short wave infra-red band 2, centered on 2200nm",
     "components": {
-        "red": {
-            "swir_2": 1.0
-        },
-        "green": {
-            "swir_2": 1.0
-        },
-        "blue": {
-            "swir_2": 1.0
-        }
+        "red": {"swir_2": 1.0},
+        "green": {"swir_2": 1.0},
+        "blue": {"swir_2": 1.0},
     },
-    "scale_range": [0, 3000.0]
+    "scale_range": [0, 3000.0],
 }
 
 style_ls_pure_swir2 = {
@@ -833,17 +506,11 @@ style_ls_pure_swir2 = {
     "title": "Shortwave Infrared (SWIR) - 2220",
     "abstract": "Short wave infra-red band 2, centered on 2220nm",
     "components": {
-        "red": {
-            "swir2": 1.0
-        },
-        "green": {
-            "swir2": 1.0
-        },
-        "blue": {
-            "swir2": 1.0
-        }
+        "red": {"swir2": 1.0},
+        "green": {"swir2": 1.0},
+        "blue": {"swir2": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 style_s2_ndci = {
@@ -858,47 +525,24 @@ style_s2_ndci = {
             "b_red": "red",
             "b_green": "green",
             "b_swir": "swir_2",
-        }
+        },
     },
     "needed_bands": ["red_edge_1", "red", "green", "swir_2"],
     "color_ramp": [
-        {
-            "value": -0.1,
-            "color": "#1696FF",
-            "legend": {
-                "prefix" : "<"
-            }
-        },
-        {
-            "value": -0.1,
-            "color": "#1696FF"
-        },
-        {
-            "value": 0.0,
-            "color": "#00FFDF",
-            "legend": { }
-        },
+        {"value": -0.1, "color": "#1696FF", "legend": {"prefix": "<"}},
+        {"value": -0.1, "color": "#1696FF"},
+        {"value": 0.0, "color": "#00FFDF", "legend": {}},
         {
             "value": 0.1,
             "color": "#FFF50E",
         },
-        {
-            "value": 0.2,
-            "color": "#FFB50A",
-            "legend": { }
-        },
+        {"value": 0.2, "color": "#FFB50A", "legend": {}},
         {
             "value": 0.4,
             "color": "#FF530D",
         },
-        {
-            "value": 0.5,
-            "color": "#FF0000",
-            "legend": {
-                "prefix": ">"
-            }
-        }
-    ]
+        {"value": 0.5, "color": "#FF0000", "legend": {"prefix": ">"}},
+    ],
 }
 
 style_s2_pure_aerosol = {
@@ -906,17 +550,11 @@ style_s2_pure_aerosol = {
     "title": "Narrow Blue - 440",
     "abstract": "Coastal Aerosol or Narrow Blue band, approximately 435nm to 450nm",
     "components": {
-        "red": {
-            "coastal_aerosol": 1.0
-        },
-        "green": {
-            "coastal_aerosol": 1.0
-        },
-        "blue": {
-            "coastal_aerosol": 1.0
-        }
+        "red": {"coastal_aerosol": 1.0},
+        "green": {"coastal_aerosol": 1.0},
+        "blue": {"coastal_aerosol": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 
@@ -924,19 +562,12 @@ style_s2_pure_redge_1 = {
     "name": "red_edge_1",
     "title": "Vegetation Red Edge - 710",
     "abstract": "Near infra-red band, centred on 710nm",
-
     "components": {
-        "red": {
-            "red_edge_1": 1.0
-        },
-        "green": {
-            "red_edge_1": 1.0
-        },
-        "blue": {
-            "red_edge_1": 1.0
-        }
+        "red": {"red_edge_1": 1.0},
+        "green": {"red_edge_1": 1.0},
+        "blue": {"red_edge_1": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 
@@ -944,19 +575,12 @@ style_s2_pure_redge_2 = {
     "name": "red_edge_2",
     "title": "Vegetation Red Edge - 740",
     "abstract": "Near infra-red band, centred on 740nm",
-
     "components": {
-        "red": {
-            "red_edge_2": 1.0
-        },
-        "green": {
-            "red_edge_2": 1.0
-        },
-        "blue": {
-            "red_edge_2": 1.0
-        }
+        "red": {"red_edge_2": 1.0},
+        "green": {"red_edge_2": 1.0},
+        "blue": {"red_edge_2": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 
@@ -964,37 +588,20 @@ style_s2_pure_redge_3 = {
     "name": "red_edge_3",
     "title": "Vegetation Red Edge - 780",
     "abstract": "Near infra-red band, centred on 780nm",
-
     "components": {
-        "red": {
-            "red_edge_3": 1.0
-        },
-        "green": {
-            "red_edge_3": 1.0
-        },
-        "blue": {
-            "red_edge_3": 1.0
-        }
+        "red": {"red_edge_3": 1.0},
+        "green": {"red_edge_3": 1.0},
+        "blue": {"red_edge_3": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 style_s2_pure_narrow_nir = {
     "name": "narrow_nir",
     "title": "Narrow Near Infrared - 870",
     "abstract": "Near infra-red band, centred on 865nm",
-    "components": {
-        "red": {
-            "nir": 1.0
-        },
-        "green": {
-            "nir": 1.0
-        },
-        "blue": {
-            "nir": 1.0
-        }
-    },
-    "scale_range": [0.0, 3000.0]
+    "components": {"red": {"nir": 1.0}, "green": {"nir": 1.0}, "blue": {"nir": 1.0}},
+    "scale_range": [0.0, 3000.0],
 }
 
 style_sentinel_pure_swir2 = {
@@ -1002,17 +609,11 @@ style_sentinel_pure_swir2 = {
     "title": "Shortwave Infrared (SWIR) - 2200",
     "abstract": "Short wave infra-red band 2, centered on 2200nm",
     "components": {
-        "red": {
-            "swir2": 1.0
-        },
-        "green": {
-            "swir2": 1.0
-        },
-        "blue": {
-            "swir2": 1.0
-        }
+        "red": {"swir2": 1.0},
+        "green": {"swir2": 1.0},
+        "blue": {"swir2": 1.0},
     },
-    "scale_range": [0.0, 3000.0]
+    "scale_range": [0.0, 3000.0],
 }
 
 style_wofs_count_wet = {
@@ -1024,77 +625,33 @@ style_wofs_count_wet = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "count_wet",
-        }
+        },
     },
     "needed_bands": ["count_wet"],
     "include_in_feature_info": False,
     "color_ramp": [
-        {
-            "value": 0,
-            "color": "#666666",
-            "alpha": 0
-        },
+        {"value": 0, "color": "#666666", "alpha": 0},
         {
             # purely for legend display
             # we should not get fractional
             # values in this styles
             "value": 0.2,
             "color": "#890000",
-            "alpha": 1
+            "alpha": 1,
         },
-        {
-            "value": 20,
-            "color": "#990000"
-        },
-        {
-            "value": 30,
-            "color": "#E38400"
-        },
-        {
-            "value": 40,
-            "color": "#E3DF00"
-        },
-        {
-            "value": 50,
-            "color": "#A6E300"
-        },
-        {
-            "value": 60,
-            "color": "#00E32D"
-        },
-        {
-            "value": 70,
-            "color": "#00E3C8"
-        },
-        {
-            "value": 80,
-            "color": "#0097E3"
-        },
-        {
-            "value": 90,
-            "color": "#005FE3"
-        },
-        {
-            "value": 100,
-            "color": "#000FE3"
-        },
-        {
-            "value": 110,
-            "color": "#000EA9"
-        },
-        {
-            "value": 120,
-            "color": "#5700E3",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": 20, "color": "#990000"},
+        {"value": 30, "color": "#E38400"},
+        {"value": 40, "color": "#E3DF00"},
+        {"value": 50, "color": "#A6E300"},
+        {"value": 60, "color": "#00E32D"},
+        {"value": 70, "color": "#00E3C8"},
+        {"value": 80, "color": "#0097E3"},
+        {"value": 90, "color": "#005FE3"},
+        {"value": 100, "color": "#000FE3"},
+        {"value": 110, "color": "#000EA9"},
+        {"value": 120, "color": "#5700E3", "legend": {"prefix": ">"}},
     ],
-    "legend": {
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 20
-    }
+    "legend": {"radix_point": 0, "scale_by": 1, "major_ticks": 20},
 }
 
 style_wofs_water_annual_wet = {
@@ -1106,72 +663,31 @@ style_wofs_water_annual_wet = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "count_wet",
-        }
+        },
     },
     "needed_bands": ["count_wet"],
     "color_ramp": [
-        {
-            "value": 0,
-            "color": "#666666",
-            "alpha": 0
-        },
+        {"value": 0, "color": "#666666", "alpha": 0},
         {
             # purely for legend display
             # we should not get fractional
             # values in this styles
             "value": 0.2,
             "color": "#990000",
-            "alpha": 1
+            "alpha": 1,
         },
-        {
-            "value": 2,
-            "color": "#990000"
-        },
-        {
-            "value": 4,
-            "color": "#E38400"
-        },
-        {
-            "value": 6,
-            "color": "#E3DF00"
-        },
-        {
-            "value": 8,
-            "color": "#00E32D"
-        },
-        {
-            "value": 10,
-            "color": "#00E3C8"
-        },
-        {
-            "value": 12,
-            "color": "#0097E3"
-        },
-        {
-            "value": 14,
-            "color": "#005FE3"
-        },
-        {
-            "value": 16,
-            "color": "#000FE3"
-        },
-        {
-            "value": 18,
-            "color": "#000EA9"
-        },
-        {
-            "value": 20,
-            "color": "#5700E3",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": 2, "color": "#990000"},
+        {"value": 4, "color": "#E38400"},
+        {"value": 6, "color": "#E3DF00"},
+        {"value": 8, "color": "#00E32D"},
+        {"value": 10, "color": "#00E3C8"},
+        {"value": 12, "color": "#0097E3"},
+        {"value": 14, "color": "#005FE3"},
+        {"value": 16, "color": "#000FE3"},
+        {"value": 18, "color": "#000EA9"},
+        {"value": 20, "color": "#5700E3", "legend": {"prefix": ">"}},
     ],
-    "legend": {
-        "begin": 0,
-        "end": 20,
-        "ticks_every": 10
-    }
+    "legend": {"begin": 0, "end": 20, "ticks_every": 10},
 }
 
 style_wofs_frequency = {
@@ -1183,83 +699,31 @@ style_wofs_frequency = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "frequency",
-        }
+        },
     },
     "needed_bands": ["frequency"],
     "include_in_feature_info": False,
     "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.002,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.005,
-            "color": "#8e0101",
-            "alpha": 0.25
-        },
-        {
-            "value": 0.01,
-            "color": "#cf2200",
-            "alpha": 0.75
-        },
-        {
-            "value": 0.02,
-            "color": "#e38400"
-        },
-        {
-            "value": 0.05,
-            "color": "#e3df00"
-        },
-        {
-            "value": 0.1,
-            "color": "#a6e300"
-        },
-        {
-            "value": 0.2,
-            "color": "#62e300"
-        },
-        {
-            "value": 0.3,
-            "color": "#00e32d"
-        },
-        {
-            "value": 0.4,
-            "color": "#00e384"
-        },
-        {
-            "value": 0.5,
-            "color": "#00e3c8"
-        },
-        {
-            "value": 0.6,
-            "color": "#00c5e3"
-        },
-        {
-            "value": 0.7,
-            "color": "#0097e3"
-        },
-        {
-            "value": 0.8,
-            "color": "#005fe3"
-        },
-        {
-            "value": 0.9,
-            "color": "#000fe3"
-        },
-        {
-            "value": 1.0,
-            "color": "#5700e3"
-        }
+        {"value": 0.0, "color": "#000000", "alpha": 0.0},
+        {"value": 0.002, "color": "#000000", "alpha": 0.0},
+        {"value": 0.005, "color": "#8e0101", "alpha": 0.25},
+        {"value": 0.01, "color": "#cf2200", "alpha": 0.75},
+        {"value": 0.02, "color": "#e38400"},
+        {"value": 0.05, "color": "#e3df00"},
+        {"value": 0.1, "color": "#a6e300"},
+        {"value": 0.2, "color": "#62e300"},
+        {"value": 0.3, "color": "#00e32d"},
+        {"value": 0.4, "color": "#00e384"},
+        {"value": 0.5, "color": "#00e3c8"},
+        {"value": 0.6, "color": "#00c5e3"},
+        {"value": 0.7, "color": "#0097e3"},
+        {"value": 0.8, "color": "#005fe3"},
+        {"value": 0.9, "color": "#000fe3"},
+        {"value": 1.0, "color": "#5700e3"},
     ],
     "legend": {
         "url": "https://data.dea.ga.gov.au/WOfS/filtered_summary/v2.1.0/wofs_full_summary_legend.png",
-    }
+    },
 }
 
 style_wofs_annual_summary_frequency = {
@@ -1271,74 +735,26 @@ style_wofs_annual_summary_frequency = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "frequency",
-        }
+        },
     },
     "needed_bands": ["frequency"],
     "include_in_feature_info": False,
     "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.02,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.05,
-            "color": "#8e0101",
-            "alpha": 0.25
-        },
-        {
-            "value": 0.1,
-            "color": "#cf2200",
-            "alpha": 0.75
-        },
-        {
-            "value": 0.2,
-            "color": "#e38400"
-        },
-        {
-            "value": 0.3,
-            "color": "#e3df00"
-        },
-        {
-            "value": 0.4,
-            "color": "#a6e300"
-        },
-        {
-            "value": 0.5,
-            "color": "#00e32d"
-        },
-        {
-            "value": 0.6,
-            "color": "#00e3c8"
-        },
-        {
-            "value": 0.7,
-            "color": "#0097e3"
-        },
-        {
-            "value": 0.8,
-            "color": "#005fe3"
-        },
-        {
-            "value": 0.9,
-            "color": "#000fe3"
-        },
-        {
-            "value": 1.0,
-            "color": "#5700e3"
-        }
+        {"value": 0.0, "color": "#000000", "alpha": 0.0},
+        {"value": 0.02, "color": "#000000", "alpha": 0.0},
+        {"value": 0.05, "color": "#8e0101", "alpha": 0.25},
+        {"value": 0.1, "color": "#cf2200", "alpha": 0.75},
+        {"value": 0.2, "color": "#e38400"},
+        {"value": 0.3, "color": "#e3df00"},
+        {"value": 0.4, "color": "#a6e300"},
+        {"value": 0.5, "color": "#00e32d"},
+        {"value": 0.6, "color": "#00e3c8"},
+        {"value": 0.7, "color": "#0097e3"},
+        {"value": 0.8, "color": "#005fe3"},
+        {"value": 0.9, "color": "#000fe3"},
+        {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {
-        "units": "%",
-        "radix_point": 0,
-        "scale_by": 100.0,
-        "major_ticks": 0.1
-    }
+    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
 }
 
 style_wofs_annual_frequency = {
@@ -1350,85 +766,28 @@ style_wofs_annual_frequency = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "frequency",
-        }
+        },
     },
     "needed_bands": ["frequency"],
     "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.002,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.005,
-            "color": "#8e0101",
-            "alpha": 0.25
-        },
-        {
-            "value": 0.01,
-            "color": "#cf2200",
-            "alpha": 0.75
-        },
-        {
-            "value": 0.02,
-            "color": "#e38400"
-        },
-        {
-            "value": 0.05,
-            "color": "#e3df00"
-        },
-        {
-            "value": 0.1,
-            "color": "#a6e300"
-        },
-        {
-            "value": 0.2,
-            "color": "#62e300"
-        },
-        {
-            "value": 0.3,
-            "color": "#00e32d"
-        },
-        {
-            "value": 0.4,
-            "color": "#00e384"
-        },
-        {
-            "value": 0.5,
-            "color": "#00e3c8"
-        },
-        {
-            "value": 0.6,
-            "color": "#00c5e3"
-        },
-        {
-            "value": 0.7,
-            "color": "#0097e3"
-        },
-        {
-            "value": 0.8,
-            "color": "#005fe3"
-        },
-        {
-            "value": 0.9,
-            "color": "#000fe3"
-        },
-        {
-            "value": 1.0,
-            "color": "#5700e3"
-        }
+        {"value": 0.0, "color": "#000000", "alpha": 0.0},
+        {"value": 0.002, "color": "#000000", "alpha": 0.0},
+        {"value": 0.005, "color": "#8e0101", "alpha": 0.25},
+        {"value": 0.01, "color": "#cf2200", "alpha": 0.75},
+        {"value": 0.02, "color": "#e38400"},
+        {"value": 0.05, "color": "#e3df00"},
+        {"value": 0.1, "color": "#a6e300"},
+        {"value": 0.2, "color": "#62e300"},
+        {"value": 0.3, "color": "#00e32d"},
+        {"value": 0.4, "color": "#00e384"},
+        {"value": 0.5, "color": "#00e3c8"},
+        {"value": 0.6, "color": "#00c5e3"},
+        {"value": 0.7, "color": "#0097e3"},
+        {"value": 0.8, "color": "#005fe3"},
+        {"value": 0.9, "color": "#000fe3"},
+        {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {
-        "units": "%",
-        "radix_point": 0,
-        "scale_by": 100.0,
-        "major_ticks": 0.1
-    }
+    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
 }
 
 style_wofs_frequency_blue = {
@@ -1440,7 +799,7 @@ style_wofs_frequency_blue = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "frequency",
-        }
+        },
     },
     "include_in_feature_info": False,
     "needed_bands": ["frequency"],
@@ -1459,34 +818,13 @@ style_wofs_frequency_blue = {
             "value": 0.02,
             "color": "#d5fef9",
         },
-        {
-            "value": 0.2,
-            "color": "#71e3ff"
-        },
-        {
-            "value": 0.4,
-            "color": "#01ccff"
-        },
-        {
-            "value": 0.6,
-            "color": "#0178ff"
-        },
-        {
-            "value": 0.8,
-            "color": "#2701ff"
-        },
-        {
-            "value": 1.0,
-            "color": "#5700e3"
-        }
+        {"value": 0.2, "color": "#71e3ff"},
+        {"value": 0.4, "color": "#01ccff"},
+        {"value": 0.6, "color": "#0178ff"},
+        {"value": 0.8, "color": "#2701ff"},
+        {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {
-        "units": "%",
-        "radix_point": 0,
-        "scale_by": 100.0,
-        "major_ticks": 0.1
-    }
-
+    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
 }
 
 style_wofs_annual_summary_frequency_blue = {
@@ -1498,7 +836,7 @@ style_wofs_annual_summary_frequency_blue = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "frequency",
-        }
+        },
     },
     "include_in_feature_info": False,
     "needed_bands": ["frequency"],
@@ -1517,34 +855,13 @@ style_wofs_annual_summary_frequency_blue = {
             "value": 0.02,
             "color": "#d5fef9",
         },
-        {
-            "value": 0.2,
-            "color": "#71e3ff"
-        },
-        {
-            "value": 0.4,
-            "color": "#01ccff"
-        },
-        {
-            "value": 0.6,
-            "color": "#0178ff"
-        },
-        {
-            "value": 0.8,
-            "color": "#2701ff"
-        },
-        {
-            "value": 1.0,
-            "color": "#5700e3"
-        }
+        {"value": 0.2, "color": "#71e3ff"},
+        {"value": 0.4, "color": "#01ccff"},
+        {"value": 0.6, "color": "#0178ff"},
+        {"value": 0.8, "color": "#2701ff"},
+        {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {
-        "units": "%",
-        "radix_point": 0,
-        "scale_by": 100.0,
-        "major_ticks": 0.1
-    }
-
+    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
 }
 
 style_wofs_annual_frequency_blue = {
@@ -1556,7 +873,7 @@ style_wofs_annual_frequency_blue = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "frequency",
-        }
+        },
     },
     "needed_bands": ["frequency"],
     "color_ramp": [
@@ -1574,34 +891,13 @@ style_wofs_annual_frequency_blue = {
             "value": 0.02,
             "color": "#d5fef9",
         },
-        {
-            "value": 0.2,
-            "color": "#71e3ff"
-        },
-        {
-            "value": 0.4,
-            "color": "#01ccff"
-        },
-        {
-            "value": 0.6,
-            "color": "#0178ff"
-        },
-        {
-            "value": 0.8,
-            "color": "#2701ff"
-        },
-        {
-            "value": 1.0,
-            "color": "#5700e3"
-        }
+        {"value": 0.2, "color": "#71e3ff"},
+        {"value": 0.4, "color": "#01ccff"},
+        {"value": 0.6, "color": "#0178ff"},
+        {"value": 0.8, "color": "#2701ff"},
+        {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {
-        "units": "%",
-        "radix_point": 0,
-        "scale_by": 100.0,
-        "major_ticks": 0.1
-    }
-
+    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
 }
 
 style_wofs_summary_clear = {
@@ -1613,74 +909,37 @@ style_wofs_summary_clear = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "count_clear",
-        }
+        },
     },
     "include_in_feature_info": False,
     "needed_bands": ["count_clear"],
     "color_ramp": [
-        {
-            "value": 0,
-            "color": "#FFFFFF",
-            "alpha": 0
-        },
+        {"value": 0, "color": "#FFFFFF", "alpha": 0},
         {
             # purely for legend display
             # we should not get fractional
             # values in this styles
             "value": 0,
             "color": "#B21800",
-            "alpha": 1
+            "alpha": 1,
         },
-        {
-            "value": 20,
-            "color": "#B21800"
-        },
-        {
-            "value": 30,
-            "color": "#ef8500"
-        },
-        {
-            "value": 40,
-            "color": "#ffb800"
-        },
-        {
-            "value": 60,
-            "color": "#ffd000"
-        },
-        {
-            "value": 80,
-            "color": "#fff300"
-        },
-        {
-            "value": 100,
-            "color": "#fff300"
-        },
-        {
-            "value": 120,
-            "color": "#c1ec00"
-        },
-        {
-            "value": 140,
-            "color": "#6ee100"
-        },
-        {
-            "value": 160,
-            "color": "#39a500"
-        },
-        {
-            "value": 180,
-            "color": "#026900",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": 20, "color": "#B21800"},
+        {"value": 30, "color": "#ef8500"},
+        {"value": 40, "color": "#ffb800"},
+        {"value": 60, "color": "#ffd000"},
+        {"value": 80, "color": "#fff300"},
+        {"value": 100, "color": "#fff300"},
+        {"value": 120, "color": "#c1ec00"},
+        {"value": 140, "color": "#6ee100"},
+        {"value": 160, "color": "#39a500"},
+        {"value": 180, "color": "#026900", "legend": {"prefix": ">"}},
     ],
     "legend": {
         "radix_point": 0,
         "scale_by": 1,
         "major_ticks": 20,
-        "axes_position": [0.05, 0.5, 0.89, 0.15]
-    }
+        "axes_position": [0.05, 0.5, 0.89, 0.15],
+    },
 }
 
 style_wofs_beta_summary_clear = {
@@ -1692,73 +951,36 @@ style_wofs_beta_summary_clear = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "count_clear",
-        }
+        },
     },
     "include_in_feature_info": False,
     "needed_bands": ["count_clear"],
     "color_ramp": [
-        {
-            "value": 0,
-            "color": "#FFFFFF",
-            "alpha": 0
-        },
+        {"value": 0, "color": "#FFFFFF", "alpha": 0},
         {
             # purely for legend display
             # we should not get fractional
             # values in this styles
             "value": 0,
             "color": "#B21800",
-            "alpha": 1
+            "alpha": 1,
         },
-        {
-            "value": 3,
-            "color": "#B21800"
-        },
-        {
-            "value": 6,
-            "color": "#ef8500"
-        },
-        {
-            "value": 10,
-            "color": "#ffb800"
-        },
-        {
-            "value": 12,
-            "color": "#ffd000"
-        },
-        {
-            "value": 15,
-            "color": "#fff300"
-        },
-        {
-            "value": 18,
-            "color": "#fff300"
-        },
-        {
-            "value": 20,
-            "color": "#c1ec00"
-        },
-        {
-            "value": 24,
-            "color": "#6ee100"
-        },
-        {
-            "value": 27,
-            "color": "#39a500"
-        },
-        {
-            "value": 30,
-            "color": "#026900",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": 3, "color": "#B21800"},
+        {"value": 6, "color": "#ef8500"},
+        {"value": 10, "color": "#ffb800"},
+        {"value": 12, "color": "#ffd000"},
+        {"value": 15, "color": "#fff300"},
+        {"value": 18, "color": "#fff300"},
+        {"value": 20, "color": "#c1ec00"},
+        {"value": 24, "color": "#6ee100"},
+        {"value": 27, "color": "#39a500"},
+        {"value": 30, "color": "#026900", "legend": {"prefix": ">"}},
     ],
     "legend": {
         "radix_point": 0,
         "scale_by": 1,
         "major_ticks": 10,
-    }
+    },
 }
 
 # The only layer that uses this style is disabled
@@ -1849,74 +1071,26 @@ style_annual_wofs_summary_frequency = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "frequency",
-        }
+        },
     },
     "include_in_feature_info": False,
     "needed_bands": ["frequency"],
     "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.02,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.05,
-            "color": "#8e0101",
-            "alpha": 0.25
-        },
-        {
-            "value": 0.1,
-            "color": "#cf2200",
-            "alpha": 0.75
-        },
-        {
-            "value": 0.2,
-            "color": "#e38400"
-        },
-        {
-            "value": 0.3,
-            "color": "#e3df00"
-        },
-        {
-            "value": 0.4,
-            "color": "#62e300"
-        },
-        {
-            "value": 0.5,
-            "color": "#00e32d"
-        },
-        {
-            "value": 0.6,
-            "color": "#00e3c8"
-        },
-        {
-            "value": 0.7,
-            "color": "#0097e3"
-        },
-        {
-            "value": 0.8,
-            "color": "#005fe3"
-        },
-        {
-            "value": 0.9,
-            "color": "#000fe3"
-        },
-        {
-            "value": 1.0,
-            "color": "#5700e3"
-        }
+        {"value": 0.0, "color": "#000000", "alpha": 0.0},
+        {"value": 0.02, "color": "#000000", "alpha": 0.0},
+        {"value": 0.05, "color": "#8e0101", "alpha": 0.25},
+        {"value": 0.1, "color": "#cf2200", "alpha": 0.75},
+        {"value": 0.2, "color": "#e38400"},
+        {"value": 0.3, "color": "#e3df00"},
+        {"value": 0.4, "color": "#62e300"},
+        {"value": 0.5, "color": "#00e32d"},
+        {"value": 0.6, "color": "#00e3c8"},
+        {"value": 0.7, "color": "#0097e3"},
+        {"value": 0.8, "color": "#005fe3"},
+        {"value": 0.9, "color": "#000fe3"},
+        {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {
-        "units": "%",
-        "radix_point": 0,
-        "scale_by": 100.0,
-        "major_ticks": 0.1
-    }
+    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
 }
 
 style_seasonal_wofs_summary_frequency = {
@@ -1929,74 +1103,25 @@ style_seasonal_wofs_summary_frequency = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "frequency",
-        }
+        },
     },
     "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.02,
-            "color": "#000000",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.05,
-            "color": "#8e0101",
-            "alpha": 0.25
-        },
-        {
-            "value": 0.1,
-            "color": "#cf2200",
-            "alpha": 0.75
-        },
-        {
-            "value": 0.2,
-            "color": "#e38400"
-        },
-        {
-            "value": 0.3,
-            "color": "#e3df00"
-        },
-        {
-            "value": 0.4,
-            "color": "#62e300"
-        },
-        {
-            "value": 0.5,
-            "color": "#00e32d"
-        },
-        {
-            "value": 0.6,
-            "color": "#00e3c8"
-        },
-        {
-            "value": 0.7,
-            "color": "#0097e3"
-        },
-        {
-            "value": 0.8,
-            "color": "#005fe3"
-        },
-        {
-            "value": 0.9,
-            "color": "#000fe3"
-        },
-        {
-            "value": 1.0,
-            "color": "#5700e3"
-        }
+        {"value": 0.0, "color": "#000000", "alpha": 0.0},
+        {"value": 0.02, "color": "#000000", "alpha": 0.0},
+        {"value": 0.05, "color": "#8e0101", "alpha": 0.25},
+        {"value": 0.1, "color": "#cf2200", "alpha": 0.75},
+        {"value": 0.2, "color": "#e38400"},
+        {"value": 0.3, "color": "#e3df00"},
+        {"value": 0.4, "color": "#62e300"},
+        {"value": 0.5, "color": "#00e32d"},
+        {"value": 0.6, "color": "#00e3c8"},
+        {"value": 0.7, "color": "#0097e3"},
+        {"value": 0.8, "color": "#005fe3"},
+        {"value": 0.9, "color": "#000fe3"},
+        {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {
-        "units": "%",
-        "radix_point": 0,
-        "scale_by": 100.0,
-        "major_ticks": 0.1
-    }
+    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
 }
-
 
 
 style_wofs_obs = {
@@ -2008,13 +1133,8 @@ style_wofs_obs = {
             {
                 "title": "Invalid",
                 "abstract": "Slope or Cloud",
-                "flags": {
-                    "or": {
-                        "cloud_shadow": True,
-                        "cloud": True
-                    }
-                },
-                "color": "#707070"
+                "flags": {"or": {"cloud_shadow": True, "cloud": True}},
+                "color": "#707070",
             },
             {
                 "title": "Dry",
@@ -2024,23 +1144,18 @@ style_wofs_obs = {
                     "sea": False,
                     "cloud_shadow": False,
                     "cloud": False,
-                    "nodata": False
+                    "nodata": False,
                 },
-                "color": "#D99694"
+                "color": "#D99694",
             },
             {
                 "title": "Wet",
                 "abstract": "Wet or Sea",
-                "flags": {
-                    "or": {
-                        "wet": True,
-                        "sea": True
-                    }
-                },
-                "color": "#4F81BD"
-            }
+                "flags": {"or": {"wet": True, "sea": True}},
+                "color": "#4F81BD",
+            },
         ]
-    }
+    },
 }
 
 style_wofs_obs_wet_only = {
@@ -2060,7 +1175,7 @@ style_wofs_obs_wet_only = {
                     }
                 },
                 "color": "#707070",
-                "mask": True
+                "mask": True,
             },
             {
                 "title": "Dry",
@@ -2070,21 +1185,16 @@ style_wofs_obs_wet_only = {
                     "sea": False,
                 },
                 "color": "#D99694",
-                "mask": True
+                "mask": True,
             },
             {
                 "title": "Wet",
                 "abstract": "Wet or Sea",
-                "flags": {
-                    "or": {
-                        "wet": True,
-                        "sea": True
-                    }
-                },
-                "color": "#4F81BD"
-            }
+                "flags": {"or": {"wet": True, "sea": True}},
+                "color": "#4F81BD",
+            },
         ]
-    }
+    },
 }
 
 style_wofs_dry_observations = {
@@ -2096,108 +1206,53 @@ style_wofs_dry_observations = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "count_dry",
-        }
+        },
     },
     "needed_bands": ["count_dry"],
     "color_ramp": [
-        {
-            "value": 0,
-            "color": "#FFFFFF",
-            "alpha": 0
-        },
+        {"value": 0, "color": "#FFFFFF", "alpha": 0},
         {
             # purely for legend display
             # we should not get fractional
             # values in this styles
             "value": 10,
             "color": "#b21800",
-            "alpha": 1
+            "alpha": 1,
         },
-        {
-            "value": 100,
-            "color": "#ef8500"
-        },
-        {
-            "value": 200,
-            "color": "#ffb800"
-        },
-        {
-            "value": 300,
-            "color": "#ffd300"
-        },
-        {
-            "value": 400,
-            "color": "#ffe300"
-        },
-        {
-            "value": 500,
-            "color": "#fff300"
-        },
-        {
-            "value": 600,
-            "color": "#d0f800"
-        },
-        {
-            "value": 700,
-            "color": "#a0fd00"
-        },
-        {
-            "value": 800,
-            "color": "#6ee100"
-        },
-        {
-            "value": 901,
-            "color": "#39a500"
-        },
-        {
-            "value": 1000,
-            "color": "#026900",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": 100, "color": "#ef8500"},
+        {"value": 200, "color": "#ffb800"},
+        {"value": 300, "color": "#ffd300"},
+        {"value": 400, "color": "#ffe300"},
+        {"value": 500, "color": "#fff300"},
+        {"value": 600, "color": "#d0f800"},
+        {"value": 700, "color": "#a0fd00"},
+        {"value": 800, "color": "#6ee100"},
+        {"value": 901, "color": "#39a500"},
+        {"value": 1000, "color": "#026900", "legend": {"prefix": ">"}},
     ],
     "legend": {
         "radix_point": 0,
         "scale_by": 1,
         "major_ticks": 100,
-        "axes_position": [0.05, 0.5, 0.89, 0.15]
-    }
+        "axes_position": [0.05, 0.5, 0.89, 0.15],
+    },
 }
 
 style_fc_simple = {
     "name": "simple_fc",
     "title": "Fractional Cover",
     "abstract": "Fractional cover representation, with green vegetation in green, dead vegetation in blue, and bare soil in red",
-    "components": {
-        "red": {
-            "BS": 1.0
-        },
-        "green": {
-            "PV": 1.0
-        },
-        "blue": {
-            "NPV": 1.0
-        }
-    },
+    "components": {"red": {"BS": 1.0}, "green": {"PV": 1.0}, "blue": {"NPV": 1.0}},
     "scale_range": [0.0, 100.0],
     "pq_masks": [
         {
-            "flags": {
-                'dry': True
-            },
+            "flags": {"dry": True},
         },
-        {
-            "flags": {
-                "cloud_shadow": False,
-                "cloud": False,
-                "sea": False
-            }
-        },
+        {"flags": {"cloud_shadow": False, "cloud": False, "sea": False}},
     ],
     "legend": {
         "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
-    }
+    },
 }
 
 style_jers_hh = {
@@ -2210,44 +1265,17 @@ style_jers_hh = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "hh",
-        }
+        },
     },
     "color_ramp": [
-        {
-            "value": 0,
-            "color": "#f7fcf5"
-        },
-        {
-            "value": 908, # 750 * 1.21
-            "color": "#e2f4dd"
-        },
-        {
-            "value": 1210,
-            "color": "#c0e6b9"
-        },
-        {
-            "value": 1815,
-            "color": "#94d390"
-        },
-        {
-            "value": 3025,
-            "color": "#60ba6c"
-        },
-        {
-            "value": 4840,
-            "color": "#329b51"
-        },
-        {
-            "value": 7260,
-            "color": "#0c7835"
-        },
-        {
-            "value": 9680, # 8000 * 1.21
-            "color": "#00441b",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": 0, "color": "#f7fcf5"},
+        {"value": 908, "color": "#e2f4dd"},  # 750 * 1.21
+        {"value": 1210, "color": "#c0e6b9"},
+        {"value": 1815, "color": "#94d390"},
+        {"value": 3025, "color": "#60ba6c"},
+        {"value": 4840, "color": "#329b51"},
+        {"value": 7260, "color": "#0c7835"},
+        {"value": 9680, "color": "#00441b", "legend": {"prefix": ">"}},  # 8000 * 1.21
     ],
     "legend": {
         "begin": 0,
@@ -2258,11 +1286,9 @@ style_jers_hh = {
             "2420": {"label": "2420"},
             "4840": {"label": "4840"},
             "7260": {"label": "7260"},
-            "9680": {
-                "prefix": ">"
-            },
-        }
-    }
+            "9680": {"prefix": ">"},
+        },
+    },
 }
 
 style_alos_hh = {
@@ -2275,44 +1301,17 @@ style_alos_hh = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "hh",
-        }
+        },
     },
     "color_ramp": [
-        {
-            "value": 0,
-            "color": "#f7fcf5"
-        },
-        {
-            "value": 750,
-            "color": "#e2f4dd"
-        },
-        {
-            "value": 1000,
-            "color": "#c0e6b9"
-        },
-        {
-            "value": 1500,
-            "color": "#94d390"
-        },
-        {
-            "value": 2500,
-            "color": "#60ba6c"
-        },
-        {
-            "value": 4000,
-            "color": "#329b51"
-        },
-        {
-            "value": 6000,
-            "color": "#0c7835"
-        },
-        {
-            "value": 8000,
-            "color": "#00441b",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": 0, "color": "#f7fcf5"},
+        {"value": 750, "color": "#e2f4dd"},
+        {"value": 1000, "color": "#c0e6b9"},
+        {"value": 1500, "color": "#94d390"},
+        {"value": 2500, "color": "#60ba6c"},
+        {"value": 4000, "color": "#329b51"},
+        {"value": 6000, "color": "#0c7835"},
+        {"value": 8000, "color": "#00441b", "legend": {"prefix": ">"}},
     ],
     "legend": {
         "begin": 0,
@@ -2323,11 +1322,9 @@ style_alos_hh = {
             "2000": {"label": "2000"},
             "4000": {"label": "4000"},
             "6000": {"label": "6000"},
-            "8000": {
-                "prefix": ">"
-            },
-        }
-    }
+            "8000": {"prefix": ">"},
+        },
+    },
 }
 
 style_alos_hv = {
@@ -2340,44 +1337,17 @@ style_alos_hv = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "hv",
-        }
+        },
     },
     "color_ramp": [
-        {
-            "value": 0,
-            "color": "#f7fcf5"
-        },
-        {
-            "value": 250,
-            "color": "#e2f4dd"
-        },
-        {
-            "value": 300,
-            "color": "#c0e6b9"
-        },
-        {
-            "value": 500,
-            "color": "#94d390"
-        },
-        {
-            "value": 800,
-            "color": "#60ba6c"
-        },
-        {
-            "value": 2000,
-            "color": "#329b51"
-        },
-        {
-            "value": 3500,
-            "color": "#0c7835"
-        },
-        {
-            "value": 4500,
-            "color": "#00441b",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": 0, "color": "#f7fcf5"},
+        {"value": 250, "color": "#e2f4dd"},
+        {"value": 300, "color": "#c0e6b9"},
+        {"value": 500, "color": "#94d390"},
+        {"value": 800, "color": "#60ba6c"},
+        {"value": 2000, "color": "#329b51"},
+        {"value": 3500, "color": "#0c7835"},
+        {"value": 4500, "color": "#00441b", "legend": {"prefix": ">"}},
     ],
     "legend": {
         "begin": 0,
@@ -2388,11 +1358,9 @@ style_alos_hv = {
             "500": {"label": "500"},
             "2000": {"label": "2000"},
             "3500": {"label": "3500"},
-            "4500": {
-                "prefix": ">"
-            },
-        }
-    }
+            "4500": {"prefix": ">"},
+        },
+    },
 }
 
 
@@ -2402,23 +1370,13 @@ style_alos_hv_over_hh = {
     "abstract": "False colour representation of HH, HV and HV over HH for R, G and B respectively",
     "additional_bands": [],
     "components": {
-        "red": {
-            "hh": 1.0,
-            "scale_range": [500, 10000]
-        },
-        "green": {
-            "hv": 1.0,
-            "scale_range": [200, 4000]
-        },
+        "red": {"hh": 1.0, "scale_range": [500, 10000]},
+        "green": {"hv": 1.0, "scale_range": [200, 4000]},
         "blue": {
             "function": "datacube_ows.band_utils.band_quotient",
             "mapped_bands": True,
-            "kwargs": {
-                "band1": "hv",
-                "band2": "hh",
-                "scale_from": [0.1, 1.0]
-            }
-        }
+            "kwargs": {"band1": "hv", "band2": "hh", "scale_from": [0.1, 1.0]},
+        },
     },
 }
 
@@ -2433,9 +1391,9 @@ style_alos_radar_veg_idx = {
         "kwargs": {
             "band_hv": "hv",
             "band_hh": "hh",
-        }
+        },
     },
-    "range": [ 0.2, 1.0 ],
+    "range": [0.2, 1.0],
     "mpl_ramp": "viridis",
     "legend": {
         "begin": "0.2",
@@ -2444,8 +1402,8 @@ style_alos_radar_veg_idx = {
         "tick_labels": {
             "0.2": {"prefix": "<"},
             "1.0": {"prefix": ">"},
-        }
-    }
+        },
+    },
 }
 
 
@@ -2459,49 +1417,24 @@ style_greyscale = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "elevation",
-        }
+        },
     },
     "color_ramp": [
-        {
-            "value": -0,
-            "color": "#383838",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.1,
-            "color": "#383838"
-        },
-        {
-            "value": 250,
-            "color": "#5e5e5e"
-        },
-        {
-            "value": 500,
-            "color": "#858585"
-        },
-        {
-            "value": 1000,
-            "color": "#adadad"
-        },
-        {
-            "value": 2000,
-            "color": "#d4d4d4"
-        },
-        {
-            "value": 4000,
-            "color": "#fafafa",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": -0, "color": "#383838", "alpha": 0.0},
+        {"value": 0.1, "color": "#383838"},
+        {"value": 250, "color": "#5e5e5e"},
+        {"value": 500, "color": "#858585"},
+        {"value": 1000, "color": "#adadad"},
+        {"value": 2000, "color": "#d4d4d4"},
+        {"value": 4000, "color": "#fafafa", "legend": {"prefix": ">"}},
     ],
     "legend": {
         "title": "Elevation ",
         "radix_point": 0,
         "scale_by": 1,
         "major_ticks": 100,
-        "units": "m"
-    }
+        "units": "m",
+    },
 }
 
 style_colours = {
@@ -2514,57 +1447,26 @@ style_colours = {
         "pass_product_cfg": True,
         "kwargs": {
             "band": "elevation",
-        }
+        },
     },
     "color_ramp": [
-        {
-            "value": -0,
-            "color": "#e1f2ff",
-            "alpha": 0.0
-        },
-        {
-            "value": 0.1,
-            "color": "#41c23c"
-        },
-        {
-            "value": 150,
-            "color": "#f9a80e"
-        },
-        {
-            "value": 300,
-            "color": "#cb5f3e"
-        },
-        {
-            "value": 400,
-            "color": "#9d387d"
-        },
-        {
-            "value": 500,
-            "color": "#ba6daa"
-        },
-        {
-            "value": 900,
-            "color": "#d7a2d6"
-        },
-        {
-            "value": 1200,
-            "color": "#e6c8e6"
-        },
-        {
-            "value": 4000,
-            "color": "#ffecf9",
-            "legend": {
-                "prefix": ">"
-            }
-        }
+        {"value": -0, "color": "#e1f2ff", "alpha": 0.0},
+        {"value": 0.1, "color": "#41c23c"},
+        {"value": 150, "color": "#f9a80e"},
+        {"value": 300, "color": "#cb5f3e"},
+        {"value": 400, "color": "#9d387d"},
+        {"value": 500, "color": "#ba6daa"},
+        {"value": 900, "color": "#d7a2d6"},
+        {"value": 1200, "color": "#e6c8e6"},
+        {"value": 4000, "color": "#ffecf9", "legend": {"prefix": ">"}},
     ],
     "legend": {
         "title": "Elevation ",
         "radix_point": 0,
         "scale_by": 1,
         "major_ticks": 400,
-        "units": "m"
-    }
+        "units": "m",
+    },
 }
 
 # styles tmad
@@ -2598,7 +1500,11 @@ style_tmad_edev_std = {
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
         "mapped_bands": True,
-        "kwargs": {"band": "edev", "scale_from": [0.025, 0.1], "scale_to": [0.0, 4.0]},
+        "kwargs": {
+            "band": "edev",
+            "scale_from": [9.235340371976184, 9.310340371976183],
+            "scale_to": [0.0, 4.0],
+        },
     },
     "needed_bands": ["edev"],
     "mpl_ramp": "coolwarm",
@@ -2724,10 +1630,7 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "EPSG:4326": {  # WGS-84
-                "geographic": True,
-                "vertical_coord_first": True
-            },
+            "EPSG:4326": {"geographic": True, "vertical_coord_first": True},  # WGS-84
             "EPSG:6933": {  # Cylindrical equal area
                 "geographic": False,
                 "horizontal_coord": "x",
@@ -2737,11 +1640,11 @@ ows_cfg = {
                 "geographic": False,
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
-            }
+            },
         },
         "allowed_urls": [
-                "https://ows.digitalearth.africa",
-                "https://ows-latest.digitalearth.africa",
+            "https://ows.digitalearth.africa",
+            "https://ows-latest.digitalearth.africa",
         ],
         # Metadata to go straight into GetCapabilities documents
         "title": "Digital Earth Africa - OGC Web Services",
@@ -2772,18 +1675,17 @@ ows_cfg = {
         },
         "fees": "",
         "access_constraints": "© Commonwealth of Australia (Geoscience Australia) 2018. "
-                              "This product is released under the Creative Commons Attribution 4.0 International Licence. "
-                              "http://creativecommons.org/licenses/by/4.0/legalcode",
-    }, # END OF global SECTION
+        "This product is released under the Creative Commons Attribution 4.0 International Licence. "
+        "http://creativecommons.org/licenses/by/4.0/legalcode",
+    },  # END OF global SECTION
     "wms": {
         # Config for WMS service, for all products/layers
         "s3_url": "https://data.digitalearth.africa",
         "s3_bucket": "deafrica-data",
         "s3_aws_zone": "ap-southeast-2",
-
         "max_width": 512,
         "max_height": 512,
-    }, # END OF wms SECTION
+    },  # END OF wms SECTION
     "wcs": {
         # Config for WCS service, for all products/coverages
         "default_geographic_CRS": "EPSG:4326",
@@ -2796,7 +1698,7 @@ ows_cfg = {
                 },
                 "mime": "image/geotiff",
                 "extension": "tif",
-                "multi-time": False
+                "multi-time": False,
             },
             "netCDF": {
                 # "renderer": "datacube_ows.wcs_utils.get_netcdf",
@@ -2810,7 +1712,7 @@ ows_cfg = {
             },
         },
         "native_format": "GeoTIFF",
-    }, # END OF wcs SECTION
+    },  # END OF wcs SECTION
     "layers": [
         {
             "title": "Digital Earth Africa - OGC Web Services",
@@ -2825,10 +1727,10 @@ ows_cfg = {
                         includes Landsat 8 US Geological Survey Collection 1 Higher Level SR scene processed using LaSRC. 30m UTM
                         based projection.""",
                     "layers": [
-                    {
-                        "title": "Surface Reflectance Landsat 8 (USGS Collection 1)",
-                        "name": "ls8_usgs_sr_scene",
-                        "abstract": """
+                        {
+                            "title": "Surface Reflectance Landsat 8 (USGS Collection 1)",
+                            "name": "ls8_usgs_sr_scene",
+                            "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
 DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
@@ -2841,34 +1743,41 @@ For more information on the Landsat surface reflectance product, see https://www
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ls8_usgs_sr_scene",
-                        "bands": bands_ls,
-                        "resource_limits": reslim_landsat,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True, # True
-                            "apply_solar_corrections": False,
+                            "product_name": "ls8_usgs_sr_scene",
+                            "bands": bands_ls,
+                            "resource_limits": reslim_landsat,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": True,  # True
+                                "apply_solar_corrections": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["red", "green", "blue"],
+                            },
+                            "styling": {
+                                "default_style": "simple_rgb",
+                                "styles": [
+                                    style_ls_simple_rgb,
+                                    style_ls_irg,
+                                    style_ls_ndvi,
+                                    style_ls_ndwi,
+                                    style_ls_mndwi,
+                                    style_ls_pure_blue,
+                                    style_ls_pure_green,
+                                    style_ls_pure_red,
+                                    style_sentinel_pure_nir,
+                                    style_sentinel_pure_swir1,
+                                    style_sentinel_pure_swir2,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["red", "green", "blue"]
-                        },
-                        "styling": {
-                            "default_style": "simple_rgb",
-                            "styles": [
-                                style_ls_simple_rgb,
-                                style_ls_irg, style_ls_ndvi, style_ls_ndwi, style_ls_mndwi,
-                                style_ls_pure_blue, style_ls_pure_green, style_ls_pure_red,
-                                style_sentinel_pure_nir, style_sentinel_pure_swir1, style_sentinel_pure_swir2,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Surface Reflectance Landsat 7 (USGS Collection 1)",
-                        "name": "ls7_usgs_sr_scene",
-                        "abstract": """
+                        {
+                            "title": "Surface Reflectance Landsat 7 (USGS Collection 1)",
+                            "name": "ls7_usgs_sr_scene",
+                            "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
 DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
@@ -2881,34 +1790,41 @@ For more information on the Landsat surface reflectance product, see https://www
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ls7_usgs_sr_scene",
-                        "bands": bands_ls,
-                        "resource_limits": reslim_landsat,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True, # True
-                            "apply_solar_corrections": False,
+                            "product_name": "ls7_usgs_sr_scene",
+                            "bands": bands_ls,
+                            "resource_limits": reslim_landsat,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": True,  # True
+                                "apply_solar_corrections": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["red", "green", "blue"],
+                            },
+                            "styling": {
+                                "default_style": "simple_rgb",
+                                "styles": [
+                                    style_ls_simple_rgb,
+                                    style_ls_irg,
+                                    style_ls_ndvi,
+                                    style_ls_ndwi,
+                                    style_ls_mndwi,
+                                    style_sentinel_pure_blue,
+                                    style_ls_pure_green,
+                                    style_ls_pure_red,
+                                    style_ls_pure_nir,
+                                    style_ls_pure_swir1,
+                                    style_ls_pure_swir2,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["red", "green", "blue"]
-                        },
-                        "styling": {
-                            "default_style": "simple_rgb",
-                            "styles": [
-                                style_ls_simple_rgb,
-                                style_ls_irg, style_ls_ndvi, style_ls_ndwi, style_ls_mndwi,
-                                style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
-                                style_ls_pure_nir, style_ls_pure_swir1, style_ls_pure_swir2,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Surface Reflectance Landsat 5 (USGS Collection 1)",
-                        "name": "ls5_usgs_sr_scene",
-                        "abstract": """
+                        {
+                            "title": "Surface Reflectance Landsat 5 (USGS Collection 1)",
+                            "name": "ls5_usgs_sr_scene",
+                            "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
 DE Africa contains Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya). Landsat Collection 1 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
@@ -2921,40 +1837,47 @@ For more information on the Landsat surface reflectance product, see https://www
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ls5_usgs_sr_scene",
-                        "bands": bands_ls,
-                        "resource_limits": reslim_landsat,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True, # True
-                            "apply_solar_corrections": False,
+                            "product_name": "ls5_usgs_sr_scene",
+                            "bands": bands_ls,
+                            "resource_limits": reslim_landsat,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": True,  # True
+                                "apply_solar_corrections": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["red", "green", "blue"],
+                            },
+                            "styling": {
+                                "default_style": "simple_rgb",
+                                "styles": [
+                                    style_ls_simple_rgb,
+                                    style_ls_irg,
+                                    style_ls_ndvi,
+                                    style_ls_ndwi,
+                                    style_ls_mndwi,
+                                    style_sentinel_pure_blue,
+                                    style_ls_pure_green,
+                                    style_ls_pure_red,
+                                    style_ls_pure_nir,
+                                    style_ls_pure_swir1,
+                                    style_ls_pure_swir2,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["red", "green", "blue"]
-                        },
-                        "styling": {
-                            "default_style": "simple_rgb",
-                            "styles": [
-                                style_ls_simple_rgb,
-                                style_ls_irg, style_ls_ndvi, style_ls_ndwi, style_ls_mndwi,
-                                style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
-                                style_ls_pure_nir, style_ls_pure_swir1, style_ls_pure_swir2,
-                            ]
-                        }
-                    },
-                ]
-            },
-            {
+                    ],
+                },
+                {
                     "title": "Sentinel",
                     "abstract": """Sentinel""",
                     "layers": [
-                    {
-                        "title": "Surface Reflectance Sentinel-2",
-                        "name": "s2_l2a",
-                        "abstract": """
+                        {
+                            "title": "Surface Reflectance Sentinel-2",
+                            "name": "s2_l2a",
+                            "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
 DE Africa provides Sentinel 2 Level-2A surface reflectance data from European Commission's Copernicus Programme. Sentinel-2 is an Earth observation mission that systematically acquires optical imagery at up to 10 m spatial resolution. The mission is based on a constellation of two identical satellites in the same orbit, 180° apart for optimal coverage and data delivery. Together, they cover all Earth's land surfaces, large islands, inland and coastal waters every 3-5 days. Each of the Sentinel-2 satellites carries a wide swath high-resolution multispectral imager with 13 spectral bands.
@@ -2967,45 +1890,54 @@ For more information on the Sentinel-2 Level-2A surface reflectance product, see
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "s2_l2a",
-                        "bands": bands_sentinel,
-                        "dynamic": True,
-                        "resource_limits": reslim_srtm,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True, # True
-                            "apply_solar_corrections": False,
+                            "product_name": "s2_l2a",
+                            "bands": bands_sentinel,
+                            "dynamic": True,
+                            "resource_limits": reslim_srtm,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": True,  # True
+                                "apply_solar_corrections": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["red", "green", "blue"],
+                            },
+                            "styling": {
+                                "default_style": "simple_rgb",
+                                "styles": [
+                                    style_ls_simple_rgb,
+                                    style_s2_irg,
+                                    style_ls_ndvi,
+                                    style_ls_ndwi,
+                                    style_gals_mndwi,
+                                    style_s2_ndci,
+                                    style_s2_pure_aerosol,
+                                    style_sentinel_pure_blue,
+                                    style_ls_pure_green,
+                                    style_ls_pure_red,
+                                    style_s2_pure_redge_1,
+                                    style_s2_pure_redge_2,
+                                    style_s2_pure_redge_3,
+                                    style_ls_pure_nir,
+                                    style_s2_pure_narrow_nir,
+                                    style_s2_pure_swir1,
+                                    style_s2_pure_swir2,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["red", "green", "blue"]
-                        },
-                        "styling": {
-                            "default_style": "simple_rgb",
-                            "styles": [
-                                style_ls_simple_rgb,
-                                style_s2_irg,
-                                style_ls_ndvi, style_ls_ndwi, style_gals_mndwi, style_s2_ndci,
-                                style_s2_pure_aerosol,
-                                style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
-                                style_s2_pure_redge_1, style_s2_pure_redge_2, style_s2_pure_redge_3,
-                                style_ls_pure_nir, style_s2_pure_narrow_nir,
-                                style_s2_pure_swir1, style_s2_pure_swir2,
-                            ]
-                        }
-                    },
-                ]
-            },
-            {
-                "title": "Water Observations from Space",
-                "abstract": """WOfS""",
-                "layers": [
-                    {
-                        "title": "Water Observations from Space Feature Layer (Development)",
-                        "name": "ls_usgs_wofs_scene",
-                        "abstract": """
+                    ],
+                },
+                {
+                    "title": "Water Observations from Space",
+                    "abstract": """WOfS""",
+                    "layers": [
+                        {
+                            "title": "Water Observations from Space Feature Layer (Development)",
+                            "name": "ls_usgs_wofs_scene",
+                            "abstract": """
 Water Observations from Space (WOfS) provides surface water observations derived from satellite imagery for all of Africa. The WOfS product allows users to get a better understanding of where water is normally present in a landscape, where water is seldom observed, and where inundation has occurred occasionally. Data is provided as Water Observation Feature Layers (WOFLs), in a 1 to 1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
@@ -3020,30 +1952,31 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ls_usgs_wofs_scene",
-                        "bands": bands_wofs_obs,
-                        "resource_limits": reslim_wofs_daily,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_bitflag",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "product_name": "ls_usgs_wofs_scene",
+                            "bands": bands_wofs_obs,
+                            "resource_limits": reslim_wofs_daily,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_bitflag",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["water"],
+                            },
+                            "styling": {
+                                "default_style": "observations",
+                                "styles": [
+                                    style_wofs_obs,
+                                    style_wofs_obs_wet_only,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["water"]
-                        },
-                        "styling": {
-                            "default_style": "observations",
-                            "styles": [
-                                    style_wofs_obs,  style_wofs_obs_wet_only,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Water Observations from Space Feature Layer (Beta)",
-                        "name": "ga_ls8c_wofs_2",
-                        "abstract": """
+                        {
+                            "title": "Water Observations from Space Feature Layer (Beta)",
+                            "name": "ga_ls8c_wofs_2",
+                            "abstract": """
 Water Observations from Space (WOfS) provides surface water observations derived from satellite imagery for all of Africa. The WOfS product allows users to get a better understanding of where water is normally present in a landscape, where water is seldom observed, and where inundation has occurred occasionally. Data is provided as Water Observation Feature Layers (WOFLs), in a 1 to 1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
@@ -3058,30 +1991,31 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ga_ls8c_wofs_2",
-                        "bands": bands_wofs_obs,
-                        "resource_limits": reslim_wofs_daily,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_bitflag",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "product_name": "ga_ls8c_wofs_2",
+                            "bands": bands_wofs_obs,
+                            "resource_limits": reslim_wofs_daily,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_bitflag",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["water"],
+                            },
+                            "styling": {
+                                "default_style": "observations",
+                                "styles": [
+                                    style_wofs_obs,
+                                    style_wofs_obs_wet_only,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["water"]
-                        },
-                        "styling": {
-                            "default_style": "observations",
-                            "styles": [
-                                style_wofs_obs,  style_wofs_obs_wet_only,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Water Observations from Space Annual Summary (Development)",
-                        "name": "wofs_annual_summary_frequency",
-                        "abstract": """
+                        {
+                            "title": "Water Observations from Space Annual Summary (Development)",
+                            "name": "wofs_annual_summary_frequency",
+                            "abstract": """
 Annual water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) from each calendar year.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
@@ -3096,106 +2030,99 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ls_usgs_wofs_summary",
-                        "time_resolution": "year",
-                        "bands": bands_usgs_wofs_summary,
-                        "resource_limits": reslim_wofs_dry,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "product_name": "ls_usgs_wofs_summary",
+                            "time_resolution": "year",
+                            "bands": bands_usgs_wofs_summary,
+                            "resource_limits": reslim_wofs_dry,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "ESRI:102022",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["frequency"],
+                            },
+                            "styling": {
+                                "default_style": "WOfS_frequency",
+                                "styles": [
+                                    style_wofs_annual_summary_frequency,
+                                    style_wofs_annual_frequency_blue,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "ESRI:102022",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["frequency"]
-                        },
-                        "styling": {
-                            "default_style": "WOfS_frequency",
-                            "styles": [
-                                    style_wofs_annual_summary_frequency,  style_wofs_annual_frequency_blue,
-                            ]
-                        }
-                    },
-#                     {
-#                         "title": "Water Observations from Space Annual Count of Wet Observations (Development)",
-#                         "name": "wofs_annual_summary_wet",
-#                         "abstract": """
-# The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
-
-# This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
-
-# It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
-
-# For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-
-# This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-# """,
-#                         "product_name": "ls_usgs_wofs_summary",
-#                         "time_resolution": "year",
-#                         "bands": bands_usgs_wofs_summary,
-#                         "resource_limits": reslim_wofs_dry,
-#                         "image_processing": {
-#                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-#                             "always_fetch_bands": [],
-#                             "manual_merge": False,
-#                         },
-#                         "wcs": {
-#                             "native_crs": "ESRI:102022",
-#                             "native_resolution": [25.0, 25.0],
-#                             "default_bands": ["count_wet"]
-#                         },
-#                         "styling": {
-#                             "default_style": "water_observations",
-#                             "styles": [
-#                                     style_wofs_count_wet,
-#                             ]
-#                         }
-#                     },
-#                     {
-#                         "title": "Water Observations from Space Annual Count of Clear Observations (Development)",
-#                         "name": "wofs_annual_summary_clear",
-#                         "abstract": """
-# The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
-
-# This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
-
-# It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
-
-# For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
-
-# This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-# """,
-#                         "product_name": "ls_usgs_wofs_summary",
-#                         "bands": bands_usgs_wofs_summary,
-#                         "resource_limits": reslim_wofs_dry,
-#                         "image_processing": {
-#                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-#                             "always_fetch_bands": [],
-#                             "manual_merge": False,
-#                         },
-#                         "wcs": {
-#                             "native_crs": "ESRI:102022",
-#                             "native_resolution": [25.0, 25.0],
-#                             "default_bands": ["count_dry"]
-#                         },
-#                         "styling": {
-#                             "default_style": "annual_clear_observations",
-#                             "styles": [
-#                                     style_wofs_annual_clear,
-#                             ]
-#                         }
-#                     },
-                ]
-            },
-            {
+                        #                     {
+                        #                         "title": "Water Observations from Space Annual Count of Wet Observations (Development)",
+                        #                         "name": "wofs_annual_summary_wet",
+                        #                         "abstract": """
+                        # The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
+                        # This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+                        # It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+                        # For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+                        # This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        # """,
+                        #                         "product_name": "ls_usgs_wofs_summary",
+                        #                         "time_resolution": "year",
+                        #                         "bands": bands_usgs_wofs_summary,
+                        #                         "resource_limits": reslim_wofs_dry,
+                        #                         "image_processing": {
+                        #                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                        #                             "always_fetch_bands": [],
+                        #                             "manual_merge": False,
+                        #                         },
+                        #                         "wcs": {
+                        #                             "native_crs": "ESRI:102022",
+                        #                             "native_resolution": [25.0, 25.0],
+                        #                             "default_bands": ["count_wet"]
+                        #                         },
+                        #                         "styling": {
+                        #                             "default_style": "water_observations",
+                        #                             "styles": [
+                        #                                     style_wofs_count_wet,
+                        #                             ]
+                        #                         }
+                        #                     },
+                        #                     {
+                        #                         "title": "Water Observations from Space Annual Count of Clear Observations (Development)",
+                        #                         "name": "wofs_annual_summary_clear",
+                        #                         "abstract": """
+                        # The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
+                        # This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
+                        # It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
+                        # For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
+                        # This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+                        # """,
+                        #                         "product_name": "ls_usgs_wofs_summary",
+                        #                         "bands": bands_usgs_wofs_summary,
+                        #                         "resource_limits": reslim_wofs_dry,
+                        #                         "image_processing": {
+                        #                             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                        #                             "always_fetch_bands": [],
+                        #                             "manual_merge": False,
+                        #                         },
+                        #                         "wcs": {
+                        #                             "native_crs": "ESRI:102022",
+                        #                             "native_resolution": [25.0, 25.0],
+                        #                             "default_bands": ["count_dry"]
+                        #                         },
+                        #                         "styling": {
+                        #                             "default_style": "annual_clear_observations",
+                        #                             "styles": [
+                        #                                     style_wofs_annual_clear,
+                        #                             ]
+                        #                         }
+                        #                     },
+                    ],
+                },
+                {
                     "title": "Water Observations from Space c2",
                     "abstract": """WOfS""",
                     "layers": [
-                    {
-                        "title": "Water Observations from Space Annual Summary (Beta)",
-                        "name": "wofs_2_annual_summary_frequency",
-                        "abstract": """
+                        {
+                            "title": "Water Observations from Space Annual Summary (Beta)",
+                            "name": "wofs_2_annual_summary_frequency",
+                            "abstract": """
 Annual water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) from each calendar year.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
@@ -3210,31 +2137,32 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ga_ls8c_wofs_2_annual_summary",
-                        "time_resolution": "year",
-                        "bands": bands_wofs_2_annual_summary,
-                        "resource_limits": reslim_wofs,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "product_name": "ga_ls8c_wofs_2_annual_summary",
+                            "time_resolution": "year",
+                            "bands": bands_wofs_2_annual_summary,
+                            "resource_limits": reslim_wofs,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": True,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["frequency"],
+                            },
+                            "styling": {
+                                "default_style": "WOfS_frequency",
+                                "styles": [
+                                    style_wofs_annual_summary_frequency,
+                                    style_wofs_annual_summary_frequency_blue,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["frequency"]
-                        },
-                        "styling": {
-                            "default_style": "WOfS_frequency",
-                            "styles": [
-                                    style_wofs_annual_summary_frequency, style_wofs_annual_summary_frequency_blue
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Water Observations from Space Annual Count of Wet Observations (Beta)",
-                        "name": "wofs_2_annual_summary_wet",
-                        "abstract": """
+                        {
+                            "title": "Water Observations from Space Annual Count of Wet Observations (Beta)",
+                            "name": "wofs_2_annual_summary_wet",
+                            "abstract": """
 The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating annual water summary.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
@@ -3245,31 +2173,31 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ga_ls8c_wofs_2_annual_summary",
-                        "time_resolution": "year",
-                        "bands": bands_wofs_2_annual_summary,
-                        "resource_limits": reslim_wofs,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
-                        },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["count_wet"]
-                        },
-                        "styling": {
-                            "default_style": "water_observations",
-                            "styles": [
+                            "product_name": "ga_ls8c_wofs_2_annual_summary",
+                            "time_resolution": "year",
+                            "bands": bands_wofs_2_annual_summary,
+                            "resource_limits": reslim_wofs,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["count_wet"],
+                            },
+                            "styling": {
+                                "default_style": "water_observations",
+                                "styles": [
                                     style_wofs_water_annual_wet,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Water Observations from Space Annual Count of Clear Observations (Beta)",
-                        "name": "wofs_2_annual_summary_clear",
-                        "abstract": """
+                                ],
+                            },
+                        },
+                        {
+                            "title": "Water Observations from Space Annual Count of Clear Observations (Beta)",
+                            "name": "wofs_2_annual_summary_clear",
+                            "abstract": """
 The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating annual water summary.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
@@ -3280,31 +2208,31 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ga_ls8c_wofs_2_annual_summary",
-                        "time_resolution": "year",
-                        "bands": bands_wofs_2_annual_summary,
-                        "resource_limits": reslim_wofs,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
-                        },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["count_clear"]
-                        },
-                        "styling": {
-                            "default_style": "annual_clear_observations",
-                            "styles": [
+                            "product_name": "ga_ls8c_wofs_2_annual_summary",
+                            "time_resolution": "year",
+                            "bands": bands_wofs_2_annual_summary,
+                            "resource_limits": reslim_wofs,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["count_clear"],
+                            },
+                            "styling": {
+                                "default_style": "annual_clear_observations",
+                                "styles": [
                                     style_wofs_beta_summary_clear,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Water Observations from Space All Time Summary (Beta)",
-                        "name": "wofs_2_summary_frequency",
-                        "abstract": """
+                                ],
+                            },
+                        },
+                        {
+                            "title": "Water Observations from Space All Time Summary (Beta)",
+                            "name": "wofs_2_summary_frequency",
+                            "abstract": """
 All time water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) over time.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
@@ -3319,31 +2247,32 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ga_ls8c_wofs_2_summary",
-                        "bands": bands_wofs_2_annual_summary,
-                        "time_resolution": "year",
-                        "resource_limits": reslim_wofs,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "product_name": "ga_ls8c_wofs_2_summary",
+                            "bands": bands_wofs_2_annual_summary,
+                            "time_resolution": "year",
+                            "resource_limits": reslim_wofs,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["frequency"],
+                            },
+                            "styling": {
+                                "default_style": "WOfS_frequency",
+                                "styles": [
+                                    style_wofs_frequency,
+                                    style_wofs_frequency_blue,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["frequency"]
-                        },
-                        "styling": {
-                            "default_style": "WOfS_frequency",
-                            "styles": [
-                                    style_wofs_frequency, style_wofs_frequency_blue
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Water Observations from Space All Time Count of Wet Observations (Beta)",
-                        "name": "wofs_2_summary_wet",
-                        "abstract": """
+                        {
+                            "title": "Water Observations from Space All Time Count of Wet Observations (Beta)",
+                            "name": "wofs_2_summary_wet",
+                            "abstract": """
 The count of wet observations is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows how many times water was detected in observations that were clear. This product was used as a source layer for calculating all time water summary.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
@@ -3354,31 +2283,31 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ga_ls8c_wofs_2_summary",
-                        "time_resolution": "year",
-                        "bands": bands_wofs_2_annual_summary,
-                        "resource_limits": reslim_wofs,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
-                        },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["count_wet"]
-                        },
-                        "styling": {
-                            "default_style": "water_observations",
-                            "styles": [
+                            "product_name": "ga_ls8c_wofs_2_summary",
+                            "time_resolution": "year",
+                            "bands": bands_wofs_2_annual_summary,
+                            "resource_limits": reslim_wofs,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["count_wet"],
+                            },
+                            "styling": {
+                                "default_style": "water_observations",
+                                "styles": [
                                     style_wofs_count_wet,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Water Observations from Space All Time Count of Clear Observations (Beta)",
-                        "name": "wofs_2_summary_clear",
-                        "abstract": """
+                                ],
+                            },
+                        },
+                        {
+                            "title": "Water Observations from Space All Time Count of Clear Observations (Beta)",
+                            "name": "wofs_2_summary_clear",
+                            "abstract": """
 The count of clear observations is one of the statistical summaries of the Water Observations from Space (WOfS) product that shows how many times an area could be clearly seen (I.e. not affected by clouds, shadows or other satellite observation problems). This product was used as a source layer for calculating all time water summary.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019.
@@ -3389,38 +2318,37 @@ For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ga_ls8c_wofs_2_summary",
-                        "bands": bands_wofs_2_annual_summary,
-                        "resource_limits": reslim_wofs,
-                        "time_resolution": "year",
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
-                        },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["count_clear"]
-                        },
-                        "styling": {
-                            "default_style": "annual_clear_observations",
-                            "styles": [
+                            "product_name": "ga_ls8c_wofs_2_summary",
+                            "bands": bands_wofs_2_annual_summary,
+                            "resource_limits": reslim_wofs,
+                            "time_resolution": "year",
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["count_clear"],
+                            },
+                            "styling": {
+                                "default_style": "annual_clear_observations",
+                                "styles": [
                                     style_wofs_summary_clear,
-                            ]
-                        }
-                    },
-
-                ]
-            },
-            {
-                "title": "Landsat",
-                "abstract": "Landsat Fractional Cover based on USGS Level 2 Scenes",
-                "layers": [
-                    {
-                        "title": "Fractional Cover (development)",
-                        "name": "ls_usgs_fc_scene",
-                        "abstract": """
+                                ],
+                            },
+                        },
+                    ],
+                },
+                {
+                    "title": "Landsat",
+                    "abstract": "Landsat Fractional Cover based on USGS Level 2 Scenes",
+                    "layers": [
+                        {
+                            "title": "Fractional Cover (development)",
+                            "name": "ls_usgs_fc_scene",
+                            "abstract": """
 Fractional cover describes the landscape in terms of coverage by green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.) and bare soil. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
@@ -3433,44 +2361,41 @@ The fractional cover algorithm was developed by the Joint Remote Sensing Researc
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ls_usgs_fc_scene",
-                        "bands": bands_fc,
-                        "resource_limits": reslim_srtm,
-                        #"time_resolution": "year",
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "product_name": "ls_usgs_fc_scene",
+                            "bands": bands_fc,
+                            "resource_limits": reslim_srtm,
+                            # "time_resolution": "year",
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": True,
+                            },
+                            "flags": {
+                                "dataset": "ls_usgs_wofs_scene",
+                                "band": "water",
+                                "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
+                                "ignore_info_flags": [],
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["BS", "PV", "NPV"],
+                            },
+                            "styling": {
+                                "default_style": "simple_fc",
+                                "styles": [style_fc_simple],
+                            },
                         },
-                        "flags":{
-                            "dataset": "ls_usgs_wofs_scene",
-                            "band": "water",
-                            "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
-                            "ignore_info_flags": [],
-                        },
-                        "wcs": {
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["BS", "PV", "NPV"]
-                        },
-                        "styling": {
-                            "default_style": "simple_fc",
-                            "styles": [
-                                style_fc_simple
-                            ]
-                        }
-                    },
-
-                ]
-            },
-            {
+                    ],
+                },
+                {
                     "title": "Annual Geometric Median",
                     "abstract": "Landsat Geomedian based on USGS Provisional Collection 2 Level 2 Scenes",
                     "layers": [
-                    {
-                        "title": "Surface Reflectance Annual Geomedian Landsat 8 (Beta)",
-                        "name": "ga_ls8c_gm_2_annual",
-                        "abstract": """
+                        {
+                            "title": "Surface Reflectance Annual Geomedian Landsat 8 (Beta)",
+                            "name": "ga_ls8c_gm_2_annual",
+                            "abstract": """
 Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
 
 In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
@@ -3485,38 +2410,40 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "ga_ls8c_gm_2_annual",
-                        "time_resolution": "year",
-                        "bands": bands_ls8c,
-                        "resource_limits": reslim_srtm,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True,
+                            "product_name": "ga_ls8c_gm_2_annual",
+                            "time_resolution": "year",
+                            "bands": bands_ls8c,
+                            "resource_limits": reslim_srtm,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": True,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["red", "green", "blue"],
+                            },
+                            "styling": {
+                                "default_style": "simple_rgb",
+                                "styles": [
+                                    style_gals_simple_rgb,
+                                    style_gals_irg,
+                                    # style_ls_ndvi, style_ls_ndwi,
+                                    # style_gals_mndwi,
+                                    style_gals_pure_blue,
+                                    style_gals_pure_green,
+                                    style_gals_pure_red,
+                                    style_gals_pure_nir,
+                                    style_gals_pure_swir1,
+                                    style_gals_pure_swir2,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["red", "green", "blue"]
-                        },
-                        "styling": {
-                            "default_style": "simple_rgb",
-                            "styles": [
-                                style_gals_simple_rgb,
-                                style_gals_irg,
-                                # style_ls_ndvi, style_ls_ndwi,
-                                # style_gals_mndwi,
-                                style_gals_pure_blue, style_gals_pure_green, style_gals_pure_red,
-                                style_gals_pure_nir,
-                                style_gals_pure_swir1,
-                                style_gals_pure_swir2,
-                            ]
-                        }
-                    },
-                    {
-                        "title": "Surface Reflectance Annual Geomedian Sentinel-2 (Beta)",
-                        "name": "ga_s2_gm",
-                        "abstract": """
+                        {
+                            "title": "Surface Reflectance Annual Geomedian Sentinel-2 (Beta)",
+                            "name": "ga_s2_gm",
+                            "abstract": """
 Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
 
 In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
@@ -3531,57 +2458,66 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
  """,
-                        "product_name": "ga_s2_gm",
-                        # Low product name
-                        #
-                        # Leave commented until we have an appropriate summary product.
-                        # (Packaged like the main product, but with much much lower
-                        # resolution and much much higher area covered in each dataset.
-                        #
-                        # "low_res_product_name": "ga_s2_gm",
-                        "bands": bands_s2_gm,
-                        "dynamic": False,
-                        "resource_limits": reslim_sentinel2,
-                        "time_resolution": "year",
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": True, # True
-                            "apply_solar_corrections": False,
+                            "product_name": "ga_s2_gm",
+                            # Low product name
+                            #
+                            # Leave commented until we have an appropriate summary product.
+                            # (Packaged like the main product, but with much much lower
+                            # resolution and much much higher area covered in each dataset.
+                            #
+                            # "low_res_product_name": "ga_s2_gm",
+                            "bands": bands_s2_gm,
+                            "dynamic": False,
+                            "resource_limits": reslim_sentinel2,
+                            "time_resolution": "year",
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": True,  # True
+                                "apply_solar_corrections": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [10.0, -10.0],
+                                "default_bands": ["red", "green", "blue"],
+                            },
+                            "styling": {
+                                "default_style": "simple_rgb",
+                                "styles": [
+                                    style_ls_simple_rgb,
+                                    style_s2_irg,
+                                    style_ls_ndvi,
+                                    style_ls_ndwi,
+                                    style_gals_mndwi,
+                                    style_s2_ndci,
+                                    style_sentinel_pure_blue,
+                                    style_ls_pure_green,
+                                    style_ls_pure_red,
+                                    style_s2_pure_redge_1,
+                                    style_s2_pure_redge_2,
+                                    style_s2_pure_redge_3,
+                                    style_ls_pure_nir,
+                                    style_s2_pure_narrow_nir,
+                                    style_s2_pure_swir1,
+                                    style_s2_pure_swir2,
+                                    style_tmad_sdev_std,
+                                    style_tmad_edev_std,
+                                    style_tmad_bcdev_std,
+                                    style_tmad_rgb_std,
+                                    style_tmad_rgb_sens,
+                                ],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:6933",
-                            "native_resolution": [10.0, -10.0],
-                            "default_bands": ["red", "green", "blue"]
-                        },
-                        "styling": {
-                            "default_style": "simple_rgb",
-                            "styles": [
-                                style_ls_simple_rgb,
-                                style_s2_irg,
-                                style_ls_ndvi, style_ls_ndwi, style_gals_mndwi, style_s2_ndci,
-                                style_sentinel_pure_blue, style_ls_pure_green, style_ls_pure_red,
-                                style_s2_pure_redge_1, style_s2_pure_redge_2, style_s2_pure_redge_3,
-                                style_ls_pure_nir, style_s2_pure_narrow_nir,
-                                style_s2_pure_swir1, style_s2_pure_swir2,
-                                style_tmad_sdev_std,
-                                style_tmad_edev_std,
-                                style_tmad_bcdev_std,
-                                style_tmad_rgb_std,
-                                style_tmad_rgb_sens,
-                            ]
-                        }
-                    },
-                ]
-            },
-            {
+                    ],
+                },
+                {
                     "title": "ALOS/PALSAR",
                     "abstract": """Annual mosaic of ALOS/PALSAR and ALOS-2/PALSAR-2 data""",
                     "layers": [
-                    {
-                        "title": "Radar Backscatter Annual Mosaic (ALOS/PALSAR)",
-                        "name": "alos_palsar_mosaic",
-                        "abstract": """
+                        {
+                            "title": "Radar Backscatter Annual Mosaic (ALOS/PALSAR)",
+                            "name": "alos_palsar_mosaic",
+                            "abstract": """
 Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared.
 
 The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR-2 sensors on ALOS-1 and ALOS-2 satellites respectively.
@@ -3594,38 +2530,39 @@ For more information on the product, see https://www.eorc.jaxa.jp/ALOS/en/palsar
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "alos_palsar_mosaic",
-                        "time_resolution": "year",
-                        "bands": bands_alos,
-                        "resource_limits": reslim_alos_palsar,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "product_name": "alos_palsar_mosaic",
+                            "time_resolution": "year",
+                            "bands": bands_alos,
+                            "resource_limits": reslim_alos_palsar,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "flags": {
+                                "dataset": "alos_palsar_mosaic",
+                                "band": "mask",
+                                "ignore_info_flags": [],
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["hh", "hv", "mask"],
+                            },
+                            "styling": {
+                                "default_style": "hh",
+                                "styles": [
+                                    style_alos_hh,
+                                    style_alos_hv,
+                                    style_alos_hv_over_hh,
+                                    style_alos_radar_veg_idx,
+                                ],
+                            },
                         },
-                        "flags":{
-                            "dataset": "alos_palsar_mosaic",
-                            "band": "mask",
-                            "ignore_info_flags": [],
-                        },
-                        "wcs": {
-
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["hh", "hv", "mask"]
-                        },
-                        "styling": {
-                            "default_style": "hh",
-                            "styles": [
-                                style_alos_hh, style_alos_hv, style_alos_hv_over_hh,
-                                style_alos_radar_veg_idx
-                            ]
-                        }
-                    },
-                     {
-                        "title": "Radar Backscatter Annual Mosaic (JERS)",
-                        "name": "jers_mosaic",
-                        "abstract": """
+                        {
+                            "title": "Radar Backscatter Annual Mosaic (JERS)",
+                            "name": "jers_mosaic",
+                            "abstract": """
 Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared.
 The JERS annual mosaic is generated from images acquired by the SAR sensor on the Japanese Earth Resources Satellite-1 (JERS-1) satellite.
 
@@ -3637,45 +2574,40 @@ For more information on the product, see https://www.eorc.jaxa.jp/ALOS/en/palsar
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "jers_sar_tile",
-                        "time_resolution": "year",
-                        "bands": bands_jers,
-                        "resource_limits": reslim_alos_palsar,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "product_name": "jers_sar_tile",
+                            "time_resolution": "year",
+                            "bands": bands_jers,
+                            "resource_limits": reslim_alos_palsar,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "flags": {
+                                "dataset": "jers_sar_tile",
+                                "band": "mask",
+                                "ignore_info_flags": [],
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["hh", "mask"],
+                            },
+                            "styling": {
+                                "default_style": "hh",
+                                "styles": [style_jers_hh],
+                            },
                         },
-                        "flags":{
-                            "dataset": "jers_sar_tile",
-                            "band": "mask",
-                            "ignore_info_flags": [],
-                        },
-                        "wcs": {
-
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["hh", "mask"]
-                        },
-                        "styling": {
-                            "default_style": "hh",
-                            "styles": [
-                                style_jers_hh
-                            ]
-                        }
-                    }
-
-                ]
-            },
-
-            {
+                    ],
+                },
+                {
                     "title": "Shuttle Radar Topography Mission",
                     "abstract": """Digital elevation model from NASA's SRTM<""",
                     "layers": [
-                    {
-                        "title": "Shuttle Radar Topography Mission Digital Elevation Model",
-                        "name": "srtm",
-                        "abstract": """
+                        {
+                            "title": "Shuttle Radar Topography Mission Digital Elevation Model",
+                            "name": "srtm",
+                            "abstract": """
 A Digital Elevation Model (DEM) is a digital representation of Earth’s topography. It helps to understand the land surface characteristics in the height dimension. It is also used as an ancillary dataset to calculate illumination and viewing geometry of a satellite imagery. DE Africa provides access to the Shuttle Radar Topography Mission (SRTM) v 3.0 (SRTMGL1) product.
 
 This elevation model has a spatial resolution of 30 m and is derived from data collected by NASA's Shuttle Radar Topography Mission in 2000.
@@ -3686,31 +2618,28 @@ For more information, see https://lpdaac.usgs.gov/products/srtmgl1v003/
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                        "product_name": "srtm",
-                        "time_resolution": "year",
-                        "bands": bands_elevation,
-                        "resource_limits": reslim_srtm,
-                        "image_processing": {
-                            "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                            "always_fetch_bands": [],
-                            "manual_merge": False,
+                            "product_name": "srtm",
+                            "time_resolution": "year",
+                            "bands": bands_elevation,
+                            "resource_limits": reslim_srtm,
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:4326",
+                                "native_resolution": [25.0, 25.0],
+                                "default_bands": ["elevation"],
+                            },
+                            "styling": {
+                                "default_style": "greyscale",
+                                "styles": [style_greyscale, style_colours],
+                            },
                         },
-                        "wcs": {
-                            "native_crs": "EPSG:4326",
-                            "native_resolution": [25.0, 25.0],
-                            "default_bands": ["elevation"]
-                        },
-                        "styling": {
-                            "default_style": "greyscale",
-                            "styles": [
-                               style_greyscale, style_colours
-                            ]
-                        }
-                    },
-
-                ]
-            },
-        ]
-    }
-]
+                    ],
+                },
+            ],
+        }
+    ],
 }
