@@ -2568,113 +2568,16 @@ style_colours = {
 }
 
 # styles tmad
-style_tmad_smad = {
-    "name": "log_smad",
-    "title": "smad",
-    "abstract": "",
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band_log",
-        "mapped_bands": True,
-        "kwargs": {"band": "smad", "scale_factor": -100.0, "exponent": 1 / 1000.0},
-    },
-    "needed_bands": ["smad"],
-    "color_ramp": [
-        {"value": 0.0, "color": "#ffffff", "alpha": 0},
-        {
-            "value": 0.1,
-            "color": "#A02406",
-        },
-        {"value": 0.5, "color": "#FCF24B"},
-        {
-            "value": 0.9,
-            "color": "#0CCD1D",
-        },
-    ],
-    "legend": {
-        "begin": "0.1",
-        "end": "0.9",
-        "decimal_places": 1,
-        "tick_labels": {
-            "0.1": {"label": "High\ntmad"},
-            "0.9": {"label": "Low\ntmad"},
-        },
-    },
-}
-
-style_tmad_emad = {
-    "name": "log_emad",
-    "title": "emad",
-    "abstract": "",
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band_log",
-        "mapped_bands": True,
-        "kwargs": {"band": "emad", "scale_factor": -100.0, "exponent": 1 / 1000.0},
-    },
-    "needed_bands": ["emad"],
-    "color_ramp": [
-        {"value": 0.0, "color": "#ffffff", "alpha": 0},
-        {
-            "value": 0.1,
-            "color": "#A02406",
-        },
-        {"value": 0.5, "color": "#FCF24B"},
-        {
-            "value": 0.9,
-            "color": "#0CCD1D",
-        },
-    ],
-    "legend": {
-        "begin": "0.1",
-        "end": "0.9",
-        "tick_labels": {
-            "0.1": {"label": "High\ntmad"},
-            "0.9": {"label": "Low\ntmad"},
-        },
-    },
-}
-
-style_tmad_bcmad = {
-    "name": "log_bcmad",
-    "title": "bcmad",
-    "abstract": "",
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band_log",
-        "mapped_bands": True,
-        "kwargs": {"band": "bcmad", "scale_factor": -100.0, "exponent": 1 / 1000.0},
-    },
-    "needed_bands": ["bcmad"],
-    "color_ramp": [
-        {"value": 0.0, "color": "#ffffff", "alpha": 0},
-        {
-            "value": 0.1,
-            "color": "#A02406",
-        },
-        {"value": 0.5, "color": "#FCF24B"},
-        {
-            "value": 0.9,
-            "color": "#0CCD1D",
-        },
-    ],
-    "legend": {
-        "begin": "0.1",
-        "end": "0.9",
-        "tick_labels": {
-            "0.1": {"label": "High\ntmad"},
-            "0.9": {"label": "Low\ntmad"},
-        },
-    },
-}
-
-style_tmad_smad_std = {
-    "name": "arcsec_smad",
+style_tmad_sdev_std = {
+    "name": "arcsec_sdev",
     "title": "SMAD",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_arcsec",
         "mapped_bands": True,
-        "kwargs": {"band": "smad", "scale_from": [0.017, 0.15], "scale_to": [0.0, 4.0]},
+        "kwargs": {"band": "sdev", "scale_from": [0.017, 0.15], "scale_to": [0.0, 4.0]},
     },
-    "needed_bands": ["smad"],
+    "needed_bands": ["sdev"],
     "mpl_ramp": "coolwarm",
     "range": [0.0, 4.0],
     "legend": {
@@ -2688,16 +2591,16 @@ style_tmad_smad_std = {
     },
 }
 
-style_tmad_emad_std = {
-    "name": "log_emad",
+style_tmad_edev_std = {
+    "name": "log_edev",
     "title": "EMAD",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
         "mapped_bands": True,
-        "kwargs": {"band": "emad", "scale_from": [0.025, 0.1], "scale_to": [0.0, 4.0]},
+        "kwargs": {"band": "edev", "scale_from": [0.025, 0.1], "scale_to": [0.0, 4.0]},
     },
-    "needed_bands": ["emad"],
+    "needed_bands": ["edev"],
     "mpl_ramp": "coolwarm",
     "range": [0.0, 4.0],
     "legend": {
@@ -2712,20 +2615,20 @@ style_tmad_emad_std = {
 }
 
 
-style_tmad_bcmad_std = {
-    "name": "log_bcmad",
+style_tmad_bcdev_std = {
+    "name": "log_bcdev",
     "title": "BCMAD",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
         "mapped_bands": True,
         "kwargs": {
-            "band": "bcmad",
+            "band": "bcdev",
             "scale_from": [0.025, 0.13],
             "scale_to": [0.0, 4.0],
         },
     },
-    "needed_bands": ["bcmad"],
+    "needed_bands": ["bcdev"],
     "mpl_ramp": "coolwarm",
     "range": [0.0, 4.0],
     "legend": {
@@ -2748,7 +2651,7 @@ style_tmad_rgb_std = {
             "function": "datacube_ows.band_utils.single_band_arcsec",
             "mapped_bands": True,
             "kwargs": {
-                "band": "smad",
+                "band": "sdev",
                 "scale_from": [0.017, 0.15],
             },
         },
@@ -2756,7 +2659,7 @@ style_tmad_rgb_std = {
             "function": "datacube_ows.band_utils.single_band_offset_log",
             "mapped_bands": True,
             "kwargs": {
-                "band": "emad",
+                "band": "edev",
                 "scale_from": [0.025, 0.1],
             },
         },
@@ -2764,12 +2667,12 @@ style_tmad_rgb_std = {
             "function": "datacube_ows.band_utils.single_band_offset_log",
             "mapped_bands": True,
             "kwargs": {
-                "band": "bcmad",
+                "band": "bcdev",
                 "scale_from": [0.025, 0.13],
             },
         },
     },
-    "additional_bands": ["smad", "bcmad", "emad"],
+    "additional_bands": ["sdev", "bcdev", "edev"],
 }
 
 style_tmad_rgb_sens = {
@@ -2792,106 +2695,6 @@ style_tmad_rgb_sens = {
             "kwargs": {
                 "scale_from": [0.011, 0.07],
             }
-        },
-    },
-}
-
-
-style_tmad_smad = {
-    "name": "log_smad",
-    "title": "smad",
-    "abstract": "",
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band_log",
-        "mapped_bands": True,
-        "kwargs": {"band": "smad", "scale_factor": -100.0, "exponent": 1 / 1000.0},
-    },
-    "needed_bands": ["smad"],
-    "color_ramp": [
-        {"value": 0.0, "color": "#ffffff", "alpha": 0},
-        {
-            "value": 0.1,
-            "color": "#A02406",
-        },
-        {"value": 0.5, "color": "#FCF24B"},
-        {
-            "value": 0.9,
-            "color": "#0CCD1D",
-        },
-    ],
-    "legend": {
-        "start": "0.1",
-        "end": "0.9",
-        "ticks": ["0.1", "0.9"],
-        "tick_labels": {
-            "0.1": {"label": "High\ntmad"},
-            "0.9": {"label": "Low\ntmad"},
-        },
-    },
-}
-
-style_tmad_emad = {
-    "name": "log_emad",
-    "title": "emad",
-    "abstract": "",
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band_log",
-        "mapped_bands": True,
-        "kwargs": {"band": "emad", "scale_factor": -100.0, "exponent": 1 / 1000.0},
-    },
-    "needed_bands": ["emad"],
-    "color_ramp": [
-        {"value": 0.0, "color": "#ffffff", "alpha": 0},
-        {
-            "value": 0.1,
-            "color": "#A02406",
-        },
-        {"value": 0.5, "color": "#FCF24B"},
-        {
-            "value": 0.9,
-            "color": "#0CCD1D",
-        },
-    ],
-    "legend": {
-        "start": "0.1",
-        "end": "0.9",
-        "ticks": ["0.1", "0.9"],
-        "tick_labels": {
-            "0.1": {"label": "High\ntmad"},
-            "0.9": {"label": "Low\ntmad"},
-        },
-    },
-}
-
-style_tmad_bcmad = {
-    "name": "log_bcmad",
-    "title": "bcmad",
-    "abstract": "",
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band_log",
-        "mapped_bands": True,
-        "kwargs": {"band": "bcmad", "scale_factor": -100.0, "exponent": 1 / 1000.0},
-    },
-    "needed_bands": ["bcmad"],
-    "color_ramp": [
-        {"value": 0.0, "color": "#ffffff", "alpha": 0},
-        {
-            "value": 0.1,
-            "color": "#A02406",
-        },
-        {"value": 0.5, "color": "#FCF24B"},
-        {
-            "value": 0.9,
-            "color": "#0CCD1D",
-        },
-    ],
-    "legend": {
-        "start": "0.1",
-        "end": "0.9",
-        "ticks": ["0.1", "0.9"],
-        "tick_labels": {
-            "0.1": {"label": "High\ntmad"},
-            "0.9": {"label": "Low\ntmad"},
         },
     },
 }
@@ -3761,12 +3564,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                                 style_s2_pure_redge_1, style_s2_pure_redge_2, style_s2_pure_redge_3,
                                 style_ls_pure_nir, style_s2_pure_narrow_nir,
                                 style_s2_pure_swir1, style_s2_pure_swir2,
-                                style_tmad_smad,
-                                style_tmad_emad,
-                                style_tmad_bcmad,
-                                style_tmad_smad_std,
-                                style_tmad_emad_std,
-                                style_tmad_bcmad_std,
+                                style_tmad_sdev_std,
+                                style_tmad_edev_std,
+                                style_tmad_bcdev_std,
                                 style_tmad_rgb_std,
                                 style_tmad_rgb_sens,
                             ]
