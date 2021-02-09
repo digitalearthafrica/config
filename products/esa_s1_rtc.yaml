@@ -1,4 +1,4 @@
-name: s1_nrb
+name: s1_rtc
 description: Sentinel 1 Gamma-0 normalised radar backscatter
 metadata_type: eo3
 
@@ -6,7 +6,13 @@ license: CC-BY-4.0
 
 metadata:
   product:
-    name: sentinel-1
+    name: s1_rtc
+
+storage:
+    crs: EPSG:4326
+    resolution:
+        longitude: 0.0002
+        latitude: -0.0002
 
 measurements:
 - name: 'vv'
