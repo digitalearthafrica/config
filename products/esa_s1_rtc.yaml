@@ -1,5 +1,5 @@
 name: s1_rtc
-description: Sentinel 1 Gamma-0 normalised radar backscatter
+description: Sentinel 1 Gamma0 normalised radar backscatter
 metadata_type: eo3
 
 license: CC-BY-4.0
