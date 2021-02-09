@@ -717,7 +717,7 @@ style_wofs_water_annual_wet = {
     "legend": {
         "begin": 0,
         "end": 20,
-        "ticks_every": 10
+        "ticks_every": 10,
         "tick_labels": {
             "20": {"prefix": ">"},
         }
@@ -1272,7 +1272,7 @@ style_wofs_dry_observations = {
         {"value": 901, "color": "#39a500"},
         {"value": 1000, "color": "#026900"},
     ],
-    "legend": "legend": {
+    "legend": {
         "begin": "0",
         "end": "1000",
         "decimal_places": 0,
@@ -1552,11 +1552,7 @@ style_tmad_edev_std = {
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
         "mapped_bands": True,
-        "kwargs": {
-            "band": "edev",
-            "scale_from": [9.235340371976184, 9.310340371976183],
-            "scale_to": [0.0, 4.0],
-        },
+        "kwargs": {"band": "edev", "scale_from": [5.533986959393282, 6.9581719109320925], "scale_to": [0.0, 4.0]},
     },
     "needed_bands": ["edev"],
     "mpl_ramp": "coolwarm",
