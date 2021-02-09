@@ -675,7 +675,6 @@ style_wofs_count_wet = {
         "end": "120",
         "decimal_places": 0,
         "ticks_every": 20,
-        "legend_strip_location": [0.05, 0.5, 0.89, 0.15],
         "tick_labels": {
             "120": {"prefix": ">"},
         }
@@ -713,9 +712,16 @@ style_wofs_water_annual_wet = {
         {"value": 14, "color": "#005FE3"},
         {"value": 16, "color": "#000FE3"},
         {"value": 18, "color": "#000EA9"},
-        {"value": 20, "color": "#5700E3", "legend": {"prefix": ">"}},
+        {"value": 20, "color": "#5700E3"},
     ],
-    "legend": {"begin": 0, "end": 20, "ticks_every": 10},
+    "legend": {
+        "begin": 0,
+        "end": 20,
+        "ticks_every": 10
+        "tick_labels": {
+            "20": {"prefix": ">"},
+        }
+    },
 }
 
 style_wofs_frequency = {
@@ -1315,7 +1321,7 @@ style_jers_hh = {
         {"value": 3025, "color": "#60ba6c"},
         {"value": 4840, "color": "#329b51"},
         {"value": 7260, "color": "#0c7835"},
-        {"value": 9680, "color": "#00441b", "legend": {"prefix": ">"}},  # 8000 * 1.21
+        {"value": 9680, "color": "#00441b"},  # 8000 * 1.21
     ],
     "legend": {
         "begin": 0,
@@ -1351,7 +1357,7 @@ style_alos_hh = {
         {"value": 2500, "color": "#60ba6c"},
         {"value": 4000, "color": "#329b51"},
         {"value": 6000, "color": "#0c7835"},
-        {"value": 8000, "color": "#00441b", "legend": {"prefix": ">"}},
+        {"value": 8000, "color": "#00441b"},
     ],
     "legend": {
         "begin": 0,
@@ -1387,7 +1393,7 @@ style_alos_hv = {
         {"value": 800, "color": "#60ba6c"},
         {"value": 2000, "color": "#329b51"},
         {"value": 3500, "color": "#0c7835"},
-        {"value": 4500, "color": "#00441b", "legend": {"prefix": ">"}},
+        {"value": 4500, "color": "#00441b"},
     ],
     "legend": {
         "begin": 0,
@@ -1466,7 +1472,7 @@ style_greyscale = {
         {"value": 500, "color": "#858585"},
         {"value": 1000, "color": "#adadad"},
         {"value": 2000, "color": "#d4d4d4"},
-        {"value": 4000, "color": "#fafafa", "legend": {"prefix": ">"}},
+        {"value": 4000, "color": "#fafafa"},
     ],
     "legend": {
         "title": "Elevation ",
@@ -1474,6 +1480,9 @@ style_greyscale = {
         "end": "4000",
         "ticks_every": 100,
         "units": "m",
+        "tick_labels": {
+            "4000": {"prefix": ">"},
+        }
     },
 }
 
@@ -1498,7 +1507,7 @@ style_colours = {
         {"value": 500, "color": "#ba6daa"},
         {"value": 900, "color": "#d7a2d6"},
         {"value": 1200, "color": "#e6c8e6"},
-        {"value": 4000, "color": "#ffecf9", "legend": {"prefix": ">"}},
+        {"value": 4000, "color": "#ffecf9"},
     ],
     "legend": {
         "title": "Elevation ",
@@ -1506,6 +1515,9 @@ style_colours = {
         "end": "4000",
         "ticks_every": 400,
         "units": "m",
+        "tick_labels": {
+            "4000": {"prefix": ">"},
+        }
     },
 }
 
