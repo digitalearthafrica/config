@@ -74,6 +74,25 @@ legend_idx_0_1_5ticks = {
     "units": "unitless",
 }
 
+legend_idx_percentage_by_10 = {
+    "begin": "0.0",
+    "end": "1.0",
+    "ticks_every": 0.1,
+    "units": "%",
+    "tick_labels": {
+        "0.0": {"label": "0"},
+        "0.1": {"label": "10"},
+        "0.2": {"label": "20"},
+        "0.3": {"label": "30"},
+        "0.4": {"label": "40"},
+        "0.5": {"label": "50"},
+        "0.6": {"label": "60"},
+        "0.7": {"label": "70"},
+        "0.8": {"label": "80"},
+        "0.9": {"label": "90"},
+        "1.0": {"label": "100"},
+    },
+}
 # bands
 
 bands_ls = {
@@ -245,7 +264,7 @@ style_ls_ndvi = {
     "abstract": "Normalised Difference Vegetation Index - a derived index that correlates well with the existence of vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.norm_diff",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {"band1": "nir", "band2": "red"},
     },
     "needed_bands": ["red", "nir"],
@@ -272,7 +291,7 @@ style_ls_ndwi = {
     "abstract": "Normalised Difference Water Index - a derived index that correlates well with the existence of water (McFeeters 1996)",
     "index_function": {
         "function": "datacube_ows.band_utils.norm_diff",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {"band1": "green", "band2": "nir"},
     },
     "needed_bands": ["green", "nir"],
@@ -305,7 +324,7 @@ style_gals_mndwi = {
     "abstract": "Modified Normalised Difference Water Index - a derived index that correlates well with the existence of water (Xu 2006)",
     "index_function": {
         "function": "datacube_ows.band_utils.norm_diff",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {"band1": "green", "band2": "swir_1"},
     },
     "needed_bands": ["green", "swir_1"],
@@ -328,7 +347,7 @@ style_ls_mndwi = {
     "well with the existence of water (Xu 2006)",
     "index_function": {
         "function": "datacube_ows.band_utils.norm_diff",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {"band1": "green", "band2": "swir1"},
     },
     "needed_bands": ["green", "swir1"],
@@ -519,7 +538,7 @@ style_s2_ndci = {
     "abstract": "Normalised Difference Chlorophyll Index - a derived index that correlates well with the existence of chlorophyll",
     "index_function": {
         "function": "datacube_ows.band_utils.sentinel2_ndci",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "b_red_edge": "red_edge_1",
             "b_red": "red",
@@ -622,7 +641,7 @@ style_wofs_count_wet = {
     "abstract": "WOfS summary showing the count of water observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "count_wet",
         },
@@ -649,9 +668,18 @@ style_wofs_count_wet = {
         {"value": 90, "color": "#005FE3"},
         {"value": 100, "color": "#000FE3"},
         {"value": 110, "color": "#000EA9"},
-        {"value": 120, "color": "#5700E3", "legend": {"prefix": ">"}},
+        {"value": 120, "color": "#5700E3"},
     ],
-    "legend": {"radix_point": 0, "scale_by": 1, "major_ticks": 20},
+    "legend": {
+        "begin": "0",
+        "end": "120",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "legend_strip_location": [0.05, 0.5, 0.89, 0.15],
+        "tick_labels": {
+            "120": {"prefix": ">"},
+        }
+    },
 }
 
 style_wofs_water_annual_wet = {
@@ -660,7 +688,7 @@ style_wofs_water_annual_wet = {
     "abstract": "WOfS summary showing the count of water observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "count_wet",
         },
@@ -696,7 +724,7 @@ style_wofs_frequency = {
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "frequency",
         },
@@ -732,7 +760,7 @@ style_wofs_annual_summary_frequency = {
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "frequency",
         },
@@ -754,7 +782,7 @@ style_wofs_annual_summary_frequency = {
         {"value": 0.9, "color": "#000fe3"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
+    "legend": legend_idx_percentage_by_10,
 }
 
 style_wofs_annual_frequency = {
@@ -763,7 +791,7 @@ style_wofs_annual_frequency = {
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "frequency",
         },
@@ -787,7 +815,7 @@ style_wofs_annual_frequency = {
         {"value": 0.9, "color": "#000fe3"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
+    "legend": legend_idx_percentage_by_10,
 }
 
 style_wofs_frequency_blue = {
@@ -796,7 +824,7 @@ style_wofs_frequency_blue = {
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "frequency",
         },
@@ -824,7 +852,7 @@ style_wofs_frequency_blue = {
         {"value": 0.8, "color": "#2701ff"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
+    "legend": legend_idx_percentage_by_10,
 }
 
 style_wofs_annual_summary_frequency_blue = {
@@ -833,7 +861,7 @@ style_wofs_annual_summary_frequency_blue = {
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "frequency",
         },
@@ -861,7 +889,7 @@ style_wofs_annual_summary_frequency_blue = {
         {"value": 0.8, "color": "#2701ff"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
+    "legend": legend_idx_percentage_by_10,
 }
 
 style_wofs_annual_frequency_blue = {
@@ -870,7 +898,7 @@ style_wofs_annual_frequency_blue = {
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "frequency",
         },
@@ -897,7 +925,7 @@ style_wofs_annual_frequency_blue = {
         {"value": 0.8, "color": "#2701ff"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
+    "legend": legend_idx_percentage_by_10,
 }
 
 style_wofs_summary_clear = {
@@ -906,7 +934,7 @@ style_wofs_summary_clear = {
     "abstract": "WOfS annual summary showing the count of clear observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "count_clear",
         },
@@ -932,13 +960,17 @@ style_wofs_summary_clear = {
         {"value": 120, "color": "#c1ec00"},
         {"value": 140, "color": "#6ee100"},
         {"value": 160, "color": "#39a500"},
-        {"value": 180, "color": "#026900", "legend": {"prefix": ">"}},
+        {"value": 180, "color": "#026900"},
     ],
     "legend": {
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 20,
-        "axes_position": [0.05, 0.5, 0.89, 0.15],
+        "begin": "0",
+        "end": "180",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "legend_strip_location": [0.05, 0.5, 0.89, 0.15],
+        "tick_labels": {
+            "180": {"prefix": ">"},
+        }
     },
 }
 
@@ -948,7 +980,7 @@ style_wofs_beta_summary_clear = {
     "abstract": "WOfS annual summary showing the count of clear observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "count_clear",
         },
@@ -974,12 +1006,16 @@ style_wofs_beta_summary_clear = {
         {"value": 20, "color": "#c1ec00"},
         {"value": 24, "color": "#6ee100"},
         {"value": 27, "color": "#39a500"},
-        {"value": 30, "color": "#026900", "legend": {"prefix": ">"}},
+        {"value": 30, "color": "#026900"},
     ],
     "legend": {
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 10,
+        "begin": "0",
+        "end": "30",
+        "decimal_places": 0,
+        "ticks_every": 10,
+        "tick_labels": {
+            "30": {"prefix": ">"},
+        }
     },
 }
 
@@ -991,7 +1027,7 @@ style_wofs_beta_summary_clear = {
 #     "needed_bands": ["count_dry"],
 #     "index_function": {
 #         "function": "datacube_ows.band_utils.single_band",
-#         "pass_product_cfg": True,
+#         "mapped_bands": True,
 #         "kwargs": {
 #             "band": "count_dry",
 #         }
@@ -1068,7 +1104,7 @@ style_annual_wofs_summary_frequency = {
     "abstract": "WOfS annual summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "frequency",
         },
@@ -1090,7 +1126,7 @@ style_annual_wofs_summary_frequency = {
         {"value": 0.9, "color": "#000fe3"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
+    "legend": legend_idx_percentage_by_10,
 }
 
 style_seasonal_wofs_summary_frequency = {
@@ -1100,7 +1136,7 @@ style_seasonal_wofs_summary_frequency = {
     "needed_bands": ["frequency"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "frequency",
         },
@@ -1120,7 +1156,7 @@ style_seasonal_wofs_summary_frequency = {
         {"value": 0.9, "color": "#000fe3"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": {"units": "%", "radix_point": 0, "scale_by": 100.0, "major_ticks": 0.1},
+    "legend": legend_idx_percentage_by_10,
 }
 
 
@@ -1203,7 +1239,7 @@ style_wofs_dry_observations = {
     "abstract": "WOfS summary showing the count of dry observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "count_dry",
         },
@@ -1228,13 +1264,17 @@ style_wofs_dry_observations = {
         {"value": 700, "color": "#a0fd00"},
         {"value": 800, "color": "#6ee100"},
         {"value": 901, "color": "#39a500"},
-        {"value": 1000, "color": "#026900", "legend": {"prefix": ">"}},
+        {"value": 1000, "color": "#026900"},
     ],
-    "legend": {
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 100,
-        "axes_position": [0.05, 0.5, 0.89, 0.15],
+    "legend": "legend": {
+        "begin": "0",
+        "end": "1000",
+        "decimal_places": 0,
+        "ticks_every": 100,
+        "legend_strip_location": [0.05, 0.5, 0.89, 0.15],
+        "tick_labels": {
+            "1000": {"prefix": ">"},
+        }
     },
 }
 
@@ -1262,7 +1302,7 @@ style_jers_hh = {
     "needed_bands": ["hh"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "hh",
         },
@@ -1298,7 +1338,7 @@ style_alos_hh = {
     "needed_bands": ["hh"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "hh",
         },
@@ -1334,7 +1374,7 @@ style_alos_hv = {
     "needed_bands": ["hv"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "hv",
         },
@@ -1414,7 +1454,7 @@ style_greyscale = {
     "needed_bands": ["elevation"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "elevation",
         },
@@ -1430,9 +1470,9 @@ style_greyscale = {
     ],
     "legend": {
         "title": "Elevation ",
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 100,
+        "begin": "0",
+        "end": "4000",
+        "ticks_every": 100,
         "units": "m",
     },
 }
@@ -1444,7 +1484,7 @@ style_colours = {
     "needed_bands": ["elevation"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
-        "pass_product_cfg": True,
+        "mapped_bands": True,
         "kwargs": {
             "band": "elevation",
         },
@@ -1462,9 +1502,9 @@ style_colours = {
     ],
     "legend": {
         "title": "Elevation ",
-        "radix_point": 0,
-        "scale_by": 1,
-        "major_ticks": 400,
+        "begin": "0",
+        "end": "4000",
+        "ticks_every": 400,
         "units": "m",
     },
 }
@@ -1749,12 +1789,12 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "image_processing": {
                                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                                 "always_fetch_bands": [],
-                                "manual_merge": True,  # True
+                                "manual_merge": False,  # True
                                 "apply_solar_corrections": False,
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["red", "green", "blue"],
                             },
                             "styling": {
@@ -1796,12 +1836,12 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "image_processing": {
                                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                                 "always_fetch_bands": [],
-                                "manual_merge": True,  # True
+                                "manual_merge": False,  # True
                                 "apply_solar_corrections": False,
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["red", "green", "blue"],
                             },
                             "styling": {
@@ -1843,12 +1883,12 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "image_processing": {
                                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                                 "always_fetch_bands": [],
-                                "manual_merge": True,  # True
+                                "manual_merge": False,  # True
                                 "apply_solar_corrections": False,
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["red", "green", "blue"],
                             },
                             "styling": {
@@ -1897,12 +1937,12 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "image_processing": {
                                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                                 "always_fetch_bands": [],
-                                "manual_merge": True,  # True
+                                "manual_merge": False,  # True
                                 "apply_solar_corrections": False,
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["red", "green", "blue"],
                             },
                             "styling": {
@@ -1962,7 +2002,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["water"],
                             },
                             "styling": {
@@ -2001,7 +2041,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["water"],
                             },
                             "styling": {
@@ -2041,7 +2081,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "ESRI:102022",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["frequency"],
                             },
                             "styling": {
@@ -2073,7 +2113,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         #                         },
                         #                         "wcs": {
                         #                             "native_crs": "ESRI:102022",
-                        #                             "native_resolution": [25.0, 25.0],
+                        #                             "native_resolution": [30.0, -30.0],
                         #                             "default_bands": ["count_wet"]
                         #                         },
                         #                         "styling": {
@@ -2103,7 +2143,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                         #                         },
                         #                         "wcs": {
                         #                             "native_crs": "ESRI:102022",
-                        #                             "native_resolution": [25.0, 25.0],
+                        #                             "native_resolution": [30.0, -30.0],
                         #                             "default_bands": ["count_dry"]
                         #                         },
                         #                         "styling": {
@@ -2144,11 +2184,11 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "image_processing": {
                                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                                 "always_fetch_bands": [],
-                                "manual_merge": True,
+                                "manual_merge": False,
                             },
                             "wcs": {
                                 "native_crs": "EPSG:6933",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["frequency"],
                             },
                             "styling": {
@@ -2184,7 +2224,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "EPSG:6933",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["count_wet"],
                             },
                             "styling": {
@@ -2219,7 +2259,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "EPSG:6933",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["count_clear"],
                             },
                             "styling": {
@@ -2258,7 +2298,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "EPSG:6933",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["frequency"],
                             },
                             "styling": {
@@ -2294,7 +2334,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "EPSG:6933",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["count_wet"],
                             },
                             "styling": {
@@ -2329,7 +2369,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "EPSG:6933",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["count_clear"],
                             },
                             "styling": {
@@ -2368,17 +2408,17 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "image_processing": {
                                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                                 "always_fetch_bands": [],
-                                "manual_merge": True,
+                                "manual_merge": False,
                             },
                             "flags": {
-                                "dataset": "ls_usgs_wofs_scene",
+                                "product": "ls_usgs_wofs_scene",
                                 "band": "water",
                                 "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
                                 "ignore_info_flags": [],
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["BS", "PV", "NPV"],
                             },
                             "styling": {
@@ -2417,11 +2457,11 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "image_processing": {
                                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                                 "always_fetch_bands": [],
-                                "manual_merge": True,
+                                "manual_merge": False,
                             },
                             "wcs": {
                                 "native_crs": "EPSG:6933",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [30.0, -30.0],
                                 "default_bands": ["red", "green", "blue"],
                             },
                             "styling": {
@@ -2473,7 +2513,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "image_processing": {
                                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                                 "always_fetch_bands": [],
-                                "manual_merge": True,  # True
+                                "manual_merge": False,  # True
                                 "apply_solar_corrections": False,
                             },
                             "wcs": {
@@ -2540,13 +2580,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                                 "manual_merge": False,
                             },
                             "flags": {
-                                "dataset": "alos_palsar_mosaic",
+                                "product": "alos_palsar_mosaic",
                                 "band": "mask",
                                 "ignore_info_flags": [],
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [0.000222222222222, -0.000222222222222],
                                 "default_bands": ["hh", "hv", "mask"],
                             },
                             "styling": {
@@ -2584,13 +2624,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                                 "manual_merge": False,
                             },
                             "flags": {
-                                "dataset": "jers_sar_tile",
+                                "product": "jers_sar_tile",
                                 "band": "mask",
                                 "ignore_info_flags": [],
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [0.000222222222222, -0.000222222222222],
                                 "default_bands": ["hh", "mask"],
                             },
                             "styling": {
@@ -2629,7 +2669,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             },
                             "wcs": {
                                 "native_crs": "EPSG:4326",
-                                "native_resolution": [25.0, 25.0],
+                                "native_resolution": [0.000277777777780, -0.000277777777780],
                                 "default_bands": ["elevation"],
                             },
                             "styling": {
