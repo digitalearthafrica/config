@@ -2517,7 +2517,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             # (Packaged like the main product, but with much much lower
                             # resolution and much much higher area covered in each dataset.
                             #
-                            # "low_res_product_name": "ga_s2_gm",
+                            "low_res_product_name": "ga_s2_gm_lowres",
                             "bands": bands_s2_gm,
                             "dynamic": False,
                             "resource_limits": reslim_sentinel2,
