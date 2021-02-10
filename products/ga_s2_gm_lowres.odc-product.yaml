@@ -112,9 +112,4 @@ measurements:
   nodata: 0
   aliases:
   - count
-load:
-  crs: EPSG:3857
-  resolution:
-    x: 305.748113140705016
-    y: -305.748113140705016
 ...
