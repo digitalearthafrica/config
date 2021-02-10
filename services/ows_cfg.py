@@ -1522,6 +1522,10 @@ style_colours = {
 }
 
 # styles tmad
+sdev_scaling = [0.020, 0.18]
+edev_scaling = [6.2, 7.3]
+bcdev_scaling = [0.025, 0.13]
+
 style_tmad_sdev_std = {
     "name": "arcsec_sdev",
     "title": "SMAD",
@@ -1529,7 +1533,7 @@ style_tmad_sdev_std = {
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_arcsec",
         "mapped_bands": True,
-        "kwargs": {"band": "sdev", "scale_from": [0.017, 0.15], "scale_to": [0.0, 4.0]},
+        "kwargs": {"band": "sdev", "scale_from": sdev_scaling, "scale_to": [0.0, 4.0]},
     },
     "needed_bands": ["sdev"],
     "mpl_ramp": "coolwarm",
@@ -1552,7 +1556,7 @@ style_tmad_edev_std = {
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
         "mapped_bands": True,
-        "kwargs": {"band": "edev", "scale_from": [5.533986959393282, 6.9581719109320925], "scale_to": [0.0, 4.0]},
+        "kwargs": {"band": "edev", "scale_from": edev_scaling, "scale_to": [0.0, 4.0]},
     },
     "needed_bands": ["edev"],
     "mpl_ramp": "coolwarm",
@@ -1578,7 +1582,7 @@ style_tmad_bcdev_std = {
         "mapped_bands": True,
         "kwargs": {
             "band": "bcdev",
-            "scale_from": [0.025, 0.13],
+            "scale_from": bcdev_scaling,
             "scale_to": [0.0, 4.0],
         },
     },
@@ -1606,7 +1610,7 @@ style_tmad_rgb_std = {
             "mapped_bands": True,
             "kwargs": {
                 "band": "sdev",
-                "scale_from": [0.017, 0.15],
+                "scale_from": sdev_scaling,
             },
         },
         "green": {
@@ -1614,7 +1618,7 @@ style_tmad_rgb_std = {
             "mapped_bands": True,
             "kwargs": {
                 "band": "edev",
-                "scale_from": [0.025, 0.1],
+                "scale_from": edev_scaling,
             },
         },
         "blue": {
@@ -1622,7 +1626,7 @@ style_tmad_rgb_std = {
             "mapped_bands": True,
             "kwargs": {
                 "band": "bcdev",
-                "scale_from": [0.025, 0.13],
+                "scale_from": bcdev_scaling,
             },
         },
     },
@@ -1642,12 +1646,12 @@ style_tmad_rgb_sens = {
         },
         "green": {
             "kwargs": {
-                "scale_from": [0.010, 0.09],
+                "scale_from": [5.9, 6.9],
             }
         },
         "blue": {
             "kwargs": {
-                "scale_from": [0.011, 0.07],
+                "scale_from": [0.008, 0.07],
             }
         },
     },
