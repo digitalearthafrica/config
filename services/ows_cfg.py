@@ -2607,15 +2607,15 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                             "title": "Surface Reflectance Annual Median Absolute Deviations Sentinel-2 (Beta)",
                             "name": "ga_s2_tmad",
                             "abstract": """
-Triple Median Absolute Deviation
-
-Variability is an important characteric that can be used to map and distinguish different types of land surfaces. The median absolute deviation (MAD) is a robust measure (resilient to outliers) of the variability within a dataset. For multi-spectral Earth observation, deviation can be measured against the geomedian of a time-series using a number of distance metrics. Three of these metrics are adopted in this product: - Euclidean distance (EMAD), which is more sensitive to changes in target brightness. - Cosine (spectral) distance (SMAD), which is more sensitive to changes in target spectral response. - Bray Curtis dissimilarity (BCMAD), which is more sensitive to the distribution of the observation values through time. Together, the triple MADs provide information on variance in the intput data over a given time period. The metrics are selected to highlight different types of changes in the landscape.
+Variability is an important characteric that can be used to map and distinguish different types of land surfaces. The median absolute deviation (MAD) is a robust measure (resilient to outliers) of the variability within a dataset. For multi-spectral Earth observation, deviation can be measured against the geomedian of a time-series using a number of distance metrics. Three of these metrics are adopted in this product: - Euclidean distance (EMAD), which is more sensitive to changes in target brightness. - Cosine (spectral) distance (SMAD), which is more sensitive to changes in target spectral response. - Bray Curtis dissimilarity (BCMAD), which is more sensitive to the distribution of the observation values through time. Together, the triple MADs provide information on variance in the input data over a given time period. The metrics are selected to highlight different types of changes in the landscape.
 
 This product has a spatial resolution of 10 m and a temporal coverage of 2019.
 
 It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2019.
 
-For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896
+The MADs can be used on their own or together with geomedian to gain insights about the land surface, e.g. for land cover classificiation and for change detection from year to year.
+
+For more information on the algorithm, see https://doi.org/10.1109/IGARSS.2018.8518312
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
  """,
