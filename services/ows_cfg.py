@@ -136,6 +136,7 @@ bands_s2_gm = {
     "SMAD": ["smad", "sdev"],
     "EMAD": ["emad", "edev"],
     "BCMAD": ["bcmad", "bcdev", "BCDEV"],
+    "COUNT": ["count"]
 }
 
 bands_ls8c = {
@@ -633,6 +634,52 @@ style_sentinel_pure_swir2 = {
         "blue": {"swir2": 1.0},
     },
     "scale_range": [0.0, 3000.0],
+}
+
+style_sentinel_count = {
+    "name": "count",
+    "title": "Included observation count",
+    "abstract": "Count of observations included in geomedian/MAD calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count",
+        },
+    },
+    "needed_bands": ["count"],
+    "include_in_feature_info": False,
+    "color_ramp": [
+        {"value": 0, "color": "#666666", "alpha": 0},
+        {
+            # purely for legend display
+            # we should not get fractional
+            # values in this styles
+            "value": 0.2,
+            "color": "#890000",
+            "alpha": 1,
+        },
+        {"value": 20, "color": "#990000"},
+        {"value": 30, "color": "#E38400"},
+        {"value": 40, "color": "#E3DF00"},
+        {"value": 50, "color": "#A6E300"},
+        {"value": 60, "color": "#00E32D"},
+        {"value": 70, "color": "#00E3C8"},
+        {"value": 80, "color": "#0097E3"},
+        {"value": 90, "color": "#005FE3"},
+        {"value": 100, "color": "#000FE3"},
+        {"value": 110, "color": "#000EA9"},
+        {"value": 120, "color": "#5700E3"},
+    ],
+    "legend": {
+        "begin": "0",
+        "end": "120",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "120": {"prefix": ">"},
+        }
+    },
 }
 
 style_wofs_count_wet = {
@@ -2552,11 +2599,58 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                                     style_s2_pure_narrow_nir,
                                     style_s2_pure_swir1,
                                     style_s2_pure_swir2,
+                                    style_sentinel_count, 
+                                ],
+                            },
+                        },
+                        {
+                            "title": "Surface Reflectance Annual Median Absolute Deviations Sentinel-2 (Beta)",
+                            "name": "ga_s2_tmad",
+                            "abstract": """
+Variability is an important characteric that can be used to map and distinguish different types of land surfaces. The median absolute deviation (MAD) is a robust measure (resilient to outliers) of the variability within a dataset. For multi-spectral Earth observation, deviation can be measured against the geomedian of a time-series using a number of distance metrics. Three of these metrics are adopted in this product: - Euclidean distance (EMAD), which is more sensitive to changes in target brightness. - Cosine (spectral) distance (SMAD), which is more sensitive to changes in target spectral response. - Bray Curtis dissimilarity (BCMAD), which is more sensitive to the distribution of the observation values through time. Together, the triple MADs provide information on variance in the input data over a given time period. The metrics are selected to highlight different types of changes in the landscape.
+
+This product has a spatial resolution of 10 m and a temporal coverage of 2019.
+
+It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2019.
+
+The MADs can be used on their own or together with geomedian to gain insights about the land surface, e.g. for land cover classificiation and for change detection from year to year.
+
+For more information on the algorithm, see https://doi.org/10.1109/IGARSS.2018.8518312
+
+This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+ """,
+                            "product_name": "ga_s2_gm",
+                            # Low product name
+                            #
+                            # Leave commented until we have an appropriate summary product.
+                            # (Packaged like the main product, but with much much lower
+                            # resolution and much much higher area covered in each dataset.
+                            #
+                            "low_res_product_name": "ga_s2_gm_lowres",
+                            "bands": bands_s2_gm,
+                            "dynamic": False,
+                            "resource_limits": reslim_sentinel2,
+                            "time_resolution": "year",
+                            "image_processing": {
+                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                                "always_fetch_bands": [],
+                                "manual_merge": False,  # True
+                                "apply_solar_corrections": False,
+                            },
+                            "wcs": {
+                                "native_crs": "EPSG:6933",
+                                "native_resolution": [10.0, -10.0],
+                                "default_bands": ["red", "green", "blue"],
+                            },
+                            "styling": {
+                                "default_style": "tmad_rgb_std",
+                                "styles": [
+                                    style_tmad_rgb_std,
+                                    style_tmad_rgb_sens,
                                     style_tmad_sdev_std,
                                     style_tmad_edev_std,
                                     style_tmad_bcdev_std,
-                                    style_tmad_rgb_std,
-                                    style_tmad_rgb_sens,
+                                    style_sentinel_count, 
                                 ],
                             },
                         },
