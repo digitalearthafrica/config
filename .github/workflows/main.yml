@@ -3,12 +3,12 @@ name : Terria catalog Linting
 on:
   push:
     paths:
-      - 'services/terria/**'
+      - 'terria/**'
       - .github/workflows/main.yml
   pull_request:
     branches: [ master ]
     paths:
-      - 'services/terria/**'
+      - 'terria/**'
       - .github/workflows/main.yml
 
 jobs:
@@ -27,5 +27,4 @@ jobs:
     - name: Run Json Linter
       run: |
         npm install jsonlint -g
-        jsonlint dev/terria/dea-maps.json -q
-        jsonlint dev/terria/dea.json -q
+        jsonlint terria/africa.json -q
