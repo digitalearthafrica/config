@@ -1,0 +1,31 @@
+name : Terria catalog Linting
+
+on:
+  push:
+    paths:
+      - 'services/terria/**'
+      - .github/workflows/main.yml
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'services/terria/**'
+      - .github/workflows/main.yml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 0
+
+    - name: Setup Node
+      uses: actions/setup-node@v1
+
+    - name: Run Json Linter
+      run: |
+        npm install jsonlint -g
+        jsonlint dev/terria/dea-maps.json -q
+        jsonlint dev/terria/dea.json -q
