@@ -30,15 +30,11 @@ jobs:
     - name: Run linting and tests
       run: ./check-code.sh
 
-    - name: Login to DockerHub
-      uses: docker/login-action@v1
-      with:
-        username: ${DOCKER_USER}
-        password: ${{ secrets.GADOCKERSVC_PASSWORD }}
-
     - name: Push to DockerHub (master branch or tagged release only)
       if: github.ref == 'refs/heads/master' || github.event_name == 'release'
       run: |
+        echo "Login to DockerHub as ${DOCKER_USER}"
+        echo "${{ secrets.GADOCKERSVC_PASSWORD }}" | docker login -u "${DOCKER_USER}" --password-stdin
         # figure out extra tag
         git fetch --prune --unshallow 2> /dev/null || true
         tag=$(git describe --tags)
