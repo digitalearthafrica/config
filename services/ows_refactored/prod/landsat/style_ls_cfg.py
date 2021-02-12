@@ -1,32 +1,4 @@
-
-
-bands_ls8c = {
-    "red": [],
-    "green": [],
-    "blue": [],
-    "nir": [],
-    "swir_1": [],
-    "swir_2": [],
-}
-
-
-
-bands_s2_gm = {
-    "B02": ["band_02", "blue"],
-    "B03": ["band_03", "green"],
-    "B04": ["band_04", "red"],
-    "B05": ["band_05", "red_edge_1"],
-    "B06": ["band_06", "red_edge_2"],
-    "B07": ["band_07", "red_edge_3"],
-    "B08": ["band_08", "nir", "nir_1"],
-    "B8A": ["band_8a", "nir_narrow", "nir_2"],
-    "B11": ["band_11", "swir_1", "swir_16"],
-    "B12": ["band_12", "swir_2", "swir_22"],
-    "SMAD": ["smad", "sdev"],
-    "EMAD": ["emad", "edev"],
-    "BCMAD": ["bcmad", "bcdev", "BCDEV"],
-    "COUNT": ["count"]
-}
+from prod.ows_legend_cfg import legend_idx_0_1_5ticks
 
 style_gals_irg = {
     "name": "infrared_green",
@@ -502,7 +474,7 @@ style_sentinel_count = {
         "ticks_every": 20,
         "tick_labels": {
             "120": {"prefix": ">"},
-        }
+        },
     },
 }
 
@@ -643,173 +615,76 @@ style_tmad_rgb_sens = {
     },
 }
 
+styles_ls8c_list = [
+    style_gals_simple_rgb,
+    style_gals_irg,
+    style_gals_pure_blue,
+    style_gals_pure_green,
+    style_gals_pure_red,
+    style_gals_pure_nir,
+    style_gals_pure_swir1,
+    style_gals_pure_swir2,
+]
 
-layers = {
-                    "title": "Annual Geometric Median",
-                    "abstract": "Landsat Geomedian based on USGS Provisional Collection 2 Level 2 Scenes",
-                    "layers": [
-                        {
-                            "title": "Surface Reflectance Annual Geomedian Landsat 8 (Beta)",
-                            "name": "ga_ls8c_gm_2_annual",
-                            "abstract": """
-Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
+styles_s2_list = [
+    style_ls_simple_rgb,
+    style_s2_irg,
+    style_ls_ndvi,
+    style_ls_ndwi,
+    style_gals_mndwi,
+    style_s2_ndci,
+    style_s2_pure_aerosol,
+    style_sentinel_pure_blue,
+    style_ls_pure_green,
+    style_ls_pure_red,
+    style_s2_pure_redge_1,
+    style_s2_pure_redge_2,
+    style_s2_pure_redge_3,
+    style_ls_pure_nir,
+    style_s2_pure_narrow_nir,
+    style_s2_pure_swir1,
+    style_s2_pure_swir2,
+]
 
-In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
+styles_gm_list = [
+    style_ls_simple_rgb,
+    style_s2_irg,
+    style_ls_ndvi,
+    style_ls_ndwi,
+    style_gals_mndwi,
+    style_s2_ndci,
+    style_sentinel_pure_blue,
+    style_ls_pure_green,
+    style_ls_pure_red,
+    style_s2_pure_redge_1,
+    style_s2_pure_redge_2,
+    style_s2_pure_redge_3,
+    style_ls_pure_nir,
+    style_s2_pure_narrow_nir,
+    style_s2_pure_swir1,
+    style_s2_pure_swir2,
+    style_sentinel_count,
+]
 
-This product has a spatial resolution of 30 m and a temporal coverage of 2018. The surface reflectance values are scaled to be between 0 and 65,455.
+styles_tmads_list = [
+    style_tmad_rgb_std,
+    style_tmad_rgb_sens,
+    style_tmad_sdev_std,
+    style_tmad_edev_std,
+    style_tmad_bcdev_std,
+    style_sentinel_count,
+]
 
-It is derived from Landsat 8 satellite observations as part of a provisional Landsat Collection 2 surface reflectance product.
-
-Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation.
-
-For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896
-
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
-""",
-                            "product_name": "ga_ls8c_gm_2_annual",
-                            "time_resolution": "year",
-                            "bands": bands_ls8c,
-                            "resource_limits": reslim_srtm,
-                            "image_processing": {
-                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                                "always_fetch_bands": [],
-                                "manual_merge": False,
-                            },
-                            "wcs": {
-                                "native_crs": "EPSG:6933",
-                                "native_resolution": [30.0, -30.0],
-                                "default_bands": ["red", "green", "blue"],
-                            },
-                            "styling": {
-                                "default_style": "simple_rgb",
-                                "styles": [
-                                    style_gals_simple_rgb,
-                                    style_gals_irg,
-                                    # style_ls_ndvi, style_ls_ndwi,
-                                    # style_gals_mndwi,
-                                    style_gals_pure_blue,
-                                    style_gals_pure_green,
-                                    style_gals_pure_red,
-                                    style_gals_pure_nir,
-                                    style_gals_pure_swir1,
-                                    style_gals_pure_swir2,
-                                ],
-                            },
-                        },
-                        {
-                            "title": "Surface Reflectance Annual Geomedian Sentinel-2 (Beta)",
-                            "name": "ga_s2_gm",
-                            "abstract": """
-Individual remote sensing images can be affected by noisy data, including clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017).
-
-In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows for conducting further analysis on the composite images just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual median image is calculated from the surface reflectance values drawn from a calendar year.
-
-This product has a spatial resolution of 10 m and a temporal coverage of 2019.
-
-It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2019.
-
-Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation.
-
-For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896
-
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
- """,
-                            "product_name": "ga_s2_gm",
-                            # Low product name
-                            #
-                            # Leave commented until we have an appropriate summary product.
-                            # (Packaged like the main product, but with much much lower
-                            # resolution and much much higher area covered in each dataset.
-                            #
-                            "low_res_product_name": "ga_s2_gm_lowres",
-                            "bands": bands_s2_gm,
-                            "dynamic": False,
-                            "resource_limits": reslim_sentinel2,
-                            "time_resolution": "year",
-                            "image_processing": {
-                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                                "always_fetch_bands": [],
-                                "manual_merge": False,  # True
-                                "apply_solar_corrections": False,
-                            },
-                            "wcs": {
-                                "native_crs": "EPSG:6933",
-                                "native_resolution": [10.0, -10.0],
-                                "default_bands": ["red", "green", "blue"],
-                            },
-                            "styling": {
-                                "default_style": "simple_rgb",
-                                "styles": [
-                                    style_ls_simple_rgb,
-                                    style_s2_irg,
-                                    style_ls_ndvi,
-                                    style_ls_ndwi,
-                                    style_gals_mndwi,
-                                    style_s2_ndci,
-                                    style_sentinel_pure_blue,
-                                    style_ls_pure_green,
-                                    style_ls_pure_red,
-                                    style_s2_pure_redge_1,
-                                    style_s2_pure_redge_2,
-                                    style_s2_pure_redge_3,
-                                    style_ls_pure_nir,
-                                    style_s2_pure_narrow_nir,
-                                    style_s2_pure_swir1,
-                                    style_s2_pure_swir2,
-                                    style_sentinel_count,
-                                ],
-                            },
-                        },
-                        {
-                            "title": "Surface Reflectance Annual Median Absolute Deviations Sentinel-2 (Beta)",
-                            "name": "ga_s2_tmad",
-                            "abstract": """
-Variability is an important characteric that can be used to map and distinguish different types of land surfaces. The median absolute deviation (MAD) is a robust measure (resilient to outliers) of the variability within a dataset. For multi-spectral Earth observation, deviation can be measured against the geomedian of a time-series using a number of distance metrics. Three of these metrics are adopted in this product: - Euclidean distance (EMAD), which is more sensitive to changes in target brightness. - Cosine (spectral) distance (SMAD), which is more sensitive to changes in target spectral response. - Bray Curtis dissimilarity (BCMAD), which is more sensitive to the distribution of the observation values through time. Together, the triple MADs provide information on variance in the input data over a given time period. The metrics are selected to highlight different types of changes in the landscape.
-
-This product has a spatial resolution of 10 m and a temporal coverage of 2019.
-
-It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2019.
-
-The MADs can be used on their own or together with geomedian to gain insights about the land surface, e.g. for land cover classificiation and for change detection from year to year.
-
-For more information on the algorithm, see https://doi.org/10.1109/IGARSS.2018.8518312
-
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
- """,
-                            "product_name": "ga_s2_gm",
-                            # Low product name
-                            #
-                            # Leave commented until we have an appropriate summary product.
-                            # (Packaged like the main product, but with much much lower
-                            # resolution and much much higher area covered in each dataset.
-                            #
-                            "low_res_product_name": "ga_s2_gm_lowres",
-                            "bands": bands_s2_gm,
-                            "dynamic": False,
-                            "resource_limits": reslim_sentinel2,
-                            "time_resolution": "year",
-                            "image_processing": {
-                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                                "always_fetch_bands": [],
-                                "manual_merge": False,  # True
-                                "apply_solar_corrections": False,
-                            },
-                            "wcs": {
-                                "native_crs": "EPSG:6933",
-                                "native_resolution": [10.0, -10.0],
-                                "default_bands": ["red", "green", "blue"],
-                            },
-                            "styling": {
-                                "default_style": "tmad_rgb_std",
-                                "styles": [
-                                    style_tmad_rgb_std,
-                                    style_tmad_rgb_sens,
-                                    style_tmad_sdev_std,
-                                    style_tmad_edev_std,
-                                    style_tmad_bcdev_std,
-                                    style_sentinel_count,
-                                ],
-                            },
-                        },
-                    ],
-                }
+styles_sr_list = [
+    style_ls_simple_rgb,
+    style_ls_irg,
+    style_ls_ndvi,
+    style_ls_ndwi,
+    style_ls_mndwi,
+    style_ls_pure_blue,
+    style_ls_pure_green,
+    style_ls_pure_red,
+    style_sentinel_pure_nir,
+    style_sentinel_pure_swir1,
+    style_sentinel_pure_swir2,
+]

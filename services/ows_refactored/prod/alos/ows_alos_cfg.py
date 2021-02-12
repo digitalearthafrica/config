@@ -1,3 +1,5 @@
+from prod.ows_reslim_cfg import reslim_alos_palsar
+
 bands_alos = {"hh": [], "hv": [], "mask": [], "date": [], "linci": []}
 
 
@@ -117,9 +119,9 @@ style_alos_radar_veg_idx = {
 }
 
 layer = {
-                            "title": "Radar Backscatter Annual Mosaic (ALOS/PALSAR)",
-                            "name": "alos_palsar_mosaic",
-                            "abstract": """
+    "title": "Radar Backscatter Annual Mosaic (ALOS/PALSAR)",
+    "name": "alos_palsar_mosaic",
+    "abstract": """
 Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared.
 
 The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA's PALSAR and PALSAR-2 sensors on ALOS-1 and ALOS-2 satellites respectively.
@@ -132,32 +134,32 @@ For more information on the product, see https://www.eorc.jaxa.jp/ALOS/en/palsar
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-                            "product_name": "alos_palsar_mosaic",
-                            "time_resolution": "year",
-                            "bands": bands_alos,
-                            "resource_limits": reslim_alos_palsar,
-                            "image_processing": {
-                                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                                "always_fetch_bands": [],
-                                "manual_merge": False,
-                            },
-                            "flags": {
-                                "product": "alos_palsar_mosaic",
-                                "band": "mask",
-                                "ignore_info_flags": [],
-                            },
-                            "wcs": {
-                                "native_crs": "EPSG:4326",
-                                "native_resolution": [0.000222222222222, -0.000222222222222],
-                                "default_bands": ["hh", "hv", "mask"],
-                            },
-                            "styling": {
-                                "default_style": "hh",
-                                "styles": [
-                                    style_alos_hh,
-                                    style_alos_hv,
-                                    style_alos_hv_over_hh,
-                                    style_alos_radar_veg_idx,
-                                ],
-                            },
-                        }
+    "product_name": "alos_palsar_mosaic",
+    "time_resolution": "year",
+    "bands": bands_alos,
+    "resource_limits": reslim_alos_palsar,
+    "image_processing": {
+        "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+        "always_fetch_bands": [],
+        "manual_merge": False,
+    },
+    "flags": {
+        "product": "alos_palsar_mosaic",
+        "band": "mask",
+        "ignore_info_flags": [],
+    },
+    "wcs": {
+        "native_crs": "EPSG:4326",
+        "native_resolution": [0.000222222222222, -0.000222222222222],
+        "default_bands": ["hh", "hv", "mask"],
+    },
+    "styling": {
+        "default_style": "hh",
+        "styles": [
+            style_alos_hh,
+            style_alos_hv,
+            style_alos_hv_over_hh,
+            style_alos_radar_veg_idx,
+        ],
+    },
+}
