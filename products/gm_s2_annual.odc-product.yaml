@@ -4,7 +4,7 @@ metadata_type: eo3
 
 metadata:
   product:
-    name: ga_s2_gm
+    name: gm_s2_annual
 
 storage:
   crs: EPSG:6933

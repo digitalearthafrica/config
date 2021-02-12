@@ -5,7 +5,7 @@ metadata_type: eo3
 
 metadata:
   product:
-    name: ga_s2_clear_pixel_count
+    name: pc_s2_annual
 
 storage:
     crs: EPSG:6933
