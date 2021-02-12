@@ -1,7 +1,8 @@
 # Digital Earth Africa Config
 Config files for Digital Earth Africa datacube and associated applications
 
-[![Build Status](https://travis-ci.org/digitalearthafrica/config.svg?branch=master)](https://travis-ci.org/digitalearthafrica/config)
+![Docker Image CI](https://github.com/digitalearthafrica/config/workflows/Docker%20Image%20CI/badge.svg)
+![Terria catalog Linting](https://github.com/digitalearthafrica/config/workflows/Terria%20catalog%20Linting/badge.svg)
 
 Changes to this repo will generate a new docker image that includes the config files,
 
