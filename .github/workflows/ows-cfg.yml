@@ -37,7 +37,7 @@ jobs:
         docker-compose -f docker-compose.ows.yaml down
       env:
         OWS_CFG_MOUNT: ./services/ows_refactored/prod
-        OWS_INVENTORY_JSON: ./services/ows_refactored/inventory.json
+        OWS_INVENTORY_JSON: ./services/ows_refactored/prod/inventory.json
         DATACUBE_OWS_CFG: prod.ows_root_cfg.ows_cfg
         WMS_CONFIG_FILE: ows_root_cfg.py
         CFG_PATH_PREFIX: /env/config/prod
