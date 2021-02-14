@@ -40,4 +40,4 @@ jobs:
         OWS_INVENTORY_JSON: ./services/ows_refactored/inventory.json
         DATACUBE_OWS_CFG: prod.ows_root_cfg.ows_cfg
         WMS_CONFIG_FILE: ows_root_cfg.py
-        CFG_PATH_PREFIX: /env/config/ows_refactored
+        CFG_PATH_PREFIX: /env/config/prod
