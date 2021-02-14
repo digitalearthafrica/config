@@ -1,9 +1,6 @@
-from prod.ows_reslim_cfg import reslim_srtm
+from prod.ows_reslim_cfg import reslim_srtm, reslim_alos_palsar
 
 # bands
-
-
-bands_usgs_wofs_summary = {"count_wet": [], "count_dry": [], "frequency": []}
 
 
 bands_elevation = {

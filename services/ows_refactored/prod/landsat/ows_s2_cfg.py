@@ -1,6 +1,6 @@
 from prod.landsat.style_ls_cfg import styles_s2_list
 from prod.ows_reslim_cfg import reslim_srtm
-from prod.landsat.bands_ls_cfg import bands_sentinel
+from prod.landsat.band_ls_cfg import bands_sentinel
 
 layers = {
     "title": "Sentinel",

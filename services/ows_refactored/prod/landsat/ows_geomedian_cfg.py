@@ -4,7 +4,7 @@ from prod.landsat.style_ls_cfg import (
     styles_gm_list,
     styles_tmads_list,
 )
-from prod.landsat.bands_ls_cfg import bands_s2_gm, bands_ls8c
+from prod.landsat.band_ls_cfg import bands_s2_gm, bands_ls8c
 
 layers = {
     "title": "Annual Geometric Median",
