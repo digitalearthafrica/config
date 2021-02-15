@@ -10,9 +10,10 @@ This file will act as an assembler which include all the layers required for the
 - resource limit definition
 - custom functions
 
-### Layers Groups
-##### dev_only
-For products that are not to be released to Prod or pending decision for approval to deploy to Production.
+### deployment Groups
+- prod -> africa prod deployment
+- prod-af -> africa prod af-south-1 region
+- dev-af -> africa dev deployment in af-south-1 region
 
 ### Best practices
 #### individual style
