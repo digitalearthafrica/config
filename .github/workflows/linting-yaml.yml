@@ -1,0 +1,27 @@
+name : Lint YAML files
+
+on:
+  push:
+    paths:
+      - 'products/**'
+      - .github/workflows/linting-yaml.yml
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'products/**'
+
+jobs:
+  yamllint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Check file naming
+      run: |
+        find products/*.yml | grep . || echo "Found a file with 'yml' in the name, please rename with 'yaml"
+
+    - name: yaml-lint
+      uses: ibiqlik/action-yamllint@v3
+      with:
+        file_or_dir: products/*.yaml products/*.yml
+        # config_file: .yamllint.yml

@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'terria/**'
-      - .github/workflows/main.yml
+      - .github/workflows/linting-json.yml
   pull_request:
     branches: [ master ]
     paths:
@@ -12,7 +12,7 @@ on:
       - .github/workflows/main.yml
 
 jobs:
-  build:
+  jsonlint:
     runs-on: ubuntu-latest
 
     steps:
