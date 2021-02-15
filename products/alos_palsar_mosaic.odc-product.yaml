@@ -1,0 +1,62 @@
+---
+name: alos_palsar_mosaic
+description: ALOS/PALSAR and ALOS-2/PALSAR-2 annual mosaic tiles generated
+  for use in the Data Cube - 25m pixel spacing, WGS84. These tiles are derived
+  from the orignal JAXA mosaics with conversion to GeoTIFF.
+metadata_type: eo
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.000222222222222
+    latitude: -0.000222222222222
+  tile_size:
+    longitude: 5
+    latitude: 5
+
+metadata:
+  platform:
+    code: ALOS/ALOS-2
+  instrument:
+    name: PALSAR/PALSAR-2
+  product_type: gamma0
+  format:
+    name: GeoTIFF
+
+measurements:
+  - name: "hh"
+    aliases: [hh]
+    dtype: int16
+    nodata: 0
+    units: "1"
+  - name: "hv"
+    aliases: [hv]
+    dtype: int16
+    nodata: 0
+    units: "1"
+  - name: "date"
+    aliases: [date]
+    dtype: int16
+    nodata: 0
+    units: "1"
+  - name: "linci"
+    aliases: [local incidence angle, linci, incidence]
+    dtype: uint8
+    nodata: 0
+    units: "1"
+  - name: "mask"
+    aliases: [mask]
+    dtype: uint8
+    nodata: 0
+    units: "1"
+    flags_definition:
+      category:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Mask image as provided by JAXA - Ocean and water
+          , lay over, shadowing, land.
+        values:
+          0: no_data
+          50: water
+          100: lay_over
+          150: shadowing
+          255: land

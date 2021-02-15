@@ -1,0 +1,23 @@
+---
+name: srtm
+description: 1 second elevation model
+metadata_type: eo
+
+metadata:
+  platform:
+    code: SRTM
+    instrument:
+      name: SIR
+  product_type: DEM
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.000277777777780
+    latitude: -0.000277777777780
+
+measurements:
+  - name: elevation
+    dtype: int16
+    nodata: -32768.0
+    units: 'metre'
