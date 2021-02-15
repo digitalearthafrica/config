@@ -51,6 +51,6 @@ jobs:
       env:
         OWS_CFG_MOUNT: ./services
         OWS_INVENTORY_JSON: ./services/ows_refactored/prod-af/inventory.json
-        DATACUBE_OWS_CFG: ows_config.deafrica_prod.ows_cfg.ows_cfg
-        WMS_CONFIG_FILE: deafrica_prod.ows_cfg.py
+        DATACUBE_OWS_CFG: ows_config.deafrica_prod_af.ows_cfg.ows_cfg
+        WMS_CONFIG_FILE: deafrica_prod_af.ows_cfg.py
         CFG_PATH_PREFIX: /env/config/ows_config
