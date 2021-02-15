@@ -1,0 +1,56 @@
+name: OWS CFG Test
+
+on:
+  push:
+    path:
+      - 'services/**'
+      - .github/workflows/ows-cfg.yaml
+    pull_request:
+      branches: [ master ]
+      paths:
+        - 'services/**'
+        - .github/workflows/ows-cfg.yaml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+
+    - name: Run Python Linter
+      run: |
+        python -m pip install pylint boto3
+        ./check-code.sh
+
+    - name: Run ows_refactored_cfg test (prod)
+      run: |
+        docker-compose -f docker-compose.ows.yaml up -d
+        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "datacube system init"
+        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./compare-cfg.sh"
+        docker-compose -f docker-compose.ows.yaml down
+      env:
+        OWS_CFG_MOUNT: ./services/ows_refactored/prod
+        OWS_INVENTORY_JSON: ./services/ows_refactored/prod/inventory.json
+        DATACUBE_OWS_CFG: prod.ows_root_cfg.ows_cfg
+        WMS_CONFIG_FILE: ows_root_cfg.py
+        CFG_PATH_PREFIX: /env/config/prod
+
+    - name: Run ows_cfg test (Prod-af)
+      run: |
+        docker-compose -f docker-compose.ows.yaml up -d
+        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "datacube system init"
+        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./compare-cfg.sh"
+        docker-compose -f docker-compose.ows.yaml down
+      env:
+        OWS_CFG_MOUNT: ./services/ows_refactored/prod-af
+        OWS_INVENTORY_JSON: ./services/ows_refactored/prod-af/inventory.json
+        DATACUBE_OWS_CFG: ows_config.ows_cfg.ows_cfg
+        WMS_CONFIG_FILE: ows_cfg.py
+        CFG_PATH_PREFIX: /env/config/ows_config

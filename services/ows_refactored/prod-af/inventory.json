@@ -1,0 +1,30 @@
+{
+    "total_layers_count": 1,
+    "layers": [
+        {
+            "product": [
+                "s2_l2a"
+            ],
+            "styles_count": 17,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "ndci",
+                "aerosol",
+                "blue",
+                "green",
+                "red",
+                "red_edge_1",
+                "red_edge_2",
+                "red_edge_3",
+                "nir",
+                "narrow_nir",
+                "swir_1",
+                "swir_2"
+            ]
+        }
+    ]
+}

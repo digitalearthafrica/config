@@ -1,0 +1,268 @@
+{
+    "total_layers_count": 20,
+    "layers": [
+        {
+            "product": [
+                "ls8_usgs_sr_scene"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir1",
+                "swir2"
+            ]
+        },
+        {
+            "product": [
+                "ls7_usgs_sr_scene"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir1",
+                "swir2"
+            ]
+        },
+        {
+            "product": [
+                "ls5_usgs_sr_scene"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir1",
+                "swir2"
+            ]
+        },
+        {
+            "product": [
+                "s2_l2a"
+            ],
+            "styles_count": 17,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "ndci",
+                "aerosol",
+                "blue",
+                "green",
+                "red",
+                "red_edge_1",
+                "red_edge_2",
+                "red_edge_3",
+                "nir",
+                "narrow_nir",
+                "swir_1",
+                "swir_2"
+            ]
+        },
+        {
+            "product": [
+                "ls_usgs_wofs_scene"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "observations",
+                "wet"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "observations",
+                "wet"
+            ]
+        },
+        {
+            "product": [
+                "ls_usgs_wofs_summary"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "WOfS_frequency",
+                "WOfS_frequency_blues_transparent"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_annual_summary"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "WOfS_frequency",
+                "WOfS_frequency_blues_transparent"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_annual_summary"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "water_observations"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_annual_summary"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "annual_clear_observations"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_summary"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "WOfS_frequency",
+                "WOfS_frequency_blues_transparent"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_summary"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "water_observations"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_summary"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "annual_clear_observations"
+            ]
+        },
+        {
+            "product": [
+                "ls_usgs_fc_scene"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "simple_fc"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_gm_2_annual"
+            ],
+            "styles_count": 8,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir_1",
+                "swir_2"
+            ]
+        },
+        {
+            "product": [
+                "ga_s2_gm"
+            ],
+            "styles_count": 17,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "ndci",
+                "blue",
+                "green",
+                "red",
+                "red_edge_1",
+                "red_edge_2",
+                "red_edge_3",
+                "nir",
+                "narrow_nir",
+                "swir_1",
+                "swir_2",
+                "count"
+            ]
+        },
+        {
+            "product": [
+                "ga_s2_gm"
+            ],
+            "styles_count": 6,
+            "styles_list": [
+                "tmad_rgb_std",
+                "tmad_rgb_sens",
+                "arcsec_sdev",
+                "log_edev",
+                "log_bcdev",
+                "count"
+            ]
+        },
+        {
+            "product": [
+                "alos_palsar_mosaic"
+            ],
+            "styles_count": 4,
+            "styles_list": [
+                "hh",
+                "hv",
+                "hh_hv_hv_over_hh",
+                "rvi"
+            ]
+        },
+        {
+            "product": [
+                "jers_sar_tile"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "hh"
+            ]
+        },
+        {
+            "product": [
+                "srtm"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "greyscale",
+                "colours"
+            ]
+        }
+    ]
+}
