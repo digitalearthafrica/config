@@ -233,11 +233,11 @@ ows_cfg = {
             "layers": [
                 # Hierarchical list of layers.  May be a combination of unnamed/unmappable folder-layers or named mappable layers.
                 {
-                    "include": "prod.landsat.ows_sr_cfg.layers",
+                    "include": "prod.surface_reflectance.ows_sr_cfg.layers",
                     "type": "python",
                 },
                 {
-                    "include": "prod.landsat.ows_s2_cfg.layers",
+                    "include": "prod.surface_reflectance.ows_s2_cfg.layers",
                     "type": "python",
                 },
                 {
@@ -253,7 +253,7 @@ ows_cfg = {
                     "type": "python",
                 },
                 {
-                    "include": "prod.landsat.ows_geomedian_cfg.layers",
+                    "include": "prod.surface_reflectance.ows_geomedian_cfg.layers",
                     "type": "python",
                 },
                 {
