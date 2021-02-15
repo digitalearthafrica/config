@@ -1,5 +1,5 @@
 name: gm_s2_annual
-description: Annual Geometric Median, Sentinel-2
+description: Surface Reflectance Annual Geometric Median Absolute Deviations (Cosine/Euclidean/Bray-Curtis distance), Sentinel-2
 metadata_type: eo3
 
 metadata:
