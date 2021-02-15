@@ -18,10 +18,11 @@ jobs:
 
     - name: Check file naming
       run: |
-        find products/*.yml | grep . || echo "Found a file with 'yml' in the name, please rename with 'yaml"
+        ls -lah
+        find products/*.yml | grep .
 
     - name: yaml-lint
       uses: ibiqlik/action-yamllint@v3
       with:
-        file_or_dir: products/*.yaml products/*.yml
+        file_or_dir: ./products/*.yaml ./products/*.yml
         # config_file: .yamllint.yml
