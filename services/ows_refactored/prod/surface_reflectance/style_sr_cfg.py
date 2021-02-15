@@ -345,20 +345,30 @@ style_s2_ndci = {
     },
     "needed_bands": ["red_edge_1", "red", "green", "swir_2"],
     "color_ramp": [
-        {"value": -0.1, "color": "#1696FF", "legend": {"prefix": "<"}},
         {"value": -0.1, "color": "#1696FF"},
-        {"value": 0.0, "color": "#00FFDF", "legend": {}},
+        {"value": -0.1, "color": "#1696FF"},
+        {"value": 0.0, "color": "#00FFDF"},
         {
             "value": 0.1,
             "color": "#FFF50E",
         },
-        {"value": 0.2, "color": "#FFB50A", "legend": {}},
+        {"value": 0.2, "color": "#FFB50A"},
         {
             "value": 0.4,
             "color": "#FF530D",
         },
-        {"value": 0.5, "color": "#FF0000", "legend": {"prefix": ">"}},
+        {"value": 0.5, "color": "#FF0000"},
     ],
+    "legend": {
+        "begin": "-0.1",
+        "end": "0.5",
+        "decimal_places": 1,
+        "ticks_every": 0.1,
+        "tick_labels": {
+            "-0.1": {"prefix": "<"},
+            "0.5": {"prefix": ">"},
+        },
+    },
 }
 
 style_s2_pure_aerosol = {
