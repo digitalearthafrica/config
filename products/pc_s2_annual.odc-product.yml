@@ -3,6 +3,8 @@ description: Surface Reflectance Annual Clear Pixel Count, Sentinel-2
 
 metadata_type: eo3
 
+license: CC-BY-4.0
+
 metadata:
   product:
     name: pc_s2_annual
