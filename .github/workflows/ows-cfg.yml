@@ -41,3 +41,16 @@ jobs:
         DATACUBE_OWS_CFG: prod.ows_root_cfg.ows_cfg
         WMS_CONFIG_FILE: ows_root_cfg.py
         CFG_PATH_PREFIX: /env/config/prod
+
+    - name: Run ows_cfg test (Prod-af)
+      run: |
+        docker-compose -f docker-compose.ows.yaml up -d
+        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "datacube system init"
+        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./compare-cfg.sh"
+        docker-compose -f docker-compose.ows.yaml down
+      env:
+        OWS_CFG_MOUNT: ./services
+        OWS_INVENTORY_JSON: ./services/ows_refactored/prod-af/inventory.json
+        DATACUBE_OWS_CFG: ows_config.deafrica_prod.ows_cfg.ows_cfg
+        WMS_CONFIG_FILE: deafrica_prod.ows_cfg.py
+        CFG_PATH_PREFIX: /env/config/ows_config
