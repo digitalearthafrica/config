@@ -18,11 +18,10 @@ jobs:
 
     - name: Check file naming
       run: |
-        ls -lah
         find products/*.yml | grep .
+        if [ $files -gt 0 ]; then echo "file found named .yml, please rename" && exit 1; fi
 
     - name: yaml-lint
       uses: ibiqlik/action-yamllint@v3
       with:
-        file_or_dir: ./products/*.yaml ./products/*.yml
-        # config_file: .yamllint.yml
+        file_or_dir: products/*.yaml
