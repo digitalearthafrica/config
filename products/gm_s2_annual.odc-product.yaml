@@ -1,10 +1,12 @@
-name: ga_s2_gm
-description: Annual Geometric Median, Sentinel-2
+name: gm_s2_annual
+description: Surface Reflectance Annual Geometric Median and Median Absolute Deviations, Sentinel-2
 metadata_type: eo3
+
+license: CC-BY-4.0
 
 metadata:
   product:
-    name: ga_s2_gm
+    name: gm_s2_annual
 
 storage:
   crs: EPSG:6933

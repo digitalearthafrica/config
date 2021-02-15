@@ -1,11 +1,13 @@
-name: ga_s2_clear_pixel_count
-description: Clear Pixel Count S2A/B
+name: pc_s2_annual
+description: Surface Reflectance Annual Clear Pixel Count, Sentinel-2
 
 metadata_type: eo3
 
+license: CC-BY-4.0
+
 metadata:
   product:
-    name: ga_s2_clear_pixel_count
+    name: pc_s2_annual
 
 storage:
     crs: EPSG:6933
