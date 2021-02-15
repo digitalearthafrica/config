@@ -1,10 +1,10 @@
 from prod.ows_reslim_cfg import reslim_sentinel2, reslim_srtm
-from prod.landsat.style_ls_cfg import (
+from prod.surface_reflectance.style_sr_cfg import (
     styles_ls8c_list,
     styles_gm_list,
     styles_tmads_list,
 )
-from prod.landsat.band_ls_cfg import bands_s2_gm, bands_ls8c
+from prod.surface_reflectance.band_sr_cfg import bands_s2_gm, bands_ls8c
 
 layers = {
     "title": "Annual Geometric Median",

@@ -1,6 +1,6 @@
 from prod.ows_reslim_cfg import reslim_landsat
-from prod.landsat.band_ls_cfg import bands_ls
-from prod.landsat.style_ls_cfg import styles_sr_list
+from prod.surface_reflectance.band_sr_cfg import bands_ls
+from prod.surface_reflectance.style_sr_cfg import styles_sr_list
 
 layers = {
     "title": "Landsat",
