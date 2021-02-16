@@ -31,7 +31,7 @@ jobs:
 
     - name: Run ows_refactored_cfg test (prod)
       run: |
-        docker-compose -f docker-compose.ows.yaml up -d
+        docker-compose --log-level DEBUG -f docker-compose.ows.yaml up -d
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "datacube system init"
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./compare-cfg.sh"
         docker-compose -f docker-compose.ows.yaml down
@@ -44,13 +44,13 @@ jobs:
 
     - name: Run ows_cfg test (Prod-af)
       run: |
-        docker-compose -f docker-compose.ows.yaml up -d
+        docker-compose --log-level DEBUG -f docker-compose.ows.yaml up -d
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "datacube system init"
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./compare-cfg.sh"
         docker-compose -f docker-compose.ows.yaml down
       env:
-        OWS_CFG_MOUNT: ./services/ows_refactored/prod-af
-        OWS_INVENTORY_JSON: ./services/ows_refactored/prod-af/inventory.json
-        DATACUBE_OWS_CFG: ows_config.ows_cfg.ows_cfg
-        WMS_CONFIG_FILE: ows_cfg.py
-        CFG_PATH_PREFIX: /env/config/ows_config
+        OWS_CFG_MOUNT: ./services/ows_refactored/prod_af
+        OWS_INVENTORY_JSON: ./services/ows_refactored/prod_af/inventory.json
+        DATACUBE_OWS_CFG: prod_af.ows_root_cfg.ows_cfg
+        WMS_CONFIG_FILE: ows_root_cfg.py
+        CFG_PATH_PREFIX: /env/config/prod_af
