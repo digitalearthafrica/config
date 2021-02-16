@@ -1,25 +1,20 @@
 ---
-name: gm_s2_annual
-description: Surface Reflectance Annual Geometric Median and Median
-  Absolute Deviations, Sentinel-2
+name: s2_l2a
+description: Sentinel-2a and Sentinel-2b imagery, processed to Level
+  2A (Surface Reflectance) and converted to Cloud Optimized GeoTIFFs
 metadata_type: eo3
-
-license: CC-BY-4.0
 
 metadata:
   product:
-    name: gm_s2_annual
-
-storage:
-  crs: EPSG:6933
-  resolution:
-    x: 10
-    y: -10
-  tile_size:
-    x: 96000.0
-    y: 96000.0
+    name: s2_l2a
 
 measurements:
+  - name: "B01"
+    aliases: [band_01, coastal_aerosol]
+    units: "1"
+    dtype: uint16
+    nodata: 0
+
   - name: "B02"
     aliases: [band_02, blue]
     units: "1"
@@ -68,6 +63,12 @@ measurements:
     dtype: uint16
     nodata: 0
 
+  - name: "B09"
+    aliases: [band_09, water_vapour]
+    units: "1"
+    dtype: uint16
+    nodata: 0
+
   - name: "B11"
     aliases: [band_11, swir_1, swir_16]
     units: "1"
@@ -80,26 +81,37 @@ measurements:
     dtype: uint16
     nodata: 0
 
-  - name: "SMAD"
-    aliases: [smad, sdev, SDEV]
+  - name: "SCL"
+    aliases: [mask, qa]
     units: "1"
-    dtype: float32
-    nodata: .nan
+    dtype: uint8
+    nodata: 0
+    flags_definition:
+      qa:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Sen2Cor Scene Classification
+        values:
+          0: no data
+          1: saturated or defective
+          2: dark area pixels
+          3: cloud shadows
+          4: vegetation
+          5: bare soils
+          6: water
+          7: unclassified
+          8: cloud medium probability
+          9: cloud high probability
+          10: thin cirrus
+          11: snow or ice
 
-  - name: "EMAD"
-    aliases: [emad, edev, EDEV]
+  - name: "AOT"
+    aliases: [aerosol_optical_thickness]
     units: "1"
-    dtype: float32
-    nodata: .nan
+    dtype: uint16
+    nodata: 0
 
-  - name: "BCMAD"
-    aliases: [bcmad, bcdev, BCDEV]
-    units: "1"
-    dtype: float32
-    nodata: .nan
-
-  - name: "COUNT"
-    aliases: [count]
+  - name: "WVP"
+    aliases: [scene_average_water_vapour]
     units: "1"
     dtype: uint16
     nodata: 0

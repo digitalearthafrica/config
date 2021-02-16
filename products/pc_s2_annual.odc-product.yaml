@@ -1,0 +1,41 @@
+---
+name: pc_s2_annual
+description: Surface Reflectance Annual Clear Pixel Count, Sentinel-2
+
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: pc_s2_annual
+
+storage:
+  crs: EPSG:6933
+  resolution:
+    x: 20
+    y: -20
+  tile_size:
+    x: 96000
+    y: 96000
+
+measurements:
+  - name: total
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear_0_5
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear_2_5
+    dtype: uint16
+    nodata: 0
+    units: '1'
