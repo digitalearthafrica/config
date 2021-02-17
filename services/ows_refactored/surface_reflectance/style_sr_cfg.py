@@ -1,4 +1,4 @@
-from prod.ows_legend_cfg import legend_idx_0_1_5ticks
+from ows_refactored.common.ows_legend_cfg import legend_idx_0_1_5ticks
 
 style_gals_irg = {
     "name": "infrared_green",
