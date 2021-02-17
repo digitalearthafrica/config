@@ -1,4 +1,4 @@
-from prod.ows_reslim_cfg import reslim_srtm
+from ows_refactored.common.ows_reslim_cfg import reslim_srtm
 
 bands_fc = {
     "BS": ["bare_soil"],

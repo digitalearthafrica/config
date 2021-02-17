@@ -1,4 +1,4 @@
-from prod.ows_reslim_cfg import reslim_srtm, reslim_alos_palsar
+from ows_refactored.common.ows_reslim_cfg import reslim_srtm, reslim_alos_palsar
 
 # bands
 
@@ -233,27 +233,27 @@ ows_cfg = {
             "layers": [
                 # Hierarchical list of layers.  May be a combination of unnamed/unmappable folder-layers or named mappable layers.
                 {
-                    "include": "prod.surface_reflectance.ows_sr_cfg.layers",
+                    "include": "ows_refactored.surface_reflectance.ows_sr_cfg.layers",
                     "type": "python",
                 },
                 {
-                    "include": "prod.surface_reflectance.ows_s2_cfg.layers",
+                    "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
                     "type": "python",
                 },
                 {
-                    "include": "prod.wofs.ows_wofs_cfg.layers",
+                    "include": "ows_refactored.wofs.ows_wofs_cfg.layers",
                     "type": "python",
                 },
                 {
-                    "include": "prod.wofs.ows_wofsc2_cfg.layers",
+                    "include": "ows_refactored.wofs.ows_wofsc2_cfg.layers",
                     "type": "python",
                 },
                 {
-                    "include": "prod.fc.ows_fc_cfg.layers",
+                    "include": "ows_refactored.fc.ows_fc_cfg.layers",
                     "type": "python",
                 },
                 {
-                    "include": "prod.surface_reflectance.ows_geomedian_cfg.layers",
+                    "include": "ows_refactored.surface_reflectance.ows_geomedian_cfg.layers",
                     "type": "python",
                 },
                 {
@@ -261,7 +261,7 @@ ows_cfg = {
                     "abstract": """Annual mosaic of ALOS/PALSAR and ALOS-2/PALSAR-2 data""",
                     "layers": [
                         {
-                            "include": "prod.alos.ows_alos_cfg.layer",
+                            "include": "ows_refactored.alos.ows_alos_cfg.layer",
                             "type": "python",
                         },
                         {

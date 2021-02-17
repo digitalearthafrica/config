@@ -1,4 +1,4 @@
-from prod.ows_legend_cfg import legend_idx_percentage_by_10
+from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
 
 style_wofs_count_wet = {
     "name": "water_observations",

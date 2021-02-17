@@ -1,4 +1,4 @@
-from prod.wofs.style_wofs_cfg import (
+from ows_refactored.wofs.style_wofs_cfg import (
     style_wofs_beta_summary_clear,
     style_wofs_water_annual_wet,
     style_wofs_annual_summary_frequency_blue,
@@ -8,10 +8,10 @@ from prod.wofs.style_wofs_cfg import (
     style_wofs_frequency_blue,
     style_wofs_count_wet,
 )
-from prod.wofs.band_wofs_cfg import (
+from ows_refactored.wofs.band_wofs_cfg import (
     bands_wofs_2_annual_summary,
 )
-from prod.ows_reslim_cfg import reslim_wofs
+from ows_refactored.common.ows_reslim_cfg import reslim_wofs
 
 layers = {
     "title": "Water Observations from Space c2",

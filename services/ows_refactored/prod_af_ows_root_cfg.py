@@ -118,7 +118,7 @@ ows_cfg = {
                     "abstract": """Sentinel""",
                     "layers": [
                     {
-                        "include": "prod_af.surface_reflectance.ows_s2_cfg.layers",
+                        "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
                         "type": "python",
                     },
                 ]
