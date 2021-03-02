@@ -31,7 +31,6 @@ jobs:
     - name: Run ows_refactored_cfg test (prod)
       run: |
         docker-compose --log-level DEBUG -f docker-compose.ows.yaml up -d
-        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "datacube system init"
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./compare-cfg.sh"
         docker-compose -f docker-compose.ows.yaml down
       env:
@@ -44,7 +43,6 @@ jobs:
     - name: Run ows_cfg test (Prod-af)
       run: |
         docker-compose --log-level DEBUG -f docker-compose.ows.yaml up -d
-        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "datacube system init"
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./compare-cfg.sh"
         docker-compose -f docker-compose.ows.yaml down
       env:
