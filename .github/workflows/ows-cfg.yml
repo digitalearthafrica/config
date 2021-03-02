@@ -2,7 +2,7 @@ name: OWS CFG Test
 
 on:
   push:
-    path:
+    paths:
       - 'services/**'
       - .github/workflows/ows-cfg.yaml
     pull_request:
