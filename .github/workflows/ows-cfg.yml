@@ -9,7 +9,6 @@ on:
       branches: [ master ]
       paths:
         - 'services/**'
-        - .github/workflows/ows-cfg.yaml
 
 jobs:
   build:
