@@ -6,7 +6,7 @@ license: CC-BY-4.0
 
 metadata:
   product:
-      name: crop_mask
+    name: crop_mask
 
 measurements:
   - name: MASK
