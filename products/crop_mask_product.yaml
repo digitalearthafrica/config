@@ -23,7 +23,7 @@ measurements:
     units: '1'
 
 storage:
-  crs: EPSG:6933
+  crs: epsg:6933
   resolution:
     x: 20
     y: -20
