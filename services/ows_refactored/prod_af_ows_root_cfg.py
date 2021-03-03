@@ -20,10 +20,7 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "EPSG:4326": {  # WGS-84
-                "geographic": True,
-                "vertical_coord_first": True
-            },
+            "EPSG:4326": {"geographic": True, "vertical_coord_first": True},  # WGS-84
             "EPSG:6933": {  # Cylindrical equal area
                 "geographic": False,
                 "horizontal_coord": "x",
@@ -33,11 +30,11 @@ ows_cfg = {
                 "geographic": False,
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
-            }
+            },
         },
         "allowed_urls": [
-                "https://ows-af.digitalearth.africa",
-                "https://ows-af-latest.digitalearth.africa"
+            "https://ows-af.digitalearth.africa",
+            "https://ows-af-latest.digitalearth.africa",
         ],
         # Metadata to go straight into GetCapabilities documents
         "title": "Digital Earth Africa - OGC Web Services",
@@ -68,18 +65,17 @@ ows_cfg = {
         },
         "fees": "",
         "access_constraints": "© Commonwealth of Australia (Geoscience Australia) 2018. "
-                              "This product is released under the Creative Commons Attribution 4.0 International Licence. "
-                              "http://creativecommons.org/licenses/by/4.0/legalcode",
-    }, # END OF global SECTION
+        "This product is released under the Creative Commons Attribution 4.0 International Licence. "
+        "http://creativecommons.org/licenses/by/4.0/legalcode",
+    },  # END OF global SECTION
     "wms": {
         # Config for WMS service, for all products/layers
         "s3_url": "https://data.digitalearth.africa",
         "s3_bucket": "deafrica-data",
         "s3_aws_zone": "af-south-1",
-
         "max_width": 512,
         "max_height": 512,
-    }, # END OF wms SECTION
+    },  # END OF wms SECTION
     "wcs": {
         # Config for WCS service, for all products/coverages
         "default_geographic_CRS": "EPSG:4326",
@@ -92,7 +88,7 @@ ows_cfg = {
                 },
                 "mime": "image/geotiff",
                 "extension": "tif",
-                "multi-time": False
+                "multi-time": False,
             },
             "netCDF": {
                 # "renderer": "datacube_ows.wcs_utils.get_netcdf",
@@ -106,24 +102,24 @@ ows_cfg = {
             },
         },
         "native_format": "GeoTIFF",
-    }, # END OF wcs SECTION
+    },  # END OF wcs SECTION
     "layers": [
         {
             "title": "Digital Earth Africa - OGC Web Services",
             "abstract": "Digital Earth Africa OGC Web Services",
             "layers": [
                 # Hierarchical list of layers.  May be a combination of unnamed/unmappable folder-layers or named mappable layers.
-            {
+                {
                     "title": "Sentinel",
                     "abstract": """Sentinel""",
                     "layers": [
-                    {
-                        "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
-                        "type": "python",
-                    },
-                ]
-            },
-        ]
-    }
-]
+                        {
+                            "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
+                            "type": "python",
+                        },
+                    ],
+                },
+            ],
+        }
+    ],
 }

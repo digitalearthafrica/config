@@ -1,10 +1,9 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_sentinel2, reslim_srtm
-from ows_refactored.surface_reflectance.style_sr_cfg import (
-    styles_ls8c_list,
-    styles_gm_list,
-    styles_tmads_list,
-)
-from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm, bands_ls8c
+from ows_refactored.surface_reflectance.band_sr_cfg import (bands_ls8c,
+                                                            bands_s2_gm)
+from ows_refactored.surface_reflectance.style_sr_cfg import (styles_gm_list,
+                                                             styles_ls8c_list,
+                                                             styles_tmads_list)
 
 layers = {
     "title": "Annual Geometric Median",

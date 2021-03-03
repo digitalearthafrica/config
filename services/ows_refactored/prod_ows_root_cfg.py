@@ -1,4 +1,5 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_srtm, reslim_alos_palsar
+from ows_refactored.common.ows_reslim_cfg import (reslim_alos_palsar,
+                                                  reslim_srtm)
 
 # bands
 
