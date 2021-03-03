@@ -21,13 +21,13 @@ storage:
 
 measurements:
   - name: mask
-    aliases: ['crop_mask']
+    aliases: ['crop_mask', 'MASK']
     dtype: uint8
     nodata: 255
     units: '1'
 
   - name: prob
-    aliases: ['crop_prob']
+    aliases: ['crop_prob', 'PROB']
     dtype: uint8
     nodata: 255
     units: '1'
