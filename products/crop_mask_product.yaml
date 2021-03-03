@@ -1,6 +1,6 @@
 ---
 name: crop_mask
-description: crop mask prediction based features of s2_l2a statistics gm_tmad,
+description: crop mask prediction based on features of s2_l2a statistics gm_tmad,
   plus NDVI, LAI, MNDWI, rainfall, slope
 metadata_type: eo3
 
@@ -20,13 +20,13 @@ storage:
     y: 96000
 
 measurements:
-  - name: MASK
+  - name: mask
     aliases: ['crop_mask']
     dtype: uint8
     nodata: 255
     units: '1'
 
-  - name: PROB
+  - name: prob
     aliases: ['crop_prob']
     dtype: uint8
     nodata: 255
