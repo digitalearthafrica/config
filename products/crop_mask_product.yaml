@@ -1,7 +1,7 @@
 ---
 name: crop_mask
-description: crop mask prediction based on features of s2_l2a statistics gm_tmad,
-  plus NDVI, LAI, MNDWI, rainfall, slope
+description: crop mask prediction based on features of s2_l2a statistics
+  gm_tmad, plus NDVI, LAI, MNDWI, rainfall, slope
 metadata_type: eo3
 
 license: CC-BY-4.0
