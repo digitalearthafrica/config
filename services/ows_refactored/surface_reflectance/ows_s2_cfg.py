@@ -1,6 +1,6 @@
-from ows_refactored.surface_reflectance.style_sr_cfg import styles_s2_list
 from ows_refactored.common.ows_reslim_cfg import reslim_srtm
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_sentinel
+from ows_refactored.surface_reflectance.style_sr_cfg import styles_s2_list
 
 layers = {
     "title": "Sentinel",
