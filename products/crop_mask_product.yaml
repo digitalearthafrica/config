@@ -1,0 +1,33 @@
+---
+name: crop_mask
+description: crop mask prediction based features of s2_l2a statistics gm_tmad,
+  plus NDVI, LAI, MNDWI, rainfall, slope
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: crop_mask
+
+storage:
+  crs: epsg:6933
+  resolution:
+    x: 20
+    y: -20
+  tile_size:
+    x: 96000
+    y: 96000
+
+measurements:
+  - name: MASK
+    aliases: ['crop_mask']
+    dtype: uint8
+    nodata: 255
+    units: '1'
+
+  - name: PROB
+    aliases: ['crop_prob']
+    dtype: uint8
+    nodata: 255
+    units: '1'
