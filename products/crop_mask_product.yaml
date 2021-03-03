@@ -1,6 +1,8 @@
 ---
 name: crop_mask
-description: Digital Africa crop mask prediction based features of s2 l2a gm_tmad and NDVI, LAI, MNDWI, rainfall, slope
+description: Digital Africa crop mask prediction based features of
+  s2_l2a gm_tmad and NDVI, LAI, MNDWI, rainfall, slope
+
 metadata_type: eo3
 
 license: CC-BY-4.0
@@ -30,5 +32,3 @@ measurements:
     dtype: uint8
     nodata: 255
     units: '1'
-
-
