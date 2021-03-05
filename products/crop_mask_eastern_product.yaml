@@ -1,6 +1,7 @@
 ---
 name: crop_mask_eastern
-description: Annual cropland extent map for Eastern Africa agro-ecological zone, produced by Digital Earth Africa using Sentinel-2 observations and ancillary information.
+description: Annual cropland extent map for Eastern Africa, 
+  produced by Digital Earth Africa.
 metadata_type: eo3
 
 license: CC-BY-4.0
