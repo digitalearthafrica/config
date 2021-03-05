@@ -1,7 +1,6 @@
 ---
 name: crop_mask_eastern
-description: Estern Africa region crop mask prediction based on features
-  of s2_l2a statistics gm_tmad, plus NDVI, LAI, MNDWI, rainfall, slope
+description: Annual cropland extent map for Eastern Africa agro-ecological zone, produced by Digital Earth Africa using Sentinel-2 observations and ancillary information.
 metadata_type: eo3
 
 license: CC-BY-4.0
