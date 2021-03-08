@@ -1,58 +1,52 @@
-name: ls8_c2l2
+name: ls5_c2l2
 description: USGS Level 2 Collection 2 Landsat
 metadata_type: eo3
 
 metadata:
     product:
-        name: ls8_c2l2
+        name: ls5_c2l2
 
 measurements:
 
 -   name: SR_B1
-    units: "reflectance"
     dtype: 'uint16'
+    units: "unitless"
     nodata: 0
     aliases: [band_1, sr_band1]
 
 -   name: SR_B2
-    units: "reflectance"
     dtype: 'uint16'
+    units: "unitless"
     nodata: 0
     aliases: [band_2, sr_band2]
 
 -   name: SR_B3
-    units: "reflectance"
     dtype: 'uint16'
+    units: "unitless"
     nodata: 0
     aliases: [SR_B3, sr_band3]
 
 -   name: SR_B4
-    units: "reflectance"
     dtype: 'uint16'
+    units: "unitless"
     nodata: 0
     aliases: [SR_B4, sr_band4]
 
 -   name: SR_B5
-    units: "reflectance"
     dtype: 'uint16'
+    units: "unitless"
     nodata: 0
     aliases: [band_5, sr_band5]
 
--   name: SR_B6
-    units: "reflectance"
+-   name: ST_B6
     dtype: 'uint16'
+    units: "1"
     nodata: 0
     aliases: [band_6, sr_band6]
 
 -   name: SR_B7
-    units: "reflectance"
     dtype: 'uint16'
-    nodata: 0
-    aliases: [band_7, sr_band7]
-
--   name: ST_B10
-    units: "Kelvin"
-    dtype: 'uint16'
+    units: "unitless"
     nodata: 0
     aliases: [band_7, sr_band7]
 
@@ -69,38 +63,38 @@ measurements:
     aliases: [radsat_qa]
 
 -   name: ST_ATRAN
-    dtype: 'uint16'
+    dtype: 'int16'
     units: "unitless"
     nodata: -9999
     aliases: [ST_ATRAN]
 
 -   name: ST_CDIST
-    dtype: 'uint16'
+    dtype: 'int16'
     units: "Kilometers"
     nodata: -9999
     aliases: [ST_CDIST]
 
 -   name: ST_DRAD
-    dtype: 'uint16'
+    dtype: 'int16'
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
     aliases: [ST_DRAD]
 
 -   name: ST_URAD
-    dtype: 'uint16'
+    dtype: 'int16'
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
     aliases: [ST_URAD]
 
 -   name: ST_TRAD
-    dtype: 'uint16'
+    dtype: 'int16'
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
     aliases: [ST_TRAD]
 
 -   name: ST_EMIS
-    dtype: 'uint16'
-    units: "W/(m2.sr.μm)/DN"
+    dtype: 'int16'
+    units: "Emissivity coefficient"
     nodata: -9999
     aliases: [ST_EMIS]
 
@@ -109,3 +103,15 @@ measurements:
     units: "Kelvin"
     nodata: -9999
     aliases: [ST_QA]
+
+-   name: SR_CLOUD_QA
+    dtype: "uint8"
+    units: "bit_index"
+    nodata: 0
+    aliases: [SR_CLOUD_QA]
+
+-   name: SR_ATMOS_OPACITY
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [atmos_op]
