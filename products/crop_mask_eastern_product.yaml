@@ -1,0 +1,33 @@
+---
+name: crop_mask_eastern
+description: Annual cropland extent map for Eastern Africa
+  produced by Digital Earth Africa.
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: crop_mask_eastern
+
+storage:
+  crs: epsg:6933
+  resolution:
+    x: 20
+    y: -20
+  tile_size:
+    x: 96000
+    y: 96000
+
+measurements:
+  - name: mask
+    aliases: ['crop_mask', 'MASK']
+    dtype: uint8
+    nodata: 255
+    units: '1'
+
+  - name: prob
+    aliases: ['crop_prob', 'PROB']
+    dtype: uint8
+    nodata: 255
+    units: '1'
