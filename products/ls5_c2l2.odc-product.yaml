@@ -5,22 +5,26 @@ metadata_type: eo3
 metadata:
     product:
         name: ls5_c2l2
+
 measurements:
   - name: SR_B1
     dtype: 'uint16'
     units: "unitless"
     nodata: 0
     aliases: [band_1, sr_band1]
+
   - name: SR_B2
     dtype: 'uint16'
     units: "unitless"
     nodata: 0
     aliases: [band_2, sr_band2]
+
   - name: SR_B3
     dtype: 'uint16'
     units: "unitless"
     nodata: 0
     aliases: [SR_B3, sr_band3]
+
   - name: SR_B4
     dtype: 'uint16'
     units: "unitless"
