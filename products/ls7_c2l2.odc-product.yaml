@@ -14,100 +14,234 @@ measurements:
     dtype: "uint16"
     units: "unitless"
     nodata: 0
-    aliases: [band_1, sr_band1]
+    aliases: [band_1, sr_band1, coastal_aerosol]
 
   - name: SR_B2
     dtype: "uint16"
     units: "unitless"
     nodata: 0
-    aliases: [band_2, sr_band2]
+    aliases: [band_2, sr_band2, blue]
 
   - name: SR_B3
     dtype: "uint16"
     units: "unitless"
     nodata: 0
-    aliases: [SR_B3, sr_band3]
+    aliases: [SR_B3, sr_band3, green]
 
   - name: SR_B4
     dtype: "uint16"
     units: "unitless"
     nodata: 0
-    aliases: [SR_B4, sr_band4]
+    aliases: [SR_B4, sr_band4, red]
 
   - name: SR_B5
     dtype: "uint16"
     units: "unitless"
     nodata: 0
-    aliases: [band_5, sr_band5]
+    aliases: [band_5, sr_band5, nir]
 
   - name: ST_B6
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [band_6, sr_band6]
+    aliases: [band_6, sr_band6, swir_1]
 
   - name: SR_B7
     units: "unitless"
     dtype: "uint16"
     nodata: 0
-    aliases: [band_7, sr_band7]
+    aliases: [band_7, sr_band7, swir_2]
 
   - name: QA_PIXEL
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [pixel_qa]
+    aliases: [pixel_qa, quality_l1_pixel]
 
   - name: QA_RADSAT
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [radsat_qa]
+    aliases: [radsat_qa, quality_l1_radiometric_saturation]
+    flags_definition:
+      band_1_data_saturation:
+        bits: 0
+        values:
+          0: no_saturation
+          1: saturated
+      band_2_data_saturation:
+        bits: 1
+        values:
+          0: no_saturation
+          1: saturated
+      band_3_data_saturation:
+        bits: 2
+        values:
+          0: no_saturation
+          1: saturated
+      band_4_data_saturation:
+        bits: 3
+        values:
+          0: no_saturation
+          1: saturated
+      band_5_data_saturation:
+        bits: 4
+        values:
+          0: no_saturation
+          1: saturated
+      band_6_data_saturation:
+        bits: 5
+        values:
+          0: no_saturation
+          1: saturated
+      band_7_data_saturation:
+        bits: 6
+        values:
+          0: no_saturation
+          1: saturated
+      band_6h_data_saturation:
+        bits: 8
+        values:
+          0: no_saturation
+          1: saturated
+      dropped_pixel:
+        bits: 9
+        values:
+          0: pixel_present
+          1: no_value
 
   - name: ST_ATRAN
     dtype: "int16"
     units: "unitless"
     nodata: -9999
-    aliases: [ST_ATRAN]
+    aliases: [ST_ATRAN, atmospheric_transmittance]
 
   - name: ST_CDIST
     dtype: "int16"
     units: "Kilometers"
     nodata: -9999
-    aliases: [ST_CDIST]
+    aliases: [ST_CDIST, cloud_distance]
 
   - name: ST_DRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [ST_DRAD]
+    aliases: [ST_DRAD, downwell_radiance]
 
   - name: ST_URAD
     dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [ST_URAD]
+    aliases: [ST_URAD, upwell_radiance]
 
   - name: ST_TRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [ST_TRAD]
+    aliases: [ST_TRAD, thermal_radiance]
 
   - name: ST_EMIS
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [ST_EMIS]
+    aliases: [ST_EMIS, emissivity]
 
   - name: ST_QA
     dtype: "int16"
     units: "Kelvin"
     nodata: -9999
-    aliases: [ST_QA]
+    aliases: [ST_QA, quality_l2_surface_temperature]
+    flags_definition:
+      nodata:
+        bits: 0
+        values:
+          0: false
+          1: true
+      dilated_cloud:
+        bits: 1
+        values:
+          0: not_dilated
+          1: dilated
+      cloud:
+        bits: 3
+        values:
+          0: not_high_confidence
+          1: high_confidence
+      cloud_shadow:
+        bits: 4
+        values:
+          0: not_high_confidence
+          1: high_confidence
+      snow:
+        bits: 5
+        values:
+          0: not_high_confidence
+          1: high_confidence
+      clear:
+        bits: 6
+        values:
+          0: false
+          1: true
+      water:
+        bits: 7
+        values:
+          0: land_or_cloud
+          1: water
+      cloud_confidence:
+        bits: [ 8, 9 ]
+        values:
+          0: none
+          1: low
+          2: medium
+          3: high
+      cloud_shadow_confidence:
+        bits: [ 10, 11 ]
+        values:
+          0: none
+          1: low
+          2: reserved
+          3: high
+      snow_ice_confidence:
+        bits: [ 12, 13 ]
+        values:
+          0: none
+          1: low
+          2: reserved
+          3: high
 
   - name: SR_CLOUD_QA
     dtype: "uint16"
     units: "bit_index"
     nodata: -9999
-    aliases: [SR_CLOUD_QA]
+    aliases: [SR_CLOUD_QA, Cloud_QA]
+    flags_definition:
+      dark_dense_vegetation:
+        bits: 0
+        values:
+          0: no_ddv
+          1: ddv
+      cloud:
+        bits: 1
+        values:
+          0: no_cloud
+          1: cloud
+      cloud_shadow:
+        bits: 2
+        values:
+          0: no_cloud_shadow
+          1: cloud_shadow
+      adjacent_to_cloud:
+        bits: 3
+        values:
+          0: no_adjacent_to_cloud
+          1: adjacent_to_cloud
+      snow:
+        bits: 4
+        values:
+          0: no_snow
+          1: snow
+      water:
+        bits: 5
+        values:
+          0: no_water
+          1: water
