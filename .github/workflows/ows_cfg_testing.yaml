@@ -21,6 +21,18 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Run ows_refactored_cfg test (dev-af)
+      run: |
+        docker-compose -f docker-compose.ows.yaml up -d
+        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./compare-cfg.sh"
+        docker-compose -f docker-compose.ows.yaml down
+      env:
+        OWS_CFG_MOUNT: ./services/ows_refactored
+        OWS_INVENTORY_JSON: ./services/inventory/prod/inventory.json
+        DATACUBE_OWS_CFG: ows_refactored.dev_af_ows_root_cfg.ows_cfg
+        WMS_CONFIG_FILE: dev_af_ows_root_cfg.py
+        CFG_PATH_PREFIX: /env/config/ows_refactored
+
     - name: Run ows_refactored_cfg test (prod)
       run: |
         docker-compose -f docker-compose.ows.yaml up -d

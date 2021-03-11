@@ -124,7 +124,7 @@ ows_cfg = {
                     "abstract": """Crop Mask""",
                     "layers": [
                         {
-                            "include": "ows_refactored.crop_mask.ows_crop_mask_cfg.layers",
+                            "include": "ows_refactored.crop_mask.ows_crop_mask_cfg.layer",
                             "type": "python",
                         },
                     ],

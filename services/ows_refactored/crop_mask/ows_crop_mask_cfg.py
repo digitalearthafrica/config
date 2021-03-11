@@ -32,7 +32,7 @@ style_crop_mask_green = {
     "title": "Green",
     "abstract": "Classified as crop by the mask band",
     "value_map": {
-        "crop": [
+        "mask": [
             {
                 "title": "Crop",
                 "abstract": "",
@@ -55,7 +55,7 @@ style_crop_mask_yellow = {
     "title": "Yellow",
     "abstract": "Classified as crop by the mask band",
     "value_map": {
-        "crop": [
+        "mask": [
             {
                 "title": "Crop",
                 "abstract": "",
@@ -78,7 +78,7 @@ style_crop_mask_reversed = {
     "title": "Reversed",
     "abstract": "Classified as crop by the mask band",
     "value_map": {
-        "crop": [
+        "mask": [
             {
                 "title": "Crop",
                 "abstract": "",
