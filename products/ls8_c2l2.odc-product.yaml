@@ -11,147 +11,58 @@ metadata:
 
 measurements:
   - name: SR_B1
-    units: "reflectance"
+    units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [band_1, sr_band1, coastal_aerosol]
+    aliases: [B1, sr_band1, coastal_aerosol]
 
   - name: SR_B2
-    units: "reflectance"
+    units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [band_2, sr_band2, bule]
+    aliases: [B2, sr_band2, blue]
 
   - name: SR_B3
-    units: "reflectance"
+    units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [SR_B3, sr_band3, green]
+    aliases: [B3, sr_band3, green]
 
   - name: SR_B4
-    units: "reflectance"
+    units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [SR_B4, sr_band4, red]
+    aliases: [B4, sr_band4, red]
 
   - name: SR_B5
-    units: "reflectance"
+    units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [band_5, sr_band5, nir]
+    aliases: [B5, sr_band5, nir]
 
   - name: SR_B6
-    units: "reflectance"
+    units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [band_6, sr_band6, swir_1]
+    aliases: [B6, sr_band6, swir_1]
 
   - name: SR_B7
-    units: "reflectance"
+    units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [band_7, sr_band7, swir_2]
+    aliases: [B7, sr_band7, swir_2]
 
   - name: ST_B10
     units: "Kelvin"
     dtype: "uint16"
     nodata: 0
-    aliases: [band_10, ST_B10, Thermal_Infrared_Sensor_1]
+    aliases: [B10, st_b10, surface_temperature, land_surface_temperature]
 
   - name: QA_PIXEL
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [pixel_qa, quality_l1_pixel]
-
-  - name: QA_RADSAT
-    dtype: "uint16"
-    units: "bit_index"
-    nodata: 0
-    aliases: [radsat_qa, quality_l1_radiometric_saturation]
-    flags_definition:
-      band_1_data_saturation:
-        bits: 0
-        values:
-          0: no_saturation
-          1: saturated
-      band_2_data_saturation:
-        bits: 1
-        values:
-          0: no_saturation
-          1: saturated
-      band_3_data_saturation:
-        bits: 2
-        values:
-          0: no_saturation
-          1: saturated
-      band_4_data_saturation:
-        bits: 3
-        values:
-          0: no_saturation
-          1: saturated
-      band_5_data_saturation:
-        bits: 4
-        values:
-          0: no_saturation
-          1: saturated
-      band_6_data_saturation:
-        bits: 5
-        values:
-          0: no_saturation
-          1: saturated
-      band_7_data_saturation:
-        bits: 6
-        values:
-          0: no_saturation
-          1: saturated
-      terrain_occlusion:
-        bits: 11
-        values:
-          0: false
-          1: true
-
-  - name: ST_ATRAN
-    dtype: "uint16"
-    units: "unitless"
-    nodata: -9999
-    aliases: [ST_ATRAN, atmospheric_transmittance]
-
-  - name: ST_CDIST
-    dtype: "uint16"
-    units: "Kilometers"
-    nodata: -9999
-    aliases: [ST_CDIST, cloud_distance]
-
-  - name: ST_DRAD
-    dtype: "uint16"
-    units: "W/(m2.sr.μm)/DN"
-    nodata: -9999
-    aliases: [ST_DRAD, cloud_distance]
-
-  - name: ST_URAD
-    dtype: "uint16"
-    units: "W/(m2.sr.μm)/DN"
-    nodata: -9999
-    aliases: [ST_URAD, upwell_radiance]
-
-  - name: ST_TRAD
-    dtype: "uint16"
-    units: "W/(m2.sr.μm)/DN"
-    nodata: -9999
-    aliases: [ST_TRAD, thermal_radiance]
-
-  - name: ST_EMIS
-    dtype: "uint16"
-    units: "W/(m2.sr.μm)/DN"
-    nodata: -9999
-    aliases: [ST_EMIS, emissivity]
-
-  - name: ST_QA
-    dtype: "int16"
-    units: "Kelvin"
-    nodata: -9999
-    aliases: [ST_QA, quality_l2_surface_temperature]
+    aliases: [quality_pixel, pixel_quality, pq]
     flags_definition:
       nodata:
         bits: 0
@@ -221,3 +132,92 @@ measurements:
           1: low
           2: reserved
           3: high
+
+  - name: QA_RADSAT
+    dtype: "uint16"
+    units: "bit_index"
+    nodata: 0
+    aliases: [radsat_qa, quality_radiometric_saturation, radiometric_saturation]
+    flags_definition:
+      band_1_data_saturation:
+        bits: 0
+        values:
+          0: false
+          1: true
+      band_2_data_saturation:
+        bits: 1
+        values:
+          0: no_saturation
+          1: saturated
+      band_3_data_saturation:
+        bits: 2
+        values:
+          0: no_saturation
+          1: saturated
+      band_4_data_saturation:
+        bits: 3
+        values:
+          0: no_saturation
+          1: saturated
+      band_5_data_saturation:
+        bits: 4
+        values:
+          0: no_saturation
+          1: saturated
+      band_6_data_saturation:
+        bits: 5
+        values:
+          0: no_saturation
+          1: saturated
+      band_7_data_saturation:
+        bits: 6
+        values:
+          0: no_saturation
+          1: saturated
+      terrain_occlusion:
+        bits: 11
+        values:
+          0: false
+          1: true
+
+  - name: ST_ATRAN
+    dtype: "uint16"
+    units: "1"
+    nodata: -9999
+    aliases: [st_atran, atmospheric_transmittance]
+
+  - name: ST_CDIST
+    dtype: "uint16"
+    units: "Kilometers"
+    nodata: -9999
+    aliases: [st_cdist, cloud_distance]
+
+  - name: ST_DRAD
+    dtype: "uint16"
+    units: "W/(m2.sr.μm)/DN"
+    nodata: -9999
+    aliases: [st_drad, downwell_radiance]
+
+  - name: ST_URAD
+    dtype: "uint16"
+    units: "W/(m2.sr.μm)/DN"
+    nodata: -9999
+    aliases: [st_urad, upwell_radiance]
+
+  - name: ST_TRAD
+    dtype: "uint16"
+    units: "W/(m2.sr.μm)/DN"
+    nodata: -9999
+    aliases: [st_trad, thermal_radiance]
+
+  - name: ST_EMIS
+    dtype: "uint16"
+    units: "W/(m2.sr.μm)/DN"
+    nodata: -9999
+    aliases: [st_emis, emissivity]
+
+  - name: ST_QA
+    dtype: "int16"
+    units: "Kelvin"
+    nodata: -9999
+    aliases: [st_qa, quality_surface_temperature, surface_temperature_quality]
