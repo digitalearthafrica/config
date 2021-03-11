@@ -6,7 +6,7 @@ bands_crop_mask = {"mask": ["crop_mask", "MASK"], "prob": ["crop_prob", "PROB"]}
 style_crop_mask_magma = {
     "name": "magma",
     "title": "PROB",
-    "abstract": "Prob band",
+    "abstract": "Prob band Magma",
     "needed_bands": ["prob"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -15,36 +15,36 @@ style_crop_mask_magma = {
             "band": "prob",
         },
     },
-    "color_ramp": [
-        {"value": 50, "color": "#000003"},
-        {"value": 100, "color": "#e2f4dd"},
-    ],
+    "mpl_ramp": "plasma",
+    "range": [50, 100],
     "legend": {
-        "begin": 50,
-        "end": 100,
-        "decimal_places": 0,
-        "ticks_every": 10,
+        "begin": "50",
+        "end": "100",
+        "ticks_every": "10",
+        "tick_labels": {
+            "50": {"prefix": "<"},
+        },
     },
 }
 
 style_crop_mask_green = {
     "name": "green",
     "title": "Green",
-    "abstract": "Classified as water by the decision tree",
+    "abstract": "Classified as crop by the mask band",
     "value_map": {
         "crop": [
             {
-                "title": "Green",
-                "abstract": "Crop",
+                "title": "Crop",
+                "abstract": "",
                 "flags": {"mask": True},
                 "color": "#00ff00",
             },
             {
                 "title": "No Crop",
-                "abstract": "No crop",
+                "abstract": "",
                 "flags": {"mask": False},
                 "color": "#00ff00",
-                "alpha": 0.0
+                "alpha": 0.0,
             },
         ]
     },
@@ -53,21 +53,21 @@ style_crop_mask_green = {
 style_crop_mask_yellow = {
     "name": "yellow",
     "title": "Yellow",
-    "abstract": "Classified as water by the decision tree",
+    "abstract": "Classified as crop by the mask band",
     "value_map": {
         "crop": [
             {
-                "title": "Yellow",
-                "abstract": "Crop",
+                "title": "Crop",
+                "abstract": "",
                 "flags": {"mask": True},
                 "color": "#ffff00",
             },
             {
                 "title": "No Crop",
-                "abstract": "No crop",
+                "abstract": "",
                 "flags": {"mask": False},
                 "color": "#ffff00",
-                "alpha": 0.0
+                "alpha": 0.0,
             },
         ]
     },
@@ -76,21 +76,21 @@ style_crop_mask_yellow = {
 style_crop_mask_reversed = {
     "name": "reversed",
     "title": "Reversed",
-    "abstract": "Classified as water by the decision tree",
+    "abstract": "Classified as crop by the mask band",
     "value_map": {
         "crop": [
             {
-                "title": "Yellow",
-                "abstract": "Crop",
-                "flags": {"mask": False},
+                "title": "Crop",
+                "abstract": "",
+                "flags": {"mask": True},
                 "color": "#cccccc",
+                "alpha": 0.0,
             },
             {
                 "title": "No Crop",
-                "abstract": "No crop",
-                "flags": {"mask": True},
+                "abstract": "",
+                "flags": {"mask": False},
                 "color": "#cccccc",
-                "alpha": 0.0
             },
         ]
     },
