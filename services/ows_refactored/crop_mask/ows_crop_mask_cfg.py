@@ -3,8 +3,8 @@ from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
 bands_crop_mask = {"mask": ["crop_mask", "MASK"], "prob": ["crop_prob", "PROB"]}
 
 
-style_crop_mask_prob = {
-    "name": "prob",
+style_crop_mask_magma = {
+    "name": "magma",
     "title": "PROB",
     "abstract": "Prob band",
     "needed_bands": ["prob"],
@@ -16,26 +16,14 @@ style_crop_mask_prob = {
         },
     },
     "color_ramp": [
-        {"value": 0, "color": "#f7fcf5"},
-        {"value": 750, "color": "#e2f4dd"},
-        {"value": 1000, "color": "#c0e6b9"},
-        {"value": 1500, "color": "#94d390"},
-        {"value": 2500, "color": "#60ba6c"},
-        {"value": 4000, "color": "#329b51"},
-        {"value": 6000, "color": "#0c7835"},
-        {"value": 8000, "color": "#00441b"},
+        {"value": 50, "color": "#000003"},
+        {"value": 100, "color": "#e2f4dd"},
     ],
     "legend": {
-        "begin": 0,
-        "end": 8000,
-        "ticks": ["0", "2000", "4000", "6000", "8000"],
-        "tick_labels": {
-            "0": {"label": "0"},
-            "2000": {"label": "2000"},
-            "4000": {"label": "4000"},
-            "6000": {"label": "6000"},
-            "8000": {"prefix": ">"},
-        },
+        "begin": 50,
+        "end": 100,
+        "decimal_places": 0,
+        "ticks_every": 10,
     },
 }
 
@@ -142,7 +130,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_style": "green",
         "styles": [
             style_crop_mask_green,
-            style_crop_mask_prob,
+            style_crop_mask_magma,
             style_crop_mask_yellow,
             style_crop_mask_reversed,
         ],
