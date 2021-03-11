@@ -14,31 +14,31 @@ measurements:
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [ B1, band_1, sr_band1, blue, surface_reflectance ]
+    aliases: [ B1, band_1, sr_band1, blue ]
 
   - name: SR_B2
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [ B2, band_2, sr_band2, green, surface_reflectance ]
+    aliases: [ B2, band_2, sr_band2, green ]
 
   - name: SR_B3
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [ SR_B3, band_3, sr_band3, red, surface_reflectance ]
+    aliases: [ SR_B3, band_3, sr_band3, red ]
 
   - name: SR_B4
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [ B4, band_4, sr_band4, nir, surface_reflectance ]
+    aliases: [ B4, band_4, sr_band4, nir ]
 
   - name: SR_B5
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [ B5, band_5, sr_band5, swir_1, surface_reflectance ]
+    aliases: [ B5, band_5, sr_band5, swir_1 ]
 
   - name: ST_B6
     dtype: "uint16"
@@ -50,7 +50,7 @@ measurements:
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [ B7, band_7, sr_band7, swir_2, surface_reflectance ]
+    aliases: [ B7, band_7, sr_band7, swir_2 ]
 
   - name: QA_PIXEL
     dtype: "uint16"
@@ -206,7 +206,7 @@ measurements:
 
   - name: ST_EMSD
     dtype: "int16"
-    units: "Emissivity coefficient"
+    units: "1"
     nodata: -9999
     aliases: [ st_emsd, emissivity_stddev, emissivity_standard_deviation ]
 
