@@ -56,7 +56,7 @@ measurements:
     units: "Kelvin"
     dtype: "uint16"
     nodata: 0
-    aliases: [B10, band_10, st_b10, surface_temperature, land_surface_temperature]
+    aliases: [B10, band_10, surface_temperature, land_surface_temperature]
 
   - name: QA_PIXEL
     dtype: "uint16"
@@ -137,7 +137,7 @@ measurements:
     dtype: "uint16"
     units: "bit_index"
     nodata: 0
-    aliases: [radsat_qa, quality_radiometric_saturation, radiometric_saturation]
+    aliases: [quality_radiometric_saturation, radiometric_saturation]
     flags_definition:
       band_1_saturation:
         bits: 0
@@ -220,7 +220,7 @@ measurements:
     dtype: "int16"
     units: "Kelvin"
     nodata: -9999
-    aliases: [st_qa, quality_surface_temperature, surface_temperature_quality]
+    aliases: [quality_surface_temperature, surface_temperature_quality]
 
   - name: ST_EMSD
     dtype: "int16"

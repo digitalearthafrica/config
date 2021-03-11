@@ -14,37 +14,37 @@ measurements:
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B1, band_1, sr_band1, blue]
+    aliases: [B1, band_1, blue]
 
   - name: SR_B2
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B2, band_2, sr_band2, green]
+    aliases: [B2, band_2, green]
 
   - name: SR_B3
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [SR_B3, band_3, sr_band3, red]
+    aliases: [SR_B3, band_3, red]
 
   - name: SR_B4
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [SR_B4, band_4, sr_band4, nir]
+    aliases: [SR_B4, band_4, nir]
 
   - name: SR_B5
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B5, band_5, sr_band5, swir_1]
+    aliases: [B5, band_5, swir_1]
 
   - name: ST_B6
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B6, band_6, st_band6, surface_temperature, land_surface_temperature]
+    aliases: [B6, band_6, surface_temperature, land_surface_temperature]
 
   - name: SR_B7
     units: "1"
@@ -119,7 +119,7 @@ measurements:
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [radsat_qa, quality_radiometric_saturation, radiometric_saturation]
+    aliases: [quality_radiometric_saturation, radiometric_saturation]
     flags_definition:
       band_1_saturation:
         bits: 0
@@ -207,19 +207,19 @@ measurements:
     dtype: "int16"
     units: "Kelvin"
     nodata: -9999
-    aliases: [st_qa, quality_surface_temperature, surface_temperature_quality]
+    aliases: [quality_surface_temperature, surface_temperature_quality]
 
   - name: ST_EMSD
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_emsd, emissivity_stddev, emissivity_standard_deviation]
+    aliases: [emissivity_stddev, emissivity_standard_deviation]
 
   - name: SR_ATMOS_OPACITY
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_atmos_opacity, atmos_op, atmospheric_opacity]
+    aliases: [atmos_op, atmospheric_opacity]
 
   - name: SR_CLOUD_QA
     dtype: "uint16"
