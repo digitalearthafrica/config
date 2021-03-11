@@ -129,38 +129,38 @@ measurements:
       band_2_data_saturation:
         bits: 1
         values:
-          0: no_saturation
-          1: saturated
+          0: false
+          1: true
       band_3_data_saturation:
         bits: 2
         values:
-          0: no_saturation
-          1: saturated
+          0: false
+          1: true
       band_4_data_saturation:
         bits: 3
         values:
-          0: no_saturation
-          1: saturated
+          0: false
+          1: true
       band_5_data_saturation:
         bits: 4
         values:
-          0: no_saturation
-          1: saturated
+          0: false
+          1: true
       band_6_data_saturation:
         bits: 5
         values:
-          0: no_saturation
-          1: saturated
+          0: false
+          1: true
       band_7_data_saturation:
         bits: 6
         values:
-          0: no_saturation
-          1: saturated
+          0: false
+          1: true
       band_6h_data_saturation:
         bits: 8
         values:
-          0: no_saturation
-          1: saturated
+          0: false
+          1: true
       dropped_pixel:
         bits: 9
         values:
