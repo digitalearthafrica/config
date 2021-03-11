@@ -14,55 +14,55 @@ measurements:
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B1, band_1, sr_band1, surface_reflectance, coastal_aerosol]
+    aliases: [ B1, band_1, sr_band1, surface_reflectance, coastal_aerosol ]
 
   - name: SR_B2
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B2, band_2, sr_band2, surface_reflectance, blue]
+    aliases: [ B2, band_2, sr_band2, surface_reflectance, blue ]
 
   - name: SR_B3
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B3, band_3, sr_band3, surface_reflectance, green]
+    aliases: [ B3, band_3, sr_band3, surface_reflectance, green ]
 
   - name: SR_B4
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B4, band_4, sr_band4, surface_reflectance, red]
+    aliases: [ B4, band_4, sr_band4, surface_reflectance, red ]
 
   - name: SR_B5
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B5, band_5, sr_band5, surface_reflectance, nir]
+    aliases: [ B5, band_5, sr_band5, surface_reflectance, nir ]
 
   - name: SR_B6
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B6, band_6, sr_band6, surface_reflectance, swir_1]
+    aliases: [ B6, band_6, sr_band6, surface_reflectance, swir_1 ]
 
   - name: SR_B7
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B7, band_7, sr_band7, surface_reflectance, swir_2]
+    aliases: [ B7, band_7, sr_band7, surface_reflectance, swir_2 ]
 
   - name: ST_B10
     units: "Kelvin"
     dtype: "uint16"
     nodata: 0
-    aliases: [B10, band_10, st_b10, surface_temperature, land_surface_temperature]
+    aliases: [ B10, band_10, st_b10, surface_temperature, land_surface_temperature ]
 
   - name: QA_PIXEL
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [quality_pixel, pixel_quality, pq]
+    aliases: [ quality_pixel, pixel_quality, pq ]
     flags_definition:
       nodata:
         bits: 0
@@ -137,7 +137,7 @@ measurements:
     dtype: "uint16"
     units: "bit_index"
     nodata: 0
-    aliases: [radsat_qa, quality_radiometric_saturation, radiometric_saturation]
+    aliases: [ radsat_qa, quality_radiometric_saturation, radiometric_saturation ]
     flags_definition:
       band_1_saturation:
         bits: 0
@@ -184,55 +184,55 @@ measurements:
     dtype: "uint16"
     units: "1"
     nodata: -9999
-    aliases: [st_atran, atmospheric_transmittance]
+    aliases: [ st_atran, atmospheric_transmittance ]
 
   - name: ST_CDIST
     dtype: "uint16"
     units: "Kilometers"
     nodata: -9999
-    aliases: [st_cdist, cloud_distance]
+    aliases: [ st_cdist, cloud_distance ]
 
   - name: ST_DRAD
     dtype: "uint16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [st_drad, downwell_radiance]
+    aliases: [ st_drad, downwell_radiance ]
 
   - name: ST_URAD
     dtype: "uint16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [st_urad, upwell_radiance]
+    aliases: [ st_urad, upwell_radiance ]
 
   - name: ST_TRAD
     dtype: "uint16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [st_trad, thermal_radiance]
+    aliases: [ st_trad, thermal_radiance ]
 
   - name: ST_EMIS
     dtype: "uint16"
     units: "Emissivity coefficient"
     nodata: -9999
-    aliases: [st_emis, emissivity]
+    aliases: [ st_emis, emissivity ]
 
   - name: ST_QA
     dtype: "int16"
     units: "Kelvin"
     nodata: -9999
-    aliases: [st_qa, quality_surface_temperature, surface_temperature_quality]
+    aliases: [ st_qa, quality_surface_temperature, surface_temperature_quality ]
 
   - name: ST_EMSD
     dtype: "int16"
     units: "Emissivity coefficient"
     nodata: -9999
-    aliases: [st_emsd, emissivity_stddev, emissivity_standard_deviation]
+    aliases: [ st_emsd, emissivity_stddev, emissivity_standard_deviation ]
 
   - name: SR_QA_AEROSOL
     dtype: "uint8"
     units: "bit_index"
     nodata: 1
-    aliases: [sr_qa_aerosol, aerosol_qa, qa_aerosol]
+    aliases: [ sr_qa_aerosol, aerosol_qa, qa_aerosol ]
     flags_definition:
       nodata:
         bits: 0

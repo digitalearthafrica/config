@@ -14,49 +14,49 @@ measurements:
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B1, band_1, sr_band1, blue, surface_reflectance]
+    aliases: [ B1, band_1, sr_band1, blue, surface_reflectance ]
 
   - name: SR_B2
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B2, band_2, sr_band2, green, surface_reflectance]
+    aliases: [ B2, band_2, sr_band2, green, surface_reflectance ]
 
   - name: SR_B3
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [SR_B3, band_3, sr_band3, red, surface_reflectance]
+    aliases: [ SR_B3, band_3, sr_band3, red, surface_reflectance ]
 
   - name: SR_B4
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [SR_B4, band_4, sr_band4, nir, surface_reflectance]
+    aliases: [ SR_B4, band_4, sr_band4, nir, surface_reflectance ]
 
   - name: SR_B5
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B5, band_5, sr_band5, swir_1, surface_reflectance]
+    aliases: [ B5, band_5, sr_band5, swir_1, surface_reflectance ]
 
   - name: ST_B6
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B6, band_6, st_band6, surface_temperature, land_surface_temperature]
+    aliases: [ B6, band_6, st_band6, surface_temperature, land_surface_temperature ]
 
   - name: SR_B7
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B7, band_7, sr_band7, swir_2, surface_reflectance]
+    aliases: [ B7, band_7, sr_band7, swir_2, surface_reflectance ]
 
   - name: QA_PIXEL
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [quality_pixel, pixel_quality, pq]
+    aliases: [ quality_pixel, pixel_quality, pq ]
     flags_definition:
       nodata:
         bits: 0
@@ -119,7 +119,7 @@ measurements:
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [radsat_qa, quality_radiometric_saturation, radiometric_saturation]
+    aliases: [ radsat_qa, quality_radiometric_saturation, radiometric_saturation ]
     flags_definition:
       band_1_saturation:
         bits: 0
@@ -171,61 +171,61 @@ measurements:
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_atran, atmospheric_transmittance]
+    aliases: [ st_atran, atmospheric_transmittance ]
 
   - name: ST_CDIST
     dtype: "int16"
     units: "Kilometers"
     nodata: -9999
-    aliases: [st_cdist, cloud_distance]
+    aliases: [ st_cdist, cloud_distance ]
 
   - name: ST_DRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [st_drad, downwell_radiance]
+    aliases: [ st_drad, downwell_radiance ]
 
   - name: ST_URAD
     dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [st_urad, upwell_radiance]
+    aliases: [ st_urad, upwell_radiance ]
 
   - name: ST_TRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
-    aliases: [st_trad, thermal_radiance]
+    aliases: [ st_trad, thermal_radiance ]
 
   - name: ST_EMIS
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_emis, emissivity]
+    aliases: [ st_emis, emissivity ]
 
   - name: ST_QA
     dtype: "int16"
     units: "Kelvin"
     nodata: -9999
-    aliases: [st_qa, quality_surface_temperature, surface_temperature_quality]
+    aliases: [ st_qa, quality_surface_temperature, surface_temperature_quality ]
 
   - name: ST_EMSD
-      dtype: "int16"
-      units: "Emissivity coefficient"
-      nodata: -9999
-      aliases: [st_emsd, emissivity_stddev, emissivity_standard_deviation]
+    dtype: "int16"
+    units: "Emissivity coefficient"
+    nodata: -9999
+    aliases: [ st_emsd, emissivity_stddev, emissivity_standard_deviation ]
 
   - name: SR_ATMOS_OPACITY
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_atmos_opacity, atmos_op, atmospheric_opacity]
+    aliases: [ st_atmos_opacity, atmos_op, atmospheric_opacity ]
 
   - name: SR_CLOUD_QA
     dtype: "uint16"
     units: "bit_index"
     nodata: -9999
-    aliases: [sr_cloud_qa, cloud_qa, qa_cloud]
+    aliases: [ sr_cloud_qa, cloud_qa, qa_cloud ]
     flags_definition:
       dark_dense_vegetation:
         bits: 0
