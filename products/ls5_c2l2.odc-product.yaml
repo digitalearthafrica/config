@@ -14,49 +14,49 @@ measurements:
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B1, sr_band1, coastal_aerosol]
+    aliases: [B1, band_1, sr_band1, coastal_aerosol]
 
   - name: SR_B2
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B2, sr_band2, blue]
+    aliases: [B2, band_2, sr_band2, blue]
 
   - name: SR_B3
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [SR_B3, sr_band3, green]
+    aliases: [SR_B3, band_3, sr_band3, green]
 
   - name: SR_B4
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B4, sr_band4, red]
+    aliases: [B4, band_4, sr_band4, red]
 
   - name: SR_B5
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B5, sr_band5, nir]
+    aliases: [B5, band_5, sr_band5, nir]
 
   - name: ST_B6
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B6, sr_band6, swir_1]
+    aliases: [B6, band_6, sr_band6, swir_1]
 
   - name: SR_B7
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B7, sr_band7, swir_2]
+    aliases: [B7, band_7, sr_band7, swir_2]
 
   - name: QA_PIXEL
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [pixel_qa, quality_l1_pixel]
+    aliases: [quality_pixel, pixel_quality, pq]
     flags_definition:
       nodata:
         bits: 0
@@ -159,8 +159,8 @@ measurements:
       dropped_pixel:
         bits: 9
         values:
-          0: pixel_present
-          1: no_value
+          0: true
+          1: false
 
   - name: ST_ATRAN
     dtype: "int16"
@@ -213,36 +213,36 @@ measurements:
       dark_dense_vegetation:
         bits: 0
         values:
-          0: no_ddv
-          1: ddv
+          0: false
+          1: true
       cloud:
         bits: 1
         values:
-          0: no_cloud
-          1: cloud
+          0: false
+          1: true
       cloud_shadow:
         bits: 2
         values:
-          0: no_cloud_shadow
-          1: cloud_shadow
+          0: false
+          1: true
       adjacent_to_cloud:
         bits: 3
         values:
-          0: no_adjacent_to_cloud
-          1: adjacent_to_cloud
+          0: false
+          1: true
       snow:
         bits: 4
         values:
-          0: no_snow
-          1: snow
+          0: false
+          1: true
       water:
         bits: 5
         values:
-          0: no_water
-          1: water
+          0: false
+          1: true
 
   - name: SR_ATMOS_OPACITY
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [atmos_op]
+    aliases: [atmos_op, atmospheric_opacity]
