@@ -14,43 +14,43 @@ measurements:
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B1, band_1, sr_band1, coastal_aerosol]
+    aliases: [B1, band_1, sr_band1, blue, surface_reflectance]
 
   - name: SR_B2
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B2, band_2, sr_band2, blue]
+    aliases: [B2, band_2, sr_band2, green, surface_reflectance]
 
   - name: SR_B3
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [SR_B3, band_3, sr_band3, green]
+    aliases: [SR_B3, band_3, sr_band3, red, surface_reflectance]
 
   - name: SR_B4
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [SR_B4, band_4, sr_band4, red]
+    aliases: [SR_B4, band_4, sr_band4, nir, surface_reflectance]
 
   - name: SR_B5
     dtype: "uint16"
     units: "1"
     nodata: 0
-    aliases: [B5, band_5, sr_band5, nir]
+    aliases: [B5, band_5, sr_band5, swir_1, surface_reflectance]
 
   - name: ST_B6
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B6, band_6, sr_band6, swir_1]
+    aliases: [B6, band_6, st_band6, surface_temperature, land_surface_temperature]
 
   - name: SR_B7
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B7, band_7, sr_band7, swir_2]
+    aliases: [B7, band_7, sr_band7, swir_2, surface_reflectance]
 
   - name: QA_PIXEL
     dtype: "uint16"
@@ -121,42 +121,42 @@ measurements:
     nodata: 1
     aliases: [radsat_qa, quality_radiometric_saturation, radiometric_saturation]
     flags_definition:
-      band_1_data_saturation:
+      band_1_saturation:
         bits: 0
         values:
           0: false
           1: true
-      band_2_data_saturation:
+      band_2_saturation:
         bits: 1
         values:
           0: false
           1: true
-      band_3_data_saturation:
+      band_3_saturation:
         bits: 2
         values:
           0: false
           1: true
-      band_4_data_saturation:
+      band_4_saturation:
         bits: 3
         values:
           0: false
           1: true
-      band_5_data_saturation:
+      band_5_saturation:
         bits: 4
         values:
           0: false
           1: true
-      band_6_data_saturation:
+      band_6L_saturation:
         bits: 5
         values:
           0: false
           1: true
-      band_7_data_saturation:
+      band_7_saturation:
         bits: 6
         values:
           0: false
           1: true
-      band_6h_data_saturation:
+      band_6h_saturation:
         bits: 8
         values:
           0: false
@@ -209,17 +209,23 @@ measurements:
     nodata: -9999
     aliases: [st_qa, quality_surface_temperature, surface_temperature_quality]
 
+  - name: ST_EMSD
+      dtype: "int16"
+      units: "Emissivity coefficient"
+      nodata: -9999
+      aliases: [st_emsd, emissivity_stddev, emissivity_standard_deviation]
+
   - name: SR_ATMOS_OPACITY
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [SR_ATMOS_OPACITY, internal_sr_atmospheric_opacity]
+    aliases: [st_atmos_opacity, atmos_op, atmospheric_opacity]
 
   - name: SR_CLOUD_QA
     dtype: "uint16"
     units: "bit_index"
     nodata: -9999
-    aliases: [SR_CLOUD_QA, Cloud_QA]
+    aliases: [sr_cloud_qa, cloud_qa, qa_cloud]
     flags_definition:
       dark_dense_vegetation:
         bits: 0
