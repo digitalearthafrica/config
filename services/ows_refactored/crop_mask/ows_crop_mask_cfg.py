@@ -15,7 +15,7 @@ style_crop_mask_magma = {
             "band": "prob",
         },
     },
-    "mpl_ramp": "plasma",
+    "mpl_ramp": "magma",
     "range": [50, 100],
     "legend": {
         "begin": "50",
