@@ -31,7 +31,7 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "espg:6933": {
+            "epsg:6933": {
                 "alias": "EPSG:6933"
             }
         },
