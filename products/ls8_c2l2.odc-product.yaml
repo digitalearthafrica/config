@@ -59,10 +59,10 @@ measurements:
     aliases: [B10, band_10, surface_temperature, land_surface_temperature]
 
   - name: ST_TRAD
-      dtype: "int16"
-      units: "W/(m2.sr.μm)"
-      nodata: -9999
-      aliases: [ st_trad, thermal_radiance ]
+    dtype: "int16"
+    units: "W/(m2.sr.μm)"
+    nodata: -9999
+    aliases: [ st_trad, thermal_radiance ]
 
   - name: ST_URAD
     dtype: "int16"
@@ -77,22 +77,22 @@ measurements:
     aliases: [ st_drad, downwell_radiance ]
 
   - name: ST_ATRAN
-      dtype: "int16"
-      units: "1"
-      nodata: -9999
-      aliases: [ st_atran, atmospheric_transmittance ]
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ st_atran, atmospheric_transmittance ]
 
   - name: ST_EMIS
-      dtype: "int16"
-      units: "1"
-      nodata: -9999
-      aliases: [ st_emis, emissivity ]
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ st_emis, emissivity ]
 
   - name: ST_EMSD
-      dtype: "int16"
-      units: "1"
-      nodata: -9999
-      aliases: [ st_emsd, emissivity_stddev, emissivity_standard_deviation ]
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ st_emsd, emissivity_stddev, emissivity_standard_deviation ]
 
   - name: ST_CDIST
     dtype: "int16"
@@ -257,7 +257,7 @@ measurements:
           3: high
 
   - name: ST_QA
-      dtype: "int16"
-      units: "Kelvin"
-      nodata: -9999
-      aliases: [ quality_surface_temperature, surface_temperature_quality ]
+    dtype: "int16"
+    units: "Kelvin"
+    nodata: -9999
+    aliases: [ quality_surface_temperature, surface_temperature_quality ]
