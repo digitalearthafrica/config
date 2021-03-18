@@ -72,7 +72,7 @@ style_crop_mask_reversed = {
             {
                 "title": "No Crop",
                 "color": "#CCCCCC",  # (Or #FFFF00)
-                "values": [1],
+                "values": [0],
             },
         ]
     },
