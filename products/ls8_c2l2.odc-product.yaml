@@ -212,7 +212,7 @@ measurements:
 
   - name: ST_EMIS
     dtype: "int16"
-    units: "Emissivity coefficient"
+    units: "1"
     nodata: -9999
     aliases: [st_emis, emissivity]
 
@@ -224,7 +224,7 @@ measurements:
 
   - name: ST_EMSD
     dtype: "int16"
-    units: "Emissivity coefficient"
+    units: "1"
     nodata: -9999
     aliases: [st_emsd, emissivity_stddev, emissivity_standard_deviation]
 

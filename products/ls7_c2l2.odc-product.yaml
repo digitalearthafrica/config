@@ -118,7 +118,7 @@ measurements:
   - name: QA_RADSAT
     dtype: "uint16"
     units: "bit_index"
-    nodata: 1
+    nodata: 0
     aliases: [quality_radiometric_saturation, radiometric_saturation]
     flags_definition:
       band_1_saturation:
@@ -199,7 +199,7 @@ measurements:
 
   - name: ST_EMIS
     dtype: "int16"
-    units: "Emissivity coefficient"
+    units: "1"
     nodata: -9999
     aliases: [st_emis, emissivity]
 
@@ -211,7 +211,7 @@ measurements:
 
   - name: ST_EMSD
     dtype: "int16"
-    units: "Emissivity coefficient"
+    units: "1"
     nodata: -9999
     aliases: [emissivity_stddev, emissivity_standard_deviation]
 
@@ -224,7 +224,7 @@ measurements:
   - name: SR_CLOUD_QA
     dtype: "uint8"
     units: "bit_index"
-    nodata: -9999
+    nodata: 0
     aliases: [sr_cloud_qa, cloud_qa, qa_cloud]
     flags_definition:
       dark_dense_vegetation:
