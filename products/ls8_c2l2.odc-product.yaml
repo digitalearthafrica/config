@@ -181,37 +181,37 @@ measurements:
           1: true
 
   - name: ST_ATRAN
-    dtype: "uint16"
+    dtype: "int16"
     units: "1"
     nodata: -9999
     aliases: [st_atran, atmospheric_transmittance]
 
   - name: ST_CDIST
-    dtype: "uint16"
+    dtype: "int16"
     units: "Kilometers"
     nodata: -9999
     aliases: [st_cdist, cloud_distance]
 
   - name: ST_DRAD
-    dtype: "uint16"
+    dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
     aliases: [st_drad, downwell_radiance]
 
   - name: ST_URAD
-    dtype: "uint16"
+    dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
     aliases: [st_urad, upwell_radiance]
 
   - name: ST_TRAD
-    dtype: "uint16"
+    dtype: "int16"
     units: "W/(m2.sr.μm)/DN"
     nodata: -9999
     aliases: [st_trad, thermal_radiance]
 
   - name: ST_EMIS
-    dtype: "uint16"
+    dtype: "int16"
     units: "Emissivity coefficient"
     nodata: -9999
     aliases: [st_emis, emissivity]
@@ -224,7 +224,7 @@ measurements:
 
   - name: ST_EMSD
     dtype: "int16"
-    units: "1"
+    units: "Emissivity coefficient"
     nodata: -9999
     aliases: [st_emsd, emissivity_stddev, emissivity_standard_deviation]
 

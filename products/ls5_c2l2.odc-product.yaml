@@ -41,8 +41,8 @@ measurements:
     aliases: [B5, band_5, swir_1]
 
   - name: ST_B6
-    dtype: "uint16"
-    units: "1"
+    dtype: "int16"
+    units: "Kelvin"
     nodata: 0
     aliases: [B6, band_6, surface_temperature, land_surface_temperature]
 
@@ -206,7 +206,7 @@ measurements:
 
   - name: ST_EMSD
     dtype: "int16"
-    units: "1"
+    units: "Emissivity coefficient"
     nodata: -9999
     aliases: [emissivity_stddev, emissivity_standard_deviation]
 
