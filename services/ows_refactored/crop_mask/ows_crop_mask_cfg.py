@@ -35,17 +35,9 @@ style_crop_mask_green = {
         "mask": [
             {
                 "title": "Crop",
-                "abstract": "",
-                "flags": {"mask": True},
-                "color": "#00ff00",
-            },
-            {
-                "title": "No Crop",
-                "abstract": "",
-                "flags": {"mask": False},
-                "color": "#00ff00",
-                "alpha": 0.0,
-            },
+                "color": "#00FF00",  # (Or #FFFF00)
+                "values": [1],
+            }
         ]
     },
 }
@@ -58,17 +50,9 @@ style_crop_mask_yellow = {
         "mask": [
             {
                 "title": "Crop",
-                "abstract": "",
-                "flags": {"mask": True},
-                "color": "#ffff00",
-            },
-            {
-                "title": "No Crop",
-                "abstract": "",
-                "flags": {"mask": False},
-                "color": "#ffff00",
-                "alpha": 0.0,
-            },
+                "color": "#FFFF00",  # (Or #FFFF00)
+                "values": [1],
+            }
         ]
     },
 }
@@ -81,16 +65,14 @@ style_crop_mask_reversed = {
         "mask": [
             {
                 "title": "Crop",
-                "abstract": "",
-                "flags": {"mask": True},
-                "color": "#cccccc",
-                "alpha": 0.0,
+                "color": "#CCCCCC",  # (Or #FFFF00)
+                "values": [1],
+                "mask": True,  # transparent
             },
             {
                 "title": "No Crop",
-                "abstract": "",
-                "flags": {"mask": False},
-                "color": "#cccccc",
+                "color": "#CCCCCC",  # (Or #FFFF00)
+                "values": [1],
             },
         ]
     },
@@ -114,8 +96,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,
     },
     "wcs": {
-        "native_crs": "EPSG:4326",
-        "native_resolution": [0.000222222222222, -0.000222222222222],
+        "native_crs": "epsg:6933",
+        "native_resolution": [20, -20],
         "default_bands": ["mask", "prob"],
     },
     "styling": {
