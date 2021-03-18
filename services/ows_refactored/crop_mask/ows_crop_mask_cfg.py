@@ -35,7 +35,7 @@ style_crop_mask_green = {
         "mask": [
             {
                 "title": "Crop",
-                "colour": "#00FF00",  # (Or #FFFF00)
+                "color": "#00FF00",  # (Or #FFFF00)
                 "values": [1],
             }
         ]
@@ -50,7 +50,7 @@ style_crop_mask_yellow = {
         "mask": [
             {
                 "title": "Crop",
-                "colour": "#FFFF00",  # (Or #FFFF00)
+                "color": "#FFFF00",  # (Or #FFFF00)
                 "values": [1],
             }
         ]
@@ -65,13 +65,13 @@ style_crop_mask_reversed = {
         "mask": [
             {
                 "title": "Crop",
-                "colour": "#CCCCCC",  # (Or #FFFF00)
+                "color": "#CCCCCC",  # (Or #FFFF00)
                 "values": [1],
                 "mask": True,  # transparent
             },
             {
                 "title": "No Crop",
-                "colour": "#CCCCCC",  # (Or #FFFF00)
+                "color": "#CCCCCC",  # (Or #FFFF00)
                 "values": [1],
             },
         ]
