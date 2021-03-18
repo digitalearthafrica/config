@@ -40,17 +40,59 @@ measurements:
     nodata: 0
     aliases: [B5, band_5, swir_1]
 
+  - name: SR_B7
+    dtype: "uint16"
+    units: "1"
+    nodata: 0
+    aliases: [B7, band_7, sr_band7, swir_2]
+
   - name: ST_B6
     dtype: "int16"
     units: "Kelvin"
     nodata: 0
     aliases: [B6, band_6, surface_temperature, land_surface_temperature]
 
-  - name: SR_B7
-    dtype: "uint16"
+  - name: ST_TRAD
+      dtype: "int16"
+      units: "W/(m2.sr.μm)"
+      nodata: -9999
+      aliases: [ st_trad, thermal_radiance ]
+
+  - name: ST_URAD
+    dtype: "int16"
+    units: "W/(m2.sr.μm)"
+    nodata: -9999
+    aliases: [ st_urad, upwell_radiance ]
+
+  - name: ST_DRAD
+    dtype: "int16"
+    units: "W/(m2.sr.μm)"
+    nodata: -9999
+    aliases: [ st_drad, downwell_radiance ]
+
+  - name: ST_ATRAN
+      dtype: "int16"
+      units: "1"
+      nodata: -9999
+      aliases: [ st_atran, atmospheric_transmittance ]
+
+  - name: ST_EMIS
+    dtype: "int16"
     units: "1"
-    nodata: 0
-    aliases: [B7, band_7, sr_band7, swir_2]
+    nodata: -9999
+    aliases: [ st_emis, emissivity ]
+
+  - name: ST_EMSD
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ emissivity_stddev, emissivity_standard_deviation ]
+
+  - name: ST_CDIST
+      dtype: "int16"
+      units: "Kilometers"
+      nodata: -9999
+      aliases: [ st_cdist, cloud_distance ]
 
   - name: QA_PIXEL
     dtype: "uint16"
@@ -162,53 +204,11 @@ measurements:
           0: true
           1: false
 
-  - name: ST_ATRAN
+  - name: SR_ATMOS_OPACITY
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_atran, atmospheric_transmittance]
-
-  - name: ST_CDIST
-    dtype: "int16"
-    units: "Kilometers"
-    nodata: -9999
-    aliases: [st_cdist, cloud_distance]
-
-  - name: ST_DRAD
-    dtype: "int16"
-    units: "W/(m2.sr.μm)/DN"
-    nodata: -9999
-    aliases: [st_drad, downwell_radiance]
-
-  - name: ST_URAD
-    dtype: "int16"
-    units: "W/(m2.sr.μm)/DN"
-    nodata: -9999
-    aliases: [st_urad, upwell_radiance]
-
-  - name: ST_TRAD
-    dtype: "int16"
-    units: "W/(m2.sr.μm)/DN"
-    nodata: -9999
-    aliases: [st_trad, thermal_radiance]
-
-  - name: ST_EMIS
-    dtype: "int16"
-    units: "1"
-    nodata: -9999
-    aliases: [st_emis, emissivity]
-
-  - name: ST_QA
-    dtype: "int16"
-    units: "Kelvin"
-    nodata: -9999
-    aliases: [quality_surface_temperature, surface_temperature_quality]
-
-  - name: ST_EMSD
-    dtype: "int16"
-    units: "1"
-    nodata: -9999
-    aliases: [emissivity_stddev, emissivity_standard_deviation]
+    aliases: [st_atmos_opacity, atmos_op, atmospheric_opacity]
 
   - name: SR_CLOUD_QA
     dtype: "uint8"
@@ -247,8 +247,8 @@ measurements:
           0: false
           1: true
 
-  - name: SR_ATMOS_OPACITY
-    dtype: "int16"
-    units: "1"
-    nodata: -9999
-    aliases: [st_atmos_opacity, atmos_op, atmospheric_opacity]
+  - name: ST_QA
+      dtype: "int16"
+      units: "Kelvin"
+      nodata: -9999
+      aliases: [ quality_surface_temperature, surface_temperature_quality ]
