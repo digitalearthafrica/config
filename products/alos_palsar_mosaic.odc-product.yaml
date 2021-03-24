@@ -19,7 +19,6 @@ metadata:
     code: ALOS/ALOS-2
   instrument:
     name: PALSAR/PALSAR-2
-  product_type: gamma0
   format:
     name: GeoTIFF
 
