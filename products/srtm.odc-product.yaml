@@ -8,7 +8,6 @@ metadata:
     code: SRTM
     instrument:
       name: SIR
-  product_type: DEM
 
 storage:
   crs: EPSG:4326
