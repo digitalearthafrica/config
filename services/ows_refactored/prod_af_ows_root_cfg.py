@@ -117,6 +117,10 @@ ows_cfg = {
                             "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
                             "type": "python",
                         },
+                        {
+                            "include": "ows_refactored.surface_reflectance.ows_geomedian_cfg.layers",
+                            "type": "python",
+                        },
                     ],
                 },
             ],
