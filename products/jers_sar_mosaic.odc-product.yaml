@@ -19,7 +19,6 @@ metadata:
     code: JERS-1
   instrument:
     name: SAR
-  product_type: gamma0
   format:
     name: GeoTIFF
 
