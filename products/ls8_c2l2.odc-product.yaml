@@ -14,43 +14,43 @@ measurements:
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B1, band_1, sr_band1, coastal_aerosol]
+    aliases: [B1, band_1, coastal_aerosol]
 
   - name: SR_B2
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B2, band_2, sr_band2, blue]
+    aliases: [B2, band_2, blue]
 
   - name: SR_B3
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B3, band_3, sr_band3, green]
+    aliases: [B3, band_3, green]
 
   - name: SR_B4
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B4, band_4, sr_band4, red]
+    aliases: [B4, band_4, red]
 
   - name: SR_B5
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B5, band_5, sr_band5, nir]
+    aliases: [B5, band_5, nir]
 
   - name: SR_B6
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B6, band_6, sr_band6, swir_1]
+    aliases: [B6, band_6, swir_1]
 
   - name: SR_B7
     units: "1"
     dtype: "uint16"
     nodata: 0
-    aliases: [B7, band_7, sr_band7, swir_2]
+    aliases: [B7, band_7, swir_2]
 
   - name: ST_B10
     units: "Kelvin"
@@ -226,7 +226,7 @@ measurements:
     dtype: "uint8"
     units: "bit_index"
     nodata: 1
-    aliases: [sr_qa_aerosol, aerosol_qa, qa_aerosol]
+    aliases: [aerosol_qa, qa_aerosol]
     flags_definition:
       nodata:
         bits: 0
