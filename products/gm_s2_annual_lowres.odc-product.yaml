@@ -4,7 +4,7 @@ metadata_type: eo3
 description: Annual Geometric Median, Sentinel-2 - Low Resolution mosaic
 metadata:
   product:
-    name: ga_s2_gm_lowres
+    name: gm_s2_annual_lowres
 measurements:
   - name: B02
     dtype: uint16
