@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_sentinel2
+from ows_refactored.common.ows_reslim_cfg import reslim_zoom9
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm
 from ows_refactored.surface_reflectance.style_sr_cfg import (styles_gm_list,
                                                              styles_tmads_list)
@@ -35,7 +35,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "low_res_product_name": "gm_s2_annual_lowres",
             "bands": bands_s2_gm,
             "dynamic": False,
-            "resource_limits": reslim_sentinel2,
+            "resource_limits": reslim_zoom9,
             "time_resolution": "year",
             "image_processing": {
                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -79,10 +79,18 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "low_res_product_name": "gm_s2_annual_lowres",
             "bands": bands_s2_gm,
             "dynamic": False,
-            "resource_limits": reslim_sentinel2,
+            "resource_limits": reslim_zoom9,
             "time_resolution": "year",
             "image_processing": {
-                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                "extent_mask_func": [
+                    "datacube_ows.ogc_utils.mask_by_val",
+                    {
+                        "function": "datacube_ows.ogc_utils.mask_by_val",
+                        "kwargs": {
+                            "value": "nan",
+                        }
+                    }
+                ],
                 "always_fetch_bands": [],
                 "manual_merge": False,  # True
                 "apply_solar_corrections": False,
