@@ -85,7 +85,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "extent_mask_func": {
                         "function": "datacube_ows.ogc_utils.mask_by_val",
                         "kwargs": {
-                            "value": "nan",
+                            "val": "nan",
                         }
                 },
                 "always_fetch_bands": [],

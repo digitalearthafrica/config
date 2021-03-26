@@ -23,7 +23,7 @@ reslim_sentinel2 = {
 
 reslim_zoom9 = {
     "zoomed_out_fill_colour": [150, 180, 200, 160],
-    "min_zoom_factor": 2000.0, 
+    "min_zoom_factor": 2000.0,
     "max_datasets": 64,  # Defaults to no dataset limit
     "wcs": {
         "max_datasets": 64,  # Defaults to no dataset limit
