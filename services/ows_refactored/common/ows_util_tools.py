@@ -1,4 +1,4 @@
-import numpy
+import numpy # pylint: disable=import-error
 
 
 def mask_by_nan(data, band):
