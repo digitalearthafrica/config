@@ -82,12 +82,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "resource_limits": reslim_zoom9,
             "time_resolution": "year",
             "image_processing": {
-                "extent_mask_func": {
-                        "function": "datacube_ows.ogc_utils.mask_by_val",
-                        "kwargs": {
-                            "val": "nan",
-                        }
-                },
+                "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_nan",
                 "always_fetch_bands": [],
                 "manual_merge": False,  # True
                 "apply_solar_corrections": False,
