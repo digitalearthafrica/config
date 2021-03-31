@@ -53,7 +53,7 @@
                 "tmad_rgb_sens",
                 "arcsec_sdev",
                 "log_edev",
-                "log_bcdev",
+                "log_bcdev"
             ]
         },
         {
