@@ -496,7 +496,7 @@ bcdev_scaling = [0.025, 0.13]
 
 style_tmad_sdev_std = {
     "name": "arcsec_sdev",
-    "title": "Spectral MAD",
+    "title": "Spectral MAD (SMAD)",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_arcsec",
@@ -519,7 +519,7 @@ style_tmad_sdev_std = {
 
 style_tmad_edev_std = {
     "name": "log_edev",
-    "title": "Euclidean MAD",
+    "title": "Euclidean MAD (EMAD)",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
@@ -543,7 +543,7 @@ style_tmad_edev_std = {
 
 style_tmad_bcdev_std = {
     "name": "log_bcdev",
-    "title": "Bray-Curtis MAD",
+    "title": "Bray-Curtis MAD (BCMAD)",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
