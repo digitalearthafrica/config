@@ -30,7 +30,7 @@
             "product": [
                 "gm_s2_annual"
             ],
-            "styles_count": 23,
+            "styles_count": 22,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -54,7 +54,6 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev",
-                "count"
             ]
         }
     ]

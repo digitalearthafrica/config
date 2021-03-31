@@ -24,6 +24,18 @@ style_s2_irg = {
     "scale_range": [0, 3000],
 }
 
+style_gm_irg = {
+    "name": "infrared_green",
+    "title": "Geomedian - SWIR, NIR, Green",
+    "abstract": "False Colour image with SWIR1->Red, NIR->Green, and Green->Blue",
+    "components": {
+        "red": {"swir_1": 1.0},
+        "green": {"nir": 1.0},
+        "blue": {"green": 1.0},
+    },
+    "scale_range": [0, 3000],
+}
+
 style_ls_irg = {
     "name": "infrared_green",
     "title": "False colour - Green, SWIR, NIR",
@@ -192,6 +204,14 @@ style_ls_pure_green = {
 style_ls_simple_rgb = {
     "name": "simple_rgb",
     "title": "Simple RGB",
+    "abstract": "Simple true-colour image, using the red, green and blue bands",
+    "components": {"red": {"red": 1.0}, "green": {"green": 1.0}, "blue": {"blue": 1.0}},
+    "scale_range": [0.0, 3000.0],
+}
+
+style_gm_simple_rgb = {
+    "name": "simple_rgb",
+    "title": "Geomedian - Red, Green, Blue",
     "abstract": "Simple true-colour image, using the red, green and blue bands",
     "components": {"red": {"red": 1.0}, "green": {"green": 1.0}, "blue": {"blue": 1.0}},
     "scale_range": [0.0, 3000.0],
@@ -488,6 +508,51 @@ style_sentinel_count = {
     },
 }
 
+style_gm_count = {
+    "name": "count",
+    "title": "Clear observation count",
+    "abstract": "Count of observations included in geomedian/MAD calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count",
+        },
+    },
+    "needed_bands": ["count"],
+    "include_in_feature_info": False,
+    "color_ramp": [
+        {"value": 0, "color": "#666666", "alpha": 0},
+        {
+            # purely for legend display
+            # we should not get fractional
+            # values in this styles
+            "value": 0.2,
+            "color": "#890000",
+            "alpha": 1,
+        },
+        {"value": 20, "color": "#990000"},
+        {"value": 30, "color": "#E38400"},
+        {"value": 40, "color": "#E3DF00"},
+        {"value": 50, "color": "#A6E300"},
+        {"value": 60, "color": "#00E32D"},
+        {"value": 70, "color": "#00E3C8"},
+        {"value": 80, "color": "#0097E3"},
+        {"value": 90, "color": "#005FE3"},
+        {"value": 100, "color": "#000FE3"},
+        {"value": 110, "color": "#000EA9"},
+        {"value": 120, "color": "#5700E3"},
+    ],
+    "legend": {
+        "begin": "0",
+        "end": "120",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "120": {"prefix": ">"},
+        },
+    },
+}
 
 # styles tmad
 sdev_scaling = [0.020, 0.18]
@@ -657,8 +722,8 @@ styles_s2_list = [
 ]
 
 styles_gm_list = [
-    style_ls_simple_rgb,
-    style_s2_irg,
+    style_gm_simple_rgb,
+    style_gm_irg,
     style_ls_ndvi,
     style_ls_ndwi,
     style_gals_mndwi,
@@ -673,16 +738,12 @@ styles_gm_list = [
     style_s2_pure_narrow_nir,
     style_s2_pure_swir1,
     style_s2_pure_swir2,
-    style_sentinel_count,
-]
-
-styles_tmads_list = [
+    style_gm_count,
     style_tmad_rgb_std,
     style_tmad_rgb_sens,
     style_tmad_sdev_std,
     style_tmad_edev_std,
     style_tmad_bcdev_std,
-    style_sentinel_count,
 ]
 
 styles_sr_list = [

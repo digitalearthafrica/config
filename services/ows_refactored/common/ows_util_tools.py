@@ -10,4 +10,3 @@ def mask_by_emad_nan(data, band, band_mapper=None):
     else:
         emad = "EMAD"
     return ~numpy.isnan(data[emad])
-

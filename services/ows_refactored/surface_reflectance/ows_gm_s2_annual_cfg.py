@@ -1,7 +1,6 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_zoom9
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm
-from ows_refactored.surface_reflectance.style_sr_cfg import (styles_gm_list,
-                                                             styles_tmads_list)
+from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_list
 
 layer = {
     "title": "Surface Reflectance Annual GeoMAD Sentinel-2",
@@ -52,6 +51,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "styling": {
         "default_style": "simple_rgb",
-        "styles": styles_gm_list + styles_tmads_list,
+        "styles": styles_gm_list,
     },
 }
