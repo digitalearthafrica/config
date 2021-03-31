@@ -496,7 +496,7 @@ bcdev_scaling = [0.025, 0.13]
 
 style_tmad_sdev_std = {
     "name": "arcsec_sdev",
-    "title": "SMAD",
+    "title": "Spectral MAD",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_arcsec",
@@ -511,15 +511,15 @@ style_tmad_sdev_std = {
         "end": "4.0",
         "ticks": ["0.0", "4.0"],
         "tick_labels": {
-            "0.0": {"label": "Low\ntmad"},
-            "4.0": {"label": "High\ntmad"},
+            "0.0": {"label": "Low\nSMAD"},
+            "4.0": {"label": "High\nSMAD"},
         },
     },
 }
 
 style_tmad_edev_std = {
     "name": "log_edev",
-    "title": "EMAD",
+    "title": "Euclidean MAD",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
@@ -534,8 +534,8 @@ style_tmad_edev_std = {
         "end": "4.0",
         "ticks": ["0.0", "4.0"],
         "tick_labels": {
-            "0.0": {"label": "Low\ntmad"},
-            "4.0": {"label": "High\ntmad"},
+            "0.0": {"label": "Low\nEMAD"},
+            "4.0": {"label": "High\nEMAD"},
         },
     },
 }
@@ -543,7 +543,7 @@ style_tmad_edev_std = {
 
 style_tmad_bcdev_std = {
     "name": "log_bcdev",
-    "title": "BCMAD",
+    "title": "Bray-Curtis MAD",
     "abstract": "Good for cropland and forest",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band_offset_log",
@@ -562,15 +562,15 @@ style_tmad_bcdev_std = {
         "end": "4.0",
         "ticks": ["0.0", "4.0"],
         "tick_labels": {
-            "0.0": {"label": "Low\ntmad"},
-            "4.0": {"label": "High\ntmad"},
+            "0.0": {"label": "Low\nBCMAD"},
+            "4.0": {"label": "High\nBCMAD"},
         },
     },
 }
 
 style_tmad_rgb_std = {
     "name": "tmad_rgb_std",
-    "title": "TMAD multi-band false-colour (standard)",
+    "title": "MADs - EMAD, SMAD, BCMAD",
     "abstract": "Good for cropland and forest",
     "components": {
         "red": {
@@ -604,7 +604,7 @@ style_tmad_rgb_std = {
 style_tmad_rgb_sens = {
     "inherits": style_tmad_rgb_std,
     "name": "tmad_rgb_sens",
-    "title": "TMAD multi-band false-colour (sensitive)",
+    "title": "MADs - EMAD, SMAD, BCMAD (desert)",
     "abstract": "Good for arid land and desert",
     "components": {
         "red": {
