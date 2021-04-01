@@ -724,6 +724,8 @@ styles_s2_list = [
 styles_gm_list = [
     style_gm_simple_rgb,
     style_gm_irg,
+    style_tmad_rgb_std,
+    style_tmad_rgb_sens,
     style_ls_ndvi,
     style_ls_ndwi,
     style_gals_mndwi,
@@ -738,12 +740,10 @@ styles_gm_list = [
     style_s2_pure_narrow_nir,
     style_s2_pure_swir1,
     style_s2_pure_swir2,
-    style_gm_count,
-    style_tmad_rgb_std,
-    style_tmad_rgb_sens,
     style_tmad_sdev_std,
     style_tmad_edev_std,
     style_tmad_bcdev_std,
+    style_gm_count,
 ]
 
 styles_sr_list = [
