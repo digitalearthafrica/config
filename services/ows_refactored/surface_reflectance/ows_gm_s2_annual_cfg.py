@@ -6,7 +6,7 @@ layer = {
     "title": "Surface Reflectance Annual GeoMAD Sentinel-2",
     "name": "gm_s2_annual",
     "abstract": """
-Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. 
+Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.
 
 One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017). In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows further analysis on the composite images, just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual geomedian image is calculated from the surface reflectance values drawn from a calendar year.
 
