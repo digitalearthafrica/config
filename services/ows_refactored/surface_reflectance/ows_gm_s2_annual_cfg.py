@@ -1,13 +1,14 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_zoom9
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm
-from ows_refactored.surface_reflectance.style_sr_cfg import (styles_gm_list,
-                                                             styles_tmads_list)
+from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_list
 
 layer = {
     "title": "Surface Reflectance Annual GeoMAD Sentinel-2",
     "name": "gm_s2_annual",
     "abstract": """
-Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period. One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017). In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows further analysis on the composite images, just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual geomedian image is calculated from the surface reflectance values drawn from a calendar year.
+Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.
+
+One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017). In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows further analysis on the composite images, just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual geomedian image is calculated from the surface reflectance values drawn from a calendar year.
 
 In addition, surface reflectance varabilities within the same time period can be measured to support characterization of the land surfaces. The median absolute deviation (MAD) is a robust measure (resilient to outliers) of the variability within a dataset. For multi-spectral Earth observation, deviation can be measured against the geomedian using a number of distance metrics.  Three of these metrics are adopted to highlight different types of changes in the landscape:
 - Euclidean distance (EMAD), which is more sensitive to changes in target brightness.
@@ -24,7 +25,6 @@ Annual geomedian images enable easy visual and algorithmic interpretation, e.g. 
 
 For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896 and https://doi.org/10.1109/IGARSS.2018.8518312
 
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
     "product_name": "gm_s2_annual",
     # Low product name
@@ -52,6 +52,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "styling": {
         "default_style": "simple_rgb",
-        "styles": styles_gm_list + styles_tmads_list,
+        "styles": styles_gm_list,
     },
 }
