@@ -635,7 +635,7 @@ style_tmad_bcdev_std = {
 
 style_tmad_rgb_std = {
     "name": "tmad_rgb_std",
-    "title": "MADs - EMAD, SMAD, BCMAD",
+    "title": "MADs - SMAD, EMAD, BCMAD",
     "abstract": "Good for cropland and forest",
     "components": {
         "red": {
@@ -669,7 +669,7 @@ style_tmad_rgb_std = {
 style_tmad_rgb_sens = {
     "inherits": style_tmad_rgb_std,
     "name": "tmad_rgb_sens",
-    "title": "MADs - EMAD, SMAD, BCMAD (desert)",
+    "title": "MADs (desert) - SMAD, EMAD, BCMAD",
     "abstract": "Good for arid land and desert",
     "components": {
         "red": {
