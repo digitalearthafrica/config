@@ -78,11 +78,7 @@ style_crop_mask_reversed = {
     },
 }
 
-layers = {
-        "title": "Elevation",
-        "abstract": """
-        """,
-        "layers": [
+layer
     {
     "title": "Cropland Extent Map for Eastern Africa",
     "name": "crop_mask_eastern",
@@ -122,5 +118,4 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             style_crop_mask_reversed,
         ],
     },
-}]
 }

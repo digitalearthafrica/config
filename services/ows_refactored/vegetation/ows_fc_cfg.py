@@ -47,11 +47,7 @@ style_fc_simple = {
 }
 
 
-layers = {
-    "title": "Landsat",
-    "abstract": "Landsat Fractional Cover based on USGS Level 2 Scenes",
-    "layers": [
-        {
+layer= {
             "title": "Fractional Cover (development)",
             "name": "ls_usgs_fc_scene",
             "abstract": """
