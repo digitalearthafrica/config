@@ -127,11 +127,11 @@ ows_cfg = {
                     ],
                 },
                 {
-                    "title": "Crop Mask",
+                    "title": "Agriculture",
                     "abstract": """Crop Mask""",
                     "layers": [
                         {
-                            "include": "ows_refactored.crop_mask.ows_crop_mask_cfg.layer",
+                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layer",
                             "type": "python",
                         },
                     ],

@@ -258,11 +258,11 @@ ows_cfg = {
                     "type": "python",
                 },
                 {
-                    "title": "ALOS/PALSAR",
+                    "title": "Elevation",
                     "abstract": """Annual mosaic of ALOS/PALSAR and ALOS-2/PALSAR-2 data""",
                     "layers": [
                         {
-                            "include": "ows_refactored.alos.ows_alos_cfg.layer",
+                            "include": "ows_refactored.radar_backscatter.ows_alos_cfg.layer",
                             "type": "python",
                         },
                         {
