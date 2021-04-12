@@ -78,8 +78,7 @@ style_crop_mask_reversed = {
     },
 }
 
-layer
-    {
+layer = {
     "title": "Cropland Extent Map for Eastern Africa",
     "name": "crop_mask_eastern",
     "abstract": """
