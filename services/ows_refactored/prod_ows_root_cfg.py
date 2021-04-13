@@ -141,7 +141,7 @@ ows_cfg = {
                 },
                 {
                     "title": "Radar backscatter",
-                    "abstract": """Annual mosaic of ALOS/PALSAR and ALOS-2/PALSAR-2 data""",
+                    "abstract": """Radar backscatter""",
                     "layers": [
                         {
                             "include": "ows_refactored.radar_backscatter.ows_alos_cfg.layer",

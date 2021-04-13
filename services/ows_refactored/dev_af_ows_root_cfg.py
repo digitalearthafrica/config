@@ -113,22 +113,28 @@ ows_cfg = {
             "layers": [
                 # Hierarchical list of layers.  May be a combination of unnamed/unmappable folder-layers or named mappable layers.
                 {
-                    "title": "Sentinel",
-                    "abstract": """Sentinel""",
+                    "title": "Satellite images",
+                    "abstract": """Satellite images""",
                     "layers": [
                         {
-                            "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layer",
-                            "type": "python",
-                        },
+                            "title": "Surface reflectance",
+                            "abstract": """Surface reflectance""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
+                        }
                     ],
                 },
                 {
                     "title": "Agriculture",
-                    "abstract": """Crop Mask""",
+                    "abstract": """Agriculture""",
                     "layers": [
                         {
                             "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layer",
