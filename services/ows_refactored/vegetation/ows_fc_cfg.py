@@ -48,9 +48,9 @@ style_fc_simple = {
 
 
 layer= {
-            "title": "Fractional Cover (development)",
-            "name": "ls_usgs_fc_scene",
-            "abstract": """
+    "title": "Fractional Cover (development)",
+    "name": "ls_usgs_fc_scene",
+    "abstract": """
 Fractional cover describes the landscape in terms of coverage by green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.) and bare soil. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
 
 This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
@@ -63,30 +63,28 @@ The fractional cover algorithm was developed by the Joint Remote Sensing Researc
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-            "product_name": "ls_usgs_fc_scene",
-            "bands": bands_fc,
-            "resource_limits": reslim_srtm,
-            # "time_resolution": "year",
-            "image_processing": {
-                "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-                "always_fetch_bands": [],
-                "manual_merge": False,
-            },
-            "flags": {
-                "product": "ls_usgs_wofs_scene",
-                "band": "water",
-                "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
-                "ignore_info_flags": [],
-            },
-            "wcs": {
-                "native_crs": "EPSG:4326",
-                "native_resolution": [30.0, -30.0],
-                "default_bands": ["BS", "PV", "NPV"],
-            },
-            "styling": {
-                "default_style": "simple_fc",
-                "styles": [style_fc_simple],
-            },
-        },
-    ],
+    "product_name": "ls_usgs_fc_scene",
+    "bands": bands_fc,
+    "resource_limits": reslim_srtm,
+    # "time_resolution": "year",
+    "image_processing": {
+        "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+        "always_fetch_bands": [],
+        "manual_merge": False,
+    },
+    "flags": {
+        "product": "ls_usgs_wofs_scene",
+        "band": "water",
+        "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
+        "ignore_info_flags": [],
+    },
+    "wcs": {
+        "native_crs": "EPSG:4326",
+        "native_resolution": [30.0, -30.0],
+        "default_bands": ["BS", "PV", "NPV"],
+    },
+    "styling": {
+        "default_style": "simple_fc",
+        "styles": [style_fc_simple],
+    },
 }
