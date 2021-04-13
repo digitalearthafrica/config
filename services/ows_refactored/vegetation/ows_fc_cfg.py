@@ -47,7 +47,7 @@ style_fc_simple = {
 }
 
 
-layer= {
+layer = {
     "title": "Fractional Cover (development)",
     "name": "ls_usgs_fc_scene",
     "abstract": """

@@ -2,8 +2,6 @@ from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
 
 bands_jers = {"hh": [], "mask": [], "date": [], "linci": []}
 
-
-
 style_jers_hh = {
     "name": "hh",
     "title": "HH",
