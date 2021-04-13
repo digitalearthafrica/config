@@ -110,20 +110,56 @@ ows_cfg = {
             "layers": [
                 # Hierarchical list of layers.  May be a combination of unnamed/unmappable folder-layers or named mappable layers.
                 {
-                    "include": "ows_refactored.surface_reflectance.ows_sr_cfg.layers",
-                    "type": "python",
+                    "title": "Satellite images",
+                    "abstract": """Satellite images""",
+                    "layers": [
+                        {
+                            "title": "Surface reflectance",
+                            "abstract": """Surface reflectance""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_sr_cfg.layers",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_geomedian_cfg.layers",
+                                    "type": "python",
+                                },
+                            ]
+                        },
+                        {
+                            "title": "Radar backscatter",
+                            "abstract": """Radar backscatter""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.radar_backscatter.ows_alos_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.radar_backscatter.ows_jers_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
+                        },
+                    ]
                 },
                 {
-                    "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
-                    "type": "python",
-                },
-                {
-                    "include": "ows_refactored.wofs.ows_wofs_cfg.layers",
-                    "type": "python",
-                },
-                {
-                    "include": "ows_refactored.wofs.ows_wofsc2_cfg.layers",
-                    "type": "python",
+                    "title": "Surface water",
+                    "abstract": """Surface water""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.wofs.ows_wofs_cfg.layers",
+                            "type": "python",
+                        },
+                        {
+                            "include": "ows_refactored.wofs.ows_wofsc2_cfg.layers",
+                            "type": "python",
+                        },
+                    ]
                 },
                 {
                     "title": "Vegetation",
@@ -134,24 +170,6 @@ ows_cfg = {
                             "type": "python",
                         },
                     ]
-                },
-                {
-                    "include": "ows_refactored.surface_reflectance.ows_geomedian_cfg.layers",
-                    "type": "python",
-                },
-                {
-                    "title": "Radar backscatter",
-                    "abstract": """Radar backscatter""",
-                    "layers": [
-                        {
-                            "include": "ows_refactored.radar_backscatter.ows_alos_cfg.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.radar_backscatter.ows_jers_cfg.layer",
-                            "type": "python",
-                        },
-                    ],
                 },
                 {
                     "title": "Elevation",
