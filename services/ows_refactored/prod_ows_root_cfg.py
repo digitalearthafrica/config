@@ -1,8 +1,3 @@
-from ows_refactored.common.ows_reslim_cfg import (reslim_alos_palsar,
-                                                  reslim_srtm)
-
-# Actual Configuration
-
 ows_cfg = {
     "global": {
         # Master config for all services and products.
