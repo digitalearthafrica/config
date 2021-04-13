@@ -3,7 +3,7 @@ from ows_refactored.surface_reflectance.band_sr_cfg import bands_sentinel
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_s2_list
 
 layers = {
-    "title": "Sentinel",
+    "title": "Daily Surface Reflectance",
     "abstract": """Sentinel""",
     "layers": [
         {
