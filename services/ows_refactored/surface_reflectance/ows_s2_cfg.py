@@ -4,7 +4,7 @@ from ows_refactored.surface_reflectance.style_sr_cfg import styles_s2_list
 
 layers = {
     "title": "Daily Surface Reflectance",
-    "abstract": """Sentinel""",
+    "abstract": """Daily Surface Reflectance""",
     "layers": [
         {
             "title": "Surface Reflectance Sentinel-2",
