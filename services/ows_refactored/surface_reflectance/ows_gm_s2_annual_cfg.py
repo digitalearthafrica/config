@@ -2,10 +2,14 @@ from ows_refactored.common.ows_reslim_cfg import reslim_zoom9
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_list
 
-layer = {
-    "title": "Surface Reflectance Annual GeoMAD Sentinel-2",
-    "name": "gm_s2_annual",
-    "abstract": """
+layers = {
+    "title": "Annual",
+    "abstract": """Annual surface reflectance""",
+    "layers": [
+        {
+            "title": "Surface Reflectance Annual GeoMAD Sentinel-2",
+            "name": "gm_s2_annual",
+            "abstract": """
 Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.
 
 One approach is to create a geomedian. A geomedian is based on a high-dimensional statistic called the 'geometric median' (Small 1990), which effectively trades a temporal stack of poor-quality observations for a single high-quality pixel composite with reduced spatial noise (Roberts et al. 2017). In contrast to a standard median, a geomedian maintains the relationship between spectral bands. This allows further analysis on the composite images, just as we would on the original satellite images (e.g. by allowing the calculation of common band indices like NDVI). An annual geomedian image is calculated from the surface reflectance values drawn from a calendar year.
@@ -26,32 +30,34 @@ Annual geomedian images enable easy visual and algorithmic interpretation, e.g. 
 For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896 and https://doi.org/10.1109/IGARSS.2018.8518312
 
 """,
-    "product_name": "gm_s2_annual",
-    # Low product name
-    #
-    # Leave commented until we have an appropriate summary product.
-    # (Packaged like the main product, but with much much lower
-    # resolution and much much higher area covered in each dataset.
-    #
-    "low_res_product_name": "gm_s2_annual_lowres",
-    "bands": bands_s2_gm,
-    "dynamic": False,
-    "resource_limits": reslim_zoom9,
-    "time_resolution": "year",
-    "image_processing": {
-        "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_emad_nan",
-        # "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
-        "always_fetch_bands": ["EMAD"],
-        "manual_merge": False,  # True
-        "apply_solar_corrections": False,
-    },
-    "wcs": {
-        "native_crs": "EPSG:6933",
-        "native_resolution": [10.0, -10.0],
-        "default_bands": ["red", "green", "blue"],
-    },
-    "styling": {
-        "default_style": "simple_rgb",
-        "styles": styles_gm_list,
-    },
+            "product_name": "gm_s2_annual",
+            # Low product name
+            #
+            # Leave commented until we have an appropriate summary product.
+            # (Packaged like the main product, but with much much lower
+            # resolution and much much higher area covered in each dataset.
+            #
+            "low_res_product_name": "gm_s2_annual_lowres",
+            "bands": bands_s2_gm,
+            "dynamic": False,
+            "resource_limits": reslim_zoom9,
+            "time_resolution": "year",
+            "image_processing": {
+                "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_emad_nan",
+                # "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
+                "always_fetch_bands": ["EMAD"],
+                "manual_merge": False,  # True
+                "apply_solar_corrections": False,
+            },
+            "wcs": {
+                "native_crs": "EPSG:6933",
+                "native_resolution": [10.0, -10.0],
+                "default_bands": ["red", "green", "blue"],
+            },
+            "styling": {
+                "default_style": "simple_rgb",
+                "styles": styles_gm_list,
+            },
+        }
+    ]
 }
