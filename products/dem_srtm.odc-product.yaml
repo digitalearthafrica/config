@@ -1,5 +1,5 @@
 ---
-name: srtm
+name: dem_srtm
 description: 1 second elevation model
 metadata_type: eo
 
