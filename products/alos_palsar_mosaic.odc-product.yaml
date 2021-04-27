@@ -25,17 +25,17 @@ metadata:
 measurements:
   - name: "hh"
     aliases: [hh]
-    dtype: int16
+    dtype: uint16
     nodata: 0
     units: "1"
   - name: "hv"
     aliases: [hv]
-    dtype: int16
+    dtype: uint16
     nodata: 0
     units: "1"
   - name: "date"
     aliases: [date]
-    dtype: int16
+    dtype: uint16
     nodata: 0
     units: "1"
   - name: "linci"
