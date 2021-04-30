@@ -14,55 +14,55 @@ measurements:
     dtype: "uint16"
     units: "Kelvin"
     nodata: 0
-    aliases: [band_6, surface_temperature]
+    aliases: [band_6, st, surface_temperature]
 
   - name: ST_TRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
     nodata: -9999
-    aliases: [thermal_radiance]
+    aliases: [trad, thermal_radiance]
 
   - name: ST_URAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
     nodata: -9999
-    aliases: [upwell_radiance]
+    aliases: [urad, upwell_radiance]
 
   - name: ST_DRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
     nodata: -9999
-    aliases: [downwell_radiance]
+    aliases: [drad, downwell_radiance]
 
   - name: ST_ATRAN
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [atmospheric_transmittance]
+    aliases: [atran, atmospheric_transmittance]
 
   - name: ST_EMIS
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [emissivity]
+    aliases: [emis, emissivity]
 
   - name: ST_EMSD
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [emissivity_stddev]
+    aliases: [emsd, emissivity_stddev]
 
   - name: ST_CDIST
     dtype: "int16"
     units: "Kilometers"
     nodata: -9999
-    aliases: [cloud_distance]
+    aliases: [cdist, cloud_distance]
 
   - name: QA_PIXEL
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [pixel_quality]
+    aliases: [pq, pixel_quality]
     flags_definition:
       nodata:
         bits: 0
@@ -125,7 +125,7 @@ measurements:
     dtype: "uint16"
     units: "bit_index"
     nodata: 0
-    aliases: [radiometric_saturation]
+    aliases: [radsat, radiometric_saturation]
     flags_definition:
       band_1_saturation:
         bits: 0
@@ -207,4 +207,4 @@ measurements:
     dtype: "int16"
     units: "Kelvin"
     nodata: -9999
-    aliases: [surface_temperature_quality]
+    aliases: [st_qa, surface_temperature_quality]

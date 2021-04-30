@@ -50,7 +50,7 @@ measurements:
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [pixel_quality]
+    aliases: [pq, pixel_quality]
     flags_definition:
       nodata:
         bits: 0
@@ -113,7 +113,7 @@ measurements:
     dtype: "uint16"
     units: "bit_index"
     nodata: 0
-    aliases: [radiometric_saturation]
+    aliases: [radsat, radiometric_saturation]
     flags_definition:
       band_1_saturation:
         bits: 0
@@ -205,7 +205,7 @@ measurements:
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [atmospheric_opacity]
+    aliases: [atmos_opacity]
 
   - name: SR_CLOUD_QA
     dtype: "uint8"
