@@ -1,104 +1,68 @@
 ---
-name: ls7_c2l2
-description: USGS Level 2 Collection 2 Landsat
+name: ls8_st
+description: USGS Landsat 8 Collection 2 Level-2 Surface Temperature
 metadata_type: eo3
 
 license: CC-BY-4.0
 
 metadata:
   product:
-    name: ls7_c2l2
+    name: ls8_st
 
 measurements:
-  - name: SR_B1
-    dtype: "uint16"
-    units: "1"
-    nodata: 0
-    aliases: [B1, band_1, blue]
-
-  - name: SR_B2
-    dtype: "uint16"
-    units: "1"
-    nodata: 0
-    aliases: [B2, band_2, green]
-
-  - name: SR_B3
-    dtype: "uint16"
-    units: "1"
-    nodata: 0
-    aliases: [B3, band_3, red]
-
-  - name: SR_B4
-    dtype: "uint16"
-    units: "1"
-    nodata: 0
-    aliases: [B4, band_4, nir]
-
-  - name: SR_B5
-    dtype: "uint16"
-    units: "1"
-    nodata: 0
-    aliases: [B5, band_5, swir_1]
-
-  - name: SR_B7
-    dtype: "uint16"
-    units: "1"
-    nodata: 0
-    aliases: [B7, band_7, swir_2]
-
-  - name: ST_B6
-    dtype: "uint16"
+  - name: ST_B10
     units: "Kelvin"
+    dtype: "uint16"
     nodata: 0
-    aliases: [B6, band_6, surface_temperature, land_surface_temperature]
+    aliases: [band_10, surface_temperature]
 
   - name: ST_TRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
     nodata: -9999
-    aliases: [st_trad, thermal_radiance]
+    aliases: [thermal_radiance]
 
   - name: ST_URAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
     nodata: -9999
-    aliases: [st_urad, upwell_radiance]
+    aliases: [upwell_radiance]
 
   - name: ST_DRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
     nodata: -9999
-    aliases: [st_drad, downwell_radiance]
+    aliases: [downwell_radiance]
 
   - name: ST_ATRAN
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_atran, atmospheric_transmittance]
+    aliases: [atmospheric_transmittance]
 
   - name: ST_EMIS
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_emis, emissivity]
+    aliases: [emissivity]
 
   - name: ST_EMSD
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [st_emsd, emissivity_stddev, emissivity_standard_deviation]
+    aliases: [emissivity_stddev]
 
   - name: ST_CDIST
     dtype: "int16"
     units: "Kilometers"
     nodata: -9999
-    aliases: [st_cdist, cloud_distance]
+    aliases: [cloud_distance]
 
   - name: QA_PIXEL
     dtype: "uint16"
     units: "bit_index"
     nodata: 1
-    aliases: [quality_pixel, pixel_quality, pq]
+    aliases: [pixel_quality]
     flags_definition:
       nodata:
         bits: 0
@@ -110,6 +74,11 @@ measurements:
         values:
           0: not_dilated
           1: dilated
+      cirrus:
+        bits: 2
+        values:
+          0: not_high_confidence
+          1: high_confidence
       cloud:
         bits: 3
         values:
@@ -156,12 +125,19 @@ measurements:
           1: low
           2: reserved
           3: high
+      cirrus_confidence:
+        bits: [14, 15]
+        values:
+          0: none
+          1: low
+          2: reserved
+          3: high
 
   - name: QA_RADSAT
     dtype: "uint16"
     units: "bit_index"
     nodata: 0
-    aliases: [quality_radiometric_saturation, radiometric_saturation]
+    aliases: [radiometric_saturation]
     flags_definition:
       band_1_saturation:
         bits: 0
@@ -188,7 +164,7 @@ measurements:
         values:
           0: false
           1: true
-      band_6L_saturation:
+      band_6_saturation:
         bits: 5
         values:
           0: false
@@ -198,56 +174,38 @@ measurements:
         values:
           0: false
           1: true
-      band_6H_saturation:
-        bits: 8
-        values:
-          0: false
-          1: true
-      dropped_pixel:
-        bits: 9
-        values:
-          0: true
-          1: false
-
-  - name: SR_ATMOS_OPACITY
-    dtype: "int16"
-    units: "1"
-    nodata: -9999
-    aliases: [atmos_op, atmospheric_opacity]
-
-  - name: SR_CLOUD_QA
-    dtype: "uint8"
-    units: "bit_index"
-    nodata: 0
-    aliases: [cloud_qa, qa_cloud]
-    flags_definition:
-      dark_dense_vegetation:
-        bits: 0
-        values:
-          0: false
-          1: true
-      cloud:
+      blue_saturation:
         bits: 1
         values:
           0: false
           1: true
-      cloud_shadow:
+      green_saturation:
         bits: 2
         values:
           0: false
           1: true
-      adjacent_to_cloud:
+      red_saturation:
         bits: 3
         values:
           0: false
           1: true
-      snow:
+      nir_saturation:
         bits: 4
         values:
           0: false
           1: true
-      water:
+      swir_1_saturation:
         bits: 5
+        values:
+          0: false
+          1: true
+      swir_2_saturation:
+        bits: 6
+        values:
+          0: false
+          1: true
+      terrain_occlusion:
+        bits: 11
         values:
           0: false
           1: true
@@ -256,4 +214,4 @@ measurements:
     dtype: "int16"
     units: "Kelvin"
     nodata: -9999
-    aliases: [quality_surface_temperature, surface_temperature_quality]
+    aliases: [surface_temperature_quality]
