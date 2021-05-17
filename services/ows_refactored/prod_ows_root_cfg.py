@@ -39,7 +39,7 @@ ows_cfg = {
         # Metadata to go straight into GetCapabilities documents
         "title": "Digital Earth Africa - OGC Web Services",
         "abstract": """Digital Earth Africa OGC Web Services""",
-        "info_url": "dea.ga.gov.au/",
+        "info_url": "digitalearthafrica.org/",
         "keywords": [
             "landsat",
             "africa",
@@ -61,7 +61,7 @@ ows_cfg = {
             },
             "telephone": "+61 2 6249 9111",
             "fax": "",
-            "email": "earth.observation@ga.gov.au",
+            "email": "info@digitalearthafrica.org",
         },
         "fees": "",
         "access_constraints": "© Commonwealth of Australia (Geoscience Australia) 2018. "
