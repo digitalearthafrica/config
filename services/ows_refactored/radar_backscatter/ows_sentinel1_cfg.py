@@ -80,6 +80,7 @@ More techincal information about the Sentinel-1 Normalized Backscatter can be fo
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
     "product_name": "s1_rtc",
+    "dynamic": True,
     "bands": bands_s1,
     "resource_limits": reslim_alos_palsar,
     "image_processing": {
@@ -95,9 +96,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "styling": {
         "default_style": "vh_over_vv",
         "styles": [
+            style_s1_vh_over_vv,
             style_s1_vv,
             style_s1_vh,
-            style_s1_vh_over_vv,
         ],
     },
 }
