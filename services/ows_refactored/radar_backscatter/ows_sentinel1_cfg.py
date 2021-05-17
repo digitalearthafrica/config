@@ -34,9 +34,8 @@ style_s1_vh = {
     },
     "pq_masks": [
         {
-            #Only make mask=1 pixels (valid data) visible.
-            "band":"mask",
-            "enum":1,
+            "band": "mask",
+            "enum": 1,
         },
     ],
 }
@@ -47,8 +46,8 @@ style_s1_vh_over_vv = {
     "abstract": "False colour representation of VV, VH and VH/VV for R, G and B respectively",
     "additional_bands": [],
     "components": {
-        "red": {"vv":1.0, "scale_range": [0.0, 0.28]},
-        "green": {"vh":1.0, "scale_range": [0.0, 0.06]},
+        "red": {"vv": 1.0, "scale_range": [0.0, 0.28]},
+        "green": {"vh": 1.0, "scale_range": [0.0, 0.06]},
         "blue": {
             "function": "datacube_ows.band_utils.band_quotient",
             "mapped_bands": True,
@@ -57,9 +56,8 @@ style_s1_vh_over_vv = {
     },
     "pq_masks": [
         {
-            #Only make mask=1 pixels (valid data) visible.
-            "band":"mask",
-            "enum":1,
+            "band": "mask",
+            "enum": 1,
         },
     ],
 }
@@ -93,7 +91,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [0.000222222222222, -0.000222222222222],
-        "default_bands": ["vv", "vh", "angle","area","mask"],
+        "default_bands": ["vv", "vh", "angle", "area", "mask"],
     },
     "styling": {
         "default_style": "hh",
