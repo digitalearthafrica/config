@@ -152,8 +152,6 @@ ows_cfg = {
                                     "layers": [
                                         {
                                             # placeholder for landsat st
-                                            #"include": "ows_refactored.surface_temperature.ows_st_cfg.layers",
-                                            #"type": "python",
                                         },
                                     ],
                                 },
