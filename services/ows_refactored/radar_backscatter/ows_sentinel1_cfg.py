@@ -13,6 +13,13 @@ style_s1_vv = {
         "green": {"vv": 1.0,"scale_range":[0.0,0.28]},
         "blue": {"vv": 1.0,"scale_range":[0.0,0.28]},
     },
+    "pq_masks": [
+        {
+            #Only make mask=1 pixels (valid data) visible.
+            "band":"mask",
+            "enum":1,
+        },
+    ],
 }
 
 style_s1_vh = {
@@ -25,11 +32,18 @@ style_s1_vh = {
         "green": {"vh": 1.0,"scale_range":[0.0,0.06]},
         "blue": {"vh": 1.0,"scale_range":[0.0,0.06]},
     },
+    "pq_masks": [
+        {
+            #Only make mask=1 pixels (valid data) visible.
+            "band":"mask",
+            "enum":1,
+        },
+    ],
 }
 
 
 style_s1_vh_over_vv= {
-    "name": "vv_vh_vv_over_vv",
+    "name": "vv_vh_vh_over_vv",
     "title": "VV, VH and VH/VV",
     "abstract": "False colour representation of VV, VH and VH/VV for R, G and B respectively",
     "additional_bands": [],
@@ -42,6 +56,13 @@ style_s1_vh_over_vv= {
             "kwargs": {"band1": "vh", "band2": "vv", "scale_from":[0.0,0.49]},
         },
     },
+    "pq_masks": [
+        {
+            #Only make mask=1 pixels (valid data) visible.
+            "band":"mask",
+            "enum":1,
+        },
+    ],    
 }
 
 layer = {
@@ -64,17 +85,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "product_name": "s1_rtc",
     "time_resolution": "year",
     "bands": bands_s1,
-    "resource_limits": reslim_alos_palsar, #the argument need to be checked as it was already set to be SRTM 
+    "resource_limits": reslim_alos_palsar,  
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
         "manual_merge": False,
     },
-    "flags": {
-        "product": "s1_rtc",
-        "band": "mask",
-        "ignore_info_flags": [],
-    },
+    
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [0.000222222222222, -0.000222222222222],
