@@ -10,9 +10,9 @@ style_s1_vv = {
     "abstract": "VV band",
     "additional_bands": [],
     "components": {
-        "red": {"vv": 1.0, "scale_range": [0.0,0.28]}, 
-        "green": {"vv": 1.0, "scale_range": [0.0,0.28]}, 
-        "blue": {"vv": 1.0, "scale_range": [0.0,0.28]}, 
+        "red": {"vv": 1.0 , "scale_range": [0.0,0.28]}, 
+        "green": {"vv": 1.0 , "scale_range": [0.0,0.28]}, 
+        "blue": {"vv": 1.0 , "scale_range": [0.0,0.28]}, 
     },
     "pq_masks": [
         {
@@ -29,9 +29,9 @@ style_s1_vh = {
     "abstract": "VH band",
     "additional_bands": [],
     "components": {
-        "red": {"vh": 1.0,"scale_range": [0.0,0.06]}, 
-        "green": {"vh": 1.0,"scale_range": [0.0,0.06]}, 
-        "blue": {"vh": 1.0,"scale_range": [0.0,0.06]}, 
+        "red": {"vh": 1.0, "scale_range": [0.0,0.06]}, 
+        "green": {"vh": 1.0, "scale_range": [0.0,0.06]}, 
+        "blue": {"vh": 1.0, "scale_range": [0.0,0.06]}, 
     },
     "pq_masks": [
         {
@@ -48,12 +48,12 @@ style_s1_vh_over_vv= {
     "abstract": "False colour representation of VV, VH and VH/VV for R, G and B respectively",
     "additional_bands": [],
     "components": {
-        "red": {"vv":1.0, "scale_range": [0.0,0.28]},
-        "green": {"vh":1.0, "scale_range": [0.0,0.06]},
+        "red": {"vv":1.0, "scale_range": [0.0,0.28]}, 
+        "green": {"vh":1.0, "scale_range": [0.0,0.06]}, 
         "blue": {
             "function": "datacube_ows.band_utils.band_quotient",
             "mapped_bands": True,
-            "kwargs": {"band1": "vh", "band2": "vv", "scale_from": [0.0,0.49]},
+            "kwargs": {"band1": "vh", "band2": "vv", "scale_from": [0.0,0.49]}, 
         },
     },
     "pq_masks": [
