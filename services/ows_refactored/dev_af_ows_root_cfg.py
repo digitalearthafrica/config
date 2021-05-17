@@ -73,7 +73,7 @@ ows_cfg = {
     },  # END OF global SECTION
     "wms": {
         # Config for WMS service, for all products/layers
-        #"s3_url": "https://data.digitalearth.africa", # no longer applicable
+        # "s3_url": "https://data.digitalearth.africa",
         "s3_bucket": "deafrica-data",
         "s3_aws_zone": "af-south-1",
         "max_width": 512,
@@ -125,9 +125,8 @@ ows_cfg = {
                                     "abstract": """Daily surface reflectance""",
                                     "layers": [
                                         {
-                                           "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layer",
+                                            "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layer",
                                             "type": "python",
-                                            # Add Landsat SR styles here
                                         },
                                     ],
                                 },
@@ -152,9 +151,9 @@ ows_cfg = {
                                     "abstract": """Daily surface temperature""",
                                     "layers": [
                                         {
-                                        #   placeholder for landsat st
-                                        #   "include": "ows_refactored.surface_temperature.ows_st_cfg.layers",
-                                        #    "type": "python",
+                                            # placeholder for landsat st
+                                            #"include": "ows_refactored.surface_temperature.ows_st_cfg.layers",
+                                            #"type": "python",
                                         },
                                     ],
                                 },
