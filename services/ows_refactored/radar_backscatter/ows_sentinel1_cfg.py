@@ -94,7 +94,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_bands": ["vv", "vh", "angle", "area", "mask"],
     },
     "styling": {
-        "default_style": "vh_over_vv",
+        "default_style": "vv_vh_vh_over_vv",
         "styles": [
             style_s1_vh_over_vv,
             style_s1_vv,
