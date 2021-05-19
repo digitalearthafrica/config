@@ -664,6 +664,10 @@ style_tmad_rgb_std = {
         },
     },
     "additional_bands": ["sdev", "bcdev", "edev"],
+    "legend": {
+        "show_legend": True,
+        "url": "s3://deafrica-services/gm_s2_annual/gm_s2_annual_legend.png",
+    },
 }
 
 style_tmad_rgb_sens = {
@@ -687,6 +691,10 @@ style_tmad_rgb_sens = {
                 "scale_from": [0.008, 0.07],
             }
         },
+    },
+    "legend": {
+        "show_legend": True,
+        "url": "s3://deafrica-services/gm_s2_annual/gm_s2_annual_legend.png",
     },
 }
 
