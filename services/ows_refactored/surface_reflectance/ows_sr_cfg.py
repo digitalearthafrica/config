@@ -14,15 +14,17 @@ layers = {
             "title": "Surface Reflectance Landsat 8 (USGS Collection 2)",
             "name": "ls8_sr",
             "abstract": """
-Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface. 
 
-DE Africa contains Landsat Collection 2, Level 2 surface reflectance products over all Africa. Landsat Collection 2 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant. 
 
-This product has a spatial resolution of 30 m and a temporal coverage of 2013 to 2019. The surface reflectance values are scaled to be between 1 and 65,455.
+More techincal information about the Landsat Surface Reflectance product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_SR_specs.html).
 
-It is provided by United States Geological Survey (USGS).
+Landsat 8 product has a spatial resolution of 30 m and a temporal coverage of 2013 to present. 
 
-For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
+Landsat Level- 2 Surface Reflectance Science Product courtesy of the U.S. Geological Survey.
+
+For more information on Landsat products, see https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2-level-2-science-products.
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
@@ -49,15 +51,17 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "title": "Surface Reflectance Landsat 7 (USGS Collection 2)",
             "name": "ls7_sr",
             "abstract": """
-Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface. 
 
-DE Africa contains Landsat Collection 2, Level 2 surface reflectance products over all Africa. Landsat Collection 2 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant. 
 
-This product has a spatial resolution of 30 m and a temporal coverage of 1999 to 2019. The surface reflectance values are scaled to be between 1 and 65,455.
+More techincal information about the Landsat Surface Reflectance product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_SR_specs.html).
 
-It is provided by United States Geological Survey (USGS).
+Landsat 7 product has a spatial resolution of 30 m and a temporal coverage of 1999 to present.
 
-For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
+Landsat Level- 2 Surface Reflectance Science Product courtesy of the U.S. Geological Survey.
+
+For more information on Landsat products, see https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2-level-2-science-products.
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
@@ -84,15 +88,17 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "title": "Surface Reflectance Landsat 5 (USGS Collection 2)",
             "name": "ls5_sr",
             "abstract": """
-Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface. 
 
-DE Africa contains Landsat Collection 2, Level 2 surface reflectance products over all Africa. Landsat Collection 2 consists of products generated from the Landsat 8 Operational Land Imager (OLI) / Thermal Infrared Sensor (TIRS), Landsat 7 Enhanced Thematic Mapper Plus (ETM+), Landsat 4-5 Thematic Mapper (TM), and Landsat 1-5 Multispectral Scanner (MSS) instruments. The implementation of collections ensures consistent and known radiometric and geometric quality through time and across instruments and improves control in the calibration and processing parameters.
+DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant. 
 
-This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2011. The surface reflectance values are scaled to be between 1 and 65,455.
+More techincal information about the Landsat Surface Reflectance product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_SR_specs.html).
 
-It is provided by United States Geological Survey (USGS).
+Landsat 5 product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2012.
 
-For more information on the Landsat surface reflectance product, see https://www.usgs.gov/land-resources/nli/landsat/landsat-surface-reflectance
+Landsat Level- 2 Surface Reflectance Science Product courtesy of the U.S. Geological Survey.
+
+For more information on Landsat products, see https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2-level-2-science-products.
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,

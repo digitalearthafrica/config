@@ -772,7 +772,7 @@ style_lsc2_sr_simple_rgb = {
     "abstract": "True-colour image, using the red, green and blue bands",
     "components": {
         "red": {"red": 1.0},
-        "green": {"green": 1.0}, 
+        "green": {"green": 1.0},
         "blue": {"blue": 1.0}
     },
     "scale_range": [1.0, 19636.0],
@@ -850,6 +850,29 @@ style_lsc2_sr_ndwi = {
     },
 }
 
+style_lsc2_sr_mndwi = {
+    "name": "mndwi",
+    "title": "MNDWI - Green, SWIR",
+    "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
+    "well with the existence of water (Xu 2006)",
+    "index_function": {
+        "function": "datacube_ows.band_utils.norm_diff",
+        "mapped_bands": True,
+        "kwargs": {"band1": "green", "band2": "swir1"},
+    },
+    "needed_bands": ["green", "swir1"],
+    "color_ramp": [
+        {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
+        {"value": 0.0, "color": "#d8e7f5"},
+        {"value": 0.2, "color": "#b0d2e8"},
+        {"value": 0.4, "color": "#73b3d8"},
+        {"value": 0.6, "color": "#3e8ec4"},
+        {"value": 0.8, "color": "#1563aa"},
+        {"value": 1.0, "color": "#08306b"},
+    ],
+    "legend": legend_idx_0_1_5ticks,
+}
+
 style_lsc2_sr_pure_blue = {
     "name": "blue",
     "title": "Blue",
@@ -874,7 +897,10 @@ style_lsc2_sr_pure_red = {
     "name": "red",
     "title": "Red",
     "abstract": "Red band",
-    "components": {"red": {"red": 1.0}, "green": {"red": 1.0}, "blue": {"red": 1.0}
+    "components":{
+        "red": {"red": 1.0},
+        "green": {"red": 1.0},
+        "blue": {"red": 1.0},
     },
     "scale_range": [1.0, 19636.0],
 }
@@ -883,7 +909,11 @@ style_lsc2_sr_pure_nir = {
     "name": "nir",
     "title": "Near Infrared (NIR)",
     "abstract": "Near infra-red band",
-    "components": {"red": {"nir": 1.0}, "green": {"nir": 1.0}, "blue": {"nir": 1.0}},
+    "components": {
+        "red": {"nir": 1.0},
+        "green": {"nir": 1.0},
+        "blue": {"nir": 1.0}
+    },
     "scale_range": [1.0, 19636.0],
 }
 
@@ -925,4 +955,4 @@ styles_lsc2_sr_list = [
     style_lsc2_sr_pure_swir2,
 ]
 
-#detangle common styles from satellite names!
+# detangle common styles from satellite names!

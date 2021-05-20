@@ -61,26 +61,3 @@ bands_lsc2_sr = {
     "swir_1": ["shortwave_infrared_1", "near_shortwave_infrared"],
     "swir_2": ["shortwave_infrared_2", "far_shortwave_infrared"],
 }
-
-# separate styles are not good
-# they prevent the ability to have a combined 
-# LS5/7/8 layer
-
-# bands_ls57c2_sr = {
-#     "SR_B1": ["band_1", "blue"],
-#     "SR_B2": ["band_2", "green"],
-#     "SR_B3": ["band_3", "red"],
-#     "SR_B4": ["band_4", "nir"] ,
-#     "SR_B5": ["band_5", "swir_1"],
-#     "SR_B7": ["band_7", "swir_2"]
-# }
-
-# bands_ls8c2_sr = {
-#     "SR_B1": ["band_1", "coastal_aerosol"],
-#     "SR_B2": ["band_2", "blue"],
-#     "SR_B3": ["band_3", "green"],
-#     "SR_B4": ["band_4", "red"] ,
-#     "SR_B5": ["band_5", "nir"],
-#     "SR_B6": ["band_6", "swir_1"],
-#     "SR_B7": ["band_7", "swir_2"]
-# }
