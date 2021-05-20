@@ -794,12 +794,7 @@ style_lsc2_sr_ndvi = {
     "name": "ndvi",
     "title": "NDVI - Red, NIR",
     "abstract": "Normalised Difference Vegetation Index - a derived index that correlates well with the existence of vegetation",
-    "index_function": {
-        "function": "datacube_ows.band_utils.norm_diff",
-        "mapped_bands": True,
-        "kwargs": {"band1": "nir", "band2": "red"},
-    },
-    "needed_bands": ["red", "nir"],
+    "index_expression": "((nir-55000)-(red-55000))/((nir-55000)+(red-55000))",
     "color_ramp": [
         {"value": -0.0, "color": "#8F3F20", "alpha": 0.0},
         {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
@@ -821,12 +816,7 @@ style_lsc2_sr_ndwi = {
     "name": "ndwi",
     "title": "NDWI - Green, NIR",
     "abstract": "Normalised Difference Water Index - a derived index that correlates well with the existence of water (McFeeters 1996)",
-    "index_function": {
-        "function": "datacube_ows.band_utils.norm_diff",
-        "mapped_bands": True,
-        "kwargs": {"band1": "green", "band2": "nir"},
-    },
-    "needed_bands": ["green", "nir"],
+    "index_expression": "((green-55000)-(nir-55000))/((green-55000)+(nir-55000))",
     "color_ramp": [
         {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
         {"value": 0.0, "color": "#d8e7f5", "legend": {"prefix": "<"}},
@@ -855,12 +845,7 @@ style_lsc2_sr_mndwi = {
     "title": "MNDWI - Green, SWIR",
     "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
     "well with the existence of water (Xu 2006)",
-    "index_function": {
-        "function": "datacube_ows.band_utils.norm_diff",
-        "mapped_bands": True,
-        "kwargs": {"band1": "green", "band2": "swir1"},
-    },
-    "needed_bands": ["green", "swir1"],
+    "index_expression": "((green-55000)-(swir-55000))/((green-55000)+(swir-55000))",
     "color_ramp": [
         {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
         {"value": 0.0, "color": "#d8e7f5"},
