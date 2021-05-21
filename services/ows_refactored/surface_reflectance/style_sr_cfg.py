@@ -882,7 +882,7 @@ style_lsc2_sr_pure_red = {
     "name": "red",
     "title": "Red",
     "abstract": "Red band",
-    "components":{
+    "components": {
         "red": {"red": 1.0},
         "green": {"red": 1.0},
         "blue": {"red": 1.0},

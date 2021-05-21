@@ -14,13 +14,13 @@ layers = {
             "title": "Surface Reflectance Landsat 8 (USGS Collection 2)",
             "name": "ls8_sr",
             "abstract": """
-Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface. 
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
-DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant. 
+DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant.
 
 More techincal information about the Landsat Surface Reflectance product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_SR_specs.html).
 
-Landsat 8 product has a spatial resolution of 30 m and a temporal coverage of 2013 to present. 
+Landsat 8 product has a spatial resolution of 30 m and a temporal coverage of 2013 to present.
 
 Landsat Level- 2 Surface Reflectance Science Product courtesy of the U.S. Geological Survey.
 
@@ -51,9 +51,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "title": "Surface Reflectance Landsat 7 (USGS Collection 2)",
             "name": "ls7_sr",
             "abstract": """
-Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface. 
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
-DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant. 
+DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant.
 
 More techincal information about the Landsat Surface Reflectance product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_SR_specs.html).
 
@@ -88,9 +88,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "title": "Surface Reflectance Landsat 5 (USGS Collection 2)",
             "name": "ls5_sr",
             "abstract": """
-Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface. 
+Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
-DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant. 
+DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant.
 
 More techincal information about the Landsat Surface Reflectance product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_SR_specs.html).
 
