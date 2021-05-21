@@ -664,10 +664,6 @@ style_tmad_rgb_std = {
         },
     },
     "additional_bands": ["sdev", "bcdev", "edev"],
-    "legend": {
-        "show_legend": True,
-        "url": "https://deafrica-services.s3.af-south-1.amazonaws.com/gm_s2_annual/gm_s2_annual_legend.png",
-    },
 }
 
 style_tmad_rgb_sens = {
@@ -691,10 +687,6 @@ style_tmad_rgb_sens = {
                 "scale_from": [0.008, 0.07],
             }
         },
-    },
-    "legend": {
-        "show_legend": True,
-        "url": "https://deafrica-services.s3.af-south-1.amazonaws.com/gm_s2_annual/gm_s2_annual_legend.png",
     },
 }
 
@@ -802,7 +794,7 @@ style_lsc2_sr_ndvi = {
     "name": "ndvi",
     "title": "NDVI - Red, NIR",
     "abstract": "Normalised Difference Vegetation Index - a derived index that correlates well with the existence of vegetation",
-    "index_expression": "((nir-55000)-(red-55000))/((nir-55000)+(red-55000))",
+    "index_expression": "((nir-7273)-(red-7273))/((nir-7273)+(red-7273))",
     "color_ramp": [
         {"value": -0.0, "color": "#8F3F20", "alpha": 0.0},
         {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
@@ -824,7 +816,7 @@ style_lsc2_sr_ndwi = {
     "name": "ndwi",
     "title": "NDWI - Green, NIR",
     "abstract": "Normalised Difference Water Index - a derived index that correlates well with the existence of water (McFeeters 1996)",
-    "index_expression": "((green-55000)-(nir-55000))/((green-55000)+(nir-55000))",
+    "index_expression": "((green-7273)-(nir-7273))/((green-7273)+(nir-7273))",
     "color_ramp": [
         {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
         {"value": 0.0, "color": "#d8e7f5", "legend": {"prefix": "<"}},
@@ -853,7 +845,7 @@ style_lsc2_sr_mndwi = {
     "title": "MNDWI - Green, SWIR",
     "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
     "well with the existence of water (Xu 2006)",
-    "index_expression": "((green-55000)-(swir-55000))/((green-55000)+(swir-55000))",
+    "index_expression": "((green-7273)-(swir-7273))/((green-7273)+(swir-7273))",
     "color_ramp": [
         {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
         {"value": 0.0, "color": "#d8e7f5"},
