@@ -845,7 +845,7 @@ style_lsc2_sr_mndwi = {
     "title": "MNDWI - Green, SWIR",
     "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
     "well with the existence of water (Xu 2006)",
-    "index_expression": "((green-7273)-(swir-7273))/((green-7273)+(swir-7273))",
+    "index_expression": "((green-7273)-(swir_1-7273))/((green-7273)+(swir_1-7273))",
     "color_ramp": [
         {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
         {"value": 0.0, "color": "#d8e7f5"},
@@ -902,26 +902,26 @@ style_lsc2_sr_pure_nir = {
     "scale_range": [1.0, 19636.0],
 }
 
-style_lsc2_sr_pure_swir1 = {
-    "name": "swir1",
+style_lsc2_sr_swir_1 = {
+    "name": "swir_1",
     "title": "Shortwave Infrared 1 (SWIR1)",
     "abstract": "Shortwave infrared band 1",
     "components": {
-        "red": {"swir1": 1.0},
-        "green": {"swir1": 1.0},
-        "blue": {"swir1": 1.0},
+        "red": {"swir_1": 1.0},
+        "green": {"swir_1": 1.0},
+        "blue": {"swir_1": 1.0},
     },
     "scale_range": [1.0, 19636.0],
 }
 
-style_lsc2_sr_pure_swir2 = {
-    "name": "swir2",
+style_lsc2_sr_swir_2 = {
+    "name": "swir_2",
     "title": "Shortwave Infrared 2 (SWIR2)",
     "abstract": "Shortwave infrared band 2",
     "components": {
-        "red": {"swir2": 1.0},
-        "green": {"swir2": 1.0},
-        "blue": {"swir2": 1.0},
+        "red": {"swir_2": 1.0},
+        "green": {"swir_2": 1.0},
+        "blue": {"swir_2": 1.0},
     },
     "scale_range": [1.0, 19636.0],
 }
@@ -936,8 +936,8 @@ styles_lsc2_sr_list = [
     style_lsc2_sr_pure_green,
     style_lsc2_sr_pure_red,
     style_lsc2_sr_pure_nir,
-    style_lsc2_sr_pure_swir1,
-    style_lsc2_sr_pure_swir2,
+    style_lsc2_sr_swir_1,
+    style_lsc2_sr_swir_2,
 ]
 
 # detangle common styles from satellite names!
