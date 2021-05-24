@@ -50,3 +50,14 @@ bands_ls = {
     "swir1": ["shortwave_infrared_1", "near_shortwave_infrared"],
     "swir2": ["shortwave_infrared_2", "far_shortwave_infrared"],
 }
+
+# new styles for C2 Landsat
+
+bands_lsc2_sr = {
+    "red": [],
+    "green": [],
+    "blue": [],
+    "nir": ["near_infrared"],
+    "swir_1": ["shortwave_infrared_1", "near_shortwave_infrared"],
+    "swir_2": ["shortwave_infrared_2", "far_shortwave_infrared"],
+}

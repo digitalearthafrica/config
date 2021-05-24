@@ -1,3 +1,4 @@
+# This config file is for Oregon - Production
 from ows_refactored.common.ows_reslim_cfg import reslim_landsat
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_sr_list
