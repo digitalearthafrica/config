@@ -28,6 +28,63 @@
         },
         {
             "product": [
+                "ls8_sr"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir_1",
+                "swir_2"
+            ]
+        },
+        {
+            "product": [
+                "ls7_sr"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir_1",
+                "swir_2"
+            ]
+        },
+        {
+            "product": [
+                "ls5_sr"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir_1",
+                "swir_2"
+            ]
+        },
+        {
+            "product": [
                 "gm_s2_annual"
             ],
             "styles_count": 22,

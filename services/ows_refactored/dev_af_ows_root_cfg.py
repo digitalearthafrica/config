@@ -128,6 +128,10 @@ ows_cfg = {
                                             "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layer",
                                             "type": "python",
                                         },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer",
+                                            "type": "python",
+                                        },
                                     ],
                                 },
                                 {
@@ -137,21 +141,6 @@ ows_cfg = {
                                         {
                                             "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layer",
                                             "type": "python",
-                                        },
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            "title": "Surface temperature",
-                            "abstract": """Surface temperature""",
-                            "layers": [
-                                {
-                                    "title": "Daily surface temperature",
-                                    "abstract": """Daily surface temperature""",
-                                    "layers": [
-                                        {
-                                            # placeholder for landsat st
                                         },
                                     ],
                                 },
