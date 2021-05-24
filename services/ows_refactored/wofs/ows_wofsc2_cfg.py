@@ -7,7 +7,8 @@ from ows_refactored.wofs.style_wofs_cfg import (
     style_wofs_annual_summary_frequency,
     style_wofs_annual_summary_frequency_blue, style_wofs_beta_summary_clear,
     style_wofs_count_wet, style_wofs_frequency, style_wofs_frequency_blue,
-    style_wofs_summary_clear, style_wofs_water_annual_wet)
+    style_wofs_obs, style_wofs_obs_wet_only, style_wofs_summary_clear,
+    style_wofs_water_annual_wet)
 
 layers = {
     "title": "Water Observations from Space c2",
