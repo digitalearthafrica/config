@@ -1,4 +1,7 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_wofs, reslim_wofs_daily
+from ows_refactored.common.ows_reslim_cfg import (
+    reslim_wofs, 
+    reslim_wofs_daily
+)
 from ows_refactored.wofs.band_wofs_cfg import (
     bands_wofs_2_annual_summary,
     bands_wofs_obs,
