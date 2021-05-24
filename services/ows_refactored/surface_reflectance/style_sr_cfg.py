@@ -795,6 +795,7 @@ style_lsc2_sr_ndvi = {
     "title": "NDVI - Red, NIR",
     "abstract": "Normalised Difference Vegetation Index - a derived index that correlates well with the existence of vegetation",
     "index_expression": "((nir-7273)-(red-7273))/((nir-7273)+(red-7273))",
+    "needed_bands": ["nir", "red"],
     "color_ramp": [
         {"value": -0.0, "color": "#8F3F20", "alpha": 0.0},
         {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
@@ -817,6 +818,7 @@ style_lsc2_sr_ndwi = {
     "title": "NDWI - Green, NIR",
     "abstract": "Normalised Difference Water Index - a derived index that correlates well with the existence of water (McFeeters 1996)",
     "index_expression": "((green-7273)-(nir-7273))/((green-7273)+(nir-7273))",
+    "needed_bands": ["green", "nir"],
     "color_ramp": [
         {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
         {"value": 0.0, "color": "#d8e7f5", "legend": {"prefix": "<"}},
@@ -846,6 +848,7 @@ style_lsc2_sr_mndwi = {
     "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
     "well with the existence of water (Xu 2006)",
     "index_expression": "((green-7273)-(swir_1-7273))/((green-7273)+(swir_1-7273))",
+    "needed_bands": ["green", "swir_1"],
     "color_ramp": [
         {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
         {"value": 0.0, "color": "#d8e7f5"},
