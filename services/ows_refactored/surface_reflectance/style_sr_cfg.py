@@ -759,3 +759,185 @@ styles_sr_list = [
     style_sentinel_pure_swir1,
     style_sentinel_pure_swir2,
 ]
+
+# styles for Landsat C2
+# Band wavelengths have been removed as they differ
+# between LS5, 7 and 8
+# Scale range is set as per Collection 1, but scaled to
+# 65455 instead of 10000
+
+style_lsc2_sr_simple_rgb = {
+    "name": "simple_rgb",
+    "title": "True colour - RGB",
+    "abstract": "True-colour image, using the red, green and blue bands",
+    "components": {
+        "red": {"red": 1.0},
+        "green": {"green": 1.0},
+        "blue": {"blue": 1.0}
+    },
+    "scale_range": [1.0, 19636.0],
+}
+
+style_lsc2_sr_irg = {
+    "name": "infrared_green",
+    "title": "False colour - SWIR, NIR, Green",
+    "abstract": "False colour image with SWIR1->Red, NIR->Green, and Green->Blue",
+    "components": {
+        "red": {"swir_1": 1.0},
+        "green": {"nir": 1.0},
+        "blue": {"green": 1.0},
+    },
+    "scale_range": [1.0, 19636.0],
+}
+
+style_lsc2_sr_ndvi = {
+    "name": "ndvi",
+    "title": "NDVI - Red, NIR",
+    "abstract": "Normalised Difference Vegetation Index - a derived index that correlates well with the existence of vegetation",
+    "index_expression": "((nir-7273)-(red-7273))/((nir-7273)+(red-7273))",
+    "color_ramp": [
+        {"value": -0.0, "color": "#8F3F20", "alpha": 0.0},
+        {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
+        {"value": 0.1, "color": "#A35F18"},
+        {"value": 0.2, "color": "#B88512"},
+        {"value": 0.3, "color": "#CEAC0E"},
+        {"value": 0.4, "color": "#E5D609"},
+        {"value": 0.5, "color": "#FFFF0C"},
+        {"value": 0.6, "color": "#C3DE09"},
+        {"value": 0.7, "color": "#88B808"},
+        {"value": 0.8, "color": "#529400"},
+        {"value": 0.9, "color": "#237100"},
+        {"value": 1.0, "color": "#114D04"},
+    ],
+    "legend": legend_idx_0_1_5ticks,
+}
+
+style_lsc2_sr_ndwi = {
+    "name": "ndwi",
+    "title": "NDWI - Green, NIR",
+    "abstract": "Normalised Difference Water Index - a derived index that correlates well with the existence of water (McFeeters 1996)",
+    "index_expression": "((green-7273)-(nir-7273))/((green-7273)+(nir-7273))",
+    "color_ramp": [
+        {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
+        {"value": 0.0, "color": "#d8e7f5", "legend": {"prefix": "<"}},
+        {"value": 0.1, "color": "#b0d2e8"},
+        {"value": 0.2, "color": "#73b3d8", "legend": {}},
+        {"value": 0.3, "color": "#3e8ec4"},
+        {"value": 0.4, "color": "#1563aa", "legend": {}},
+        {"value": 0.5, "color": "#08306b", "legend": {"prefix": ">"}},
+    ],
+    "legend": {
+        "begin": "0.0",
+        "end": "0.5",
+        "decimal_places": 1,
+        "ticks": ["0.0", "0.2", "0.4", "0.5"],
+        "tick_labels": {
+            "0.0": {"prefix": "<"},
+            "0.2": {"label": "0.2"},
+            "0.4": {"label": "0.4"},
+            "0.5": {"prefix": ">"},
+        },
+    },
+}
+
+style_lsc2_sr_mndwi = {
+    "name": "mndwi",
+    "title": "MNDWI - Green, SWIR",
+    "abstract": "Modified Normalised Difference Water Index - a derived index that correlates "
+    "well with the existence of water (Xu 2006)",
+    "index_expression": "((green-7273)-(swir_1-7273))/((green-7273)+(swir_1-7273))",
+    "color_ramp": [
+        {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
+        {"value": 0.0, "color": "#d8e7f5"},
+        {"value": 0.2, "color": "#b0d2e8"},
+        {"value": 0.4, "color": "#73b3d8"},
+        {"value": 0.6, "color": "#3e8ec4"},
+        {"value": 0.8, "color": "#1563aa"},
+        {"value": 1.0, "color": "#08306b"},
+    ],
+    "legend": legend_idx_0_1_5ticks,
+}
+
+style_lsc2_sr_pure_blue = {
+    "name": "blue",
+    "title": "Blue",
+    "abstract": "Blue band",
+    "components": {"red": {"blue": 1.0}, "green": {"blue": 1.0}, "blue": {"blue": 1.0}},
+    "scale_range": [1.0, 19636.0],
+}
+
+style_lsc2_sr_pure_green = {
+    "name": "green",
+    "title": "Green",
+    "abstract": "Green band",
+    "components": {
+        "red": {"green": 1.0},
+        "green": {"green": 1.0},
+        "blue": {"green": 1.0},
+    },
+    "scale_range": [1.0, 19636.0],
+}
+
+style_lsc2_sr_pure_red = {
+    "name": "red",
+    "title": "Red",
+    "abstract": "Red band",
+    "components": {
+        "red": {"red": 1.0},
+        "green": {"red": 1.0},
+        "blue": {"red": 1.0},
+    },
+    "scale_range": [1.0, 19636.0],
+}
+
+style_lsc2_sr_pure_nir = {
+    "name": "nir",
+    "title": "Near Infrared (NIR)",
+    "abstract": "Near infra-red band",
+    "components": {
+        "red": {"nir": 1.0},
+        "green": {"nir": 1.0},
+        "blue": {"nir": 1.0}
+    },
+    "scale_range": [1.0, 19636.0],
+}
+
+style_lsc2_sr_swir_1 = {
+    "name": "swir_1",
+    "title": "Shortwave Infrared 1 (SWIR1)",
+    "abstract": "Shortwave infrared band 1",
+    "components": {
+        "red": {"swir_1": 1.0},
+        "green": {"swir_1": 1.0},
+        "blue": {"swir_1": 1.0},
+    },
+    "scale_range": [1.0, 19636.0],
+}
+
+style_lsc2_sr_swir_2 = {
+    "name": "swir_2",
+    "title": "Shortwave Infrared 2 (SWIR2)",
+    "abstract": "Shortwave infrared band 2",
+    "components": {
+        "red": {"swir_2": 1.0},
+        "green": {"swir_2": 1.0},
+        "blue": {"swir_2": 1.0},
+    },
+    "scale_range": [1.0, 19636.0],
+}
+
+styles_lsc2_sr_list = [
+    style_lsc2_sr_simple_rgb,
+    style_lsc2_sr_irg,
+    style_lsc2_sr_ndvi,
+    style_lsc2_sr_ndwi,
+    style_lsc2_sr_mndwi,
+    style_lsc2_sr_pure_blue,
+    style_lsc2_sr_pure_green,
+    style_lsc2_sr_pure_red,
+    style_lsc2_sr_pure_nir,
+    style_lsc2_sr_swir_1,
+    style_lsc2_sr_swir_2,
+]
+
+# detangle common styles from satellite names!
