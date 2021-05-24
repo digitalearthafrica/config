@@ -64,7 +64,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "flags": [
         {
-            "product": "jers_sar_tile",
+            "product": "jers_sar_mosaic",
             "band": "mask",
             "ignore_info_flags": [],
         },

@@ -74,7 +74,7 @@ style_colours = {
 
 layer = {
     "title": "Shuttle Radar Topography Mission Digital Elevation Model",
-    "name": "srtm",
+    "name": "dem_srtm",
     "abstract": """
 A Digital Elevation Model (DEM) is a digital representation of Earth’s topography. It helps to understand the land surface characteristics in the height dimension. It is also used as an ancillary dataset to calculate illumination and viewing geometry of a satellite imagery. DE Africa provides access to the Shuttle Radar Topography Mission (SRTM) v 3.0 (SRTMGL1) product.
 
