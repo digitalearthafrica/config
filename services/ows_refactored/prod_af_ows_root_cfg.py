@@ -73,8 +73,6 @@ ows_cfg = {
     },  # END OF global SECTION
     "wms": {
         # Config for WMS service, for all products/layers
-        # "s3_url": "https://data.digitalearth.africa",
-        "s3_bucket": "deafrica-data",
         "s3_aws_zone": "af-south-1",
         "max_width": 512,
         "max_height": 512,
