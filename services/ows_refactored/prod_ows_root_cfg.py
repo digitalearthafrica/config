@@ -140,7 +140,7 @@ ows_cfg = {
                                     "type": "python",
                                 },
                                 {
-                                    "include": "ows_refactored.radar_backscatter.ows_jers_cfg.layer",
+                                    "include": "ows_refactored.radar_backscatter.ows_us_jers_cfg.layer",
                                     "type": "python",
                                 },
                             ],
@@ -176,7 +176,7 @@ ows_cfg = {
                     "abstract": """Digital elevation model from NASA's SRTM<""",
                     "layers": [
                         {
-                            "include": "ows_refactored.elevation.ows_srtm_cfg.layer",
+                            "include": "ows_refactored.elevation.ows_us_srtm_cfg.layer",
                             "type": "python",
                         },
                     ],

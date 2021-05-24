@@ -86,7 +86,7 @@ For more information, see https://lpdaac.usgs.gov/products/srtmgl1v003/
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-    "product_name": "dem_srtm",
+    "product_name": "srtm",
     "time_resolution": "year",
     "bands": bands_elevation,
     "resource_limits": reslim_srtm,

@@ -204,7 +204,7 @@
         },
         {
             "product": [
-                "jers_sar_tile"
+                "jers_sar_mosaic"
             ],
             "styles_count": 1,
             "styles_list": [
@@ -213,7 +213,7 @@
         },
         {
             "product": [
-                "srtm"
+                "dem_srtm"
             ],
             "styles_count": 2,
             "styles_list": [

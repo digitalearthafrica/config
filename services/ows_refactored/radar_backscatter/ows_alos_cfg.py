@@ -143,11 +143,13 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "always_fetch_bands": [],
         "manual_merge": False,
     },
-    "flags": {
-        "product": "alos_palsar_mosaic",
-        "band": "mask",
-        "ignore_info_flags": [],
-    },
+    "flags": [
+        {
+            "product": "alos_palsar_mosaic",
+            "band": "mask",
+            "ignore_info_flags": [],
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [0.000222222222222, -0.000222222222222],
