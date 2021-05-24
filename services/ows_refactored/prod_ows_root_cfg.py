@@ -122,7 +122,7 @@ ows_cfg = {
                                     "type": "python",
                                 },
                                 {
-                                    "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
+                                    "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layer",
                                     "type": "python",
                                 },
                                 {
