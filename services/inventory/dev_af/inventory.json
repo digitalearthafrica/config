@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 3,
+    "total_layers_count": 17,
     "layers": [
         {
             "product": [
@@ -22,6 +22,63 @@
                 "red_edge_3",
                 "nir",
                 "narrow_nir",
+                "swir_1",
+                "swir_2"
+            ]
+        },
+        {
+            "product": [
+                "ls8_sr"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir_1",
+                "swir_2"
+            ]
+        },
+        {
+            "product": [
+                "ls7_sr"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir_1",
+                "swir_2"
+            ]
+        },
+        {
+            "product": [
+                "ls5_sr"
+            ],
+            "styles_count": 11,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
                 "swir_1",
                 "swir_2"
             ]
@@ -54,6 +111,114 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "observations",
+                "wet"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_annual_summary"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "WOfS_frequency",
+                "WOfS_frequency_blues_transparent"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_annual_summary"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "water_observations"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_annual_summary"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "annual_clear_observations"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_summary"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "WOfS_frequency",
+                "WOfS_frequency_blues_transparent"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_summary"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "water_observations"
+            ]
+        },
+        {
+            "product": [
+                "ga_ls8c_wofs_2_summary"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "annual_clear_observations"
+            ]
+        },
+        {
+            "product": [
+                "s1_rtc"
+            ],
+            "styles_count": 3,
+            "styles_list": [
+                "vv_vh_vh_over_vv",
+                "vv",
+                "vh"
+            ]
+        },
+        {
+            "product": [
+                "alos_palsar_mosaic"
+            ],
+            "styles_count": 4,
+            "styles_list": [
+                "hh",
+                "hv",
+                "hh_hv_hv_over_hh",
+                "rvi"
+            ]
+        },
+        {
+            "product": [
+                "jers_sar_tile"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "hh"
+            ]
+        },
+        {
+            "product": [
+                "srtm"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "greyscale",
+                "colours"
             ]
         },
         {

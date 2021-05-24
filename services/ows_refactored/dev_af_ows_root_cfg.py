@@ -42,7 +42,7 @@ ows_cfg = {
         # Metadata to go straight into GetCapabilities documents
         "title": "Digital Earth Africa - OGC Web Services",
         "abstract": """Digital Earth Africa OGC Web Services""",
-        "info_url": "dea.ga.gov.au/",
+        "info_url": "digitalearthafrica.org/",
         "keywords": [
             "landsat",
             "africa",
@@ -64,7 +64,7 @@ ows_cfg = {
             },
             "telephone": "+61 2 6249 9111",
             "fax": "",
-            "email": "earth.observation@ga.gov.au",
+            "email": "info@digitalearthafrica.org",
         },
         "fees": "",
         "access_constraints": "© Commonwealth of Australia (Geoscience Australia) 2018. "
@@ -73,8 +73,6 @@ ows_cfg = {
     },  # END OF global SECTION
     "wms": {
         # Config for WMS service, for all products/layers
-        "s3_url": "https://data.digitalearth.africa",
-        "s3_bucket": "deafrica-data",
         "s3_aws_zone": "af-south-1",
         "max_width": 512,
         "max_height": 512,
@@ -121,15 +119,81 @@ ows_cfg = {
                             "abstract": """Surface reflectance""",
                             "layers": [
                                 {
-                                    "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layers",
-                                    "type": "python",
+                                    "title": "Daily surface reflectance",
+                                    "abstract": """Daily surface reflectance""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layers",
+                                            "type": "python",
+                                        },
+                                    ],
                                 },
                                 {
-                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layers",
-                                    "type": "python",
+                                    "title": "Annual surface reflectance",
+                                    "abstract": """Annual surface reflectance""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
                                 },
                             ],
-                        }
+                        },
+                        {
+                            "title": "Radar backscatter",
+                            "abstract": """Radar backscatter""",
+                            "layers": [
+                                {
+                                    "title": "Daily radar backscatter",
+                                    "abstract": """Daily radar backscatter""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.radar_backscatter.ows_sentinel1_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
+                                {
+                                    "title": "Annual radar backscatter",
+                                    "abstract": """Annual radar backscatter""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.radar_backscatter.ows_alos_cfg.layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.radar_backscatter.ows_jers_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    "title": "Surface water",
+                    "abstract": """Surface water""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.wofs.ows_wofsc2_cfg.layers",
+                            "type": "python",
+                        },
+                    ]
+                },
+                {
+                    "title": "Elevation",
+                    "abstract": """Digital elevation model""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.elevation.ows_srtm_cfg.layer",
+                            "type": "python",
+                        },
                     ],
                 },
                 {
