@@ -1,5 +1,5 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_landsat
-from ows_refactored.surface_reflectance.band_sr_cfg import bands_lsc2_sr
+from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls5_sr, bands_ls7_sr, bands_ls8_sr
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_lsc2_sr_list
 
 layers = {
@@ -29,7 +29,7 @@ For more information on Landsat products, see https://www.usgs.gov/core-science-
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
             "product_name": "ls8_sr",
-            "bands": bands_lsc2_sr,
+            "bands": bands_ls8_sr,
             "resource_limits": reslim_landsat,
             "image_processing": {
                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -66,7 +66,7 @@ For more information on Landsat products, see https://www.usgs.gov/core-science-
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
             "product_name": "ls7_sr",
-            "bands": bands_lsc2_sr,
+            "bands": bands_ls7_sr,
             "resource_limits": reslim_landsat,
             "image_processing": {
                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -103,7 +103,7 @@ For more information on Landsat products, see https://www.usgs.gov/core-science-
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
             "product_name": "ls5_sr",
-            "bands": bands_lsc2_sr,
+            "bands": bands_ls5_sr,
             "resource_limits": reslim_landsat,
             "image_processing": {
                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
