@@ -1,5 +1,7 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_landsat
-from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls5_sr, bands_ls7_sr, bands_ls8_sr
+from ows_refactored.surface_reflectance.band_sr_cfg import (bands_ls5_sr,
+                                                            bands_ls7_sr,
+                                                            bands_ls8_sr)
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_lsc2_sr_list
 
 layers = {
