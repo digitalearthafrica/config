@@ -4,18 +4,10 @@ from ows_refactored.surface_reflectance.band_sr_cfg import (bands_ls5_sr,
                                                             bands_ls8_sr)
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_lsc2_sr_list
 
-layers = {
-    "title": "Landsat",
-    "abstract": """Landsat represents a collection of space-based land remote sensing data. Surface reflectance
-                        measures incoming solar radiation reflected from the Earth to the Landsat sensor, which improves comparison
-                        between multiple images over the same region. This helps us detect Earth surface changes. This dataset
-                        includes Landsat 8 US Geological Survey Collection 1 Higher Level SR scene processed using LaSRC. 30m UTM
-                        based projection.""",
-    "layers": [
-        {
-            "title": "Surface Reflectance Landsat 8 (USGS Collection 2)",
-            "name": "ls8_sr",
-            "abstract": """
+layer_ls8 = {  
+    "title": "Surface Reflectance Landsat 8 (USGS Collection 2)",
+    "name": "ls8_sr",
+    "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
 
 DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance products over Africa. USGS Landsat Collection 2 offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant.
@@ -48,8 +40,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "default_style": "simple_rgb",
                 "styles": styles_lsc2_sr_list,
             },
-        },
-        {
+        }
+
+layer_ls7 = {
             "title": "Surface Reflectance Landsat 7 (USGS Collection 2)",
             "name": "ls7_sr",
             "abstract": """
@@ -85,8 +78,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "default_style": "simple_rgb",
                 "styles": styles_lsc2_sr_list,
             },
-        },
-        {
+        }
+
+layer_ls5 = {
             "title": "Surface Reflectance Landsat 5 (USGS Collection 2)",
             "name": "ls5_sr",
             "abstract": """
@@ -122,6 +116,4 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "default_style": "simple_rgb",
                 "styles": styles_lsc2_sr_list,
             },
-        },
-    ],
-}
+        }
