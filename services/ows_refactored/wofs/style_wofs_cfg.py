@@ -82,6 +82,7 @@ style_wofs_water_annual_wet = {
     "legend": {
         "begin": 0,
         "end": 20,
+        "decimal_places": 0,
         "ticks_every": 10,
         "tick_labels": {
             "20": {"prefix": ">"},
