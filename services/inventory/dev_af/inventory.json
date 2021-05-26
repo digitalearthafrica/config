@@ -194,12 +194,11 @@
             "product": [
                 "alos_palsar_mosaic"
             ],
-            "styles_count": 4,
+            "styles_count": 3,
             "styles_list": [
                 "hh",
                 "hv",
                 "hh_hv_hv_over_hh",
-                "rvi"
             ]
         },
         {
