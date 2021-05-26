@@ -29,7 +29,7 @@ style_greyscale = {
         "title": "Elevation ",
         "begin": "0",
         "end": "4000",
-        "ticks_every": 100,
+        "ticks_every": 400,
         "units": "m",
         "tick_labels": {
             "4000": {"prefix": ">"},
