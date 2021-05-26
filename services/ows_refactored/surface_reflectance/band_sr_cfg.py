@@ -53,11 +53,29 @@ bands_ls = {
 
 # new styles for C2 Landsat
 
-bands_lsc2_sr = {
-    "red": [],
-    "green": [],
-    "blue": [],
-    "nir": ["near_infrared"],
-    "swir_1": ["shortwave_infrared_1", "near_shortwave_infrared"],
-    "swir_2": ["shortwave_infrared_2", "far_shortwave_infrared"],
+bands_ls5_sr = {
+    "SR_B1": ["blue"],
+    "SR_B2": ["green"],
+    "SR_B3": ["red"],
+    "SR_B4": ["nir"],
+    "SR_B5": ["swir_1"],
+    "SR_B7": ["swir_2"],
+}
+
+bands_ls7_sr = {
+    "SR_B1": ["blue"],
+    "SR_B2": ["green"],
+    "SR_B3": ["red"],
+    "SR_B4": ["nir"],
+    "SR_B5": ["swir_1"],
+    "SR_B7": ["swir_2"],
+}
+
+bands_ls8_sr = {
+    "SR_B2": ["blue"],
+    "SR_B3": ["green"],
+    "SR_B4": ["red"],
+    "SR_B5": ["nir"],
+    "SR_B6": ["swir_1"],
+    "SR_B7": ["swir_2"],
 }
