@@ -9,7 +9,7 @@ from ows_refactored.wofs.style_wofs_cfg import (
     style_wofs_water_annual_wet)
 
 layers = {
-    "title": "Water Observations from Space c2",
+    "title": "Water Observations from Space (Beta)",
     "abstract": """WOfS""",
     "layers": [
         {
