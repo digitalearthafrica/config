@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 16,
+    "total_layers_count": 19,
     "layers": [
         {
             "product": [
@@ -81,6 +81,33 @@
                 "nir",
                 "swir_1",
                 "swir_2"
+            ]
+        },
+        {
+            "product": [
+                "ls8_st"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "surface_temperature"
+            ]
+        },
+        {
+            "product": [
+                "ls7_st"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "surface_temperature"
+            ]
+        },
+        {
+            "product": [
+                "ls5_st"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "surface_temperature"
             ]
         },
         {
