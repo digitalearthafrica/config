@@ -775,7 +775,7 @@ style_lsc2_sr_simple_rgb = {
         "green": {"green": 1.0},
         "blue": {"blue": 1.0}
     },
-    "scale_range": [7274.0, 26909.0],
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_lsc2_sr_irg = {
@@ -787,7 +787,7 @@ style_lsc2_sr_irg = {
         "green": {"nir": 1.0},
         "blue": {"green": 1.0},
     },
-    "scale_range": [7274.0, 26909.0],
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_lsc2_sr_ndvi = {
@@ -863,7 +863,7 @@ style_lsc2_sr_pure_blue = {
     "title": "Blue",
     "abstract": "Blue band",
     "components": {"red": {"blue": 1.0}, "green": {"blue": 1.0}, "blue": {"blue": 1.0}},
-    "scale_range": [7274.0, 26909.0],
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_lsc2_sr_pure_green = {
@@ -875,7 +875,7 @@ style_lsc2_sr_pure_green = {
         "green": {"green": 1.0},
         "blue": {"green": 1.0},
     },
-    "scale_range": [7274.0, 26909.0],
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_lsc2_sr_pure_red = {
@@ -887,7 +887,7 @@ style_lsc2_sr_pure_red = {
         "green": {"red": 1.0},
         "blue": {"red": 1.0},
     },
-    "scale_range": [7274.0, 26909.0],
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_lsc2_sr_pure_nir = {
@@ -899,7 +899,7 @@ style_lsc2_sr_pure_nir = {
         "green": {"nir": 1.0},
         "blue": {"nir": 1.0}
     },
-    "scale_range": [7274.0, 26909.0],
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_lsc2_sr_swir_1 = {
@@ -911,7 +911,7 @@ style_lsc2_sr_swir_1 = {
         "green": {"swir_1": 1.0},
         "blue": {"swir_1": 1.0},
     },
-    "scale_range": [7274.0, 26909.0],
+    "scale_range": [7272.0, 18181.0],
 }
 
 style_lsc2_sr_swir_2 = {
@@ -923,7 +923,7 @@ style_lsc2_sr_swir_2 = {
         "green": {"swir_2": 1.0},
         "blue": {"swir_2": 1.0},
     },
-    "scale_range": [7274.0, 26909.0],
+    "scale_range": [7272.0, 18181.0],
 }
 
 styles_lsc2_sr_list = [
