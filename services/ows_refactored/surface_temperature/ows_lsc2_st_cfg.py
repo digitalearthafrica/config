@@ -62,7 +62,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "styling": {
         "default_style": "surface_temperature",
-        "styles": style_lsc2_st,
+        "styles": [
+            style_lsc2_st,
+        ],
     },
 }
 
@@ -100,7 +102,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "styling": {
         "default_style": "surface_temperature",
-        "styles": style_lsc2_st,
+        "styles": [
+            style_lsc2_st,
+        ],
     },
 }
 
@@ -138,6 +142,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "styling": {
         "default_style": "surface_temperature",
-        "styles": style_lsc2_st,
+        "styles": [
+            style_lsc2_st,
+        ],
     },
 }
