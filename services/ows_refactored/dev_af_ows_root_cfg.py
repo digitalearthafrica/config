@@ -159,7 +159,7 @@ ows_cfg = {
                                 {
                                     "title": "Daily surface temperature",
                                     "abstract": """Daily surface temperature""",
-                                    "layers": [                                      
+                                    "layers": [
                                         {
                                             "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls8",
                                             "type": "python",
@@ -173,7 +173,7 @@ ows_cfg = {
                                             "type": "python",
                                         },
                                     ],
-                                },                                
+                                },
                             ],
                         },
                         {
