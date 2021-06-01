@@ -153,6 +153,30 @@ ows_cfg = {
                             ],
                         },
                         {
+                            "title": "Surface temperature",
+                            "abstract": """Surface temperature""",
+                            "layers": [
+                                {
+                                    "title": "Daily surface temperature",
+                                    "abstract": """Daily surface temperature""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls8",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls7",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls5",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        {
                             "title": "Radar backscatter",
                             "abstract": """Radar backscatter""",
                             "layers": [
