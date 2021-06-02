@@ -27,7 +27,7 @@ specification:
     dsm_path: "https://deafrica-input-datasets.s3.af-south-1.amazonaws.com/srtm_dem/srtm_africa.tif"
 
 output:
-  location: s3://deafrica-data-dev-af/
+  location: s3://deafrica-data-dev-af
   nodata: 1
   dtype: uint8
   explorer_url: https://explorer.digitalearth.africa/products/wofs_ls/extents
