@@ -8,7 +8,6 @@ license: CC-BY-4.0
 metadata:
   product:
     name: wofs_ls
-    href: https://explorer.digitalearth.africa/products/wofs_ls
 
 measurements:
   - name: water
