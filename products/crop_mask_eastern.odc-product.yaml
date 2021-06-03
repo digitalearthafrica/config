@@ -29,7 +29,7 @@ measurements:
   - name: prob
     aliases: ['crop_prob', 'PROB']
     dtype: uint8
-    nodata: -1.0
+    nodata: 255
     units: '1'
 
   - name: filtered
