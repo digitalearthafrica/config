@@ -11,6 +11,15 @@ style_lsc2_st = {
     "index_expression": "(0.00341802*st - 124.15)",
     "mpl_ramp": "magma",
     "range": [-10.0, 40.0],
+    "pq_masks": [
+        {
+            "flags": {
+                "clear": True,
+                "cloud_shadow": "not_high_confidence",
+                "nodata": False
+            },
+        },
+    ],
     "legend": {
         "begin": "-10.0",
         "end": "40.0",
@@ -48,6 +57,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "ls8_st",
     "bands": bands_ls8_st,
+    "dynamic": True,
     "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -88,6 +98,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "ls7_st",
     "bands": bands_ls7_st,
+    "dynamic": True,
     "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
