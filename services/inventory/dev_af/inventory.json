@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 20,
+    "total_layers_count": 21,
     "layers": [
         {
             "product": [
@@ -138,6 +138,16 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev"
+            ]
+        },
+        {
+            "product": [
+                "wofs_ls"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "observations",
+                "wet"
             ]
         },
         {

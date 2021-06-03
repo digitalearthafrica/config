@@ -24,6 +24,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "ls8_sr",
     "bands": bands_ls8_sr,
+    "dynamic": True,
     "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -62,6 +63,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "ls7_sr",
     "bands": bands_ls7_sr,
+    "dynamic": True,
     "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -100,6 +102,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "ls5_sr",
     "bands": bands_ls5_sr,
+    "dynamic": True,
     "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
