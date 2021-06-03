@@ -1,8 +1,8 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_landsat
 
-bands_ls5_st = {"ST_B6": ["st", "surface_temperature"]}
-bands_ls7_st = {"ST_B6": ["st", "surface_temperature"]}
-bands_ls8_st = {"ST_B10": ["st", "surface_temperature"]}
+bands_ls5_st = {"ST_B6": ["st", "surface_temperature"], "QA_PIXEL": ["pq", "pixel_quality"]}
+bands_ls7_st = {"ST_B6": ["st", "surface_temperature"], "QA_PIXEL": ["pq", "pixel_quality"]}
+bands_ls8_st = {"ST_B10": ["st", "surface_temperature"], "QA_PIXEL": ["pq", "pixel_quality"]}
 
 style_lsc2_st = {
     "name": "surface_temperature",
@@ -10,19 +10,29 @@ style_lsc2_st = {
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
     "mpl_ramp": "magma",
-    "range": [0.0, 40.0],
+    "range": [-10.0, 40.0],
+    "pq_masks": [
+        {
+            "band": "pixel_quality",
+            "flags": {
+                "clear": True,
+                "cloud_shadow": "not_high_confidence",
+                "nodata": False
+            },
+        },
+    ],
     "legend": {
         "begin": "-10.0",
-        "end": "50.0",
-        "decimal_places": 1,
-        "ticks": ["-10.0", "0.0", "10.0", "20.0", "30.0", "40.0", "50.0"],
+        "end": "40.0",
+        "decimal_places": 0,
+        "ticks": ["-10.0", "0.0", "10.0", "20.0", "30.0", "40.0"],
         "tick_labels": {
             "-10.0": {"prefix": "<"},
             "0.0": {"label": "0.0"},
             "10.0": {"label": "10.0"},
             "20.0": {"label": "20.0"},
             "30.0": {"label": "30.0"},
-            "40.0": {"prefix": ">"},
+            "40.0": {"suffix": "<"},
         },
     },
 }
@@ -48,6 +58,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "ls8_st",
     "bands": bands_ls8_st,
+    "dynamic": True,
     "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -55,10 +66,16 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls8_st",
+            "band": "pixel_quality",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st"],
+        "default_bands": ["st", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
@@ -88,6 +105,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "ls7_st",
     "bands": bands_ls7_st,
+    "dynamic": True,
     "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -95,10 +113,16 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls7_st",
+            "band": "pixel_quality",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st"],
+        "default_bands": ["st", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
@@ -135,10 +159,16 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls5_st",
+            "band": "pixel_quality",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st"],
+        "default_bands": ["st", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
