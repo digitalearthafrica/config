@@ -216,6 +216,10 @@ ows_cfg = {
                             "include": "ows_refactored.wofs.ows_wofsc2_cfg.layers",
                             "type": "python",
                         },
+                        {
+                            "include": "ows_refactored.wofs.ows_wofs_ls_cfg.layers",
+                            "type": "python",
+                        },
                     ]
                 },
                 {
