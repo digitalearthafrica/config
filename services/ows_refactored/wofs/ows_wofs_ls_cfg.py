@@ -1,6 +1,7 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_wofs_daily
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_obs
-from ows_refactored.wofs.style_wofs_cfg import style_wofs_obs, style_wofs_obs_wet_only
+from ows_refactored.wofs.style_wofs_cfg import (style_wofs_obs,
+                                                style_wofs_obs_wet_only)
 
 layers = {
     "title": "Water Observations from Space (Prototype)",
