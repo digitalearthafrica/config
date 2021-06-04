@@ -21,7 +21,7 @@ style_lsc2_st = {
     "title": "Surface temperature - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
-    "mpl_ramp": "plasma",
+    "mpl_ramp": "magma",
     "range": [0.0, 50.0],
     "legend": {
         "begin": "0.0",
@@ -44,8 +44,16 @@ style_lsc2_st_masked = {
     "title": "Surface temperature (cloud masked) - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
-    "mpl_ramp": "plasma",
+    "mpl_ramp": "magma",
     "range": [0.0, 50.0],
+    "pq_masks": [
+        {
+            "band": "pq",
+            "flags": {
+                "clear": True
+            },
+        },
+    ],
     "legend": {
         "begin": "0.0",
         "end": "50.0",
@@ -67,7 +75,7 @@ style_lsc2_st_masked_ls8 = {
     "title": "Surface temperature (cloud masked) - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
-    "mpl_ramp": "plasma",
+    "mpl_ramp": "magma",
     "range": [0.0, 50.0],
     "pq_masks": [
         {
@@ -150,7 +158,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa", "pq"],
+        "default_bands": ["st", "st_qa"],
     },
     "styling": {
         "default_style": "surface_temperature",
@@ -192,7 +200,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa", "pq"],
+        "default_bands": ["st", "st_qa"],
     },
     "styling": {
         "default_style": "surface_temperature",
@@ -233,7 +241,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa", "pq"],
+        "default_bands": ["st", "st_qa"],
     },
     "styling": {
         "default_style": "surface_temperature",
