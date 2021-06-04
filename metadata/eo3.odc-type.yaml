@@ -56,22 +56,6 @@ dataset:
         - ['properties', 'dtr:end_datetime']
         - ['properties', 'datetime']
 
-    # LonLat bounding box, generated on the fly from:
-    #  `grids`, `crs` and `geometry` of the new metadata format
-    #
-    # Bounding box is defined by two ranges:
-    #   [lon.begin, lon.end] -- Longitude
-    #   [lat.begin, lat.end] -- Latitude
-    #
-    # Note that STAC is using `bbox` for the same thing as following:
-    #
-    #     bbox: [left, bottom, right, top]
-    #              0      1      2     3
-    #             lon    lat    lon   lat
-    #
-    # But MetadataType does not support integer index keys, so...
-    #   BoundingBox: [lon.begin, lat.begin, lon.end, lat.end]
-
     lon:
       description: Longitude range
       type: double-range
