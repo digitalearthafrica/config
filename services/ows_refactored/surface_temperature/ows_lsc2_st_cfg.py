@@ -40,7 +40,7 @@ style_lsc2_st_nomask = {
 
 style_lsc2_st = {
     "name": "surface_temperature",
-    "title": "Surface temperature - Celsius",
+    "title": "Surface temperature (cloud masked) - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
     "mpl_ramp": "magma",
@@ -70,7 +70,7 @@ style_lsc2_st = {
 
 style_ls8_st = {
     "name": "surface_temperature",
-    "title": "Surface temperature - Celsius",
+    "title": "Surface temperature (cloud masked) - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
     "mpl_ramp": "magma",
@@ -166,7 +166,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
-            style_ls8_st,
             style_lsc2_st_nomask,
             style_lsc2_st_qa,
         ],
@@ -215,7 +214,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
-            style_lsc2_st,
             style_lsc2_st_nomask,
             style_lsc2_st_qa,
         ],
@@ -263,7 +261,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
-            style_lsc2_st,
             style_lsc2_st_nomask,
             style_lsc2_st_qa,
         ],
