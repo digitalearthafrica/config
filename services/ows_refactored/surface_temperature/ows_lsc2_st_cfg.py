@@ -17,7 +17,7 @@ bands_ls8_st = {
 }
 
 style_lsc2_st_nomask = {
-    "name": "surface_temperature (no masking)",
+    "name": "surface_temperature_nomask",
     "title": "Surface temperature - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
