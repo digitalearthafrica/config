@@ -100,7 +100,7 @@
             ],
             "styles_count": 3,
             "styles_list": [
-                "surface_temperature"
+                "surface_temperature",
                 "surface_temperature_nomask",
                 "surface_temperature_uncertainty"
             ]
@@ -111,7 +111,7 @@
             ],
             "styles_count": 3,
             "styles_list": [
-                "surface_temperature"
+                "surface_temperature",
                 "surface_temperature_nomask",
                 "surface_temperature_uncertainty"
             ]
