@@ -16,65 +16,59 @@ bands_ls8_st = {
     "QA_PIXEL": ["pq"]
 }
 
-style_lsc2_st_nomask = {
-    "name": "surface_temperature_nomask",
+style_lsc2_st = {
+    "name": "surface_temperature",
     "title": "Surface temperature - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
-    "mpl_ramp": "magma",
-    "range": [0.0, 40.0],
+    "mpl_ramp": "plasma",
+    "range": [0.0, 50.0],
     "legend": {
         "begin": "0.0",
-        "end": "40.0",
+        "end": "50.0",
         "decimal_places": 1,
-        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0"],
+        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0", "50.0"],
         "tick_labels": {
             "0.0": {"prefix": "<"},
             "10.0": {"label": "10.0"},
             "20.0": {"label": "20.0"},
             "30.0": {"label": "30.0"},
-            "40.0": {"prefix": ">"},
+            "40.0": {"label": "40.0"},
+            "50.0": {"prefix": ">"},
         },
     },
 }
 
-style_lsc2_st = {
-    "name": "surface_temperature",
+style_lsc2_st_masked = {
+    "name": "surface_temperature_masked",
     "title": "Surface temperature (cloud masked) - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
-    "mpl_ramp": "magma",
-    "range": [0.0, 40.0],
-    "pq_masks": [
-        {
-            "band": "pq",
-            "flags": {
-                "clear": True,
-            },
-        },
-    ],
+    "mpl_ramp": "plasma",
+    "range": [0.0, 50.0],
     "legend": {
         "begin": "0.0",
-        "end": "40.0",
+        "end": "50.0",
         "decimal_places": 1,
-        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0"],
+        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0", "50.0"],
         "tick_labels": {
             "0.0": {"prefix": "<"},
             "10.0": {"label": "10.0"},
             "20.0": {"label": "20.0"},
             "30.0": {"label": "30.0"},
-            "40.0": {"prefix": ">"},
+            "40.0": {"label": "40.0"},
+            "50.0": {"prefix": ">"},
         },
     },
 }
 
-style_ls8_st = {
-    "name": "surface_temperature",
+style_lsc2_st_masked_ls8 = {
+    "name": "surface_temperature_masked_ls8",
     "title": "Surface temperature (cloud masked) - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
-    "mpl_ramp": "magma",
-    "range": [0.0, 40.0],
+    "mpl_ramp": "plasma",
+    "range": [0.0, 50.0],
     "pq_masks": [
         {
             "band": "pq",
@@ -86,15 +80,16 @@ style_ls8_st = {
     ],
     "legend": {
         "begin": "0.0",
-        "end": "40.0",
+        "end": "50.0",
         "decimal_places": 1,
-        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0"],
+        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0", "50.0"],
         "tick_labels": {
             "0.0": {"prefix": "<"},
             "10.0": {"label": "10.0"},
             "20.0": {"label": "20.0"},
             "30.0": {"label": "30.0"},
-            "40.0": {"prefix": ">"},
+            "40.0": {"label": "40.0"},
+            "50.0": {"prefix": ">"},
         },
     },
 }
@@ -164,9 +159,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
-        "default_style": "surface_temperature_nomask",
+        "default_style": "surface_temperature",
         "styles": [
-            style_lsc2_st_nomask,
+            style_lsc2_st,
             style_lsc2_st_qa,
         ],
     },
@@ -212,9 +207,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
-        "default_style": "surface_temperature_nomask",
+        "default_style": "surface_temperature",
         "styles": [
-            style_lsc2_st_nomask,
+            style_lsc2_st,
             style_lsc2_st_qa,
         ],
     },
@@ -259,9 +254,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
-        "default_style": "surface_temperature_nomask",
+        "default_style": "surface_temperature",
         "styles": [
-            style_lsc2_st_nomask,
+            style_lsc2_st,
             style_lsc2_st_qa,
         ],
     },
