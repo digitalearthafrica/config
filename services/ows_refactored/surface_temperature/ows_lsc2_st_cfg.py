@@ -1,8 +1,42 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_landsat
 
-bands_ls5_st = {"ST_B6": ["st", "surface_temperature"], "QA_PIXEL": ["pq", "pixel_quality"]}
-bands_ls7_st = {"ST_B6": ["st", "surface_temperature"], "QA_PIXEL": ["pq", "pixel_quality"]}
-bands_ls8_st = {"ST_B10": ["st", "surface_temperature"], "QA_PIXEL": ["pq", "pixel_quality"]}
+bands_ls5_st = {
+    "ST_B6": ["st"],
+    "ST_QA": ["st_qa"],
+    "QA_PIXEL": ["pq"]
+}
+bands_ls7_st = {
+    "ST_B6": ["st"],
+    "ST_QA": ["st_qa"],
+    "QA_PIXEL": ["pq"]
+}
+bands_ls8_st = {
+    "ST_B10": ["st"],
+    "ST_QA": ["st_qa"],
+    "QA_PIXEL": ["pq"]
+}
+
+style_lsc2_st_nomask = {
+    "name": "surface_temperature_nomask",
+    "title": "Surface temperature - Celsius",
+    "abstract": "Surface temperature in degrees Celsius",
+    "index_expression": "(0.00341802*st - 124.15)",
+    "mpl_ramp": "magma",
+    "range": [0.0, 40.0],
+    "legend": {
+        "begin": "0.0",
+        "end": "40.0",
+        "decimal_places": 1,
+        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0"],
+        "tick_labels": {
+            "0.0": {"prefix": "<"},
+            "10.0": {"label": "10.0"},
+            "20.0": {"label": "20.0"},
+            "30.0": {"label": "30.0"},
+            "40.0": {"prefix": ">"},
+        },
+    },
+}
 
 style_lsc2_st = {
     "name": "surface_temperature",
@@ -10,29 +44,81 @@ style_lsc2_st = {
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
     "mpl_ramp": "magma",
-    "range": [-10.0, 40.0],
+    "range": [0.0, 40.0],
     "pq_masks": [
         {
-            "band": "pixel_quality",
+            "band": "pq",
             "flags": {
                 "clear": True,
-                "cloud_shadow": "not_high_confidence",
-                "nodata": False
             },
         },
     ],
     "legend": {
-        "begin": "-10.0",
+        "begin": "0.0",
         "end": "40.0",
-        "decimal_places": 0,
-        "ticks": ["-10.0", "0.0", "10.0", "20.0", "30.0", "40.0"],
+        "decimal_places": 1,
+        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0"],
         "tick_labels": {
-            "-10.0": {"prefix": "<"},
-            "0.0": {"label": "0.0"},
+            "0.0": {"prefix": "<"},
             "10.0": {"label": "10.0"},
             "20.0": {"label": "20.0"},
             "30.0": {"label": "30.0"},
-            "40.0": {"suffix": "<"},
+            "40.0": {"prefix": ">"},
+        },
+    },
+}
+
+style_ls8_st = {
+    "name": "surface_temperature",
+    "title": "Surface temperature - Celsius",
+    "abstract": "Surface temperature in degrees Celsius",
+    "index_expression": "(0.00341802*st - 124.15)",
+    "mpl_ramp": "magma",
+    "range": [0.0, 40.0],
+    "pq_masks": [
+        {
+            "band": "pq",
+            "flags": {
+                "clear": True,
+                "cirrus": "not_high_confidence"
+            },
+        },
+    ],
+    "legend": {
+        "begin": "0.0",
+        "end": "40.0",
+        "decimal_places": 1,
+        "ticks": ["0.0", "10.0", "20.0", "30.0", "40.0"],
+        "tick_labels": {
+            "0.0": {"prefix": "<"},
+            "10.0": {"label": "10.0"},
+            "20.0": {"label": "20.0"},
+            "30.0": {"label": "30.0"},
+            "40.0": {"prefix": ">"},
+        },
+    },
+}
+
+style_lsc2_st_qa = {
+    "name": "surface_temperature_uncertainty",
+    "title": "Surface temperature uncertainty - Celsius",
+    "abstract": "Surface temperature uncertainty in degrees Celsius",
+    "index_expression": "(0.01*st_qa)",
+    "mpl_ramp": "viridis",
+    "range": [0.0, 6.0],
+    "legend": {
+        "begin": "0.0",
+        "end": "6.0",
+        "decimal_places": 1,
+        "ticks": ["0.0", "1.0", "2.0", "3.0", "4.0", "5.0", "6.0"],
+        "tick_labels": {
+            "0.0": {"label": "0.0"},
+            "1.0": {"label": "1.0"},
+            "2.0": {"label": "2.0"},
+            "3.0": {"label": "3.0"},
+            "4.0": {"label": "4.0"},
+            "5.0": {"label": "5.0"},
+            "6.0": {"prefix": ">"},
         },
     },
 }
@@ -69,18 +155,20 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "flags": [
         {
             "product": "ls8_st",
-            "band": "pixel_quality",
+            "band": "pq",
         },
     ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "pq"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
-            style_lsc2_st,
+            style_ls8_st,
+            style_lsc2_st_nomask,
+            style_lsc2_st_qa,
         ],
     },
 }
@@ -116,18 +204,20 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "flags": [
         {
             "product": "ls7_st",
-            "band": "pixel_quality",
+            "band": "pq",
         },
     ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "pq"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
             style_lsc2_st,
+            style_lsc2_st_nomask,
+            style_lsc2_st_qa,
         ],
     },
 }
@@ -162,18 +252,20 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "flags": [
         {
             "product": "ls5_st",
-            "band": "pixel_quality",
+            "band": "pq",
         },
     ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "pq"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
             style_lsc2_st,
+            style_lsc2_st_nomask,
+            style_lsc2_st_qa,
         ],
     },
 }

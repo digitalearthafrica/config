@@ -87,27 +87,33 @@
             "product": [
                 "ls8_st"
             ],
-            "styles_count": 1,
+            "styles_count": 3,
             "styles_list": [
-                "surface_temperature"
+                "surface_temperature",
+                "surface_temperature_nomask",
+                "surface_temperature_uncertainty"
             ]
         },
         {
             "product": [
                 "ls7_st"
             ],
-            "styles_count": 1,
+            "styles_count": 3,
             "styles_list": [
-                "surface_temperature"
+                "surface_temperature",
+                "surface_temperature_nomask",
+                "surface_temperature_uncertainty"
             ]
         },
         {
             "product": [
                 "ls5_st"
             ],
-            "styles_count": 1,
+            "styles_count": 3,
             "styles_list": [
-                "surface_temperature"
+                "surface_temperature",
+                "surface_temperature_nomask",
+                "surface_temperature_uncertainty"
             ]
         },
         {
