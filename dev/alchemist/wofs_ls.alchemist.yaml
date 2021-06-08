@@ -36,9 +36,12 @@ output:
       32: [89, 88, 86]     # cloud_shadow
       64: [216, 215, 214]  # cloud
       80: [242, 220, 180]  # cloudy terrain
+      96: [216, 215, 214] # cloud+cloud_shadow
+      112: [242, 220, 180] # cloud+cloud_shadow+terrain
       128: [79, 129, 189]  # water
       160: [51, 82, 119]   # shady water
       192: [186, 211, 242] # cloudy water
+      224: [186, 211, 242] # cloud+cloud_shadow+water
   write_data_settings:
     overview_resampling: nearest
   reference_source_dataset: True
