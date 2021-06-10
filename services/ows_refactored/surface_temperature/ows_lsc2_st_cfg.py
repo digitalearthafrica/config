@@ -155,10 +155,16 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls8_st",
+            "band": "pq",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
@@ -198,10 +204,16 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls7_st",
+            "band": "pq",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
@@ -240,10 +252,16 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls5_st",
+            "band": "pq",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
