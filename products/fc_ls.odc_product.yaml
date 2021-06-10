@@ -10,22 +10,22 @@ metadata:
     name: fc_ls
 
 measurements:
-  - name: BS
+  - name: bs
     units: "percent"
     dtype: uint8
     nodata: 255
     aliases: ["bare"]
-  - name: PV
+  - name: pv
     units: "percent"
     dtype: uint8
     nodata: 255
     aliases: ["green_veg"]
-  - name: NPV
+  - name: npv
     units: "percent"
     dtype: uint8
     nodata: 255
     aliases: ["dead_veg"]
-  - name: UE
+  - name: ue
     units: "1"
     dtype: uint8
     nodata: 255
