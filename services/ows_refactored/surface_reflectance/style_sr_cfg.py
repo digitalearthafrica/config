@@ -542,7 +542,8 @@ style_s2_scl = {
                 "color": "#de9dcc",
             },
         ]
-    }
+    },
+    "legend": {"width": 3.3, "height": 2.1},
 }
 
 

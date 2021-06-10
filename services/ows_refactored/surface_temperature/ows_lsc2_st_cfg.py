@@ -165,6 +165,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "styles": [
             style_lsc2_st,
             style_lsc2_st_qa,
+            style_lsc2_st_masked_ls8,
         ],
     },
 }
@@ -207,6 +208,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "styles": [
             style_lsc2_st,
             style_lsc2_st_qa,
+            style_lsc2_st_masked,
         ],
     },
 }
@@ -248,6 +250,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "styles": [
             style_lsc2_st,
             style_lsc2_st_qa,
+            style_lsc2_st_masked,
         ],
     },
 }
