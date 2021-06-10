@@ -1,6 +1,6 @@
 ---
 name: fc_ls
-description: Landsat Fractional Cover
+description: Landsat Fractional Cover Observations from Space
 metadata_type: eo3
 
 license: CC-BY-4.0
@@ -12,21 +12,21 @@ metadata:
 measurements:
   - name: BS
     units: "percent"
-    dtype: int16
-    nodata: -1
+    dtype: uint8
+    nodata: 255
     aliases: ["bare"]
   - name: PV
     units: "percent"
-    dtype: int16
-    nodata: -1
+    dtype: uint8
+    nodata: 255
     aliases: ["green_veg"]
   - name: NPV
     units: "percent"
-    dtype: int16
-    nodata: -1
+    dtype: uint8
+    nodata: 255
     aliases: ["dead_veg"]
   - name: UE
     units: "1"
-    dtype: int16
-    nodata: -1
+    dtype: uint8
+    nodata: 255
     aliases: ["err"]
