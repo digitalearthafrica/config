@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 21,
+    "total_layers_count": 22,
     "layers": [
         {
             "product": [
@@ -266,6 +266,15 @@
             "styles_list": [
                 "greyscale",
                 "colours"
+            ]
+        },
+        {
+            "product": [
+                "fc_ls"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "simple_fc_unmasked"
             ]
         },
         {

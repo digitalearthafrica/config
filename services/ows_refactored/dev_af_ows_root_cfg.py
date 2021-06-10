@@ -233,6 +233,16 @@ ows_cfg = {
                     ],
                 },
                 {
+                    "title": "Vegetation",
+                    "abstract": """Fractional cover""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
+                            "type": "python",
+                        },
+                    ],
+                },
+                {
                     "title": "Agriculture",
                     "abstract": """Agriculture""",
                     "layers": [
