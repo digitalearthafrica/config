@@ -462,6 +462,90 @@ style_sentinel_pure_swir2 = {
     "scale_range": [0.0, 3000.0],
 }
 
+style_s2_scl = {
+    "name": "scl",
+    "title": "Sentinel-2 Scene Classification",
+    "abstract": "Sentinel-2 Scene Classification Layer",
+    "value_map": {
+        "SCL": [
+            {
+                "title": "",
+                "abstract": "",
+                "values": [0],
+                "alpha": 0.0,
+                "color": "#707070",
+            },
+            {
+                "title": "Saturated or Defective",
+                "abstract": "",
+                "values": [1],
+                "color": "#ff0004",
+            },
+             {
+                "title": "Dark Areas",
+                "abstract": "",
+                "values": [2],
+                "color": "#000000",
+            },
+            {
+                "title": "Cloud Shadow",
+                "abstract": "",
+                "values": [3],
+                "color": "#616161",
+            },
+            {
+                "title": "Vegetation",
+                "abstract": "",
+                "values": [4],
+                "color": "#038b50",
+            },
+            {
+                "title": "Bare Soil",
+                "abstract": "",
+                "values": [5],
+                "color": "#c0840c",
+            },
+            {
+                "title": "Water",
+                "abstract": "",
+                "values": [6],
+                "color": "#15678d",
+            },
+            {
+                "title": "Unclassified",
+                "abstract": "",
+                "values": [7],
+                "color": "#75001b",
+            },
+            {
+                "title": "Medium Probability Cloud",
+                "abstract": "",
+                "values": [8],
+                "color": "#d0d0d0",
+            },
+            {
+                "title": "High Probability Cloud",
+                "abstract": "",
+                "values": [9],
+                "color": "#f4f4f4",
+            },
+            {
+                "title": "Cirrus",
+                "abstract": "",
+                "values": [10],
+                "color": "#c3e7f0",
+            },
+            {
+                "title": "Snow or Ice",
+                "abstract": "",
+                "values": [11],
+                "color": "#de9dcc",
+            },
+        ]
+    }
+}
+
+
 style_sentinel_count = {
     "name": "count",
     "title": "Included observation count",
@@ -719,6 +803,7 @@ styles_s2_list = [
     style_s2_pure_narrow_nir,
     style_s2_pure_swir1,
     style_s2_pure_swir2,
+    style_s2_scl,
 ]
 
 styles_gm_list = [
