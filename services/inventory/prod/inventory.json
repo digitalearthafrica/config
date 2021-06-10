@@ -62,7 +62,7 @@
             "product": [
                 "s2_l2a"
             ],
-            "styles_count": 17,
+            "styles_count": 18,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -80,7 +80,8 @@
                 "nir",
                 "narrow_nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "scl"
             ]
         },
         {
