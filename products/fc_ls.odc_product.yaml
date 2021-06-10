@@ -1,6 +1,6 @@
 ---
 name: fc_ls
-description: Landsat Fractional Cover percentile 25 metre
+description: Landsat Fractional Cover
 metadata_type: eo3
 
 license: CC-BY-4.0
