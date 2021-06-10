@@ -62,6 +62,28 @@ style_s1_vh_over_vv = {
     ],
 }
 
+style_s1_rvi = {
+    "name": "rvi",
+    "title": "Radar Vegetation Index",
+    "abstract": "Dual-pol radar vegetation index for Sentinel-1",
+    "index_expression": "4*vh/(vv + vh)",
+    "mpl_ramp": "YlGnBu_r",
+    "range": [0.0, 1.0],
+    "legend": {
+        "begin": "0.0",
+        "end": "1.0",
+        "decimal_places": 1,
+        "ticks": ["0.0", "0.2", "0.4", "0.6", "0.8", "1.0"],
+    },
+    "pq_masks": [
+        {
+            "band": "mask",
+            "enum": 1,
+        },
+    ],
+}
+
+
 layer = {
     "title": "Normalized Radar Backscatter Sentinel-1",
     "name": "s1_rtc",
@@ -105,6 +127,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             style_s1_vh_over_vv,
             style_s1_vv,
             style_s1_vh,
+            style_s1_rvi,
         ],
     },
 }
