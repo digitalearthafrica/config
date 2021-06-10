@@ -10,23 +10,23 @@ metadata:
     name: fc_ls
 
 measurements:
-    - name: BS
-      units: "percent"
-      dtype: int16
-      nodata: -1
-      aliases: ["bare"]
-    - name: PV
-      units: "percent"
-      dtype: int16
-      nodata: -1
-      aliases: ["green_veg"]
-    - name: NPV
-      units: "percent"
-      dtype: int16
-      nodata: -1
-      aliases: ["dead_veg"]
-    - name: UE
-      units: "1"
-      dtype: int16
-      nodata: -1
-      aliases: ["err"]
+  - name: BS
+    units: "percent"
+    dtype: int16
+    nodata: -1
+    aliases: ["bare"]
+  - name: PV
+    units: "percent"
+    dtype: int16
+    nodata: -1
+    aliases: ["green_veg"]
+  - name: NPV
+    units: "percent"
+    dtype: int16
+    nodata: -1
+    aliases: ["dead_veg"]
+  - name: UE
+    units: "1"
+    dtype: int16
+    nodata: -1
+    aliases: ["err"]
