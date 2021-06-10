@@ -31,7 +31,7 @@
             "product": [
                 "ls8_sr"
             ],
-            "styles_count": 11,
+            "styles_count": 12,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -43,14 +43,15 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {
             "product": [
                 "ls7_sr"
             ],
-            "styles_count": 11,
+            "styles_count": 12,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -62,14 +63,15 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {
             "product": [
                 "ls5_sr"
             ],
-            "styles_count": 11,
+            "styles_count": 12,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -81,37 +83,41 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {
             "product": [
                 "ls8_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked_ls8"
             ]
         },
         {
             "product": [
                 "ls7_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked"
             ]
         },
         {
             "product": [
                 "ls5_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked"
             ]
         },
         {
