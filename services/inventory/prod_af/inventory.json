@@ -88,30 +88,33 @@
             "product": [
                 "ls8_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked_ls8"
             ]
         },
         {
             "product": [
                 "ls7_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked"
             ]
         },
         {
             "product": [
                 "ls5_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked"
             ]
         },
         {
