@@ -13,8 +13,8 @@ metadata:
 storage:
   crs: epsg:6933
   resolution:
-    x: 20
-    y: -20
+    x: 10
+    y: -10
   tile_size:
     x: 96000
     y: 96000
