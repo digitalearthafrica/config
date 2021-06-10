@@ -71,7 +71,7 @@ style_lsc2_st_masked = {
 }
 
 style_lsc2_st_masked_ls8 = {
-    "name": "surface_temperature_masked_ls8",
+    "name": "surface_temperature_masked",
     "title": "Surface temperature (cloud masked) - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",

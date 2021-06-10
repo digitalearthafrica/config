@@ -95,7 +95,7 @@
             "styles_list": [
                 "surface_temperature",
                 "surface_temperature_uncertainty",
-                "surface_temperature_masked_ls8"
+                "surface_temperature_masked"
             ]
         },
         {

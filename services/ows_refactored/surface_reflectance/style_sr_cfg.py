@@ -464,7 +464,7 @@ style_sentinel_pure_swir2 = {
 
 style_s2_scl = {
     "name": "scl",
-    "title": "Sentinel-2 Scene Classification",
+    "title": "Scene Classification",
     "abstract": "Sentinel-2 Scene Classification Layer",
     "value_map": {
         "SCL": [
@@ -543,7 +543,7 @@ style_s2_scl = {
             },
         ]
     },
-    "legend": {"width": 3.3, "height": 2.1},
+    "legend": {"width": 3.7, "height": 2.1},
 }
 
 
@@ -1014,8 +1014,8 @@ style_lsc2_sr_swir_2 = {
 
 style_lsc2_pq = {
     "name": "pixel_quality",
-    "title": "Landsat C2 Pixel Quality",
-    "abstract": "Landsat C2 Pixel Quality",
+    "title": "Pixel Quality",
+    "abstract": "Pixel Quality",
     "value_map": {
         "pq": [
             {
@@ -1061,8 +1061,8 @@ style_lsc2_pq = {
 
 style_ls8c2_pq = {
     "name": "pixel_quality",
-    "title": "Landsat 8 Pixel Quality",
-    "abstract": "Landsat 8 Pixel Quality",
+    "title": "Pixel Quality",
+    "abstract": "Pixel Quality",
     "value_map": {
         "pq": [
             {
