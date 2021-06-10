@@ -481,7 +481,7 @@ style_s2_scl = {
                 "values": [1],
                 "color": "#ff0004",
             },
-             {
+            {
                 "title": "Dark Areas",
                 "abstract": "",
                 "values": [2],
