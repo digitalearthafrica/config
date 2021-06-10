@@ -166,7 +166,7 @@ ows_cfg = {
                     "abstract": """Vegetation""",
                     "layers": [
                         {
-                            "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
+                            "include": "ows_refactored.vegetation.ows_us_fc_cfg.layer",
                             "type": "python",
                         },
                     ]
