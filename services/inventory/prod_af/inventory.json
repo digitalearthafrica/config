@@ -31,7 +31,7 @@
             "product": [
                 "ls8_sr"
             ],
-            "styles_count": 11,
+            "styles_count": 12,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -43,14 +43,15 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {
             "product": [
                 "ls7_sr"
             ],
-            "styles_count": 11,
+            "styles_count": 12,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -62,7 +63,8 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {
@@ -81,7 +83,8 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {

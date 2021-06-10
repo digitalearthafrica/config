@@ -1012,6 +1012,106 @@ style_lsc2_sr_swir_2 = {
     "scale_range": [7272.0, 18181.0],
 }
 
+style_lsc2_pq = {
+    "name": "pixel_quality",
+    "title": "Landsat C2 Pixel Quality",
+    "abstract": "Landsat C2 Pixel Quality",
+    "value_map": {
+        "pq": [
+            {
+                "title": "",
+                "abstract": "",
+                "flags": {"nodata": True},
+                "alpha": 0.0,
+                "color": "#707070",
+            },
+            {
+                "title": "Water",
+                "abstract": "",
+                "flags": {"water": "water"},
+                "color": "#4F81BD",
+            },
+            {
+                "title": "Cloud",
+                "abstract": "",
+                "flags": {"or": {"cloud": "high_confidence", "dilated_cloud": "dilated"}},
+                "color": "#c2c1c0",
+            },
+            {
+                "title": "Cloud Shadow",
+                "abstract": "",
+                "flags": {"cloud_shadow": "high_confidence"},
+                "color": "#4b4b37",
+            },
+            {
+                "title": "Snow",
+                "abstract": "",
+                "flags": {"snow": "high_confidence"},
+                "color": "Beige",
+            },
+            {
+                "title": "Land",
+                "abstract": "",
+                "flags": {"water": "land_or_cloud"},
+                "color": "#96966e",
+            },
+        ]
+    }
+}
+
+style_ls8c2_pq = {
+    "name": "pixel_quality",
+    "title": "Landsat 8 Pixel Quality",
+    "abstract": "Landsat 8 Pixel Quality",
+    "value_map": {
+        "pq": [
+            {
+                "title": "",
+                "abstract": "",
+                "flags": {"nodata": True},
+                "alpha": 0.0,
+                "color": "#707070",
+            },
+            {
+                "title": "Water",
+                "abstract": "",
+                "flags": {"water": "water"},
+                "color": "#4F81BD",
+            },
+            {
+                "title": "Cloud",
+                "abstract": "",
+                "flags": {"or": {"cloud": "high_confidence", "dilated_cloud": "dilated"}},
+                "color": "#c2c1c0",
+            },
+            {
+                "title": "Cirrus",
+                "abstract": "",
+                "flags": {"cirrus": "high_confidence"},
+                "color": "Gray",
+            },
+            {
+                "title": "Cloud Shadow",
+                "abstract": "",
+                "flags": {"cloud_shadow": "high_confidence"},
+                "color": "#4b4b37",
+            },
+            {
+                "title": "Snow",
+                "abstract": "",
+                "flags": {"snow": "high_confidence"},
+                "color": "Beige",
+            },
+            {
+                "title": "Land",
+                "abstract": "",
+                "flags": {"water": "land_or_cloud"},
+                "color": "#96966e",
+            },
+        ]
+    }
+}
+
 styles_lsc2_sr_list = [
     style_lsc2_sr_simple_rgb,
     style_lsc2_sr_irg,
@@ -1024,6 +1124,22 @@ styles_lsc2_sr_list = [
     style_lsc2_sr_pure_nir,
     style_lsc2_sr_swir_1,
     style_lsc2_sr_swir_2,
+    style_lsc2_pq,
+]
+
+styles_ls8c2_sr_list = [
+    style_lsc2_sr_simple_rgb,
+    style_lsc2_sr_irg,
+    style_lsc2_sr_ndvi,
+    style_lsc2_sr_ndwi,
+    style_lsc2_sr_mndwi,
+    style_lsc2_sr_pure_blue,
+    style_lsc2_sr_pure_green,
+    style_lsc2_sr_pure_red,
+    style_lsc2_sr_pure_nir,
+    style_lsc2_sr_swir_1,
+    style_lsc2_sr_swir_2,
+    style_ls8c2_pq,
 ]
 
 # detangle common styles from satellite names!
