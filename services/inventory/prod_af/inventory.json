@@ -213,11 +213,12 @@
             "product": [
                 "s1_rtc"
             ],
-            "styles_count": 3,
+            "styles_count": 4,
             "styles_list": [
                 "vv_vh_vh_over_vv",
                 "vv",
-                "vh"
+                "vh",
+                "rvi"
             ]
         },
         {
