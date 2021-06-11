@@ -1,6 +1,6 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
 
-bands_crop_mask = {"mask": ["crop_mask", "MASK"], "prob": ["crop_prob", "PROB"]}
+bands_crop_mask = {"mask": [], "prob": [], "filtered":[]}
 
 
 style_crop_mask_magma = {
@@ -27,10 +27,31 @@ style_crop_mask_magma = {
     },
 }
 
+style_crop_mask_prob = {
+    "name": "prob",
+    "title": "Crop probability",
+    "abstract": "Crop probability",
+    "needed_bands": ["prob"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "prob",
+        },
+    },
+    "mpl_ramp": "inferno",
+    "range": [0, 100],
+    "legend": {
+        "begin": "0",
+        "end": "100",
+        "ticks_every": "20",
+    },
+}
+
 style_crop_mask_green = {
     "name": "green",
-    "title": "Green",
-    "abstract": "Classified as crop by the mask band",
+    "title": "Crop area (green)",
+    "abstract": "Classified as crop",
     "value_map": {
         "mask": [
             {
@@ -44,10 +65,40 @@ style_crop_mask_green = {
 
 style_crop_mask_yellow = {
     "name": "yellow",
-    "title": "Yellow",
-    "abstract": "Classified as crop by the mask band",
+    "title": "Crop area (yellow)",
+    "abstract": "Classified as crop",
     "value_map": {
         "mask": [
+            {
+                "title": "Crop",
+                "color": "#FFFF00",  # (Or #FFFF00)
+                "values": [1],
+            }
+        ]
+    },
+}
+
+style_crop_mask_filtered_green = {
+    "name": "filered_green",
+    "title": "Crop area (filtered, green)",
+    "abstract": "Classified as crop and filtered",
+    "value_map": {
+        "filtered": [
+            {
+                "title": "Crop",
+                "color": "#00FF00",  # (Or #FFFF00)
+                "values": [1],
+            }
+        ]
+    },
+}
+
+style_crop_mask_filtered_yellow = {
+    "name": "filtered_yellow",
+    "title": "Crop area (filtered, yellow)",
+    "abstract": "Classified as crop and filtered",
+    "value_map": {
+        "filtered": [
             {
                 "title": "Crop",
                 "color": "#FFFF00",  # (Or #FFFF00)
@@ -109,10 +160,12 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_bands": ["mask", "prob"],
     },
     "styling": {
-        "default_style": "green",
+        "default_style": "filered_green",
         "styles": [
+            style_crop_mask_filtered_green,
+            style_crop_mask_filtered_yellow,
+             style_crop_mask_prob,
             style_crop_mask_green,
-            style_crop_mask_magma,
             style_crop_mask_yellow,
             style_crop_mask_reversed,
         ],
