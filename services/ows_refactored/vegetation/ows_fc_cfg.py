@@ -1,10 +1,10 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_srtm
 
 bands_fc = {
-    "BS": ["bare_soil"],
-    "PV": ["photosynthetic_vegetation", "green_vegetation"],
-    "NPV": ["non_photosynthetic_vegetation", "brown_vegetation"],
-    "UE": ["unmixing_error"],
+    "bs": ["BS", "bare_soil"],
+    "pv": ["PV", "green_vegetation"],
+    "npv": ["NPV", "brown_vegetation"],
+    "ue": ["UE", "unmixing_error"],
 }
 
 
@@ -81,12 +81,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
         "manual_merge": False,
-    },
-    "flags": {
-        "product": "wofs_ls",
-        "band": "water",
-        "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
-        "ignore_info_flags": [],
     },
     "wcs": {
         "native_crs": "EPSG:4326",
