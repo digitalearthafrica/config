@@ -164,7 +164,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "styles": [
             style_crop_mask_filtered_green,
             style_crop_mask_filtered_yellow,
-             style_crop_mask_prob,
+            style_crop_mask_prob,
             style_crop_mask_green,
             style_crop_mask_yellow,
             style_crop_mask_reversed,
