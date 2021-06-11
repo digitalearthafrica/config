@@ -281,12 +281,14 @@
             "product": [
                 "crop_mask_eastern"
             ],
-            "styles_count": 4,
+            "styles_count": 6,
             "styles_list": [
+                "filtered_green",
+                "filtered_yellow",
+                "prob",
                 "green",
                 "yellow",
-                "reversed",
-                "magma"
+                "reversed"
             ]
         }
     ]

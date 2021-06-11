@@ -58,7 +58,7 @@ style_fc_unmasked = {
 }
 
 layer = {
-    "title": "Fractional Cover (development)",
+    "title": "Fractional Cover (Prototype)",
     "name": "fc_ls",
     "abstract": """
 Fractional cover describes the landscape in terms of coverage by green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.) and bare soil. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
