@@ -79,7 +79,7 @@ style_crop_mask_yellow = {
 }
 
 style_crop_mask_filtered_green = {
-    "name": "filered_green",
+    "name": "filtered_green",
     "title": "Crop area (filtered, green)",
     "abstract": "Classified as crop and filtered",
     "value_map": {
