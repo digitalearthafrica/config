@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
+Ffrom ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
 
 bands_crop_mask = {"mask": [], "prob": [], "filtered": []}
 
@@ -160,7 +160,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_bands": ["mask", "prob"],
     },
     "styling": {
-        "default_style": "filered_green",
+        "default_style": "filtered_green",
         "styles": [
             style_crop_mask_filtered_green,
             style_crop_mask_filtered_yellow,
