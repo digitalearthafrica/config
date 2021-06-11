@@ -1,4 +1,4 @@
-Ffrom ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
+from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
 
 bands_crop_mask = {"mask": [], "prob": [], "filtered": []}
 
