@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
+from ows_refactored.common.ows_reslim_cfg import reslim_landsat
 
 bands_s1 = {"vv": [], "vh": [], "angle": [], "area": [], "mask": []}
 
@@ -104,7 +104,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "product_name": "s1_rtc",
     "bands": bands_s1,
     "dynamic": True,
-    "resource_limits": reslim_alos_palsar,
+    "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
