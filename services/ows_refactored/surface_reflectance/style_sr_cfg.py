@@ -543,7 +543,7 @@ style_s2_scl = {
             },
         ]
     },
-    "legend": {"width": 3.7, "height": 2.1},
+    "legend": {"width": 4.2, "height": 2.1},
 }
 
 

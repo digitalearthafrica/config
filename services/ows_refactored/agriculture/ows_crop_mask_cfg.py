@@ -15,6 +15,13 @@ style_crop_mask_magma = {
             "band": "prob",
         },
     },
+    "pq_masks": [
+        {
+            "band": "prob",
+            "enum": 0,
+            "invert": True,
+        },
+    ],
     "mpl_ramp": "magma",
     "range": [50, 100],
     "legend": {
@@ -127,6 +134,13 @@ style_crop_mask_reversed = {
             },
         ]
     },
+    "pq_masks": [
+        {
+            "band": "prob",
+            "enum": 0,
+            "invert": True,
+        },
+    ],
 }
 
 layer = {
@@ -154,19 +168,23 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "always_fetch_bands": [],
         "manual_merge": False,
     },
+    "flags": [
+        {
+            "product": "crop_mask_eastern",
+            "band": "prob",
+        },
+    ],
     "wcs": {
         "native_crs": "epsg:6933",
         "native_resolution": [20, -20],
         "default_bands": ["mask", "prob"],
     },
     "styling": {
-        "default_style": "filtered_green",
+        "default_style": "green",
         "styles": [
-            style_crop_mask_filtered_green,
+            style_crop_mask_green,
             style_crop_mask_filtered_yellow,
             style_crop_mask_prob,
-            style_crop_mask_green,
-            style_crop_mask_yellow,
             style_crop_mask_reversed,
         ],
     },
