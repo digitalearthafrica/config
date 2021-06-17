@@ -272,9 +272,10 @@
             "product": [
                 "fc_ls"
             ],
-            "styles_count": 1,
+            "styles_count": 2,
             "styles_list": [
-                "simple_fc_unmasked"
+                "simple_fc_unmasked",
+                "simple_fc"
             ]
         },
         {
