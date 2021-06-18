@@ -43,7 +43,7 @@ style_crop_mask_prob = {
     "color_ramp": [
         {
             "value": 0,
-            "colour" "black",
+            "colour": "black",
             "alpha": 0.0,
         },
         {
