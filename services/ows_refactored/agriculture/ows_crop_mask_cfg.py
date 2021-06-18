@@ -43,52 +43,52 @@ style_crop_mask_prob = {
     "color_ramp": [
         {
             "value": 0,
-            "colour": "black",
+            "color": "black",
             "alpha": 0.0,
         },
         {
             "value": 1,
-            "colour": "#010007",
+            "color": "#010007",
         },
         {
             "value": 10,
-            "colour": "#170b3b",
+            "color": "#170b3b",
         },
         {
             "value": 20,
-            "colour": "#410967",
+            "color": "#410967",
         },
         {
             "value": 30,
-            "colour": "#6b176e",
+            "color": "#6b176e",
         },
         {
             "value": 40,
-            "colour": "#952666",
+            "color": "#952666",
         },
         {
             "value": 50,
-            "colour": "#bb3754",
+            "color": "#bb3754",
         },
         {
             "value": 60,
-            "colour": "#dd5238",
+            "color": "#dd5238",
         },
         {
             "value": 70,
-            "colour": "#f37719",
+            "color": "#f37719",
         },
         {
             "value": 80,
-            "colour": "#fba60b",
+            "color": "#fba60b",
         },
         {
             "value": 90,
-            "colour": "#f5d948",
+            "color": "#f5d948",
         },
         {
             "value": 100,
-            "colour": "#fcfea4",
+            "color": "#fcfea4",
         },
     ],
     "range": [0, 100],

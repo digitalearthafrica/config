@@ -37,9 +37,13 @@ style_fc_simple = {
     "scale_range": [0.0, 100.0],
     "pq_masks": [
         {
+            "band": "water",
             "flags": {"dry": True},
         },
-        {"flags": {"cloud_shadow": False, "cloud": False}},
+        {
+            "band": "water",
+            "flags": {"cloud_shadow": False, "cloud": False},
+        },
     ],
     "legend": {
         "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
