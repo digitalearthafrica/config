@@ -3,6 +3,7 @@ from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
 bands_crop_mask = {"mask": [], "prob": [], "filtered": []}
 
 
+# old style
 style_crop_mask_magma = {
     "name": "magma",
     "title": "PROB",
@@ -15,13 +16,6 @@ style_crop_mask_magma = {
             "band": "prob",
         },
     },
-    "pq_masks": [
-        {
-            "band": "prob",
-            "enum": 0,
-            "invert": True,
-        },
-    ],
     "mpl_ramp": "magma",
     "range": [50, 100],
     "legend": {
@@ -46,7 +40,57 @@ style_crop_mask_prob = {
             "band": "prob",
         },
     },
-    "mpl_ramp": "inferno",
+    "color_ramp": [
+        {
+            "value": 0,
+            "colour" "black",
+            "alpha": 0.0,
+        },
+        {
+            "value": 1,
+            "colour": "#010007",
+        },
+        {
+            "value": 10,
+            "colour": "#170b3b",
+        },
+        {
+            "value": 20,
+            "colour": "#410967",
+        },
+        {
+            "value": 30,
+            "colour": "#6b176e",
+        },
+        {
+            "value": 40,
+            "colour": "#952666",
+        },
+        {
+            "value": 50,
+            "colour": "#bb3754",
+        },
+        {
+            "value": 60,
+            "colour": "#dd5238",
+        },
+        {
+            "value": 70,
+            "colour": "#f37719",
+        },
+        {
+            "value": 80,
+            "colour": "#fba60b",
+        },
+        {
+            "value": 90,
+            "colour": "#f5d948",
+        },
+        {
+            "value": 100,
+            "colour": "#fcfea4",
+        },
+    ],
     "range": [0, 100],
     "legend": {
         "begin": "0",
@@ -134,13 +178,6 @@ style_crop_mask_reversed = {
             },
         ]
     },
-    "pq_masks": [
-        {
-            "band": "prob",
-            "enum": 0,
-            "invert": True,
-        },
-    ],
 }
 
 layer = {
@@ -168,12 +205,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "always_fetch_bands": [],
         "manual_merge": False,
     },
-    "flags": [
-        {
-            "product": "crop_mask_eastern",
-            "band": "prob",
-        },
-    ],
     "wcs": {
         "native_crs": "epsg:6933",
         "native_resolution": [20, -20],
