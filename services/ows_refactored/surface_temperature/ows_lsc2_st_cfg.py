@@ -48,7 +48,7 @@ style_lsc2_st_masked = {
     "range": [0.0, 50.0],
     "pq_masks": [
         {
-            "band": "pq",
+            "band": "QA_PIXEL",
             "flags": {
                 "clear": True
             },
@@ -79,7 +79,7 @@ style_lsc2_st_masked_ls8 = {
     "range": [0.0, 50.0],
     "pq_masks": [
         {
-            "band": "pq",
+            "band": "QA_PIXEL",
             "flags": {
                 "clear": True,
                 "cirrus": "not_high_confidence"
@@ -158,7 +158,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "flags": [
         {
             "product": "ls8_st",
-            "band": "pq",
+            "band": "QA_PIXEL",
         },
     ],
     "wcs": {
@@ -207,7 +207,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "flags": [
         {
             "product": "ls7_st",
-            "band": "pq",
+            "band": "QA_PIXEL",
         },
     ],
     "wcs": {
@@ -255,7 +255,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "flags": [
         {
             "product": "ls5_st",
-            "band": "pq",
+            "band": "QA_PIXEL",
         },
     ],
     "wcs": {
