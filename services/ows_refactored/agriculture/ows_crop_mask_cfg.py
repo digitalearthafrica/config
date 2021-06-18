@@ -3,6 +3,7 @@ from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
 bands_crop_mask = {"mask": [], "prob": [], "filtered": []}
 
 
+# old style
 style_crop_mask_magma = {
     "name": "magma",
     "title": "PROB",
@@ -15,13 +16,6 @@ style_crop_mask_magma = {
             "band": "prob",
         },
     },
-    "pq_masks": [
-        {
-            "band": "prob",
-            "enum": 0,
-            "invert": True,
-        },
-    ],
     "mpl_ramp": "magma",
     "range": [50, 100],
     "legend": {
@@ -46,7 +40,57 @@ style_crop_mask_prob = {
             "band": "prob",
         },
     },
-    "mpl_ramp": "inferno",
+    "color_ramp": [
+        {
+            "value": 0,
+            "color": "black",
+            "alpha": 0.0,
+        },
+        {
+            "value": 1,
+            "color": "#010007",
+        },
+        {
+            "value": 10,
+            "color": "#170b3b",
+        },
+        {
+            "value": 20,
+            "color": "#410967",
+        },
+        {
+            "value": 30,
+            "color": "#6b176e",
+        },
+        {
+            "value": 40,
+            "color": "#952666",
+        },
+        {
+            "value": 50,
+            "color": "#bb3754",
+        },
+        {
+            "value": 60,
+            "color": "#dd5238",
+        },
+        {
+            "value": 70,
+            "color": "#f37719",
+        },
+        {
+            "value": 80,
+            "color": "#fba60b",
+        },
+        {
+            "value": 90,
+            "color": "#f5d948",
+        },
+        {
+            "value": 100,
+            "color": "#fcfea4",
+        },
+    ],
     "range": [0, 100],
     "legend": {
         "begin": "0",
@@ -134,13 +178,6 @@ style_crop_mask_reversed = {
             },
         ]
     },
-    "pq_masks": [
-        {
-            "band": "prob",
-            "enum": 0,
-            "invert": True,
-        },
-    ],
 }
 
 layer = {
@@ -168,12 +205,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "always_fetch_bands": [],
         "manual_merge": False,
     },
-    "flags": [
-        {
-            "product": "crop_mask_eastern",
-            "band": "prob",
-        },
-    ],
     "wcs": {
         "native_crs": "epsg:6933",
         "native_resolution": [20, -20],
