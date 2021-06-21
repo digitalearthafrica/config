@@ -212,7 +212,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "wcs": {
         "native_crs": "epsg:6933",
-        "native_resolution": [20, -20],
+        "native_resolution": [10, -10],
         "default_bands": ["mask", "prob"],
     },
     "styling": {
