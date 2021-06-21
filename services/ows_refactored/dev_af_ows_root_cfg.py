@@ -223,6 +223,16 @@ ows_cfg = {
                     ]
                 },
                 {
+                    "title": "Agriculture",
+                    "abstract": """Agriculture""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layer",
+                            "type": "python",
+                        },
+                    ],
+                },
+                {
                     "title": "Elevation",
                     "abstract": """Digital elevation model""",
                     "layers": [
@@ -238,16 +248,6 @@ ows_cfg = {
                     "layers": [
                         {
                             "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
-                            "type": "python",
-                        },
-                    ],
-                },
-                {
-                    "title": "Agriculture",
-                    "abstract": """Agriculture""",
-                    "layers": [
-                        {
-                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layer",
                             "type": "python",
                         },
                     ],
