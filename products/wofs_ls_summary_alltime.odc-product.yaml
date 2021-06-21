@@ -6,7 +6,7 @@ metadata_type: eo3
 license: CC-BY-4.0
 
 metadata:
-  product: 
+  product:
     name: wofs_ls_summary_alltime
 
 storage:
@@ -17,18 +17,18 @@ storage:
   tile_size:
     x: 96000.0
     y: 96000.0
-    
+
 measurements:
   - name: count_wet
     dtype: int16
     nodata: -999
     units: '1'
-    
+
   - name: count_clear
     dtype: int16
     nodata: -999
     units: '1'
-    
+
   - name: frequency
     dtype: float32
     nodata: .nan
