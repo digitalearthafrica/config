@@ -1,6 +1,20 @@
-from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
 from ows_refactored.common.ows_reslim_cfg import reslim_wofs
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_summary
+
+legend_idx_percentage_by_20 = {
+    "begin": "0.0",
+    "end": "1.0",
+    "ticks_every": 0.2,
+    "units": "%",
+    "tick_labels": {
+        "0.0": {"label": "0"},
+        "0.2": {"label": "20"},
+        "0.4": {"label": "40"},
+        "0.6": {"label": "60"},
+        "0.8": {"label": "80"},
+        "1.0": {"label": "100"},
+    },
+}
 
 style_wofs_summary_annual_wet = {
     "name": "wofs_summary_annual_wet",
@@ -14,6 +28,7 @@ style_wofs_summary_annual_wet = {
         },
     },
     "needed_bands": ["count_wet"],
+    "include_in_feature_info": False,
     "color_ramp": [
         {"value": 0, "color": "#666666", "alpha": 0},
         {
@@ -74,7 +89,7 @@ style_wofs_summary_annual_frequency = {
         {"value": 0.9, "color": "#000fe3"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": legend_idx_percentage_by_10,
+    "legend": legend_idx_percentage_by_20,
 }
 
 style_wofs_summary_annual_frequency_blue = {
@@ -89,6 +104,7 @@ style_wofs_summary_annual_frequency_blue = {
         },
     },
     "needed_bands": ["frequency"],
+    "include_in_feature_info": False,
     "color_ramp": [
         {
             "value": 0.0,
@@ -110,7 +126,7 @@ style_wofs_summary_annual_frequency_blue = {
         {"value": 0.8, "color": "#2701ff"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": legend_idx_percentage_by_10,
+    "legend": legend_idx_percentage_by_20,
 }
 
 style_wofs_summary_annual_clear = {
@@ -125,6 +141,7 @@ style_wofs_summary_annual_clear = {
         },
     },
     "needed_bands": ["count_clear"],
+    "include_in_feature_info": False,
     "color_ramp": [
         {"value": 0, "color": "#FFFFFF", "alpha": 0},
         {
@@ -188,7 +205,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "wcs": {
         "native_crs": "EPSG:6933",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["frequency"],
+        "default_bands": ["frequency", "count_wet", "count_clear"],
     },
     "styling": {
         "default_style": "wofs_summary_annual_frequency",
