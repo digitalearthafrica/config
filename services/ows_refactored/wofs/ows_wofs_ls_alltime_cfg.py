@@ -1,4 +1,5 @@
 from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
+from ows_refactored.common.ows_reslim_cfg import reslim_wofs
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_summary
 
 style_wofs_summary_wet = {

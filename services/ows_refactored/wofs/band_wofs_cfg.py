@@ -19,4 +19,3 @@ bands_wofs_dry = {"count_dry": []}
 bands_wofs_count_clear = {"count_clear": []}
 
 bands_usgs_wofs_summary = {"count_wet": [], "count_dry": [], "frequency": []}
-
