@@ -217,8 +217,24 @@ ows_cfg = {
                             "type": "python",
                         },
                         {
-                            "include": "ows_refactored.wofs.ows_wofs_ls_cfg.layers",
-                            "type": "python",
+                            "title": "Daily water",
+                            "abstract": """Daily water""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_cfg.layer",
+                                    "type": "python",
+                                },
+                            ]
+                        },
+                        {
+                            "title": "Annual water",
+                            "abstract": """Annual water""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                            ]
                         },
                     ]
                 },
