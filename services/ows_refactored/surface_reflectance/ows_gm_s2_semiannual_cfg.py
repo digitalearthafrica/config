@@ -33,11 +33,11 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     # (Packaged like the main product, but with much much lower
     # resolution and much much higher area covered in each dataset.
     #
-    #"low_res_product_name": "gm_s2_annual_lowres",
+    # "low_res_product_name": "gm_s2_annual_lowres",
     "bands": bands_s2_gm,
     "dynamic": False,
     "resource_limits": reslim_zoom9,
-    #"time_resolution": "year",
+    # "time_resolution": "year",
     "image_processing": {
         "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_emad_nan",
         # "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
