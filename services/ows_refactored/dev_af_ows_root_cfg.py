@@ -150,6 +150,16 @@ ows_cfg = {
                                         },
                                     ],
                                 },
+                                {
+                                    "title": "Semiannual surface reflectance",
+                                    "abstract": """Semiannual surface reflectance""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_semiannual_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
                             ],
                         },
                         {
