@@ -63,6 +63,30 @@ dataset:
       max_offset:
         - ['extent', 'lat', 'end']
 
+    # Frequently used fields
+    eo_gsd:
+      description: 'TODO: <eo:gsd>'
+      indexed: false
+      offset:
+      - properties
+      - eo:gsd
+      type: double
+
+    eo_sun_azimuth:
+      description: 'TODO: <eo:sun_azimuth>'
+      indexed: false
+      offset:
+      - properties
+      - eo:sun_azimuth
+      type: double
+
+    eo_sun_elevation:
+      description: 'TODO: <eo:sun_elevation>'
+      indexed: false
+      offset:
+      - properties
+      - eo:sun_elevation
+
     # Custom DE Africa Fields
     # Generic
     projection:
