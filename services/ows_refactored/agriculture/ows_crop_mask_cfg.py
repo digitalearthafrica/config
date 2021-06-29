@@ -106,7 +106,7 @@ style_crop_mask_green = {
     "value_map": {
         "mask": [
             {
-                "title": "Crop",
+                "title": "Crop area",
                 "color": "#00FF00",  # (Or #FFFF00)
                 "values": [1],
             }
@@ -121,7 +121,7 @@ style_crop_mask_yellow = {
     "value_map": {
         "mask": [
             {
-                "title": "Crop",
+                "title": "Crop area",
                 "color": "#FFFF00",  # (Or #FFFF00)
                 "values": [1],
             }
@@ -136,7 +136,7 @@ style_crop_mask_filtered_green = {
     "value_map": {
         "filtered": [
             {
-                "title": "Crop",
+                "title": "Crop area",
                 "color": "#00FF00",  # (Or #FFFF00)
                 "values": [1],
             }
@@ -151,7 +151,7 @@ style_crop_mask_filtered_yellow = {
     "value_map": {
         "filtered": [
             {
-                "title": "Crop",
+                "title": "Crop area",
                 "color": "#FFFF00",  # (Or #FFFF00)
                 "values": [1],
             }
@@ -166,7 +166,7 @@ style_crop_mask_reversed = {
     "value_map": {
         "mask": [
             {
-                "title": "Crop",
+                "title": "Crop area",
                 "color": "#CCCCCC",  # (Or #FFFF00)
                 "values": [1],
                 "mask": True,  # transparent
