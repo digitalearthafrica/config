@@ -96,12 +96,11 @@ dataset:
     # Sentinel-1
     sat_orbit_state:
       description: The satellite orbit state, either ascending or descending
-      offset: ['properties', 'sat:orbit_state:']
+      offset: ['properties', 'sat:orbit_state']
     
     sat_relative_orbit:
       description: The satellite relative orbit
-      offset: ['properties', 'sat:relative_orbit:']
-      type: double
+      offset: ['properties', 'sat:relative_orbit']
 
     # Sentinel-2
     data_coverage:
