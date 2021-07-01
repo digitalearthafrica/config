@@ -91,7 +91,7 @@ dataset:
     # Generic
     projection:
       description: Coordinate reference system field
-      type: double
+      type: int
       offset: ['properties', 'proj:epsg']
 
     # Sentinel-1
