@@ -89,25 +89,29 @@ dataset:
 
     # Custom DE Africa Fields
     # Generic
-    projection:
+    crs_raw:
       description: Coordinate reference system field
-      type: int
-      offset: ['properties', 'proj:epsg']
+      offset: ['properties', 'crs']
+      indexed: false
 
     # Sentinel-1
     sat_orbit_state:
       description: The satellite orbit state, either ascending or descending
       offset: ['properties', 'sat:orbit_state']
+      indexed: false
     
     sat_relative_orbit:
       description: The satellite relative orbit
       offset: ['properties', 'sat:relative_orbit']
+      indexed: false
 
     # Sentinel-2
     data_coverage:
       description: How much data is in the scene
       offset: ['properties', 'sentinel:data_coverage']
+      indexed: false
 
     collection_category:
       description: Landsat collection category, such as T1 or T2
       offset: ['properties', 'landsat:collection_category']
+      indexed: false
