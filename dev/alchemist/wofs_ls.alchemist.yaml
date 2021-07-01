@@ -26,6 +26,9 @@ specification:
   transform_args:
     c2_scaling: True
     dsm_path: "https://deafrica-input-datasets.s3.af-south-1.amazonaws.com/srtm_dem/srtm_africa.tif"
+    terrain_buffer: 1
+    dsm_no_data: -32768.0
+    ignore_dsm_no_data: True
 
 output:
   location: s3://deafrica-data-dev-af
