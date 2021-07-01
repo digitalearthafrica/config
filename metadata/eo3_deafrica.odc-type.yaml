@@ -86,6 +86,7 @@ dataset:
       offset:
       - properties
       - eo:sun_elevation
+      type: double
 
     # Custom DE Africa Fields
     # Generic
@@ -110,7 +111,9 @@ dataset:
       description: How much data is in the scene
       offset: ['properties', 'sentinel:data_coverage']
       indexed: false
+      type: double
 
+    # Landsat
     collection_category:
       description: Landsat collection category, such as T1 or T2
       offset: ['properties', 'landsat:collection_category']
