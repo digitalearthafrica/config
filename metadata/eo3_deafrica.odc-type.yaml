@@ -65,7 +65,7 @@ dataset:
 
     # Frequently used fields
     eo_gsd:
-      description: 'TODO: <eo:gsd>'
+      description: The ground sample distance
       indexed: false
       offset:
       - properties
@@ -73,7 +73,7 @@ dataset:
       type: double
 
     eo_sun_azimuth:
-      description: 'TODO: <eo:sun_azimuth>'
+      description: Sun azimuth
       indexed: false
       offset:
       - properties
@@ -81,7 +81,7 @@ dataset:
       type: double
 
     eo_sun_elevation:
-      description: 'TODO: <eo:sun_elevation>'
+      description: Sun elevation
       indexed: false
       offset:
       - properties
@@ -90,7 +90,7 @@ dataset:
     # Custom DE Africa Fields
     # Generic
     projection:
-      description: Platform code
+      description: Coordinate reference system field
       offset: ['properties', 'proj:epsg']
 
     # Sentinel-1
@@ -104,7 +104,7 @@ dataset:
 
     # Sentinel-2
     data_coverage:
-      description: Platform code
+      description: How much data is in the scene
       offset: ['properties', 'sentinel:data_coverage']
 
     collection_category:
