@@ -105,7 +105,7 @@ dataset:
       description: The satellite relative orbit
       offset: ['properties', 'sat:relative_orbit']
       indexed: false
-      type: int
+      type: integer
 
     # Sentinel-2
     data_coverage:
