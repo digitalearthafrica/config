@@ -61,6 +61,7 @@ bands_ls5_sr = {
     "SR_B5": ["swir_1"],
     "SR_B7": ["swir_2"],
     "QA_PIXEL": ["pq"],
+    "SR_ATMOS_OPACITY": ["atmospheric_opacity"],
 }
 
 bands_ls7_sr = {
@@ -71,6 +72,7 @@ bands_ls7_sr = {
     "SR_B5": ["swir_1"],
     "SR_B7": ["swir_2"],
     "QA_PIXEL": ["pq"],
+    "SR_ATMOS_OPACITY": ["atmospheric_opacity"],
 }
 
 bands_ls8_sr = {
@@ -81,4 +83,5 @@ bands_ls8_sr = {
     "SR_B6": ["swir_1"],
     "SR_B7": ["swir_2"],
     "QA_PIXEL": ["pq"],
+    "SR_QA_AEROSOL": ["aerosol_level"],
 }
