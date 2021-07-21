@@ -119,3 +119,21 @@ dataset:
       description: Landsat collection category, such as T1 or T2
       offset: ['properties', 'landsat:collection_category']
       indexed: false
+
+    rmse:
+      description: Landsat root mean square error
+      offset: ['properties', 'landsat:rmse']
+      indexed: false
+      type: double
+
+    rmse_x:
+      description: Landsat root mean square error in X
+      offset: ['properties', 'landsat:rmse_x']
+      indexed: false
+      type: double
+
+    rmse_y:
+      description: Landsat root mean square error in Y
+      offset: ['properties', 'landsat:rmse_y']
+      indexed: false
+      type: double
