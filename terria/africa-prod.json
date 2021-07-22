@@ -1,0 +1,641 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "PZV3FZ",
+      "type": "group",
+      "name": "Satellite images",
+      "members": [
+        {
+          "id": "s28sVS",
+          "type": "group",
+          "name": "Surface reflectance",
+          "members": [
+            {
+              "id": "XLgSrV",
+              "type": "group",
+              "name": "Daily surface reflectance",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Surface reflectance (Sentinel-2)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "s2_l2a",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "s2_l2a",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 5
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 5
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "8QSRhj",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface reflectance/Daily surface reflectance/Surface reflectance (Sentinel-2)"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Surface reflectance (Landsat 8)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "ls8_sr",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "ls8_sr",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 5
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 5
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "x3VZ3r",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface reflectance/Daily surface reflectance/Surface reflectance (Landsat 8)"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Surface reflectance (Landsat 7)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "ls7_sr",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "ls7_sr",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 5
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 5
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "tZM177",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface reflectance/Daily surface reflectance/Surface reflectance (Landsat 7)"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Surface reflectance (Landsat 5)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "ls5_sr",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "ls5_sr",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 5
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 5
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "fYq6UD",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface reflectance/Daily surface reflectance/Surface reflectance (Landsat 5)"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Satellite images/Surface reflectance/Daily surface reflectance"
+              ]
+            },
+            {
+              "id": "IvxKJk",
+              "type": "group",
+              "name": "Annual",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Annual GeoMAD (Sentinel-2)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "gm_s2_annual",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "gm_s2_annual",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "ZpYGYD",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface reflectance/Annual/Annual GeoMAD (Sentinel-2)"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Satellite images/Surface reflectance/Annual"
+              ]
+            },
+            {
+              "id": "sr_semiannual",
+              "type": "group",
+              "name": "Semiannual",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Semiannual GeoMAD (Sentinel-2, provisional)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "gm_s2_semiannual",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "gm_s2_semiannual",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "gm_s2_semiannual",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface reflectance/Semiannual/Semiannual GeoMAD (Sentinel-2)"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Satellite images/Surface reflectance/Semiannual"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Satellite images/Surface reflectance"
+          ]
+        },
+        {
+          "id": "ALSSsu",
+          "type": "group",
+          "name": "Surface temperature",
+          "members": [
+            {
+              "id": "C8qMK4",
+              "type": "group",
+              "name": "Daily surface temperature",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Surface temperature (Landsat 8)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "ls8_st",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "ls8_st",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 5
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 5
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "e5xY1R",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface temperature/Daily surface temperature/Surface temperature (Landsat 8)"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Surface temperature (Landsat 7)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "ls7_st",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "ls7_sr",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 5
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 5
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "sjYgM3",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface temperature/Daily surface temperature/Surface temperature (Landsat 7)"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Surface temperature (Landsat 5)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "ls5_st",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "ls5_sr",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 5
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 5
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "h7cBLy",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface temperature/Daily surface temperature/Surface temperature (Landsat 5)"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Satellite images/Surface temperature/Daily surface temperature"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Satellite images/Surface temperature"
+          ]
+        },
+        {
+          "id": "zz2wtb",
+          "type": "group",
+          "name": "Radar backscatter",
+          "members": [
+            {
+              "id": "Rd4iqJ",
+              "type": "group",
+              "name": "Daily radar backscatter",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Normalized radar backscatter (Sentinel-1)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "s1_rtc",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "s1_rtc",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 5
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 5
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "ic2VmV",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Radar backscatter/Daily radar backscatter/Normalized radar backscatter (Sentinel-1)"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Satellite images/Radar backscatter/Daily radar backscatter"
+              ]
+            },
+            {
+              "id": "E2REFl",
+              "type": "group",
+              "name": "Annual",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Annual mosaic (ALOS/PALSAR)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "alos_palsar_mosaic",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "alos_palsar_mosaic",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 2
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 2
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "tIdskT",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Radar backscatter/Annual/Annual mosaic (ALOS/PALSAR)"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Annual Mosaic (JERS)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "jers_sar_mosaic",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "jers_sar_mosaic",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "featureInfoTemplate": {
+                    "formats": {
+                      "lat": {
+                        "maximumFractionDigits": 2
+                      },
+                      "lon": {
+                        "maximumFractionDigits": 2
+                      }
+                    }
+                  },
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "viJPqU",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Radar backscatter/Annual/Annual Mosaic (JERS)"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Satellite images/Radar backscatter/Annual"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Satellite images/Radar backscatter"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Satellite images"
+      ]
+    },
+    {
+      "id": "EtSQbe",
+      "type": "group",
+      "name": "Surface water",
+      "members": [
+        {
+          "id": "tgwfiS",
+          "type": "group",
+          "name": "Water Observations from Space (Beta)",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Daily water observations",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "ga_ls8c_wofs_2",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "ga_ls8c_wofs_2",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "zLHCGt",
+              "shareKeys": [
+                "Root Group/Surface water/Water Observations from Space (Beta)/Daily water observations"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Annual water summary",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "wofs_2_annual_summary_frequency",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "wofs_2_annual_summary_frequency",
+              "timeFilterPropertyName": "data_available_for_dates",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "VT2mEc",
+              "shareKeys": [
+                "Root Group/Surface water/Water Observations from Space (Beta)/Annual water summary"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "All time water summary",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "wofs_2_summary_frequency",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "wofs_2_summary_frequency",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "haylqR",
+              "shareKeys": [
+                "Root Group/Surface water/Water Observations from Space (Beta)/All time water summary"
+              ]
+            },
+            {
+              "id": "hJNfDE",
+              "type": "group",
+              "name": "Annual water summary source data",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Count of wet observations",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "wofs_2_annual_summary_wet",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "wofs_2_annual_summary_wet",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "HTntvT",
+                  "shareKeys": [
+                    "Root Group/Surface water/Water Observations from Space (Beta)/Annual water summary source data/Count of wet observations"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Count of clear observations",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "wofs_2_annual_summary_clear",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "wofs_2_annual_summary_clear",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "t7DmnB",
+                  "shareKeys": [
+                    "Root Group/Surface water/Water Observations from Space (Beta)/Annual water summary source data/Count of clear observations"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Surface water/Water Observations from Space (Beta)/Annual water summary source data"
+              ]
+            },
+            {
+              "id": "mNLKdV",
+              "type": "group",
+              "name": "All time water summary source data",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Count of wet observations",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "wofs_2_summary_wet",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "wofs_2_summary_wet",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "ftkcWT",
+                  "shareKeys": [
+                    "Root Group/Surface water/Water Observations from Space (Beta)/All time water summary source data/Count of wet observations"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Count of clear observations",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "wofs_2_summary_clear",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "wofs_2_summary_clear",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "fA8GYF",
+                  "shareKeys": [
+                    "Root Group/Surface water/Water Observations from Space (Beta)/All time water summary source data/Count of clear observations"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Surface water/Water Observations from Space (Beta)/All time water summary source data"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Surface water/Water Observations from Space (Beta)"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Surface water"
+      ]
+    },
+    {
+      "id": "agriculture",
+      "type": "group",
+      "name": "Agriculture",
+      "members": [
+        {
+          "type": "wms",
+          "name": "Cropland Extent Map for Eastern Africa (provisional)",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "crop_mask_eastern",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "crop_mask_eastern",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+          "id": "crop_eastern",
+          "shareKeys": [
+            "Root Group/Agriculture/Cropland Extent Map for Eastern Africa"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Agriculture"
+      ]
+    },
+    {
+      "id": "cyb4Vy",
+      "type": "group",
+      "name": "Elevation",
+      "members": [
+        {
+          "type": "wms",
+          "name": "Shuttle Radar Topography Mission",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "dem_srtm",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "srtm",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+          "id": "VVqNfV",
+          "shareKeys": [
+            "Root Group/Elevation/Shuttle Radar Topography Mission"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Elevation"
+      ]
+    }
+  ],
+  "corsDomains": [
+    "digitalearthafrica.org",
+    "digitalearth.africa"
+  ]
+}

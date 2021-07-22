@@ -1,10 +1,10 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_landsat
+from ows_refactored.common.ows_reslim_cfg import reslim_srtm
 
 bands_fc = {
-    "bs": ["BS", "bare_soil"],
-    "pv": ["PV", "green_vegetation"],
-    "npv": ["NPV", "brown_vegetation"],
-    "ue": ["UE", "unmixing_error"],
+    "BS": ["bare_soil"],
+    "PV": ["photosynthetic_vegetation", "green_vegetation"],
+    "NPV": ["non_photosynthetic_vegetation", "brown_vegetation"],
+    "UE": ["unmixing_error"],
 }
 
 
@@ -37,39 +37,25 @@ style_fc_simple = {
     "scale_range": [0.0, 100.0],
     "pq_masks": [
         {
-            "band": "water",
             "flags": {"dry": True},
         },
-        {
-            "band": "water",
-            "flags": {"cloud_shadow": False, "cloud": False},
-        },
+        {"flags": {"cloud_shadow": False, "cloud": False, "sea": False}},
     ],
     "legend": {
         "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
     },
 }
 
-style_fc_unmasked = {
-    "name": "simple_fc_unmasked",
-    "title": "Fractional Cover",
-    "abstract": "Fractional cover representation, with green vegetation in green, dead vegetation in blue, and bare soil in red",
-    "components": {"red": {"BS": 1.0}, "green": {"PV": 1.0}, "blue": {"NPV": 1.0}},
-    "scale_range": [0.0, 100.0],
-    "legend": {
-        "url": "https://data.digitalearth.africa/usgs/pc2/ga_ls8c_fractional_cover_2/FC_legend.png",
-    },
-}
 
 layer = {
-    "title": "Fractional Cover (Prototype)",
-    "name": "fc_ls",
+    "title": "Fractional Cover (development)",
+    "name": "ls_usgs_fc_scene",
     "abstract": """
 Fractional cover describes the landscape in terms of coverage by green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.) and bare soil. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time.
 
-This product has a spatial resolution of 30 m and a temporal coverage of 1980s to current.
+This product has a spatial resolution of 30 m and a temporal coverage of 1984 to 2019.
 
-It is derived from Landsat Collection 2 surface reflectance product.
+It is derived from Landsat 5, 7 and 8 satellites observations as part of Landsat Collection 1, Level 2 surface reflectance products over five countries (Tanzania, Senegal, Sierra Leone, Ghana, and Kenya).
 
 Fractional cover allows users to understand the large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land surface process monitoring, land management practices, vegetation studies, fuel load estimation, ecosystem modelling, and rangeland condition.
 
@@ -77,30 +63,28 @@ The fractional cover algorithm was developed by the Joint Remote Sensing Researc
 
 This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
-    "product_name": "fc_ls",
+    "product_name": "ls_usgs_fc_scene",
     "bands": bands_fc,
-    "resource_limits": reslim_landsat,
-    "dynamic": True,
+    "resource_limits": reslim_srtm,
+    # "time_resolution": "year",
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
         "manual_merge": False,
     },
-    "flags": [
-        {
-            "product": "wofs_ls",
-            "band": "water",
-            "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
-            "ignore_info_flags": [],
-        },
-    ],
+    "flags": {
+        "product": "ls_usgs_wofs_scene",
+        "band": "water",
+        "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
+        "ignore_info_flags": [],
+    },
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
         "default_bands": ["BS", "PV", "NPV"],
     },
     "styling": {
-        "default_style": "simple_fc_unmasked",
-        "styles": [style_fc_unmasked, style_fc_simple],
+        "default_style": "simple_fc",
+        "styles": [style_fc_simple],
     },
 }

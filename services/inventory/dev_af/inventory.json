@@ -1,11 +1,11 @@
 {
-    "total_layers_count": 21,
+    "total_layers_count": 24,
     "layers": [
         {
             "product": [
                 "s2_l2a"
             ],
-            "styles_count": 17,
+            "styles_count": 18,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -23,14 +23,15 @@
                 "nir",
                 "narrow_nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "scl"
             ]
         },
         {
             "product": [
                 "ls8_sr"
             ],
-            "styles_count": 11,
+            "styles_count": 12,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -42,14 +43,15 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {
             "product": [
                 "ls7_sr"
             ],
-            "styles_count": 11,
+            "styles_count": 12,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -61,14 +63,15 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {
             "product": [
                 "ls5_sr"
             ],
-            "styles_count": 11,
+            "styles_count": 12,
             "styles_list": [
                 "simple_rgb",
                 "infrared_green",
@@ -80,42 +83,76 @@
                 "red",
                 "nir",
                 "swir_1",
-                "swir_2"
+                "swir_2",
+                "pixel_quality"
             ]
         },
         {
             "product": [
                 "ls8_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked"
             ]
         },
         {
             "product": [
                 "ls7_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked"
             ]
         },
         {
             "product": [
                 "ls5_st"
             ],
-            "styles_count": 2,
+            "styles_count": 3,
             "styles_list": [
                 "surface_temperature",
-                "surface_temperature_uncertainty"
+                "surface_temperature_uncertainty",
+                "surface_temperature_masked"
             ]
         },
         {
             "product": [
                 "gm_s2_annual"
+            ],
+            "styles_count": 22,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "ndci",
+                "blue",
+                "green",
+                "red",
+                "red_edge_1",
+                "red_edge_2",
+                "red_edge_3",
+                "nir",
+                "narrow_nir",
+                "swir_1",
+                "swir_2",
+                "count",
+                "tmad_rgb_std",
+                "tmad_rgb_sens",
+                "arcsec_sdev",
+                "log_edev",
+                "log_bcdev"
+            ]
+        },
+        {
+            "product": [
+                "gm_s2_semiannual"
             ],
             "styles_count": 22,
             "styles_list": [
@@ -151,6 +188,18 @@
             "styles_list": [
                 "observations",
                 "wet"
+            ]
+        },
+        {
+            "product": [
+                "wofs_ls_summary_annual"
+            ],
+            "styles_count": 4,
+            "styles_list": [
+                "wofs_summary_annual_frequency",
+                "wofs_summary_annual_frequency_blue",
+                "wofs_summary_annual_wet",
+                "wofs_summary_annual_clear"
             ]
         },
         {
@@ -223,11 +272,12 @@
             "product": [
                 "s1_rtc"
             ],
-            "styles_count": 3,
+            "styles_count": 4,
             "styles_list": [
                 "vv_vh_vh_over_vv",
                 "vv",
-                "vh"
+                "vh",
+                "rvi"
             ]
         },
         {
@@ -262,14 +312,23 @@
         },
         {
             "product": [
+                "fc_ls"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "simple_fc_unmasked",
+                "simple_fc"
+            ]
+        },
+        {
+            "product": [
                 "crop_mask_eastern"
             ],
-            "styles_count": 4,
+            "styles_count": 3,
             "styles_list": [
                 "green",
-                "yellow",
-                "reversed",
-                "magma"
+                "filtered_yellow",
+                "prob"
             ]
         }
     ]
