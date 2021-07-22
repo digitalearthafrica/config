@@ -2,6 +2,8 @@ bands_wofs_obs = {
     "water": [],
 }
 
+bands_wofs_summary = {"count_wet": [], "count_clear": [], "frequency": []}
+
 bands_wofs_wet = {
     "count_wet": [],
 }

@@ -48,7 +48,7 @@ style_lsc2_st_masked = {
     "range": [0.0, 50.0],
     "pq_masks": [
         {
-            "band": "pq",
+            "band": "QA_PIXEL",
             "flags": {
                 "clear": True
             },
@@ -71,7 +71,7 @@ style_lsc2_st_masked = {
 }
 
 style_lsc2_st_masked_ls8 = {
-    "name": "surface_temperature_masked_ls8",
+    "name": "surface_temperature_masked",
     "title": "Surface temperature (cloud masked) - Celsius",
     "abstract": "Surface temperature in degrees Celsius",
     "index_expression": "(0.00341802*st - 124.15)",
@@ -79,7 +79,7 @@ style_lsc2_st_masked_ls8 = {
     "range": [0.0, 50.0],
     "pq_masks": [
         {
-            "band": "pq",
+            "band": "QA_PIXEL",
             "flags": {
                 "clear": True,
                 "cirrus": "not_high_confidence"
@@ -155,16 +155,23 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls8_st",
+            "band": "QA_PIXEL",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
             style_lsc2_st,
             style_lsc2_st_qa,
+            style_lsc2_st_masked_ls8,
         ],
     },
 }
@@ -197,16 +204,23 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls7_st",
+            "band": "QA_PIXEL",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
             style_lsc2_st,
             style_lsc2_st_qa,
+            style_lsc2_st_masked,
         ],
     },
 }
@@ -238,16 +252,23 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "flags": [
+        {
+            "product": "ls5_st",
+            "band": "QA_PIXEL",
+        },
+    ],
     "wcs": {
         "native_crs": "EPSG:4326",
         "native_resolution": [30.0, -30.0],
-        "default_bands": ["st", "st_qa"],
+        "default_bands": ["st", "st_qa", "pq"],
     },
     "styling": {
         "default_style": "surface_temperature",
         "styles": [
             style_lsc2_st,
             style_lsc2_st_qa,
+            style_lsc2_st_masked,
         ],
     },
 }

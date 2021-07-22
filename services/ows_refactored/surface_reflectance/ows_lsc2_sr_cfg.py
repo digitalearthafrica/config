@@ -2,7 +2,8 @@ from ows_refactored.common.ows_reslim_cfg import reslim_landsat
 from ows_refactored.surface_reflectance.band_sr_cfg import (bands_ls5_sr,
                                                             bands_ls7_sr,
                                                             bands_ls8_sr)
-from ows_refactored.surface_reflectance.style_sr_cfg import styles_lsc2_sr_list
+from ows_refactored.surface_reflectance.style_sr_cfg import (
+    styles_ls8c2_sr_list, styles_lsc2_sr_list)
 
 layer_ls8 = {
     "title": "Surface Reflectance Landsat 8 (USGS Collection 2)",
@@ -39,7 +40,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "styling": {
         "default_style": "simple_rgb",
-        "styles": styles_lsc2_sr_list,
+        "styles": styles_ls8c2_sr_list,
     },
 }
 

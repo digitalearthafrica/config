@@ -462,6 +462,91 @@ style_sentinel_pure_swir2 = {
     "scale_range": [0.0, 3000.0],
 }
 
+style_s2_scl = {
+    "name": "scl",
+    "title": "Scene Classification",
+    "abstract": "Sentinel-2 Scene Classification Layer",
+    "value_map": {
+        "SCL": [
+            {
+                "title": "",
+                "abstract": "",
+                "values": [0],
+                "alpha": 0.0,
+                "color": "#707070",
+            },
+            {
+                "title": "Saturated or Defective",
+                "abstract": "",
+                "values": [1],
+                "color": "#ff0004",
+            },
+            {
+                "title": "Dark Areas",
+                "abstract": "",
+                "values": [2],
+                "color": "#000000",
+            },
+            {
+                "title": "Cloud Shadow",
+                "abstract": "",
+                "values": [3],
+                "color": "#616161",
+            },
+            {
+                "title": "Vegetation",
+                "abstract": "",
+                "values": [4],
+                "color": "#038b50",
+            },
+            {
+                "title": "Bare Soil",
+                "abstract": "",
+                "values": [5],
+                "color": "#c0840c",
+            },
+            {
+                "title": "Water",
+                "abstract": "",
+                "values": [6],
+                "color": "#15678d",
+            },
+            {
+                "title": "Unclassified",
+                "abstract": "",
+                "values": [7],
+                "color": "#75001b",
+            },
+            {
+                "title": "Medium Probability Cloud",
+                "abstract": "",
+                "values": [8],
+                "color": "#d0d0d0",
+            },
+            {
+                "title": "High Probability Cloud",
+                "abstract": "",
+                "values": [9],
+                "color": "#f4f4f4",
+            },
+            {
+                "title": "Cirrus",
+                "abstract": "",
+                "values": [10],
+                "color": "#c3e7f0",
+            },
+            {
+                "title": "Snow or Ice",
+                "abstract": "",
+                "values": [11],
+                "color": "#de9dcc",
+            },
+        ]
+    },
+    "legend": {"width": 3.0, "height": 3.0},
+}
+
+
 style_sentinel_count = {
     "name": "count",
     "title": "Included observation count",
@@ -719,6 +804,7 @@ styles_s2_list = [
     style_s2_pure_narrow_nir,
     style_s2_pure_swir1,
     style_s2_pure_swir2,
+    style_s2_scl,
 ]
 
 styles_gm_list = [
@@ -926,6 +1012,106 @@ style_lsc2_sr_swir_2 = {
     "scale_range": [7272.0, 18181.0],
 }
 
+style_lsc2_pq = {
+    "name": "pixel_quality",
+    "title": "Pixel Quality",
+    "abstract": "Pixel Quality",
+    "value_map": {
+        "pq": [
+            {
+                "title": "",
+                "abstract": "",
+                "flags": {"nodata": True},
+                "alpha": 0.0,
+                "color": "#707070",
+            },
+            {
+                "title": "Water",
+                "abstract": "",
+                "flags": {"water": "water"},
+                "color": "#4F81BD",
+            },
+            {
+                "title": "Cloud",
+                "abstract": "",
+                "flags": {"or": {"cloud": "high_confidence", "dilated_cloud": "dilated"}},
+                "color": "#c2c1c0",
+            },
+            {
+                "title": "Cloud Shadow",
+                "abstract": "",
+                "flags": {"cloud_shadow": "high_confidence"},
+                "color": "#4b4b37",
+            },
+            {
+                "title": "Snow",
+                "abstract": "",
+                "flags": {"snow": "high_confidence"},
+                "color": "Beige",
+            },
+            {
+                "title": "Land",
+                "abstract": "",
+                "flags": {"water": "land_or_cloud"},
+                "color": "#96966e",
+            },
+        ]
+    }
+}
+
+style_ls8c2_pq = {
+    "name": "pixel_quality",
+    "title": "Pixel Quality",
+    "abstract": "Pixel Quality",
+    "value_map": {
+        "pq": [
+            {
+                "title": "",
+                "abstract": "",
+                "flags": {"nodata": True},
+                "alpha": 0.0,
+                "color": "#707070",
+            },
+            {
+                "title": "Water",
+                "abstract": "",
+                "flags": {"water": "water"},
+                "color": "#4F81BD",
+            },
+            {
+                "title": "Cloud",
+                "abstract": "",
+                "flags": {"or": {"cloud": "high_confidence", "dilated_cloud": "dilated"}},
+                "color": "#c2c1c0",
+            },
+            {
+                "title": "Cirrus",
+                "abstract": "",
+                "flags": {"cirrus": "high_confidence"},
+                "color": "Gray",
+            },
+            {
+                "title": "Cloud Shadow",
+                "abstract": "",
+                "flags": {"cloud_shadow": "high_confidence"},
+                "color": "#4b4b37",
+            },
+            {
+                "title": "Snow",
+                "abstract": "",
+                "flags": {"snow": "high_confidence"},
+                "color": "Beige",
+            },
+            {
+                "title": "Land",
+                "abstract": "",
+                "flags": {"water": "land_or_cloud"},
+                "color": "#96966e",
+            },
+        ]
+    }
+}
+
 styles_lsc2_sr_list = [
     style_lsc2_sr_simple_rgb,
     style_lsc2_sr_irg,
@@ -938,6 +1124,22 @@ styles_lsc2_sr_list = [
     style_lsc2_sr_pure_nir,
     style_lsc2_sr_swir_1,
     style_lsc2_sr_swir_2,
+    style_lsc2_pq,
+]
+
+styles_ls8c2_sr_list = [
+    style_lsc2_sr_simple_rgb,
+    style_lsc2_sr_irg,
+    style_lsc2_sr_ndvi,
+    style_lsc2_sr_ndwi,
+    style_lsc2_sr_mndwi,
+    style_lsc2_sr_pure_blue,
+    style_lsc2_sr_pure_green,
+    style_lsc2_sr_pure_red,
+    style_lsc2_sr_pure_nir,
+    style_lsc2_sr_swir_1,
+    style_lsc2_sr_swir_2,
+    style_ls8c2_pq,
 ]
 
 # detangle common styles from satellite names!
