@@ -160,6 +160,34 @@
               "shareKeys": [
                 "Root Group/Satellite images/Surface reflectance/Annual"
               ]
+            },
+            {
+              "id": "sr_semiannual",
+              "type": "group",
+              "name": "Semiannual",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Semiannual GeoMAD (Sentinel-2, provisional)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "gm_s2_semiannual",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "gm_s2_semiannual",
+                  "timeFilterPropertyName": "data_available_for_dates",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "gm_s2_semiannual",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface reflectance/Semiannual/Semiannual GeoMAD (Sentinel-2)"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Satellite images/Surface reflectance/Semiannual"
+              ]
             }
           ],
           "shareKeys": [
