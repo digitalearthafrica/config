@@ -1,20 +1,6 @@
+from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
 from ows_refactored.common.ows_reslim_cfg import reslim_wofs
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_summary
-
-legend_idx_percentage_by_20 = {
-    "begin": "0.0",
-    "end": "1.0",
-    "ticks_every": "0.2",
-    "units": "%",
-    "tick_labels": {
-        "0.0": {"label": "0"},
-        "0.2": {"label": "20"},
-        "0.4": {"label": "40"},
-        "0.6": {"label": "60"},
-        "0.8": {"label": "80"},
-        "1.0": {"label": "100"},
-    },
-}
 
 style_wofs_summary_annual_wet = {
     "name": "wofs_summary_annual_wet",
@@ -89,7 +75,7 @@ style_wofs_summary_annual_frequency = {
         {"value": 0.9, "color": "#000fe3"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": legend_idx_percentage_by_20,
+    "legend": legend_idx_percentage_by_10,
 }
 
 style_wofs_summary_annual_frequency_blue = {
@@ -126,7 +112,7 @@ style_wofs_summary_annual_frequency_blue = {
         {"value": 0.8, "color": "#2701ff"},
         {"value": 1.0, "color": "#5700e3"},
     ],
-    "legend": legend_idx_percentage_by_20,
+    "legend": legend_idx_percentage_by_10,
 }
 
 style_wofs_summary_annual_clear = {
