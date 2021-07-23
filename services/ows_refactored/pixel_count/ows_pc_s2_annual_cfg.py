@@ -75,7 +75,7 @@ style_pc_s2_annual_clear = {
 }
 
 style_pc_s2_annual_clear_0_5 = {
-    "name": "pc_annual_clear_0_5",
+    "name": "pc_s2_annual_clear_0_5",
     "title": "Number of clear (0, 5)",
     "abstract": "Number of clear (0, 5)",
     "index_function": {
@@ -92,7 +92,7 @@ style_pc_s2_annual_clear_0_5 = {
 }
 
 style_pc_s2_annual_clear_2_5 = {
-    "name": "pc_annual_clear_2_5",
+    "name": "pc_s2_annual_clear_2_5",
     "title": "Number of clear (2, 5)",
     "abstract": "Number of clear (2, 5)",
     "index_function": {

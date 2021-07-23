@@ -3,10 +3,10 @@ from ows_refactored.common.ows_reslim_cfg import reslim_srtm
 bands_pc_ls8_annual = {
     "total": [],
     "clear": [],
-    "clear_1_2_0": [],
-    "clear_1_2_2": [],
-    "clear_2_5_0": [],
-    "clear_2_5_2": [],
+    "clear_2_2_0": [],
+    "clear_2_2_2": [],
+    "clear_2_0_2": [],
+    "clear_5_2_2": [],
     "clear_aerosol": [],
 }
 
@@ -93,69 +93,69 @@ style_pc_annual_clear_aerosol = {
     "legend": pc_annual_legend,
 }
 
-style_pc_annual_clear_1_2_0 = {
-    "name": "pc_annual_clear_1_2_0",
-    "title": "Number of clear (1, 2, 0)",
-    "abstract": "Number of clear (1, 2, 0)",
+style_pc_annual_clear_2_2_0 = {
+    "name": "pc_annual_clear_2_2_0",
+    "title": "Number of clear (2, 2, 0)",
+    "abstract": "Number of clear (2, 2, 0)",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "clear_1_2_0",
+            "band": "clear_2_2_0",
         },
     },
-    "needed_bands": ["clear_1_2_0"],
+    "needed_bands": ["clear_2_2_0"],
     "include_in_feature_info": False,
     "color_ramp": pc_annual_cmap,
     "legend": pc_annual_legend,
 }
 
-style_pc_annual_clear_1_2_2 = {
-    "name": "pc_annual_clear_1_2_2",
-    "title": "Number of clear (1, 2, 2)",
-    "abstract": "Number of clear (1, 2, 2)",
+style_pc_annual_clear_2_0_2 = {
+    "name": "pc_annual_clear_2_0_2",
+    "title": "Number of clear (2, 0, 2)",
+    "abstract": "Number of clear (2, 0, 2)",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "clear_1_2_2",
+            "band": "clear_2_0_2",
         },
     },
-    "needed_bands": ["clear_1_2_2"],
+    "needed_bands": ["clear_2_0_2"],
     "include_in_feature_info": False,
     "color_ramp": pc_annual_cmap,
     "legend": pc_annual_legend,
 }
 
-style_pc_annual_clear_2_5_0 = {
-    "name": "pc_annual_clear_2_5_0",
-    "title": "Number of clear (2, 5, 0)",
-    "abstract": "Number of clear (2, 5, 0)",
+style_pc_annual_clear_2_2_2 = {
+    "name": "pc_annual_clear_2_2_2",
+    "title": "Number of clear (2, 2, 2)",
+    "abstract": "Number of clear (2, 2, 2)",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "clear_2_5_0",
+            "band": "clear_2_2_2",
         },
     },
-    "needed_bands": ["clear_2_5_0"],
+    "needed_bands": ["clear_2_2_2"],
     "include_in_feature_info": False,
     "color_ramp": pc_annual_cmap,
     "legend": pc_annual_legend,
 }
 
-style_pc_annual_clear_2_5_2 = {
-    "name": "pc_annual_clear_2_5_2",
-    "title": "Number of clear (2, 5, 2)",
-    "abstract": "Number of clear (2, 5, 2)",
+style_pc_annual_clear_5_2_2 = {
+    "name": "pc_annual_clear_5_2_2",
+    "title": "Number of clear (5, 2, 2)",
+    "abstract": "Number of clear (5, 2, 2)",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "clear_2_5_2",
+            "band": "clear_5_2_2",
         },
     },
-    "needed_bands": ["clear_2_5_2"],
+    "needed_bands": ["clear_5_2_2"],
     "include_in_feature_info": False,
     "color_ramp": pc_annual_cmap,
     "legend": pc_annual_legend,
@@ -182,10 +182,10 @@ Annual number of observations and number of clear observations. This product is 
             style_pc_annual_clear,
             style_pc_annual_clear_aerosol,
             style_pc_annual_total,
-            style_pc_annual_clear_1_2_0,
-            style_pc_annual_clear_1_2_2,
-            style_pc_annual_clear_2_5_0,
-            style_pc_annual_clear_2_5_2,
+            style_pc_annual_clear_2_2_2,
+            style_pc_annual_clear_2_0_2,
+            style_pc_annual_clear_2_2_0,
+            style_pc_annual_clear_5_2_2,
         ],
     },
 }

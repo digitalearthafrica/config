@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 24,
+    "total_layers_count": 26,
     "layers": [
         {
             "product": [
@@ -329,6 +329,33 @@
                 "green",
                 "filtered_yellow",
                 "prob"
+            ]
+        },
+        {
+            "product": [
+                "pc_s2_annual"
+            ],
+            "styles_count": 4,
+            "styles_list": [
+                "pc_s2_annual_total",
+                "pc_s2_annual_clear",
+                "pc_s2_annual_clear_0_5",
+                "pc_s2_annual_clear_2_5"
+            ]
+        },
+        {
+            "product": [
+                "pc_ls_annual"
+            ],
+            "styles_count": 7,
+            "styles_list": [
+                "pc_annual_clear",
+                "pc_annual_clear_aerosol",
+                "pc_annual_total",
+                "pc_annual_clear_2_2_2",
+                "pc_annual_clear_2_0_2",
+                "pc_annual_clear_2_2_0",
+                "pc_annual_clear_5_2_2"
             ]
         }
     ]
