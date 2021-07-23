@@ -16,8 +16,8 @@ storage:
     x: 30
     y: -30
   tile_size:
-    x: 150000
-    y: 150000
+    x: 3200
+    y: 3200
 
 measurements:
   - name: total
