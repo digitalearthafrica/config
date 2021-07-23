@@ -4,7 +4,7 @@ from ows_refactored.wofs.band_wofs_cfg import bands_wofs_summary
 legend_idx_percentage_by_20 = {
     "begin": "0.0",
     "end": "1.0",
-    "ticks_every": 0.2,
+    "ticks_every": "0.2",
     "units": "%",
     "tick_labels": {
         "0.0": {"label": "0"},
