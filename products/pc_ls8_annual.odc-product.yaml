@@ -1,0 +1,56 @@
+---
+name: pc_ls8_annual
+description: Landsat-8 Annual Clear Pixel Count
+
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: pc_ls8_annual
+
+storage:
+  crs: EPSG:6933
+  resolution:
+    x: 30
+    y: -30
+  tile_size:
+    x: 3200
+    y: 3200
+
+measurements:
+  - name: total
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear_2_2_2
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear_2_0_2
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear_2_2_0
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear_5_2_2
+    dtype: uint16
+    nodata: 0
+    units: '1'
+
+  - name: clear_aerosol
+    dtype: uint8
+    nodata: 0
+    units: '1'
