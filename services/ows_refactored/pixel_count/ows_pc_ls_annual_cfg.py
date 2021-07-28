@@ -6,8 +6,9 @@ bands_pc_ls8_annual = {
     "clear_2_2_0": [],
     "clear_2_2_2": [],
     "clear_2_0_2": [],
-    "clear_5_2_2": [],
+    "clear_10_2_2": [],
     "clear_aerosol": [],
+    "clear_2_2_2_aerosol": [],
 }
 
 pc_annual_cmap = [
@@ -93,6 +94,23 @@ style_pc_annual_clear_aerosol = {
     "legend": pc_annual_legend,
 }
 
+style_pc_annual_clear_2_2_2_aerosol = {
+    "name": "pc_annual_clear_2_2_2_aerosol",
+    "title": "Number of clear and low aerosol (2, 2, 2)",
+    "abstract": "Number of clear and low aerosol (2, 2, 2)",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "clear_2_2_2_aerosol",
+        },
+    },
+    "needed_bands": ["clear_2_2_2_aerosol"],
+    "include_in_feature_info": False,
+    "color_ramp": pc_annual_cmap,
+    "legend": pc_annual_legend,
+}
+
 style_pc_annual_clear_2_2_0 = {
     "name": "pc_annual_clear_2_2_0",
     "title": "Number of clear (2, 2, 0)",
@@ -144,18 +162,18 @@ style_pc_annual_clear_2_2_2 = {
     "legend": pc_annual_legend,
 }
 
-style_pc_annual_clear_5_2_2 = {
-    "name": "pc_annual_clear_5_2_2",
-    "title": "Number of clear (5, 2, 2)",
-    "abstract": "Number of clear (5, 2, 2)",
+style_pc_annual_clear_10_2_2 = {
+    "name": "pc_annual_clear_10_2_2",
+    "title": "Number of clear (10, 2, 2)",
+    "abstract": "Number of clear (10, 2, 2)",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "clear_5_2_2",
+            "band": "clear_10_2_2",
         },
     },
-    "needed_bands": ["clear_5_2_2"],
+    "needed_bands": ["clear_10_2_2"],
     "include_in_feature_info": False,
     "color_ramp": pc_annual_cmap,
     "legend": pc_annual_legend,
@@ -181,11 +199,12 @@ Annual number of observations and number of clear observations. This product is 
         "styles": [
             style_pc_annual_clear,
             style_pc_annual_clear_aerosol,
+            style_pc_annual_clear_2_2_2_aerosol,
             style_pc_annual_total,
             style_pc_annual_clear_2_2_2,
             style_pc_annual_clear_2_0_2,
             style_pc_annual_clear_2_2_0,
-            style_pc_annual_clear_5_2_2,
+            style_pc_annual_clear_10_2_2,
         ],
     },
 }
