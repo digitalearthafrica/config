@@ -54,4 +54,9 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
         "default_style": "simple_rgb",
         "styles": styles_gm_list,
     },
+    "multi_date": [
+    {
+        "allowed_count_range": [2, 4],
+        "animate": True
+    }
 }
