@@ -215,6 +215,7 @@ style_gm_simple_rgb = {
     "abstract": "Simple true-colour image, using the red, green and blue bands",
     "components": {"red": {"red": 1.0}, "green": {"green": 1.0}, "blue": {"blue": 1.0}},
     "scale_range": [0.0, 3000.0],
+    "multi_date": [{"allowed_count_range": [2, 4], "animate": True}],
 }
 
 style_gals_simple_rgb = {
