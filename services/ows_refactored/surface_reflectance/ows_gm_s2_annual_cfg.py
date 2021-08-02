@@ -53,5 +53,5 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     "styling": {
         "default_style": "simple_rgb",
         "styles": styles_gm_list,
-    },
+    }
 }
