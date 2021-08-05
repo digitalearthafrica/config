@@ -1,0 +1,78 @@
+specification:
+  products:
+    - ls8_sr
+  measurements:
+    ["blue", "green", "red", "nir", "swir_1", "swir_2", "pixel_quality", "qa_aerosol"]
+  measurement_renames:
+    blue: nbart_blue
+    green: nbart_green
+    red: nbart_red
+    nir: nbart_nir
+    swir_1: nbart_swir_1
+    swir_2: nbart_swir_2
+    pixel_quality: fmask
+    qa_aerosol: qa
+  resampling:
+    pixel_quality: nearest
+    "*": bilinear
+  basis: blue
+
+  aws_unsigned: True
+  transform: wofs.virtualproduct.WOfSClassifier
+  transform_url: "https://github.com/GeoscienceAustralia/wofs/"
+  override_product_family: ard # The relationship of the source dataset to the newly derived dataset
+
+  transform_args:
+    c2_scaling: True
+    dsm_path: "https://deafrica-input-datasets.s3.af-south-1.amazonaws.com/srtm_dem/srtm_africa.tif"
+    terrain_buffer: 1
+    dsm_no_data: -32768.0
+    ignore_dsm_no_data: True
+
+output:
+  location: "/home/jovyan/Alchemist/" #s3://deafrica-data-dev-af
+  nodata: 1
+  dtype: uint8
+  explorer_url: https://explorer.digitalearth.africa/products/wofs_ls/extents
+  preview_image_singleband:
+    measurement: water
+    lookup_table:
+      0: [150, 150, 110]   # dry
+      1: [0, 0, 0]         # nodata
+      2: [196, 196, 145]   # high aerosol
+      16: [119, 104, 87]   # terrain
+      18: [193, 175, 142]  # aerosol terrain
+      32: [89, 88, 86]     # cloud_shadow
+      34: [144, 143, 142]  # aerosol cloud_shadow
+      64: [216, 215, 214]  # cloud
+      66: [241, 240, 240]  # aerosol cloud
+      80: [242, 220, 180]  # cloudy terrain
+      82: [244, 232, 210]  # aerosol cloudy terrain
+      96: [216, 215, 214]  # cloudy shadow
+      98: [241, 240, 240]  # aerosol cloudy shadow
+      112: [242, 220, 180] # cloudy shady terrain
+      114: [244, 232, 210]  # aerosol cloudy shady terrain
+      128: [79, 129, 189]  # water
+      130: [141, 177, 219] # aerosol water
+      160: [51, 82, 119]   # shady water
+      162: [103, 131, 163] # aerosol shady water
+      192: [186, 211, 242] # cloudy water
+      194: [230, 237, 246] # aerosol cloudy water
+      224: [186, 211, 242] # cloudy shady water
+      226: [230, 237, 246] # aerosol cloudy shady water
+  write_data_settings:
+    overview_resampling: nearest
+  reference_source_dataset: True
+  write_stac: True
+  inherit_geometry: True
+
+  metadata:
+    product_family: wofs
+    producer: digitalearthafrica.org
+    dataset_version: 0.1.0
+    naming_conventions: deafrica
+
+processing:
+  dask_chunks:
+    x: -1
+    y: 4096
