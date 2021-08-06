@@ -1035,9 +1035,15 @@ style_lsc2_pq = {
             {
                 "title": "Cloud",
                 "abstract": "",
-                "flags": {"or": {"cloud": "high_confidence", "dilated_cloud": "dilated"}},
+                "flags": {"cloud": "high_confidence"},
                 "color": "#c2c1c0",
             },
+            {
+                "title": "Dilated cloud",
+                "abstract": "",
+                "flags": {"dilated_cloud": "dilated"},
+                "color": "#707070",
+            },  
             {
                 "title": "Cloud Shadow",
                 "abstract": "",
@@ -1082,14 +1088,20 @@ style_ls8c2_pq = {
             {
                 "title": "Cloud",
                 "abstract": "",
-                "flags": {"or": {"cloud": "high_confidence", "dilated_cloud": "dilated"}},
+                "flags": {"cloud": "high_confidence"},
                 "color": "#c2c1c0",
+            },
+            {
+                "title": "Dilated cloud",
+                "abstract": "",
+                "flags": {"dilated_cloud": "dilated"},
+                "color": "#707070",
             },
             {
                 "title": "Cirrus",
                 "abstract": "",
                 "flags": {"cirrus": "high_confidence"},
-                "color": "Gray",
+                "color": "708090",
             },
             {
                 "title": "Cloud Shadow",
