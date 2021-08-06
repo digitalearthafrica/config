@@ -1043,7 +1043,7 @@ style_lsc2_pq = {
                 "abstract": "",
                 "flags": {"dilated_cloud": "dilated"},
                 "color": "#707070",
-            },  
+            },
             {
                 "title": "Cloud Shadow",
                 "abstract": "",
@@ -1101,7 +1101,7 @@ style_ls8c2_pq = {
                 "title": "Cirrus",
                 "abstract": "",
                 "flags": {"cirrus": "high_confidence"},
-                "color": "708090",
+                "color": "#708090",
             },
             {
                 "title": "Cloud Shadow",
