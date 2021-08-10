@@ -154,6 +154,10 @@
                   "id": "ZpYGYD",
                   "shareKeys": [
                     "Root Group/Satellite images/Surface reflectance/Annual/Annual GeoMAD (Sentinel-2)"
+                  ],
+                  "availableDiffStyles": [
+                    "simple_rgb",
+                    "ndvi"
                   ]
                 }
               ],
