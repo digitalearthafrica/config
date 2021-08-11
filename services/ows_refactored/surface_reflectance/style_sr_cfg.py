@@ -73,6 +73,7 @@ style_ls_ndvi = {
         {"value": 1.0, "color": "#114D04"},
     ],
     "legend": legend_idx_0_1_5ticks,
+    "multi_date": [{"allowed_count_range": [2, 4], "animate": True}],
 }
 
 style_ls_ndwi = {
