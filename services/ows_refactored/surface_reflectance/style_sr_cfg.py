@@ -73,7 +73,29 @@ style_ls_ndvi = {
         {"value": 1.0, "color": "#114D04"},
     ],
     "legend": legend_idx_0_1_5ticks,
-    "multi_date": [{"allowed_count_range": [2, 4], "animate": True}],
+    "multi_date": [
+        {
+            "allowed_count_range": [2, 2],
+            "animate": False,
+            "preserve_user_date_order": True,
+            "aggregator_function": {
+                "function": "datacube_ows.band_utils.multi_date_delta",
+            },
+            "mpl_ramp": "RdYlBu",
+            "range": [-1.0, 1.0],
+            "legend": {
+                "begin": "-1.0",
+                "end": "1.0",
+                "ticks": [
+                    "-1.0",
+                    "0.0",
+                    "1.0",
+                ]
+            },
+            "feature_info_label": "ndvi_delta",
+        },
+        {"allowed_count_range": [3, 4], "animate": True},
+    ],
 }
 
 style_ls_ndwi = {
