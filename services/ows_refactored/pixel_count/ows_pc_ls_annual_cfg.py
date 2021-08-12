@@ -190,7 +190,7 @@ Annual number of observations and number of clear observations. This product is 
     "bands": bands_pc_ls8_annual,
     "resource_limits": reslim_srtm,
     "native_crs": "EPSG:6933",
-    "native_resolution": [30.0, -30,0],
+    "native_resolution": [30.0, -30.0],
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
