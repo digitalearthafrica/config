@@ -38,8 +38,10 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
+            "native_crs": "EPSG:3857",
+            "native_resolution": [30.0, -30.0],
             "wcs": {
-                "native_crs": "EPSG:4326",
+                "native_crs": "EPSG:3857",
                 "native_resolution": [30.0, -30.0],
                 "default_bands": ["water"],
             },
@@ -78,6 +80,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
+            "native_crs": "EPSG:6933",
+            "native_resolution": [30.0, -30.0],
             "wcs": {
                 "native_crs": "EPSG:6933",
                 "native_resolution": [30.0, -30.0],
@@ -114,6 +118,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
+            "native_crs": "EPSG:6933",
+            "native_resolution": [30.0, -30.0],
             "wcs": {
                 "native_crs": "EPSG:6933",
                 "native_resolution": [30.0, -30.0],
@@ -149,6 +155,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
+            "native_crs": "EPSG:6933",
+            "native_resolution": [30.0, -30.0],
             "wcs": {
                 "native_crs": "EPSG:6933",
                 "native_resolution": [30.0, -30.0],
@@ -188,6 +196,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
+            "native_crs": "EPSG:6933",
+            "native_resolution": [30.0, -30.0],
             "wcs": {
                 "native_crs": "EPSG:6933",
                 "native_resolution": [30.0, -30.0],
@@ -224,6 +234,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
+            "native_crs": "EPSG:6933",
+            "native_resolution": [30.0, -30.0],
             "wcs": {
                 "native_crs": "EPSG:6933",
                 "native_resolution": [30.0, -30.0],
@@ -259,6 +271,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
+            "native_crs": "EPSG:6933",
+            "native_resolution": [30.0, -30.0],
             "wcs": {
                 "native_crs": "EPSG:6933",
                 "native_resolution": [30.0, -30.0],
