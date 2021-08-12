@@ -95,13 +95,18 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "always_fetch_bands": [],
         "manual_merge": False,
     },
+    "native_crs": "EPSG:4326",
+    "native_resolution": [
+        0.000277777777780,
+        -0.000277777777780,
+    ],
     "wcs": {
+        "default_bands": ["elevation"],
         "native_crs": "EPSG:4326",
         "native_resolution": [
             0.000277777777780,
             -0.000277777777780,
         ],
-        "default_bands": ["elevation"],
     },
     "styling": {
         "default_style": "greyscale",

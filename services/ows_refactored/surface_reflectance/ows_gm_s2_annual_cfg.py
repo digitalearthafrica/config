@@ -45,6 +45,8 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
+    "native_crs": "EPSG:6933",
+    "native_resolution": [10.0, -10.0],
     "wcs": {
         "native_crs": "EPSG:6933",
         "native_resolution": [10.0, -10.0],

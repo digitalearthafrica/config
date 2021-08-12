@@ -78,8 +78,10 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "fuse_func": "datacube_ows.wms_utils.wofls_fuser",
         "ignore_info_flags": [],
     },
+    "native_crs": "EPSG:3857",
+    "native_resolution": [30.0, -30.0],
     "wcs": {
-        "native_crs": "EPSG:4326",
+        "native_crs": "EPSG:3857",
         "native_resolution": [30.0, -30.0],
         "default_bands": ["BS", "PV", "NPV"],
     },
