@@ -31,8 +31,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "native_crs": "EPSG:3857",
     "native_resolution": [30.0, -30.0],
     "wcs": {
-        "native_crs": "EPSG:3857",
-        "native_resolution": [30.0, -30.0],
         "default_bands": ["red", "green", "blue"],
     },
     "styling": {

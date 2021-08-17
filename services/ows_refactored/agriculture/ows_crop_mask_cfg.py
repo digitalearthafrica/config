@@ -214,8 +214,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "native_resolution": [10, -10],
     "wcs": {
         "default_bands": ["mask", "prob"],
-        "native_crs": "epsg:6933",
-        "native_resolution": [10, -10],
     },
     "styling": {
         "default_style": "green",

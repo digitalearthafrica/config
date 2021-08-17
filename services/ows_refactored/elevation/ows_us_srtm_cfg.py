@@ -102,11 +102,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     ],
     "wcs": {
         "default_bands": ["elevation"],
-        "native_crs": "EPSG:4326",
-        "native_resolution": [
-            0.000277777777780,
-            -0.000277777777780,
-        ],
     },
     "styling": {
         "default_style": "greyscale",
