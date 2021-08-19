@@ -137,3 +137,9 @@ dataset:
       offset: ['properties', 'landsat:rmse_y']
       indexed: false
       type: double
+
+    # Derivatives
+    dataset_version:
+      description: Derived product version number
+      offset: ['properties', 'odc:dataset_version']
+      indexed: false

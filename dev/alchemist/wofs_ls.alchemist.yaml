@@ -59,7 +59,7 @@ output:
   metadata:
     product_family: wofs
     producer: digitalearthafrica.org
-    dataset_version: 0.1.0
+    dataset_version: 0.2.0
     naming_conventions: deafrica
 
 processing:
