@@ -91,9 +91,9 @@ layer = {
 
 Synthetic Aperture Radar (SAR) data have been shown to provide different and complementary information to the more common optical remote sensing data. Radar backscatter response is a function of topography, land cover structure, orientation, and moisture characteristics—including vegetation biomass—and the radar signal can penetrate clouds, providing information about the earth’s surface where optical sensors cannot. Digital Earth Africa provides access to Normalized Radar Backscatter data, for which Radiometric Terrain Correction (RTC) has been applied so data acquired with different imaging geometries over the same region can be compared.
 
-The twin Sentinel-1 satellites, launched in 2014 and 2016, are operated by the European Space Agency (ESA) as part of European Commission's Copernicus Programme. They currently collects C-band SAR data every 12 days over Africa.
+The twin Sentinel-1 satellites, launched in 2014 and 2016, are operated by the European Space Agency (ESA) as part of European Commission's Copernicus Programme. They currently collects C-band SAR data every 6 to 12 days over Africa.
 
-This product contains radar measurement in C-band and in VV and VH polarizations. It has a spatial resolution of approximate 20 m, a temporal coverage of 2017 to current and is updated as new images are acquired. Data is provided as Gamma0 in linear power, which can be converted to backscatter in decibel unit using 10*log10(DN).
+This product contains radar measurement in C-band and in VV and VH polarizations. It has a spatial resolution of approximate 20 m, a temporal coverage of July 2018 to current and is updated as new images are acquired. Data is provided as Gamma0 in linear power, which can be converted to backscatter in decibel unit using 10*log10(DN).
 
 This dataset is processed by Sinergise Sentinel Hub using Sentinel-1 GRD product provided by ESA as input. RTC has been calcuated using 30 m Copernicus Digital Elevation Model.
 
