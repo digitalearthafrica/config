@@ -11,16 +11,8 @@ style_wofs_ls_obs = {
                 "title": "",
                 "abstract": "",
                 "flags": {
-                    "nodata": True,
-                },
-                "alpha": 0.0,
-                "color": "#707070",
-            },
-            {
-                "title": "",
-                "abstract": "",
-                "flags": {
-                    "and": {
+                    "or": {
+                        "nodata": True,
                         "noncontiguous": True,
                         "low_solar_angle": True
                     }
@@ -29,26 +21,38 @@ style_wofs_ls_obs = {
                 "color": "#707070",
             },
             {
-                "title": "Cloudy Steep Terrain",
-                "abstract": "",
-                "flags": {
-                    "and": {
-                        "cloud": True,
-                        "high_slope": True
-                    }
-                },
-                "color": "#f2dcb4",
-            },
-            {
-                "title": "Cloudy Water",
+                "title": "Terrain Shaded Water",
                 "abstract": "",
                 "flags": {
                     "and": {
                         "water_observed": True,
-                        "cloud": True
+                        "terrain_shadow": True
                     }
                 },
-                "color": "#bad4f2",
+                "color": "#03396c",
+            },
+            {
+                "title": "Terrain Shadow",
+                "abstract": "",
+                "flags": {"terrain_shadow": True},
+                "color": "#2f2922",
+            },
+            {
+                "title": "Water on Slope",
+                "abstract": "",
+                "flags": {
+                    "and": {
+                        "water_observed": True,
+                        "high_slope": True
+                    }
+                },
+                "color": "#005b96",
+            },
+            {
+                "title": "Steep Terrain",
+                "abstract": "",
+                "flags": {"high_slope": True},
+                "color": "#776857",
             },
             {
                 "title": "Shaded Water",
@@ -59,13 +63,7 @@ style_wofs_ls_obs = {
                         "cloud_shadow": True
                     }
                 },
-                "color": "#335277",
-            },
-            {
-                "title": "Cloud",
-                "abstract": "",
-                "flags": {"cloud": True},
-                "color": "#c2c1c0",
+                "color": "#6497b1",
             },
             {
                 "title": "Cloud Shadow",
@@ -74,16 +72,21 @@ style_wofs_ls_obs = {
                 "color": "#4b4b37",
             },
             {
-                "title": "Terrain Shadow",
+                "title": "Cloudy Water",
                 "abstract": "",
-                "flags": {"terrain_shadow": True},
-                "color": "#2f2922",
+                "flags": {
+                    "and": {
+                        "water_observed": True,
+                        "cloud": True
+                    }
+                },
+                "color": "#b3cde0",
             },
             {
-                "title": "Steep Terrain",
+                "title": "Cloud",
                 "abstract": "",
-                "flags": {"high_slope": True},
-                "color": "#776857",
+                "flags": {"cloud": True},
+                "color": "#c2c1c0",
             },
             {
                 "title": "Water",
@@ -101,7 +104,7 @@ style_wofs_ls_obs = {
             },
         ],
     },
-    "legend": {"width": 3.0, "height": 2.1},
+    "legend": {"width": 3.0, "height": 2.8},
 }
 
 style_wofs_ls_obs_wet_only = {
