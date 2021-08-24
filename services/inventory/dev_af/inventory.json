@@ -192,7 +192,8 @@
         },
         {
             "product": [
-                "wofs_ls_summary_annual"
+                "wofs_ls_summary_annual",
+                "wofs_ls_summary_annual_v2"
             ],
             "styles_count": 4,
             "styles_list": [
