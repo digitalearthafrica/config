@@ -155,7 +155,7 @@
                   "shareKeys": [
                     "Root Group/Satellite images/Surface reflectance/Annual/Annual GeoMAD (Sentinel-2)"
                   ],
-                  "availableDiffStyles": ["ndvi", "ndwi", "mndwi"]
+                  "availableDiffStyles": ["ndvi", "ndwi", "mndwi", "ndci"]
                 }
               ],
               "shareKeys": [
@@ -189,7 +189,7 @@
               "shareKeys": [
                 "Root Group/Satellite images/Surface reflectance/Semiannual"
               ],
-              "availableDiffStyles": ["ndvi", "ndwi", "mndwi"]
+              "availableDiffStyles": ["ndvi", "ndwi", "mndwi", "ndci"]
             }
           ],
           "shareKeys": [
