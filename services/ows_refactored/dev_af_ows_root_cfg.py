@@ -244,6 +244,10 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
                                     "type": "python",
                                 },
+                                {
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_v2_cfg.layer",
+                                    "type": "python",
+                                },
                             ]
                         },
                     ]
