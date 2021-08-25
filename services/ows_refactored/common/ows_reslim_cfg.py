@@ -7,8 +7,8 @@ reslim_smart7 = {
         # "max_datasets": 16, # Defaults to no dataset limit
     },
     "wcs": {
-        "max_datasets": 64
-    }, 
+        "max_datasets": 64,
+    },
 }
 
 reslim_smart9s2 = {
@@ -18,8 +18,8 @@ reslim_smart9s2 = {
         # "max_datasets": 16, # Defaults to no dataset limit
     },
     "wcs": {
-        "max_datasets": 64
-    }, 
+        "max_datasets": 64,
+    },
 }
 
 reslim_landsat = {
@@ -95,5 +95,5 @@ reslim_wofs_dry = {
         # "max_datasets": 16, # Defaults to no dataset limit
     },
 }
-reslim_alos_palsar = reslim_srtm
 
+reslim_alos_palsar = reslim_srtm
