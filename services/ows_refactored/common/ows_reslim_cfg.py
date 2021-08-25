@@ -1,4 +1,27 @@
 # reslim
+
+reslim_smart7 = {
+    "wms": {
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
+        "min_zoom_level": 7.0,
+        # "max_datasets": 16, # Defaults to no dataset limit
+    },
+    "wcs": {
+        "max_datasets": 64,
+    },
+}
+
+reslim_smart9s2 = {
+    "wms": {
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
+        "min_zoom_level": 8.0,
+        # "max_datasets": 16, # Defaults to no dataset limit
+    },
+    "wcs": {
+        "max_datasets": 64,
+    },
+}
+
 reslim_landsat = {
     "wms": {
         "zoomed_out_fill_colour": [150, 180, 200, 160],
@@ -72,4 +95,5 @@ reslim_wofs_dry = {
         # "max_datasets": 16, # Defaults to no dataset limit
     },
 }
+
 reslim_alos_palsar = reslim_srtm
