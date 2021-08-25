@@ -129,6 +129,29 @@ style_ls_ndwi = {
             "0.5": {"prefix": ">"},
         },
     },
+    "multi_date": [
+        {
+            "allowed_count_range": [2, 2],
+            "animate": False,
+            "preserve_user_date_order": True,
+            "aggregator_function": {
+                "function": "datacube_ows.band_utils.multi_date_delta",
+            },
+            "mpl_ramp": "RdYlBu",
+            "range": [-1.0, 1.0],
+            "legend": {
+                "begin": "-1.0",
+                "end": "1.0",
+                "ticks": [
+                    "-1.0",
+                    "0.0",
+                    "1.0",
+                ]
+            },
+            "feature_info_label": "ndwi_delta",
+        },
+        {"allowed_count_range": [3, 4], "animate": True},
+    ],
 }
 
 style_gals_mndwi = {
@@ -151,6 +174,29 @@ style_gals_mndwi = {
         {"value": 1.0, "color": "#08306b"},
     ],
     "legend": legend_idx_0_1_5ticks,
+    "multi_date": [
+        {
+            "allowed_count_range": [2, 2],
+            "animate": False,
+            "preserve_user_date_order": True,
+            "aggregator_function": {
+                "function": "datacube_ows.band_utils.multi_date_delta",
+            },
+            "mpl_ramp": "RdYlBu",
+            "range": [-1.0, 1.0],
+            "legend": {
+                "begin": "-1.0",
+                "end": "1.0",
+                "ticks": [
+                    "-1.0",
+                    "0.0",
+                    "1.0",
+                ]
+            },
+            "feature_info_label": "mndwi_delta",
+        },
+        {"allowed_count_range": [3, 4], "animate": True},
+    ],
 }
 
 style_ls_mndwi = {
@@ -174,6 +220,29 @@ style_ls_mndwi = {
         {"value": 1.0, "color": "#08306b"},
     ],
     "legend": legend_idx_0_1_5ticks,
+    "multi_date": [
+        {
+            "allowed_count_range": [2, 2],
+            "animate": False,
+            "preserve_user_date_order": True,
+            "aggregator_function": {
+                "function": "datacube_ows.band_utils.multi_date_delta",
+            },
+            "mpl_ramp": "RdYlBu",
+            "range": [-1.0, 1.0],
+            "legend": {
+                "begin": "-1.0",
+                "end": "1.0",
+                "ticks": [
+                    "-1.0",
+                    "0.0",
+                    "1.0",
+                ]
+            },
+            "feature_info_label": "mndwi_delta",
+        },
+        {"allowed_count_range": [3, 4], "animate": True},
+    ],
 }
 
 style_gals_pure_blue = {
@@ -413,6 +482,29 @@ style_s2_ndci = {
             "0.5": {"prefix": ">"},
         },
     },
+    "multi_date": [
+        {
+            "allowed_count_range": [2, 2],
+            "animate": False,
+            "preserve_user_date_order": True,
+            "aggregator_function": {
+                "function": "datacube_ows.band_utils.multi_date_delta",
+            },
+            "mpl_ramp": "RdYlBu",
+            "range": [-1.0, 1.0],
+            "legend": {
+                "begin": "-1.0",
+                "end": "1.0",
+                "ticks": [
+                    "-1.0",
+                    "0.0",
+                    "1.0",
+                ]
+            },
+            "feature_info_label": "ndci_delta",
+        },
+        {"allowed_count_range": [3, 4], "animate": True},
+    ],
 }
 
 style_s2_pure_aerosol = {
