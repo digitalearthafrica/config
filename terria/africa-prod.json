@@ -183,13 +183,13 @@
                   "id": "gm_s2_semiannual",
                   "shareKeys": [
                     "Root Group/Satellite images/Surface reflectance/Semiannual/Semiannual GeoMAD (Sentinel-2)"
-                  ]
+                  ],
+                  "availableDiffStyles": ["ndvi", "ndwi", "mndwi", "ndci"]
                 }
               ],
               "shareKeys": [
                 "Root Group/Satellite images/Surface reflectance/Semiannual"
-              ],
-              "availableDiffStyles": ["ndvi", "ndwi", "mndwi", "ndci"]
+              ]
             }
           ],
           "shareKeys": [
