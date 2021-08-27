@@ -1,8 +1,10 @@
 product,definition
 alos_palsar_mosaic,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/alos_palsar_mosaic.odc-product.yaml
 crop_mask_eastern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_eastern.odc-product.yaml
+crop_mask_western,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_western.odc-product.yaml
 dem_srtm,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/dem_srtm.odc-product.yaml
 esri_land_cover,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/esri_land_cover.yaml
+fc_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/fc_ls.odc-product.yaml
 ga_ls8c_wofs_2,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/archive/ga_ls8c_wofs_2.odc-product.yaml
 ga_ls8c_wofs_2_annual_summary,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/ga_ls8c_wofs_2_annual_summary.odc-product.yaml
 ga_ls8c_wofs_2_summary,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/ga_ls8c_wofs_2_summary.odc-product.yaml
@@ -19,3 +21,5 @@ ls8_st,https://raw.githubusercontent.com/digitalearthafrica/config/master/produc
 pc_s2_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/pc_s2_annual.odc-product.yaml
 s1_rtc,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s1_rtc.odc-product.yaml
 s2_l2a,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s2_l2a.odc-product.yaml
+wofs_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls.odc-product.yaml
+wofs_ls_summary_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls_summary_annual.odc-product.yaml
