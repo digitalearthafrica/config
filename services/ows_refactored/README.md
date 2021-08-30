@@ -11,7 +11,6 @@ This file will act as an assembler which include all the layers required for the
 - custom functions
 
 ### deployment Groups
-- prod -> africa prod deployment
 - prod-af -> africa prod af-south-1 region
 - dev-af -> africa dev deployment in af-south-1 region
 
