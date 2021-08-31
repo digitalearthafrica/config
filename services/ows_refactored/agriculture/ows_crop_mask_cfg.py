@@ -228,7 +228,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
                 ],
             },
         },
-        {     
+        {
             "title": "Cropland extent map - Western Africa",
             "name": "crop_mask_western",
             "abstract": """
