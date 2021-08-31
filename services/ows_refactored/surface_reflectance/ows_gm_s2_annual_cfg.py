@@ -58,6 +58,6 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
 }
 
 dev_layer = {
-    "inherits": layer
+    "inherits": layer,
     "resource_limits": reslim_smart9s2,
 }
