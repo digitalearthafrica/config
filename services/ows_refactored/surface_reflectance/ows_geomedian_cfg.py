@@ -1,4 +1,5 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_smart8, reslim_smart9s2
+# from ows_refactored.common.ows_reslim_cfg import reslim_smart8, reslim_smart9s2
+from ows_refactored.common.ows_reslim_cfg import reslim_sentinel2, reslim_srtm
 from ows_refactored.surface_reflectance.band_sr_cfg import (bands_ls8c,
                                                             bands_s2_gm)
 from ows_refactored.surface_reflectance.style_sr_cfg import (styles_gm_list,
@@ -29,7 +30,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "product_name": "ga_ls8c_gm_2_annual",
             "time_resolution": "year",
             "bands": bands_ls8c,
-            "resource_limits": reslim_smart8,
+            "resource_limits": reslim_srtm,
+            # "resource_limits": reslim_smart8,
             "image_processing": {
                 "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
                 "always_fetch_bands": [],
@@ -73,7 +75,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
             "low_res_product_name": "ga_s2_gm_lowres",
             "bands": bands_s2_gm,
             "dynamic": False,
-            "resource_limits": reslim_smart9s2,
+            "resource_limits": reslim_sentinel2,
+            # "resource_limits": reslim_smart9s2,
             "time_resolution": "year",
             "image_processing": {
                 "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_emad_nan",
