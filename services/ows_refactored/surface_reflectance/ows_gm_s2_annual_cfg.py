@@ -1,5 +1,4 @@
-# from ows_refactored.common.ows_reslim_cfg import reslim_smart9s2
-from ows_refactored.common.ows_reslim_cfg import reslim_zoom9
+from ows_refactored.common.ows_reslim_cfg import reslim_smart9s2, reslim_zoom9
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_list
 
@@ -56,4 +55,9 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
         "default_style": "simple_rgb",
         "styles": styles_gm_list,
     }
+}
+
+dev_layer = {
+    "inherits": layer
+    "resource_limits": reslim_smart9s2,
 }
