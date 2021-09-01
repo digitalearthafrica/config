@@ -23,6 +23,7 @@ jobs:
 
     - name: Run ows_refactored_cfg test (dev-af)
       run: |
+        mkdir ./output
         docker-compose -f docker-compose.ows.yaml up -d
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ls -la"
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./extract-po.sh"

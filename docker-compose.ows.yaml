@@ -24,6 +24,7 @@ services:
       - ${OWS_INVENTORY_JSON}:/env/config/inventory.json
       - ./compare-cfg.sh:/env/config/compare-cfg.sh
       - ./extract-po.sh:/env/config/extract-po.sh
+      - ./output:/env/config/output
 
   postgres:
     build: docker/database/
