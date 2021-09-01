@@ -25,6 +25,7 @@ jobs:
       run: |
         docker-compose -f docker-compose.ows.yaml up -d
         docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cd /env/config; ./extract-po.sh"
+        docker-compose -f docker-compose.ows.yaml exec -T ows /bin/sh -c "cat /env/config/messages.po"
         docker-compose -f docker-compose.ows.yaml down
       env:
         OWS_CFG_MOUNT: ./services/ows_refactored
