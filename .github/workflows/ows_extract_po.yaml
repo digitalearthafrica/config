@@ -5,11 +5,15 @@ on:
     paths:
       - 'services/**'
       - .github/workflows/ows_extract_po.yaml
+      - extract-po.sh
+      - upload-po.py
   pull_request:
     branches: [ master ]
     paths:
       - 'services/**'
       - .github/workflows/ows_extract_po.yaml
+      - extract-po.sh
+      - upload-po.py
 
 jobs:
   build:
