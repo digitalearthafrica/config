@@ -8,9 +8,12 @@ def upload_terms(file_path, project_id, api_token):
     project = client.view_project_details(project_id)
     print(f"Before update, {project['name']} (id: {project['id']}) has {project['terms']} terms.")
 
-    update_results = client.update_terms(
+    update_results = client.update_terms_translations(
         project_id=project_id,
-        file_path=file_path
+        file_path=file_path,
+        language_code='en',
+        overwrite=True,
+        tags='all',
     )
 
     terms = update_results['terms']
