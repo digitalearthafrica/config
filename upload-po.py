@@ -22,7 +22,7 @@ def upload_terms(file_path, project_id, api_token):
     print(f"After update, {project['name']} (id: {project['id']}) has {project['terms']} terms.")
 
 
-if __file__ == '__main__':
+if __name__ == '__main__':
     project_id = os.environ['POEDITOR_PROJECT_ID']
     api_token = os.environ['POEDITOR_API_TOKEN']
 
