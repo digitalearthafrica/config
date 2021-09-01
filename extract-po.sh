@@ -5,6 +5,6 @@
 set -eu
 set -x
 
-datacube-ows-cfg extract -m messages.po
+datacube-ows-cfg extract -m output/messages.po
 
 set +x
