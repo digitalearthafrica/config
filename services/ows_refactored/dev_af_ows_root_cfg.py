@@ -70,7 +70,6 @@ ows_cfg = {
         "access_constraints": "© Commonwealth of Australia (Geoscience Australia) 2018. "
         "This product is released under the Creative Commons Attribution 4.0 International Licence. "
         "http://creativecommons.org/licenses/by/4.0/legalcode",
-        "message_file": "dev_af_ows_root_cfg.po",
         "translations_directory": "/config/translations",
         "supported_languages": [
             "en",  # English  - the default language, the language used in the untranslated metadata.
