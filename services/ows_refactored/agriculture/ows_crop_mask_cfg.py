@@ -182,7 +182,7 @@ style_crop_mask_reversed = {
 
 layers = {
     "title": "Cropland extent map",
-    "abstract": """The Digital Earth Africa cropland extent product  identifies areas of cropping in Africa, using Copernicus Sentinel-2 satellite imagery and machine learning techniques. An accurate, high-resolution, and regularly-updated cropland area map for the African continent is recognised as a useful tool in crop monitoring services. A precise and accurate cropland extent map indicating where cropland occurs serves as a basis for higher-level products such as crop type and watering intensity.""",
+    "abstract": """The Digital Earth Africa cropland extent service identifies areas of cropping in Africa, using Copernicus Sentinel-2 satellite imagery and machine learning techniques. An accurate, high-resolution, and regularly-updated cropland area map for the African continent is recognised as a useful tool in crop monitoring services. A precise and accurate cropland extent map indicating where cropland occurs serves as a basis for higher-level products such as crop type and watering intensity.""",
     "layers": [
         {
             "title": "Cropland extent 2019 - Eastern Africa",
@@ -192,18 +192,18 @@ Digital Earth Africa's cropland extent map for Eastern Africa shows the location
 
 This provisional cropland extent map has a resolution of 10m, and was built using Copernicus Sentinel-2 satellite images from 2019. The cropland extent map was produced using extensive training data from Eastern Africa, coupled with a Random Forest machine learning model. For a detailed exploration of the methods used to produce the cropland extent map, read the Jupyter Notebooks in DE Africa’s crop-mask GitHub repository.
 
-An independent validation dataset suggests this product has an overall accuracy of 90.3 %. The algorithm tends to report more omission errors (labelling actual crops as non-crops) than commission errors (labelling non-crops as crops). Where commission errors occur they tend to be focussed around wetlands and seasonal grasslands (e.g. in the Serengeti) which spectrally resemble some kinds of cropping.
+An independent validation dataset suggests this service has an overall accuracy of 90.3 %. The algorithm tends to report more omission errors (labelling actual crops as non-crops) than commission errors (labelling non-crops as crops). Where commission errors occur they tend to be focussed around wetlands and seasonal grasslands (e.g. in the Serengeti) which spectrally resemble some kinds of cropping.
 
-The product contains three bands:
+The crop mask contains three bands:
 - mask: This band displays cropped regions as a binary map. Values of 1 indicate the presence of crops, while a value of 0 indicates the absence of cropping. This band is a pixel-based cropland extent map, meaning the map displays the raw output of the pixel-based Random Forest classification.
-- prob: This band displays the prediction probabilities for the 'crop' class. As this product used a random forest classifier, the prediction probabilities refer to the percentage of trees that voted for the random forest classification. For example, if the model had 200 decision trees in the random forest, and 150 of the trees voted 'crop', the prediction probability is 150 / 200 x 100 = 75 %. Thresholding this band at 50 % will produce a map identical to mask.
+- prob: This band displays the prediction probabilities for the 'crop' class. As this service used a random forest classifier, the prediction probabilities refer to the percentage of trees that voted for the random forest classification. For example, if the model had 200 decision trees in the random forest, and 150 of the trees voted 'crop', the prediction probability is 150 / 200 x 100 = 75 %. Thresholding this band at 50 % will produce a map identical to mask.
 - filtered: This band displays cropped regions as a binary map. Values of 1 indicate the presence of crops, while a value of 0 indicates the absence of cropping. This band is an object-based cropland extent map where the mask band has filtered using an image segmentation algorithm. During this process, segments smaller than 1 Ha (100 10m x 10m pixels) are merged with neighbouring segments, resulting in a map where the smallest classified region is 1 Ha is size. The filtered dataset is provided as small commission errors are removed by this process, and the 'salt and pepper' effect typical of classifying pixels is diminished.
 
-More technical information about the cropland extent product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Cropland_extent_specs.html)
+More technical information about the cropland extent service can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Cropland_extent_specs.html)
 
 Cropland extent maps are a foundational, baseline layer in high-order crop health and crop productivity products which necessarily rely on knowing where cropping occurs before further analysis can take place.
 
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+This service is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
             "product_name": "crop_mask_eastern",
             "time_resolution": "year",
@@ -236,18 +236,18 @@ Digital Earth Africa's cropland extent map for Eastern Africa shows the location
 
 This provisional cropland extent map has a resolution of 10m, and was built using Copernicus Sentinel-2 satellite images from 2019. The cropland extent map was produced using extensive training data from Western Africa, coupled with a Random Forest machine learning model. For a detailed exploration of the methods used to produce the cropland extent map, read the Jupyter Notebooks in DE Africa’s crop-mask GitHub repository.
 
-An independent validation dataset suggests this product has an overall accuracy of 83.6 %. The algorithm tends to report more omission errors (labelling actual crops as non-crops) than commission errors (labelling non-crops as crops). Where commission errors occur they tend to be focussed around wetlands and seasonal grasslands which spectrally resemble some kinds of cropping.
+An independent validation dataset suggests this service has an overall accuracy of 83.6 %. The algorithm tends to report more omission errors (labelling actual crops as non-crops) than commission errors (labelling non-crops as crops). Where commission errors occur they tend to be focussed around wetlands and seasonal grasslands which spectrally resemble some kinds of cropping.
 
-The product contains three bands:
+The crop mask contains three bands:
 - mask: This band displays cropped regions as a binary map. Values of 1 indicate the presence of crops, while a value of 0 indicates the absence of cropping. This band is a pixel-based cropland extent map, meaning the map displays the raw output of the pixel-based Random Forest classification.
-- prob: This band displays the prediction probabilities for the 'crop' class. As this product used a random forest classifier, the prediction probabilities refer to the percentage of trees that voted for the random forest classification. For example, if the model had 200 decision trees in the random forest, and 150 of the trees voted 'crop', the prediction probability is 150 / 200 x 100 = 75 %. Thresholding this band at 50 % will produce a map identical to mask.
+- prob: This band displays the prediction probabilities for the 'crop' class. As this service used a random forest classifier, the prediction probabilities refer to the percentage of trees that voted for the random forest classification. For example, if the model had 200 decision trees in the random forest, and 150 of the trees voted 'crop', the prediction probability is 150 / 200 x 100 = 75 %. Thresholding this band at 50 % will produce a map identical to mask.
 - filtered: This band displays cropped regions as a binary map. Values of 1 indicate the presence of crops, while a value of 0 indicates the absence of cropping. This band is an object-based cropland extent map where the mask band has filtered using an image segmentation algorithm. During this process, segments smaller than 1 Ha (100 10m x 10m pixels) are merged with neighbouring segments, resulting in a map where the smallest classified region is 1 Ha is size. The filtered dataset is provided as small commission errors are removed by this process, and the 'salt and pepper' effect typical of classifying pixels is diminished.
 
-More technical information about the cropland extent product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Cropland_extent_specs.html)
+More technical information about the cropland extent service can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Cropland_extent_specs.html)
 
 Cropland extent maps are a foundational, baseline layer in high-order crop health and crop productivity products which necessarily rely on knowing where cropping occurs before further analysis can take place.
 
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+This service is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
 """,
             "product_name": "crop_mask_western",
             "time_resolution": "year",
