@@ -257,7 +257,7 @@ ows_cfg = {
                     "abstract": """Agriculture""",
                     "layers": [
                         {
-                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layer",
+                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layers",
                             "type": "python",
                         },
                     ],
