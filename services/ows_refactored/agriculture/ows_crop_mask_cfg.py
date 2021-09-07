@@ -183,7 +183,7 @@ style_crop_mask_reversed = {
 layers = {
     "title": "Cropland extent map (provisional)",
     "abstract": """The Digital Earth Africa cropland extent service identifies areas of cropping in Africa, using Copernicus Sentinel-2 satellite imagery and machine learning techniques. The map indicates either the presence or absence of crop. An accurate, high-resolution, and regularly-updated cropland area map for the African continent is recognised as a useful tool in crop monitoring services. A precise and accurate cropland extent map indicating where cropland occurs serves as a basis for higher-level products, such as crop type and watering intensity.
-    
+
 The cropland extent map for Africa is currently only avilable for East and West Africa and is therefore a provisional product.
 """,
     "layers": [
