@@ -3,7 +3,7 @@ alos_palsar_mosaic,https://raw.githubusercontent.com/digitalearthafrica/config/m
 crop_mask_eastern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_eastern.odc-product.yaml
 crop_mask_western,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_western.odc-product.yaml
 dem_srtm,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/dem_srtm.odc-product.yaml
-esri_land_cover,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/esri_land_cover.yaml
+io_lulc,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/io_lulc.odc-product.yaml
 fc_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/fc_ls.odc-product.yaml
 ga_ls8c_wofs_2,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/archive/ga_ls8c_wofs_2.odc-product.yaml
 ga_ls8c_wofs_2_annual_summary,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/ga_ls8c_wofs_2_annual_summary.odc-product.yaml
