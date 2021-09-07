@@ -4,9 +4,8 @@ Config files for Digital Earth Africa datacube and associated applications
 ![Docker Image CI](https://github.com/digitalearthafrica/config/workflows/Docker%20Image%20CI/badge.svg)
 ![Terria catalog Linting](https://github.com/digitalearthafrica/config/workflows/Terria%20catalog%20Linting/badge.svg)
 
-Changes to this repo will generate a new docker image that includes the config files,
-
-changes will be tagged as an unstable build, to release to production create a git tag for the current code and a stable version will be created using that value
+Changes to this repo will generate a new docker image that includes the config files. Changes will be tagged as an unstable build.
+To release to production, create a git tag for the current code and a stable version will be created using that value.
 
 ## Pull Request Template
 There are three pull request Templates available for the following changes:
@@ -28,3 +27,14 @@ for example https://github.com/digitalearthafrica/config/compare/ows-fix-depreci
 ```
 *Overview*
 ```
+
+## Process for updating OWS
+Prod and dev config files are titled accordingly. Note any `/services` additions must be reflected in the corresponding `/inventory` json.
+ - Edit the appropriate files
+ - Merge changes into `/master` branch via a PR
+ - Run the appropriate (prod, dev) `ows-update` workflow (external to this repository)
+ - Confirm correct deployment to OWS by inspecting the relevant OWS URLs and/or importing them to Terria using the 'My Data' option in the catalogue.
+     - Dev: https://ows.dev.digitalearth.africa/
+     - Unstable prod: https://ows-latest.digitalearth.africa/ 
+ - Merge with stable prod by releasing a tagged version
+ - Access stable prod via https://ows.digitalearth.africa/
