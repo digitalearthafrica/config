@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 27,
+    "total_layers_count": 28,
     "layers": [
         {
             "product": [
@@ -368,6 +368,15 @@
                 "pc_annual_clear_2_0_2",
                 "pc_annual_clear_2_2_0",
                 "pc_annual_clear_10_2_2"
+            ]
+        },
+        {
+            "product": [
+                "io_lulc"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "style_colours"
             ]
         }
     ]

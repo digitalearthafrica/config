@@ -97,3 +97,5 @@ reslim_wofs_dry = {
 }
 
 reslim_alos_palsar = reslim_srtm
+
+reslim_io_lulc = reslim_srtm
