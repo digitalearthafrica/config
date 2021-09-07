@@ -1,4 +1,4 @@
-from ows_config.common.ows_reslim_cfg import reslim_io_lulc
+from ows_refactored.common.ows_reslim_cfg import reslim_io_lulc
 
 bands_esri = {
     "data": [],
