@@ -5,11 +5,12 @@ on:
     paths:
       - 'services/**'
       - .github/workflows/ows_cfg_linting.yaml
-    pull_request:
-      branches: [ master ]
-      paths:
-        - 'services/**'
-        - .github/workflows/ows_cfg_linting.yaml
+
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'services/**'
+      - .github/workflows/ows_cfg_linting.yaml
 
 jobs:
   build:
