@@ -109,7 +109,8 @@ ows_cfg = {
             "title": "Digital Earth Africa - OGC Web Services",
             "abstract": "Digital Earth Africa OGC Web Services",
             "layers": [
-                # Hierarchical list of layers.  May be a combination of unnamed/unmappable folder-layers or named mappable layers.
+                # Hierarchical list of layers.  May be a combination of unnamed/unmappable
+                # folder-layers or named mappable layers.
                 {
                     "title": "Satellite images",
                     "abstract": """Satellite images""",
