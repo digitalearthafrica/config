@@ -34,7 +34,7 @@ Prod and dev config files are titled accordingly. Note any `/services` additions
  - Merge changes into `/master` branch via a PR
  - Run the appropriate (prod, dev) `ows-update` workflow (external to this repository)
  - Confirm correct deployment to OWS by inspecting the relevant OWS URLs and/or importing them to Terria using the 'My Data' option in the catalogue.
-     - Dev: https://dev.ows.digitalearth.africa/
+     - Dev: https://ows.dev.digitalearth.africa/
      - Unstable prod: https://ows-latest.digitalearth.africa/ 
  - Merge with stable prod by releasing a tagged version
  - Access stable prod via https://ows.digitalearth.africa/
