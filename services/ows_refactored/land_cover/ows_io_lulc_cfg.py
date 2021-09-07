@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 from ows_refactored.common.ows_reslim_cfg import reslim_io_lulc
-=======
-from ows_config.common.ows_reslim_cfg import reslim_io_lulc
->>>>>>> Add ESRI Land Use
 
 bands_esri = {
     "data": [],
