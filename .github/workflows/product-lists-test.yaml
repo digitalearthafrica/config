@@ -26,6 +26,7 @@ jobs:
         run: |
           docker-compose -f docker-compose.products.yaml pull
           docker-compose -f docker-compose.products.yaml up -d
+          sleep 3
           docker-compose -f docker-compose.products.yaml exec -T products-tester datacube system init
           docker-compose -f docker-compose.products.yaml exec -T products-tester dc-sync-products /conf/products_prod.csv
           docker-compose -f docker-compose.products.yaml down
@@ -35,6 +36,7 @@ jobs:
         shell: bash
         run: |
           docker-compose -f docker-compose.products.yaml up -d
+          sleep 3
           docker-compose -f docker-compose.products.yaml exec -T products-tester datacube system init
           docker-compose -f docker-compose.products.yaml exec -T products-tester dc-sync-products /conf/products_dev.csv
           docker-compose -f docker-compose.products.yaml down
