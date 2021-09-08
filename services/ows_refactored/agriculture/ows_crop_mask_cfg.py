@@ -184,7 +184,7 @@ layers = {
     "title": "Cropland extent map (provisional)",
     "abstract": """The Digital Earth Africa cropland extent service identifies areas of cropping in Africa, using Copernicus Sentinel-2 satellite imagery and machine learning techniques. The map indicates either the presence or absence of crop. An accurate, high-resolution, and regularly-updated cropland area map for the African continent is recognised as a useful tool in crop monitoring services. A precise and accurate cropland extent map indicating where cropland occurs serves as a basis for higher-level products, such as crop type and watering intensity.
 
-The cropland extent map for Africa is currently only avilable for East and West Africa and is therefore a provisional product.
+The cropland extent map for Africa is currently only avilable for Eastern and Western Africa and is therefore a provisional product.
 """,
     "layers": [
         {
@@ -235,7 +235,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
             "title": "Cropland extent 2019 - Western Africa",
             "name": "crop_mask_western",
             "abstract": """
-Digital Earth Africa's cropland extent map for Eastern Africa shows the location of croplands in the countries of Nigeria, Benin, Togo, Ghana, Cote d’Ivoire, Liberia, Sierra Leone, Guinea, and Guinea-Bissau. Cropland is defined as: "a piece of land of minimum 0.04 ha (a single 10m x 10m pixel) that is sowed/planted and harvest-able at least once within the 12 months after the sowing/planting date." This definition will exclude non-planted grazing lands and perennial crops which can be difficult for satellite imagery to differentiate from natural vegetation.
+Digital Earth Africa's cropland extent map for Western Africa shows the location of croplands in the countries of Nigeria, Benin, Togo, Ghana, Cote d’Ivoire, Liberia, Sierra Leone, Guinea, and Guinea-Bissau. Cropland is defined as: "a piece of land of minimum 0.04 ha (a single 10m x 10m pixel) that is sowed/planted and harvest-able at least once within the 12 months after the sowing/planting date." This definition will exclude non-planted grazing lands and perennial crops which can be difficult for satellite imagery to differentiate from natural vegetation.
 
 This provisional cropland extent map has a resolution of 10m, and was built using Copernicus Sentinel-2 satellite images from 2019. The cropland extent map was produced using extensive training data from Western Africa, coupled with a Random Forest machine learning model. For a detailed exploration of the methods used to produce the cropland extent map, read the Jupyter Notebooks in DE Africa’s crop-mask GitHub repository.
 
