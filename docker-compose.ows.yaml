@@ -1,18 +1,22 @@
+version: '3.7'
 
-version: '3.4'
-
-# Default compose will create an ows image, with dev settings and connect to a local db
 services:
+  postgres:
+    image: postgis/postgis:12-2.5-alpine
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_PASSWORD: opendatacubepassword
+    restart: always
+
   ows:
     image: opendatacube/ows:latest
     environment:
-      # Defaults are defined in .env file
       DB_HOSTNAME: postgres
-      DB_USERNAME: opendatacube
+      DB_USERNAME: postgres
       DB_PASSWORD: opendatacubepassword
-      DB_DATABASE: opendatacube
+      DB_DATABASE: postgres
       DB_PORT: 5432
-      AWS_DEFAULT_REGION: ap-southeast-2
       PYTHONPATH: /env/config
       DATACUBE_OWS_CFG: ows_refactored.dev_af_ows_root_cfg.ows_cfg
     depends_on:
@@ -20,13 +24,3 @@ services:
     volumes:
       - ./services/ows_refactored:/env/config/ows_refactored/
       - ./services/inventory:/env/config/inventory/
-
-  postgres:
-    build: docker/database/
-    environment:
-      - POSTGRES_DB=opendatacube
-      - POSTGRES_PASSWORD=opendatacubepassword
-      - POSTGRES_USER=opendatacube
-    ports:
-      - "5432:5432"
-    restart: always
