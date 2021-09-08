@@ -73,6 +73,8 @@ jobs:
     steps:
     - name: Push to DockerHub (master branch or tagged release only)
       if: github.ref == 'refs/heads/master' || github.event_name == 'release'
+      env:
+        DOCKER_USER: gadockersvc
       run: |
         echo "Login to DockerHub as ${DOCKER_USER}"
         echo "${{ secrets.GADOCKERSVC_PASSWORD }}" | docker login -u "${DOCKER_USER}" --password-stdin
