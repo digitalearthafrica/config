@@ -30,32 +30,12 @@ measurements:
     nodata: 0
     units: '1'
 
-  - name: clear_2_2_2
+  - name: clear_2_5
     dtype: uint16
     nodata: 0
     units: '1'
 
-  - name: clear_2_0_2
-    dtype: uint16
-    nodata: 0
-    units: '1'
-
-  - name: clear_2_2_0
-    dtype: uint16
-    nodata: 0
-    units: '1'
-
-  - name: clear_10_2_2
-    dtype: uint16
-    nodata: 0
-    units: '1'
-
-  - name: clear_aerosol
-    dtype: uint16
-    nodata: 0
-    units: '1'
-
-  - name: clear_2_2_2_aerosol
+  - name: clear_5_5
     dtype: uint16
     nodata: 0
     units: '1'
