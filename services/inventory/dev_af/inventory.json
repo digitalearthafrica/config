@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 27,
+    "total_layers_count": 28,
     "layers": [
         {
             "product": [
@@ -204,18 +204,6 @@
         },
         {
             "product": [
-                "wofs_ls_summary_annual_v2"
-            ],
-            "styles_count": 4,
-            "styles_list": [
-                "wofs_summary_annual_frequency",
-                "wofs_summary_annual_frequency_blue",
-                "wofs_summary_annual_wet",
-                "wofs_summary_annual_clear"
-            ]
-        },
-        {
-            "product": [
                 "ga_ls8c_wofs_2"
             ],
             "styles_count": 2,
@@ -345,6 +333,17 @@
         },
         {
             "product": [
+                "crop_mask_western"
+            ],
+            "styles_count": 3,
+            "styles_list": [
+                "green",
+                "filtered_yellow",
+                "prob"
+            ]
+        },
+        {
+            "product": [
                 "pc_s2_annual"
             ],
             "styles_count": 4,
@@ -369,6 +368,15 @@
                 "pc_annual_clear_2_0_2",
                 "pc_annual_clear_2_2_0",
                 "pc_annual_clear_10_2_2"
+            ]
+        },
+        {
+            "product": [
+                "io_lulc"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "style_colours"
             ]
         }
     ]

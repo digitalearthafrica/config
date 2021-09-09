@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 21,
+    "total_layers_count": 24,
     "layers": [
         {
             "product": [
@@ -182,6 +182,28 @@
         },
         {
             "product": [
+                "wofs_ls"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "observations",
+                "wet"
+            ]
+        },
+        {
+            "product": [
+                "wofs_ls_summary_annual"
+            ],
+            "styles_count": 4,
+            "styles_list": [
+                "wofs_summary_annual_frequency",
+                "wofs_summary_annual_frequency_blue",
+                "wofs_summary_annual_wet",
+                "wofs_summary_annual_clear"
+            ]
+        },
+        {
+            "product": [
                 "ga_ls8c_wofs_2"
             ],
             "styles_count": 2,
@@ -298,7 +320,17 @@
                 "filtered_yellow",
                 "prob"
             ]
+        },
+        {
+            "product": [
+                "crop_mask_western"
+            ],
+            "styles_count": 3,
+            "styles_list": [
+                "green",
+                "filtered_yellow",
+                "prob"
+            ]
         }
-
     ]
 }

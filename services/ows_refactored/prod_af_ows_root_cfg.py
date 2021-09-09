@@ -226,6 +226,26 @@ ows_cfg = {
                             "include": "ows_refactored.wofs.ows_wofsc2_cfg.layers",
                             "type": "python",
                         },
+                        {
+                            "title": "Daily water",
+                            "abstract": """Daily water""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_cfg.layer",
+                                    "type": "python",
+                                },
+                            ]
+                        },
+                        {
+                            "title": "Annual water",
+                            "abstract": """Annual water""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
+                                    "type": "python",
+                                }
+                            ]
+                        },
                     ]
                 },
                 {
@@ -233,7 +253,7 @@ ows_cfg = {
                     "abstract": """Agriculture""",
                     "layers": [
                         {
-                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layer",
+                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layers",
                             "type": "python",
                         },
                     ],

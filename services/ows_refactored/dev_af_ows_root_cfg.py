@@ -114,7 +114,8 @@ ows_cfg = {
             "title": "Digital Earth Africa - OGC Web Services",
             "abstract": "Digital Earth Africa OGC Web Services",
             "layers": [
-                # Hierarchical list of layers.  May be a combination of unnamed/unmappable folder-layers or named mappable layers.
+                # Hierarchical list of layers.  May be a combination of unnamed/unmappable
+                # folder-layers or named mappable layers.
                 {
                     "title": "Satellite images",
                     "abstract": """Satellite images""",
@@ -248,11 +249,7 @@ ows_cfg = {
                                 {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
                                     "type": "python",
-                                },
-                                {
-                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_v2_cfg.layer",
-                                    "type": "python",
-                                },
+                                }
                             ]
                         },
                     ]
@@ -262,7 +259,7 @@ ows_cfg = {
                     "abstract": """Agriculture""",
                     "layers": [
                         {
-                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layer",
+                            "include": "ows_refactored.agriculture.ows_crop_mask_cfg.layers",
                             "type": "python",
                         },
                     ],
@@ -301,6 +298,16 @@ ows_cfg = {
                         },
                     ],
                 },
+                {
+                    "title": "Land Cover",
+                    "abstract": """Land Cover""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
+                            "type": "python"
+                        }
+                    ]
+                }
             ],
         }
     ],

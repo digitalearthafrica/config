@@ -15,7 +15,7 @@ In addition, surface reflectance varabilities within the same time period can be
 - Cosine (spectral) distance (SMAD), which is more sensitive to changes in target spectral response.
 - Bray Curtis dissimilarity (BCMAD), which is more sensitive to the distribution of the observation values through time.
 
-More techincal information about the GeoMAD product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html)
+More technical information about the GeoMAD product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html)
 
 This product has a spatial resolution of 10 m and is available annually for 2017 to 2020.
 
