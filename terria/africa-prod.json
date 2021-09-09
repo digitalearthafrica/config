@@ -587,21 +587,48 @@
       "name": "Agriculture",
       "members": [
         {
-          "type": "wms",
-          "name": "Cropland Extent Map for Eastern Africa (provisional)",
-          "url": "https://ows.digitalearth.africa/",
-          "opacity": 1,
-          "layers": "crop_mask_eastern",
-          "linkedWcsUrl": "https://ows.digitalearth.africa/",
-          "linkedWcsCoverage": "crop_mask_eastern",
-          "tileErrorHandlingOptions": {
-            "ignoreUnknownTileErrors": true,
-            "thresholdBeforeDisablingItem": 100000
-          },
-          "id": "crop_eastern",
-          "shareKeys": [
-            "Root Group/Agriculture/Cropland Extent Map for Eastern Africa"
-          ]
+            "id": "crop_mask",
+            "type": "group",
+            "name": "Cropland Extent Map (Provisional)",
+            "members": [
+                {
+                    "type": "wms",
+                    "name": "Cropland Extent 2019 - Eastern Africa",
+                    "url": "https://ows.digitalearth.africa/",
+                    "opacity": 1,
+                    "layers": "crop_mask_eastern",
+                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                    "linkedWcsCoverage": "crop_mask_eastern",
+                    "tileErrorHandlingOptions": {
+                        "ignoreUnknownTileErrors": true,
+                        "thresholdBeforeDisablingItem": 100000
+                    },
+                    "id": "crop_eastern",
+                    "shareKeys": [
+                        "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Eastern Africa"
+                    ]
+                },
+                {
+                    "type": "wms",
+                    "name": "Cropland Extent 2019 - Western Africa",
+                    "url": "https://ows.digitalearth.africa/",
+                    "opacity": 1,
+                    "layers": "crop_mask_western",
+                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                    "linkedWcsCoverage": "crop_mask_western",
+                    "tileErrorHandlingOptions": {
+                        "ignoreUnknownTileErrors": true,
+                        "thresholdBeforeDisablingItem": 100000
+                    },
+                    "id": "crop_western",
+                    "shareKeys": [
+                        "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Western Africa"
+                    ]
+                }
+            ],
+            "shareKeys": [
+                "Root Group/Agriculture/Cropland Extent Map (Provisional)"
+                ]
         }
       ],
       "shareKeys": [
