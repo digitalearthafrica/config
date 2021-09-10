@@ -358,16 +358,12 @@
             "product": [
                 "pc_ls8_annual"
             ],
-            "styles_count": 8,
+            "styles_count": 4,
             "styles_list": [
-                "pc_annual_clear",
-                "pc_annual_clear_aerosol",
-                "pc_annual_clear_2_2_2_aerosol",
                 "pc_annual_total",
-                "pc_annual_clear_2_2_2",
-                "pc_annual_clear_2_0_2",
-                "pc_annual_clear_2_2_0",
-                "pc_annual_clear_10_2_2"
+                "pc_annual_clear",
+                "pc_annual_clear_2_5",
+                "pc_annual_clear_5_5"
             ]
         },
         {
