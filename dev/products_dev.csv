@@ -26,3 +26,4 @@ s2_l2a,https://raw.githubusercontent.com/digitalearthafrica/config/master/produc
 wofs_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls.odc-product.yaml
 wofs_ls_summary_alltime,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls_summary_alltime.odc-product.yaml
 wofs_ls_summary_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls_summary_annual.odc-product.yaml
+rainfall_chirps,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/rainfall_chirps.odc-product.yaml
