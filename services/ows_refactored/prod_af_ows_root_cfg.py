@@ -288,6 +288,26 @@ ows_cfg = {
                         },
                     ],
                 },
+                {
+                    "title": "Land Cover",
+                    "abstract": """Land Cover""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
+                            "type": "python"
+                        }
+                    ]
+                },
+                {
+                    "title": "Meteorology",
+                    "abstract": """Meteorology""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.meteorology.ows_rainfall.layer",
+                            "type": "python"
+                        }
+                    ]
+                }
             ],
         }
     ],
