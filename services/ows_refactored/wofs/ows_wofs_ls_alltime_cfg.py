@@ -3,7 +3,7 @@ from ows_refactored.common.ows_reslim_cfg import reslim_wofs
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_summary
 
 style_wofs_summary_wet = {
-    "name": "water_summary_wet",
+    "name": "wofs_summary_wet",
     "title": "Count of wet",
     "abstract": "WOfS summary showing the count of water observations",
     "index_function": {

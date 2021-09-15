@@ -247,7 +247,7 @@ ows_cfg = {
                             ]
                         },
                         {
-                            "title": "Alltime water",
+                            "title": "All-time water",
                             "abstract": """Alltime water""",
                             "layers": [
                                 {
