@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 24,
+    "total_layers_count": 25,
     "layers": [
         {
             "product": [
@@ -200,6 +200,18 @@
                 "wofs_summary_annual_frequency_blue",
                 "wofs_summary_annual_wet",
                 "wofs_summary_annual_clear"
+            ]
+        },
+        {
+            "product": [
+                "wofs_ls_summary_alltime"
+            ],
+            "styles_count": 4,
+            "styles_list": [
+              "wofs_summary_frequency",
+              "wofs_summary_frequency_blue",
+              "wofs_summary_wet",
+              "wofs_summary_clear"
             ]
         },
         {
