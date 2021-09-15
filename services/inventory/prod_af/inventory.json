@@ -208,10 +208,10 @@
             ],
             "styles_count": 4,
             "styles_list": [
-                "wofs_summary_annual_frequency",
-                "wofs_summary_annual_frequency_blue",
-                "wofs_summary_annual_wet",
-                "wofs_summary_annual_clear"
+              "style_wofs_summary_frequency",
+              "style_wofs_summary_frequency_blue",
+              "style_wofs_summary_wet",
+              "style_wofs_summary_clear"
             ]
         },
         {
