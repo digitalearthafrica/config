@@ -324,6 +324,16 @@
         },
         {
             "product": [
+                "fc_ls"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "simple_fc_unmasked",
+                "simple_fc"
+            ]
+        },
+        {
+            "product": [
                 "crop_mask_eastern"
             ],
             "styles_count": 3,

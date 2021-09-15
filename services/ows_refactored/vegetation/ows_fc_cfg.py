@@ -101,6 +101,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "styling": {
         "default_style": "simple_fc_unmasked",
-        "styles": [style_fc_unmasked, style_fc_simple],
+        "styles": [
+            style_fc_unmasked,
+            style_fc_simple
+        ],
     },
 }
