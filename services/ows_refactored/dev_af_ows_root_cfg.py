@@ -302,6 +302,16 @@ ows_cfg = {
                             "type": "python"
                         }
                     ]
+                },
+                {
+                    "title": "Meteorology",
+                    "abstract": """Meteorology""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.meteorology.ows_rainfall.layer",
+                            "type": "python"
+                        }
+                    ]
                 }
             ],
         }
