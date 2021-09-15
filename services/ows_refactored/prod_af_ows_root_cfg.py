@@ -278,6 +278,16 @@ ows_cfg = {
                         },
                     ],
                 },
+                {
+                    "title": "Vegetation",
+                    "abstract": """Vegetation""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
+                            "type": "python",
+                        },
+                    ],
+                },
             ],
         }
     ],
