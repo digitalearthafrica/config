@@ -1,9 +1,9 @@
 # reslim
 
-reslim_smart6 = {
+reslim_smart5 = {
     "wms": {
         "zoomed_out_fill_colour": [150, 180, 200, 160],
-        "min_zoom_level": 6.6,
+        "min_zoom_level": 5.6,
         # "max_datasets": 16, # Defaults to no dataset limit
     },
     "wcs": {
