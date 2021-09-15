@@ -1,5 +1,16 @@
 # reslim
 
+reslim_smart6 = {
+    "wms": {
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
+        "min_zoom_level": 6.6,
+        # "max_datasets": 16, # Defaults to no dataset limit
+    },
+    "wcs": {
+        "max_datasets": 32,
+    },
+}
+
 reslim_smart8 = {
     "wms": {
         "zoomed_out_fill_colour": [150, 180, 200, 160],
