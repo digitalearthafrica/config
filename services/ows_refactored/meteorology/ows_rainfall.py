@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_smart6
+from ows_refactored.common.ows_reslim_cfg import reslim_smart5
 
 
 style_rainfall = {
@@ -57,7 +57,7 @@ Spanning 50°S-50°N (and all longitudes) and ranging from 1981 to near-present,
     "bands": {
         "rainfall": [],
     },
-    "resource_limits": reslim_smart6,
+    "resource_limits": reslim_smart5,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
