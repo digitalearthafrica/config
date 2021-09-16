@@ -141,7 +141,7 @@ ows_cfg = {
                                     "abstract": """Annual surface reflectance""",
                                     "layers": [
                                         {
-                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.dev_layer",
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layer",
                                             "type": "python",
                                         },
                                     ],
@@ -151,7 +151,7 @@ ows_cfg = {
                                     "abstract": """Semiannual surface reflectance""",
                                     "layers": [
                                         {
-                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_semiannual_cfg.dev_layer",
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_semiannual_cfg.layer",
                                             "type": "python",
                                         },
                                     ],
