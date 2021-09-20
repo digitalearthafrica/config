@@ -11,7 +11,7 @@ metadata:
     name: crop_mask_eastern
 
 storage:
-  crs: epsg:6933
+  crs: EPSG:6933
   resolution:
     x: 10
     y: -10
