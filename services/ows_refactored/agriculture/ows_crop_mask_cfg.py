@@ -191,7 +191,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
-            "native_crs": "epsg:6933",
+            "native_crs": "EPSG:6933",
             "native_resolution": [10, -10],
             "wcs": {
                 "default_bands": ["mask", "prob"],
@@ -235,7 +235,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "always_fetch_bands": [],
                 "manual_merge": False,
             },
-            "native_crs": "epsg:6933",
+            "native_crs": "EPSG:6933",
             "native_resolution": [10, -10],
             "wcs": {
                 "default_bands": ["mask", "prob"],
