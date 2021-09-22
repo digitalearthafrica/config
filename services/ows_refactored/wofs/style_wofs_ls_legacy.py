@@ -1,4 +1,4 @@
-# All styles in this file are LEGACY colour schemes using the outdated custom rainbow scheme
+# All styles in this file are LEGACY colour schemes using the custom rainbow scheme
 # From September 2021, the default styling is in style_wofs_ls.py
 from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
 
