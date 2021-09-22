@@ -240,7 +240,7 @@ ows_cfg = {
                         },
                         {
                             "title": "All-time water",
-                            "abstract": """Alltime water""",
+                            "abstract": """All-time water""",
                             "layers": [
                                 {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.layer",

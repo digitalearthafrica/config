@@ -5,7 +5,7 @@ from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
 # wofs_ls_summary_annual styles
 legacy_style_wofs_summary_annual_wet = {
     "name": "legacy_wofs_summary_annual_wet",
-    "title": "Count of wet",#add (legacy colourmap) once new one is added
+    "title": "Count of wet",  # add (legacy colourmap) once new one is added
     "abstract": "WOfS summary showing the count of water observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -118,7 +118,7 @@ legacy_style_wofs_summary_annual_frequency_blue = {
 
 legacy_style_wofs_summary_annual_clear = {
     "name": "legacy_wofs_summary_annual_clear",
-    "title": "Count of clear",#add (legacy colourmap) once new one is added
+    "title": "Count of clear",  # add (legacy colourmap) once new one is added
     "abstract": "WOfS annual summary showing the count of clear observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -164,7 +164,7 @@ legacy_style_wofs_summary_annual_clear = {
 # wofs_ls_summary_alltime legacy styles
 legacy_style_wofs_summary_alltime_wet = {
     "name": "legacy_wofs_summary_alltime_wet",
-    "title": "Count of wet",#add (legacy colourmap) when upgraded
+    "title": "Count of wet",  # add (legacy colourmap) when upgraded
     "abstract": "WOfS summary showing the count of water observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -242,7 +242,6 @@ legacy_style_wofs_summary_alltime_frequency = {
     },
 }
 
-
 legacy_style_wofs_summary_frequency_blue = {
     "name": "legacy_wofs_summary_alltime_frequency_blue",
     "title": "Water frequency - Blues (legacy colourmap)",
@@ -281,7 +280,7 @@ legacy_style_wofs_summary_frequency_blue = {
 
 legacy_style_wofs_summary_alltime_clear = {
     "name": "legacy_wofs_summary_alltime_clear",
-    "title": "Count of clear",#add (legacy colourmap) when upgraded
+    "title": "Count of clear",  # add (legacy colourmap) when upgraded
     "abstract": "WOfS summary showing the count of clear observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
