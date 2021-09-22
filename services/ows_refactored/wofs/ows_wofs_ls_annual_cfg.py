@@ -1,8 +1,10 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_wofs
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_summary
-from ows_refactored.wofs.style_wofs_ls_annual_summary_cfg import (
-    style_wofs_summary_annual_clear, style_wofs_summary_annual_frequency,
-    style_wofs_summary_annual_frequency_blue, style_wofs_summary_annual_wet)
+from ows_refactored.wofs.style_wofs_ls_legacy import (
+    legacy_style_wofs_summary_annual_clear,
+    legacy_style_wofs_summary_annual_frequency,
+    legacy_style_wofs_summary_annual_frequency_blue,
+    legacy_style_wofs_summary_annual_wet)
 
 layer = {
     "title": "Water Observations from Space Annual Summary",
@@ -37,12 +39,12 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_bands": ["frequency", "count_wet", "count_clear"],
     },
     "styling": {
-        "default_style": "wofs_summary_annual_frequency",
+        "default_style": "legacy_wofs_summary_annual_frequency",
         "styles": [
-            style_wofs_summary_annual_frequency,
-            style_wofs_summary_annual_frequency_blue,
-            style_wofs_summary_annual_wet,
-            style_wofs_summary_annual_clear,
+            legacy_style_wofs_summary_annual_frequency,
+            legacy_style_wofs_summary_annual_frequency_blue,
+            legacy_style_wofs_summary_annual_wet,
+            legacy_style_wofs_summary_annual_clear,
         ],
     },
 }
