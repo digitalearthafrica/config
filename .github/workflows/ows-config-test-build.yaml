@@ -45,12 +45,12 @@ jobs:
 
     - name: Prepare the DB
       run: |
-        # This will try to run in the background and if it fails, will dump logs
-        docker-compose -f docker-compose.ows.yaml up -d || docker-compose -f docker-compose.ows.yaml logs ows && false
-        # These should only be run if the above works
-        docker-compose -f docker-compose.ows.yaml exec -T ows datacube system init || \
-            docker-compose -f docker-compose.ows.yaml logs ows && false
-        docker-compose -f docker-compose.ows.yaml exec -T ows datacube-ows-update --schema --role postgres
+        echo "Starting up"
+        docker-compose -f docker-compose.ows.yaml up -d || echo "Failed to start"
+        echo "Initialising the DB"
+        docker-compose -f docker-compose.ows.yaml exec -T ows datacube system init || echo "Failed to initialise the ODC"
+        echo "Initialising OWS"
+        docker-compose -f docker-compose.ows.yaml exec -T ows datacube-ows-update --schema --role postgres || echo "Failed to initialise OWS"
 
     - name: Test DEV config
       run: |
