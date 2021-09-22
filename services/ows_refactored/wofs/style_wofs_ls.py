@@ -21,8 +21,8 @@ style_wofs_summary_annual_frequency = {
     "color_ramp": [
         {"value": 0.0, "color": "#000000", "alpha": 0.0},
         {"value": 0.02, "color": "#000000", "alpha": 0.0},
-        {"value": 0.05, "color": '#b2e4c2'},
-        {"value": 0.1, "color": '#79d6ae'},
+        {"value": 0.05, "color": '#b2e4c2', "alpha": 0.25},
+        {"value": 0.1, "color": '#79d6ae', "alpha": 0.75},
         {"value": 0.2, "color": '#49c1ad'},
         {"value": 0.3, "color": '#38aaac'},
         {"value": 0.4, "color": '#3492a8'},
@@ -55,8 +55,8 @@ style_wofs_summary_alltime_frequency = {
     "color_ramp": [
         {"value": 0.0, "color": "#000000", "alpha": 0.0},
         {"value": 0.002, "color": "#000000", "alpha": 0.0},
-        {"value": 0.005, "color": '#bbe7c8'},
-        {"value": 0.01, "color": '#91dbb4'},
+        {"value": 0.005, "color": '#bbe7c8', "alpha": 0.25},
+        {"value": 0.01, "color": '#91dbb4', "alpha": 0.75},
         {"value": 0.02, "color": '#60ceac'},
         {"value": 0.05, "color": '#45bdad'},
         {"value": 0.1, "color": '#38aaac'},

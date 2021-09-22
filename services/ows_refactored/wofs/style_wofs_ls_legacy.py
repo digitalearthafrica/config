@@ -93,20 +93,9 @@ legacy_style_wofs_summary_annual_frequency_blue = {
     "needed_bands": ["frequency"],
     "include_in_feature_info": False,
     "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#ffffff",
-            "alpha": 0.0,
-        },
-        {
-            "value": 0.001,
-            "color": "#d5fef9",
-            "alpha": 0.0,
-        },
-        {
-            "value": 0.02,
-            "color": "#d5fef9",
-        },
+        {"value": 0.0, "color": "#ffffff", "alpha": 0.0},
+        {"value": 0.001, "color": "#d5fef9", "alpha": 0.0},
+        {"value": 0.02, "color": "#d5fef9"},
         {"value": 0.2, "color": "#71e3ff"},
         {"value": 0.4, "color": "#01ccff"},
         {"value": 0.6, "color": "#0178ff"},
@@ -255,20 +244,9 @@ legacy_style_wofs_summary_frequency_blue = {
     },
     "needed_bands": ["frequency"],
     "color_ramp": [
-        {
-            "value": 0.0,
-            "color": "#ffffff",
-            "alpha": 0.0,
-        },
-        {
-            "value": 0.001,
-            "color": "#d5fef9",
-            "alpha": 0.0,
-        },
-        {
-            "value": 0.02,
-            "color": "#d5fef9",
-        },
+        {"value": 0.0, "color": "#ffffff", "alpha": 0.0},
+        {"value": 0.001, "color": "#d5fef9", "alpha": 0.0},
+        {"value": 0.02, "color": "#d5fef9"},
         {"value": 0.2, "color": "#71e3ff"},
         {"value": 0.4, "color": "#01ccff"},
         {"value": 0.6, "color": "#0178ff"},
