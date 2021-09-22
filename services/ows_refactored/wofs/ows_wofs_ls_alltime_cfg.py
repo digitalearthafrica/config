@@ -1,5 +1,6 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_wofs
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_summary
+from ows_refactored.wofs.style_wofs_ls import style_wofs_summary_alltime_frequency
 from ows_refactored.wofs.style_wofs_ls_legacy import (
     legacy_style_wofs_summary_alltime_clear,
     legacy_style_wofs_summary_alltime_frequency,
@@ -39,8 +40,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "default_bands": ["frequency"],
     },
     "styling": {
-        "default_style": "legacy_wofs_summary_alltime_frequency",
+        "default_style": "wofs_summary_alltime_frequency",
         "styles": [
+            style_wofs_summary_alltime_frequency,
             legacy_style_wofs_summary_alltime_frequency,
             legacy_style_wofs_summary_alltime_frequency_blue,
             legacy_style_wofs_summary_alltime_wet,
