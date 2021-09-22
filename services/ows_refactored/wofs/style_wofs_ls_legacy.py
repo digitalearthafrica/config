@@ -231,7 +231,7 @@ legacy_style_wofs_summary_alltime_frequency = {
     },
 }
 
-legacy_style_wofs_summary_frequency_blue = {
+legacy_style_wofs_summary_alltime_frequency_blue = {
     "name": "legacy_wofs_summary_alltime_frequency_blue",
     "title": "Water frequency - Blues (legacy colourmap)",
     "abstract": "WOfS summary showing the frequency of Wetness",
