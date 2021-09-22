@@ -1,5 +1,6 @@
 # This file contains current styling for Landsat WOfS, including
 # wofs_ls, wofs_ls_summary_annual, wofs_ls_summary_alltime
+from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
 
 # styles used by wofs_ls_summary_annual
 
