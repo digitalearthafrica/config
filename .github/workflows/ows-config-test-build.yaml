@@ -46,11 +46,16 @@ jobs:
     - name: Prepare the DB
       run: |
         echo "Starting up"
-        docker-compose -f docker-compose.ows.yaml up -d || echo "Failed to start"
+        docker-compose -f docker-compose.ows.yaml up -d
         echo "Initialising the DB"
-        docker-compose -f docker-compose.ows.yaml exec -T ows datacube system init || echo "Failed to initialise the ODC"
+        docker-compose -f docker-compose.ows.yaml run -T ows datacube system init
         echo "Initialising OWS"
-        docker-compose -f docker-compose.ows.yaml exec -T ows datacube-ows-update --schema --role postgres || echo "Failed to initialise OWS"
+        docker-compose -f docker-compose.ows.yaml exec -T ows datacube-ows-update --schema --role postgres
+
+    - name: Log error from previous steps
+      if: failure()
+      run: |
+        docker-compose -f docker-compose.ows.yaml logs ows
 
     - name: Test DEV config
       run: |
