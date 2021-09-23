@@ -20,12 +20,6 @@ storage:
     y: 3200.0
 
 measurements:
-  - name: SR_B1
-    dtype: "uint16"
-    units: "1"
-    nodata: 0
-    aliases: [band_1, coastal_aerosol]
-
   - name: SR_B2
     dtype: "uint16"
     units: "1"
