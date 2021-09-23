@@ -45,12 +45,14 @@ jobs:
 
     - name: Prepare the DB
       run: |
-        echo "Starting up"
-        docker-compose -f docker-compose.ows.yaml up -d
+        echo "Starting up the DB"
+        docker-compose -f docker-compose.ows.yaml up --detach postgres
         echo "Initialising the DB"
         docker-compose -f docker-compose.ows.yaml run -T ows datacube system init
         echo "Initialising OWS"
-        docker-compose -f docker-compose.ows.yaml exec -T ows datacube-ows-update --schema --role postgres
+        docker-compose -f docker-compose.ows.yaml run -T ows datacube-ows-update --schema --role postgres
+        echo "Starting OWS"
+        docker-compose -f docker-compose.ows.yaml up --detach ows
 
     - name: Log error from previous steps
       if: failure()
