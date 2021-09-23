@@ -218,10 +218,6 @@ ows_cfg = {
                     "abstract": """Surface water""",
                     "layers": [
                         {
-                            "include": "ows_refactored.wofs.ows_wofsc2_cfg.layers",
-                            "type": "python",
-                        },
-                        {
                             "title": "Daily water",
                             "abstract": """Daily water""",
                             "layers": [
@@ -243,7 +239,7 @@ ows_cfg = {
                         },
                         {
                             "title": "All-time water",
-                            "abstract": """Alltime water""",
+                            "abstract": """All-time water""",
                             "layers": [
                                 {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.layer",
