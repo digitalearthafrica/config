@@ -34,7 +34,7 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     # (Packaged like the main product, but with much much lower
     # resolution and much much higher area covered in each dataset.
     #
-#     "low_res_product_name": "gm_s2_annual_lowres",
+    # "low_res_product_name": "gm_s2_annual_lowres",
     "bands": bands_ls8_gm,
     "dynamic": False,
     "resource_limits": reslim_smart5,

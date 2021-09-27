@@ -379,8 +379,8 @@ style_s2_pure_swir1 = {
     "title": "Shortwave Infrared (SWIR) - 1610",
     "abstract": "Short wave infra-red band 1, centered on 1610nm",
     "components": {
-        "red": {"swir_1": 1.0}, 
-        "green": {"swir_1": 1.0}, 
+        "red": {"swir_1": 1.0},
+        "green": {"swir_1": 1.0},
         "blue": {"swir_1": 1.0}},
     "scale_range": [0.0, 3000.0],
 }
@@ -965,7 +965,7 @@ styles_gm_ls8_list = [
     style_ls_pure_green,
     style_ls_pure_red,
     style_ls_pure_nir,
-    style_s2_pure_swir1 ,
+    style_s2_pure_swir1,
     style_s2_pure_swir2,
     style_tmad_sdev_std,
     style_tmad_edev_std,
