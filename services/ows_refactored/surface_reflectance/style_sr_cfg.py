@@ -378,7 +378,10 @@ style_s2_pure_swir1 = {
     "name": "swir_1",
     "title": "Shortwave Infrared (SWIR) - 1610",
     "abstract": "Short wave infra-red band 1, centered on 1610nm",
-    "components": {"red": {"B11": 1.0}, "green": {"B11": 1.0}, "blue": {"B11": 1.0}},
+    "components": {
+        "red": {"swir_1": 1.0}, 
+        "green": {"swir_1": 1.0}, 
+        "blue": {"swir_1": 1.0}},
     "scale_range": [0.0, 3000.0],
 }
 
@@ -923,6 +926,7 @@ styles_s2_list = [
     style_s2_scl,
 ]
 
+# Used in the S2 GeoMAD
 styles_gm_list = [
     style_gm_simple_rgb,
     style_gm_irg,
@@ -941,6 +945,27 @@ styles_gm_list = [
     style_ls_pure_nir,
     style_s2_pure_narrow_nir,
     style_s2_pure_swir1,
+    style_s2_pure_swir2,
+    style_tmad_sdev_std,
+    style_tmad_edev_std,
+    style_tmad_bcdev_std,
+    style_gm_count,
+]
+
+# Used in the LS8 GeoMAD
+styles_gm_ls8_list = [
+    style_gm_simple_rgb,
+    style_gm_irg,
+    style_tmad_rgb_std,
+    style_tmad_rgb_sens,
+    style_ls_ndvi,
+    style_ls_ndwi,
+    style_gals_mndwi,
+    style_ls_pure_blue,
+    style_ls_pure_green,
+    style_ls_pure_red,
+    style_ls_pure_nir,
+    style_s2_pure_swir1 ,
     style_s2_pure_swir2,
     style_tmad_sdev_std,
     style_tmad_edev_std,
