@@ -292,6 +292,17 @@
         },
         {
             "product": [
+                "crop_mask_northern"
+            ],
+            "styles_count": 3,
+            "styles_list": [
+                "green",
+                "filtered_yellow",
+                "prob"
+            ]
+        },
+        {
+            "product": [
                 "io_lulc"
             ],
             "styles_count": 1,
