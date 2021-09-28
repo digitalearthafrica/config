@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 21,
+    "total_layers_count": 22,
     "layers": [
         {
             "product": [
@@ -282,6 +282,17 @@
         {
             "product": [
                 "crop_mask_western"
+            ],
+            "styles_count": 3,
+            "styles_list": [
+                "green",
+                "filtered_yellow",
+                "prob"
+            ]
+        },
+        {
+            "product": [
+                "crop_mask_northern"
             ],
             "styles_count": 3,
             "styles_list": [
