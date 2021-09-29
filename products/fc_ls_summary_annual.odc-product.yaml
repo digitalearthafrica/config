@@ -62,15 +62,15 @@ measurements:
     flags_definition:
       qa:
       bits: [
-          0
-          1
-          2
-          3
-          4
-          5
-          6
-          7,
-        ]
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7,
+      ]
       values:
         0: insufficient observations wet
         1: insufficient observations dry
