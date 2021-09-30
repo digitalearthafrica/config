@@ -57,7 +57,7 @@ measurements:
 
   - name: qa
     dtype: uint8
-    units: 1
+    units: "1"
     nodata: 255
     flags_definition:
       qa:
