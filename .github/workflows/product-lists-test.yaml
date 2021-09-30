@@ -3,6 +3,7 @@ name: Check Product Lists
 on:
   push:
     paths:
+      - "products/*.yaml"
       - "dev/products_dev.csv"
       - "prod/products_prod.csv"
       - ".github/workflows/product_lists.yaml"
