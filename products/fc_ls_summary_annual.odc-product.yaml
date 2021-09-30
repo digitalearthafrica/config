@@ -9,6 +9,12 @@ metadata:
   product:
     name: fc_ls_summary_annual
 
+storage:
+  crs: EPSG:6933
+  resolution:
+    x: 30
+    y: -30
+
 measurements:
   - name: pv_pc_10
     dtype: uint8
