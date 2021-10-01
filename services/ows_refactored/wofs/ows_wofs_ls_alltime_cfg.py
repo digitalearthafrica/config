@@ -51,7 +51,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
 }
 
-# for testing in dev 
+# for testing in dev
 dev_layer = {
     "title": "Water Observations from Space All-Time Summary",
     "name": "wofs_ls_summary_alltime",
