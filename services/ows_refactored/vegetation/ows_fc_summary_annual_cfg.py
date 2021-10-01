@@ -1,4 +1,4 @@
-from ows_refactored.ows_reslim_cfg import reslim_wms_min_zoom_15
+from ows_refactored.common.ows_reslim_cfg import reslim_wms_min_zoom_15
 
 
 legend_idx_0_100_pixel_fc_25ticks = {
