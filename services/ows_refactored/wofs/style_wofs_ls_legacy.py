@@ -50,7 +50,7 @@ legacy_style_wofs_summary_annual_wet = {
 
 legacy_style_wofs_summary_annual_frequency = {
     "name": "legacy_wofs_summary_annual_frequency",
-    "title": " Water frequency (legacy colourmap)",
+    "title": " Water frequency",
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -81,7 +81,7 @@ legacy_style_wofs_summary_annual_frequency = {
 
 legacy_style_wofs_summary_annual_frequency_blue = {
     "name": "legacy_wofs_summary_annual_frequency_blue",
-    "title": "Water frequency - Blues (legacy colourmap)",
+    "title": "Water frequency - Blues",
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -198,7 +198,7 @@ legacy_style_wofs_summary_alltime_wet = {
 
 legacy_style_wofs_summary_alltime_frequency = {
     "name": "legacy_wofs_summary_alltime_frequency",
-    "title": " Water frequency (legacy colourmap)",
+    "title": " Water frequency",
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -233,7 +233,7 @@ legacy_style_wofs_summary_alltime_frequency = {
 
 legacy_style_wofs_summary_alltime_frequency_blue = {
     "name": "legacy_wofs_summary_alltime_frequency_blue",
-    "title": "Water frequency - Blues (legacy colourmap)",
+    "title": "Water frequency - Blues",
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",

@@ -237,7 +237,7 @@ ows_cfg = {
                             "abstract": """Annual water""",
                             "layers": [
                                 {
-                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.dev_layer",
                                     "type": "python",
                                 }
                             ]
@@ -247,7 +247,7 @@ ows_cfg = {
                             "abstract": """All-time water""",
                             "layers": [
                                 {
-                                    "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.layer",
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.dev_layer",
                                     "type": "python",
                                 }
                             ]
