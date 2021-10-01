@@ -359,7 +359,7 @@ This contains a three band combination of the 50th Percentile for green vegetati
 
 Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. To be considered in the FCP product a pixel must have had at least 10 clear observations over the year.
 """,
-    "product_name": "fc_summary_annual",
+    "product_name": "fc_ls_summary_annual",
     "bands": bands_fc_percentile,
     "resource_limits": reslim_wms_min_zoom_15,
     "flags": fc_percentile_flags,
