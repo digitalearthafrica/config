@@ -39,15 +39,15 @@ fc_percentile_flags = [
 ]
 
 bands_fc_percentile = {
-    "PV_PC_10": [],
-    "PV_PC_50": [],
-    "PV_PC_90": [],
-    "NPV_PC_10": [],
-    "NPV_PC_50": [],
-    "NPV_PC_90": [],
-    "BS_PC_10": [],
-    "BS_PC_50": [],
-    "BS_PC_90": [],
+    "pv_pc_10": [],
+    "pv_pc_50": [],
+    "pv_pc_90": [],
+    "npv_pc_10": [],
+    "npv_pc_50": [],
+    "npv_pc_90": [],
+    "bs_pc_10": [],
+    "bs_pc_50": [],
+    "bs_pc_90": [],
 }
 
 
@@ -59,11 +59,11 @@ green_veg_10 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "PV_PC_10",
+            "band": "pv_pc_10",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["PV_PC_10"],
+    "needed_bands": ["pv_pc_10"],
     "color_ramp": [
         {
             "value": 0,
@@ -98,11 +98,11 @@ green_veg_50 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "PV_PC_50",
+            "band": "pv_pc_50",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["PV_PC_50"],
+    "needed_bands": ["pv_pc_50"],
     "color_ramp": [
         {"value": 0, "color": "#ffffcc"},
         {"value": 25, "color": "#c2e699"},
@@ -123,11 +123,11 @@ green_veg_90 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "PV_PC_90",
+            "band": "pv_pc_90",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["PV_PC_90"],
+    "needed_bands": ["pv_pc_90"],
     "color_ramp": [
         {"value": 0, "color": "#ffffcc"},
         {"value": 25, "color": "#c2e699"},
@@ -148,11 +148,11 @@ non_green_veg_10 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "NPV_PC_10",
+            "band": "npv_pc_10",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["NPV_PC_10"],
+    "needed_bands": ["npv_pc_10"],
     "color_ramp": [
         {
             "value": 0,
@@ -185,11 +185,11 @@ non_green_veg_50 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "NPV_PC_50",
+            "band": "npv_pc_50",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["NPV_PC_50"],
+    "needed_bands": ["npv_pc_50"],
     "color_ramp": [
         {"value": 0, "color": "#ffffd4"},
         {"value": 25, "color": "#fed98e"},
@@ -210,11 +210,11 @@ non_green_veg_90 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "NPV_PC_90",
+            "band": "npv_pc_90",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["NPV_PC_90"],
+    "needed_bands": ["npv_pc_90"],
     "color_ramp": [
         {"value": 0, "color": "#ffffd4"},
         {"value": 25, "color": "#fed98e"},
@@ -235,11 +235,11 @@ bare_ground_10 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "BS_PC_10",
+            "band": "bs_pc_10",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["BS_PC_10"],
+    "needed_bands": ["bs_pc_10"],
     "color_ramp": [
         {
             "value": 0,
@@ -275,11 +275,11 @@ bare_ground_50 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "BS_PC_50",
+            "band": "bs_pc_50",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["BS_PC_50"],
+    "needed_bands": ["bs_pc_50"],
     "color_ramp": [
         {"value": 0, "color": "#feebe2"},
         {"value": 25, "color": "#fbb4b9"},
@@ -300,11 +300,11 @@ bare_ground_90 = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "BS_PC_90",
+            "band": "bs_pc_90",
         },
     },
     "include_in_feature_info": False,
-    "needed_bands": ["BS_PC_90"],
+    "needed_bands": ["bs_pc_90"],
     "color_ramp": [
         {"value": 0, "color": "#feebe2"},
         {"value": 25, "color": "#fbb4b9"},
@@ -322,9 +322,9 @@ fc_rgb = {
     "title": "Three-band fractional cover",
     "abstract": "Fractional cover medians - red is bare soil, green is green vegetation and blue is non-green vegetation",
     "components": {
-        "red": {"BS_PC_50": 1.0},
-        "green": {"PV_PC_50": 1.0},
-        "blue": {"NPV_PC_50": 1.0},
+        "red": {"bs_pc_50": 1.0},
+        "green": {"pv_pc_50": 1.0},
+        "blue": {"npv_pc_50": 1.0},
     },
     "scale_range": [0.0, 100.0],
     # "pq_masks": fc_pq_mask,
