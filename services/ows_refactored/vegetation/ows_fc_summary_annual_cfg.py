@@ -363,7 +363,7 @@ Fractional Cover products use Water Observations from Space (WOfS) to mask out a
     "bands": bands_fc_percentile,
     "resource_limits": reslim_wms_min_zoom_15,
     # "flags": fc_percentile_flags,
-    "native_crs": "EPSG:6733",
+    "native_crs": "EPSG:6933",
     "native_resolution": [30, -30],
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
