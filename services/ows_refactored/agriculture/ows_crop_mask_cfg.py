@@ -193,9 +193,6 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
             },
             "native_crs": "EPSG:6933",
             "native_resolution": [10, -10],
-            "wcs": {
-                "default_bands": ["mask", "prob"],
-            },
             "styling": {
                 "default_style": "green",
                 "styles": [
@@ -237,9 +234,6 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
             },
             "native_crs": "EPSG:6933",
             "native_resolution": [10, -10],
-            "wcs": {
-                "default_bands": ["mask", "prob"],
-            },
             "styling": {
                 "default_style": "green",
                 "styles": [
@@ -281,9 +275,6 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
             },
             "native_crs": "EPSG:6933",
             "native_resolution": [10, -10],
-            "wcs": {
-                "default_bands": ["mask", "prob"],
-            },
             "styling": {
                 "default_style": "green",
                 "styles": [

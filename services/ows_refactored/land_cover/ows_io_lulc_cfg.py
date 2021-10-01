@@ -114,9 +114,6 @@ The global map was produced by applying this model to the Sentinel-2 2020 scene 
         10.0,
         -10.0,
     ],
-    "wcs": {
-        "default_bands": ["data"],
-    },
     "styling": {
         "default_style": "style_colours",
         "styles": [style_colours],
