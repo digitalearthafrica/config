@@ -29,14 +29,14 @@ legend_idx_0_100_pixel_fc_bs_25ticks = {
 }
 
 
-fc_percentile_flags = [
-    {
-        "band": "land",
-        "product": "geodata_coast_100k",
-        "ignore_time": True,
-        "ignore_info_flags": [],
-    },
-]
+# fc_percentile_flags = [
+#     {
+#         "band": "land",
+#         "product": "geodata_coast_100k",
+#         "ignore_time": True,
+#         "ignore_info_flags": [],
+#     },
+# ]
 
 bands_fc_percentile = {
     "pv_pc_10": [],
@@ -349,7 +349,7 @@ fc_percentiles_styles = [
 
 layer = {
     "title": "DE Africa Fractional Cover Percentiles (Landsat, Annual)",
-    "name": "fcp_rgb",
+    "name": "fc_ls_summary_annual",
     "abstract": """Fractional Cover 25m Percentiles 2.2.1 (Landsat, Annual)
 Data is only visible at higher resolutions; when zoomed-out the available area will be displayed as a shaded region.
 
@@ -362,7 +362,7 @@ Fractional Cover products use Water Observations from Space (WOfS) to mask out a
     "product_name": "fc_ls_summary_annual",
     "bands": bands_fc_percentile,
     "resource_limits": reslim_wms_min_zoom_15,
-    "flags": fc_percentile_flags,
+    # "flags": fc_percentile_flags,
     "native_crs": "EPSG:6733",
     "native_resolution": [30, -30],
     "image_processing": {
