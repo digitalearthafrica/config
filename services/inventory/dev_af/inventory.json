@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 25,
+    "total_layers_count": 26,
     "layers": [
         {
             "product": [
@@ -366,6 +366,24 @@
             "styles_count": 1,
             "styles_list": [
                 "rainfall"
+            ]
+        },
+        {
+            "product": [
+                "fc_summary_annual"
+            ],
+            "styles_count": 10,
+            "styles_list": [
+              "fc_rgb",
+              "green_veg_10",
+              "green_veg_50",
+              "green_veg_90",
+              "non_green_veg_10",
+              "non_green_veg_50",
+              "non_green_veg_90",
+              "bare_ground_10",
+              "bare_ground_50",
+              "bare_ground_90"
             ]
         }
     ]
