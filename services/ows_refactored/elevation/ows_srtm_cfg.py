@@ -100,9 +100,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         0.000277777777780,
         -0.000277777777780,
     ],
-    "wcs": {
-        "default_bands": ["elevation"],
-    },
     "styling": {
         "default_style": "greyscale",
         "styles": [style_greyscale, style_colours],

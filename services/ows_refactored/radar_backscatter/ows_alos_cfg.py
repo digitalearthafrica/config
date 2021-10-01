@@ -152,9 +152,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     ],
     "native_crs": "EPSG:4326",
     "native_resolution": [0.000222222222222, -0.000222222222222],
-    "wcs": {
-        "default_bands": ["hh", "hv", "mask"],
-    },
     "styling": {
         "default_style": "hh",
         "styles": [

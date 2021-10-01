@@ -48,9 +48,6 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     },
     "native_crs": "EPSG:6933",
     "native_resolution": [10.0, -10.0],
-    "wcs": {
-        "default_bands": ["red", "green", "blue"],
-    },
     "styling": {
         "default_style": "simple_rgb",
         "styles": styles_gm_list,

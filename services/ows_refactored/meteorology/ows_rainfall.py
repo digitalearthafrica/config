@@ -68,9 +68,6 @@ Spanning 50°S-50°N (and all longitudes) and ranging from 1981 to near-present,
         0.05000000074505806,
         -0.050000000745058060,
     ],
-    "wcs": {
-        "default_bands": ["rainfall"],
-    },
     "styling": {
         "default_style": "rainfall",
         "styles": [style_rainfall],
