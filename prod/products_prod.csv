@@ -2,6 +2,7 @@ product,definition
 alos_palsar_mosaic,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/alos_palsar_mosaic.odc-product.yaml
 crop_mask_eastern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_eastern.odc-product.yaml
 crop_mask_western,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_western.odc-product.yaml
+crop_mask_northern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_northern.odc-product.yaml
 dem_srtm,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/dem_srtm.odc-product.yaml
 io_lulc,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/io_lulc.odc-product.yaml
 fc_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/fc_ls.odc-product.yaml
