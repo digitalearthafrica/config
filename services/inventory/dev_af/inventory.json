@@ -381,9 +381,9 @@
               "non_green_veg_10",
               "non_green_veg_50",
               "non_green_veg_90",
-              "bare_soil_10",
-              "bare_soil_50",
-              "bare_soil_90"
+              "bare_ground_10",
+              "bare_ground_50",
+              "bare_ground_90"
             ]
         }
     ]
