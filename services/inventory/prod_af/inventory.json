@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 22,
+    "total_layers_count": 23,
     "layers": [
         {
             "product": [
@@ -140,6 +140,31 @@
                 "red_edge_3",
                 "nir",
                 "narrow_nir",
+                "swir_1",
+                "swir_2",
+                "count",
+                "tmad_rgb_std",
+                "tmad_rgb_sens",
+                "arcsec_sdev",
+                "log_edev",
+                "log_bcdev"
+            ]
+        },
+        {
+            "product": [
+                "gm_ls8_annual"
+            ],
+            "styles_count": 17,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
                 "swir_1",
                 "swir_2",
                 "count",
