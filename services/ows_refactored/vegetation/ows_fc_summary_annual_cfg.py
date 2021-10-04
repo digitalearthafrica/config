@@ -53,7 +53,7 @@ bands_fc_percentile = {
 
 green_veg_10 = {
     "name": "green_veg_10",
-    "title": "10th Percentile",
+    "title": "Green Veg, 10th Percentile",
     "abstract": "10th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -92,7 +92,7 @@ green_veg_10 = {
 
 green_veg_50 = {
     "name": "green_veg_50",
-    "title": "50th Percentile",
+    "title": "Green Veg, 50th Percentile",
     "abstract": "50th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -117,7 +117,7 @@ green_veg_50 = {
 
 green_veg_90 = {
     "name": "green_veg_90",
-    "title": "90th Percentile",
+    "title": "Green Veg, 90th Percentile",
     "abstract": "90th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -142,7 +142,7 @@ green_veg_90 = {
 
 non_green_veg_10 = {
     "name": "non_green_veg_10",
-    "title": "10th Percentile",
+    "title": "Non-green Veg, 10th Percentile",
     "abstract": "10th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -179,7 +179,7 @@ non_green_veg_10 = {
 
 non_green_veg_50 = {
     "name": "non_green_veg_50",
-    "title": "50th Percentile",
+    "title": "Green Veg, 50th Percentile",
     "abstract": "50th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -204,7 +204,7 @@ non_green_veg_50 = {
 
 non_green_veg_90 = {
     "name": "non_green_veg_90",
-    "title": "90th Percentile",
+    "title": "Green Veg, 90th Percentile",
     "abstract": "90th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -229,7 +229,7 @@ non_green_veg_90 = {
 
 bare_ground_10 = {
     "name": "bare_ground_10",
-    "title": "10th Percentile",
+    "title": "Bare Ground, 10th Percentile",
     "abstract": "10th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -269,7 +269,7 @@ bare_ground_10 = {
 
 bare_ground_50 = {
     "name": "bare_ground_50",
-    "title": "50th Percentile",
+    "title": "Bare Ground, 50th Percentile",
     "abstract": "50th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -294,7 +294,7 @@ bare_ground_50 = {
 
 bare_ground_90 = {
     "name": "bare_ground_90",
-    "title": "90th Percentile",
+    "title": "Bare Ground, 90th Percentile",
     "abstract": "90th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -360,6 +360,7 @@ This contains a three band combination of the 50th Percentile for green vegetati
 Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. To be considered in the FCP product a pixel must have had at least 10 clear observations over the year.
 """,
     "product_name": "fc_ls_summary_annual",
+    "time_resolution": "year",
     "bands": bands_fc_percentile,
     "resource_limits": reslim_wms_min_zoom_15,
     # "flags": fc_percentile_flags,
