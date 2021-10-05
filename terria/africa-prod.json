@@ -553,6 +553,23 @@
                     "shareKeys": [
                         "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Western Africa"
                     ]
+                },
+                {
+                    "type": "wms",
+                    "name": "Cropland Extent 2019 - Northern Africa",
+                    "url": "https://ows.digitalearth.africa/",
+                    "opacity": 1,
+                    "layers": "crop_mask_northern",
+                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                    "linkedWcsCoverage": "crop_mask_northern",
+                    "tileErrorHandlingOptions": {
+                        "ignoreUnknownTileErrors": true,
+                        "thresholdBeforeDisablingItem": 100000
+                    },
+                    "id": "crop_northern",
+                    "shareKeys": [
+                        "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Northern Africa"
+                    ]
                 }
             ],
             "shareKeys": [
