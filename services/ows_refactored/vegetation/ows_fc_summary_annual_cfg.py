@@ -179,7 +179,7 @@ non_green_veg_10 = {
 
 non_green_veg_50 = {
     "name": "non_green_veg_50",
-    "title": "Green Veg, 50th Percentile",
+    "title": "Non-Green Veg, 50th Percentile",
     "abstract": "50th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -204,7 +204,7 @@ non_green_veg_50 = {
 
 non_green_veg_90 = {
     "name": "non_green_veg_90",
-    "title": "Green Veg, 90th Percentile",
+    "title": "Non-Green Veg, 90th Percentile",
     "abstract": "90th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
