@@ -319,7 +319,7 @@ bare_ground_90 = {
 
 fc_rgb = {
     "name": "fc_rgb",
-    "title": "Three-band fractional cover",
+    "title": "Three-band Fractional Cover 50th Percentile",
     "abstract": "Fractional cover medians - red is bare soil, green is green vegetation and blue is non-green vegetation",
     "components": {
         "red": {"bs_pc_50": 1.0},
