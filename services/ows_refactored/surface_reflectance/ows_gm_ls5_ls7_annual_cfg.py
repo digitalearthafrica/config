@@ -4,7 +4,7 @@ from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls8_list
 
 
 layer = {
-    "title": "Surface Reflectance Annual GeoMAD Landsat 8",
+    "title": "Surface Reflectance Annual GeoMAD Landsat 5 & Landsat 7",
     "name": "gm_ls5_ls7_annual",
     "abstract": """
 Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.
@@ -18,9 +18,9 @@ In addition, surface reflectance varabilities within the same time period can be
 
 More techincal information about the GeoMAD product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html)
 
-This product has a spatial resolution of 30 m and is available annually for 2018.
+This product has a spatial resolution of 30 m and is available annually from 1984 to 2012.
 
-It is derived from Surface Reflectance Sentinel-2 data. This product was compiled using U.S. Geological Survey Landsat data 2018.
+It is derived from USGS Collection 2, Level 2 Landsat 5 & 7 surface reflectance data.
 
 Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation. The MADs can be used on their own or together with geomedian to gain insights about the land surface, e.g. for land cover classificiation and for change detection from year to year.
 
