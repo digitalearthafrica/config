@@ -55,6 +55,19 @@ bands_ls8_gm = {
     "COUNT": ["count"],
 }
 
+bands_ls5_ls7_gm = {
+    "SR_B1": ["blue", "band_2"],
+    "SR_B2": ["green", "band_3"],
+    "SR_B3": ["red", "band_4"],
+    "SR_B4": ["nir", "band_5"],
+    "SR_B5": ["swir_1", "band_6"],
+    "SR_B7": ["swir_2", "band_7"],
+    "SMAD": ["smad", "sdev", "SDEV"],
+    "EMAD": ["emad", "edev", "EDEV"],
+    "BCMAD": ["bcmad", "bcdev", "BCDEV"],
+    "COUNT": ["count"],
+}
+
 bands_ls = {
     "red": [],
     "green": [],
