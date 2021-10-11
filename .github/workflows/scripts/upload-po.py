@@ -29,4 +29,4 @@ if __name__ == '__main__':
     project_id = os.environ['POEDITOR_PROJECT_ID']
     api_token = os.environ['POEDITOR_API_TOKEN']
 
-    upload_terms('output/messages.po', project_id, api_token)
+    upload_terms('messages.po', project_id, api_token)
