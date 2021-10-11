@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 28,
+    "total_layers_count": 27,
     "layers": [
         {
             "product": [
@@ -152,6 +152,56 @@
         },
         {
             "product": [
+                "gm_ls8_annual"
+            ],
+            "styles_count": 17,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir_1",
+                "swir_2",
+                "count",
+                "tmad_rgb_std",
+                "tmad_rgb_sens",
+                "arcsec_sdev",
+                "log_edev",
+                "log_bcdev"
+            ]
+        },
+        {
+            "product": [
+                "gm_ls5_ls7_annual"
+            ],
+            "styles_count": 17,
+            "styles_list": [
+                "simple_rgb",
+                "infrared_green",
+                "ndvi",
+                "ndwi",
+                "mndwi",
+                "blue",
+                "green",
+                "red",
+                "nir",
+                "swir_1",
+                "swir_2",
+                "count",
+                "tmad_rgb_std",
+                "tmad_rgb_sens",
+                "arcsec_sdev",
+                "log_edev",
+                "log_bcdev"
+            ]
+        },
+        {
+            "product": [
                 "gm_s2_semiannual"
             ],
             "styles_count": 22,
@@ -194,78 +244,26 @@
             "product": [
                 "wofs_ls_summary_annual"
             ],
-            "styles_count": 4,
+            "styles_count": 5,
             "styles_list": [
-                "wofs_summary_annual_frequency",
-                "wofs_summary_annual_frequency_blue",
-                "wofs_summary_annual_wet",
-                "wofs_summary_annual_clear"
+            "wofs_summary_annual_frequency",
+            "legacy_wofs_summary_annual_frequency",
+            "legacy_wofs_summary_annual_frequency_blue",
+            "legacy_wofs_summary_annual_wet",
+            "legacy_wofs_summary_annual_clear"
             ]
         },
         {
             "product": [
-                "ga_ls8c_wofs_2"
+                "wofs_ls_summary_alltime"
             ],
-            "styles_count": 2,
+            "styles_count": 5,
             "styles_list": [
-                "observations",
-                "wet"
-            ]
-        },
-        {
-            "product": [
-                "ga_ls8c_wofs_2_annual_summary"
-            ],
-            "styles_count": 2,
-            "styles_list": [
-                "WOfS_frequency",
-                "WOfS_frequency_blues_transparent"
-            ]
-        },
-        {
-            "product": [
-                "ga_ls8c_wofs_2_annual_summary"
-            ],
-            "styles_count": 1,
-            "styles_list": [
-                "water_observations"
-            ]
-        },
-        {
-            "product": [
-                "ga_ls8c_wofs_2_annual_summary"
-            ],
-            "styles_count": 1,
-            "styles_list": [
-                "annual_clear_observations"
-            ]
-        },
-        {
-            "product": [
-                "ga_ls8c_wofs_2_summary"
-            ],
-            "styles_count": 2,
-            "styles_list": [
-                "WOfS_frequency",
-                "WOfS_frequency_blues_transparent"
-            ]
-        },
-        {
-            "product": [
-                "ga_ls8c_wofs_2_summary"
-            ],
-            "styles_count": 1,
-            "styles_list": [
-                "water_observations"
-            ]
-        },
-        {
-            "product": [
-                "ga_ls8c_wofs_2_summary"
-            ],
-            "styles_count": 1,
-            "styles_list": [
-                "annual_clear_observations"
+            "wofs_summary_alltime_frequency",
+            "legacy_wofs_summary_alltime_frequency",
+            "legacy_wofs_summary_alltime_frequency_blue",
+            "legacy_wofs_summary_alltime_wet",
+            "legacy_wofs_summary_alltime_clear"
             ]
         },
         {
@@ -344,6 +342,17 @@
         },
         {
             "product": [
+                "crop_mask_northern"
+            ],
+            "styles_count": 3,
+            "styles_list": [
+                "green",
+                "filtered_yellow",
+                "prob"
+            ]
+        },
+        {
+            "product": [
                 "pc_s2_annual"
             ],
             "styles_count": 4,
@@ -358,16 +367,12 @@
             "product": [
                 "pc_ls8_annual"
             ],
-            "styles_count": 8,
+            "styles_count": 4,
             "styles_list": [
-                "pc_annual_clear",
-                "pc_annual_clear_aerosol",
-                "pc_annual_clear_2_2_2_aerosol",
                 "pc_annual_total",
-                "pc_annual_clear_2_2_2",
-                "pc_annual_clear_2_0_2",
-                "pc_annual_clear_2_2_0",
-                "pc_annual_clear_10_2_2"
+                "pc_annual_clear",
+                "pc_annual_clear_2_5",
+                "pc_annual_clear_5_5"
             ]
         },
         {
@@ -377,6 +382,33 @@
             "styles_count": 1,
             "styles_list": [
                 "style_colours"
+            ]
+        },
+        {
+            "product": [
+                "rainfall_chirps_monthly"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "rainfall"
+            ]
+        },
+        {
+            "product": [
+                "fc_ls_summary_annual"
+            ],
+            "styles_count": 10,
+            "styles_list": [
+              "fc_rgb",
+              "green_veg_10",
+              "green_veg_50",
+              "green_veg_90",
+              "non_green_veg_10",
+              "non_green_veg_50",
+              "non_green_veg_90",
+              "bare_ground_10",
+              "bare_ground_50",
+              "bare_ground_90"
             ]
         }
     ]

@@ -20,19 +20,14 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "EPSG:4326": {"geographic": True, "vertical_coord_first": True},  # WGS-84
+            "EPSG:4326": {  # WGS-84
+                "geographic": True,
+                "vertical_coord_first": True
+            },
             "EPSG:6933": {  # Cylindrical equal area
                 "geographic": False,
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
-            },
-            "ESRI:102022": {
-                "geographic": False,
-                "horizontal_coord": "x",
-                "vertical_coord": "y",
-            },
-            "epsg:6933": {
-                "alias": "EPSG:6933"
             }
         },
         "allowed_urls": [
@@ -52,7 +47,7 @@ ows_cfg = {
         ],
         "contact_info": {
             "person": "Digital Earth Africa",
-            "organisation": "Geoscience Australia",
+            "organisation": "Digital Earth Africa",
             "position": "",
             "address": {
                 "type": "postal",
@@ -151,7 +146,15 @@ ows_cfg = {
                                     "abstract": """Annual surface reflectance""",
                                     "layers": [
                                         {
-                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.dev_layer",
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_ls8_annual_cfg.layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_ls5_ls7_annual_cfg.layer",
                                             "type": "python",
                                         },
                                     ],
@@ -229,10 +232,6 @@ ows_cfg = {
                     "abstract": """Surface water""",
                     "layers": [
                         {
-                            "include": "ows_refactored.wofs.ows_wofsc2_cfg.layers",
-                            "type": "python",
-                        },
-                        {
                             "title": "Daily water",
                             "abstract": """Daily water""",
                             "layers": [
@@ -247,7 +246,17 @@ ows_cfg = {
                             "abstract": """Annual water""",
                             "layers": [
                                 {
-                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.dev_layer",
+                                    "type": "python",
+                                }
+                            ]
+                        },
+                        {
+                            "title": "All-time water",
+                            "abstract": """All-time water""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.dev_layer",
                                     "type": "python",
                                 }
                             ]
@@ -282,10 +291,14 @@ ows_cfg = {
                             "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
                             "type": "python",
                         },
+                        {
+                            "include": "ows_refactored.vegetation.ows_fc_summary_annual_cfg.layer",
+                            "type": "python"
+                        }
                     ],
                 },
                 {
-                    "title": "Pixel Count",
+                    "title": "Pixel count",
                     "abstract": """Pixel Count""",
                     "layers": [
                         {
@@ -299,11 +312,21 @@ ows_cfg = {
                     ],
                 },
                 {
-                    "title": "Land Cover",
+                    "title": "Land cover",
                     "abstract": """Land Cover""",
                     "layers": [
                         {
                             "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
+                            "type": "python"
+                        }
+                    ]
+                },
+                {
+                    "title": "Meteorology",
+                    "abstract": """Meteorology""",
+                    "layers": [
+                        {
+                            "include": "ows_refactored.meteorology.ows_rainfall.layer",
                             "type": "python"
                         }
                     ]

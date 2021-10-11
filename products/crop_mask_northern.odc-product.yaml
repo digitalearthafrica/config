@@ -1,6 +1,6 @@
 ---
-name: crop_mask_western
-description: Annual cropland extent map for Western Africa
+name: crop_mask_northern
+description: Annual cropland extent map for Northern Africa
   produced by Digital Earth Africa.
 metadata_type: eo3
 
@@ -8,7 +8,7 @@ license: CC-BY-4.0
 
 metadata:
   product:
-    name: crop_mask_western
+    name: crop_mask_northern
 
 storage:
   crs: EPSG:6933

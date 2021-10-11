@@ -14,9 +14,6 @@ storage:
   resolution:
     x: 30
     y: -30
-  tile_size:
-    x: 96000.0
-    y: 96000.0
 
 measurements:
   - name: count_wet

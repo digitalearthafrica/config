@@ -1,8 +1,9 @@
 # Digital Earth Africa Config
 Config files for Digital Earth Africa datacube and associated applications
 
-![Docker Image CI](https://github.com/digitalearthafrica/config/workflows/Docker%20Image%20CI/badge.svg)
+[![OWS Configuration Test and Build](https://github.com/digitalearthafrica/config/actions/workflows/ows-config-test-build.yaml/badge.svg)](https://github.com/digitalearthafrica/config/actions/workflows/ows-config-test-build.yaml)
 ![Terria catalog Linting](https://github.com/digitalearthafrica/config/workflows/Terria%20catalog%20Linting/badge.svg)
+[![Check Product Lists](https://github.com/digitalearthafrica/config/actions/workflows/product-lists-test.yaml/badge.svg)](https://github.com/digitalearthafrica/config/actions/workflows/product-lists-test.yaml)
 
 Changes to this repo will generate a new docker image that includes the config files. Changes will be tagged as an unstable build.
 To release to production, create a git tag for the current code and a stable version will be created using that value.

@@ -15,9 +15,6 @@ storage:
   resolution:
     x: 20
     y: -20
-  tile_size:
-    x: 96000
-    y: 96000
 
 measurements:
   - name: total

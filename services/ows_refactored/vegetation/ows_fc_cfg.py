@@ -96,11 +96,11 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     ],
     "native_crs": "EPSG:3857",
     "native_resolution": [30.0, -30.0],
-    "wcs": {
-        "default_bands": ["BS", "PV", "NPV"],
-    },
     "styling": {
         "default_style": "simple_fc_unmasked",
-        "styles": [style_fc_unmasked, style_fc_simple],
+        "styles": [
+            style_fc_unmasked,
+            style_fc_simple
+        ],
     },
 }
