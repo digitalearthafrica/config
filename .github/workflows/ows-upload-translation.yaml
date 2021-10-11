@@ -1,0 +1,54 @@
+name: OWS Translation extract and upload
+
+on:
+  push:
+    paths:
+      - 'services/**'
+      - .github/workflows/ows-upload-translation.yaml
+
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'services/**'
+      - .github/workflows/ows-upload-translation.yaml
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python environment
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poeditor
+
+      - name: Prepare the DB
+        run: |
+          docker-compose -f docker-compose.ows.yaml up -d
+          docker-compose -f docker-compose.ows.yaml exec -T ows datacube system init
+          docker-compose -f docker-compose.ows.yaml exec -T ows datacube-ows-update --schema --role postgres
+
+    - name: Upload English Terms translation
+      run: |
+        docker-compose -f docker-compose.ows.yaml exec \
+          -e DATACUBE_OWS_CFG=ows_refactored.prod_af_ows_root_cfg.ows_cfg \
+          -T ows \
+          datacube-ows-cfg extract -m output/messages.po
+
+    - name: Upload terms to POEditor.com
+      env:
+        POEDITOR_API_TOKEN: ${{ secrets.POEDITOR_API_TOKEN }}
+        POEDITOR_PROJECT_ID: "471013"
+      run: |
+        python .github/workflows/scripts/upload-po.py
+
+    - name: Remove the DB
+      run: |    
+        docker-compose -f docker-compose.ows.yaml down
