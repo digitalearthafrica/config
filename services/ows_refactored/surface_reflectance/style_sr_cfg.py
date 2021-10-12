@@ -712,7 +712,7 @@ style_sentinel_count = {
     },
 }
 
-style_gm_count = {
+style_gm_s2_count = {
     "name": "count",
     "title": "Clear observation count",
     "abstract": "Count of observations included in geomedian/MAD calculations",
@@ -757,6 +757,53 @@ style_gm_count = {
         },
     },
 }
+
+style_gm_ls_count = {
+    "name": "count",
+    "title": "Clear observation count",
+    "abstract": "Count of observations included in geomedian/MAD calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count",
+        },
+    },
+    "needed_bands": ["count"],
+    "include_in_feature_info": False,
+    "color_ramp": [
+        {"value": 0, "color": "#666666", "alpha": 0},
+        {
+            # purely for legend display
+            # we should not get fractional
+            # values in this styles
+            "value": 0.2,
+            "color": "#890000",
+            "alpha": 1,
+        },
+        {"value": 5, "color": "#990000"},
+        {"value": 10, "color": "#E38400"},
+        {"value": 15, "color": "#E3DF00"},
+        {"value": 20, "color": "#A6E300"},
+        {"value": 25, "color": "#00E32D"},
+        {"value": 30, "color": "#00E3C8"},
+        {"value": 35, "color": "#0097E3"},
+        {"value": 40, "color": "#005FE3"},
+        {"value": 45, "color": "#000FE3"},
+        {"value": 50, "color": "#000EA9"},
+        {"value": 55, "color": "#5700E3"},
+    ],
+    "legend": {
+        "begin": "0",
+        "end": "55",
+        "decimal_places": 0,
+        "ticks_every": 5,
+        "tick_labels": {
+            "55": {"prefix": ">"},
+        },
+    },
+}
+
 
 # styles tmad
 sdev_scaling = [0.020, 0.18]
@@ -949,7 +996,7 @@ styles_gm_list = [
     style_tmad_sdev_std,
     style_tmad_edev_std,
     style_tmad_bcdev_std,
-    style_gm_count,
+    style_gm_s2_count,
 ]
 
 # Used in the LS8 GeoMAD
@@ -970,7 +1017,7 @@ styles_gm_ls8_list = [
     style_tmad_sdev_std,
     style_tmad_edev_std,
     style_tmad_bcdev_std,
-    style_gm_count,
+    style_gm_ls_count,
 ]
 
 styles_sr_list = [
