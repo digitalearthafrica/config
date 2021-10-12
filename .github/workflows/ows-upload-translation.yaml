@@ -38,11 +38,10 @@ jobs:
 
       - name: Upload English Terms translation
         run: |
-          pwd
           docker-compose -f docker-compose.ows.yaml exec \
             -e DATACUBE_OWS_CFG=ows_refactored.prod_af_ows_root_cfg.ows_cfg \
             -T ows \
-            datacube-ows-cfg extract -m output/messages.po
+            datacube-ows-cfg extract -m /env/config/output/messages.po
 
       - name: Upload terms to POEditor.com
         env:
