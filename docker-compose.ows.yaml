@@ -24,5 +24,4 @@ services:
     volumes:
       - ./services/ows_refactored:/env/config/ows_refactored/
       - ./services/inventory:/env/config/inventory/
-      - ./extract-po.sh:/env/config/extract-po.sh
       - ./output:/env/config/output
