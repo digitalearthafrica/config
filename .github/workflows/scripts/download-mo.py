@@ -1,9 +1,12 @@
 import os
+from pathlib import Path
 from poeditor import POEditorAPI
 
 
 def download_translation(file_path, project_id, api_token):
     client = POEditorAPI(api_token=api_token)
+
+    os.makedirs(Path(file_path).absolute().parent, exist_ok=True)
 
     client.export(
         project_id=project_id,
