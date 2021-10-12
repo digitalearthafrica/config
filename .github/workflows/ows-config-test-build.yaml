@@ -84,6 +84,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Upload terms to POEditor.com
+      env:
+        POEDITOR_API_TOKEN: ${{ secrets.POEDITOR_API_TOKEN }}
+        POEDITOR_PROJECT_ID: "471013"
+      run: |
+        python .github/workflows/scripts/download-mo.py
+
     - name: Push to DockerHub (master branch or tagged release only)
       if: github.ref == 'refs/heads/master' || github.event_name == 'release'
       env:

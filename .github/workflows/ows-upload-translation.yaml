@@ -36,7 +36,7 @@ jobs:
           docker-compose -f docker-compose.ows.yaml exec -T ows datacube system init
           docker-compose -f docker-compose.ows.yaml exec -T ows datacube-ows-update --schema --role postgres
 
-      - name: Upload English Terms translation
+      - name: Generate English Terms translation file
         run: |
           docker-compose -f docker-compose.ows.yaml exec \
             -e DATACUBE_OWS_CFG=ows_refactored.prod_af_ows_root_cfg.ows_cfg \
