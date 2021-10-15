@@ -1,24 +1,24 @@
 # reslim
 
 # Defines cache control on GetMap requests
-dataset_cache_rules = [   
-   {    
-       "min_datasets": 5,    
-       "max_age": 60 * 60 * 24,    
-   },    
-   {    
-       "min_datasets": 9,    
+dataset_cache_rules = [
+   {
+       "min_datasets": 5,
+       "max_age": 60 * 60 * 24,
+   },
+   {
+       "min_datasets": 9,
        "max_age": 60 * 60 * 24 * 7,
-   },   
-   {    
-       "min_datasets": 17,    
+   },
+   {
+       "min_datasets": 17,
        "max_age": 60 * 60 * 24 * 30,
-   },   
-   {    
-       "min_datasets": 65,    
+   },
+   {
+       "min_datasets": 65,
        "max_age": 60 * 60 * 24 * 120,
-   },   
-] 
+   },
+]
 
 reslim_wms_min_zoom_15 = {
     "wms": {
@@ -28,7 +28,7 @@ reslim_wms_min_zoom_15 = {
         "dataset_cache_rules": dataset_cache_rules,
     },
     "wcs": {
-        "max_datasets": 32, # Defaults to no dataset limit
+        "max_datasets": 32,  # Defaults to no dataset limit
     },
 }
 
@@ -76,7 +76,7 @@ reslim_landsat = {
         "dataset_cache_rules": dataset_cache_rules,
     },
     "wcs": {
-        "max_datasets": 32, # Defaults to no dataset limit
+        "max_datasets": 32,  # Defaults to no dataset limit
     },
 }
 
@@ -110,7 +110,7 @@ reslim_srtm = {
         "dataset_cache_rules": dataset_cache_rules,
     },
     "wcs": {
-        "max_datasets": 32, # Defaults to no dataset limit
+        "max_datasets": 32,  # Defaults to no dataset limit
     },
 }
 
@@ -122,7 +122,7 @@ reslim_wofs = {
         "dataset_cache_rules": dataset_cache_rules,
     },
     "wcs": {
-        "max_datasets": 32, # Defaults to no dataset limit
+        "max_datasets": 32,  # Defaults to no dataset limit
     },
 }
 reslim_wofs_daily = {
@@ -145,7 +145,7 @@ reslim_wofs_dry = {
         "dataset_cache_rules": dataset_cache_rules,
     },
     "wcs": {
-        "max_datasets": 32, # Defaults to no dataset limit
+        "max_datasets": 32,  # Defaults to no dataset limit
     },
 }
 
