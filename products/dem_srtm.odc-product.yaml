@@ -1,13 +1,13 @@
 ---
 name: dem_srtm
 description: 1 second elevation model
-metadata_type: eo
+metadata_type: eo3
+
+license: CC-BY-4.0
 
 metadata:
-  platform:
-    code: SRTM
-  instrument:
-    name: SIR
+  product:
+    name: dem_srtm
 
 storage:
   crs: EPSG:4326

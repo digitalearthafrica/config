@@ -1,0 +1,32 @@
+---
+name: dem_srtm_deriv
+description: 1 second elevation model derivatives
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: dem_srtm_deriv
+
+storage:
+  crs: EPSG:6933
+  resolution:
+    x: 30
+    y: -30
+
+measurements:
+  - name: mrvbf
+    dtype: int16
+    nodata: -32768.0
+    units: "1"
+
+  - name: mrrtf
+    dtype: int16
+    nodata: -32768.0
+    units: "1"
+
+  - name: slope
+    dtype: float32
+    nodata: -9999.0
+    units: "1"
