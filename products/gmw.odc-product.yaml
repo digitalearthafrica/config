@@ -1,0 +1,21 @@
+name: gmw
+description: GMW Mangrove Cover
+metadata_type: eo3
+
+metadata:
+  product:
+    name: gmw
+
+measurements:
+  - name: "data"
+    aliases: [classification]
+    units: "1"
+    dtype: uint8
+    nodata: 0
+    flags_definition:
+      data:
+        bits: [0, 1]
+        description: Mangrove Cover
+        values:
+          0: no data
+          1: mangrove
