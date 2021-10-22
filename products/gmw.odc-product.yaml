@@ -7,15 +7,8 @@ metadata:
     name: gmw
 
 measurements:
-  - name: "data"
+  - name: "mangrove"
     aliases: [classification]
     units: "1"
     dtype: uint8
     nodata: 0
-    flags_definition:
-      data:
-        bits: [0, 1]
-        description: Mangrove Cover
-        values:
-          0: no data
-          1: mangrove
