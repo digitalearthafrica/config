@@ -1,6 +1,6 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_srtm
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls5_ls7_gm
-from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls8_list
+from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls578_list
 
 
 layer = {
@@ -18,7 +18,7 @@ In addition, surface reflectance varabilities within the same time period can be
 
 More techincal information about the GeoMAD product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html)
 
-This product has a spatial resolution of 30 m and is available annually from 1984 to 2012.
+This product has a spatial resolution of 30 m and is available annually from 1984 to 2012 in selected areas.
 
 It is derived from USGS Collection 2, Level 2 Landsat 5 & 7 surface reflectance data.
 
@@ -50,6 +50,6 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     "native_resolution": [30.0, -30.0],
     "styling": {
         "default_style": "simple_rgb",
-        "styles": styles_gm_ls8_list,
+        "styles": styles_gm_ls578_list,
     }
 }

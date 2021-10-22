@@ -27,4 +27,4 @@ jobs:
     - name: Run Json Linter
       run: |
         npm install jsonlint -g
-        jsonlint terria/africa.json -q
+        jsonlint terria/africa-prod.json -q

@@ -999,8 +999,8 @@ styles_gm_list = [
     style_gm_s2_count,
 ]
 
-# Used in the LS8 GeoMAD
-styles_gm_ls8_list = [
+# Used in the LS8 GeoMAD and LS5-LS7 GeoMAD
+styles_gm_ls578_list = [
     style_gm_simple_rgb,
     style_gm_irg,
     style_tmad_rgb_std,

@@ -173,6 +173,24 @@
                     "Root Group/Satellite images/Surface reflectance/Annual/Annual GeoMAD (Landsat 8)"
                   ],
                   "availableDiffStyles": ["ndvi", "ndwi", "mndwi"]
+                },
+                {
+                  "type": "wms",
+                  "name": "Annual GeoMAD (Landsat 5 & Landsat 7)",
+                  "url": "https://ows.digitalearth.africa/",
+                  "opacity": 1,
+                  "layers": "gm_ls5_ls7_annual",
+                  "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "linkedWcsCoverage": "gm_ls5_ls7_annual",
+                  "tileErrorHandlingOptions": {
+                    "ignoreUnknownTileErrors": true,
+                    "thresholdBeforeDisablingItem": 100000
+                  },
+                  "id": "gm_ls5_ls7_annual",
+                  "shareKeys": [
+                    "Root Group/Satellite images/Surface reflectance/Annual/Annual GeoMAD (Landsat 5 & Landsat 7)"
+                  ],
+                  "availableDiffStyles": ["ndvi", "ndwi", "mndwi"]
                 }
               ],
               "shareKeys": [
