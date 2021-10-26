@@ -1,6 +1,7 @@
 ---
 name: gmw
-description: Global Mangrove Watch data sourced from the UN Environment Program at https://data.unep-wcmc.org/datasets/45
+description: Global Mangrove Watch data sourced from
+  the UN Environment Program at https://data.unep-wcmc.org/datasets/45
 metadata_type: eo3
 
 license: CC-BY-4.0
