@@ -33,3 +33,4 @@ fc_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/product
 fc_ls_summary_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/fc_ls_summary_annual.odc-product.yaml
 rainfall_chirps_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/rainfall_chirps_monthly.odc-product.yaml
 gmw,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gmw.odc-product.yaml
+esa_worldcover,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/esa_worldcover.odc-product.yaml
