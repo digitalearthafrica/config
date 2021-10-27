@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_io_lulc
+from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 
 bands_esri = {
     "data": [],
@@ -102,8 +102,10 @@ The global map was produced by applying this model to the Sentinel-2 2020 scene 
 """,
     "product_name": "io_lulc",
     "time_resolution": "year",
-    "bands": bands_esri,
-    "resource_limits": reslim_io_lulc,
+    "bands": {
+        "data": [],
+    },
+    "resource_limits": reslim_land_cover,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],

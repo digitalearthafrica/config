@@ -125,6 +125,7 @@ reslim_wofs = {
         "max_datasets": 32,  # Defaults to no dataset limit
     },
 }
+
 reslim_wofs_daily = {
     "wms": {
         "zoomed_out_fill_colour": [200, 180, 180, 160],
@@ -151,4 +152,4 @@ reslim_wofs_dry = {
 
 reslim_alos_palsar = reslim_srtm
 
-reslim_io_lulc = reslim_srtm
+reslim_land_cover = reslim_srtm

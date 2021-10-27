@@ -313,6 +313,10 @@ ows_cfg = {
                         {
                             "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
                             "type": "python"
+                        },
+                        {
+                            "include": "ows_refactored.land_cover.ows_esa_worldcover.layer",
+                            "type": "python"
                         }
                     ]
                 },
