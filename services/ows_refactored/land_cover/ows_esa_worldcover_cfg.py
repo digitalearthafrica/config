@@ -120,10 +120,10 @@ For more information, see https://esa-worldcover.s3.amazonaws.com/v100/2020/docs
         "always_fetch_bands": [],
         "manual_merge": False,
     },
-    "native_crs": "EPSG:6933",
+    "native_crs": "EPSG:4326",
     "native_resolution": [
-        10.0,
-        -10.0,
+        0.000083333333333,
+        -0.000083333333333,
     ],
     "styling": {
         "default_style": "style_colours",
