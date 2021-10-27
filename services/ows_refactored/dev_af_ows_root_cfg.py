@@ -315,7 +315,7 @@ ows_cfg = {
                             "type": "python"
                         },
                         {
-                            "include": "ows_refactored.land_cover.ows_esa_worldcover.layer",
+                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg.layer",
                             "type": "python"
                         }
                     ]

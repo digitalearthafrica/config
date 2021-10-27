@@ -104,7 +104,7 @@ Copernicus Global Land Service Land Cover (CGLS-LC) map at 100 m resolution (Buc
 2020a). The CGLS-LC workflow uses 100 m, 5-day, Proba-V data as an input which were re-processed
 to the Sentinel-2 UTM grid together with training data obtained at 10 m resolution.
 
-For the generationof the WorldCover product however both Sentinel-2 multi-spectral image data and Sentinel-1 C-band
+For the generation of the WorldCover product however both Sentinel-2 multi-spectral image data and Sentinel-1 C-band
 Synthetic Aperture Radar (SAR) data are used instead of Proba-V data.
 
 For more information, see https://esa-worldcover.s3.amazonaws.com/v100/2020/docs/WorldCover_PUM_V1.0.pdf
