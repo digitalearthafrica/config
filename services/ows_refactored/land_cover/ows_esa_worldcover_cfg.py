@@ -93,19 +93,12 @@ style_colours = {
 }
 
 layer = {
-    "title": "ESA Worldcover",
+    "title": "ESA WorldCover 2020",
     "name": "esa_worldcover",
     "abstract": """
-The ESA WorldCover global land cover product builds further on the GlobCover and CCI Land Cover
-experiences from the European Space Agency (Arino et al. 2008; ESA 2017).
+The ESA WorldCover 2020 product is a global, 10 m resolution land cover product, which Digital Earth Africa is making accessible over Africa.
 
-The algorithm used to generate the ESA WorldCover product is based on the algorithm to produce the dynamic yearly
-Copernicus Global Land Service Land Cover (CGLS-LC) map at 100 m resolution (Buchhorn et al.,
-2020a). The CGLS-LC workflow uses 100 m, 5-day, Proba-V data as an input which were re-processed
-to the Sentinel-2 UTM grid together with training data obtained at 10 m resolution.
-
-For the generation of the WorldCover product however both Sentinel-2 multi-spectral image data and Sentinel-1 C-band
-Synthetic Aperture Radar (SAR) data are used instead of Proba-V data.
+The product uses Sentinel-1 and Sentinel-2 data to produce 11 land cover classes, according to the GAO LCCS schema.
 
 For more information, see https://esa-worldcover.s3.amazonaws.com/v100/2020/docs/WorldCover_PUM_V1.0.pdf
 """,
