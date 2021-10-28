@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_srtm
+from ows_refactored.common.ows_reslim_cfg import reslim_continental
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_sentinel
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_s2_list
 
@@ -21,7 +21,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "product_name": "s2_l2a",
     "bands": bands_sentinel,
     "dynamic": True,
-    "resource_limits": reslim_srtm,
+    "resource_limits": reslim_continental,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],

@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 25,
+    "total_layers_count": 27,
     "layers": [
         {
             "product": [
@@ -299,6 +299,26 @@
         {
             "product": [
                 "dem_srtm"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "greyscale",
+                "colours"
+            ]
+        },
+        {
+            "product": [
+                "nasadem"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "greyscale",
+                "colours"
+            ]
+        },
+        {
+            "product": [
+                "dem_cop_30"
             ],
             "styles_count": 2,
             "styles_list": [

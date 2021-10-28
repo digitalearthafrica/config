@@ -102,7 +102,7 @@ reslim_zoom9 = {
     },
 }
 
-reslim_srtm = {
+reslim_continental = {
     "wms": {
         "zoomed_out_fill_colour": [150, 180, 200, 160],
         "min_zoom_factor": 10.0,
@@ -150,6 +150,6 @@ reslim_wofs_dry = {
     },
 }
 
-reslim_alos_palsar = reslim_srtm
+reslim_alos_palsar = reslim_continental
 
-reslim_land_cover = reslim_srtm
+reslim_land_cover = reslim_continental
