@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_srtm
+from ows_refactored.common.ows_reslim_cfg import reslim_continental
 
 bands_fc = {
     "BS": ["bare_soil"],
@@ -65,7 +65,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "ls_usgs_fc_scene",
     "bands": bands_fc,
-    "resource_limits": reslim_srtm,
+    "resource_limits": reslim_continental,
     # "time_resolution": "year",
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",

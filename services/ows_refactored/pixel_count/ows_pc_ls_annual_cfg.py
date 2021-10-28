@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_srtm
+from ows_refactored.common.ows_reslim_cfg import reslim_continental
 
 bands_pc_ls8_annual = {
     "total": [],
@@ -116,7 +116,7 @@ Annual number of observations and number of clear observations. This product is 
     "product_name": "pc_ls8_annual",
     "time_resolution": "year",
     "bands": bands_pc_ls8_annual,
-    "resource_limits": reslim_srtm,
+    "resource_limits": reslim_continental,
     "native_crs": "EPSG:6933",
     "native_resolution": [30.0, -30.0],
     "image_processing": {
