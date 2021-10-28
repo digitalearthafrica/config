@@ -154,7 +154,12 @@
                   "shareKeys": [
                     "Root Group/Satellite images/Surface reflectance/Annual/Annual GeoMAD (Sentinel-2)"
                   ],
-                  "availableDiffStyles": ["ndvi", "ndwi", "mndwi", "ndci"]
+                  "availableDiffStyles": [
+                    "ndvi",
+                    "ndwi",
+                    "mndwi",
+                    "ndci"
+                  ]
                 },
                 {
                   "type": "wms",
@@ -173,7 +178,11 @@
                   "shareKeys": [
                     "Root Group/Satellite images/Surface reflectance/Annual/Annual GeoMAD (Landsat 8)"
                   ],
-                  "availableDiffStyles": ["ndvi", "ndwi", "mndwi"]
+                  "availableDiffStyles": [
+                    "ndvi",
+                    "ndwi",
+                    "mndwi"
+                  ]
                 },
                 {
                   "type": "wms",
@@ -192,7 +201,11 @@
                   "shareKeys": [
                     "Root Group/Satellite images/Surface reflectance/Annual/Annual GeoMAD (Landsat 5 & Landsat 7)"
                   ],
-                  "availableDiffStyles": ["ndvi", "ndwi", "mndwi"]
+                  "availableDiffStyles": [
+                    "ndvi",
+                    "ndwi",
+                    "mndwi"
+                  ]
                 }
               ],
               "shareKeys": [
@@ -221,7 +234,12 @@
                   "shareKeys": [
                     "Root Group/Satellite images/Surface reflectance/Semiannual/Semiannual GeoMAD (Sentinel-2)"
                   ],
-                  "availableDiffStyles": ["ndvi", "ndwi", "mndwi", "ndci"]
+                  "availableDiffStyles": [
+                    "ndvi",
+                    "ndwi",
+                    "mndwi",
+                    "ndci"
+                  ]
                 }
               ],
               "shareKeys": [
@@ -462,87 +480,87 @@
       "name": "Surface water",
       "members": [
         {
-            "id": "water_daily",
-            "type": "group",
-            "name": "Daily surface water",
-            "members": [
-                {
-                    "type": "wms",
-                    "name": "Water Observations from Space feature layer",
-                    "url": "https://ows.digitalearth.africa/",
-                    "opacity": 1,
-                    "layers": "wofs_ls",
-                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                    "linkedWcsCoverage": "wofs_ls",
-                    "timeFilterPropertyName": "data_available_for_dates",
-                    "tileErrorHandlingOptions": {
-                        "ignoreUnknownTileErrors": true,
-                        "thresholdBeforeDisablingItem": 100000
-                    },
-                    "id": "wofs_ls",
-                    "shareKeys": [
-                        "Root Group/Surface water/Daily surface water/Water Observations from Space feature layer"
-                    ]
-                }
-            ],
-            "shareKeys": [
-                "Root Group/Surface water/Daily surface water"
-            ]
+          "id": "water_daily",
+          "type": "group",
+          "name": "Daily surface water",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Water Observations from Space feature layer",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "wofs_ls",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "wofs_ls",
+              "timeFilterPropertyName": "data_available_for_dates",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "wofs_ls",
+              "shareKeys": [
+                "Root Group/Surface water/Daily surface water/Water Observations from Space feature layer"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Surface water/Daily surface water"
+          ]
         },
         {
-            "id": "water_annual",
-            "type": "group",
-            "name": "Annual surface water",
-            "members": [
-                {
-                    "type": "wms",
-                    "name": "Water Observations from Space annual summary",
-                    "url": "https://ows.digitalearth.africa/",
-                    "opacity": 1,
-                    "layers": "wofs_ls_summary_annual",
-                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                    "linkedWcsCoverage": "wofs_ls_summary_annual",
-                    "timeFilterPropertyName": "data_available_for_dates",
-                    "tileErrorHandlingOptions": {
-                        "ignoreUnknownTileErrors": true,
-                        "thresholdBeforeDisablingItem": 100000
-                    },
-                    "id": "wofs_ls_summary_annual",
-                    "shareKeys": [
-                        "Root Group/Surface water/Annual surface water/Water Observations from Space annual summary"
-                    ]
-                }
-            ],
-            "shareKeys": [
-                "Root Group/Surface water/Annual surface water"
-            ]
+          "id": "water_annual",
+          "type": "group",
+          "name": "Annual surface water",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Water Observations from Space annual summary",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "wofs_ls_summary_annual",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "wofs_ls_summary_annual",
+              "timeFilterPropertyName": "data_available_for_dates",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "wofs_ls_summary_annual",
+              "shareKeys": [
+                "Root Group/Surface water/Annual surface water/Water Observations from Space annual summary"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Surface water/Annual surface water"
+          ]
         },
         {
-            "id": "water_alltime",
-            "type": "group",
-            "name": "All time surface water",
-            "members": [
-                {
-                    "type": "wms",
-                    "name": "Water Observations from Space all time summary",
-                    "url": "https://ows.digitalearth.africa/",
-                    "opacity": 1,
-                    "layers": "wofs_ls_summary_alltime",
-                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                    "linkedWcsCoverage": "wofs_ls_summary_alltime",
-                    "tileErrorHandlingOptions": {
-                        "ignoreUnknownTileErrors": true,
-                        "thresholdBeforeDisablingItem": 100000
-                    },
-                    "id": "wofs_ls_summary_alltime",
-                    "shareKeys": [
-                        "Root Group/Surface water/All time surface water/Water Observations from Space all time summary"
-                    ]
-                }
-            ],
-            "shareKeys": [
-                "Root Group/Surface water/All time surface water"
-            ]
+          "id": "water_alltime",
+          "type": "group",
+          "name": "All time surface water",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Water Observations from Space all time summary",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "wofs_ls_summary_alltime",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "wofs_ls_summary_alltime",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "wofs_ls_summary_alltime",
+              "shareKeys": [
+                "Root Group/Surface water/All time surface water/Water Observations from Space all time summary"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Surface water/All time surface water"
+          ]
         }
       ],
       "shareKeys": [
@@ -555,65 +573,65 @@
       "name": "Agriculture",
       "members": [
         {
-            "id": "crop_mask",
-            "type": "group",
-            "name": "Cropland Extent Map (Provisional)",
-            "members": [
-                {
-                    "type": "wms",
-                    "name": "Cropland Extent 2019 - Eastern Africa",
-                    "url": "https://ows.digitalearth.africa/",
-                    "opacity": 1,
-                    "layers": "crop_mask_eastern",
-                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                    "linkedWcsCoverage": "crop_mask_eastern",
-                    "tileErrorHandlingOptions": {
-                        "ignoreUnknownTileErrors": true,
-                        "thresholdBeforeDisablingItem": 100000
-                    },
-                    "id": "crop_eastern",
-                    "shareKeys": [
-                        "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Eastern Africa"
-                    ]
-                },
-                {
-                    "type": "wms",
-                    "name": "Cropland Extent 2019 - Western Africa",
-                    "url": "https://ows.digitalearth.africa/",
-                    "opacity": 1,
-                    "layers": "crop_mask_western",
-                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                    "linkedWcsCoverage": "crop_mask_western",
-                    "tileErrorHandlingOptions": {
-                        "ignoreUnknownTileErrors": true,
-                        "thresholdBeforeDisablingItem": 100000
-                    },
-                    "id": "crop_western",
-                    "shareKeys": [
-                        "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Western Africa"
-                    ]
-                },
-                {
-                    "type": "wms",
-                    "name": "Cropland Extent 2019 - Northern Africa",
-                    "url": "https://ows.digitalearth.africa/",
-                    "opacity": 1,
-                    "layers": "crop_mask_northern",
-                    "linkedWcsUrl": "https://ows.digitalearth.africa/",
-                    "linkedWcsCoverage": "crop_mask_northern",
-                    "tileErrorHandlingOptions": {
-                        "ignoreUnknownTileErrors": true,
-                        "thresholdBeforeDisablingItem": 100000
-                    },
-                    "id": "crop_northern",
-                    "shareKeys": [
-                        "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Northern Africa"
-                    ]
-                }
-            ],
-            "shareKeys": [
-                "Root Group/Agriculture/Cropland Extent Map (Provisional)"
-                ]
+          "id": "crop_mask",
+          "type": "group",
+          "name": "Cropland Extent Map (Provisional)",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Cropland Extent 2019 - Eastern Africa",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "crop_mask_eastern",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "crop_mask_eastern",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "crop_eastern",
+              "shareKeys": [
+                "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Eastern Africa"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Cropland Extent 2019 - Western Africa",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "crop_mask_western",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "crop_mask_western",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "crop_western",
+              "shareKeys": [
+                "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Western Africa"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Cropland Extent 2019 - Northern Africa",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "crop_mask_northern",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "crop_mask_northern",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "crop_northern",
+              "shareKeys": [
+                "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Northern Africa"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Agriculture/Cropland Extent Map (Provisional)"
+          ]
         }
       ],
       "shareKeys": [
@@ -621,7 +639,51 @@
       ]
     },
     {
-      "id": "cyb4Vy",
+      "id": "land_cover",
+      "type": "group",
+      "name": "Land Cover",
+      "members": [
+        {
+          "id": "io_lulc",
+          "type": "wms",
+          "name": "Impact Observatory Land Use/Land Cover",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "io_lulc",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "io_lulc",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+          "shareKeys": [
+            "Root Group/LandCover/Impact Observatory LULC"
+          ]
+        },
+        {
+          "id": "esa_worldcover",
+          "type": "wms",
+          "name": "ESA WorldCover",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "esa_worldcover",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "esa_worldcover",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+          "shareKeys": [
+            "Root Group/LandCover/ESA WorldCover"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/LandCover"
+      ]
+    },
+    {
+      "id": "elevation",
       "type": "group",
       "name": "Elevation",
       "members": [
@@ -637,7 +699,7 @@
             "ignoreUnknownTileErrors": true,
             "thresholdBeforeDisablingItem": 100000
           },
-          "id": "VVqNfV",
+          "id": "elevation_srtm",
           "shareKeys": [
             "Root Group/Elevation/Shuttle Radar Topography Mission"
           ]
