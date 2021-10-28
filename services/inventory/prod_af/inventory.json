@@ -308,6 +308,26 @@
         },
         {
             "product": [
+                "nasadem"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "greyscale",
+                "colours"
+            ]
+        },
+        {
+            "product": [
+                "dem_cop_30"
+            ],
+            "styles_count": 2,
+            "styles_list": [
+                "greyscale",
+                "colours"
+            ]
+        },
+        {
+            "product": [
                 "fc_ls"
             ],
             "styles_count": 2,
