@@ -113,7 +113,7 @@ NASADEM provides global topographic data at 1 arc-second (~30m) horizontal resol
 
 The product is indexed directly from Microsoft's Planetary Computer, for more information, see https://planetarycomputer.microsoft.com/dataset/nasadem
 """,
-    "product_name": "dem_srtm",
+    "product_name": "nasadem",
     "time_resolution": "year",
     "bands": {
         "elevation": []
