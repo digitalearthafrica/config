@@ -20,15 +20,12 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "EPSG:4326": {  # WGS-84
-                "geographic": True,
-                "vertical_coord_first": True
-            },
+            "EPSG:4326": {"geographic": True, "vertical_coord_first": True},  # WGS-84
             "EPSG:6933": {  # Cylindrical equal area
                 "geographic": False,
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
-            }
+            },
         },
         "allowed_urls": [
             "https://ows.dev.digitalearth.africa",
@@ -234,7 +231,7 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_cfg.layer",
                                     "type": "python",
                                 },
-                            ]
+                            ],
                         },
                         {
                             "title": "Annual water",
@@ -244,7 +241,7 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.dev_layer",
                                     "type": "python",
                                 }
-                            ]
+                            ],
                         },
                         {
                             "title": "All-time water",
@@ -254,9 +251,9 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.dev_layer",
                                     "type": "python",
                                 }
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     "title": "Agriculture",
@@ -275,10 +272,12 @@ ows_cfg = {
                         {
                             "include": "ows_refactored.elevation.ows_elevation_cfg.layer_srtm",
                             "type": "python",
-                        },{
+                        },
+                        {
                             "include": "ows_refactored.elevation.ows_elevation_cfg.layer_nasadem",
                             "type": "python",
-                        },{
+                        },
+                        {
                             "include": "ows_refactored.elevation.ows_elevation_cfg.layer_cop_30",
                             "type": "python",
                         },
@@ -294,8 +293,8 @@ ows_cfg = {
                         },
                         {
                             "include": "ows_refactored.vegetation.ows_fc_summary_annual_cfg.layer",
-                            "type": "python"
-                        }
+                            "type": "python",
+                        },
                     ],
                 },
                 {
@@ -318,13 +317,13 @@ ows_cfg = {
                     "layers": [
                         {
                             "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
-                            "type": "python"
+                            "type": "python",
                         },
                         {
                             "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg.layer",
-                            "type": "python"
-                        }
-                    ]
+                            "type": "python",
+                        },
+                    ],
                 },
                 {
                     "title": "Meteorology",
@@ -332,10 +331,10 @@ ows_cfg = {
                     "layers": [
                         {
                             "include": "ows_refactored.meteorology.ows_rainfall.layer",
-                            "type": "python"
+                            "type": "python",
                         }
-                    ]
-                }
+                    ],
+                },
             ],
         }
     ],
