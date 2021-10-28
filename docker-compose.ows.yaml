@@ -24,4 +24,4 @@ services:
     volumes:
       - ./services/ows_refactored:/env/config/ows_refactored/
       - ./services/inventory:/env/config/inventory/
-      - ./output:/env/config/output
+      - ./output:/env/config/output/
