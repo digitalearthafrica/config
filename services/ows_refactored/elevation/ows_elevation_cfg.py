@@ -70,7 +70,7 @@ style_colours = {
 }
 
 layer_srtm = {
-    "title": "Shuttle Radar Topography Mission Digital Elevation Model",
+    "title": "Shuttle Radar Topography Mission Digital Elevation Model (30 m)",
     "name": "dem_srtm",
     "abstract": """
 A Digital Elevation Model (DEM) is a digital representation of Earth’s topography. It helps to understand the land surface characteristics in the height dimension. It is also used as an ancillary dataset to calculate illumination and viewing geometry of a satellite imagery. DE Africa provides access to the Shuttle Radar Topography Mission (SRTM) v 3.0 (SRTMGL1) product.
@@ -106,7 +106,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 }
 
 layer_nasadem = {
-    "title": "NASADEM",
+    "title": "NASADEM (30 m)",
     "name": "nasadem",
     "abstract": """
 NASADEM provides global topographic data at 1 arc-second (~30m) horizontal resolution, derived primarily from data captured via the Shuttle Radar Topography Mission (SRTM).
@@ -136,7 +136,7 @@ The product is indexed directly from Microsoft's Planetary Computer, for more in
 }
 
 layer_cop_30 = {
-    "title": "Shuttle Radar Topography Mission Digital Elevation Model",
+    "title": "Copernicus Digital Elevation Model (30 m)",
     "name": "dem_cop_30",
     "abstract": """
 The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. This DSM is derived from an edited DSM named WorldDEM, where flattening of water bodies and consistent flow of rivers has been included. In addition, editing of shore- and coastlines, special features such as airports, and implausible terrain structures has also been applied.
