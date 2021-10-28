@@ -273,7 +273,13 @@ ows_cfg = {
                     "abstract": """Digital elevation model""",
                     "layers": [
                         {
-                            "include": "ows_refactored.elevation.ows_srtm_cfg.layer",
+                            "include": "ows_refactored.elevation.ows_elevation_cfg.layer_srtm",
+                            "type": "python",
+                        },{
+                            "include": "ows_refactored.elevation.ows_elevation_cfg.layer_nasadem",
+                            "type": "python",
+                        },{
+                            "include": "ows_refactored.elevation.ows_elevation_cfg.layer_cop_30",
                             "type": "python",
                         },
                     ],
