@@ -164,6 +164,7 @@
                   "layers": "gm_ls8_annual",
                   "linkedWcsUrl": "https://ows.digitalearth.africa/",
                   "linkedWcsCoverage": "gm_ls8_annual",
+                  "timeFilterPropertyName": "data_available_for_dates",
                   "tileErrorHandlingOptions": {
                     "ignoreUnknownTileErrors": true,
                     "thresholdBeforeDisablingItem": 100000
@@ -181,6 +182,7 @@
                   "opacity": 1,
                   "layers": "gm_ls5_ls7_annual",
                   "linkedWcsUrl": "https://ows.digitalearth.africa/",
+                  "timeFilterPropertyName": "data_available_for_dates",
                   "linkedWcsCoverage": "gm_ls5_ls7_annual",
                   "tileErrorHandlingOptions": {
                     "ignoreUnknownTileErrors": true,
@@ -210,6 +212,7 @@
                   "layers": "gm_s2_semiannual",
                   "linkedWcsUrl": "https://ows.digitalearth.africa/",
                   "linkedWcsCoverage": "gm_s2_semiannual",
+                  "timeFilterPropertyName": "data_available_for_dates",
                   "tileErrorHandlingOptions": {
                     "ignoreUnknownTileErrors": true,
                     "thresholdBeforeDisablingItem": 100000
