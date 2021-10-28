@@ -703,6 +703,40 @@
           "shareKeys": [
             "Root Group/Elevation/Shuttle Radar Topography Mission"
           ]
+        },
+        {
+          "type": "wms",
+          "name": "Copernicus 30 m",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "dem_cop_30",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "dem_cop_30",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+          "id": "elevation_cop_30",
+          "shareKeys": [
+            "Root Group/Elevation/Copernicus DEM 30"
+          ]
+        },
+        {
+          "type": "wms",
+          "name": "NASADEM",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "nasadem",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "nasadem",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+          "id": "nasadem",
+          "shareKeys": [
+            "Root Group/Elevation/NASADEM"
+          ]
         }
       ],
       "shareKeys": [
