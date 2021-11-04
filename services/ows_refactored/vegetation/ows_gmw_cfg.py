@@ -5,14 +5,14 @@ mangrove = {
     "title": "Mangroves",
     "abstract": "Global mangrove watch mangroves",
     "value_map": {
-        "mask": [
+        "mangrove": [
             {
                 "title": "Mangroves",
                 "color": "#00CED1",
                 "values": [1],
             }
         ]
-    },
+    }
 }
 
 
@@ -41,8 +41,6 @@ For more information, see https://data.unep-wcmc.org/datasets/45.
     "native_resolution": [0.0002, -0.0002],
     "styling": {
         "default_style": "mangrove",
-        "styles": [
-            mangrove
-        ],
-    },
+        "styles": [mangrove],
+    }
 }
