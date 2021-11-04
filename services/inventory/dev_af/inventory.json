@@ -439,6 +439,15 @@
               "bare_ground_50",
               "bare_ground_90"
             ]
-        }
+        },
+        {
+            "product": [
+                "gmw"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "mangrove"
+            ]
+        },
     ]
 }

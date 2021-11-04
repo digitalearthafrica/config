@@ -295,6 +295,10 @@ ows_cfg = {
                             "include": "ows_refactored.vegetation.ows_fc_summary_annual_cfg.layer",
                             "type": "python",
                         },
+                        {
+                            "include": "ows_refactored.vegetation.ows_gmw_cfg.layer",
+                            "type": "python",
+                        },
                     ],
                 },
                 {
