@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 30,
+    "total_layers_count": 31,
     "layers": [
         {
             "product": [
@@ -438,6 +438,15 @@
               "bare_ground_10",
               "bare_ground_50",
               "bare_ground_90"
+            ]
+        },
+        {
+            "product": [
+                "gmw"
+            ],
+            "styles_count": 1,
+            "styles_list": [
+                "mangrove"
             ]
         }
     ]
