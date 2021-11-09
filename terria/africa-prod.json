@@ -780,6 +780,33 @@
       "shareKeys": [
         "Root Group/Elevation"
       ]
+    },
+    {
+      "id": "meteorology",
+      "type": "group",
+      "name": "Meteorology",
+      "members": [
+        {
+          "type": "wms",
+          "name": "Rainfall (monthly)",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "rainfall_chirps_monthly",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "rainfall_chirps_monthly",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+          "id": "rainfall_chirps_monthly",
+          "shareKeys": [
+            "Root Group/Meteorology/Rainfall (monthly)"
+          ]
+        },
+      ],
+      "shareKeys": [
+        "Root Group/Meteorology"
+      ]
     }
   ],
   "corsDomains": [

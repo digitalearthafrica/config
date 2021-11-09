@@ -44,7 +44,7 @@ style_rainfall_monthly = {
 }
 
 layer = {
-    "title": "Rainfall (Monthly)",
+    "title": "Rainfall (monthly)",
     "name": "rainfall_chirps_monthly",
     "abstract": """
 Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) is a 35+ year quasi-global rainfall data set.
