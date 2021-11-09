@@ -639,7 +639,7 @@
       ]
     },
     {
-      "id": "EtSQbe",
+      "id": "fractional_cover",
       "type": "group",
       "name": "Fractional cover (provisional)",
       "members": [
@@ -670,7 +670,7 @@
           "shareKeys": [
             "Root Group/Fractional cover (provisional)/Daily fractional cover"
           ]
-        },
+        }
       ],
       "shareKeys": [
         "Root Group/Fractional cover (provisional)"
