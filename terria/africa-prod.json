@@ -575,11 +575,11 @@
         {
           "id": "crop_mask",
           "type": "group",
-          "name": "Cropland Extent Map (Provisional)",
+          "name": "Cropland extent map (provisional)",
           "members": [
             {
               "type": "wms",
-              "name": "Cropland Extent 2019 - Eastern Africa",
+              "name": "Cropland extent 2019 - Eastern Africa",
               "url": "https://ows.digitalearth.africa/",
               "opacity": 1,
               "layers": "crop_mask_eastern",
@@ -591,12 +591,12 @@
               },
               "id": "crop_eastern",
               "shareKeys": [
-                "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Eastern Africa"
+                "Root Group/Agriculture/Cropland extent map (provisional)/Cropland extent 2019 - Eastern Africa"
               ]
             },
             {
               "type": "wms",
-              "name": "Cropland Extent 2019 - Western Africa",
+              "name": "Cropland extent 2019 - Western Africa",
               "url": "https://ows.digitalearth.africa/",
               "opacity": 1,
               "layers": "crop_mask_western",
@@ -608,12 +608,12 @@
               },
               "id": "crop_western",
               "shareKeys": [
-                "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Western Africa"
+                "Root Group/Agriculture/Cropland extent map (provisional)/Cropland extent 2019 - Western Africa"
               ]
             },
             {
               "type": "wms",
-              "name": "Cropland Extent 2019 - Northern Africa",
+              "name": "Cropland extent 2019 - Northern Africa",
               "url": "https://ows.digitalearth.africa/",
               "opacity": 1,
               "layers": "crop_mask_northern",
@@ -625,12 +625,12 @@
               },
               "id": "crop_northern",
               "shareKeys": [
-                "Root Group/Agriculture/Cropland Extent Map (Provisional)/Cropland Extent 2019 - Northern Africa"
+                "Root Group/Agriculture/Cropland extent map (provisional)/Cropland extent 2019 - Northern Africa"
               ]
             }
           ],
           "shareKeys": [
-            "Root Group/Agriculture/Cropland Extent Map (Provisional)"
+            "Root Group/Agriculture/Cropland extent map (provisional)"
           ]
         }
       ],
@@ -639,9 +639,47 @@
       ]
     },
     {
+      "id": "fractional_cover",
+      "type": "group",
+      "name": "Fractional cover (provisional)",
+      "members": [
+        {
+          "id": "fc_daily",
+          "type": "group",
+          "name": "Daily fractional cover",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Fractional cover",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "fc_ls",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "fc_ls",
+              "timeFilterPropertyName": "data_available_for_dates",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "fc_ls",
+              "shareKeys": [
+                "Root Group/Fractional cover (provisional)/Daily fractional cover/Fractional cover"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Fractional cover (provisional)/Daily fractional cover"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Fractional cover (provisional)"
+      ]
+    },
+    {
       "id": "land_cover",
       "type": "group",
-      "name": "Land Cover",
+      "name": "Land cover",
       "members": [
         {
           "id": "io_lulc",
@@ -741,6 +779,33 @@
       ],
       "shareKeys": [
         "Root Group/Elevation"
+      ]
+    },
+    {
+      "id": "meteorology",
+      "type": "group",
+      "name": "Meteorology",
+      "members": [
+        {
+          "type": "wms",
+          "name": "Rainfall (monthly)",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "rainfall_chirps_monthly",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "rainfall_chirps_monthly",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+          "id": "rainfall_chirps_monthly",
+          "shareKeys": [
+            "Root Group/Meteorology/Rainfall (monthly)"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Meteorology"
       ]
     }
   ],
