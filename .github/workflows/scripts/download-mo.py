@@ -20,4 +20,4 @@ if __name__ == '__main__':
     project_id = os.environ['POEDITOR_PROJECT_ID']
     api_token = os.environ['POEDITOR_API_TOKEN']
 
-    download_translation('./translations/fr/LC_MESSAGES/ows_cfg.mo', project_id, api_token)
+    download_translation('./services/ows_refactored/translations/fr/LC_MESSAGES/ows_cfg.mo', project_id, api_token)
