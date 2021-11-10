@@ -639,41 +639,31 @@
       ]
     },
     {
-      "id": "fractional_cover",
+      "id": "vegetation",
       "type": "group",
-      "name": "Fractional cover (provisional)",
+      "name": "Vegetation",
       "members": [
         {
-          "id": "fc_daily",
-          "type": "group",
-          "name": "Daily fractional cover",
-          "members": [
-            {
-              "type": "wms",
-              "name": "Fractional cover",
-              "url": "https://ows.digitalearth.africa/",
-              "opacity": 1,
-              "layers": "fc_ls",
-              "linkedWcsUrl": "https://ows.digitalearth.africa/",
-              "linkedWcsCoverage": "fc_ls",
-              "timeFilterPropertyName": "data_available_for_dates",
-              "tileErrorHandlingOptions": {
-                "ignoreUnknownTileErrors": true,
-                "thresholdBeforeDisablingItem": 100000
-              },
-              "id": "fc_ls",
-              "shareKeys": [
-                "Root Group/Fractional cover (provisional)/Daily fractional cover/Fractional cover"
+          "type": "wms",
+          "name": "Fractional cover - daily (provisional)",
+          "url": "https://ows.digitalearth.africa/",
+          "opacity": 1,
+          "layers": "fc_ls",
+          "linkedWcsUrl": "https://ows.digitalearth.africa/",
+          "linkedWcsCoverage": "fc_ls",
+          "timeFilterPropertyName": "data_available_for_dates",
+          "tileErrorHandlingOptions": {
+            "ignoreUnknownTileErrors": true,
+            "thresholdBeforeDisablingItem": 100000
+          },
+            "id": "fc_ls",
+            "shareKeys": [
+            "Root Group/Vegetation/Fractional cover - daily (provisional)"
               ]
             }
           ],
-          "shareKeys": [
-            "Root Group/Fractional cover (provisional)/Daily fractional cover"
-          ]
-        }
-      ],
       "shareKeys": [
-        "Root Group/Fractional cover (provisional)"
+        "Root Group/Vegetation"
       ]
     },
     {
