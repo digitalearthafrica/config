@@ -3,24 +3,18 @@ name: jers_sar_mosaic
 description: JERS-1 SAR annual mosaic tiles generated for use in the Data Cube
   25m pixel spacing, WGS84. These tiles are derived from the orignal JAXA
   mosaics with conversion to GeoTIFF.
-metadata_type: eo
+metadata_type: eo3
+
+metadata:
+  product:
+    name: jers_sar_mosaic
 
 storage:
   crs: EPSG:4326
   resolution:
     longitude: 0.000222222222222
     latitude: -0.000222222222222
-  tile_size:
-    longitude: 5
-    latitude: 5
 
-metadata:
-  platform:
-    code: JERS-1
-  instrument:
-    name: SAR
-  format:
-    name: GeoTIFF
 
 measurements:
   - name: "hh"
