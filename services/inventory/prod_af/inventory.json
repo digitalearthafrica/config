@@ -1,400 +1,427 @@
 {
-    "total_layers_count": 27,
-    "layers": [
-        {
-            "product": [
-                "s2_l2a"
-            ],
-            "styles_count": 18,
-            "styles_list": [
-                "simple_rgb",
-                "infrared_green",
-                "ndvi",
-                "ndwi",
-                "mndwi",
-                "ndci",
-                "aerosol",
-                "blue",
-                "green",
-                "red",
-                "red_edge_1",
-                "red_edge_2",
-                "red_edge_3",
-                "nir",
-                "narrow_nir",
-                "swir_1",
-                "swir_2",
-                "scl"
-            ]
-        },
-        {
-            "product": [
-                "ls8_sr"
-            ],
-            "styles_count": 12,
-            "styles_list": [
-                "simple_rgb",
-                "infrared_green",
-                "ndvi",
-                "ndwi",
-                "mndwi",
-                "blue",
-                "green",
-                "red",
-                "nir",
-                "swir_1",
-                "swir_2",
-                "pixel_quality"
-            ]
-        },
-        {
-            "product": [
-                "ls7_sr"
-            ],
-            "styles_count": 12,
-            "styles_list": [
-                "simple_rgb",
-                "infrared_green",
-                "ndvi",
-                "ndwi",
-                "mndwi",
-                "blue",
-                "green",
-                "red",
-                "nir",
-                "swir_1",
-                "swir_2",
-                "pixel_quality"
-            ]
-        },
-        {
-            "product": [
-                "ls5_sr"
-            ],
-            "styles_count": 12,
-            "styles_list": [
-                "simple_rgb",
-                "infrared_green",
-                "ndvi",
-                "ndwi",
-                "mndwi",
-                "blue",
-                "green",
-                "red",
-                "nir",
-                "swir_1",
-                "swir_2",
-                "pixel_quality"
-            ]
-        },
-        {
-            "product": [
-                "ls8_st"
-            ],
-            "styles_count": 3,
-            "styles_list": [
-                "surface_temperature",
-                "surface_temperature_uncertainty",
-                "surface_temperature_masked"
-            ]
-        },
-        {
-            "product": [
-                "ls7_st"
-            ],
-            "styles_count": 3,
-            "styles_list": [
-                "surface_temperature",
-                "surface_temperature_uncertainty",
-                "surface_temperature_masked"
-            ]
-        },
-        {
-            "product": [
-                "ls5_st"
-            ],
-            "styles_count": 3,
-            "styles_list": [
-                "surface_temperature",
-                "surface_temperature_uncertainty",
-                "surface_temperature_masked"
-            ]
-        },
-        {
-            "product": [
-                "gm_s2_annual"
-            ],
-            "styles_count": 22,
-            "styles_list": [
-                "simple_rgb",
-                "infrared_green",
-                "ndvi",
-                "ndwi",
-                "mndwi",
-                "ndci",
-                "blue",
-                "green",
-                "red",
-                "red_edge_1",
-                "red_edge_2",
-                "red_edge_3",
-                "nir",
-                "narrow_nir",
-                "swir_1",
-                "swir_2",
-                "count",
-                "tmad_rgb_std",
-                "tmad_rgb_sens",
-                "arcsec_sdev",
-                "log_edev",
-                "log_bcdev"
-            ]
-        },
-        {
-            "product": [
-                "gm_ls8_annual"
-            ],
-            "styles_count": 17,
-            "styles_list": [
-                "simple_rgb",
-                "infrared_green",
-                "ndvi",
-                "ndwi",
-                "mndwi",
-                "blue",
-                "green",
-                "red",
-                "nir",
-                "swir_1",
-                "swir_2",
-                "count",
-                "tmad_rgb_std",
-                "tmad_rgb_sens",
-                "arcsec_sdev",
-                "log_edev",
-                "log_bcdev"
-            ]
-        },
-        {
-            "product": [
-                "gm_ls5_ls7_annual"
-            ],
-            "styles_count": 17,
-            "styles_list": [
-                "simple_rgb",
-                "infrared_green",
-                "ndvi",
-                "ndwi",
-                "mndwi",
-                "blue",
-                "green",
-                "red",
-                "nir",
-                "swir_1",
-                "swir_2",
-                "count",
-                "tmad_rgb_std",
-                "tmad_rgb_sens",
-                "arcsec_sdev",
-                "log_edev",
-                "log_bcdev"
-            ]
-        },
-        {
-            "product": [
-                "gm_s2_semiannual"
-            ],
-            "styles_count": 22,
-            "styles_list": [
-                "simple_rgb",
-                "infrared_green",
-                "ndvi",
-                "ndwi",
-                "mndwi",
-                "ndci",
-                "blue",
-                "green",
-                "red",
-                "red_edge_1",
-                "red_edge_2",
-                "red_edge_3",
-                "nir",
-                "narrow_nir",
-                "swir_1",
-                "swir_2",
-                "count",
-                "tmad_rgb_std",
-                "tmad_rgb_sens",
-                "arcsec_sdev",
-                "log_edev",
-                "log_bcdev"
-            ]
-        },
-        {
-            "product": [
-                "wofs_ls"
-            ],
-            "styles_count": 2,
-            "styles_list": [
-                "observations",
-                "wet"
-            ]
-        },
-        {
-            "product": [
-                "wofs_ls_summary_annual"
-            ],
-            "styles_count": 4,
-            "styles_list": [
-            "legacy_wofs_summary_annual_frequency",
-            "legacy_wofs_summary_annual_frequency_blue",
-            "legacy_wofs_summary_annual_wet",
-            "legacy_wofs_summary_annual_clear"
-            ]
-        },
-        {
-            "product": [
-                "wofs_ls_summary_alltime"
-            ],
-            "styles_count": 4,
-            "styles_list": [
-            "legacy_wofs_summary_alltime_frequency",
-            "legacy_wofs_summary_alltime_frequency_blue",
-            "legacy_wofs_summary_alltime_wet",
-            "legacy_wofs_summary_alltime_clear"
-            ]
-        },
-        {
-            "product": [
-                "s1_rtc"
-            ],
-            "styles_count": 4,
-            "styles_list": [
-                "vv_vh_vh_over_vv",
-                "vv",
-                "vh",
-                "rvi"
-            ]
-        },
-        {
-            "product": [
-                "alos_palsar_mosaic"
-            ],
-            "styles_count": 3,
-            "styles_list": [
-                "hh",
-                "hv",
-                "hh_hv_hv_over_hh"
-            ]
-        },
-        {
-            "product": [
-                "jers_sar_mosaic"
-            ],
-            "styles_count": 1,
-            "styles_list": [
-                "hh"
-            ]
-        },
-        {
-            "product": [
-                "dem_srtm"
-            ],
-            "styles_count": 2,
-            "styles_list": [
-                "greyscale",
-                "colours"
-            ]
-        },
-        {
-            "product": [
-                "nasadem"
-            ],
-            "styles_count": 2,
-            "styles_list": [
-                "greyscale",
-                "colours"
-            ]
-        },
-        {
-            "product": [
-                "dem_cop_30"
-            ],
-            "styles_count": 2,
-            "styles_list": [
-                "greyscale",
-                "colours"
-            ]
-        },
-        {
-            "product": [
-                "fc_ls"
-            ],
-            "styles_count": 2,
-            "styles_list": [
-                "simple_fc_unmasked",
-                "simple_fc"
-            ]
-        },
-        {
-            "product": [
-                "crop_mask_eastern"
-            ],
-            "styles_count": 3,
-            "styles_list": [
-                "green",
-                "filtered_yellow",
-                "prob"
-            ]
-        },
-        {
-            "product": [
-                "crop_mask_western"
-            ],
-            "styles_count": 3,
-            "styles_list": [
-                "green",
-                "filtered_yellow",
-                "prob"
-            ]
-        },
-        {
-            "product": [
-                "crop_mask_northern"
-            ],
-            "styles_count": 3,
-            "styles_list": [
-                "green",
-                "filtered_yellow",
-                "prob"
-            ]
-        },
-        {
-            "product": [
-                "io_lulc"
-            ],
-            "styles_count": 1,
-            "styles_list": [
-                "style_colours"
-            ]
-        },
-        {
-            "product": [
-                "esa_worldcover"
-            ],
-            "styles_count": 1,
-            "styles_list": [
-                "style_colours"
-            ]
-        },
-        {
-            "product": [
-                "rainfall_chirps_monthly"
-            ],
-            "styles_count": 1,
-            "styles_list": [
-                "rainfall_monthly"
-            ]
-        }
-    ]
+  "total_layers_count": 27,
+  "layers": [
+      {
+          "layer": "s2_l2a",
+          "product": [
+              "s2_l2a"
+          ],
+          "styles_count": 18,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "ndci",
+              "aerosol",
+              "blue",
+              "green",
+              "red",
+              "red_edge_1",
+              "red_edge_2",
+              "red_edge_3",
+              "nir",
+              "narrow_nir",
+              "swir_1",
+              "swir_2",
+              "scl"
+          ]
+      },
+      {
+          "layer": "ls8_sr",
+          "product": [
+              "ls8_sr"
+          ],
+          "styles_count": 12,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "blue",
+              "green",
+              "red",
+              "nir",
+              "swir_1",
+              "swir_2",
+              "pixel_quality"
+          ]
+      },
+      {
+          "layer": "ls7_sr",
+          "product": [
+              "ls7_sr"
+          ],
+          "styles_count": 12,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "blue",
+              "green",
+              "red",
+              "nir",
+              "swir_1",
+              "swir_2",
+              "pixel_quality"
+          ]
+      },
+      {
+          "layer": "ls5_sr",
+          "product": [
+              "ls5_sr"
+          ],
+          "styles_count": 12,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "blue",
+              "green",
+              "red",
+              "nir",
+              "swir_1",
+              "swir_2",
+              "pixel_quality"
+          ]
+      },
+      {
+          "layer": "gm_s2_annual",
+          "product": [
+              "gm_s2_annual"
+          ],
+          "styles_count": 22,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "tmad_rgb_std",
+              "tmad_rgb_sens",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "ndci",
+              "blue",
+              "green",
+              "red",
+              "red_edge_1",
+              "red_edge_2",
+              "red_edge_3",
+              "nir",
+              "narrow_nir",
+              "swir_1",
+              "swir_2",
+              "arcsec_sdev",
+              "log_edev",
+              "log_bcdev",
+              "count"
+          ]
+      },
+      {
+          "layer": "gm_ls8_annual",
+          "product": [
+              "gm_ls8_annual"
+          ],
+          "styles_count": 17,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "tmad_rgb_std",
+              "tmad_rgb_sens",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "blue",
+              "green",
+              "red",
+              "nir",
+              "swir_1",
+              "swir_2",
+              "arcsec_sdev",
+              "log_edev",
+              "log_bcdev",
+              "count"
+          ]
+      },
+      {
+          "layer": "gm_ls5_ls7_annual",
+          "product": [
+              "gm_ls5_ls7_annual"
+          ],
+          "styles_count": 17,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "tmad_rgb_std",
+              "tmad_rgb_sens",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "blue",
+              "green",
+              "red",
+              "nir",
+              "swir_1",
+              "swir_2",
+              "arcsec_sdev",
+              "log_edev",
+              "log_bcdev",
+              "count"
+          ]
+      },
+      {
+          "layer": "gm_s2_semiannual",
+          "product": [
+              "gm_s2_semiannual"
+          ],
+          "styles_count": 22,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "tmad_rgb_std",
+              "tmad_rgb_sens",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "ndci",
+              "blue",
+              "green",
+              "red",
+              "red_edge_1",
+              "red_edge_2",
+              "red_edge_3",
+              "nir",
+              "narrow_nir",
+              "swir_1",
+              "swir_2",
+              "arcsec_sdev",
+              "log_edev",
+              "log_bcdev",
+              "count"
+          ]
+      },
+      {
+          "layer": "ls8_st",
+          "product": [
+              "ls8_st"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "surface_temperature",
+              "surface_temperature_uncertainty",
+              "surface_temperature_masked"
+          ]
+      },
+      {
+          "layer": "ls7_st",
+          "product": [
+              "ls7_st"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "surface_temperature",
+              "surface_temperature_uncertainty",
+              "surface_temperature_masked"
+          ]
+      },
+      {
+          "layer": "ls5_st",
+          "product": [
+              "ls5_st"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "surface_temperature",
+              "surface_temperature_uncertainty",
+              "surface_temperature_masked"
+          ]
+      },
+      {
+          "layer": "s1_rtc",
+          "product": [
+              "s1_rtc"
+          ],
+          "styles_count": 4,
+          "styles_list": [
+              "vv_vh_vh_over_vv",
+              "vv",
+              "vh",
+              "rvi"
+          ]
+      },
+      {
+          "layer": "alos_palsar_mosaic",
+          "product": [
+              "alos_palsar_mosaic"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "hh",
+              "hv",
+              "hh_hv_hv_over_hh"
+          ]
+      },
+      {
+          "layer": "jers_sar_mosaic",
+          "product": [
+              "jers_sar_mosaic"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "hh"
+          ]
+      },
+      {
+          "layer": "wofs_ls",
+          "product": [
+              "wofs_ls"
+          ],
+          "styles_count": 2,
+          "styles_list": [
+              "observations",
+              "wet"
+          ]
+      },
+      {
+          "layer": "wofs_ls_summary_annual",
+          "product": [
+              "wofs_ls_summary_annual"
+          ],
+          "styles_count": 4,
+          "styles_list": [
+              "legacy_wofs_summary_annual_frequency",
+              "legacy_wofs_summary_annual_frequency_blue",
+              "legacy_wofs_summary_annual_wet",
+              "legacy_wofs_summary_annual_clear"
+          ]
+      },
+      {
+          "layer": "wofs_ls_summary_alltime",
+          "product": [
+              "wofs_ls_summary_alltime"
+          ],
+          "styles_count": 4,
+          "styles_list": [
+              "legacy_wofs_summary_alltime_frequency",
+              "legacy_wofs_summary_alltime_frequency_blue",
+              "legacy_wofs_summary_alltime_wet",
+              "legacy_wofs_summary_alltime_clear"
+          ]
+      },
+      {
+          "layer": "crop_mask_eastern",
+          "product": [
+              "crop_mask_eastern"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "green",
+              "filtered_yellow",
+              "prob"
+          ]
+      },
+      {
+          "layer": "crop_mask_western",
+          "product": [
+              "crop_mask_western"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "green",
+              "filtered_yellow",
+              "prob"
+          ]
+      },
+      {
+          "layer": "crop_mask_northern",
+          "product": [
+              "crop_mask_northern"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "green",
+              "filtered_yellow",
+              "prob"
+          ]
+      },
+      {
+          "layer": "dem_srtm",
+          "product": [
+              "dem_srtm"
+          ],
+          "styles_count": 2,
+          "styles_list": [
+              "greyscale",
+              "colours"
+          ]
+      },
+      {
+          "layer": "nasadem",
+          "product": [
+              "nasadem"
+          ],
+          "styles_count": 2,
+          "styles_list": [
+              "greyscale",
+              "colours"
+          ]
+      },
+      {
+          "layer": "dem_cop_30",
+          "product": [
+              "dem_cop_30"
+          ],
+          "styles_count": 2,
+          "styles_list": [
+              "greyscale",
+              "colours"
+          ]
+      },
+      {
+          "layer": "fc_ls",
+          "product": [
+              "fc_ls"
+          ],
+          "styles_count": 2,
+          "styles_list": [
+              "simple_fc_unmasked",
+              "simple_fc"
+          ]
+      },
+      {
+          "layer": "io_lulc",
+          "product": [
+              "io_lulc"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_colours"
+          ]
+      },
+      {
+          "layer": "esa_worldcover",
+          "product": [
+              "esa_worldcover"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_colours"
+          ]
+      },
+      {
+          "layer": "rainfall_chirps_monthly",
+          "product": [
+              "rainfall_chirps_monthly"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "rainfall_monthly"
+          ]
+      }
+  ]
 }
