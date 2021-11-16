@@ -391,8 +391,8 @@
           ],
           "styles_count": 2,
           "styles_list": [
-              "simple_fc_unmasked",
-              "simple_fc"
+              "fc_rgb_unmasked",
+              "fc_rgb_masked"
           ]
       },
       {
