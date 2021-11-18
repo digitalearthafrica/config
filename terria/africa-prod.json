@@ -219,7 +219,7 @@
               "members": [
                 {
                   "type": "wms",
-                  "name": "Semiannual GeoMAD (Sentinel-2, provisional)",
+                  "name": "Semiannual GeoMAD (Sentinel-2)",
                   "url": "https://ows.digitalearth.africa/",
                   "opacity": 1,
                   "layers": "gm_s2_semiannual",
