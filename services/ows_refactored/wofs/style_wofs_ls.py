@@ -1,10 +1,9 @@
-# This file contains current styling for Landsat WOfS, including
+# This file contains default OWS styling for Landsat WOfS, including
 # wofs_ls, wofs_ls_summary_annual, wofs_ls_summary_alltime
+# Sequential colour schemes based off mako_r colourmap
 from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
 
 # styles used by wofs_ls_summary_annual
-
-# colour scheme based off mako_r
 style_wofs_summary_annual_frequency = {
     "name": "wofs_summary_annual_frequency",
     "title": " Water frequency",
@@ -36,8 +35,6 @@ style_wofs_summary_annual_frequency = {
 }
 
 # styles used by wofs_ls_summary_alltime
-
-# colour scheme based off mako_r
 style_wofs_summary_alltime_frequency = {
     "name": "wofs_summary_alltime_frequency",
     "title": " Water frequency",
@@ -72,7 +69,6 @@ style_wofs_summary_alltime_frequency = {
 }
 
 # wofs_ls (WOFL) styles
-
 style_wofs_ls_obs = {
     "name": "observations",
     "title": "Observations",

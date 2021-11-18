@@ -5,7 +5,7 @@ from ows_refactored.common.ows_legend_cfg import legend_idx_percentage_by_10
 # wofs_ls_summary_annual styles
 legacy_style_wofs_summary_annual_wet = {
     "name": "legacy_wofs_summary_annual_wet",
-    "title": "Count of wet",  # add (legacy colourmap) once new one is added
+    "title": "Count of wet (legacy colourmap)",
     "abstract": "WOfS summary showing the count of water observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -50,7 +50,7 @@ legacy_style_wofs_summary_annual_wet = {
 
 legacy_style_wofs_summary_annual_frequency = {
     "name": "legacy_wofs_summary_annual_frequency",
-    "title": " Water frequency",
+    "title": " Water frequency (legacy colourmap)",
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -79,35 +79,9 @@ legacy_style_wofs_summary_annual_frequency = {
     "legend": legend_idx_percentage_by_10,
 }
 
-legacy_style_wofs_summary_annual_frequency_blue = {
-    "name": "legacy_wofs_summary_annual_frequency_blue",
-    "title": "Water frequency - Blues",
-    "abstract": "WOfS summary showing the frequency of Wetness",
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "frequency",
-        },
-    },
-    "needed_bands": ["frequency"],
-    "include_in_feature_info": False,
-    "color_ramp": [
-        {"value": 0.0, "color": "#ffffff", "alpha": 0.0},
-        {"value": 0.001, "color": "#d5fef9", "alpha": 0.0},
-        {"value": 0.02, "color": "#d5fef9"},
-        {"value": 0.2, "color": "#71e3ff"},
-        {"value": 0.4, "color": "#01ccff"},
-        {"value": 0.6, "color": "#0178ff"},
-        {"value": 0.8, "color": "#2701ff"},
-        {"value": 1.0, "color": "#5700e3"},
-    ],
-    "legend": legend_idx_percentage_by_10,
-}
-
 legacy_style_wofs_summary_annual_clear = {
     "name": "legacy_wofs_summary_annual_clear",
-    "title": "Count of clear",  # add (legacy colourmap) once new one is added
+    "title": "Count of clear (legacy colourmap)",
     "abstract": "WOfS annual summary showing the count of clear observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -153,7 +127,7 @@ legacy_style_wofs_summary_annual_clear = {
 # wofs_ls_summary_alltime legacy styles
 legacy_style_wofs_summary_alltime_wet = {
     "name": "legacy_wofs_summary_alltime_wet",
-    "title": "Count of wet",  # add (legacy colourmap) when upgraded
+    "title": "Count of wet (legacy colourmap)",
     "abstract": "WOfS summary showing the count of water observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -198,7 +172,7 @@ legacy_style_wofs_summary_alltime_wet = {
 
 legacy_style_wofs_summary_alltime_frequency = {
     "name": "legacy_wofs_summary_alltime_frequency",
-    "title": " Water frequency",
+    "title": " Water frequency (legacy colourmap)",
     "abstract": "WOfS summary showing the frequency of Wetness",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -231,34 +205,9 @@ legacy_style_wofs_summary_alltime_frequency = {
     },
 }
 
-legacy_style_wofs_summary_alltime_frequency_blue = {
-    "name": "legacy_wofs_summary_alltime_frequency_blue",
-    "title": "Water frequency - Blues",
-    "abstract": "WOfS summary showing the frequency of Wetness",
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "frequency",
-        },
-    },
-    "needed_bands": ["frequency"],
-    "color_ramp": [
-        {"value": 0.0, "color": "#ffffff", "alpha": 0.0},
-        {"value": 0.001, "color": "#d5fef9", "alpha": 0.0},
-        {"value": 0.02, "color": "#d5fef9"},
-        {"value": 0.2, "color": "#71e3ff"},
-        {"value": 0.4, "color": "#01ccff"},
-        {"value": 0.6, "color": "#0178ff"},
-        {"value": 0.8, "color": "#2701ff"},
-        {"value": 1.0, "color": "#5700e3"},
-    ],
-    "legend": legend_idx_percentage_by_10,
-}
-
 legacy_style_wofs_summary_alltime_clear = {
     "name": "legacy_wofs_summary_alltime_clear",
-    "title": "Count of clear",  # add (legacy colourmap) when upgraded
+    "title": "Count of clear (legacy colourmap)",
     "abstract": "WOfS summary showing the count of clear observations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
