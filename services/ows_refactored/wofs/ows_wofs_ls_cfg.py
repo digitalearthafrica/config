@@ -1,6 +1,8 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_wofs_daily
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_obs
-from ows_refactored.wofs.style_wofs_ls import (style_wofs_ls_obs, style_wofs_ls_wet)
+from ows_refactored.wofs.style_wofs_ls import (
+    style_wofs_ls_obs, 
+    style_wofs_ls_wet)
 
 layer = {
     "title": "Water Observations from Space Feature Layer",
@@ -18,7 +20,7 @@ WOfS shows surface water on the day and time that satellite passed overhead, whi
 
 For more information on the algorithm, see https://doi.org/10.1016/j.rse.2015.11.003
 
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+This product is accessible through OGC Web Service (https://ows.digitalearth.africa/) and for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki). For more information, see the Digital Earth Africa User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_WOfS_specs.html).
 """,
     "product_name": "wofs_ls",
     "bands": bands_wofs_obs,
