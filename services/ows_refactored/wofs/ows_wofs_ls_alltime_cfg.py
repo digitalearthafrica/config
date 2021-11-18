@@ -1,7 +1,7 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_wofs
 from ows_refactored.wofs.band_wofs_cfg import bands_wofs_summary
 from ows_refactored.wofs.style_wofs_ls import (
-    style_wofs_summary_alltime_frequency
+    style_wofs_summary_alltime_frequency,
     style_wofs_summary_alltime_clear,
     style_wofs_summary_alltime_wet)
 from ows_refactored.wofs.style_wofs_ls_legacy import legacy_style_wofs_summary_alltime_frequency
