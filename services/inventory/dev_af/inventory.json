@@ -292,13 +292,12 @@
           "product": [
               "wofs_ls_summary_annual"
           ],
-          "styles_count": 5,
+          "styles_count": 4,
           "styles_list": [
               "wofs_summary_annual_frequency",
               "legacy_wofs_summary_annual_frequency",
-              "legacy_wofs_summary_annual_frequency_blue",
-              "legacy_wofs_summary_annual_wet",
-              "legacy_wofs_summary_annual_clear"
+              "wofs_summary_annual_wet",
+              "wofs_summary_annual_clear"
           ]
       },
       {
@@ -306,13 +305,12 @@
           "product": [
               "wofs_ls_summary_alltime"
           ],
-          "styles_count": 5,
+          "styles_count": 4,
           "styles_list": [
               "wofs_summary_alltime_frequency",
               "legacy_wofs_summary_alltime_frequency",
-              "legacy_wofs_summary_alltime_frequency_blue",
-              "legacy_wofs_summary_alltime_wet",
-              "legacy_wofs_summary_alltime_clear"
+              "wofs_summary_alltime_wet",
+              "wofs_summary_alltime_clear"
           ]
       },
       {
