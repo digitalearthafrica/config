@@ -18,8 +18,8 @@ style_wofs_summary_annual_frequency = {
     "needed_bands": ["frequency"],
     "include_in_feature_info": False,
     "color_ramp": [
-        {"value": 0.0, "color": "#000000", "alpha": 0.0},
-        {"value": 0.02, "color": "#000000", "alpha": 0.0},
+        {"value": 0.0, "color": "#FFFFFF", "alpha": 0.0},
+        {"value": 0.02, "color": "#FFFFFF", "alpha": 0.0},
         {"value": 0.05, "color": '#aee3c0', "alpha": 0.25},
         {"value": 0.1, "color": '#6dd3ad', "alpha": 0.75},
         {"value": 0.2, "color": '#44bcad'},
@@ -93,7 +93,7 @@ style_wofs_summary_annual_wet = {
     "needed_bands": ["count_wet"],
     "include_in_feature_info": False,
     "color_ramp": [
-        {"value": 0, "color": "#666666", "alpha": 0},
+        {"value": 0, "color": "#FFFFFF", "alpha": 0},
         {
             # purely for legend display
             # we should not get fractional
@@ -139,8 +139,8 @@ style_wofs_summary_alltime_frequency = {
     "needed_bands": ["frequency"],
     "include_in_feature_info": False,
     "color_ramp": [
-        {"value": 0.0, "color": "#000000", "alpha": 0.0},
-        {"value": 0.002, "color": "#000000", "alpha": 0.0},
+        {"value": 0.0, "color": "#FFFFFF", "alpha": 0.0},
+        {"value": 0.002, "color": "#FFFFFF", "alpha": 0.0},
         {"value": 0.005, "color": '#b9e6c7', "alpha": 0.25},
         {"value": 0.01, "color": '#8bdab2', "alpha": 0.75},
         {"value": 0.02, "color": '#59ccad'},
@@ -215,7 +215,7 @@ style_wofs_summary_alltime_wet = {
     },
     "needed_bands": ["count_wet"],
     "color_ramp": [
-        {"value": 0, "color": "#666666", "alpha": 0},
+        {"value": 0, "color": "#FFFFFF", "alpha": 0},
         {
             # purely for legend display
             # we should not get fractional
