@@ -27,6 +27,7 @@ DE Africa provides access to GMW mangrove extent data over Africa. This dataset 
 For more information, see https://data.unep-wcmc.org/datasets/45.
 """,
     "product_name": "gmw",
+    "time_resolution": "year",
     "bands": {
         "mangrove": [],
     },
