@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 31,
+  "total_layers_count": 30,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -433,19 +433,6 @@
               "pc_s2_annual_total",
               "pc_s2_annual_clear_0_5",
               "pc_s2_annual_clear_2_5"
-          ]
-      },
-      {
-          "layer": "pc_ls8_annual",
-          "product": [
-              "pc_ls8_annual"
-          ],
-          "styles_count": 4,
-          "styles_list": [
-              "pc_annual_clear",
-              "pc_annual_total",
-              "pc_annual_clear_2_5",
-              "pc_annual_clear_5_5"
           ]
       },
       {
