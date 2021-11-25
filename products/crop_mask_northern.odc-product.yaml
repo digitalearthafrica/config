@@ -15,7 +15,7 @@ storage:
   resolution:
     x: 10
     y: -10
-    
+
 measurements:
   - name: mask
     aliases: ['crop_mask', 'MASK']
