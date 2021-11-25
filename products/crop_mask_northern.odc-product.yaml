@@ -15,10 +15,7 @@ storage:
   resolution:
     x: 10
     y: -10
-  tile_size:
-    x: 96000
-    y: 96000
-
+    
 measurements:
   - name: mask
     aliases: ['crop_mask', 'MASK']
