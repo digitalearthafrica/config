@@ -1,0 +1,116 @@
+---
+name: gls
+description: Copernicus Global Land Service, Land Use/Land Cover at 100 m
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: gls
+
+measurements:
+  - name: classification
+    aliases: ["class"]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+    flags_definition:
+      data:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Land Use/Land Cover class
+        values:
+          0: no data
+          20: shrubs
+          30: herbaceous vegetation
+          40: cultivated and managed vegetation or agriculture
+          50: urban or built up
+          60: bare or sparse vegetation
+          70: snow and ice
+          80: permanent water bodies
+          90: herbaceous wetland
+          100: moss and lichen
+          111: closed forest, evergreen needle leaf
+          112: closed forest, evergreen broad leaf
+          113: closed forest, deciduous needle leaf
+          114: closed forest, deciduous broad leaf
+          115: closed forest, mixed
+          116: closed forest, unknown
+          121: open forest, evergreen needle leaf
+          122: open forest, evergreen broad leaf
+          123: open forest, deciduous needle leaf
+          124: open forest, deciduous broad leaf
+          125: open forest, mixed
+          126: open forest, unknown
+          200: open sea
+  - name: forest_type
+    aliases: []
+    units: "percent"
+    dtype: uint8
+    nodata: 0
+    flags_definition:
+      data:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Land Use/Land Cover class
+        values:
+          0: unknown
+          1: evergreen needle leaf forest
+          2: evergreen broad leaf forest
+          3: deciduous needle leaf
+          4: deciduous broad leaf
+          5: mixed
+  - name: classification_probability
+    aliases: ["prob"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: bare_cover_fraction
+    aliases: ["bare"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: builtup_cover_fraction
+    aliases: ["builtup"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: crops_cover_fraction
+    aliases: ["crops"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: grass_cover_fraction
+    aliases: ["grass"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: mosslichen_cover_fraction
+    aliases: ["mosslichen"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: permanentwater_cover_fraction
+    aliases: ["permanentwater"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: seasonalwater_cover_fraction
+    aliases: ["seasonalwater"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: shrub_cover_fraction
+    aliases: ["shrub"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: snow_cover_fraction
+    aliases: ["snow"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
+  - name: tree_cover_fraction
+    aliases: ["tree"]
+    units: "percent"
+    dtype: uint8
+    nodata: 255
