@@ -142,14 +142,14 @@ jobs:
     - name: Push to DockerHub (master branch or tagged release only)
       if: github.ref == 'refs/heads/master' || github.event_name == 'release'
       env:
-        DOCKER_USER: gadockersvc
+        DOCKER_USER: deafricadockersvs
       run: |
         echo "Login to DockerHub as ${DOCKER_USER}"
-        echo "${{ secrets.GADOCKERSVC_PASSWORD }}" | docker login -u "${DOCKER_USER}" --password-stdin
+        echo "${{ secrets.DEAFRICA_DOCKER_PASSWORD }}" | docker login -u "${DOCKER_USER}" --password-stdin
         # figure out extra tag
         git fetch --prune --unshallow 2> /dev/null || true
         tag=$(git describe --tags)
-        DOCKER_IMAGE=geoscienceaustralia/deafrica-config
+        DOCKER_IMAGE=digitalearthafrica/deafrica-config
         # build local docker image
         docker build -t ${DOCKER_IMAGE}:latest .
         # tag and push images
