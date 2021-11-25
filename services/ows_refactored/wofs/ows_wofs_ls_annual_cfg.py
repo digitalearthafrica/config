@@ -35,9 +35,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
     "native_crs": "EPSG:6933",
     "native_resolution": [30.0, -30.0],
-    "wcs": {
-        "default_bands": ["frequency", "count_wet", "count_clear"],
-    },
     "styling": {
         "default_style": "wofs_summary_annual_frequency",
         "styles": [
