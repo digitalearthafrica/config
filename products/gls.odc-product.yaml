@@ -9,6 +9,12 @@ metadata:
   product:
     name: gls
 
+storage:
+  crs: EPSG:4326
+  resolution:
+    lon: 0.0009920634920634888
+    lat: -0.0009920634920634888
+
 measurements:
   - name: classification
     aliases: ["class"]
