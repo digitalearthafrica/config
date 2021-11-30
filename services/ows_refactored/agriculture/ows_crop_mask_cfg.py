@@ -326,4 +326,3 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
         },
     ],
 }
-
