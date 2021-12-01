@@ -1,0 +1,16 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+        "id": "deafrica_terria_prod",
+        "type": "wms-group",
+        "name": "Digital Earth Africa data catalogue",
+        "url": "https://ows.digitalearth.africa/",
+        "isOpen": true
+    }
+  ],
+  "corsDomains": [
+    "digitalearthafrica.org",
+    "digitalearth.africa"
+  ]
+}
