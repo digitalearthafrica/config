@@ -12,8 +12,8 @@ metadata:
 storage:
   crs: EPSG:4326
   resolution:
-    lon: 0.0009920634920634888
-    lat: -0.0009920634920634888
+    longitude: 0.0009920634920634888
+    latitude: -0.0009920634920634888
 
 measurements:
   - name: classification
