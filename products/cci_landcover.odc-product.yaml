@@ -1,0 +1,51 @@
+---
+name: cci_landcover
+description: ESA Climate Change Initiative Land Cover
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: cci_landcover
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.0027777777777777783
+    latitude: -0.0027777777777777783
+
+measurements:
+  - name: classification
+    aliases: ["class"]
+    units: "1"
+    dtype: uint8
+    nodata: 0
+    flags_definition:
+      data:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: LCCS Class
+        values:
+          0: no data
+          10: cropland, rainfed
+          20: cropland, irrigated or post-flooding
+          30: mosaic cropland/natural vegetation
+          40: mosaic natural vegetation/cropland
+          50: tree cover, broadleaved, evergreen, closed to open
+          60: tree cover, broadleaved, deciduous, closed to open
+          70: tree cover, ndedleleaved, evergreen, closed to open
+          80: tree cover, needleleaved, deciduous, closed to open
+          90: tree coer, mixed leaf type
+          100: mosaic tree and shrub/herbaceous cover
+          110: mosaic herbaceous cover/tree and shrub
+          120: shrubland
+          130: grassland
+          140: luchens and mosses
+          150: sparse vegetation
+          160: tree cover, flooded, fresh or brakish water
+          170: tree cover, flooded, saline water
+          180: shrub or herbaceous cover, flooded, fresh/saline/brakish water
+          190: urban areas
+          200: bare areas
+          210: water bodies
+          220: permanent snow and ice
