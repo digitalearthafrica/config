@@ -243,7 +243,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 ],
             },
         },
-                {
+        {
             "title": "Cropland extent 2019 - Sahel Africa",
             "name": "crop_mask_sahel",
             "abstract": """
