@@ -613,6 +613,23 @@
             },
             {
               "type": "wms",
+              "name": "Cropland extent 2019 - Southern Africa",
+              "url": "https://ows.digitalearth.africa/",
+              "opacity": 1,
+              "layers": "crop_mask_southern",
+              "linkedWcsUrl": "https://ows.digitalearth.africa/",
+              "linkedWcsCoverage": "crop_mask_southern",
+              "tileErrorHandlingOptions": {
+                "ignoreUnknownTileErrors": true,
+                "thresholdBeforeDisablingItem": 100000
+              },
+              "id": "crop_southern",
+              "shareKeys": [
+                "Root Group/Agriculture/Cropland extent map (provisional)/Cropland extent 2019 - Southern Africa"
+              ]
+            },
+            {
+              "type": "wms",
               "name": "Cropland extent 2019 - Sahel Africa",
               "url": "https://ows.digitalearth.africa/",
               "opacity": 1,
