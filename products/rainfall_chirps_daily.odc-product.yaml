@@ -1,0 +1,20 @@
+---
+name: rainfall_chirps_daily
+description: Rainfall Estimates from Rain Gauge and Satellite Observations
+metadata_type: eo3
+
+metadata:
+  product:
+    name: rainfall_chirps_daily
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.05000000074505806
+    latitude: -0.05000000074505806
+
+measurements:
+  - name: rainfall
+    dtype: float32
+    nodata: -9999
+    units: "mm"
