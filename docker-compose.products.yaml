@@ -22,4 +22,5 @@ services:
     volumes:
       - ./dev/products_dev.csv:/conf/products_dev.csv
       - ./prod/products_prod.csv:/conf/products_prod.csv
+      - ./products:/conf/products
     command: tail -f /dev/null

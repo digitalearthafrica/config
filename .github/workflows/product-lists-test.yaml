@@ -26,6 +26,7 @@ jobs:
         timeout-minutes: 20
         shell: bash
         run: |
+          sed -i.bak -e "s,https://raw.githubusercontent.com/digitalearthafrica/config/master/,/conf/,g" prod/products_prod.csv
           docker-compose -f docker-compose.products.yaml pull
           docker-compose -f docker-compose.products.yaml up -d
           sleep 3
@@ -37,6 +38,7 @@ jobs:
         timeout-minutes: 20
         shell: bash
         run: |
+          sed -i.bak -e "s,https://raw.githubusercontent.com/digitalearthafrica/config/master/,/conf/,g" dev/products_dev.csv
           docker-compose -f docker-compose.products.yaml up -d
           sleep 3
           docker-compose -f docker-compose.products.yaml exec -T products-tester datacube system init
