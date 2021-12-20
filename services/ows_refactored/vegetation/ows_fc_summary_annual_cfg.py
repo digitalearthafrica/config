@@ -357,7 +357,7 @@ Fractional cover provides information about the the proportions of green vegetat
 
 This contains a three band combination of the 50th Percentile for green vegetation, non green vegetation and bare soil observations acquired in each full calendar year (1st of January - 31st December) from 1984 to the most recent full calendar year.
 
-Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. To be considered in the FCP product a pixel must have had at least 10 clear observations over2 the year.
+Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. To be considered in the FCP product a pixel must have had at least 10 clear observations over the year.
 """,
     "product_name": "fc_ls_summary_annual",
     "time_resolution": "year",
