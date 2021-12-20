@@ -350,7 +350,7 @@ fc_percentiles_styles = [
 layer = {
     "title": "DE Africa Fractional Cover annual summary",
     "name": "fc_ls_summary_annual",
-    "abstract": """Fractional Cover 30m Percentiles (Landsat, Annual)
+    "abstract": """Fractional Cover 30 m Percentiles (Landsat, Annual)
 Data is only visible at higher resolutions; when zoomed-out the available area will be displayed as a shaded region.
 
 Fractional cover provides information about the the proportions of green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.), and bare areas for every 30 m x 30 m ground footprint. Fractional cover provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time. The percentile summaries are designed to make it easier to analyse and interpret fractional cover. Percentiles provide an indicator of where an observation sits, relative to the rest of the observations for the pixel. For example, the 90th percentile is the value below which 90% of the observations fall. The fractional cover algorithm was developed by the Joint Remote Sensing Research Program.
