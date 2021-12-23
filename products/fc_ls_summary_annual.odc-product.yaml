@@ -61,6 +61,11 @@ measurements:
     units: percent
     nodata: 255
 
+  - name: count_valid
+    dtype: int16
+    units: percent
+    nodata: 255
+
   - name: qa
     dtype: uint8
     units: "1"
