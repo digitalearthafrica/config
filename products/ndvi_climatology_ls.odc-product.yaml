@@ -1,6 +1,7 @@
 ---
 name: ndvi_climatology_ls
-description: Monthly NDVI Climatologies (mean and std dev) produced by Digital Earth Africa.
+description: Monthly NDVI Climatologies
+  produced by Digital Earth Africa.
 metadata_type: eo3
 
 license: CC-BY-4.0
@@ -232,6 +233,3 @@ measurements:
     nodata: 0
     units: '1'
     
- 
-
-
