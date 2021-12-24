@@ -1,0 +1,262 @@
+name: ndvi_climatology_ls
+description: Monthly NDVI Climatologies produced by Digital Earth Africa.
+metadata_type: eo3
+license: CC-BY-4.0
+metadata:
+  product:
+    name: ndvi_climatology_ls
+storage:
+  crs: 'EPSG:6933'
+  resolution:
+    x: 30
+    'y': -30
+measurements:
+  - name: mean_jan
+    aliases:
+      - MEAN_JAN
+      - mean_january
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_feb
+    aliases:
+      - MEAN_FEB
+      - mean_february
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_mar
+    aliases:
+      - MEAN_MAR
+      - mean_march
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_apr
+    aliases:
+      - MEAN_APR
+      - mean_april
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_may
+    aliases:
+      - MEAN_MAY
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_jun
+    aliases:
+      - MEAN_JUN
+      - mean_june
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_jul
+    aliases:
+      - MEAN_JUL
+      - mean_july
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_aug
+    aliases:
+      - MEAN_AUG
+      - mean_august
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_sep
+    aliases:
+      - MEAN_SEP
+      - mean_september
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_oct
+    aliases:
+      - MEAN_OCT
+      - mean_october
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_nov
+    aliases:
+      - MEAN_NOV
+      - mean_november
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: mean_dec
+    aliases:
+      - MEAN_DEC
+      - mean_december
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_jan
+    aliases:
+      - STDDEV_JAN
+      - stddev_january
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_feb
+    aliases:
+      - STDDEV_FEB
+      - stddev_feburary
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_mar
+    aliases:
+      - STDDEV_MAR
+      - stddev_march
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_apr
+    aliases:
+      - STDDEV_APR
+      - stddev_april
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_may
+    aliases:
+      - STDDEV_MAY
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_jun
+    aliases:
+      - STDDEV_JUN
+      - stddev_june
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_jul
+    aliases:
+      - STDDEV_JUL
+      - stddev_july
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_aug
+    aliases:
+      - STDDEV_AUG
+      - stddev_august
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_sep
+    aliases:
+      - STDDEV_SEP
+      - stddev_september
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_oct
+    aliases:
+      - STDDEV_OCT
+      - stddev_october
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_nov
+    aliases:
+      - STDDEV_NOV
+      - stddev_november
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: stddev_dec
+    aliases:
+      - STDDEV_DEC
+      - stddev_december
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: count_jan
+    aliases:
+      - COUNT_JAN
+      - count_january
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_feb
+    aliases:
+      - COUNT_FEB
+      - count_february
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_mar
+    aliases:
+      - COUNT_MAR
+      - count_march
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_apr
+    aliases:
+      - COUNT_APR
+      - count_april
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_may
+    aliases:
+      - COUNT_MAY
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_jun
+    aliases:
+      - COUNT_JUN
+      - count_june
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_jul
+    aliases:
+      - COUNT_JUL
+      - count_july
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_aug
+    aliases:
+      - COUNT_AUG
+      - count_august
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_sep
+    aliases:
+      - COUNT_SEP
+      - count_september
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_oct
+    aliases:
+      - COUNT_OCT
+      - count_october
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_nov
+    aliases:
+      - COUNT_NOV
+      - count_november
+    dtype: int8
+    nodata: 0
+    units: '1'
+  - name: count_dec
+    aliases:
+      - COUNT_DEC
+      - count_december
+    dtype: int8
+    nodata: 0
+    units: '1'
