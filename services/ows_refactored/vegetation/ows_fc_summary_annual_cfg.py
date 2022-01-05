@@ -48,6 +48,7 @@ bands_fc_percentile = {
     "bs_pc_10": [],
     "bs_pc_50": [],
     "bs_pc_90": [],
+    "count_valid": [],
 }
 
 
