@@ -1046,12 +1046,12 @@ style_lsc2_sr_ndwi = {
     "index_expression": "(green*1.0-nir)/(green+nir-14545.4545)",
     "color_ramp": [
         {"value": -0.1, "color": "#f7fbff", "alpha": 0.0},
-        {"value": 0.0, "color": "#d8e7f5", "legend": {"prefix": "<"}},
+        {"value": 0.0, "color": "#d8e7f5"},
         {"value": 0.1, "color": "#b0d2e8"},
-        {"value": 0.2, "color": "#73b3d8", "legend": {}},
+        {"value": 0.2, "color": "#73b3d8"},
         {"value": 0.3, "color": "#3e8ec4"},
-        {"value": 0.4, "color": "#1563aa", "legend": {}},
-        {"value": 0.5, "color": "#08306b", "legend": {"prefix": ">"}},
+        {"value": 0.4, "color": "#1563aa"},
+        {"value": 0.5, "color": "#08306b"},
     ],
     "legend": {
         "begin": "0.0",
