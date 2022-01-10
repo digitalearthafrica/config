@@ -159,7 +159,7 @@ non_green_veg_10 = {
             "value": 0,
             "color": "#ffffd4",
         },
-        {"value": 25, "color": "#fed98e", "legend": {}},
+        {"value": 25, "color": "#fed98e"},
         {
             "value": 50,
             "color": "#fe9929",
