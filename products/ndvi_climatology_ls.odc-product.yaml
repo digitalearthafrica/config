@@ -1,3 +1,4 @@
+---
 name: ndvi_climatology_ls
 description: Monthly NDVI Climatologies produced by Digital Earth Africa.
 metadata_type: eo3
@@ -182,81 +183,81 @@ measurements:
       - COUNT_JAN
       - count_january
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_feb
     aliases:
       - COUNT_FEB
       - count_february
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_mar
     aliases:
       - COUNT_MAR
       - count_march
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_apr
     aliases:
       - COUNT_APR
       - count_april
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_may
     aliases:
       - COUNT_MAY
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_jun
     aliases:
       - COUNT_JUN
       - count_june
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_jul
     aliases:
       - COUNT_JUL
       - count_july
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_aug
     aliases:
       - COUNT_AUG
       - count_august
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_sep
     aliases:
       - COUNT_SEP
       - count_september
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_oct
     aliases:
       - COUNT_OCT
       - count_october
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_nov
     aliases:
       - COUNT_NOV
       - count_november
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
   - name: count_dec
     aliases:
       - COUNT_DEC
       - count_december
     dtype: int16
-    nodata: 0
+    nodata: -999
     units: '1'
