@@ -6,6 +6,13 @@ legend_idx_0_1_5ticks = {
     "units": "unitless",
 }
 
+legend_stddev_ticks = {
+    "begin": "0.0",
+    "end": "0.5",
+    "ticks_every": "0.05",
+    "units": "unitless",
+}
+
 legend_idx_percentage_by_10 = {
     "begin": "0.0",
     "end": "1.0",
