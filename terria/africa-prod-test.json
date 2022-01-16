@@ -6,6 +6,7 @@
         "type": "wms-group",
         "name": "Digital Earth Africa data catalogue",
         "url": "https://ows.digitalearth.africa/",
+        "excludeMembers": []
         "isOpen": true
     }
   ],
