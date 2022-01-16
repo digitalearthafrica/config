@@ -40,6 +40,7 @@ bands_ndvi_clim = {
     "count_dec": [],
 }
 
+# colour ramps-------------------------------------
 mean_cr = [
     {"value": -0.0, "color": "#8F3F20", "alpha": 0.0},
     {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
@@ -87,7 +88,7 @@ count_cr = [
         {"value": 140, "color": "#071743"},
     ]
 
-# mean ------------------------------------------------------
+# mean styles------------------------------------------------------
 style_ndvi_mean_jan = {
     "name": "Mean NDVI Climatology for January",
     "title": "Mean NDVI Climatology for January",
@@ -151,8 +152,61 @@ style_ndvi_mean_jun = {
     "legend": legend_idx_0_1_5ticks,
 }
 
+style_ndvi_mean_jul = {
+    "name": "Mean NDVI Climatology for July",
+    "title": "Mean NDVI Climatology for July",
+    "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
+    "needed_bands": ["mean_jul"],
+    "color_ramp": mean_cr,
+    "legend": legend_idx_0_1_5ticks,
+}
 
-# std dev -----------------------------------------------------
+style_ndvi_mean_aug = {
+    "name": "Mean NDVI Climatology for August",
+    "title": "Mean NDVI Climatology for August",
+    "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
+    "needed_bands": ["mean_aug"],
+    "color_ramp": mean_cr,
+    "legend": legend_idx_0_1_5ticks,
+}
+
+style_ndvi_mean_sep = {
+    "name": "Mean NDVI Climatology for September",
+    "title": "Mean NDVI Climatology for September",
+    "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
+    "needed_bands": ["mean_sep"],
+    "color_ramp": mean_cr,
+    "legend": legend_idx_0_1_5ticks,
+}
+
+style_ndvi_mean_oct = {
+    "name": "Mean NDVI Climatology for October",
+    "title": "Mean NDVI Climatology for October",
+    "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
+    "needed_bands": ["mean_oct"],
+    "color_ramp": mean_cr,
+    "legend": legend_idx_0_1_5ticks,
+}
+
+style_ndvi_mean_nov = {
+    "name": "Mean NDVI Climatology for November",
+    "title": "Mean NDVI Climatology for November",
+    "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
+    "needed_bands": ["mean_nov"],
+    "color_ramp": mean_cr,
+    "legend": legend_idx_0_1_5ticks,
+}
+
+style_ndvi_mean_dec = {
+    "name": "Mean NDVI Climatology for December",
+    "title": "Mean NDVI Climatology for December",
+    "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
+    "needed_bands": ["mean_dec"],
+    "color_ramp": mean_cr,
+    "legend": legend_idx_0_1_5ticks,
+}
+
+# std dev styles-----------------------------------------------------
 style_ndvi_std_jan = {
     "name": "Std. Dev. NDVI Climatology for January",
     "title": "Std. Dev. NDVI Climatology for January",
@@ -170,19 +224,206 @@ style_ndvi_std_jan = {
     "legend": legend_stddev_ticks
 }
 
-# count -----------------------------------------------------
-style_count = {
-    "name": "count",
-    "title": "Clear observation count",
+style_ndvi_std_feb = {
+    "name": "Std. Dev. NDVI Climatology for February",
+    "title": "Std. Dev. NDVI Climatology for February",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_feb"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_feb",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_mar = {
+    "name": "Std. Dev. NDVI Climatology for March",
+    "title": "Std. Dev. NDVI Climatology for March",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_mar"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_mar",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_apr = {
+    "name": "Std. Dev. NDVI Climatology for April",
+    "title": "Std. Dev. NDVI Climatology for April",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_apr"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_apr",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_may = {
+    "name": "Std. Dev. NDVI Climatology for May",
+    "title": "Std. Dev. NDVI Climatology for May",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_may"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_may",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_jun = {
+    "name": "Std. Dev. NDVI Climatology for June",
+    "title": "Std. Dev. NDVI Climatology for June",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_jun"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_jun",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_jul = {
+    "name": "Std. Dev. NDVI Climatology for July",
+    "title": "Std. Dev. NDVI Climatology for July",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_jul"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_jun",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_aug = {
+    "name": "Std. Dev. NDVI Climatology for August",
+    "title": "Std. Dev. NDVI Climatology for August",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_aug"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_aug",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_sep = {
+    "name": "Std. Dev. NDVI Climatology for Septemeber",
+    "title": "Std. Dev. NDVI Climatology for September",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_sep"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_sep",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_oct = {
+    "name": "Std. Dev. NDVI Climatology for October",
+    "title": "Std. Dev. NDVI Climatology for October",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_oct"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_oct",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_nov = {
+    "name": "Std. Dev. NDVI Climatology for November",
+    "title": "Std. Dev. NDVI Climatology for November",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_nov"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_nov",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+style_ndvi_std_dec = {
+    "name": "Std. Dev. NDVI Climatology for December",
+    "title": "Std. Dev. NDVI Climatology for December",
+    "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
+    "needed_bands": ["stddev_dec"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "stddev_dec",
+        },
+    },
+    "color_ramp": std_cr,
+    "range": [0, 0.5],
+    "legend": legend_stddev_ticks
+}
+
+# count styles-----------------------------------------------------
+style_count_jan = {
+    "name": "Clear count for January",
+    "title": "Clear observation count for January",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "count",
+            "band": "count_jan",
         },
     },
-    "needed_bands": ["count"],
+    "needed_bands": ["count_jan"],
     "include_in_feature_info": False,
     "color_ramp": ,
     "legend": {
@@ -196,13 +437,288 @@ style_count = {
     },
 }
 
+style_count_feb = {
+    "name": "Clear count for February",
+    "title": "Clear observation count for February",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_feb",
+        },
+    },
+    "needed_bands": ["count_feb"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
 
+style_count_mar = {
+    "name": "Clear count for March",
+    "title": "Clear observation count for March",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_mar",
+        },
+    },
+    "needed_bands": ["count_mar"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_apr = {
+    "name": "Clear count for April",
+    "title": "Clear observation count for April",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_apr",
+        },
+    },
+    "needed_bands": ["count_apr"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_may = {
+    "name": "Clear count for May",
+    "title": "Clear observation count for May",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_may",
+        },
+    },
+    "needed_bands": ["count_may"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_jun = {
+    "name": "Clear count for June",
+    "title": "Clear observation count for June",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_jun",
+        },
+    },
+    "needed_bands": ["count_jun"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_jul = {
+    "name": "Clear count for July",
+    "title": "Clear observation count for July",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_jul",
+        },
+    },
+    "needed_bands": ["count_jul"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_aug = {
+    "name": "Clear count for August",
+    "title": "Clear observation count for August",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_aug",
+        },
+    },
+    "needed_bands": ["count_aug"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_sep = {
+    "name": "Clear count for September",
+    "title": "Clear observation count for September",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_sep",
+        },
+    },
+    "needed_bands": ["count_sep"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_oct = {
+    "name": "Clear count for October",
+    "title": "Clear observation count for October",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_oct",
+        },
+    },
+    "needed_bands": ["count_oct"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_nov = {
+    "name": "Clear count for November",
+    "title": "Clear observation count for November",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_nov",
+        },
+    },
+    "needed_bands": ["count_nov"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+style_count_dec = {
+    "name": "Clear count for December",
+    "title": "Clear observation count for December",
+    "abstract": "Count of valid observations included in calculations",
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "count_dec",
+        },
+    },
+    "needed_bands": ["count_dec"],
+    "include_in_feature_info": False,
+    "color_ramp": ,
+    "legend": {
+        "begin": "0",
+        "end": "140",
+        "decimal_places": 0,
+        "ticks_every": 20,
+        "tick_labels": {
+            "140": {"suffix": "<"},
+        },
+    },
+}
+
+#---------------------------------------------
 layer = {
     "title": "NDVI Climatologies",
     "name": "ndvi_climatology_ls",
     "abstract": """
 
-Enter layer description
+Standardised NDVI Anomalies provide a measure of vegetation health relative to long term average conditions by measuring the departure, in units of standard devaiations, away from the long-term average. These NDVI climatologies (both mean and standard deviation) represent the long-term average conditions of vegetation condition. NDVI climatologies are available for each month, and were calculated by aggregating data from 1984-2020.
 
 """,
     "product_name": "ndvi_climatology_ls",
@@ -217,7 +733,43 @@ Enter layer description
     "native_crs": "EPSG:6933",
     "native_resolution": [30, -30],
     "styling": {
-        "default_style": "style_ndvi_mean",
-        "styles": [style_ndvi_mean, style_ndvi_std, style_ndvi_count],
+        "default_style": "style_ndvi_mean_jan",
+        "styles": [style_ndvi_mean_jan,
+                   style_ndvi_mean_feb,
+                   style_ndvi_mean_mar,
+                   style_ndvi_mean_apr,
+                   style_ndvi_mean_may,
+                   style_ndvi_mean_jun,
+                   style_ndvi_mean_jul,
+                   style_ndvi_mean_aug,
+                   style_ndvi_mean_sep,
+                   style_ndvi_mean_oct,
+                   style_ndvi_mean_nov,
+                   style_ndvi_mean_dev,
+                   style_ndvi_std_jan,
+                   style_ndvi_std_feb,
+                   style_ndvi_std_mar,
+                   style_ndvi_std_apr,
+                   style_ndvi_std_may,
+                   style_ndvi_std_jun,
+                   style_ndvi_std_jul,
+                   style_ndvi_std_aug,
+                   style_ndvi_std_sep,
+                   style_ndvi_std_oct,
+                   style_ndvi_std_nov,
+                   style_ndvi_std_dec,
+                   style_count_jan,
+                   style_count_feb,
+                   style_count_mar,
+                   style_count_apr,
+                   style_count_may,
+                   style_count_jun,
+                   style_count_jul,
+                   style_count_aug,
+                   style_count_sep,
+                   style_count_oct,
+                   style_count_nov,
+                   style_count_dec
+                  ],
     },
 }
