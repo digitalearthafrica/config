@@ -749,7 +749,7 @@ Standardised NDVI Anomalies provide a measure of vegetation health relative to l
             style_ndvi_mean_sep,
             style_ndvi_mean_oct,
             style_ndvi_mean_nov,
-            style_ndvi_mean_dev,
+            style_ndvi_mean_dec,
             style_ndvi_std_jan,
             style_ndvi_std_feb,
             style_ndvi_std_mar,
