@@ -304,6 +304,10 @@ ows_cfg = {
                             "include": "ows_refactored.vegetation.ows_gmw_cfg.layer",
                             "type": "python",
                         },
+                        {
+                            "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
+                            "type": "python",
+                        },
                     ],
                 },
                 {
