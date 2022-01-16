@@ -425,7 +425,7 @@ style_count_jan = {
     },
     "needed_bands": ["count_jan"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -450,7 +450,7 @@ style_count_feb = {
     },
     "needed_bands": ["count_feb"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -475,7 +475,7 @@ style_count_mar = {
     },
     "needed_bands": ["count_mar"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -500,7 +500,7 @@ style_count_apr = {
     },
     "needed_bands": ["count_apr"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -525,7 +525,7 @@ style_count_may = {
     },
     "needed_bands": ["count_may"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -550,7 +550,7 @@ style_count_jun = {
     },
     "needed_bands": ["count_jun"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -575,7 +575,7 @@ style_count_jul = {
     },
     "needed_bands": ["count_jul"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -600,7 +600,7 @@ style_count_aug = {
     },
     "needed_bands": ["count_aug"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -625,7 +625,7 @@ style_count_sep = {
     },
     "needed_bands": ["count_sep"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -650,7 +650,7 @@ style_count_oct = {
     },
     "needed_bands": ["count_oct"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -675,7 +675,7 @@ style_count_nov = {
     },
     "needed_bands": ["count_nov"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
@@ -700,7 +700,7 @@ style_count_dec = {
     },
     "needed_bands": ["count_dec"],
     "include_in_feature_info": False,
-    "color_ramp": ,
+    "color_ramp": count_cr,
     "legend": {
         "begin": "0",
         "end": "140",
