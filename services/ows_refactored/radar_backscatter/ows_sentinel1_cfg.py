@@ -17,7 +17,7 @@ style_s1_vv = {
     "pq_masks": [
         {
             "band": "mask",
-            "enum": 1,
+            "values": [1],
         },
     ],
 }
@@ -35,7 +35,7 @@ style_s1_vh = {
     "pq_masks": [
         {
             "band": "mask",
-            "enum": 1,
+            "values": [1],
         },
     ],
 }
@@ -57,7 +57,7 @@ style_s1_vh_over_vv = {
     "pq_masks": [
         {
             "band": "mask",
-            "enum": 1,
+            "values": [1],
         },
     ],
 }
@@ -78,7 +78,7 @@ style_s1_rvi = {
     "pq_masks": [
         {
             "band": "mask",
-            "enum": 1,
+            "values": [1],
         },
     ],
 }
