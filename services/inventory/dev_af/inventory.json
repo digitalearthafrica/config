@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 32,
+  "total_layers_count": 33,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -467,6 +467,51 @@
           "styles_count": 1,
           "styles_list": [
               "style_colours"
+          ]
+      },
+      {
+          "layer": "ndvi_climatology_ls",
+          "product": [
+              "ndvi_climatology_ls"
+          ],
+          "styles_count": 36,
+          "styles_list": [
+                "style_ndvi_mean_jan",
+                "style_ndvi_mean_feb",
+                "style_ndvi_mean_mar",
+                "style_ndvi_mean_apr",
+                "style_ndvi_mean_may",
+                "style_ndvi_mean_jun",
+                "style_ndvi_mean_jul",
+                "style_ndvi_mean_aug",
+                "style_ndvi_mean_sep",
+                "style_ndvi_mean_oct",
+                "style_ndvi_mean_nov",
+                "style_ndvi_mean_dec",
+                "style_ndvi_std_jan",
+                "style_ndvi_std_feb",
+                "style_ndvi_std_mar",
+                "style_ndvi_std_apr",
+                "style_ndvi_std_may",
+                "style_ndvi_std_jun",
+                "style_ndvi_std_jul",
+                "style_ndvi_std_aug",
+                "style_ndvi_std_sep",
+                "style_ndvi_std_oct",
+                "style_ndvi_std_nov",
+                "style_ndvi_std_dec",
+                "style_count_jan",
+                "style_count_feb",
+                "style_count_mar",
+                "style_count_apr",
+                "style_count_may",
+                "style_count_jun",
+                "style_count_jul",
+                "style_count_aug",
+                "style_count_sep",
+                "style_count_oct",
+                "style_count_nov",
+                "style_count_dec"
           ]
       },
       {
