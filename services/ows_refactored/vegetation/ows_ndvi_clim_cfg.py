@@ -827,7 +827,7 @@ Standardised NDVI Anomalies provide a measure of vegetation health relative to l
     "native_crs": "EPSG:6933",
     "native_resolution": [30, -30],
     "styling": {
-        "default_style": "style_ndvi_mean_jan",
+        "default_style": "Mean NDVI Climatology for January",
         "styles": [
             style_ndvi_mean_jan,
             style_ndvi_mean_feb,
