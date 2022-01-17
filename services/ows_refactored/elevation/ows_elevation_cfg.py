@@ -106,7 +106,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 }
 
 layer_nasadem = {
-    "title": "NASADEM (30 m)",
+    "title": "NASA Digital Elevation Model (30 m)",
     "name": "nasadem",
     "abstract": """
 NASADEM provides global topographic data at 1 arc-second (~30m) horizontal resolution, derived primarily from data captured via the Shuttle Radar Topography Mission (SRTM).

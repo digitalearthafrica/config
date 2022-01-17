@@ -128,7 +128,7 @@ style_lsc2_st_qa = {
 
 
 layer_ls8 = {
-    "title": "Surface Temperature Landsat 8 (USGS Collection 2)",
+    "title": "Surface temperature (Landsat 8)",
     "name": "ls8_st",
     "abstract": """
 Surface temperature measures the Earth’s surface temperature and is an important geophysical parameter in global energy balance studies and hydrologic modeling. Surface temperature is also useful for monitoring crop and vegetation health, and extreme heat events such as natural disasters (e.g., volcanic eruptions, wildfires), and urban heat island effects.

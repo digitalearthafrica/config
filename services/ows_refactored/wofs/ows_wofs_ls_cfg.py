@@ -5,7 +5,7 @@ from ows_refactored.wofs.style_wofs_ls import (
     style_wofs_ls_wet)
 
 layer = {
-    "title": "Water Observations from Space Feature Layer",
+    "title": "Water Observations from Space feature layer",
     "name": "wofs_ls",
     "abstract": """
 Water Observations from Space (WOfS) provides surface water observations derived from satellite imagery for all of Africa. The WOfS product allows users to get a better understanding of where water is normally present in a landscape, where water is seldom observed, and where inundation has occurred occasionally. Data is provided as Water Observation Feature Layers (WOFLs), in a 1 to 1 relationship with the input satellite data. Hence there is one WOFL for each satellite dataset processed for the occurrence of water.
