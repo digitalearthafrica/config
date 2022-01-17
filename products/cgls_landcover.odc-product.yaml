@@ -1,5 +1,5 @@
 ---
-name: gls
+name: cgls_landcover
 description: Copernicus Global Land Service, Land Use/Land Cover at 100 m
 metadata_type: eo3
 
@@ -7,13 +7,13 @@ license: CC-BY-4.0
 
 metadata:
   product:
-    name: gls
+    name: cgls_landcover
 
 storage:
   crs: EPSG:4326
   resolution:
-    lon: 0.0009920634920634888
-    lat: -0.0009920634920634888
+    longitude: 0.0009920634920634888
+    latitude: -0.0009920634920634888
 
 measurements:
   - name: classification
