@@ -97,6 +97,13 @@ style_ndvi_mean_jan = {
     "title": "Mean NDVI Climatology for January",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_jan"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_jan",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -106,6 +113,13 @@ style_ndvi_mean_feb = {
     "title": "Mean NDVI Climatology for February",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_feb"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_feb",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -115,6 +129,13 @@ style_ndvi_mean_mar = {
     "title": "Mean NDVI Climatology for March",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_mar"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_mar",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -124,6 +145,13 @@ style_ndvi_mean_mar = {
     "title": "Mean NDVI Climatology for March",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_mar"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_mar",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -133,6 +161,13 @@ style_ndvi_mean_apr = {
     "title": "Mean NDVI Climatology for April",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_apr"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_apr",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -142,6 +177,13 @@ style_ndvi_mean_may = {
     "title": "Mean NDVI Climatology for May",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_may"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_may",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -151,6 +193,13 @@ style_ndvi_mean_jun = {
     "title": "Mean NDVI Climatology for June",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_jun"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_jun",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -160,6 +209,13 @@ style_ndvi_mean_jul = {
     "title": "Mean NDVI Climatology for July",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_jul"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_jul",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -169,6 +225,13 @@ style_ndvi_mean_aug = {
     "title": "Mean NDVI Climatology for August",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_aug"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_aug",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -178,6 +241,13 @@ style_ndvi_mean_sep = {
     "title": "Mean NDVI Climatology for September",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_sep"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_sep",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -187,6 +257,13 @@ style_ndvi_mean_oct = {
     "title": "Mean NDVI Climatology for October",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_oct"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_oct",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -196,6 +273,13 @@ style_ndvi_mean_nov = {
     "title": "Mean NDVI Climatology for November",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_nov"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_nov",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
@@ -205,6 +289,13 @@ style_ndvi_mean_dec = {
     "title": "Mean NDVI Climatology for December",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_dec"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "mean_dec",
+        },
+    },
     "color_ramp": mean_cr,
     "legend": legend_idx_0_1_5ticks,
 }
