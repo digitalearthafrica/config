@@ -93,7 +93,7 @@ count_cr = [
 
 # mean styles------------------------------------------------------
 style_ndvi_mean_jan = {
-    "name": "Mean NDVI Climatology for January",
+    "name": "style_ndvi_mean_jan",
     "title": "Mean NDVI Climatology for January",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_jan"],
@@ -109,7 +109,7 @@ style_ndvi_mean_jan = {
 }
 
 style_ndvi_mean_feb = {
-    "name": "Mean NDVI Climatology for February",
+    "name": "style_ndvi_mean_feb",
     "title": "Mean NDVI Climatology for February",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_feb"],
@@ -125,7 +125,7 @@ style_ndvi_mean_feb = {
 }
 
 style_ndvi_mean_mar = {
-    "name": "Mean NDVI Climatology for March",
+    "name": "style_ndvi_mean_mar",
     "title": "Mean NDVI Climatology for March",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_mar"],
@@ -141,7 +141,7 @@ style_ndvi_mean_mar = {
 }
 
 style_ndvi_mean_mar = {
-    "name": "Mean NDVI Climatology for March",
+    "name": "style_ndvi_mean_mar",
     "title": "Mean NDVI Climatology for March",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_mar"],
@@ -157,7 +157,7 @@ style_ndvi_mean_mar = {
 }
 
 style_ndvi_mean_apr = {
-    "name": "Mean NDVI Climatology for April",
+    "name": "style_ndvi_mean_apr",
     "title": "Mean NDVI Climatology for April",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_apr"],
@@ -173,7 +173,7 @@ style_ndvi_mean_apr = {
 }
 
 style_ndvi_mean_may = {
-    "name": "Mean NDVI Climatology for May",
+    "name": "style_ndvi_mean_may",
     "title": "Mean NDVI Climatology for May",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_may"],
@@ -189,7 +189,7 @@ style_ndvi_mean_may = {
 }
 
 style_ndvi_mean_jun = {
-    "name": "Mean NDVI Climatology for June",
+    "name": "style_ndvi_mean_jun",
     "title": "Mean NDVI Climatology for June",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_jun"],
@@ -205,7 +205,7 @@ style_ndvi_mean_jun = {
 }
 
 style_ndvi_mean_jul = {
-    "name": "Mean NDVI Climatology for July",
+    "name": "style_ndvi_mean_jul",
     "title": "Mean NDVI Climatology for July",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_jul"],
@@ -221,7 +221,7 @@ style_ndvi_mean_jul = {
 }
 
 style_ndvi_mean_aug = {
-    "name": "Mean NDVI Climatology for August",
+    "name": "style_ndvi_mean_aug",
     "title": "Mean NDVI Climatology for August",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_aug"],
@@ -237,7 +237,7 @@ style_ndvi_mean_aug = {
 }
 
 style_ndvi_mean_sep = {
-    "name": "Mean NDVI Climatology for September",
+    "name": "style_ndvi_mean_sep",
     "title": "Mean NDVI Climatology for September",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_sep"],
@@ -253,7 +253,7 @@ style_ndvi_mean_sep = {
 }
 
 style_ndvi_mean_oct = {
-    "name": "Mean NDVI Climatology for October",
+    "name": "style_ndvi_mean_oct",
     "title": "Mean NDVI Climatology for October",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_oct"],
@@ -269,7 +269,7 @@ style_ndvi_mean_oct = {
 }
 
 style_ndvi_mean_nov = {
-    "name": "Mean NDVI Climatology for November",
+    "name": "style_ndvi_mean_nov",
     "title": "Mean NDVI Climatology for November",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_nov"],
@@ -285,7 +285,7 @@ style_ndvi_mean_nov = {
 }
 
 style_ndvi_mean_dec = {
-    "name": "Mean NDVI Climatology for December",
+    "name": "style_ndvi_mean_dec",
     "title": "Mean NDVI Climatology for December",
     "abstract": "Long-term Mean NDVI Climatology (1984-2020)",
     "needed_bands": ["mean_dec"],
@@ -302,7 +302,7 @@ style_ndvi_mean_dec = {
 
 # std dev styles-----------------------------------------------------
 style_ndvi_std_jan = {
-    "name": "Std. Dev. NDVI Climatology for January",
+    "name": "style_ndvi_std_jan",
     "title": "Std. Dev. NDVI Climatology for January",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_jan"],
@@ -319,7 +319,7 @@ style_ndvi_std_jan = {
 }
 
 style_ndvi_std_feb = {
-    "name": "Std. Dev. NDVI Climatology for February",
+    "name": "style_ndvi_std_feb",
     "title": "Std. Dev. NDVI Climatology for February",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_feb"],
@@ -336,7 +336,7 @@ style_ndvi_std_feb = {
 }
 
 style_ndvi_std_mar = {
-    "name": "Std. Dev. NDVI Climatology for March",
+    "name": "style_ndvi_std_mar",
     "title": "Std. Dev. NDVI Climatology for March",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_mar"],
@@ -353,7 +353,7 @@ style_ndvi_std_mar = {
 }
 
 style_ndvi_std_apr = {
-    "name": "Std. Dev. NDVI Climatology for April",
+    "name": "style_ndvi_std_apr",
     "title": "Std. Dev. NDVI Climatology for April",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_apr"],
@@ -370,7 +370,7 @@ style_ndvi_std_apr = {
 }
 
 style_ndvi_std_may = {
-    "name": "Std. Dev. NDVI Climatology for May",
+    "name": "style_ndvi_std_may",
     "title": "Std. Dev. NDVI Climatology for May",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_may"],
@@ -387,7 +387,7 @@ style_ndvi_std_may = {
 }
 
 style_ndvi_std_jun = {
-    "name": "Std. Dev. NDVI Climatology for June",
+    "name": "style_ndvi_std_jun",
     "title": "Std. Dev. NDVI Climatology for June",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_jun"],
@@ -404,7 +404,7 @@ style_ndvi_std_jun = {
 }
 
 style_ndvi_std_jul = {
-    "name": "Std. Dev. NDVI Climatology for July",
+    "name": "style_ndvi_std_jul",
     "title": "Std. Dev. NDVI Climatology for July",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_jul"],
@@ -421,7 +421,7 @@ style_ndvi_std_jul = {
 }
 
 style_ndvi_std_aug = {
-    "name": "Std. Dev. NDVI Climatology for August",
+    "name": "style_ndvi_std_aug",
     "title": "Std. Dev. NDVI Climatology for August",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_aug"],
@@ -438,7 +438,7 @@ style_ndvi_std_aug = {
 }
 
 style_ndvi_std_sep = {
-    "name": "Std. Dev. NDVI Climatology for Septemeber",
+    "name": "style_ndvi_std_sep",
     "title": "Std. Dev. NDVI Climatology for September",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_sep"],
@@ -455,7 +455,7 @@ style_ndvi_std_sep = {
 }
 
 style_ndvi_std_oct = {
-    "name": "Std. Dev. NDVI Climatology for October",
+    "name": "style_ndvi_std_oct",
     "title": "Std. Dev. NDVI Climatology for October",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_oct"],
@@ -472,7 +472,7 @@ style_ndvi_std_oct = {
 }
 
 style_ndvi_std_nov = {
-    "name": "Std. Dev. NDVI Climatology for November",
+    "name": "style_ndvi_std_nov",
     "title": "Std. Dev. NDVI Climatology for November",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_nov"],
@@ -489,7 +489,7 @@ style_ndvi_std_nov = {
 }
 
 style_ndvi_std_dec = {
-    "name": "Std. Dev. NDVI Climatology for December",
+    "name": "style_ndvi_std_dec",
     "title": "Std. Dev. NDVI Climatology for December",
     "abstract": "Long-term Standard Deviation NDVI Climatology (1984-2020)",
     "needed_bands": ["stddev_dec"],
@@ -507,7 +507,7 @@ style_ndvi_std_dec = {
 
 # count styles-----------------------------------------------------
 style_count_jan = {
-    "name": "Clear count for January",
+    "name": "style_count_jan",
     "title": "Clear observation count for January",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -532,7 +532,7 @@ style_count_jan = {
 }
 
 style_count_feb = {
-    "name": "Clear count for February",
+    "name": "style_count_feb",
     "title": "Clear observation count for February",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -557,7 +557,7 @@ style_count_feb = {
 }
 
 style_count_mar = {
-    "name": "Clear count for March",
+    "name": "style_count_mar",
     "title": "Clear observation count for March",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -582,7 +582,7 @@ style_count_mar = {
 }
 
 style_count_apr = {
-    "name": "Clear count for April",
+    "name": "style_count_apr",
     "title": "Clear observation count for April",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -607,7 +607,7 @@ style_count_apr = {
 }
 
 style_count_may = {
-    "name": "Clear count for May",
+    "name": "style_count_may",
     "title": "Clear observation count for May",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -632,7 +632,7 @@ style_count_may = {
 }
 
 style_count_jun = {
-    "name": "Clear count for June",
+    "name": "style_count_jun",
     "title": "Clear observation count for June",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -657,7 +657,7 @@ style_count_jun = {
 }
 
 style_count_jul = {
-    "name": "Clear count for July",
+    "name": "style_count_jul",
     "title": "Clear observation count for July",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -682,7 +682,7 @@ style_count_jul = {
 }
 
 style_count_aug = {
-    "name": "Clear count for August",
+    "name": "style_count_aug",
     "title": "Clear observation count for August",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -707,7 +707,7 @@ style_count_aug = {
 }
 
 style_count_sep = {
-    "name": "Clear count for September",
+    "name": "style_count_sep",
     "title": "Clear observation count for September",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -732,7 +732,7 @@ style_count_sep = {
 }
 
 style_count_oct = {
-    "name": "Clear count for October",
+    "name": "style_count_oct",
     "title": "Clear observation count for October",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -757,7 +757,7 @@ style_count_oct = {
 }
 
 style_count_nov = {
-    "name": "Clear count for November",
+    "name": "style_count_nov",
     "title": "Clear observation count for November",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
@@ -782,7 +782,7 @@ style_count_nov = {
 }
 
 style_count_dec = {
-    "name": "Clear count for December",
+    "name": "style_count_dec",
     "title": "Clear observation count for December",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
