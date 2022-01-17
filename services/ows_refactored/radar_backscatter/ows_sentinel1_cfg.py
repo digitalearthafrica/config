@@ -85,7 +85,7 @@ style_s1_rvi = {
 
 
 layer = {
-    "title": "Normalized Radar Backscatter Sentinel-1",
+    "title": "Normalised radar backscatter (Sentinel-1)",
     "name": "s1_rtc",
     "abstract": """
 

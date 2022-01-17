@@ -6,7 +6,7 @@ from ows_refactored.surface_reflectance.style_sr_cfg import (
     styles_ls8c2_sr_list, styles_lsc2_sr_list)
 
 layer_ls8 = {
-    "title": "Surface Reflectance Landsat 8 (USGS Collection 2)",
+    "title": "Surface reflectance (Landsat 8)",
     "name": "ls8_sr",
     "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
@@ -42,7 +42,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 }
 
 layer_ls7 = {
-    "title": "Surface Reflectance Landsat 7 (USGS Collection 2)",
+    "title": "Surface reflectance (Landsat 7)",
     "name": "ls7_sr",
     "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.
@@ -78,7 +78,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 }
 
 layer_ls5 = {
-    "title": "Surface Reflectance Landsat 5 (USGS Collection 2)",
+    "title": "Surface reflectance (Landsat 5)",
     "name": "ls5_sr",
     "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.

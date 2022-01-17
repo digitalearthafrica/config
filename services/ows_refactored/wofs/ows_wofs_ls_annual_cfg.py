@@ -7,7 +7,7 @@ from ows_refactored.wofs.style_wofs_ls import (
 from ows_refactored.wofs.style_wofs_ls_legacy import legacy_style_wofs_summary_annual_frequency
 
 layer = {
-    "title": "Water Observations from Space Annual Summary",
+    "title": "Water Observations from Space annual summary",
     "name": "wofs_ls_summary_annual",
     "abstract": """
 Annual water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) from each calendar year.

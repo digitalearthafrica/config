@@ -3,7 +3,7 @@ from ows_refactored.surface_reflectance.band_sr_cfg import bands_sentinel
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_s2_list
 
 layer = {
-    "title": "Surface Reflectance Sentinel-2",
+    "title": "Surface reflectance (Sentinel-2)",
     "name": "s2_l2a",
     "abstract": """
 Surface reflectance is the fraction of incoming solar radiation that is reflected from Earth's surface. Variations in satellite measured radiance due to atmospheric properties have been corrected for, so images acquired over the same area at different times are comparable and can be used readily to detect changes on Earth’s surface.

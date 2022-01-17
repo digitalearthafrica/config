@@ -7,7 +7,7 @@ from ows_refactored.wofs.style_wofs_ls import (
 from ows_refactored.wofs.style_wofs_ls_legacy import legacy_style_wofs_summary_alltime_frequency
 
 layer = {
-    "title": "Water Observations from Space All-Time Summary",
+    "title": "Water Observations from Space all-time summary",
     "name": "wofs_ls_summary_alltime",
     "abstract": """
 All time water summary is one of the statistical summaries of the Water Observation from Space (WOfS) product that shows what percentage of clear observations were detected as wet (ie. the ration of wet to clear as a percentage) over time.

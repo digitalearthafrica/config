@@ -4,7 +4,7 @@ from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls578_list
 
 
 layer = {
-    "title": "Surface Reflectance Annual GeoMAD Landsat 8",
+    "title": "Annual GeoMAD (Landsat 8)",
     "name": "gm_ls8_annual",
     "abstract": """
 Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.

@@ -88,7 +88,7 @@ style_colours = {
 }
 
 layer = {
-    "title": "IO Land Use/Land Cover 2020",
+    "title": "Impact Observatory Land Use/Land Cover 2020",
     "name": "io_lulc",
     "abstract": """
 Global estimates of 10-class land use/land cover (LULC) for 2020, derived from ESA Sentinel-2 imagery at 10m resolution.
