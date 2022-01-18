@@ -1,12 +1,13 @@
 # DE Africa Terria catalogue
 
-The Terria catalogue is a list of all datasets available to users on the Digital Earth Africa Map https://maps.digitalearth.africa/. 
-It is built from the `africa-prod.json` file.
+The Terria catalogue is a list of all datasets available to users on the Digital Earth Africa Map https://maps.digitalearth.africa/ when they select "Explore map data". It is built from the `africa-prod.json` file.
 
 ## `africa-prod.json`
 
 The Terria catalogue is generated as a `wms-group` based on the structure of `../services/ows_refactored/prod_af_ows_root_cfg.py`. 
-Any product added to that root config file and released in a tagged version (i.e. in live production) will be visible to users of the Map portal. The Map portal will use the layer `title` and `abstract` as defined in the individual layer configs.
+Any product added to that root config file and released in a tagged version (i.e. in live production) will be visible to users of the Map portal. 
+
+The catalogue will use the layer `title` and `abstract` as defined in the individual layer configs. Therefore, any changes to layer titles or text need to be made in their respective layer config file (generally found in subfolders of `../services/ows_refactored/`).
 
 ## Exclude layers 
 
@@ -20,4 +21,6 @@ However, any changes to files it builds from (such as the `prod_af_ows_root_cfg.
 
 ## Superseded - `africa-prod-archived.json`
 
-The pre-2022 manually defined Terria catalogue. It does not draw information from layer configs (for example `abstract` fields are missing and would have to be individually copied over and updated). It has not been updated with products past January 2022.
+*Not currently in use*
+
+The pre-2022 manually-defined Terria catalogue, used in repository release `0.1.42` and earlier. It does not draw information from layer configs (for example `abstract` fields are missing and would have to be individually copied over and updated). It has not been updated with products past January 2022.
