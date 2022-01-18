@@ -372,7 +372,7 @@ style_ndvi_std_jul = {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "stddev_jun",
+            "band": "stddev_jul",
         },
     },
     "color_ramp": std_cr,
