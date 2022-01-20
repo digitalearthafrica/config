@@ -174,7 +174,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 }
 
 layer_ls7 = {
-    "title": "Surface Temperature Landsat 7 (USGS Collection 2)",
+    "title": "Surface temperature (Landsat 7)",
     "name": "ls7_st",
     "abstract": """
 Surface temperature measures the Earth’s surface temperature and is an important geophysical parameter in global energy balance studies and hydrologic modeling. Surface temperature is also useful for monitoring crop and vegetation health, and extreme heat events such as natural disasters (e.g., volcanic eruptions, wildfires), and urban heat island effects.
@@ -220,7 +220,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 }
 
 layer_ls5 = {
-    "title": "Surface Temperature Landsat 5 (USGS Collection 2)",
+    "title": "Surface temperature (Landsat 5)",
     "name": "ls5_st",
     "abstract": """
 Surface temperature measures the Earth’s surface temperature and is an important geophysical parameter in global energy balance studies and hydrologic modeling. Surface temperature is also useful for monitoring crop and vegetation health, and extreme heat events such as natural disasters (e.g., volcanic eruptions, wildfires), and urban heat island effects.
