@@ -6,9 +6,16 @@ legend_idx_0_1_5ticks = {
     "units": "unitless",
 }
 
-legend_stddev_ticks = {
+legend_stddev_ndvi_ticks = {
     "begin": "0.0",
-    "end": "0.5",
+    "end": "0.4",
+    "ticks_every": "0.025",
+    "units": "unitless",
+}
+
+legend_mean_ndvi_ticks = {
+    "begin": "0.0",
+    "end": "0.9",
     "ticks_every": "0.05",
     "units": "unitless",
 }
