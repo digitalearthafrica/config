@@ -1,54 +1,71 @@
 from ows_refactored.common.ows_legend_cfg import (
-    legend_idx_0_1_5ticks,
-    legend_stddev_ticks,
+    legend_mean_ndvi_ticks,
+    legend_stddev_ndvi_ticks,
 )
 
 # colour ramps-------------------------------------
 mean_cr = [
     {"value": -0.0, "color": "#8F3F20", "alpha": 0.0},
     {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
-    {"value": 0.1, "color": "#A35F18"},
-    {"value": 0.2, "color": "#B88512"},
-    {"value": 0.3, "color": "#CEAC0E"},
-    {"value": 0.4, "color": "#E5D609"},
-    {"value": 0.5, "color": "#FFFF0C"},
-    {"value": 0.6, "color": "#C3DE09"},
-    {"value": 0.7, "color": "#88B808"},
-    {"value": 0.8, "color": "#529400"},
-    {"value": 0.9, "color": "#237100"},
-    {"value": 1.0, "color": "#114D04"},
+    {"value": 0.1, "color": "#ffffe5"},
+    {"value": 0.15, "color": "#fbfecf"},
+    {"value": 0.2, "color": "#f7fcb9"},
+    {"value": 0.25, "color": "#e8f6ae"},
+    {"value": 0.3, "color": "#d9f0a3"},
+    {"value": 0.35, "color": "#c3e698"},
+    {"value": 0.4, "color": "#addd8e"},
+    {"value": 0.45, "color": "#92d284"},
+    {"value": 0.5, "color": "#78c679"},
+    {"value": 0.55, "color": "#5cb86b"},
+    {"value": 0.6, "color": "#41ab5d"},
+    {"value": 0.65, "color": "#329850"},
+    {"value": 0.7, "color": "#238443"},
+    {"value": 0.75, "color": "#12763d"},
+    {"value": 0.8, "color": "#006837"},
+    {"value": 0.85, "color": "#005630"},
+    {"value": 0.9, "color": "#004529"},
 ]
 
 std_cr = [
-    {"value": 0, "color": "black"},
-    {"value": 0.05, "color": "#010007"},
-    {"value": 0.10, "color": "#170b3b"},
-    {"value": 0.15, "color": "#410967"},
-    {"value": 0.20, "color": "#6b176e"},
-    {"value": 0.25, "color": "#952666"},
-    {"value": 0.30, "color": "#bb3754"},
-    {"value": 0.35, "color": "#dd5238"},
-    {"value": 0.40, "color": "#f37719"},
-    {"value": 0.45, "color": "#fba60b"},
-    {"value": 0.5, "color": "#f5d948"},
+    {"value": 0, "color": "#FFFFFF", "alpha": 1},
+    {"value": 0.001, "color": "#000004"},
+    {"value": 0.025, "color": "#0a0822"},
+    {"value": 0.05, "color": "#1d1147"},
+    {"value": 0.075, "color": "#36106b"},
+    {"value": 0.1, "color": "#51127c"},
+    {"value": 0.125, "color": "#6a1c81"},
+    {"value": 0.15, "color": "#832681"},
+    {"value": 0.175, "color": "#9c2e7f"},
+    {"value": 0.2, "color": "#b73779"},
+    {"value": 0.225, "color": "#d0416f"},
+    {"value": 0.25, "color": "#e75263"},
+    {"value": 0.275, "color": "#f56b5c"},
+    {"value": 0.3, "color": "#fc8961"},
+    {"value": 0.325, "color": "#fea772"},
+    {"value": 0.35, "color": "#fec488"},
+    {"value": 0.375, "color": "#fde2a3"},
+    {"value": 0.4, "color": "#fcfdbf"},
 ]
 
 count_cr = [
-    {"value": 0, "color": "#666666"},
-    {"value": 0.2, "color": "#FFFFFF", "alpha": 1},
-    {"value": 10, "color": "#f3fabf"},
-    {"value": 20, "color": "#e1f3b2"},
-    {"value": 30, "color": "#c6e9b4"},
-    {"value": 40, "color": "#97d6b9"},
-    {"value": 50, "color": "#6bc6be"},
-    {"value": 60, "color": "#42b6c4"},
-    {"value": 70, "color": "#299dc1"},
-    {"value": 80, "color": "#1f80b8"},
-    {"value": 90, "color": "#225da8"},
-    {"value": 100, "color": "#24419a"},
-    {"value": 110, "color": "#1b2c80"},
-    {"value": 120, "color": "#081d58"},
-    {"value": 140, "color": "#071743"},
+    {"value": 0, "color": "#FFFFFF", "alpha": 1},
+    {"value": 1, "color": "#f7fbff"},
+    {"value": 10, "color": "#ebf3fb"},
+    {"value": 20, "color": "#deebf7"},
+    {"value": 30, "color": "#d2e3f3"},
+    {"value": 40, "color": "#c6dbef"},
+    {"value": 50, "color": "#b2d2e8"},
+    {"value": 60, "color": "#9ecae1"},
+    {"value": 70, "color": "#84bcdc"},
+    {"value": 80, "color": "#6baed6"},
+    {"value": 90, "color": "#56a0ce"},
+    {"value": 100, "color": "#4292c6"},
+    {"value": 110, "color": "#3282be"},
+    {"value": 120, "color": "#2171b5"},
+    {"value": 130, "color": "#1461a9"},
+    {"value": 160, "color": "#08519c"},
+    {"value": 150, "color": "#084084"},
+    {"value": 160, "color": "#08306b"},
 ]
 
 # mean styles------------------------------------------------------
@@ -65,7 +82,7 @@ style_ndvi_mean_jan = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_feb = {
@@ -81,7 +98,7 @@ style_ndvi_mean_feb = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_mar = {
@@ -97,7 +114,7 @@ style_ndvi_mean_mar = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_mar = {
@@ -113,7 +130,7 @@ style_ndvi_mean_mar = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_apr = {
@@ -129,7 +146,7 @@ style_ndvi_mean_apr = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_may = {
@@ -145,7 +162,7 @@ style_ndvi_mean_may = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_jun = {
@@ -161,7 +178,7 @@ style_ndvi_mean_jun = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_jul = {
@@ -177,7 +194,7 @@ style_ndvi_mean_jul = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_aug = {
@@ -193,7 +210,7 @@ style_ndvi_mean_aug = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_sep = {
@@ -209,7 +226,7 @@ style_ndvi_mean_sep = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_oct = {
@@ -225,7 +242,7 @@ style_ndvi_mean_oct = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_nov = {
@@ -241,7 +258,7 @@ style_ndvi_mean_nov = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 style_ndvi_mean_dec = {
@@ -257,7 +274,7 @@ style_ndvi_mean_dec = {
         },
     },
     "color_ramp": mean_cr,
-    "legend": legend_idx_0_1_5ticks,
+    "legend": legend_mean_ndvi_ticks,
 }
 
 # std dev styles-----------------------------------------------------
@@ -275,7 +292,7 @@ style_ndvi_std_jan = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_feb = {
@@ -292,7 +309,7 @@ style_ndvi_std_feb = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_mar = {
@@ -309,7 +326,7 @@ style_ndvi_std_mar = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_apr = {
@@ -326,7 +343,7 @@ style_ndvi_std_apr = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_may = {
@@ -343,7 +360,7 @@ style_ndvi_std_may = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_jun = {
@@ -360,7 +377,7 @@ style_ndvi_std_jun = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_jul = {
@@ -377,7 +394,7 @@ style_ndvi_std_jul = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_aug = {
@@ -394,7 +411,7 @@ style_ndvi_std_aug = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_sep = {
@@ -411,7 +428,7 @@ style_ndvi_std_sep = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_oct = {
@@ -428,7 +445,7 @@ style_ndvi_std_oct = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_nov = {
@@ -445,7 +462,7 @@ style_ndvi_std_nov = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 style_ndvi_std_dec = {
@@ -462,7 +479,7 @@ style_ndvi_std_dec = {
     },
     "color_ramp": std_cr,
     "range": [0, 0.5],
-    "legend": legend_stddev_ticks,
+    "legend": legend_stddev_ndvi_ticks,
 }
 
 # count styles-----------------------------------------------------
@@ -482,11 +499,11 @@ style_count_jan = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -507,11 +524,11 @@ style_count_feb = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -532,11 +549,11 @@ style_count_mar = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -557,11 +574,11 @@ style_count_apr = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -582,11 +599,11 @@ style_count_may = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -607,11 +624,11 @@ style_count_jun = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -632,11 +649,11 @@ style_count_jul = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -657,11 +674,11 @@ style_count_aug = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -682,11 +699,11 @@ style_count_sep = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -707,11 +724,11 @@ style_count_oct = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -732,11 +749,11 @@ style_count_nov = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
@@ -757,11 +774,11 @@ style_count_dec = {
     "color_ramp": count_cr,
     "legend": {
         "begin": "0",
-        "end": "140",
+        "end": "160",
         "decimal_places": 0,
-        "ticks_every": 20,
+        "ticks_every": 10,
         "tick_labels": {
-            "140": {"suffix": "<"},
+            "160": {"suffix": "<"},
         },
     },
 }
