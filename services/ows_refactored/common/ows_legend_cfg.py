@@ -15,7 +15,7 @@ legend_stddev_ndvi_ticks = {
 
 legend_mean_ndvi_ticks = {
     "begin": "0.0",
-    "end": "1.0",
+    "end": "0.9",
     "ticks_every": "0.1",
     "units": "unitless",
 }
