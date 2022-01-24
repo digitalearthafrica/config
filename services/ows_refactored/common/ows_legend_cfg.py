@@ -9,14 +9,14 @@ legend_idx_0_1_5ticks = {
 legend_stddev_ndvi_ticks = {
     "begin": "0.0",
     "end": "0.4",
-    "ticks_every": "0.025",
+    "ticks_every": "0.05",
     "units": "unitless",
 }
 
 legend_mean_ndvi_ticks = {
     "begin": "0.0",
     "end": "0.9",
-    "ticks_every": "0.05",
+    "ticks_every": "0.1",
     "units": "unitless",
 }
 
