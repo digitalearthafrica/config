@@ -27,7 +27,7 @@ mean_cr = [
 ]
 
 std_cr = [
-    {"value": 0, "color": "#FFFFFF", "alpha": 1},
+    {"value": 0, "color": "#FFFFFF", "alpha": 0.0},
     {"value": 0.001, "color": "#000004"},
     {"value": 0.025, "color": "#0a0822"},
     {"value": 0.05, "color": "#1d1147"},
@@ -48,7 +48,7 @@ std_cr = [
 ]
 
 count_cr = [
-    {"value": 0, "color": "#FFFFFF", "alpha": 1},
+    {"value": 0, "color": "#FFFFFF", "alpha": 0.0},
     {"value": 1, "color": "#f7fbff"},
     {"value": 10, "color": "#ebf3fb"},
     {"value": 20, "color": "#deebf7"},
