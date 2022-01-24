@@ -20,8 +20,7 @@ mean_cr = [
 ]
 
 std_cr = [
-    {"value": 0, "color": "#FFFFFF", "alpha": 0.0},
-    {"value": 0.001, "color": "#000004"},
+    {"value": 0.0, "color": "#000004"},
     {"value": 0.025, "color": "#0a0822"},
     {"value": 0.05, "color": "#1d1147"},
     {"value": 0.075, "color": "#36106b"},
