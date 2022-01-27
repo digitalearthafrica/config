@@ -10,7 +10,10 @@
           "opacity": 1.0
         },
         "excludeMembers": [],
-        "isOpen": true
+        "isOpen": true,
+        "perLayerLinkedWcs": {
+            "linkedWcsUrl": "https://ows.digitalearth.africa/"
+        }
     }
   ],
   "corsDomains": [
