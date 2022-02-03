@@ -525,6 +525,16 @@
           ]
       },
       {
+          "layer": "cci_landcover",
+          "product": [
+              "cci_landcover"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_colours"
+          ]
+      },
+      {
           "layer": "rainfall_chirps_monthly",
           "product": [
               "rainfall_chirps_monthly"
