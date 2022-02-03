@@ -147,7 +147,7 @@ style_colours = {
             },
         ]
     },
-    "legend": {"width": 3.0, "height": 4.0},
+    "legend": {"width": 5.0, "height": 5.0},
 }
 
 layer = {
