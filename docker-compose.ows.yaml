@@ -19,9 +19,12 @@ services:
       DB_PORT: 5432
       PYTHONPATH: /env/config
       DATACUBE_OWS_CFG: ows_refactored.dev_af_ows_root_cfg.ows_cfg
+    ports:
+      - 8000:8000
     depends_on:
       - postgres
     volumes:
+      - ./products:/env/products
       - ./services/ows_refactored:/env/config/ows_refactored/
       - ./services/inventory:/env/config/inventory/
       - ./output:/env/config/output/
