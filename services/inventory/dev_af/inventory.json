@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 33,
+  "total_layers_count": 34,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -518,6 +518,16 @@
           "layer": "esa_worldcover",
           "product": [
               "esa_worldcover"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_colours"
+          ]
+      },
+      {
+          "layer": "cci_landcover",
+          "product": [
+              "cci_landcover"
           ],
           "styles_count": 1,
           "styles_list": [

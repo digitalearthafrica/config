@@ -35,7 +35,7 @@ measurements:
           60: tree cover, broadleaved, deciduous, closed to open
           70: tree cover, needleleaved, evergreen, closed to open
           80: tree cover, needleleaved, deciduous, closed to open
-          90: tree coer, mixed leaf type
+          90: tree cover, mixed leaf type
           100: mosaic tree and shrub/herbaceous cover
           110: mosaic herbaceous cover/tree and shrub
           120: shrubland
