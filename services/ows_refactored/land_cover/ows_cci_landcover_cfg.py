@@ -61,7 +61,7 @@ style_colours = {
                 "title": "Tree cover, needleleaved, deciduous, closed to open",
                 "abstract": "",
                 "values": [80],
-                "color": "##1a5c21",
+                "color": "#1a5c21",
             },
             {
                 "title": "Tree cover, mixed leaf type",
