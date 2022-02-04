@@ -129,30 +129,20 @@ style_colours = {
                 "values": [110],
                 "color": "#a88220",
             },
-            {
-                "title": "Shrubland",
-                "abstract": "",
-                "values": [120],
-                "color": "#a16312"
-            },
+            {"title": "Shrubland", "abstract": "", "values": [120], "color": "#a16312"},
             {
                 "title": "Shrubland, evergreen",
                 "abstract": "",
                 "values": [121],
-                "color": "#a16312"
+                "color": "#a16312",
             },
             {
                 "title": "Shrubland, deciduous",
                 "abstract": "",
                 "values": [122],
-                "color": "#a16312"
+                "color": "#a16312",
             },
-            {
-                "title": "Grassland",
-                "abstract": "",
-                "values": [130],
-                "color": "#e08b1b"
-            },
+            {"title": "Grassland", "abstract": "", "values": [130], "color": "#e08b1b"},
             {
                 "title": "Lichens and mosses",
                 "abstract": "",
@@ -199,31 +189,31 @@ style_colours = {
                 "title": "Urban areas",
                 "abstract": "",
                 "values": [190],
-                "color": "#b31010"
+                "color": "#b31010",
             },
             {
                 "title": "Bare areas",
                 "abstract": "",
                 "values": [200],
-                "color": "#d9d4d4"
+                "color": "#d9d4d4",
             },
             {
                 "title": "Consolidated bare areas",
                 "abstract": "",
                 "values": [201],
-                "color": "#d9d4d4"
+                "color": "#d9d4d4",
             },
             {
                 "title": "Unconsolidated bare areas",
                 "abstract": "",
                 "values": [202],
-                "color": "#d9d4d4"
+                "color": "#d9d4d4",
             },
             {
                 "title": "Water bodies",
                 "abstract": "",
                 "values": [210],
-                "color": "#3330e6"
+                "color": "#3330e6",
             },
             {
                 "title": "Permanent snow and ice",
@@ -233,11 +223,7 @@ style_colours = {
             },
         ]
     },
-<<<<<<< HEAD
-    "legend": {"width": 5.0, "height": 5.0},
-=======
     "legend": {"width": 5.0, "height": 8.0},
->>>>>>> 8dea944da5888a1f2495c12b2fed654d182bd200
 }
 
 layer = {
