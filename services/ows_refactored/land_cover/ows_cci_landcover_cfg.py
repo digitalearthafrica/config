@@ -129,8 +129,9 @@ style_colours = {
                 "values": [110],
                 "color": "#a88220",
             },
+            {"title": "Shrubland", "abstract": "", "values": [120], "color": "#a16312"},
             {
-                "title": "Shrubland",
+                "title": "Shrubland, evergreen",
                 "abstract": "",
                 "values": [120],
                 "color": "#a16312"
@@ -148,7 +149,7 @@ style_colours = {
                 "color": "#a16312"
             },
             {
-                "title": "Grassland",
+                "title": "Shrubland, deciduous",
                 "abstract": "",
                 "values": [130],
                 "color": "#e08b1b"
@@ -199,13 +200,25 @@ style_colours = {
                 "title": "Urban areas",
                 "abstract": "",
                 "values": [190],
-                "color": "#b31010"
+                "color": "#b31010",
             },
             {
                 "title": "Bare areas",
                 "abstract": "",
                 "values": [200],
-                "color": "#d9d4d4"
+                "color": "#d9d4d4",
+            },
+            {
+                "title": "Consolidated bare areas",
+                "abstract": "",
+                "values": [201],
+                "color": "#d9d4d4",
+            },
+            {
+                "title": "Unconsolidated bare areas",
+                "abstract": "",
+                "values": [202],
+                "color": "#d9d4d4",
             },
             {
                 "title": "Consolidated bare areas",
@@ -223,7 +236,7 @@ style_colours = {
                 "title": "Water bodies",
                 "abstract": "",
                 "values": [210],
-                "color": "#3330e6"
+                "color": "#3330e6",
             },
             {
                 "title": "Permanent snow and ice",
