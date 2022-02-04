@@ -133,16 +133,27 @@ style_colours = {
             {
                 "title": "Shrubland, evergreen",
                 "abstract": "",
+                "values": [120],
+                "color": "#a16312"
+            },
+            {
+                "title": "Shrubland, evergreen",
+                "abstract": "",
                 "values": [121],
-                "color": "#a16312",
+                "color": "#a16312"
             },
             {
                 "title": "Shrubland, deciduous",
                 "abstract": "",
                 "values": [122],
-                "color": "#a16312",
+                "color": "#a16312"
             },
-            {"title": "Grassland", "abstract": "", "values": [130], "color": "#e08b1b"},
+            {
+                "title": "Shrubland, deciduous",
+                "abstract": "",
+                "values": [130],
+                "color": "#e08b1b"
+            },
             {
                 "title": "Lichens and mosses",
                 "abstract": "",
@@ -208,6 +219,18 @@ style_colours = {
                 "abstract": "",
                 "values": [202],
                 "color": "#d9d4d4",
+            },
+            {
+                "title": "Consolidated bare areas",
+                "abstract": "",
+                "values": [201],
+                "color": "#d9d4d4"
+            },
+            {
+                "title": "Unconsolidated bare areas",
+                "abstract": "",
+                "values": [202],
+                "color": "#d9d4d4"
             },
             {
                 "title": "Water bodies",
