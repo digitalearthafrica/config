@@ -22,6 +22,18 @@ style_colours = {
                 "color": "#f7fa48",
             },
             {
+                "title": "Cropland, rainfed, herbaceous cover",
+                "abstract": "",
+                "values": [11],
+                "color": "#f7fa48",
+            },
+            {
+                "title": "Cropland, rainfed, tree or shrub cover",
+                "abstract": "",
+                "values": [12],
+                "color": "#f7fa48",
+            },
+            {
                 "title": "Cropland, irrigated or post-flooding",
                 "abstract": "",
                 "values": [20],
@@ -52,15 +64,51 @@ style_colours = {
                 "color": "#148c22",
             },
             {
+                "title": "Tree cover, broadleaved, deciduous, closed",
+                "abstract": "",
+                "values": [61],
+                "color": "#148c22",
+            },
+            {
+                "title": "Tree cover, broadleaved, deciduous, open",
+                "abstract": "",
+                "values": [62],
+                "color": "#148c22",
+            },
+            {
                 "title": "Tree cover, needleleaved, evergreen, closed to open",
                 "abstract": "",
                 "values": [70],
                 "color": "#0b3810",
             },
             {
+                "title": "Tree cover, needleleaved, evergreen, closed",
+                "abstract": "",
+                "values": [71],
+                "color": "#0b3810",
+            },
+            {
+                "title": "Tree cover, needleleaved, evergreen, open",
+                "abstract": "",
+                "values": [72],
+                "color": "#0b3810",
+            },
+            {
                 "title": "Tree cover, needleleaved, deciduous, closed to open",
                 "abstract": "",
                 "values": [80],
+                "color": "#1a5c21",
+            },
+            {
+                "title": "Tree cover, needleleaved, deciduous, closed",
+                "abstract": "",
+                "values": [81],
+                "color": "#1a5c21",
+            },
+            {
+                "title": "Tree cover, needleleaved, deciduous, open",
+                "abstract": "",
+                "values": [82],
                 "color": "#1a5c21",
             },
             {
@@ -85,12 +133,26 @@ style_colours = {
                 "title": "Shrubland",
                 "abstract": "",
                 "values": [120],
-                "color": "#a16312"},
+                "color": "#a16312"
+            },
+            {
+                "title": "Shrubland, evergreen",
+                "abstract": "",
+                "values": [121],
+                "color": "#a16312"
+            },
+            {
+                "title": "Shrubland, deciduous",
+                "abstract": "",
+                "values": [122],
+                "color": "#a16312"
+            },
             {
                 "title": "Grassland",
                 "abstract": "",
                 "values": [130],
-                "color": "#e08b1b"},
+                "color": "#e08b1b"
+            },
             {
                 "title": "Lichens and mosses",
                 "abstract": "",
@@ -101,6 +163,18 @@ style_colours = {
                 "title": "Sparse vegetation",
                 "abstract": "",
                 "values": [150],
+                "color": "#f7e6a1",
+            },
+            {
+                "title": "Sparse shrub",
+                "abstract": "",
+                "values": [151],
+                "color": "#f7e6a1",
+            },
+            {
+                "title": "Sparse herbaceous cover",
+                "abstract": "",
+                "values": [152],
                 "color": "#f7e6a1",
             },
             {
@@ -134,6 +208,18 @@ style_colours = {
                 "color": "#d9d4d4"
             },
             {
+                "title": "Consolidated bare areas",
+                "abstract": "",
+                "values": [201],
+                "color": "#d9d4d4"
+            },
+            {
+                "title": "Unconsolidated bare areas",
+                "abstract": "",
+                "values": [202],
+                "color": "#d9d4d4"
+            },
+            {
                 "title": "Water bodies",
                 "abstract": "",
                 "values": [210],
@@ -147,7 +233,11 @@ style_colours = {
             },
         ]
     },
+<<<<<<< HEAD
     "legend": {"width": 5.0, "height": 5.0},
+=======
+    "legend": {"width": 5.0, "height": 8.0},
+>>>>>>> 8dea944da5888a1f2495c12b2fed654d182bd200
 }
 
 layer = {

@@ -28,24 +28,39 @@ measurements:
         values:
           0: no data
           10: cropland, rainfed
+          11: cropland, rainfed, herbaceous cover
+          12: cropland, rainfed, tree or shrub cover
           20: cropland, irrigated or post-flooding
           30: mosaic cropland/natural vegetation
           40: mosaic natural vegetation/cropland
           50: tree cover, broadleaved, evergreen, closed to open
           60: tree cover, broadleaved, deciduous, closed to open
+          61: tree cover, broadleaved, deciduous, closed
+          62: tree cover, broadleaved, deciduous, open
           70: tree cover, needleleaved, evergreen, closed to open
+          71: tree cover, needleleaved, evergreen, closed
+          72: tree cover, needleleaved, evergreen, open
           80: tree cover, needleleaved, deciduous, closed to open
+          81: tree cover, needleleaved, deciduous, closed
+          82: tree cover, needleleaved, deciduous, open
           90: tree cover, mixed leaf type
           100: mosaic tree and shrub/herbaceous cover
           110: mosaic herbaceous cover/tree and shrub
           120: shrubland
+          121: shrubland, evergreen
+          122: shrubland, deciduous
           130: grassland
           140: lichens and mosses
           150: sparse vegetation
+          151: sparse tree
+          152: sparse shrub
+          153: sparse herbaceous cover
           160: tree cover, flooded, fresh or brakish water
           170: tree cover, flooded, saline water
           180: shrub or herbaceous cover, flooded, fresh/saline/brakish water
           190: urban areas
           200: bare areas
+          201: consolidated bare areas
+          202: unconsolidated bare areas
           210: water bodies
           220: permanent snow and ice
