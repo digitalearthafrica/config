@@ -287,9 +287,19 @@ ows_cfg = {
                             ],
                         },
                         {
-                            "include": "ows_refactored.vegetation.ows_gmw_cfg.layer",
-                            "type": "python",
-                        },
+                            "title": "Annual vegetation",
+                            "abstract": """Annual vegetation""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.vegetation.ows_fc_summary_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.vegetation.ows_gmw_cfg.layer",
+                                    "type": "python",
+                                },
+                            ]
+                        }
                     ],
                 },
                 {
