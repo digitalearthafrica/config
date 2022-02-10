@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 31,
+  "total_layers_count": 32,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -415,6 +415,25 @@
           "styles_list": [
               "fc_rgb_unmasked",
               "fc_rgb_masked"
+          ]
+      },
+      {
+          "layer": "fc_ls_summary_annual",
+          "product": [
+              "fc_ls_summary_annual"
+          ],
+          "styles_count": 10,
+          "styles_list": [
+              "fc_rgb",
+              "green_veg_10",
+              "green_veg_50",
+              "green_veg_90",
+              "non_green_veg_10",
+              "non_green_veg_50",
+              "non_green_veg_90",
+              "bare_ground_10",
+              "bare_ground_50",
+              "bare_ground_90"
           ]
       },
       {
