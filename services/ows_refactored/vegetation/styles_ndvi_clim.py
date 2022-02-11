@@ -19,23 +19,19 @@ mean_cr = [
 ]
 
 std_cr = [
-    {"value": 0.0, "color": "#000004"},
-    {"value": 0.025, "color": "#0a0822"},
-    {"value": 0.05, "color": "#1d1147"},
-    {"value": 0.075, "color": "#36106b"},
-    {"value": 0.1, "color": "#51127c"},
-    {"value": 0.125, "color": "#6a1c81"},
-    {"value": 0.15, "color": "#832681"},
-    {"value": 0.175, "color": "#9c2e7f"},
-    {"value": 0.2, "color": "#b73779"},
-    {"value": 0.225, "color": "#d0416f"},
-    {"value": 0.25, "color": "#e75263"},
-    {"value": 0.275, "color": "#f56b5c"},
-    {"value": 0.3, "color": "#fc8961"},
-    {"value": 0.325, "color": "#fea772"},
-    {"value": 0.35, "color": "#fec488"},
-    {"value": 0.375, "color": "#fde2a3"},
-    {"value": 0.4, "color": "#fcfdbf"},
+    {'value': 0.0, 'color': '#000004'},
+    {'value': 0.025, 'color': '#100b2d'},
+    {'value': 0.05, 'color': '#2c115f'},
+    {'value': 0.075, 'color': '#51127c'},
+    {'value': 0.1, 'color': '#721f81'},
+    {'value': 0.125, 'color': '#932b80'},
+    {'value': 0.15, 'color': '#b73779'},
+    {'value': 0.175, 'color': '#d8456c'},
+    {'value': 0.2, 'color': '#f1605d'},
+    {'value': 0.225, 'color': '#fc8961'},
+    {'value': 0.25, 'color': '#feb078'},
+    {'value': 0.275, 'color': '#fed799'},
+    {'value': 0.3, 'color': '#fcfdbf'},
 ]
 
 count_cr = [
