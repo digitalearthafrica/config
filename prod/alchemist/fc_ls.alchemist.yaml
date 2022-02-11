@@ -1,5 +1,6 @@
 specification:
   products:
+    - ls9_sr
     - ls8_sr
     - ls7_sr
     - ls5_sr
