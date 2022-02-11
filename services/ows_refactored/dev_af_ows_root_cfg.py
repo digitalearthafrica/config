@@ -125,6 +125,10 @@ ows_cfg = {
                                             "type": "python",
                                         },
                                         {
+                                            "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls9",
+                                            "type": "python",
+                                        },
+                                        {
                                             "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls8",
                                             "type": "python",
                                         },
@@ -176,6 +180,10 @@ ows_cfg = {
                                     "title": "Daily surface temperature",
                                     "abstract": """Daily surface temperature""",
                                     "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls9",
+                                            "type": "python",
+                                        },
                                         {
                                             "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls8",
                                             "type": "python",
