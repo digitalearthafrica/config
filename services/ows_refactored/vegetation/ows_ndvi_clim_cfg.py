@@ -83,7 +83,7 @@ layer = {
     "name": "ndvi_climatology_ls",
     "abstract": """
 
-Standardised NDVI Anomalies provide a measure of vegetation health relative to long term average conditions by measuring the departure, in units of standard devaiations, away from the long-term average. These NDVI climatologies (both mean and standard deviation) represent the long-term average conditions of vegetation condition. NDVI climatologies are available for each month, and were calculated by aggregating data from 1984-2020.
+Standardised NDVI Anomalies provide a measure of vegetation health relative to long term average conditions by measuring the departure, in units of standard devaiations, away from the long-term average. These NDVI climatologies (both mean and standard deviation) represent the long-term average basline conditions of vegetation condition. NDVI climatologies are available for each month, and were calculated by aggregating data from 1984-2020.
 
 """,
     "product_name": "ndvi_climatology_ls",
