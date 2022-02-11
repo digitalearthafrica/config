@@ -15,7 +15,7 @@ DE Africa provides access to Landsat Collection 2 Level-2 Surface Reflectance pr
 
 More techincal information about the Landsat Surface Reflectance product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_SR_specs.html).
 
-Landsat 9 product has a spatial resolution of 30 m and a temporal coverage of 2013 to present.
+Landsat 9 product has a spatial resolution of 30 m and a temporal coverage of 2021 to present.
 
 Landsat Level- 2 Surface Reflectance Science Product courtesy of the U.S. Geological Survey.
 

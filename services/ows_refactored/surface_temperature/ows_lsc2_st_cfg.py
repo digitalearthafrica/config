@@ -127,7 +127,7 @@ style_lsc2_st_qa = {
 }
 
 layer_ls9 = {
-    "title": "Surface temperature (Landsat 8)",
+    "title": "Surface temperature (Landsat 9)",
     "name": "ls9_st",
     "abstract": """
 Surface temperature measures the Earth’s surface temperature and is an important geophysical parameter in global energy balance studies and hydrologic modeling. Surface temperature is also useful for monitoring crop and vegetation health, and extreme heat events such as natural disasters (e.g., volcanic eruptions, wildfires), and urban heat island effects.
@@ -136,7 +136,7 @@ DE Africa provides access to Landsat Collection 2 Level-2 Surface Temperature pr
 
 More techincal information about the Landsat Surface Temperature product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_ST_specs.html).
 
-Landsat 9 product has a spatial resolution of 30 m and a temporal coverage of 2013 to present.
+Landsat 9 product has a spatial resolution of 30 m and a temporal coverage of 2021 to present.
 
 Landsat Level- 2 Surface Temperature Science Product courtesy of the U.S. Geological Survey.
 
