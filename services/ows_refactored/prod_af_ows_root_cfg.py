@@ -20,15 +20,12 @@ ows_cfg = {
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
             },
-            "EPSG:4326": {  # WGS-84
-                "geographic": True,
-                "vertical_coord_first": True
-            },
+            "EPSG:4326": {"geographic": True, "vertical_coord_first": True},  # WGS-84
             "EPSG:6933": {  # Cylindrical equal area
                 "geographic": False,
                 "horizontal_coord": "x",
                 "vertical_coord": "y",
-            }
+            },
         },
         "allowed_urls": [
             "https://ows.digitalearth.africa",
@@ -69,7 +66,7 @@ ows_cfg = {
         "supported_languages": [
             "en",  # English  - the default language, the language used in the untranslated metadata.
             "fr",  # French
-        ]
+        ],
     },  # END OF global SECTION
     "wms": {
         # Config for WMS service, for all products/layers
@@ -246,7 +243,7 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_cfg.layer",
                                     "type": "python",
                                 },
-                            ]
+                            ],
                         },
                         {
                             "title": "Annual surface water",
@@ -256,7 +253,7 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
                                     "type": "python",
                                 }
-                            ]
+                            ],
                         },
                         {
                             "title": "All-time surface water",
@@ -266,9 +263,9 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.layer",
                                     "type": "python",
                                 }
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     "title": "Agriculture",
@@ -306,8 +303,12 @@ ows_cfg = {
                                     "include": "ows_refactored.vegetation.ows_gmw_cfg.layer",
                                     "type": "python",
                                 },
-                            ]
-                        }
+                            ],
+                        },
+                        {
+                            "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
+                            "type": "python",
+                        },
                     ],
                 },
                 {
@@ -316,17 +317,17 @@ ows_cfg = {
                     "layers": [
                         {
                             "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
-                            "type": "python"
+                            "type": "python",
                         },
                         {
                             "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg.layer",
-                            "type": "python"
+                            "type": "python",
                         },
                         {
                             "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
                             "type": "python",
                         },
-                    ]
+                    ],
                 },
                 {
                     "title": "Meteorology",
@@ -334,9 +335,9 @@ ows_cfg = {
                     "layers": [
                         {
                             "include": "ows_refactored.meteorology.ows_rainfall.layer",
-                            "type": "python"
+                            "type": "python",
                         }
-                    ]
+                    ],
                 },
                 {
                     "title": "Elevation",
