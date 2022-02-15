@@ -68,6 +68,7 @@ legacy_style_wofs_summary_alltime_frequency = {
         {"value": 1.0, "color": "#5700e3"},
     ],
     "legend": {
+        "show_legend": True,
         "url": "https://data.dea.ga.gov.au/WOfS/filtered_summary/v2.1.0/wofs_full_summary_legend.png",
     },
 }
