@@ -79,7 +79,7 @@ bands_ndvi_clim = {
 
 
 layer = {
-    "title": "NDVI Climatologies",
+    "title": "NDVI Climatologies (provisional)",
     "name": "ndvi_climatology_ls",
     "abstract": """
 
