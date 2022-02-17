@@ -354,7 +354,7 @@ layer = {
     "abstract": """
 Fractional cover provides information about the the proportions of green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.), and bare areas for every 30 m x 30 m ground footprint. Fractional cover provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time. The percentile summaries are designed to make it easier to analyse and interpret fractional cover. Percentiles provide an indicator of where an observation sits, relative to the rest of the observations for the pixel. For example, the 90th percentile is the value below which 90% of the observations fall. The fractional cover algorithm was developed by the Joint Remote Sensing Research Program.
 
-This product contains a three band combination of the 10th, 50th and 90th Percentile for green vegetation, non green vegetation and bare soil observations acquired in each full calendar year (1st of January - 31st December) from 1984 to the most recent full calendar year.
+This product contains the 10th, 50th, and 90th percentiles estimated independently for the green vegetation, non-green vegetation, and bare fractions observed in each calendar year (1st of January - 31st December) from 1984 to the most recent full calendar year.
 
 Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. To be considered in the FCP product a pixel must have had at least 10 clear observations over the year.
 """,
