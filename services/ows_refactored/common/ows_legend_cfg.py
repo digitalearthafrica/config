@@ -8,7 +8,7 @@ legend_idx_0_1_5ticks = {
 
 legend_stddev_ndvi_ticks = {
     "begin": "0.0",
-    "end": "0.4",
+    "end": "0.3",
     "ticks_every": "0.05",
     "units": "unitless",
 }
