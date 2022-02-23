@@ -20,6 +20,8 @@ gm_s2_semiannual,https://raw.githubusercontent.com/digitalearthafrica/config/mas
 gm_s2_semiannual_lowres,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gm_s2_semiannual_lowres.odc-product.yaml
 gm_ls8_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gm_ls8_annual.odc-product.yaml
 gm_ls8_annual_lowres,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gm_ls8_annual_lowres.odc-product.yaml
+gm_ls8_ls9_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gm_ls8_ls9_annual.odc-product.yaml
+gm_ls8_ls9_annual_lowres,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gm_ls8_ls9_annual_lowres.odc-product.yaml
 gm_ls5_ls7_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gm_ls5_ls7_annual.odc-product.yaml
 gm_ls5_ls7_annual_lowres,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gm_ls5_ls7_annual_lowres.odc-product.yaml
 jers_sar_mosaic,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/jers_sar_mosaic.odc-product.yaml
