@@ -155,6 +155,10 @@ ows_cfg = {
                                             "type": "python",
                                         },
                                         {
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_ls8_ls9_annual_cfg.layer",
+                                            "type": "python",
+                                        },
+                                        {
                                             "include": "ows_refactored.surface_reflectance.ows_gm_ls5_ls7_annual_cfg.layer",
                                             "type": "python",
                                         },

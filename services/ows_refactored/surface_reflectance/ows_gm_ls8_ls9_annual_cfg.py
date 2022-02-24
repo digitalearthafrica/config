@@ -1,11 +1,11 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_continental
-from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls8_gm
+from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls8_ls9_gm
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls5789_list
 
 
 layer = {
-    "title": "Annual GeoMAD (Landsat 8)",
-    "name": "gm_ls8_annual",
+    "title": "Annual GeoMAD (Landsat 8 & Landsat 9)",
+    "name": "gm_ls8_ls9_annual",
     "abstract": """
 Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.
 
@@ -20,22 +20,22 @@ More techincal information about the GeoMAD product can be found in the User Gui
 
 This product has a spatial resolution of 30 m and is available annually from 2013.
 
-It is derived from USGS Collection 2, Level 2 Landsat 8 surface reflectance data.
+It is derived from USGS Collection 2, Level 2 Landsat 8 & 9 surface reflectance data.
 
 Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation. The MADs can be used on their own or together with geomedian to gain insights about the land surface, e.g. for land cover classificiation and for change detection from year to year.
 
 For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896 and https://doi.org/10.1109/IGARSS.2018.8518312
 
 """,
-    "product_name": "gm_ls8_annual",
+    "product_name": "gm_ls8_ls9_annual",
     # Low product name
     #
     # Leave commented until we have an appropriate summary product.
     # (Packaged like the main product, but with much much lower
     # resolution and much much higher area covered in each dataset.
     #
-    "low_res_product_name": "gm_ls8_annual_lowres",
-    "bands": bands_ls8_gm,
+    "low_res_product_name": "gm_ls8_ls9_annual_lowres",
+    "bands": bands_ls8_ls9_gm,
     "dynamic": False,
     "resource_limits": reslim_continental,
     "time_resolution": "year",
