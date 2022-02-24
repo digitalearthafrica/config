@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 36,
+  "total_layers_count": 37,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -147,6 +147,32 @@
           "layer": "gm_ls8_annual",
           "product": [
               "gm_ls8_annual"
+          ],
+          "styles_count": 17,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "tmad_rgb_std",
+              "tmad_rgb_sens",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "blue",
+              "green",
+              "red",
+              "nir",
+              "swir_1",
+              "swir_2",
+              "arcsec_sdev",
+              "log_edev",
+              "log_bcdev",
+              "count"
+          ]
+      },
+      {
+          "layer": "gm_ls8_ls9_annual",
+          "product": [
+              "gm_ls8_ls9_annual"
           ],
           "styles_count": 17,
           "styles_list": [

@@ -55,6 +55,8 @@ bands_ls8_gm = {
     "COUNT": ["count"],
 }
 
+bands_ls8_ls9_gm = bands_ls8_gm
+
 bands_ls5_ls7_gm = {
     "SR_B1": ["blue", "band_2"],
     "SR_B2": ["green", "band_3"],

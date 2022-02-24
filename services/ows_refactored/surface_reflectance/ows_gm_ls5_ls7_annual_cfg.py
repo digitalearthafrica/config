@@ -1,6 +1,6 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_continental
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls5_ls7_gm
-from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls578_list
+from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls5789_list
 
 
 layer = {
@@ -50,6 +50,6 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     "native_resolution": [30.0, -30.0],
     "styling": {
         "default_style": "simple_rgb",
-        "styles": styles_gm_ls578_list,
+        "styles": styles_gm_ls5789_list,
     }
 }
