@@ -325,7 +325,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 ],
             },
         },
-         {
+        {
             "title": "Cropland extent 2019 - Southeast Africa",
             "name": "crop_mask_southeast",
             "abstract": """
@@ -333,7 +333,7 @@ Digital Earth Africa's cropland extent map for Southeast Africa (2019) shows the
 
 This provisional cropland extent map has a resolution of 10m, and was built using Copernicus Sentinel-2 satellite images from 2019. The cropland extent map was produced using extensive training data from across Southern Africa, coupled with a Random Forest machine learning model. For a detailed exploration of the methods used to produce the cropland extent map, read the Jupyter Notebooks in DE Africa’s crop-mask GitHub repository.
 
-An independent validation dataset suggests this service has an overall accuracy of 87.3 %. The algorithm in this region tends to report more comission errors (labelling non-crop as crops) than ommission errors (labelling actual crops as non-crops). Where commission errors occur they tend to be focussed around wetlands and seasonal grasslands which spectrally resemble some kinds of cropping.
+An independent validation dataset suggests this service has an overall accuracy of 87.3 %. The algorithm in this region tends to report more commission errors (labelling non-crop as crops) than ommission errors (labelling actual crops as non-crops). Where commission errors occur they tend to be focussed around wetlands and seasonal grasslands which spectrally resemble some kinds of cropping.
 
 The crop mask contains three measurements:
 - mask ("Cropped land"): This band displays cropped regions as a binary map. Values of 1 indicate the presence of crops, while a value of 0 indicates the absence of cropping. This band is a pixel-based cropland extent map, meaning the map displays the raw output of the pixel-based Random Forest classification.
