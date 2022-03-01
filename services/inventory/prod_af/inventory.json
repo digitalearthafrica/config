@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 36,
+  "total_layers_count": 37,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -412,6 +412,18 @@
           "layer": "crop_mask_southern",
           "product": [
               "crop_mask_southern"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "green",
+              "filtered_yellow",
+              "prob"
+          ]
+      },
+      {
+          "layer": "crop_mask_southeast",
+          "product": [
+              "crop_mask_southeast"
           ],
           "styles_count": 3,
           "styles_list": [
