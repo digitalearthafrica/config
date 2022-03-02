@@ -18,7 +18,7 @@ In addition, surface reflectance varabilities within the same time period can be
 
 More techincal information about the GeoMAD product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html)
 
-This product has a spatial resolution of 30 m and is available annually from 2013.
+This product has a spatial resolution of 30 m and is available annually starting from 2021.
 
 It is derived from USGS Collection 2, Level 2 Landsat 8 & 9 surface reflectance data.
 
