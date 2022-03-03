@@ -1,0 +1,33 @@
+---
+name: ndvi_anomaly
+description: Monthly NDVI Anomalies produced by Digital Earth Africa.
+metadata_type: eo3
+license: CC-BY-4.0
+metadata:
+  product:
+    name: ndvi_anomaly
+storage:
+  crs: 'EPSG:6933'
+  resolution:
+    x: 30
+    'y': -30
+measurements:
+  - name: ndvi_mean
+    aliases:
+      - NDVI_MEAN
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: ndvi_std_anomaly
+    aliases:
+      - NDVI_STD_ANOMALY
+    dtype: float32
+    nodata: .nan
+    units: '1'
+  - name: clear_count
+    aliases:
+      - CLEAR_COUNT
+      - count
+    dtype: int8
+    nodata: .nan
+    units: '1'
