@@ -29,5 +29,5 @@ measurements:
       - CLEAR_COUNT
       - count
     dtype: int8
-    nodata: .nan
+    nodata: 0
     units: '1'
