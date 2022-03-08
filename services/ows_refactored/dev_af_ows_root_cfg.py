@@ -320,6 +320,10 @@ ows_cfg = {
                             "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
                             "type": "python",
                         },
+                        {
+                            "include": "ows_refactored.vegetation.ows_ndvi_anom_cfg.layer",
+                            "type": "python",
+                        },
                     ],
                 },
                 {
