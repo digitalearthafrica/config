@@ -93,7 +93,7 @@ style_ndvi_anomaly = {
 
 # count styles-----------------------------------------------------
 style_count = {
-    "name": "clear_count",
+    "name": "style_count",
     "title": "Clear observation count",
     "abstract": "Count of valid observations included in calculations",
     "index_function": {
