@@ -5,7 +5,7 @@ from ows_refactored.vegetation.styles_ndvi_anom import (
     style_count,
 )
 
-bands_ndvi_anom = {"style_ndvi_anomaly": [], "ndvi_mean": [], "clear_count": []}
+bands_ndvi_anom = {"ndvi_std_anomaly": [], "ndvi_mean": [], "clear_count": []}
 
 
 layer = {
