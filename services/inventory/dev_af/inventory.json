@@ -617,6 +617,7 @@
           "styles_count": 3,
           "styles_list": [
                 "style_ndvi_anomaly",
+                "style_ndvi_anomaly_2std",
                 "style_ndvi_mean",
                 "style_count"
           ]

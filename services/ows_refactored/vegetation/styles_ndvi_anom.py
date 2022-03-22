@@ -35,6 +35,27 @@ anomaly_cr = [
     {"value": 4.0, "color": "#003c30"},
 ]
 
+# only shows standard deviations of 2 or above
+anomaly_cr_2std = [
+    {"value": -4.0, "color": "#543005"},
+    {"value": -3.5, "color": "#774508"},
+    {"value": -3.0, "color": "#995d13"},
+    {"value": -2.5, "color": "#b97b29"},
+    {"value": -2.0, "color": "#cfa155", "alpha": 0.0},
+    {"value": -1.5, "color": "#e2c786", "alpha": 0.0},
+    {"value": -1.0, "color": "#f0deb1", "alpha": 0.0},
+    {"value": -0.5, "color": "#f6edd6", "alpha": 0.0},
+    {"value": 0.0, "color": "#f5f5f5", "alpha": 0.0},
+    {"value": 0.5, "color": "#d8eeeb", "alpha": 0.0},
+    {"value": 1.0, "color": "#b5e3dc", "alpha": 0.0},
+    {"value": 1.5, "color": "#89d1c6", "alpha": 0.0},
+    {"value": 2.0, "color": "#5bb2a8", "alpha": 0.0},
+    {"value": 2.5, "color": "#2f9189"},
+    {"value": 3.0, "color": "#0e726a"},
+    {"value": 3.5, "color": "#01564d"},
+    {"value": 4.0, "color": "#003c30"},
+]
+
 count_cr = [
     {"value": 0, "color": "#440154"},
     {"value": 2, "color": "#482475"},
@@ -66,7 +87,6 @@ style_ndvi_mean = {
     "legend": legend_mean_ndvi_ticks,
 }
 
-
 # std dev styles-----------------------------------------------------
 style_ndvi_anomaly = {
     "name": "style_ndvi_anomaly",
@@ -90,6 +110,28 @@ style_ndvi_anomaly = {
     },
 }
 
+# only shows standard deviations of 2 or above
+style_ndvi_anomaly_2std = {
+    "name": "style_ndvi_anomaly_2std",
+    "title": "Standardised NDVI Anomaly",
+    "abstract": "Standardised NDVI Anomaly",
+    "needed_bands": ["ndvi_std_anomaly"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "ndvi_std_anomaly",
+        },
+    },
+    "color_ramp": anomaly_cr_2std,
+    "range": [0, 0.5],
+    "legend": {
+        "begin": "-4",
+        "end": "4",
+        "decimal_places": 1,
+        "ticks_every": 1,
+    },
+}
 
 # count styles-----------------------------------------------------
 style_count = {
