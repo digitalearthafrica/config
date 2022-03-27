@@ -32,10 +32,11 @@ The long term means and standard deviations are available to load through the "N
     "native_resolution": [30, -30],
     "styling": {
         "default_style": "style_ndvi_anomaly",
-        "styles": [style_ndvi_anomaly,
-                   style_ndvi_anomaly_2std,
-                   style_ndvi_mean,
-                   style_count
+        "styles": [
+            style_ndvi_anomaly,
+            style_ndvi_anomaly_2std,
+            style_ndvi_mean,
+            style_count,
         ],
     },
 }
