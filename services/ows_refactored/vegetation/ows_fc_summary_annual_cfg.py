@@ -6,7 +6,7 @@ legend_idx_0_100_pixel_fc_25ticks = {
     "end": 100,
     "units": "% / pixel",
     "ticks_every": 25,
-    "title": "Percentage of Pixel that is Green Vegetation",
+    "title": "Percentage of pixel covered by green vegetation",
     "rcParams": {"font.size": 9},
 }
 
@@ -15,7 +15,7 @@ legend_idx_0_100_pixel_fc_ngv_25ticks = {
     "end": 100,
     "units": "% / pixel",
     "ticks_every": 25,
-    "title": "Percentage of Pixel that is Green Vegetation",
+    "title": "Percentage of pixel covered by non-green vegetation",
     "rcParams": {"font.size": 9},
 }
 
@@ -24,7 +24,7 @@ legend_idx_0_100_pixel_fc_bs_25ticks = {
     "end": 100,
     "ticks_every": 25,
     "units": "% / pixel",
-    "title": "Percentage of Pixel that is Bare Soil",
+    "title": "Percentage of pixel covered by bare soil",
     "rcParams": {"font.size": 9},
 }
 
@@ -54,7 +54,7 @@ bands_fc_percentile = {
 
 green_veg_10 = {
     "name": "green_veg_10",
-    "title": "Green Veg, 10th Percentile",
+    "title": "Lowest Green Veg. Cover (10th Percentile)",
     "abstract": "10th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -93,7 +93,7 @@ green_veg_10 = {
 
 green_veg_50 = {
     "name": "green_veg_50",
-    "title": "Green Veg, 50th Percentile",
+    "title": "Median Green Veg. Cover",
     "abstract": "50th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -118,7 +118,7 @@ green_veg_50 = {
 
 green_veg_90 = {
     "name": "green_veg_90",
-    "title": "Green Veg, 90th Percentile",
+    "title": "Highest Green Veg. Cover (90% Percentile)",
     "abstract": "90th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -143,7 +143,7 @@ green_veg_90 = {
 
 non_green_veg_10 = {
     "name": "non_green_veg_10",
-    "title": "Non-green Veg, 10th Percentile",
+    "title": "Lowest Non-green Veg. Cover (10th Percentile)",
     "abstract": "10th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -180,7 +180,7 @@ non_green_veg_10 = {
 
 non_green_veg_50 = {
     "name": "non_green_veg_50",
-    "title": "Non-Green Veg, 50th Percentile",
+    "title": "Median Non-green Veg. Cover",
     "abstract": "50th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -205,7 +205,7 @@ non_green_veg_50 = {
 
 non_green_veg_90 = {
     "name": "non_green_veg_90",
-    "title": "Non-Green Veg, 90th Percentile",
+    "title": "Highest Non-green Veg. Cover (90% Percentile)",
     "abstract": "90th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -230,7 +230,7 @@ non_green_veg_90 = {
 
 bare_ground_10 = {
     "name": "bare_ground_10",
-    "title": "Bare Ground, 10th Percentile",
+    "title": "Lowest Bare Soil Cover (10th Percentile)",
     "abstract": "10th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -270,7 +270,7 @@ bare_ground_10 = {
 
 bare_ground_50 = {
     "name": "bare_ground_50",
-    "title": "Bare Ground, 50th Percentile",
+    "title": "Median Bare Soil Cover",
     "abstract": "50th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -295,7 +295,7 @@ bare_ground_50 = {
 
 bare_ground_90 = {
     "name": "bare_ground_90",
-    "title": "Bare Ground, 90th Percentile",
+    "title": "Highest Bare Soil Cover (90% Percentile)",
     "abstract": "90th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -320,7 +320,7 @@ bare_ground_90 = {
 
 fc_rgb = {
     "name": "fc_rgb",
-    "title": "Three-band Fractional Cover 50th Percentile",
+    "title": "Median Fractional Cover",
     "abstract": "Fractional cover medians - red is bare soil, green is green vegetation and blue is non-green vegetation",
     "components": {
         "red": {"bs_pc_50": 1.0},
@@ -331,7 +331,7 @@ fc_rgb = {
     # "pq_masks": fc_pq_mask,
     "legend": {
         "show_legend": True,
-        "url": "https://data.dea.ga.gov.au/fractional-cover/FC_legend.png",
+        "url": "https://raw.githubusercontent.com/digitalearthafrica/deafrica-sandbox-notebooks/main/Supplementary_data/Fractional_cover/fc_legend.jpg",
     },
 }
 
