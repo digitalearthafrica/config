@@ -19,7 +19,7 @@ The long term means and standard deviations are available to load through the "N
 
 """,
     "product_name": "ndvi_anomaly",
-    "time_resolution": "year",
+    "time_resolution": "month",
     "bands": bands_ndvi_anom,
     "resource_limits": reslim_wms_min_zoom_15,
     "image_processing": {
