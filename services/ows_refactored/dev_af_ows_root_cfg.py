@@ -305,24 +305,48 @@ ows_cfg = {
                     "abstract": """Vegetation""",
                     "layers": [
                         {
-                            "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
-                            "type": "python",
+                            "title": "Daily vegetation",
+                            "abstract": """Daily vegetation""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                         {
-                            "include": "ows_refactored.vegetation.ows_fc_summary_annual_cfg.layer",
-                            "type": "python",
+                            "title": "Monthly vegetation",
+                            "abstract": """Monthly vegetation""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.vegetation.ows_ndvi_anom_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                         {
-                            "include": "ows_refactored.vegetation.ows_gmw_cfg.layer",
-                            "type": "python",
+                            "title": "Annual vegetation",
+                            "abstract": """Annual vegetation""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.vegetation.ows_fc_summary_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.vegetation.ows_gmw_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                         {
-                            "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.vegetation.ows_ndvi_anom_cfg.layer",
-                            "type": "python",
+                            "title": "Vegetation climatology",
+                            "abstract": """Vegetation climatology""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                     ],
                 },

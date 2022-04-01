@@ -4,18 +4,16 @@ from ows_refactored.common.ows_reslim_cfg import reslim_wms_min_zoom_15
 legend_idx_0_100_pixel_fc_25ticks = {
     "begin": 0,
     "end": 100,
-    "units": "% / pixel",
     "ticks_every": 25,
-    "title": "Percentage of Pixel that is Green Vegetation",
+    "title": "Percentage of pixel covered by green vegetation",
     "rcParams": {"font.size": 9},
 }
 
 legend_idx_0_100_pixel_fc_ngv_25ticks = {
     "begin": 0,
     "end": 100,
-    "units": "% / pixel",
     "ticks_every": 25,
-    "title": "Percentage of Pixel that is Green Vegetation",
+    "title": "Percentage of pixel covered by non-green vegetation",
     "rcParams": {"font.size": 9},
 }
 
@@ -23,8 +21,7 @@ legend_idx_0_100_pixel_fc_bs_25ticks = {
     "begin": 0,
     "end": 100,
     "ticks_every": 25,
-    "units": "% / pixel",
-    "title": "Percentage of Pixel that is Bare Soil",
+    "title": "Percentage of pixel covered by bare soil",
     "rcParams": {"font.size": 9},
 }
 
@@ -54,7 +51,7 @@ bands_fc_percentile = {
 
 green_veg_10 = {
     "name": "green_veg_10",
-    "title": "Green Veg, 10th Percentile",
+    "title": "Lowest Green Veg. Cover (10th Percentile)",
     "abstract": "10th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -93,7 +90,7 @@ green_veg_10 = {
 
 green_veg_50 = {
     "name": "green_veg_50",
-    "title": "Green Veg, 50th Percentile",
+    "title": "Median Green Veg. Cover",
     "abstract": "50th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -118,7 +115,7 @@ green_veg_50 = {
 
 green_veg_90 = {
     "name": "green_veg_90",
-    "title": "Green Veg, 90th Percentile",
+    "title": "Highest Green Veg. Cover (90th Percentile)",
     "abstract": "90th Percentile of Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -143,7 +140,7 @@ green_veg_90 = {
 
 non_green_veg_10 = {
     "name": "non_green_veg_10",
-    "title": "Non-green Veg, 10th Percentile",
+    "title": "Lowest Non-green Veg. Cover (10th Percentile)",
     "abstract": "10th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -180,7 +177,7 @@ non_green_veg_10 = {
 
 non_green_veg_50 = {
     "name": "non_green_veg_50",
-    "title": "Non-Green Veg, 50th Percentile",
+    "title": "Median Non-green Veg. Cover",
     "abstract": "50th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -205,7 +202,7 @@ non_green_veg_50 = {
 
 non_green_veg_90 = {
     "name": "non_green_veg_90",
-    "title": "Non-Green Veg, 90th Percentile",
+    "title": "Highest Non-green Veg. Cover (90th Percentile)",
     "abstract": "90th Percentile of Non Green Vegetation",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -230,7 +227,7 @@ non_green_veg_90 = {
 
 bare_ground_10 = {
     "name": "bare_ground_10",
-    "title": "Bare Ground, 10th Percentile",
+    "title": "Lowest Bare Soil Cover (10th Percentile)",
     "abstract": "10th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -270,7 +267,7 @@ bare_ground_10 = {
 
 bare_ground_50 = {
     "name": "bare_ground_50",
-    "title": "Bare Ground, 50th Percentile",
+    "title": "Median Bare Soil Cover",
     "abstract": "50th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -295,7 +292,7 @@ bare_ground_50 = {
 
 bare_ground_90 = {
     "name": "bare_ground_90",
-    "title": "Bare Ground, 90th Percentile",
+    "title": "Highest Bare Soil Cover (90th Percentile)",
     "abstract": "90th Percentile of Bare Soil",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -320,7 +317,7 @@ bare_ground_90 = {
 
 fc_rgb = {
     "name": "fc_rgb",
-    "title": "Three-band Fractional Cover 50th Percentile",
+    "title": "Median Fractional Cover",
     "abstract": "Fractional cover medians - red is bare soil, green is green vegetation and blue is non-green vegetation",
     "components": {
         "red": {"bs_pc_50": 1.0},
@@ -331,7 +328,7 @@ fc_rgb = {
     # "pq_masks": fc_pq_mask,
     "legend": {
         "show_legend": True,
-        "url": "https://data.dea.ga.gov.au/fractional-cover/FC_legend.png",
+        "url": "https://raw.githubusercontent.com/digitalearthafrica/deafrica-sandbox-notebooks/main/Supplementary_data/Fractional_cover/fc_legend.jpg",
     },
 }
 
@@ -352,11 +349,11 @@ layer = {
     "title": "Fractional Cover annual summary",
     "name": "fc_ls_summary_annual",
     "abstract": """
-Fractional cover provides information about the the proportions of green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.), and bare areas for every 30 m x 30 m ground footprint. Fractional cover provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time. The percentile summaries are designed to make it easier to analyse and interpret fractional cover. Percentiles provide an indicator of where an observation sits, relative to the rest of the observations for the pixel. For example, the 90th percentile is the value below which 90% of the observations fall. The fractional cover algorithm was developed by the Joint Remote Sensing Research Program.
+Fractional cover provides information about the proportions of green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.), and bare soil for every 30 m x 30 m ground footprint. Fractional cover provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time. The percentile summaries are designed to make it easier to analyse and interpret fractional cover. Percentiles provide an indicator of where an observation sits, relative to the rest of the observations for the pixel. For example, the 90th percentile is the value below which 90% of the observations fall.
 
-This product contains the 10th, 50th, and 90th percentiles estimated independently for the green vegetation, non-green vegetation, and bare fractions observed in each calendar year (1st of January - 31st December) from 1984 to the most recent full calendar year.
+Each annual summary contains the 10th, 50th, and 90th percentiles estimated independently for the green vegetation, non-green vegetation, and bare fractions observed in a calendar year. It provides robust estimates of the lowest, median, and highest proportion values observed for each cover type, which can be used to characterise the land cover. The annual summaries are available from 1984 to the most recent full calendar year.
 
-Fractional Cover products use Water Observations from Space (WOfS) to mask out areas of water, cloud and other phenomena. To be considered in the FCP product a pixel must have had at least 10 clear observations over the year.
+The fractional cover algorithm was developed by the Joint Remote Sensing Research Program. Before the percentile calculation, areas of water and cloud cover, as mapped in the Water Observations from Space (WOfS) Feature Layer, are excluded.
 """,
     "product_name": "fc_ls_summary_annual",
     "time_resolution": "year",

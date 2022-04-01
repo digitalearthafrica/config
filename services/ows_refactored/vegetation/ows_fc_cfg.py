@@ -24,7 +24,7 @@ style_fc_rgb_masked = {
         },
     ],
     "legend": {
-        "url": "https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/blob/main/Supplementary_data/Fractional_cover/fc_legend.jpg",
+        "url": "https://raw.githubusercontent.com/digitalearthafrica/deafrica-sandbox-notebooks/main/Supplementary_data/Fractional_cover/fc_legend.jpg",
     },
 }
 
@@ -35,7 +35,7 @@ style_fc_rgb_unmasked = {
     "components": {"red": {"BS": 1.0}, "green": {"PV": 1.0}, "blue": {"NPV": 1.0}},
     "scale_range": [0.0, 100.0],
     "legend": {
-        "url": "https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/blob/main/Supplementary_data/Fractional_cover/fc_legend.jpg",
+        "url": "https://raw.githubusercontent.com/digitalearthafrica/deafrica-sandbox-notebooks/main/Supplementary_data/Fractional_cover/fc_legend.jpg",
     },
 }
 

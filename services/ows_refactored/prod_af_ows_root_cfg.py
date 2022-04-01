@@ -310,8 +310,14 @@ ows_cfg = {
                             ],
                         },
                         {
-                            "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
-                            "type": "python",
+                            "title": "Vegetation climatology",
+                            "abstract": """Vegetation climatology""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                     ],
                 },
