@@ -4,6 +4,7 @@ from ows_refactored.common.ows_reslim_cfg import reslim_wms_min_zoom_15
 legend_idx_0_100_pixel_fc_25ticks = {
     "begin": 0,
     "end": 100,
+    "units": "unitless",
     "ticks_every": 25,
     "title": "Percentage of pixel covered by green vegetation",
     "rcParams": {"font.size": 9},
@@ -12,6 +13,7 @@ legend_idx_0_100_pixel_fc_25ticks = {
 legend_idx_0_100_pixel_fc_ngv_25ticks = {
     "begin": 0,
     "end": 100,
+    "units": "unitless",
     "ticks_every": 25,
     "title": "Percentage of pixel covered by non-green vegetation",
     "rcParams": {"font.size": 9},
@@ -20,6 +22,7 @@ legend_idx_0_100_pixel_fc_ngv_25ticks = {
 legend_idx_0_100_pixel_fc_bs_25ticks = {
     "begin": 0,
     "end": 100,
+    "units": "unitless",
     "ticks_every": 25,
     "title": "Percentage of pixel covered by bare soil",
     "rcParams": {"font.size": 9},
