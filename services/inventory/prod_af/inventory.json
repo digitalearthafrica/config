@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 39,
+  "total_layers_count": 40,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -370,6 +370,18 @@
               "legacy_wofs_summary_alltime_frequency",
               "wofs_summary_alltime_wet",
               "wofs_summary_alltime_clear"
+          ]
+      },
+      {
+          "layer": "crop_mask",
+          "product": [
+              "crop_mask"
+          ],
+          "styles_count": 3,
+          "styles_list": [
+              "green",
+              "filtered_yellow",
+              "prob"
           ]
       },
       {

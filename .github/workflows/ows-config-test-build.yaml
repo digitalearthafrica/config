@@ -2,12 +2,12 @@ name: OWS CFG Lint, Test and Build
 
 on:
   push:
+    branches: [ master ]
     paths:
       - 'services/**'
       - .github/workflows/ows-config-test-build.yaml
 
   pull_request:
-    branches: [ master ]
     paths:
       - 'services/**'
       - .github/workflows/ows-config-test-build.yaml
