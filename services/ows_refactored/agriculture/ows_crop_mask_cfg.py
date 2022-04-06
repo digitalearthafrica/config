@@ -203,7 +203,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
         },
         {
             "title": "Cropland extent 2019 - Eastern Africa",
-            "name": "crop_mask",
+            "name": "crop_mask_eastern",
             "abstract": """
 Digital Earth Africa's cropland extent map for Eastern Africa (2019) shows the estimated location of croplands in the countries of Tanzania, Kenya, Uganda, Ethiopia, Rwanda, and Burundi for the period January to December 2019. Cropland is defined as: "a piece of land of minimum 0.01 ha (a single 10m x 10m pixel) that is sowed/planted and harvest-able at least once within the 12 months after the sowing/planting date." This definition will exclude non-planted grazing lands and perennial crops which can be difficult for satellite imagery to differentiate from natural vegetation.
 
