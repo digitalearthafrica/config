@@ -328,7 +328,7 @@ fc_rgb = {
     # "pq_masks": fc_pq_mask,
     "legend": {
         "show_legend": True,
-        "url": "https://raw.githubusercontent.com/digitalearthafrica/deafrica-sandbox-notebooks/main/Supplementary_data/Fractional_cover/fc_legend.jpg",
+        "url": "https://deafrica-services.s3.af-south-1.amazonaws.com/fc_ls/fc_legend.jpg",
     },
 }
 
