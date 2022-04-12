@@ -143,3 +143,9 @@ dataset:
       description: Derived product version number
       offset: ['properties', 'odc:dataset_version']
       indexed: false
+    
+    # Crop mask or other regional products
+    region:
+      description: African regional area
+      offset: ['properties', 'region']
+      indexed: false
