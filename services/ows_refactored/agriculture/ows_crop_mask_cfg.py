@@ -18,7 +18,6 @@ style_crop_mask_prob = {
         {
             "value": 0,
             "color": "black",
-            "alpha": 0.0,
         },
         {
             "value": 1,
