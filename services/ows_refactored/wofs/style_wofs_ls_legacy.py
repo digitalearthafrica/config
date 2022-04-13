@@ -69,6 +69,8 @@ legacy_style_wofs_summary_alltime_frequency = {
     ],
     "legend": {
         "show_legend": True,
-        "url": "https://deafrica-services.s3.af-south-1.amazonaws.com/wofs_ls_summary_alltime/wofs_full_summary_legend.png",
+        "url": {
+            "en": "https://deafrica-services.s3.af-south-1.amazonaws.com/wofs_ls_summary_alltime/wofs_full_summary_legend.png",
+        }
     },
 }
