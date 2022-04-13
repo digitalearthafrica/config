@@ -72,6 +72,11 @@ style_crop_mask_prob = {
     },
 }
 
+# Copy the probability styles and make the 0 values transparent
+style_crop_mask_prob_transparent = style_crop_mask_prob.copy()
+style_crop_mask_prob_transparent["color_ramp"][0]["alpha"] = 0.0
+
+
 style_crop_mask_green = {
     "name": "green",
     "title": "Cropped land",
@@ -237,7 +242,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "styles": [
                     style_crop_mask_green,
                     style_crop_mask_filtered_yellow,
-                    style_crop_mask_prob,
+                    style_crop_mask_prob_transparent,
                 ],
             },
         },
@@ -278,7 +283,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "styles": [
                     style_crop_mask_green,
                     style_crop_mask_filtered_yellow,
-                    style_crop_mask_prob,
+                    style_crop_mask_prob_transparent,
                 ],
             },
         },
@@ -319,7 +324,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "styles": [
                     style_crop_mask_green,
                     style_crop_mask_filtered_yellow,
-                    style_crop_mask_prob,
+                    style_crop_mask_prob_transparent,
                 ],
             },
         },
@@ -360,7 +365,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "styles": [
                     style_crop_mask_green,
                     style_crop_mask_filtered_yellow,
-                    style_crop_mask_prob,
+                    style_crop_mask_prob_transparent,
                 ],
             },
         },
@@ -401,7 +406,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "styles": [
                     style_crop_mask_green,
                     style_crop_mask_filtered_yellow,
-                    style_crop_mask_prob,
+                    style_crop_mask_prob_transparent,
                 ],
             },
         },
@@ -442,7 +447,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "styles": [
                     style_crop_mask_green,
                     style_crop_mask_filtered_yellow,
-                    style_crop_mask_prob,
+                    style_crop_mask_prob_transparent,
                 ],
             },
         },
@@ -483,7 +488,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "styles": [
                     style_crop_mask_green,
                     style_crop_mask_filtered_yellow,
-                    style_crop_mask_prob,
+                    style_crop_mask_prob_transparent,
                 ],
             },
         },
@@ -524,7 +529,7 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
                 "styles": [
                     style_crop_mask_green,
                     style_crop_mask_filtered_yellow,
-                    style_crop_mask_prob,
+                    style_crop_mask_prob_transparent,
                 ],
             },
         },
