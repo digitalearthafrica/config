@@ -1,3 +1,5 @@
+import copy
+
 from ows_refactored.common.ows_reslim_cfg import reslim_alos_palsar
 
 bands_crop_mask = {"mask": [], "prob": [], "filtered": []}
@@ -73,7 +75,7 @@ style_crop_mask_prob = {
 }
 
 # Copy the probability styles and make the 0 values transparent
-style_crop_mask_prob_transparent = style_crop_mask_prob.copy()
+style_crop_mask_prob_transparent = copy.deepcopy(style_crop_mask_prob)
 style_crop_mask_prob_transparent["color_ramp"][0]["alpha"] = 0.0
 
 
@@ -535,3 +537,8 @@ This service is accessible through OGC Web Service (https://ows.digitalearth.afr
         },
     ],
 }
+
+
+print(style_crop_mask_prob)
+
+print(style_crop_mask_prob_transparent)
