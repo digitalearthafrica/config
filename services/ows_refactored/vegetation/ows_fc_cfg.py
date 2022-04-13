@@ -25,7 +25,9 @@ style_fc_rgb_masked = {
     ],
     "legend": {
         "show_legend": True,
-        "url": "https://deafrica-services.s3.af-south-1.amazonaws.com/fc_ls/fc_legend.jpg",
+        "url": {
+            "en": "https://deafrica-services.s3.af-south-1.amazonaws.com/fc_ls/fc_legend.jpg",
+        }
     },
 }
 
@@ -37,7 +39,9 @@ style_fc_rgb_unmasked = {
     "scale_range": [0.0, 100.0],
     "legend": {
         "show_legend": True,
-        "url": "https://deafrica-services.s3.af-south-1.amazonaws.com/fc_ls/fc_legend.jpg",
+        "url": {
+            "en": "https://deafrica-services.s3.af-south-1.amazonaws.com/fc_ls/fc_legend.jpg",
+        }
     },
 }
 
