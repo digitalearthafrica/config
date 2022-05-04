@@ -4,8 +4,7 @@ from ows_refactored.common.ows_reslim_cfg import reslim_continental
 # mrvbf and mrrtf colour styles are interchangeable (scale of 0-7)
 
 srtm_deriv_ylgnbu = [
-    {"value": -0, "color": "#ffffd9",
-    },
+    {"value": -0, "color": "#ffffd9"},
     {"value": 1, "color": "#edf8b1"},
     {"value": 2, "color": "#c7e9b4"},
     {"value": 3, "color": "#7fcdbb"},
@@ -16,8 +15,7 @@ srtm_deriv_ylgnbu = [
 ]
 
 srtm_deriv_ylorred = [
-    {"value": -0, "color": "#ffffcc",
-    },
+    {"value": -0, "color": "#ffffcc"},
     {"value": 1, "color": "#ffeda0"},
     {"value": 2, "color": "#fed976"},
     {"value": 3, "color": "#feb24c"},
@@ -98,7 +96,7 @@ style_slope = {
         "ticks_every": 10,
         "units": "%",
         "tick_labels": {
-        "50": {"prefix": ">"},
+            "50": {"prefix": ">"},
         },
     },
 }
@@ -113,7 +111,7 @@ Derivative products of a Digital Elevation Model (DEM) can be used to better und
 
  - Slope: rate of elevation change, expressed as a percentage
  - Multi-resolution Valley Bottom Flatness (MrVBF): topographic index used to identify valley bottoms, which are useful for hydrological and sedimentation modelling. In this product, 0 indicates areas which are not valley bottom areas, while 1 - 7 indicate increasingly flatter and larger valley bottoms
- - Multi-resolution Ridge Top Flatness (MrRTF): topographic index used for landform classification. It uses a scale of 0 -- 7 inclusive; 0 indicates steep or low locations while 1 - 7 indicate increasingly larger areas of high flat land 
+ - Multi-resolution Ridge Top Flatness (MrRTF): topographic index used for landform classification. It uses a scale of 0 - 7 inclusive; 0 indicates steep or low locations while 1 - 7 indicate increasingly larger areas of high flat land
 
 The latter two identify the dominant nature of the topography as either ridge-like or valley-like (Gallant and Dowling, 2003).
 
@@ -144,7 +142,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     ],
     "styling": {
         "default_style": "style_slope",
-        "styles": [style_slope, 
+        "styles": [style_slope,
                    style_mrvbf,
                    style_mrrtf],
     },
