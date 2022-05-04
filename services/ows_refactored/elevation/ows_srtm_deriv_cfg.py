@@ -1,5 +1,32 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_continental
 
+# colour ramps
+# mrvbf and mrrtf colour styles are interchangeable (scale of 0-7)
+
+srtm_deriv_ylgnbu = [
+    {"value": -0, "color": "#ffffd9",
+    },
+    {"value": 1, "color": "#edf8b1"},
+    {"value": 2, "color": "#c7e9b4"},
+    {"value": 3, "color": "#7fcdbb"},
+    {"value": 4, "color": "#41b6c4"},
+    {"value": 5, "color": "#1d91c0"},
+    {"value": 6, "color": "#225ea8"},
+    {"value": 7, "color": "#0c2c84"}
+]
+
+srtm_deriv_ylorred = [
+    {"value": -0, "color": "#ffffcc",
+    },
+    {"value": 1, "color": "#ffeda0"},
+    {"value": 2, "color": "#fed976"},
+    {"value": 3, "color": "#feb24c"},
+    {"value": 4, "color": "#fd8d3c"},
+    {"value": 5, "color": "#fc4e2a"},
+    {"value": 6, "color": "#e31a1c"},
+    {"value": 7, "color": "#b10026"}
+]
+
 # styles
 
 style_mrvbf = {
@@ -76,33 +103,6 @@ style_slope = {
     },
 }
 
-# colour ramps
-# mrvbf and mrrtf colour styles are interchangeable (scale of 0-7)
-
-srtm_deriv_ylgnbu = [
-    {"value": -0, "color": "#ffffd9",
-    },
-    {"value": 1, "color": "#edf8b1"},
-    {"value": 2, "color": "#c7e9b4"},
-    {"value": 3, "color": "#7fcdbb"},
-    {"value": 4, "color": "#41b6c4"},
-    {"value": 5, "color": "#1d91c0"},
-    {"value": 6, "color": "#225ea8"},
-    {"value": 7, "color": "#0c2c84"}
-]
-
-srtm_deriv_ylorred = [
-    {"value": -0, "color": "#ffffcc",
-    },
-    {"value": 1, "color": "#ffeda0"},
-    {"value": 2, "color": "#fed976"},
-    {"value": 3, "color": "#feb24c"},
-    {"value": 4, "color": "#fd8d3c"},
-    {"value": 5, "color": "#fc4e2a"},
-    {"value": 6, "color": "#e31a1c"},
-    {"value": 7, "color": "#b10026"}
-]
-
 # layers
 
 layer_srtm_deriv = {
@@ -114,7 +114,7 @@ Derivative products of a Digital Elevation Model (DEM) can be used to better und
  - Slope: rate of elevation change, expressed as a percentage
  - Multi-resolution Valley Bottom Flatness (MrVBF): topographic index used to identify valley bottoms, which are useful for hydrological and sedimentation modelling. In this product, 0 indicates areas which are not valley bottom areas, while 1 - 7 indicate increasingly flatter and larger valley bottoms
  - Multi-resolution Ridge Top Flatness (MrRTF): topographic index used for landform classification. It uses a scale of 0 -- 7 inclusive; 0 indicates steep or low locations while 1 - 7 indicate increasingly larger areas of high flat land 
- 
+
 The latter two identify the dominant nature of the topography as either ridge-like or valley-like (Gallant and Dowling, 2003).
 
 These derivative products have a spatial resolution of 30 m and are derived from data collected by NASA's Shuttle Radar Topography Mission in 2000.
