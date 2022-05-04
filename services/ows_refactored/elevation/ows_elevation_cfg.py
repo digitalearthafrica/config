@@ -81,7 +81,7 @@ It is provided by NASA's Land Processes Distributed Active Archive Center (LP DA
 
 For more information, see https://lpdaac.usgs.gov/products/srtmgl1v003/
 
-This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download from AWS S3 (https://data.digitalearth.africa/).
+This product is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki).
 """,
     "product_name": "dem_srtm",
     "time_resolution": "year",

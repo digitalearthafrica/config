@@ -278,7 +278,7 @@ ows_cfg = {
                     ],
                 },
                 {
-                    "title": "Elevation",
+                    "title": "Elevation and slope",
                     "abstract": """Digital elevation model""",
                     "layers": [
                         {
@@ -291,6 +291,10 @@ ows_cfg = {
                         },
                         {
                             "include": "ows_refactored.elevation.ows_elevation_cfg.layer_cop_30",
+                            "type": "python",
+                        },
+                                                {
+                            "include": "ows_refactored.elevation.ows_srtm_deriv_cfg.layer_srtm_deriv",
                             "type": "python",
                         },
                     ],
