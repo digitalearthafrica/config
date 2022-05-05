@@ -18,9 +18,9 @@ In addition, surface reflectance varabilities within the same time period can be
 
 More techincal information about the GeoMAD product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html)
 
-This product has a spatial resolution of 10 m and is available annually for 2017 to 2020.
+This product has a spatial resolution of 10 m and is available annually for 2017 to 2021.
 
-It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2017-2020.
+It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2017-2021.
 
 Annual geomedian images enable easy visual and algorithmic interpretation, e.g. understanding urban expansion, at annual intervals. They are also useful for characterising permanent landscape features such as woody vegetation. The MADs can be used on their own or together with geomedian to gain insights about the land surface, e.g. for land cover classificiation and for change detection from year to year.
 
