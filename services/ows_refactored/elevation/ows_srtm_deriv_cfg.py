@@ -127,7 +127,9 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "product_name": "dem_srtm_deriv",
     "time_resolution": "year",
     "bands": {
-        "elevation": []
+        "slope": [],
+        "mrrtf": [],
+        "mrvbf": []
     },
     "resource_limits": reslim_continental,
     "image_processing": {
