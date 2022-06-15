@@ -7,6 +7,12 @@
         "name": "Digital Earth Africa data catalogue",
         "url": "https://ows.digitalearth.africa/",
         "itemProperties": {
+          "availableDiffStyles":[
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "ndci"
+              ],
           "opacity": 1.0,
           "timeFilterPropertyName": "data_available_for_dates"
         },
