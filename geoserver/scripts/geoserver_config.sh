@@ -88,8 +88,9 @@ function get_layergroup_workspace() {
 
 # Check if remote workspace exists
 function find_remote_workspace() {
-  this_workspace=${1}
-  remote_workspace=$(${geoserver_api_script} ${api_script_input} get workspaces |jq -r '.workspaces.workspace[] | select(.name=="'${this_workspace}'") | .name')
+  this_collection=${1}
+  this_workspace=${2}
+  remote_workspace=$(${geoserver_api_script} ${api_script_input} -c ${this_collection} get workspaces |jq -r '.workspaces.workspace[] | select(.name=="'${this_workspace}'") | .name')
   if [ "${this_workspace}" == "${remote_workspace}" ] ; then
     return 0
   else
@@ -240,7 +241,7 @@ function find_all_objects() {
   # Collections  
   for collection in ${collection_list//,/ } ; do
 
-    collection_data_dir="${data_dir}/${collection}"
+    collection_data_dir="${data_dir}/collections/${collection}"
     
     # Workspaces
     if [ -d "${collection_data_dir}/workspaces" ] ; then      
@@ -254,7 +255,7 @@ function find_all_objects() {
 
         if [ ${update_mode} -eq 1 ] ; then
         
-          if find_remote_workspace ${this_workspace} ; then
+          if find_remote_workspace ${collection} ${this_workspace} ; then
             echo "Updating workspace: ${this_workspace}"
             ${geoserver_api_script} ${api_script_input} -c ${collection} update workspaces ${this_workspace}
             ret_val=$?
@@ -272,7 +273,7 @@ function find_all_objects() {
         
         else
 
-          if find_remote_workspace ${this_workspace} ; then
+          if find_remote_workspace ${collection} ${this_workspace} ; then
             echo "Update: ${this_workspace}"
           else
             echo "Create: ${this_workspace}"
@@ -565,6 +566,15 @@ while [[ $# -gt 0 ]]; do
       shift
       shift
       ;;
+    -s|--scripts_dir)
+      scripts_dir="${2}"
+      if ! [ -d "${scripts_dir}" ] ; then
+        clean_exit 1 "Scripts directory not found: ${scripts_dir}"
+      fi
+      geoserver_api_script="${scripts_dir}/geoserver_api.sh"
+      shift
+      shift
+      ;;
     -u|--username)
       username="${2}"
       if [ -z "${username}" ] || [[ ${username} =~ ^- ]]; then
@@ -613,6 +623,11 @@ fi
 if [ ${update_global_settings} -eq 1 ] && [ -z "${collection_list}" ] ; then
   usage
   clean_exit 1 "Nothing to update. Please provide a collection or global settings."
+fi
+
+if ! [ -f ${geoserver_api_script} ] ; then
+  echo "API script not found: ${geoserver_api_script}"
+  clean_exit 1
 fi
 
 api_script_input="-u ${username} -p ${password} -r ${resturl}"

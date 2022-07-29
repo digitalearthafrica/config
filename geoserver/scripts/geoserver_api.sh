@@ -71,37 +71,37 @@ function rm_file() {
 
 function get_style_workspace() {
   style="${1}"
-  this_workspace=`cat ${data_dir}/styles/${style}.json | jq -r '.style.workspace.name'`
+  this_workspace=`cat ${collection_dir}/styles/${style}.json | jq -r '.style.workspace.name'`
   echo ${this_workspace}
 }
 
 function get_datastore_workspace() {
   datastore="${1}"
-  this_workspace=`cat ${data_dir}/datastores/${datastore}.json | jq -r '.dataStore.workspace.name'`
+  this_workspace=`cat ${collection_dir}/datastores/${datastore}.json | jq -r '.dataStore.workspace.name'`
   echo ${this_workspace}
 }
 
 function get_featuretype_workspace() {
   featuretype="${1}"
-  this_workspace=`cat ${data_dir}/featuretypes/${featuretype}.json | jq -r '.featureType.namespace.name'`
+  this_workspace=`cat ${collection_dir}/featuretypes/${featuretype}.json | jq -r '.featureType.namespace.name'`
   echo ${this_workspace}
 }
 
 function get_featuretype_datastore() {
   featuretype="${1}"
-  this_datastore=`cat ${data_dir}/featuretypes/${featuretype}.json | jq -r '.featureType.store.name' | awk -F":" '{print $2}'`
+  this_datastore=`cat ${collection_dir}/featuretypes/${featuretype}.json | jq -r '.featureType.store.name' | awk -F":" '{print $2}'`
   echo ${this_datastore}
 }
 
 function get_layer_workspace() {
   layer="${1}"
-  this_workspace=`cat ${data_dir}/layers/${layer}.json | jq -r '.layer.resource.name' | awk -F":" '{print $1}' 2>/dev/null`
+  this_workspace=`cat ${collection_dir}/layers/${layer}.json | jq -r '.layer.resource.name' | awk -F":" '{print $1}' 2>/dev/null`
   echo ${this_workspace}
 }
 
 function get_layergroup_workspace() {
   layergroup="${1}"
-  this_workspace=`cat ${data_dir}/layergroups/${layergroup}.json | jq -r '.layerGroup.workspace.name'`
+  this_workspace=`cat ${collection_dir}/layergroups/${layergroup}.json | jq -r '.layerGroup.workspace.name'`
   echo ${this_workspace}
 }
 
@@ -117,7 +117,7 @@ function create_object() {
 
   case "${object_type}" in
     datastores)
-      data_file="${data_dir}/datastores/${object_name}.json"
+      data_file="${collection_dir}/datastores/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 11 "Data store json file not found: ${data_file}"
       fi
@@ -125,7 +125,7 @@ function create_object() {
       uri="/workspaces/${datastore_workspace}/datastores"      
     ;;
     featuretypes)
-      data_file="${data_dir}/featuretypes/${object_name}.json"
+      data_file="${collection_dir}/featuretypes/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 12 "featuretype json file not found: ${data_file}"
       fi
@@ -134,7 +134,7 @@ function create_object() {
       uri="/workspaces/${featuretype_workspace}/datastores/${featuretype_datastore}/featuretypes"      
     ;;
     layers)      
-      data_file="${data_dir}/layers/${object_name}.json"
+      data_file="${collection_dir}/layers/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 13 "layer json file not found: ${data_file}"
       fi
@@ -142,7 +142,7 @@ function create_object() {
       uri="/workspaces/${layer_workspace}/layers/${object_name}.json"
     ;;
     layergroups)      
-      data_file="${data_dir}/layergroups/${object_name}.json"
+      data_file="${collection_dir}/layergroups/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 13 "layergroup json file not found: ${data_file}"
       fi
@@ -151,14 +151,14 @@ function create_object() {
     ;;
     styles)
       uri="/styles"
-      data_file="${data_dir}/styles/${object_name}.json"
+      data_file="${collection_dir}/styles/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 14 "Style json file not found: ${data_file}"
       fi
     ;;
     workspaces)
       uri="/workspaces"
-      data_file="${data_dir}/workspaces/${object_name}.json"
+      data_file="${collection_dir}/workspaces/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 15 "Workspace json file not found: ${data_file}"
       fi
@@ -295,7 +295,7 @@ function update_object() {
         usage
         clean_exit 20 "No datastore provided."        
       fi
-      data_file="${data_dir}/datastores/${object_name}.json"
+      data_file="${collection_dir}/datastores/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 20 "Data store json file not found: ${data_file}"
       fi
@@ -307,7 +307,7 @@ function update_object() {
         usage
         clean_exit 20 "No featuretype provided."
       fi
-      data_file="${data_dir}/featuretypes/${object_name}.json"
+      data_file="${collection_dir}/featuretypes/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 20 "Featuretype json file not found: ${data_file}"
       fi
@@ -320,7 +320,7 @@ function update_object() {
         usage
         clean_exit 20 "No layer provided."
       fi
-      data_file="${data_dir}/layers/${object_name}.json"
+      data_file="${collection_dir}/layers/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 21 "layer json file not found: ${data_file}"
       fi
@@ -332,7 +332,7 @@ function update_object() {
         usage
         clean_exit 20 "No layergroup provided."
       fi
-      data_file="${data_dir}/layergroups/${object_name}.json"
+      data_file="${collection_dir}/layergroups/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 21 "layergroup json file not found: ${data_file}"
       fi
@@ -359,7 +359,7 @@ function update_object() {
         usage
         clean_exit 24 "No sld name provided."
       fi
-      data_file="${data_dir}/styles/${object_name}.sld"
+      data_file="${collection_dir}/styles/${object_name}.sld"
       content_type="application/vnd.ogc.sld+xml"
       if ! [ -f ${data_file} ] ; then
         clean_exit 25 "Style sld file not found: ${data_file}"
@@ -372,7 +372,7 @@ function update_object() {
         usage
         clean_exit 26 "No workspace name provided."
       fi
-      data_file="${data_dir}/workspaces/${object_name}.json"
+      data_file="${collection_dir}/workspaces/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 27 "Workspace config file not found: ${data_file}"
       fi
@@ -403,7 +403,8 @@ function update_object() {
 typeset -i setverbose=0
 version="1.0"
 scriptname=`basename "$0"`
-curl_bin="/usr/bin/curl"
+curl_bin=`which curl`
+jq_bin=`which jq`
 curl_verbose=""
 curl_flags="-s"
 data_dir="../geoserver_data"
@@ -415,10 +416,20 @@ if [ $# -eq 0 ] ; then
   clean_exit 1
 fi
 
+if [ -z "${curl_bin}" ] ; then
+  echo "curl not found."
+  clean_exit 1
+fi
+
+if [ -z "${jq_bin}" ] ; then
+  echo "jq not found."
+  clean_exit 1
+fi
+
 # Validate input
 while [[ $# -gt 0 ]]; do
   case $1 in
-    -c|--collectionlist)
+    -c|--collection)
       collection="${2}"      
       shift
       shift
@@ -513,12 +524,14 @@ if [ -z "${resturl}" ] ; then
 fi
 
 if ! [ -z ${collection} ] ; then
-  if ! [ -d "${data_dir}/${collection}" ] ; then
+  if ! [ -d "${data_dir}/collections/${collection}" ] ; then
     usage
-    clean_exit 1 "Collection not found."
+    clean_exit 1 "Collection not found. ${data_dir}/collections/${collection}"
   else
-    data_dir=${data_dir}/${collection}
+    collection_dir=${data_dir}/collections/${collection}
   fi
+else
+  clean_exit 1 "Collection not provided."
 fi
 
 # Execute commands

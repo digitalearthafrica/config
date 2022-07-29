@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" version="1.0.0">
     <sld:NamedLayer>
-        <sld:Name>coastlines_v0.3.0 — hotspots_zoom_1</sld:Name>
+        <sld:Name>coastlines_v0.3.0 — hotspots_zoom_3</sld:Name>
         <sld:UserStyle>
-            <sld:Name>coastlines_v0.3.0 — hotspots_zoom_1</sld:Name>
+            <sld:Name>coastlines_v0.3.0 — hotspots_zoom_3</sld:Name>
             <sld:FeatureTypeStyle>
                 <sld:Name>name</sld:Name>
                 <sld:Rule>
@@ -19,8 +19,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-2.5</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -51,14 +61,29 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-1</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
                                 <sld:WellKnownName>circle</sld:WellKnownName>
                                 <sld:Fill>
-                                    <sld:CssParameter name="fill">#da3c43</sld:CssParameter>
+                                    <sld:CssParameter name="fill">
+                                        <ogc:Function name="strConcat">
+                                            <ogc:Literal>#da3c4</ogc:Literal>
+                                            <ogc:Literal>3</ogc:Literal>
+                                        </ogc:Function>
+                                    </sld:CssParameter>
                                 </sld:Fill>
                                 <sld:Stroke>
                                     <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
@@ -83,8 +108,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-0.59999999999999998</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -115,8 +150,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-0.29999999999999999</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -147,8 +192,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-0.10000000000000001</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -179,8 +234,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -211,8 +276,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>0.10000000000000001</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -243,8 +318,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>0.29999999999999999</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -275,8 +360,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>0.59999999999999998</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -307,8 +402,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>1</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -317,7 +422,12 @@
                                     <sld:CssParameter name="fill">#6baed2</sld:CssParameter>
                                 </sld:Fill>
                                 <sld:Stroke>
-                                    <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
+                                    <sld:CssParameter name="stroke">
+                                        <ogc:Function name="strConcat">
+                                            <ogc:Literal>#ff</ogc:Literal>
+                                            <ogc:Literal>ffff</ogc:Literal>
+                                        </ogc:Function>
+                                    </sld:CssParameter>
                                     <sld:CssParameter name="stroke-opacity">0</sld:CssParameter>
                                     <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
                                 </sld:Stroke>
@@ -339,8 +449,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>2.5</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -371,8 +491,18 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>200</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>-0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
+                    <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
                             <sld:Mark>
@@ -390,6 +520,7 @@
                         </sld:Graphic>
                     </sld:PointSymbolizer>
                 </sld:Rule>
+                <sld:VendorOption name="sortBy">rate_time</sld:VendorOption>
             </sld:FeatureTypeStyle>
         </sld:UserStyle>
     </sld:NamedLayer>
