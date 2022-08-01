@@ -32,15 +32,22 @@ username="${GEOSERVER_ADMIN_USER}"
 password="${GEOSERVER_ADMIN_PASSWORD}"
 collection_list="${GEOSERVER_COLLECTION_LIST}"
 geoserver_url="${GEOSERVER_DOMAIN}/geoserver/rest"
+geoserver_env_inventory="${geoserver_data_dir}/inventory/{GEOSERVER_ENV}/inventory.json"
+
+if ! [ -f ${geoserver_env_inventory} ] ; then
+  clean_exit 1 "GeoServer inventory file not found: ${geoserver_env_inventory}"
+fi
+
+for collection in $(cat ${geoserver_env_inventory} | jq -r '.[]') ; do
+  if [ "${collection_list}" == "" ] ; then
+    collection_list=${collection}
+  else
+    collection_list=${collection_list},${collection}
+  fi
+done
 
 if [ "${collection_list}" == "" ] ; then
-  for dir in `ls -1d ${geoserver_data_dir}/collections/*` ; do
-    if [ "${collection_list}" == "" ] ; then
-      collection_list=`basename $dir`
-    else
-      collection_list=${collection_list},`basename $dir`
-    fi
-  done
+  clean_exit 2 "Invalid collection list."
 fi
 
 ${geoserver_config_script} -g -u ${username} -p ${password} -r ${geoserver_url} -d ${geoserver_data_dir} -s ${geoserver_scripts_dir} -c ${collection_list} update

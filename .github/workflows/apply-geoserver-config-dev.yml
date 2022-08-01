@@ -22,8 +22,8 @@ jobs:
           GEOSERVER_ADMIN_USER: ${{ secrets.GEOSERVER_ADMIN_USER_DEV }}
           GEOSERVER_ADMIN_PASSWORD: ${{ secrets.GEOSERVER_ADMIN_PASSWORD_DEV }}
           GEOSERVER_DOMAIN: "https://geoserver.dev.digitalearth.africa"
-          GEOSERVER_COLLECTION_LIST: "coastline_v0.3.0"
           GEOSERVER_CONFIG_GIT_BRANCH: ${{ github.head_ref || github.ref_name }}
+          GEOSERVER_ENV: "dev"
         run: |
           cd geoserver
           echo "Build geoserver-config image"
@@ -39,4 +39,5 @@ jobs:
             -e GEOSERVER_DOMAIN=${{ env.GEOSERVER_DOMAIN }} \
             -e GEOSERVER_COLLECTION_LIST=${{ env.GEOSERVER_COLLECTION_LIST }} \
             -e GEOSERVER_CONFIG_GIT_BRANCH=${{ env.GEOSERVER_CONFIG_GIT_BRANCH }} \
+            -e GEOSERVER_ENV=${{ env.GEOSERVER_ENV }} \
             geoserver-config:latest
