@@ -530,8 +530,6 @@ if ! [ -z ${collection} ] ; then
   else
     collection_dir=${data_dir}/collections/${collection}
   fi
-else
-  clean_exit 1 "Collection not provided."
 fi
 
 # Execute commands
