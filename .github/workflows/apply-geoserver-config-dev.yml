@@ -29,7 +29,7 @@ jobs:
           echo "Build geoserver-config image"
           docker build . -t geoserver-config:latest
           echo "Run geoserver-config container"
-          echo "User: ${{ env.GEOSERVER_ADMIN_USER }}"
+          echo "Environment: ${{ env.GEOSERVER_ENV }}"
           echo "Domain: ${{ env.GEOSERVER_DOMAIN }}"
           echo "Collection: ${{ env.GEOSERVER_COLLECTION_LIST }}"
           echo "Branch: ${{ env.GEOSERVER_CONFIG_GIT_BRANCH }}"
