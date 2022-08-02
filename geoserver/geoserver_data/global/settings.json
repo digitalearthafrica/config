@@ -6,7 +6,7 @@
         "address": "Enterprise Building, Mark Shuttleworth Street, Innovation Hub",
         "addressCity": "Pretoria",
         "addressCountry": "South Africa",
-        "addressDeliveryPoint": "test3",
+        "addressDeliveryPoint": "",
         "addressPostalCode": "0087",
         "addressState": "Gauteng",
         "addressType": "Physical",
