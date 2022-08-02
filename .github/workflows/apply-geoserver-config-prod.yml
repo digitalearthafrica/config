@@ -32,7 +32,6 @@ jobs:
           echo "Run geoserver-config container"
           echo "Environment: ${{ env.GEOSERVER_ENV }}"
           echo "Domain: ${{ env.GEOSERVER_DOMAIN }}"
-          echo "Collection: ${{ env.GEOSERVER_COLLECTION_LIST }}"
           echo "Branch: ${{ env.GEOSERVER_CONFIG_GIT_BRANCH }}"
           docker run -i --rm \
             -e GEOSERVER_ADMIN_USER=${{ env.GEOSERVER_ADMIN_USER }} \

@@ -32,7 +32,7 @@ username="${GEOSERVER_ADMIN_USER}"
 password="${GEOSERVER_ADMIN_PASSWORD}"
 collection_list="${GEOSERVER_COLLECTION_LIST}"
 geoserver_url="${GEOSERVER_DOMAIN}/geoserver/rest"
-geoserver_env_inventory="${geoserver_data_dir}/inventory/{GEOSERVER_ENV}/inventory.json"
+geoserver_env_inventory="${geoserver_data_dir}/inventory/${GEOSERVER_ENV}/inventory.json"
 
 if ! [ -f ${geoserver_env_inventory} ] ; then
   clean_exit 1 "GeoServer inventory file not found: ${geoserver_env_inventory}"
