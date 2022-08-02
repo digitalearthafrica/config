@@ -42,4 +42,4 @@ Prod and dev config files are titled accordingly. Note any `/services` additions
  - Access stable prod via https://ows.digitalearth.africa/
 
 ## Process for updating GeoServer
-GeoServer config is managed in this repo. More information on the process can be found here: [GeoServer Config](https://github.com/digitalearthafrica/config/blob/main/geoserver/README.md)
+GeoServer config is managed in this repo. More information on the process can be found here: [GeoServer Config](https://github.com/digitalearthafrica/config/tree/master/geoserver#digital-earth-africa-geoserver-config)
