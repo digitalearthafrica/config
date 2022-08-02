@@ -1,0 +1,43 @@
+---
+name: Apply GeoServer Config - Prod
+
+on:
+
+  push:
+    branches: [ main ]
+    paths:
+      - 'geoserver/geoserver_data/**'
+
+jobs:
+  apply-config:
+    runs-on: ubuntu-latest
+    name: Apply GeoServer config to Prod
+    
+    steps:
+      - name: Checkout git
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Apply GeoServer config
+        env:
+          GEOSERVER_ADMIN_USER: ${{ secrets.GEOSERVER_ADMIN_USER_PROD }}
+          GEOSERVER_ADMIN_PASSWORD: ${{ secrets.GEOSERVER_ADMIN_PASSWORD_PROD }}
+          GEOSERVER_DOMAIN: "https://geoserver.digitalearth.africa"
+          GEOSERVER_CONFIG_GIT_BRANCH: ${{ github.head_ref || github.ref_name }}
+          GEOSERVER_ENV: "prod"
+        run: |
+          cd geoserver
+          echo "Build geoserver-config image"
+          docker build . -t geoserver-config:latest
+          echo "Run geoserver-config container"
+          echo "Environment: ${{ env.GEOSERVER_ENV }}"
+          echo "Domain: ${{ env.GEOSERVER_DOMAIN }}"
+          echo "Branch: ${{ env.GEOSERVER_CONFIG_GIT_BRANCH }}"
+          docker run -i --rm \
+            -e GEOSERVER_ADMIN_USER=${{ env.GEOSERVER_ADMIN_USER }} \
+            -e GEOSERVER_ADMIN_PASSWORD=${{ env.GEOSERVER_ADMIN_PASSWORD }} \
+            -e GEOSERVER_DOMAIN=${{ env.GEOSERVER_DOMAIN }} \
+            -e GEOSERVER_COLLECTION_LIST=${{ env.GEOSERVER_COLLECTION_LIST }} \
+            -e GEOSERVER_CONFIG_GIT_BRANCH=${{ env.GEOSERVER_CONFIG_GIT_BRANCH }} \
+            -e GEOSERVER_ENV=${{ env.GEOSERVER_ENV }} \
+            geoserver-config:latest

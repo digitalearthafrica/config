@@ -1,0 +1,126 @@
+{
+  "global": {
+    "settings": {
+      "contact": {
+        "id": "contact",
+        "address": "Enterprise Building, Mark Shuttleworth Street, Innovation Hub",
+        "addressCity": "Pretoria",
+        "addressCountry": "South Africa",
+        "addressDeliveryPoint": "",
+        "addressPostalCode": "0087",
+        "addressState": "Gauteng",
+        "addressType": "Physical",
+        "contactEmail": "information@sansa.org.za",
+        "contactFacsimile": "0128440396",
+        "contactOrganization": "SANSA",
+        "contactPerson": "",
+        "contactPosition": "",
+        "contactVoice": "0128440500",
+        "internationalAddress": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalAddressCity": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalAddressCountry": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalAddressDeliveryPoint": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalAddressPostalCode": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalAddressState": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalAddressType": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalContactEmail": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalContactFacsimile": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalContactOrganization": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalContactPerson": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalContactPosition": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        },
+        "internationalContactVoice": {
+          "@class": "org.geotools.util.GrowableInternationalString"
+        }
+      },
+      "charset": "UTF-8",
+      "numDecimals": 4,
+      "verbose": true,
+      "verboseExceptions": false,
+      "localWorkspaceIncludesPrefix": false,
+      "showCreatedTimeColumnsInAdminList": false,
+      "showModifiedTimeColumnsInAdminList": false
+    },
+    "jai": {
+      "allowInterpolation": false,
+      "recycling": false,
+      "tilePriority": 5,
+      "tileThreads": 7,
+      "memoryCapacity": 0.5,
+      "memoryThreshold": 0.75,
+      "imageIOCache": false,
+      "pngAcceleration": false,
+      "jpegAcceleration": false,
+      "allowNativeMosaic": false,
+      "allowNativeWarp": false,
+      "pngEncoderType": "PNGJ",
+      "jaiext": {
+        "jaiExtOperations": {
+          "@class": "sorted-set",
+          "string": [
+            "Affine",
+            "BandCombine",
+            "BandMerge",
+            "BandSelect",
+            "Binarize",
+            "Border",
+            "ColorConvert",
+            "Crop",
+            "ErrorDiffusion",
+            "Format",
+            "ImageFunction",
+            "Lookup",
+            "Mosaic",
+            "Null",
+            "OrderedDither",
+            "Rescale",
+            "Scale",
+            "Stats",
+            "Translate",
+            "Warp",
+            "algebric",
+            "operationConst"
+          ]
+        }
+      }
+    },
+    "coverageAccess": {
+      "maxPoolSize": 5,
+      "corePoolSize": 5,
+      "keepAliveTime": 30000,
+      "queueType": "UNBOUNDED",
+      "imageIOCacheThreshold": 10240
+    },
+    "updateSequence": 27,
+    "featureTypeCacheSize": 0,
+    "globalServices": true,
+    "useHeadersProxyURL": false,
+    "xmlPostRequestLogBufferSize": 1024,
+    "xmlExternalEntitiesEnabled": false,
+    "webUIMode": "DEFAULT",
+    "allowStoredQueriesPerWorkspace": true
+  }
+}
