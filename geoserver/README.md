@@ -17,10 +17,10 @@ Configuration is saved in `geoserver_data` in the directories listed below. All 
 
 - `collections`: This directory contains a collection of GeoServer objects.
 - `global`: Contains all GeoServer global settings, such as contact information and service configuration.
-- `inventory`: Contains directories per environment and a single `inventory.json` file listing the active collections for the environment.
+- `inventory`: Contains a directory and `invertory.json` per environment. The `inventory.json` lists all the active collections for the environment.
 
 ### Collection Structure
-Collections are groupings of GeoServer objects that include the following GeoServer objects:
+Collections are groupings of GeoServer objects and can include the following GeoServer objects:
 - Workspaces
 - Data stores
 - Styles
@@ -28,15 +28,15 @@ Collections are groupings of GeoServer objects that include the following GeoSer
 - Layers
 - Layer groups
 
-### Config change deployment
+### Config Change Deployment
 The deployment of the changes to GeoServer config files are managed through two GitHub workflow actions:
 1. Dev action: Triggered when a PR is created for changes in `geoserver_data`
-2. Prod action: Triggered when a PR is merged to main and includes changes to `geoserver_data`
+2. Prod action: Triggered when a PR is merged to main that includes changes in `geoserver_data`
 
 
 GeoServer REST API credentials are stored in the repo secrets.
 
-### Change steps
+### Change Steps
 Follow the steps below to apply new collections, objects or current configuration changes.
 1. Create a branch from main.
 2. Push changes to the new branch.

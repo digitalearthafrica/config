@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# GeoServer config management throught the GeoServer REST API
+# GeoServer config management through the GeoServer REST API script
 #----------------------------------------------------------------------
 
 #######################################################################
@@ -13,10 +13,12 @@ function usage() {
   echo "GeoServer config script."
   echo
   echo "Options:"
-  echo "  -g, --global      Update global settings and services"
-  echo "  -p, --password    Basic auth password"
-  echo "  -r  --resturl     REST API URL. E.g. http://localhost:8080/geoserver/rest"  
-  echo "  -u, --username    Basic auth user"
+  echo "  -c, --collectionlist  Comma delimited list of collections to list or update"
+  echo "  -g, --global          Update global settings and services"
+  echo "  -p, --password        Basic auth password"
+  echo "  -r, --resturl         REST API URL. E.g. http://localhost:8080/geoserver/rest"  
+  echo "  -s, --scriptsdir      Set scripts directory if different from default: ./scripts"
+  echo "  -u, --username        Basic auth user"
   echo
   echo "Commands:"
   echo "  list          List all configured objects"
@@ -44,6 +46,7 @@ function rm_file() {
   fi
 }
 
+# Datastore workspace
 function get_datastore_workspace() {
   this_collection_datadir="${1}"
   this_datastore="${2}"
@@ -51,6 +54,7 @@ function get_datastore_workspace() {
   echo ${this_workspace}
 }
 
+# Style workspace
 function get_style_workspace() {
   this_collection_datadir="${1}"
   this_style="${2}"
@@ -58,6 +62,7 @@ function get_style_workspace() {
   echo ${this_workspace}
 }
 
+# Featuretype workspace
 function get_featuretype_workspace() {
   this_collection_datadir="${1}"
   this_featuretype="${2}"
@@ -65,6 +70,7 @@ function get_featuretype_workspace() {
   echo ${this_workspace}
 }
 
+# Featuretype datastore
 function get_featuretype_datastore() {
   this_collection_datadir="${1}"
   this_featuretype="${2}"
@@ -72,6 +78,7 @@ function get_featuretype_datastore() {
   echo ${this_datastore}
 }
 
+# Layer workspace
 function get_layer_workspace() {
   this_collection_datadir="${1}"
   this_layer="${2}"
@@ -79,6 +86,7 @@ function get_layer_workspace() {
   echo ${this_workspace}
 }
 
+# Layergroup workspace
 function get_layergroup_workspace() {
   this_collection_datadir="${1}"
   this_layergroup="${2}"
@@ -199,7 +207,7 @@ function find_remote_layergroup() {
   fi
 }
 
-# Update all objects
+# Update or list all objects
 function find_all_objects() {
 
   # Global settings
@@ -402,7 +410,7 @@ function find_all_objects() {
             ${geoserver_api_script} ${api_script_input} -c ${collection} create featuretypes ${this_featuretype}
             ret_val=$?
             if [ ${ret_val} -ne 0 ] ; then
-              clean_exit 18 "Unable to create featuretype ${this_featuretype}."
+              clean_exit 20 "Unable to create featuretype ${this_featuretype}."
             fi          
           fi
 
@@ -438,14 +446,14 @@ function find_all_objects() {
             ${geoserver_api_script} ${api_script_input} -c ${collection} update layers ${this_layer}
             ret_val=$?
             if [ ${ret_val} -ne 0 ] ; then
-              clean_exit 16 "Unable to update later ${this_layer}."
+              clean_exit 21 "Unable to update later ${this_layer}."
             fi          
           else
             echo "Creating layer: ${this_layer}"
             ${geoserver_api_script} ${api_script_input} -c ${collection} create layers ${this_layer}
             ret_val=$?
             if [ ${ret_val} -ne 0 ] ; then
-              clean_exit 17 "Unable to create layer ${this_layer}."
+              clean_exit 22 "Unable to create layer ${this_layer}."
             fi          
           fi
 
@@ -481,14 +489,14 @@ function find_all_objects() {
             ${geoserver_api_script} ${api_script_input} -c ${collection} update layergroups ${this_layergroup}
             ret_val=$?
             if [ ${ret_val} -ne 0 ] ; then
-              clean_exit 16 "Unable to update layergroup ${this_layergroup}."
+              clean_exit 23 "Unable to update layergroup ${this_layergroup}."
             fi          
           else
             echo "Creating layergroup: ${this_layergroup}"
             ${geoserver_api_script} ${api_script_input} -c ${collection} create layergroups ${this_layergroup}
             ret_val=$?
             if [ ${ret_val} -ne 0 ] ; then
-              clean_exit 17 "Unable to create layergroup ${this_layergroup}."
+              clean_exit 24 "Unable to create layergroup ${this_layergroup}."
             fi          
           fi
 
@@ -599,7 +607,7 @@ while [[ $# -gt 0 ]]; do
       ;;
     *)
       command="${1}"      
-      shift # past argument
+      shift
       break
       ;;
   esac
