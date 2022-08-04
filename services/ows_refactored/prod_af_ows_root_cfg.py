@@ -291,6 +291,16 @@ ows_cfg = {
                             ],
                         },
                         {
+                            "title": "Monthly vegetation",
+                            "abstract": """Monthly vegetation""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.vegetation.ows_ndvi_anom_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
+                        },
+                        {
                             "title": "Annual vegetation",
                             "abstract": """Annual vegetation""",
                             "layers": [
