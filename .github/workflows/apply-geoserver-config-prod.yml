@@ -4,7 +4,7 @@ name: Apply GeoServer Config - Prod
 on:
 
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths:
       - 'geoserver/geoserver_data/**'
 
