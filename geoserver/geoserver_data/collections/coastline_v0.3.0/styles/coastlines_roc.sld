@@ -563,10 +563,10 @@
                                     </ogc:PropertyIsLessThanOrEqualTo>
                                 </ogc:Or>
                             </ogc:And>
-                            <ogc:PropertyIsGreaterThan>
-                                <ogc:PropertyName>valid_obs</ogc:PropertyName>
-                                <ogc:Literal>10</ogc:Literal>
-                            </ogc:PropertyIsGreaterThan>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                         </ogc:And>
                     </ogc:Filter>
                     <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
