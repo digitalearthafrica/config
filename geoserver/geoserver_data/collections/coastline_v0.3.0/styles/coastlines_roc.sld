@@ -15,10 +15,10 @@
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.0101</ogc:Literal>
                             </ogc:PropertyIsGreaterThanOrEqualTo>
-                            <ogc:PropertyIsLessThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>1.00</ogc:Literal>
-                            </ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                         </ogc:And>
                     </ogc:Filter>
                     <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
