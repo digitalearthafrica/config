@@ -565,7 +565,7 @@
                             <sld:CssParameter name="stroke">#000004</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -590,7 +590,7 @@
                             <sld:CssParameter name="stroke">#000004</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -615,7 +615,7 @@
                             <sld:CssParameter name="stroke">#08061d</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -640,7 +640,7 @@
                             <sld:CssParameter name="stroke">#170b3a</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -665,7 +665,7 @@
                             <sld:CssParameter name="stroke">#2c0b57</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -690,7 +690,7 @@
                             <sld:CssParameter name="stroke">#420a68</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -715,7 +715,7 @@
                             <sld:CssParameter name="stroke">#570f6e</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -740,7 +740,7 @@
                             <sld:CssParameter name="stroke">#6b176e</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -765,7 +765,7 @@
                             <sld:CssParameter name="stroke">#7f1f6c</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -790,7 +790,7 @@
                             <sld:CssParameter name="stroke">#932667</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -815,7 +815,7 @@
                             <sld:CssParameter name="stroke">#a82e5f</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -840,7 +840,7 @@
                             <sld:CssParameter name="stroke">#bb3755</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -865,7 +865,7 @@
                             <sld:CssParameter name="stroke">#cc4248</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -890,7 +890,7 @@
                             <sld:CssParameter name="stroke">#dd5139</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -915,7 +915,7 @@
                             <sld:CssParameter name="stroke">#ea622a</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -940,7 +940,7 @@
                             <sld:CssParameter name="stroke">#f3771a</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -965,7 +965,7 @@
                             <sld:CssParameter name="stroke">#f98d0a</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -990,7 +990,7 @@
                             <sld:CssParameter name="stroke">#fca40b</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -1015,7 +1015,7 @@
                             <sld:CssParameter name="stroke">#fbbe23</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -1040,7 +1040,7 @@
                             <sld:CssParameter name="stroke">#f6d644</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -1065,7 +1065,7 @@
                             <sld:CssParameter name="stroke">#f2ee72</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -1090,7 +1090,7 @@
                             <sld:CssParameter name="stroke">#fcffa4</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-dasharray">4.0 2.0</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
