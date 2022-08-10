@@ -1063,7 +1063,7 @@
                             <ogc:PropertyName>year</ogc:PropertyName>
                         </sld:Label>
                         <sld:Font>
-                            <sld:CssParameter name="font-family">MS Shell Dlg 2</sld:CssParameter>
+                            <sld:CssParameter name="font-family">SansSerif.plain</sld:CssParameter>
                             <sld:CssParameter name="font-size">13</sld:CssParameter>
                             <sld:CssParameter name="font-style">normal</sld:CssParameter>
                             <sld:CssParameter name="font-weight">normal</sld:CssParameter>
