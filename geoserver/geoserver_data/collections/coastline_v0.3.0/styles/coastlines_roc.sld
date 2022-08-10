@@ -95,10 +95,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-1</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -137,10 +137,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-0.59999999999999998</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -179,10 +179,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-0.29999999999999999</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -221,10 +221,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>-0.10000000000000001</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -263,10 +263,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -305,10 +305,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>0.10000000000000001</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -347,10 +347,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>0.29999999999999999</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -389,10 +389,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>0.59999999999999998</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -431,10 +431,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>1</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -473,10 +473,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>2.5</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
@@ -515,10 +515,10 @@
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
                                 <ogc:Literal>200</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
