@@ -12,14 +12,6 @@
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-200</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
-                            <ogc:PropertyIsLessThanOrEqualTo>
-                                <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-2.5</ogc:Literal>
-                            </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.0101</ogc:Literal>
                             </ogc:PropertyIsGreaterThanOrEqualTo>
@@ -36,7 +28,7 @@
                             <sld:Mark>
                                 <sld:WellKnownName>circle</sld:WellKnownName>
                                 <sld:Fill>
-                                    <sld:CssParameter name="fill">#ca0020</sld:CssParameter>
+                                    <sld:CssParameter name="fill">#ffffff</sld:CssParameter>
                                 </sld:Fill>
                                 <sld:Stroke>
                                     <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
