@@ -6,26 +6,18 @@
             <sld:Name>coastlines_v0.3.0 — rates_of_change</sld:Name>
             <sld:FeatureTypeStyle>
                 <sld:Name>name</sld:Name>
-				<sld:Rule>
+		<sld:Rule>
                     <sld:Name>Testing</sld:Name>
                     <sld:Title>Testing</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-200</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
-                            <ogc:PropertyIsLessThanOrEqualTo>
-                                <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-2.5</ogc:Literal>
-                            </ogc:PropertyIsLessThanOrEqualTo>
-                            <ogc:PropertyIsGreaterThanOrEqualTo>
-                                <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
-                            </ogc:PropertyIsGreaterThanOrEqualTo>
-                            <ogc:PropertyIsLessThanOrEqualTo>
+                            <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
                                 <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>1.0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
