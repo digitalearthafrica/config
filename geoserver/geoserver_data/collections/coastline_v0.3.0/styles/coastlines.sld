@@ -21,7 +21,7 @@
                             <sld:CssParameter name="stroke">#000004</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+                            <sld:CssParameter name="stroke-width">0</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
@@ -566,6 +566,7 @@
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
+                            <sld:CssParameter name="stroke-width">0</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
