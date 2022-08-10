@@ -21,11 +21,11 @@
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsGreaterThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>-0.01</ogc:Literal>
+                                <ogc:Literal>0.0101</ogc:Literal>
                             </ogc:PropertyIsGreaterThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
-                                <ogc:Literal>0.01</ogc:Literal>
+                                <ogc:Literal>1.00</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                         </ogc:And>
                     </ogc:Filter>
