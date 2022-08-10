@@ -182,8 +182,13 @@ function create_object() {
 
   http_code=`tail -1 ${tmp_file}`
 
-  if [ ${ret_val} -ne 0 ] || ! [[ "${http_code}" =~ ^2.* ]]; then    
-    clean_exit 3 "Create failed. HTTP code: ${http_code}"
+  if [ ${ret_val} -ne 0 ] || ! [[ "${http_code}" =~ ^2.* ]]; then
+    echo "Create failed. HTTP code: ${http_code}"
+    echo
+    echo "Error output from the REST API:"
+    cat ${tmp_file}
+    echo
+    clean_exit 3
   fi
 
   echo "Create successful."  
@@ -396,8 +401,13 @@ function update_object() {
 
   http_code=`tail -1 ${tmp_file}`
 
-  if [ ${ret_val} -ne 0 ] || ! [[ "${http_code}" =~ ^2.* ]]; then    
-    clean_exit 3 "Update failed. HTTP code: ${http_code}"
+  if [ ${ret_val} -ne 0 ] || ! [[ "${http_code}" =~ ^2.* ]]; then
+    echo "Update failed. HTTP code: ${http_code}"
+    echo
+    echo "Error output from the REST API:"
+    cat ${tmp_file}
+    echo
+    clean_exit 3
   fi
 
   echo "Update successful."  
