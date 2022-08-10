@@ -6,6 +6,33 @@
             <sld:Name>coastlines_v0.3.0 — rates_of_change</sld:Name>
             <sld:FeatureTypeStyle>
                 <sld:Name>name</sld:Name>
+                <sld:Rule>Non-significant</sld:Name>
+                    <sld:Title>Non-significant</sld:Title>
+                    <ogc:Filter>                        
+                        <ogc:PropertyIsGreaterThan>
+                            <ogc:PropertyName>sig_time</ogc:PropertyName>
+                            <ogc:Literal>0.01</ogc:Literal>
+                        </ogc:PropertyIsGreaterThanOrEqualTo>                        
+                    </ogc:Filter>
+                    <sld:MinScaleDenominator>5000.0</sld:MinScaleDenominator>
+                    <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
+                    <sld:PointSymbolizer>
+                        <sld:Graphic>
+                            <sld:Mark>
+                                <sld:WellKnownName>circle</sld:WellKnownName>
+                                <sld:Fill>
+                                    <sld:CssParameter name="fill">#ffffff</sld:CssParameter>
+                                </sld:Fill>
+                                <sld:Stroke>
+                                    <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
+                                    <sld:CssParameter name="stroke-opacity">0</sld:CssParameter>
+                                    <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+                                </sld:Stroke>
+                            </sld:Mark>
+                            <sld:Size>2</sld:Size>
+                        </sld:Graphic>
+                    </sld:PointSymbolizer>
+                </sld:Rule>
                 <sld:Rule>
                     <sld:Name>&lt; -2.50 m / year coastline retreat</sld:Name>
                     <sld:Title>&lt; -2.50 m / year coastline retreat</sld:Title>
