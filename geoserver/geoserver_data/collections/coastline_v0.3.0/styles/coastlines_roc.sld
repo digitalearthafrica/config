@@ -554,7 +554,7 @@
                         </sld:Label>
                         <sld:Font>
                             <sld:CssParameter name="font-family">SansSerif.plain</sld:CssParameter>
-                            <sld:CssParameter name="font-size">9.5</sld:CssParameter>
+                            <sld:CssParameter name="font-size">10</sld:CssParameter>
                             <sld:CssParameter name="font-style">normal</sld:CssParameter>
                             <sld:CssParameter name="font-weight">normal</sld:CssParameter>
                         </sld:Font>
