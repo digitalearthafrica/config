@@ -7,6 +7,39 @@
             <sld:FeatureTypeStyle>
                 <sld:Name>name</sld:Name>
                 <sld:Rule>
+                    <sld:Name>Non significant</sld:Name>
+                    <sld:Title>Non significant</sld:Title>
+                    <ogc:Filter>
+                        <ogc:And>
+                            <ogc:PropertyIsGreaterThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThanOrEqualTo>
+                            <ogc:PropertyIsLessThanOrEqualTo>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>1.0</ogc:Literal>
+                            </ogc:PropertyIsLessThanOrEqualTo>
+                        </ogc:And>
+                    </ogc:Filter>
+                    <sld:MinScaleDenominator>2.0E7</sld:MinScaleDenominator>
+                    <sld:PointSymbolizer>
+                        <sld:Graphic>
+                            <sld:Mark>
+                                <sld:WellKnownName>circle</sld:WellKnownName>
+                                <sld:Fill>
+                                    <sld:CssParameter name="fill">#ffffff</sld:CssParameter>
+                                </sld:Fill>
+                                <sld:Stroke>
+                                    <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
+                                    <sld:CssParameter name="stroke-opacity">0</sld:CssParameter>
+                                    <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
+                                </sld:Stroke>
+                            </sld:Mark>
+                            <sld:Size>2</sld:Size>
+                        </sld:Graphic>
+                    </sld:PointSymbolizer>
+                </sld:Rule>
+                <sld:Rule>
                     <sld:Name>&lt; -2.50 m / year coastline retreat</sld:Name>
                     <sld:Title>&lt; -2.50 m / year coastline retreat</sld:Title>
                     <ogc:Filter>
