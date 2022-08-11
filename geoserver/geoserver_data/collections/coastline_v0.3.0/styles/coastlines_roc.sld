@@ -36,7 +36,7 @@
                                     <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
                                 </sld:Stroke>
                             </sld:Mark>
-                            <sld:Size>2</sld:Size>
+                            <sld:Size>2/sld:Size>
                         </sld:Graphic>
                     </sld:PointSymbolizer>
                 </sld:Rule>
