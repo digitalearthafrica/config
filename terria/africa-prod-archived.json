@@ -656,6 +656,18 @@
       ]
     },
     {
+      "name": "Coastal",
+      "type": "group",
+      "members": [
+        {
+          "name": "DE Africa Coastalines",
+          "type": "wms",
+          "url": "https://geoserver.dev.digitalearth.africa/geoserver/coastline_v0.3.0/wms",
+          "layers": "coastline_v0.3.0:DEACoastlines"
+        }
+      ]
+    },
+    {
       "id": "vegetation",
       "type": "group",
       "name": "Vegetation",
@@ -673,12 +685,12 @@
             "ignoreUnknownTileErrors": true,
             "thresholdBeforeDisablingItem": 100000
           },
-            "id": "fc_ls",
-            "shareKeys": [
+          "id": "fc_ls",
+          "shareKeys": [
             "Root Group/Vegetation/Fractional cover - daily (provisional)"
-            ]
-          },
-          {
+          ]
+        },
+        {
           "type": "wms",
           "name": "Global Mangrove Watch",
           "url": "https://ows.digitalearth.africa/",
@@ -691,12 +703,12 @@
             "ignoreUnknownTileErrors": true,
             "thresholdBeforeDisablingItem": 100000
           },
-            "id": "gmw",
-            "shareKeys": [
+          "id": "gmw",
+          "shareKeys": [
             "Root Group/Vegetation/Global Mangrove Watch"
-            ]
-          }
-          ],
+          ]
+        }
+      ],
       "shareKeys": [
         "Root Group/Vegetation"
       ]
