@@ -12,7 +12,6 @@ layer = {
     "title": "NDVI Anomaly",
     "name": "ndvi_anomaly",
     "abstract": """
-
 Standardised NDVI Anomalies provide a measure of vegetation health relative to long term average conditions by measuring the departure, in units of standard devaiations, away from the long-term mean. These monthly NDVI anomalies were calculated by combining NDVI observations from Landsat 8, Landsat 9, and Sentinel-2 for a given month, subtracting those values from the long term NDVI mean, then dividing by the long-term NDVI standard deviation. Postive values indicate vegetation is greener than average conditions, and are usually due to increased rainfall in a region. Negative values indicate additional plant stress relative to the long-term average.
 
 This service provides data monthly from January 2017 at a spatial resolution of 30 m. The long term means and standard deviations used are available through the "NDVI Climatology" layer.
