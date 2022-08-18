@@ -79,11 +79,17 @@ bands_ndvi_clim = {
 
 
 layer = {
-    "title": "NDVI Climatologies (provisional)",
+    "title": "NDVI Climatology",
     "name": "ndvi_climatology_ls",
     "abstract": """
 
-Standardised NDVI Anomalies provide a measure of vegetation health relative to long term average conditions by measuring the departure, in units of standard devaiations, away from the long-term average. These NDVI climatologies (both mean and standard deviation) represent the long-term average baseline conditions of vegetation condition. NDVI climatologies are available for each month, and were calculated by aggregating data from 1984-2020.
+Standardised NDVI Anomalies provide a measure of vegetation health relative to long term average conditions by measuring the departure, in units of standard devaiations, away from the long-term average. These NDVI climatologies (both mean and standard deviation) represent the long-term average baseline conditions of vegetation condition. 
+
+NDVI climatologies are available for each month at a spatial resolution of 30 m, and were calculated by aggregating data from 1984-2020.
+
+More technical information about the NDVI Anomaly service can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/NDVI_Climatology_specs.html)
+
+This service is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download click on a tile in the explorer page (https://explorer.digitalearth.africa/products/ndvi_climatology_ls)
 
 """,
     "product_name": "ndvi_climatology_ls",
