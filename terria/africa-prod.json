@@ -2,25 +2,36 @@
   "workbench": [],
   "catalog": [
     {
-        "id": "deafrica_terria_prod",
-        "type": "wms-group",
-        "name": "Digital Earth Africa data catalogue",
-        "url": "https://ows.digitalearth.africa/",
-        "itemProperties": {
-          "availableDiffStyles":[
-              "ndvi",
-              "ndwi",
-              "mndwi",
-              "ndci"
-              ],
-          "opacity": 1.0,
-          "timeFilterPropertyName": "data_available_for_dates"
-        },
-        "excludeMembers": [],
-        "isOpen": true,
-        "perLayerLinkedWcs": {
-            "linkedWcsUrl": "https://ows.digitalearth.africa/"
+      "id": "deafrica_terria_prod",
+      "type": "wms-group",
+      "url": "https://ows.digitalearth.africa/",
+      "itemProperties": {
+        "availableDiffStyles": [
+          "ndvi",
+          "ndwi",
+          "mndwi",
+          "ndci"
+        ],
+        "opacity": 1.0,
+        "timeFilterPropertyName": "data_available_for_dates"
+      },
+      "excludeMembers": [],
+      "isOpen": true,
+      "perLayerLinkedWcs": {
+        "linkedWcsUrl": "https://ows.digitalearth.africa/"
+      }
+    },
+    {
+      "name": "Digital Earth Africa - Web Map Services",
+      "type": "group",
+      "members": [
+        {
+          "name": "DE Africa Coastalines",
+          "type": "wms",
+          "url": "https://geoserver.dev.digitalearth.africa/geoserver/coastline_v0.3.0/wms",
+          "layers": "coastline_v0.3.0:DEACoastlines"
         }
+      ]
     }
   ],
   "corsDomains": [
