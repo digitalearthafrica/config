@@ -98,7 +98,7 @@ function get_layergroup_workspace() {
 function find_remote_workspace() {
   this_collection=${1}
   this_workspace=${2}
-  remote_workspace=$(${geoserver_api_script} ${api_script_input} -c ${this_collection} get workspaces |jq -r '.workspaces.workspace[] | select(.name=="'${this_workspace}'") | .name')
+  remote_workspace=$(${geoserver_api_script} ${api_script_input} -c ${this_collection} get workspaces |jq -r '.workspaces.workspace[] | select(.name=="'${this_workspace}'") | .name' 2>/dev/null)
   if [ "${this_workspace}" == "${remote_workspace}" ] ; then
     return 0
   else
