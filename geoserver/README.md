@@ -31,14 +31,14 @@ Collections are groupings of GeoServer objects and can include the following Geo
 ### Config Change Deployment
 The deployment of the changes to GeoServer config files are managed through two GitHub workflow actions:
 1. Dev action: Triggered when a PR is created for changes in `geoserver_data`
-2. Prod action: Triggered when a PR is merged to main that includes changes in `geoserver_data`
+2. Prod action: Triggered when a PR is merged to master that includes changes in `geoserver_data`
 
 
 GeoServer REST API credentials are stored in the repo secrets.
 
 ### Change Steps
 Follow the steps below to apply new collections, objects or current configuration changes.
-1. Create a branch from main.
+1. Create a branch from master.
 2. Push changes to the new branch.
 3. Create a pull request -> This will apply the config to Dev.
-4. Merge branch to main -> This will apply the config to Prod.
+4. Merge branch to master -> This will apply the config to Prod.
