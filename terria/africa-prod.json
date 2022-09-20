@@ -21,6 +21,18 @@
         "perLayerLinkedWcs": {
             "linkedWcsUrl": "https://ows.digitalearth.africa/"
         }
+    },
+    {
+      "name": "Digital Earth Africa - Web Map Services",
+      "type": "group",
+      "members": [
+        {
+          "name": "DE Africa Coastalines",
+          "type": "wms",
+          "url": "https://geoserver.digitalearth.africa/geoserver/coastline_v0.3.0/wms",
+          "layers": "coastline_v0.3.0:DEACoastlines"
+        }
+      ]
     }
   ],
   "corsDomains": [
