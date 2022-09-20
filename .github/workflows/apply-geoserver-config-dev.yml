@@ -3,6 +3,8 @@ name: Apply GeoServer Config - Dev
 
 on:
 
+  workflow_dispatch:
+
   pull_request:
     paths:
       - 'geoserver/geoserver_data/**'

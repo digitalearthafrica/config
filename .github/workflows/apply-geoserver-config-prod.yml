@@ -3,6 +3,8 @@ name: Apply GeoServer Config - Prod
 
 on:
 
+  workflow_dispatch:
+
   push:
     branches: [ master ]
     paths:
