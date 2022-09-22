@@ -25,7 +25,6 @@ ows_cfg = {
         "allowed_urls": [
             "https://ows.digitalearth.africa",
             "https://ows-latest.digitalearth.africa",
-            "https://geoserver.digitalearth.africa/geoserver/web",
         ],
         # Metadata to go straight into GetCapabilities documents
         "title": "Digital Earth Africa - OGC Web Services",
