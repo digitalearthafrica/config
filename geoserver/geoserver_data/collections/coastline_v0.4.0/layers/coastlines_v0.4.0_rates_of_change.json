@@ -1,0 +1,26 @@
+{
+    "layer": {
+        "name": "coastlines_v0.4.0_rates_of_change",
+        "type": "VECTOR",
+        "defaultStyle": {
+            "name": "point"
+        },
+        "styles": {
+            "@class": "linked-hash-set",
+            "style": [
+                {
+                    "name": "coastline_v0.4.0:coastlines_v0.4.0_rates_of_change",
+                    "workspace": "coastline_v0.4.0"
+                }
+            ]
+        },
+        "resource": {
+            "@class": "featureType",
+            "name": "coastline_v0.4.0:coastlines_v0.4.0_rates_of_change"
+        },
+        "attribution": {
+            "logoWidth": 0,
+            "logoHeight": 0
+        }
+    }
+}
