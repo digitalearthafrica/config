@@ -28,8 +28,8 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "manual_merge": False,  # True
         "apply_solar_corrections": False,
     },
-    "native_crs": "EPSG:3857",
-    "native_resolution": [30.0, -30.0],
+    "native_crs": "EPSG:6933",
+    "native_resolution": [10.0, -10.0],
     "styling": {
         "default_style": "simple_rgb",
         "styles": styles_s2_list,
