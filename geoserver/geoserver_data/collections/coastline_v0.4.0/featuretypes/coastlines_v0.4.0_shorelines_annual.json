@@ -59,7 +59,7 @@
                     "binding": "org.locationtech.jts.geom.MultiLineString"
                 },
                 {
-                    "name": "fid",
+                    "name": "uid",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,

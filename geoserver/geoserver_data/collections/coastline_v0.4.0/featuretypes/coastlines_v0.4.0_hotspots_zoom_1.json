@@ -59,7 +59,7 @@
                     "binding": "org.locationtech.jts.geom.Point"
                 },
                 {
-                    "name": "fid",
+                    "name": "uid",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
@@ -228,6 +228,14 @@
                 },
                 {
                     "name": "dist_2020",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2021",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
