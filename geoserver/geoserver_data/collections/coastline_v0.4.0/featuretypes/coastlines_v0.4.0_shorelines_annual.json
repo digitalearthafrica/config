@@ -59,14 +59,6 @@
                     "binding": "org.locationtech.jts.geom.MultiLineString"
                 },
                 {
-                    "name": "uid",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Long",
-                    "length": 20
-                },
-                {
                     "name": "year",
                     "minOccurs": 0,
                     "maxOccurs": 1,
