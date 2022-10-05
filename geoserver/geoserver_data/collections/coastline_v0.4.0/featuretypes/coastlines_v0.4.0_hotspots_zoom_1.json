@@ -1,0 +1,296 @@
+{
+    "featureType": {
+        "name": "coastlines_v0.4.0_hotspots_zoom_1",
+        "nativeName": "coastlines_v0.4.0_hotspots_zoom_1",
+        "namespace": {
+            "name": "coastline_v0.4.0"
+        },
+        "title": "coastlines_v0.4.0_hotspots_zoom_1",
+        "keywords": {
+            "string": [
+                "features",
+                "coastlines_v0.4.0_hotspots_zoom_1"
+            ]
+        },
+        "nativeCRS": "GEOGCS[\"WGS 84\", \n  DATUM[\"World Geodetic System 1984\", \n    SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n    AUTHORITY[\"EPSG\",\"6326\"]], \n  PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], \n  UNIT[\"degree\", 0.017453292519943295], \n  AXIS[\"Geodetic longitude\", EAST], \n  AXIS[\"Geodetic latitude\", NORTH], \n  AUTHORITY[\"EPSG\",\"4326\"]]",
+        "srs": "EPSG:4326",
+        "nativeBoundingBox": {
+            "minx": -17.529918743821995,
+            "maxx": 51.34923359460543,
+            "miny": -34.83286604609785,
+            "maxy": 37.34408308455104,
+            "crs": "EPSG:4326"
+        },
+        "latLonBoundingBox": {
+            "minx": -17.529918743821995,
+            "maxx": 51.34923359460543,
+            "miny": -34.83286604609785,
+            "maxy": 37.34408308455104,
+            "crs": "EPSG:4326"
+        },
+        "projectionPolicy": "FORCE_DECLARED",
+        "enabled": true,
+        "metadata": {
+            "entry": {
+                "@key": "cachingEnabled",
+                "$": "false"
+            }
+        },
+        "store": {
+            "@class": "dataStore",
+            "name": "coastline_v0.4.0:coastlines_v0.4.0_hotspots_zoom_1"
+        },
+        "serviceConfiguration": false,
+        "simpleConversionEnabled": false,
+        "maxFeatures": 10000,
+        "numDecimals": 7,
+        "padWithZeros": false,
+        "forcedDecimal": false,
+        "overridingServiceSRS": false,
+        "skipNumberMatched": false,
+        "circularArcPresent": false,
+        "attributes": {
+            "attribute": [
+                {
+                    "name": "the_geom",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "org.locationtech.jts.geom.Point"
+                },
+                {
+                    "name": "uid",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Long",
+                    "length": 20
+                },
+                {
+                    "name": "dist_2000",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2001",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2002",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2003",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2004",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2005",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2006",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2007",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2008",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2009",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2010",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2011",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2012",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2013",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2014",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2015",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2016",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2017",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2018",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2019",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2020",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "dist_2021",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "rate_time",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "sig_time",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "se_time",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "outl_time",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 80
+                },
+                {
+                    "name": "radius_m",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Long",
+                    "length": 10
+                },
+                {
+                    "name": "n",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Long",
+                    "length": 10
+                }
+            ]
+        }
+    }
+}

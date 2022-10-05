@@ -1,0 +1,96 @@
+{
+    "featureType": {
+        "name": "coastlines_v0.4.0_shorelines_annual",
+        "nativeName": "coastlines_v0.4.0_shorelines_annual",
+        "namespace": {
+            "name": "coastline_v0.4.0"
+        },
+        "title": "coastlines_v0.4.0_shorelines_annual",
+        "keywords": {
+            "string": [
+                "features",
+                "coastlines_v0.4.0_shorelines_annual"
+            ]
+        },
+        "nativeCRS": "GEOGCS[\"WGS 84\", \n  DATUM[\"World Geodetic System 1984\", \n    SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n    AUTHORITY[\"EPSG\",\"6326\"]], \n  PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], \n  UNIT[\"degree\", 0.017453292519943295], \n  AXIS[\"Geodetic longitude\", EAST], \n  AXIS[\"Geodetic latitude\", NORTH], \n  AUTHORITY[\"EPSG\",\"4326\"]]",
+        "srs": "EPSG:4326",
+        "nativeBoundingBox": {
+            "minx": -17.530020617134365,
+            "maxx": 51.41527617299833,
+            "miny": -34.83347119293824,
+            "maxy": 37.358192510742306,
+            "crs": "EPSG:4326"
+        },
+        "latLonBoundingBox": {
+            "minx": -17.530020617134365,
+            "maxx": 51.41527617299833,
+            "miny": -34.83347119293824,
+            "maxy": 37.358192510742306,
+            "crs": "EPSG:4326"
+        },
+        "projectionPolicy": "FORCE_DECLARED",
+        "enabled": true,
+        "metadata": {
+            "entry": {
+                "@key": "cachingEnabled",
+                "$": "false"
+            }
+        },
+        "store": {
+            "@class": "dataStore",
+            "name": "coastline_v0.4.0:coastlines_v0.4.0_shorelines_annual"
+        },
+        "serviceConfiguration": false,
+        "simpleConversionEnabled": false,
+        "maxFeatures": 10000,
+        "numDecimals": 7,
+        "padWithZeros": false,
+        "forcedDecimal": false,
+        "overridingServiceSRS": false,
+        "skipNumberMatched": false,
+        "circularArcPresent": false,
+        "attributes": {
+            "attribute": [
+                {
+                    "name": "the_geom",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "org.locationtech.jts.geom.MultiLineString"
+                },
+                {
+                    "name": "year",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 80
+                },
+                {
+                    "name": "certainty",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 80
+                },
+                {
+                    "name": "tide_datum",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 80
+                },
+                {
+                    "name": "country",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 80
+                }
+            ]
+        }
+    }
+}
