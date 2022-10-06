@@ -21,7 +21,7 @@
                             </ogc:PropertyIsNotEqualTo>
                         </ogc:Or>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -67,7 +67,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -113,7 +113,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -159,7 +159,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -205,7 +205,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -251,7 +251,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -297,7 +297,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -343,7 +343,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -389,7 +389,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -435,7 +435,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -481,7 +481,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -527,7 +527,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -573,7 +573,7 @@
                             </ogc:And>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:PointSymbolizer>
                         <sld:Graphic>
@@ -617,7 +617,7 @@
                             </ogc:PropertyIsEqualTo>
                         </ogc:And>
                     </ogc:Filter>
-                    <sld:MinScaleDenominator>10000.0</sld:MinScaleDenominator>
+                    <sld:MinScaleDenominator>50000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>500000.0</sld:MaxScaleDenominator>
                     <sld:TextSymbolizer>
                         <sld:Label>
