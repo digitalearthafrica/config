@@ -1,7 +1,7 @@
 {
     "layerGroup": {
-        "name": "DEAfricaCoastlines_v0.3.0",
-        "title": "DEAfricaCoastlines v0.3.0",
+        "name": "DEAfrica_Coastlines_v0.3.0",
+        "title": "DEAfrica Coastlines v0.3.0",
         "mode": "SINGLE",
         "workspace": {
             "name": "coastlines"
