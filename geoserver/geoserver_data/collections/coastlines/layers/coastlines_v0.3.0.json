@@ -15,7 +15,7 @@
         },
         "resource": {
             "@class": "featureType",
-            "name": "coastline_v0.3.0:coastlines_v0.3.0"
+            "name": "coastlines:coastlines_v0.3.0"
         },
         "attribution": {
             "logoWidth": 0,

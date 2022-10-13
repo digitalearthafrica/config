@@ -1,11 +1,11 @@
 {
     "dataStore": {
         "name": "coastlines_v0.3.0_shapefile",
-        "description": "Coastline Shapefile",
+        "description": "Coastline Shapefile v0.3.0",
         "type": "Shapefile",
         "enabled": true,
         "workspace": {
-            "name": "coastline_v0.3.0"
+            "name": "coastlines"
         },
         "connectionParameters": {
             "entry": [
@@ -35,7 +35,7 @@
                 },
                 {
                     "@key": "namespace",
-                    "$": "http://coastline_v0.3.0"
+                    "$": "http://coastlines"
                 },
                 {
                     "@key": "cache and reuse memory maps",

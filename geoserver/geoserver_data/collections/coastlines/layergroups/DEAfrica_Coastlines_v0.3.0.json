@@ -1,51 +1,51 @@
 {
     "layerGroup": {
-        "name": "DEAfricaCoastlines",
-        "title": "DEAfricaCoastlines",
+        "name": "DEAfricaCoastlines_v0.3.0",
+        "title": "DEAfricaCoastlines v0.3.0",
         "mode": "SINGLE",
         "workspace": {
-            "name": "coastline_v0.3.0"
+            "name": "coastlines"
         },
         "publishables": {
             "published": [
                 {
                     "@type": "layer",
-                    "name": "coastline_v0.3.0:coastlines_v0.3.0"
+                    "name": "coastlines:coastlines_v0.3.0"
                 },
                 {
                     "@type": "layer",
-                    "name": "coastline_v0.3.0:coastlines_v0.3.0_rates_of_change"
+                    "name": "coastlines:coastlines_v0.3.0_rates_of_change"
                 },
                 {
                     "@type": "layer",
-                    "name": "coastline_v0.3.0:coastlines_v0.3.0_hotspots_zoom_3"
+                    "name": "coastlines:coastlines_v0.3.0_hotspots_zoom_3"
                 },
                 {
                     "@type": "layer",
-                    "name": "coastline_v0.3.0:coastlines_v0.3.0_hotspots_zoom_2"
+                    "name": "coastlines:coastlines_v0.3.0_hotspots_zoom_2"
                 },
                 {
                     "@type": "layer",
-                    "name": "coastline_v0.3.0:coastlines_v0.3.0_hotspots_zoom_1"
+                    "name": "coastlines:coastlines_v0.3.0_hotspots_zoom_1"
                 }
             ]
         },
         "styles": {
             "style": [
                 {
-                    "name": "coastline_v0.3.0:coastlines"
+                    "name": "coastlines:coastlines"
                 },
                 {
-                    "name": "coastline_v0.3.0:coastlines_roc"
+                    "name": "coastlines:coastlines_roc"
                 },
                 {
-                    "name": "coastline_v0.3.0:coastlines_zoom_3"
+                    "name": "coastlines:coastlines_zoom_3"
                 },
                 {
-                    "name": "coastline_v0.3.0:coastlines_zoom_2"
+                    "name": "coastlines:coastlines_zoom_2"
                 },
                 {
-                    "name": "coastline_v0.3.0:coastlines_zoom_1"
+                    "name": "coastlines:coastlines_zoom_1"
                 }
             ]
         },
