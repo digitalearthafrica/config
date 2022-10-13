@@ -33,19 +33,19 @@
         "styles": {
             "style": [
                 {
-                    "name": "coastlines:coastlines"
+                    "name": "coastlines:coastlines_v0.3.0"
                 },
                 {
-                    "name": "coastlines:coastlines_roc"
+                    "name": "coastlines:coastlines_v0.3.0_roc"
                 },
                 {
-                    "name": "coastlines:coastlines_zoom_3"
+                    "name": "coastlines:coastlines_v0.3.0_zoom_3"
                 },
                 {
-                    "name": "coastlines:coastlines_zoom_2"
+                    "name": "coastlines:coastlines_v0.3.0_zoom_2"
                 },
                 {
-                    "name": "coastlines:coastlines_zoom_1"
+                    "name": "coastlines:coastlines_v0.3.0_zoom_1"
                 }
             ]
         },
