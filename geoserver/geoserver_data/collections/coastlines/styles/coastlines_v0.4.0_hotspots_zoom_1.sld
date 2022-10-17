@@ -487,7 +487,7 @@
                         </sld:Graphic>
                     </sld:PointSymbolizer>
                 </sld:Rule>
-                <sld:VendorOption name="sortBy">rate_time</sld:VendorOption>
+                <se:VendorOption name="sortBy">wms_sig A, wms_abs A</se:VendorOption>
             </sld:FeatureTypeStyle>
         </sld:UserStyle>
     </sld:NamedLayer>
