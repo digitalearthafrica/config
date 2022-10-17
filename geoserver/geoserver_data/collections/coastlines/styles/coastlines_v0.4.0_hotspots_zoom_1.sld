@@ -487,7 +487,7 @@
                         </sld:Graphic>
                     </sld:PointSymbolizer>
                 </sld:Rule>
-                <se:VendorOption name="sortBy">wms_sig A, wms_abs A</se:VendorOption>
+                <sld:VendorOption name="sortBy">wms_sig A, wms_abs A</sld:VendorOption>
             </sld:FeatureTypeStyle>
         </sld:UserStyle>
     </sld:NamedLayer>
