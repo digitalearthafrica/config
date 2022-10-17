@@ -1,0 +1,13 @@
+{
+  "style": {
+      "name": "coastlines_v0.4.0_shorelines_annual",
+      "workspace": {
+          "name": "coastlines"
+      },
+      "format": "sld",
+      "languageVersion": {
+          "version": "1.1.0"
+      },
+      "filename": "coastlines_v0.4.0_shorelines_annual.sld"
+  }
+}
