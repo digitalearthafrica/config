@@ -360,7 +360,7 @@
                     "maxOccurs": 1,
                     "nillable": true,
                     "binding": "java.lang.Double",
-                    "length": 10
+                    "length": 24
                 },
                 {
                     "name": "wms_conf",
@@ -368,7 +368,7 @@
                     "maxOccurs": 1,
                     "nillable": true,
                     "binding": "java.lang.Double",
-                    "length": 10
+                    "length": 24
                 },
                 {
                     "name": "wms_grew",
