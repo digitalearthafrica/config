@@ -289,6 +289,54 @@
                     "nillable": true,
                     "binding": "java.lang.Long",
                     "length": 10
+                },
+                {
+                    "name": "wms_abs",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "wms_conf",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "wms_grew",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Long",
+                    "length": 10
+                },
+                {
+                    "name": "wms_retr",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Long",
+                    "length": 10
+                },
+                {
+                    "name": "wms_sig",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Long",
+                    "length": 10
+                },
+                {
+                    "name": "wms_good",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Long",
+                    "length": 10
                 }
             ]
         }
