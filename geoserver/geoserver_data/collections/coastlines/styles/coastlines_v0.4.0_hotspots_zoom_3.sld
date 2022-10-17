@@ -500,7 +500,7 @@
                         </sld:Graphic>
                     </sld:PointSymbolizer>
                 </sld:Rule>
-                <sld:VendorOption name="sortBy">rate_time</sld:VendorOption>
+                <sld:VendorOption name="sortBy">wms_sig A, wms_abs A</sld:VendorOption>
             </sld:FeatureTypeStyle>
         </sld:UserStyle>
     </sld:NamedLayer>
