@@ -104,12 +104,7 @@
                                     <sld:CssParameter name="fill">#da3c43</sld:CssParameter>
                                 </sld:Fill>
                                 <sld:Stroke>
-                                    <sld:CssParameter name="stroke">
-                                        <ogc:Function name="strConcat">
-                                            <ogc:Literal>#ffff</ogc:Literal>
-                                            <ogc:Literal>ff</ogc:Literal>
-                                        </ogc:Function>
-                                    </sld:CssParameter>
+                                    <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
                                     <sld:CssParameter name="stroke-opacity">0</sld:CssParameter>
                                     <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
                                 </sld:Stroke>
@@ -185,12 +180,7 @@
                                 <sld:Stroke>
                                     <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
                                     <sld:CssParameter name="stroke-opacity">0</sld:CssParameter>
-                                    <sld:CssParameter name="stroke-width">
-                                        <ogc:Function name="strConcat">
-                                            <ogc:Literal>0.</ogc:Literal>
-                                            <ogc:Literal>5</ogc:Literal>
-                                        </ogc:Function>
-                                    </sld:CssParameter>
+                                    <sld:CssParameter name="stroke-width">0.5</sld:CssParameter>
                                 </sld:Stroke>
                             </sld:Mark>
                             <sld:Size>6</sld:Size>
