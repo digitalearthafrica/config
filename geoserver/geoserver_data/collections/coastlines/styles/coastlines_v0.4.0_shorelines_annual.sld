@@ -532,6 +532,31 @@
                     </sld:LineSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
+                    <sld:Name>2021</sld:Name>
+                    <sld:Title>2021</sld:Title>
+                    <ogc:Filter>
+                        <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>year</ogc:PropertyName>
+                                <ogc:Literal>2021</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                    </ogc:Filter>
+                    <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
+                    <sld:LineSymbolizer>
+                        <sld:Stroke>
+                            <sld:CssParameter name="stroke">#fbfbe9</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
+                            <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+                        </sld:Stroke>
+                    </sld:LineSymbolizer>
+                </sld:Rule>
+                <sld:Rule>
                     <sld:Name>2000</sld:Name>
                     <sld:Title>2000 (low quality shorelines)</sld:Title>
                     <ogc:Filter>
@@ -1050,6 +1075,31 @@
                     <sld:LineSymbolizer>
                         <sld:Stroke>
                             <sld:CssParameter name="stroke">#fcffa4</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
+                        </sld:Stroke>
+                    </sld:LineSymbolizer>
+                </sld:Rule>
+                <sld:Rule>
+                    <sld:Name>2021</sld:Name>
+                    <sld:Title>2021</sld:Title>
+                    <ogc:Filter>
+                        <ogc:And>
+                            <ogc:PropertyIsNotEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsNotEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>year</ogc:PropertyName>
+                                <ogc:Literal>2021</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                    </ogc:Filter>
+                    <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
+                    <sld:LineSymbolizer>
+                        <sld:Stroke>
+                            <sld:CssParameter name="stroke">#fbfbe9</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
