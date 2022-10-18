@@ -291,6 +291,14 @@
                     "length": 10
                 },
                 {
+                    "name": "certainty",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 25
+                },
+                {
                     "name": "wms_abs",
                     "minOccurs": 0,
                     "maxOccurs": 1,
