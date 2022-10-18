@@ -10,10 +10,16 @@
                     <sld:Name>Non significant</sld:Name>
                     <sld:Title>Non significant</sld:Title>
                     <ogc:Filter>
-                        <ogc:PropertyIsGreaterThan>
-                            <ogc:PropertyName>sig_time</ogc:PropertyName>
-                            <ogc:Literal>0.01</ogc:Literal>
-                        </ogc:PropertyIsGreaterThan>
+                        <ogc:Or>
+                            <ogc:PropertyIsGreaterThan>
+                                <ogc:PropertyName>sig_time</ogc:PropertyName>
+                                <ogc:Literal>0.01</ogc:Literal>
+                            </ogc:PropertyIsGreaterThan>
+                            <ogc:PropertyIsNotEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsNotEqualTo>
+                        </ogc:Or>
                     </ogc:Filter>
                     <sld:MinScaleDenominator>500000.0</sld:MinScaleDenominator>
                     <sld:MaxScaleDenominator>3000000.0</sld:MaxScaleDenominator>
