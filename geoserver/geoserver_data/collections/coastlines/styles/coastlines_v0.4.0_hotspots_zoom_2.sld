@@ -41,8 +41,8 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>&lt; -2.50 m / year coastline retreat</sld:Name>
-                    <sld:Title>&lt; -2.50 m / year coastline retreat</sld:Title>
+                    <sld:Name>&lt; -5.0 m / year coastline retreat</sld:Name>
+                    <sld:Title>&lt; -5.0 m / year coastline retreat</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThanOrEqualTo>
@@ -51,7 +51,7 @@
                             </ogc:PropertyIsGreaterThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-2.5</ogc:Literal>
+                                <ogc:Literal>-5.0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -79,17 +79,17 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>-2.50 to -1.00 m / year</sld:Name>
-                    <sld:Title>-2.50 to -1.00 m / year</sld:Title>
+                    <sld:Name>-3.0 to -5.0 m / year</sld:Name>
+                    <sld:Title>-3.0 to -5.0 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-2.5</ogc:Literal>
+                                <ogc:Literal>-5.0</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-1</ogc:Literal>
+                                <ogc:Literal>-3.0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -104,12 +104,7 @@
                             <sld:Mark>
                                 <sld:WellKnownName>circle</sld:WellKnownName>
                                 <sld:Fill>
-                                    <sld:CssParameter name="fill">
-                                        <ogc:Function name="strConcat">
-                                            <ogc:Literal>#d</ogc:Literal>
-                                            <ogc:Literal>a3c43</ogc:Literal>
-                                        </ogc:Function>
-                                    </sld:CssParameter>
+                                    <sld:CssParameter name="fill">#da3c43</sld:CssParameter>
                                 </sld:Fill>
                                 <sld:Stroke>
                                     <sld:CssParameter name="stroke">#ffffff</sld:CssParameter>
@@ -122,17 +117,17 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>-1.00 to -0.60 m / year</sld:Name>
-                    <sld:Title>-1.00 to -0.60 m / year</sld:Title>
+                    <sld:Name>-1.0 to -3.0 m / year</sld:Name>
+                    <sld:Title>-1.0 to -3.0 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-1</ogc:Literal>
+                                <ogc:Literal>-3.0</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-0.59999999999999998</ogc:Literal>
+                                <ogc:Literal>-1.0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -160,17 +155,17 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>-0.60 to -0.30 m / year</sld:Name>
-                    <sld:Title>-0.60 to -0.30 m / year</sld:Title>
+                    <sld:Name>-0.5 to -1.0 m / year</sld:Name>
+                    <sld:Title>-0.5 to -1.0 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-0.59999999999999998</ogc:Literal>
+                                <ogc:Literal>-1.0</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-0.29999999999999999</ogc:Literal>
+                                <ogc:Literal>-0.5</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -198,17 +193,17 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>-0.30 to -0.10 m / year</sld:Name>
-                    <sld:Title>-0.30 to -0.10 m / year</sld:Title>
+                    <sld:Name>-0.3 to -0.5 m / year</sld:Name>
+                    <sld:Title>-0.3 to -0.5 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-0.29999999999999999</ogc:Literal>
+                                <ogc:Literal>-0.5</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-0.10000000000000001</ogc:Literal>
+                                <ogc:Literal>-0.3</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -236,13 +231,13 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>-0.10 to 0.00 m / year</sld:Name>
-                    <sld:Title>-0.10 to 0.00 m / year</sld:Title>
+                    <sld:Name>-0.0 to -0.3 m / year</sld:Name>
+                    <sld:Title>-0.0 to -0.3 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>-0.10000000000000001</ogc:Literal>
+                                <ogc:Literal>-0.3</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
@@ -274,8 +269,8 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>0.00 to 0.10 m / year</sld:Name>
-                    <sld:Title>0.00 to 0.10 m / year</sld:Title>
+                    <sld:Name>0.0 to 0.3 m / year</sld:Name>
+                    <sld:Title>0.0 to 0.3 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
@@ -284,7 +279,7 @@
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>0.10000000000000001</ogc:Literal>
+                                <ogc:Literal>0.3</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -312,17 +307,17 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>0.10 to 0.30 m / year</sld:Name>
-                    <sld:Title>0.10 to 0.30 m / year</sld:Title>
+                    <sld:Name>0.3 to 0.5 m / year</sld:Name>
+                    <sld:Title>0.3 to 0.5 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>0.10000000000000001</ogc:Literal>
+                                <ogc:Literal>0.3</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>0.29999999999999999</ogc:Literal>
+                                <ogc:Literal>0.5</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -350,17 +345,17 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>0.30 to 0.60 m / year</sld:Name>
-                    <sld:Title>0.30 to 0.60 m / year</sld:Title>
+                    <sld:Name>0.5 to 1.0 m / year</sld:Name>
+                    <sld:Title>0.5 to 1.0 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>0.29999999999999999</ogc:Literal>
+                                <ogc:Literal>0.5</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>0.59999999999999998</ogc:Literal>
+                                <ogc:Literal>1.0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -388,17 +383,17 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>0.60 to 1.00 m / year</sld:Name>
-                    <sld:Title>0.60 to 1.00 m / year</sld:Title>
+                    <sld:Name>1.0 to 3.0 m / year</sld:Name>
+                    <sld:Title>1.0 to 3.0 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>0.59999999999999998</ogc:Literal>
+                                <ogc:Literal>1.0</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>1</ogc:Literal>
+                                <ogc:Literal>3.0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -426,17 +421,17 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>1.00 to 2.50 m / year</sld:Name>
-                    <sld:Title>1.00 to 2.50 m / year</sld:Title>
+                    <sld:Name>3.0 to 5.0 m / year</sld:Name>
+                    <sld:Title>3.0 to 5.0 m / year</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>1</ogc:Literal>
+                                <ogc:Literal>3.0</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>2.5</ogc:Literal>
+                                <ogc:Literal>5.0</ogc:Literal>
                             </ogc:PropertyIsLessThanOrEqualTo>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>sig_time</ogc:PropertyName>
@@ -464,13 +459,13 @@
                     </sld:PointSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
-                    <sld:Name>&gt; 2.50 m / year coastline growth</sld:Name>
-                    <sld:Title>&gt; 2.50 m / year coastline growth</sld:Title>
+                    <sld:Name>&gt; 5.0 m / year coastline growth</sld:Name>
+                    <sld:Title>&gt; 5.0 m / year coastline growth</sld:Title>
                     <ogc:Filter>
                         <ogc:And>
                             <ogc:PropertyIsGreaterThan>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
-                                <ogc:Literal>2.5</ogc:Literal>
+                                <ogc:Literal>5.0</ogc:Literal>
                             </ogc:PropertyIsGreaterThan>
                             <ogc:PropertyIsLessThanOrEqualTo>
                                 <ogc:PropertyName>rate_time</ogc:PropertyName>
