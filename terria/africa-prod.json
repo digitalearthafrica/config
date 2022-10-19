@@ -32,7 +32,7 @@
               "name": "DE Africa Coastlines",
               "id": "deafrica_coastlines",
               "shortReport": "<i>Zoom in to view detailed rates of coastal change and individual annual shorelines</i></br></br>",
-              "url": "https://geoserver.dev.digitalearth.africa/geoserver/wms",
+              "url": "https://geoserver.digitalearth.africa/geoserver/wms",
               "opacity": 1,
               "chartDisclaimer": "The graph below shows the distance (in metres) from each 2000-2020 shoreline to the 2021 shoreline. Positive distances indicate that a shoreline was located towards the ocean from the 2021 shoreline; shoreline with negative distances were located further inland.",
               "layers": "coastlines:DEAfrica_Coastlines",
