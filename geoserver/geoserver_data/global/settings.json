@@ -10,12 +10,12 @@
         "addressPostalCode": "0087",
         "addressState": "Gauteng",
         "addressType": "Physical",
-        "contactEmail": "information@sansa.org.za",
-        "contactFacsimile": "0128440396",
-        "contactOrganization": "SANSA",
+        "contactEmail": "info@digitalearthafrica.org",
+        "contactFacsimile": "",
+        "contactOrganization": "Digital Earth Africa",
         "contactPerson": "",
         "contactPosition": "",
-        "contactVoice": "0128440500",
+        "contactVoice": "",
         "internationalAddress": {
           "@class": "org.geotools.util.GrowableInternationalString"
         },
