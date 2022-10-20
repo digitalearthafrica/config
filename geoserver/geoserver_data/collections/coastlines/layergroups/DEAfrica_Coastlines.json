@@ -3,6 +3,7 @@
         "name": "DEAfrica_Coastlines",
         "title": "DEAfrica Coastlines v0.4.0",
         "mode": "SINGLE",
+        "abstractTxt": "The Digital Earth Africa (DE Africa) Coastlines is a continental dataset that includes annual shorelines and rates of coastal change along the entire African coastline from 2000 to the present. More information about the DE Africa Coastlines and data access can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Coastlines_specs.html)",
         "workspace": {
             "name": "coastlines"
         },
