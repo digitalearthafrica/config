@@ -11,7 +11,7 @@ The product combines satellite data from the DE Africa program with tidal modell
 The ability to map shoreline positions for each year provides valuable insights into whether changes to the coastline are the result of particular events or actions, or a process of more gradual change over time. This information can enable scientists, managers, and policy makers to assess impact from the range of drivers impacting the coastlines and potentially assist planning and forecasting for future scenarios. 
 
 More information about the DE Africa Coastlines and data access can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Coastlines_specs.html)
-        """,
+""",
         "workspace": {
             "name": "coastlines"
         },
