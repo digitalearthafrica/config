@@ -1,6 +1,6 @@
 ---
 name: isda_soil_carbon_total
-description: Soil total carbon predictions made by iSDA Africa, in g/kg
+description: Soil total carbon predictions made by iSDA Africa
 metadata_type: eo3
 
 license: CC-BY-4.0
@@ -10,36 +10,32 @@ metadata:
     name: isda_soil_carbon_total
 
 storage:
-  crs: 'EPSG:3857'
+  crs: EPSG:3857
   resolution:
     x: 30
     y: -30
 
 measurements:
   - name: mean_0_20
-    aliases:
-      - MEAN_0_20
+    aliases: MEAN_0_20
     dtype: float32
     nodata: 0.0
     units: '1'
 
   - name: mean_20_50
-    aliases:
-      - MEAN_20_50
+    aliases: MEAN_20_50
     dtype: float32
     nodata: 0.0
     units: '1'
 
   - name: stdev_0_20
-    aliases:
-      - STDEV_0_20
+    aliases: STDEV_0_20
     dtype: float32
     nodata: 0.0
     units: '1'
 
   - name: stdev_20_50
-    aliases:
-      - STDEV_20_50
+    aliases: STDEV_20_50
     dtype: float32
     nodata: 0.0
     units: '1'
