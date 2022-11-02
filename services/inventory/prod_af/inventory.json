@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 42,
+  "total_layers_count": 34,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -376,102 +376,6 @@
           "layer": "crop_mask",
           "product": [
               "crop_mask"
-          ],
-          "styles_count": 3,
-          "styles_list": [
-              "green",
-              "filtered_yellow",
-              "prob"
-          ]
-      },
-      {
-          "layer": "crop_mask_eastern",
-          "product": [
-              "crop_mask_eastern"
-          ],
-          "styles_count": 3,
-          "styles_list": [
-              "green",
-              "filtered_yellow",
-              "prob"
-          ]
-      },
-      {
-          "layer": "crop_mask_central",
-          "product": [
-              "crop_mask_central"
-          ],
-          "styles_count": 3,
-          "styles_list": [
-              "green",
-              "filtered_yellow",
-              "prob"
-          ]
-      },
-      {
-          "layer": "crop_mask_indian_ocean",
-          "product": [
-              "crop_mask_indian_ocean"
-          ],
-          "styles_count": 3,
-          "styles_list": [
-              "green",
-              "filtered_yellow",
-              "prob"
-          ]
-      },
-      {
-          "layer": "crop_mask_western",
-          "product": [
-              "crop_mask_western"
-          ],
-          "styles_count": 3,
-          "styles_list": [
-              "green",
-              "filtered_yellow",
-              "prob"
-          ]
-      },
-      {
-          "layer": "crop_mask_sahel",
-          "product": [
-              "crop_mask_sahel"
-          ],
-          "styles_count": 3,
-          "styles_list": [
-              "green",
-              "filtered_yellow",
-              "prob"
-          ]
-      },
-      {
-          "layer": "crop_mask_southern",
-          "product": [
-              "crop_mask_southern"
-          ],
-          "styles_count": 3,
-          "styles_list": [
-              "green",
-              "filtered_yellow",
-              "prob"
-          ]
-      },
-      {
-          "layer": "crop_mask_southeast",
-          "product": [
-              "crop_mask_southeast"
-          ],
-          "styles_count": 3,
-          "styles_list": [
-              "green",
-              "filtered_yellow",
-              "prob"
-          ]
-      },
-      {
-          "layer": "crop_mask_northern",
-          "product": [
-              "crop_mask_northern"
           ],
           "styles_count": 3,
           "styles_list": [
