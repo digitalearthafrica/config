@@ -14,6 +14,7 @@ function usage() {
   echo
   echo "Options:"
   echo "  -c, --collectionlist  Comma delimited list of collections to list or update"
+  echo "  -e, --environment     Environment to use for applying global settings (dev/prod)"
   echo "  -g, --global          Update global settings and services"
   echo "  -p, --password        Basic auth password"
   echo "  -r, --resturl         REST API URL. E.g. http://localhost:8080/geoserver/rest"  
@@ -212,7 +213,8 @@ function find_all_objects() {
 
   # Global settings
   if [ ${update_global_settings} -eq 1 ] ; then
-    if [ -f "${data_dir}/global/settings.json" ] ; then
+    global_settings_file="${data_dir}/global/${geoserver_env}/settings.json"
+    if [ -f "${global_settings_file}" ] ; then
       echo "*** Global settings ***"
       if [ ${update_mode} -eq 1 ] ; then
         ${geoserver_api_script} ${api_script_input} update settings
@@ -221,15 +223,16 @@ function find_all_objects() {
           clean_exit 10 "Unable to update global settings."
         fi
       else
-        echo "${data_dir}/global/settings.json"
+        echo "${global_settings_file}"
       fi
     fi  
 
     # Services
-    if [ -d "${data_dir}/global/services" ] ; then
+    services_dir="${data_dir}/global/${geoserver_env}/services"
+    if [ -d "${services_dir}" ] ; then
       echo
       echo "*** Services ***"
-      for service_file in `ls -1 ${data_dir}/global/services/*.json` ; do
+      for service_file in `ls -1 ${services_dir}` ; do
         this_service=`basename ${service_file}`
         this_service="${this_service%.*}"
         if [ ${update_mode} -eq 1 ] ; then
@@ -244,6 +247,23 @@ function find_all_objects() {
         fi
       done
     fi
+
+    # Logging
+    logging_settings_file="${data_dir}/global/${geoserver_env}/logging.json"
+    if [ -f "${logging_settings_file}" ] ; then
+      echo
+      echo "*** Logging settings ***"
+      if [ ${update_mode} -eq 1 ] ; then
+        ${geoserver_api_script} ${api_script_input} update logging
+        ret_val=$?
+        if [ ${ret_val} -ne 0 ] ; then
+          clean_exit 10 "Unable to update logging settings."
+        fi
+      else
+        echo "${logging_settings_file}"
+      fi
+    fi  
+
   fi
 
   # Collections  
@@ -552,6 +572,11 @@ while [[ $# -gt 0 ]]; do
       shift
       shift
       ;;
+    -e|--environment)
+      geoserver_env="${2}"
+      shift
+      shift
+      ;;
     -g|--global)
       update_global_settings=1
       shift
@@ -628,6 +653,11 @@ if [ -z "${resturl}" ] ; then
   clean_exit 1 "Rest URL not specified."
 fi
 
+if [ -z "${geoserver_env}" ] ; then
+  usage
+  clean_exit 1 "Environment not specified."
+fi
+
 if [ ${update_global_settings} -eq 1 ] && [ -z "${collection_list}" ] ; then
   usage
   clean_exit 1 "Nothing to update. Please provide a collection or global settings."
@@ -638,7 +668,7 @@ if ! [ -f ${geoserver_api_script} ] ; then
   clean_exit 1
 fi
 
-api_script_input="-u ${username} -p ${password} -r ${resturl}"
+api_script_input="-u ${username} -p ${password} -r ${resturl} -e ${geoserver_env}"
 if ! [ -z "${data_dir}" ] ; then
   api_script_input=${api_script_input}" -d ${data_dir}"
 fi

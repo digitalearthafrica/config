@@ -1,0 +1,27 @@
+{
+    "wcs": {
+        "enabled": false,
+        "name": "WCS",
+        "versions": {
+            "org.geotools.util.Version": [
+                {
+                    "version": "1.0.0"
+                },
+                {
+                    "version": "1.1.1"
+                },
+                {
+                    "version": "2.0.1"
+                }
+            ]
+        },
+        "citeCompliant": false,
+        "schemaBaseURL": "http://schemas.opengis.net",
+        "verbose": false,
+        "gmlPrefixing": false,
+        "latLon": false,
+        "maxInputMemory": -1,
+        "maxOutputMemory": -1,
+        "subsamplingEnabled": true
+    }
+}
