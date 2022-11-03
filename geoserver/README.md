@@ -16,7 +16,7 @@ GeoServer config is managed through the GeoServer REST API. See references below
 Configuration is saved in `geoserver_data` in the directories listed below. All config files are in JSON format.
 
 - `collections`: This directory contains a collection of GeoServer objects.
-- `global`: Contains all GeoServer global settings, such as contact information and service configuration.
+- `global`: Contains the following GeoServer global settings: general settings, contact information, service configuration and logging settings. The gloabl settings are split by environment.
 - `inventory`: Contains a directory and `invertory.json` per environment. The `inventory.json` lists all the active collections for the environment.
 
 ### Collection Structure
@@ -32,7 +32,6 @@ Collections are groupings of GeoServer objects and can include the following Geo
 The deployment of the changes to GeoServer config files are managed through two GitHub workflow actions:
 1. Dev action: Triggered when a PR is created for changes in `geoserver_data`
 2. Prod action: Triggered when a PR is merged to master that includes changes in `geoserver_data`
-
 
 GeoServer REST API credentials are stored in the repo secrets.
 
