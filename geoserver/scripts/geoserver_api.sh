@@ -15,6 +15,7 @@ function usage() {
   echo "Options:"
   echo "  -c, --collection  Configuration collection to process. This is usually the same as the workspace name."
   echo "  -d, --datadir     Override default data directory. Default: ./geoserver_data"
+  echo "  -e, --environment Environment to use for applying global settings (dev/prod)"
   echo "  -p, --password    Basic auth password"
   echo "  -r  --resturl     REST API URL. E.g. http://localhost:8080/geoserver/rest"
   echo "  -s  --datastore   Datastore used to query featuretypes"
@@ -32,6 +33,7 @@ function usage() {
   echo "  featuretypes  GeoServer featuretypes/layers"
   echo "  layers        GeoServer layer confg"
   echo "  layergroups   GeoServer grouping of layers"
+  echo "  logging       Logging settings"
   echo "  services      CSW,WMTS,WCS,WFS,WMS,WPS service settings, get and update"
   echo "  settings      Global server settings, get and update"  
   echo "  sld           Style layer descriptor, update"  
@@ -250,6 +252,9 @@ function get_object() {
         uri="/workspaces/${workspace}/layergroups/${object_name}.json"
       fi
       ;;
+    logging)
+      uri="/logging"
+      ;;
     services)
       uri="/services/${object_name}/settings"
       ;;
@@ -301,7 +306,7 @@ function update_object() {
   case "${object_type}" in
     contact)
       uri="/settings/contact"
-      data_file="${data_dir}/contact.json"
+      data_file="${data_dir}/global/${geoserver_env}/contact.json"
       ;;
     datastores)
       if [ -z "${object_name}" ] ; then
@@ -352,12 +357,16 @@ function update_object() {
       layergroup_workspace=$(get_layergroup_workspace ${object_name})
       uri="/workspaces/${layergroup_workspace}/layergroups/${object_name}.json"      
       ;;
+    logging)
+      uri="/logging"
+      data_file="${data_dir}/global/${geoserver_env}/logging.json"
+      ;;
     services)
       if [ -z "${object_name}" ] ; then
         usage
         clean_exit 38 "No service provided."
       fi      
-      data_file="${data_dir}/global/services/${object_name}.json"
+      data_file="${data_dir}/global/${geoserver_env}/services/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 39 "Service json file not found: ${data_file}"
       fi
@@ -365,7 +374,7 @@ function update_object() {
       ;;
     settings)
       uri="/settings"
-      data_file="${data_dir}/global/settings.json"
+      data_file="${data_dir}/global/${geoserver_env}/settings.json"
       ;;
     sld)
       if [ -z "${object_name}" ] ; then
@@ -455,6 +464,11 @@ while [[ $# -gt 0 ]]; do
       if ! [ -d "${data_dir}" ] ; then
         clean_exit 1 "Data directory not found: ${data_dir}"
       fi
+      shift
+      shift
+      ;;
+    -e|--environment)
+      geoserver_env="${2}"
       shift
       shift
       ;;

@@ -1,0 +1,7 @@
+{
+  "logging": {
+    "level": "DEFAULT_LOGGING",
+    "location": "logs/geoserver.log",
+    "stdOutLogging": true
+  }
+}

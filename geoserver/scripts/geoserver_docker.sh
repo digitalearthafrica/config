@@ -50,6 +50,6 @@ if [ "${collection_list}" == "" ] ; then
   clean_exit 2 "Invalid collection list."
 fi
 
-${geoserver_config_script} -g -u ${username} -p ${password} -r ${geoserver_url} -d ${geoserver_data_dir} -s ${geoserver_scripts_dir} -c ${collection_list} update
+${geoserver_config_script} -g -u ${username} -p ${password} -r ${geoserver_url} -d ${geoserver_data_dir} -s ${geoserver_scripts_dir} -c ${collection_list} -e ${GEOSERVER_ENV} update
 
 clean_exit $?

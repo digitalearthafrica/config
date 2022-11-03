@@ -1,0 +1,7 @@
+{
+  "logging": {
+    "level": "PRODUCTION_LOGGING",
+    "location": "logs/geoserver.log",
+    "stdOutLogging": true
+  }
+}
