@@ -1,6 +1,6 @@
 {
     "dataStore": {
-        "name": "coastlines_v0.3.0_shapefile",
+        "name": "coastlines_v0_3_0_shapefile",
         "description": "Coastline Shapefile v0.3.0",
         "type": "Shapefile",
         "enabled": true,

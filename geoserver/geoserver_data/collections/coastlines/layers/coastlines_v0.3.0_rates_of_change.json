@@ -1,6 +1,6 @@
 {
     "layer": {
-        "name": "coastlines_v0.3.0_rates_of_change",
+        "name": "coastlines_v0_3_0_rates_of_change",
         "type": "VECTOR",
         "defaultStyle": {
             "name": "point"
@@ -16,7 +16,7 @@
         },
         "resource": {
             "@class": "featureType",
-            "name": "coastlines:coastlines_v0.3.0_rates_of_change"
+            "name": "coastlines:coastlines_v0_3_0_rates_of_change"
         },
         "attribution": {
             "logoWidth": 0,
