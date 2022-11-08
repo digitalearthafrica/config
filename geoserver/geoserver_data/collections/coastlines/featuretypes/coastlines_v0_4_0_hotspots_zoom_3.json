@@ -1,31 +1,31 @@
 {
     "featureType": {
-        "name": "coastlines_v0.4.0_rates_of_change",
-        "nativeName": "coastlines_v0.4.0_rates_of_change",
+        "name": "coastlines_v0_4_0_hotspots_zoom_3",
+        "nativeName": "coastlines_v0.4.0_hotspots_zoom_3",
         "namespace": {
             "name": "coastlines"
         },
-        "title": "coastlines_v0.4.0_rates_of_change",
+        "title": "coastlines_v0.4.0_hotspots_zoom_3",
         "keywords": {
             "string": [
                 "features",
-                "coastlines_v0.4.0_rates_of_change"
+                "coastlines_v0.4.0_hotspots_zoom_3"
             ]
         },
         "nativeCRS": "GEOGCS[\"WGS 84\", \n  DATUM[\"World Geodetic System 1984\", \n    SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n    AUTHORITY[\"EPSG\",\"6326\"]], \n  PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], \n  UNIT[\"degree\", 0.017453292519943295], \n  AXIS[\"Geodetic longitude\", EAST], \n  AXIS[\"Geodetic latitude\", NORTH], \n  AUTHORITY[\"EPSG\",\"4326\"]]",
         "srs": "EPSG:4326",
         "nativeBoundingBox": {
-            "minx": -17.529888544020864,
-            "maxx": 51.415218042448814,
-            "miny": -34.83346459942383,
-            "maxy": 37.358166780560566,
+            "minx": -17.529918743821995,
+            "maxx": 51.41180925227089,
+            "miny": -34.83286604609785,
+            "maxy": 37.357034820525726,
             "crs": "EPSG:4326"
         },
         "latLonBoundingBox": {
-            "minx": -17.529888544020864,
-            "maxx": 51.415218042448814,
-            "miny": -34.83346459942383,
-            "maxy": 37.358166780560566,
+            "minx": -17.529918743821995,
+            "maxx": 51.41180925227089,
+            "miny": -34.83286604609785,
+            "maxy": 37.357034820525726,
             "crs": "EPSG:4326"
         },
         "projectionPolicy": "FORCE_DECLARED",
@@ -38,7 +38,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0.4.0_rates_of_change"
+            "name": "coastlines:coastlines_v0_4_0_hotspots_zoom_3"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
@@ -65,38 +65,6 @@
                     "nillable": true,
                     "binding": "java.lang.Long",
                     "length": 20
-                },
-                {
-                    "name": "rate_time",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
-                },
-                {
-                    "name": "sig_time",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
-                },
-                {
-                    "name": "se_time",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
-                },
-                {
-                    "name": "outl_time",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.String",
-                    "length": 254
                 },
                 {
                     "name": "dist_2000",
@@ -275,39 +243,7 @@
                     "length": 24
                 },
                 {
-                    "name": "angle_mean",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Long",
-                    "length": 10
-                },
-                {
-                    "name": "angle_std",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Long",
-                    "length": 10
-                },
-                {
-                    "name": "valid_obs",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Long",
-                    "length": 10
-                },
-                {
-                    "name": "valid_span",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Long",
-                    "length": 10
-                },
-                {
-                    "name": "sce",
+                    "name": "rate_time",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
@@ -315,7 +251,7 @@
                     "length": 24
                 },
                 {
-                    "name": "nsm",
+                    "name": "sig_time",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
@@ -323,7 +259,23 @@
                     "length": 24
                 },
                 {
-                    "name": "max_year",
+                    "name": "se_time",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "outl_time",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 80
+                },
+                {
+                    "name": "radius_m",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
@@ -331,7 +283,7 @@
                     "length": 10
                 },
                 {
-                    "name": "min_year",
+                    "name": "n",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
@@ -345,14 +297,6 @@
                     "nillable": true,
                     "binding": "java.lang.String",
                     "length": 25
-                },
-                {
-                    "name": "country",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.String",
-                    "length": 32
                 },
                 {
                     "name": "wms_abs",

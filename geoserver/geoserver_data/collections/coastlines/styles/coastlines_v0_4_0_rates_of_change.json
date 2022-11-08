@@ -1,6 +1,6 @@
 {
     "style": {
-        "name": "coastlines_v0.4.0_rates_of_change",
+        "name": "coastlines_v0_4_0_rates_of_change",
         "workspace": {
             "name": "coastlines"
         },
@@ -8,6 +8,6 @@
         "languageVersion": {
             "version": "1.1.0"
         },
-        "filename": "coastlines_v0.4.0_rates_of_change.sld"        
+        "filename": "coastlines_v0_4_0_rates_of_change.sld"        
     }
 }

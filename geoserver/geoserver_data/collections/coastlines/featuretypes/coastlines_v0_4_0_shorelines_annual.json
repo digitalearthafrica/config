@@ -1,6 +1,6 @@
 {
     "featureType": {
-        "name": "coastlines_v0.4.0_shorelines_annual",
+        "name": "coastlines_v0_4_0_shorelines_annual",
         "nativeName": "coastlines_v0.4.0_shorelines_annual",
         "namespace": {
             "name": "coastlines"
@@ -38,7 +38,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0.4.0_shorelines_annual"
+            "name": "coastlines:coastlines_v0_4_0_shorelines_annual"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,

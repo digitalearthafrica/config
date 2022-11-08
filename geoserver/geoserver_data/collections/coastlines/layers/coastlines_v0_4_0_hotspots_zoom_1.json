@@ -1,21 +1,22 @@
 {
     "layer": {
-        "name": "coastlines_v0.4.0_shorelines_annual",
+        "name": "coastlines_v0_4_0_hotspots_zoom_1",
         "type": "VECTOR",
         "defaultStyle": {
-            "name": "line"
+            "name": "point"
         },
         "styles": {
             "@class": "linked-hash-set",
             "style": [
                 {
-                    "name": "line"
+                    "name": "coastlines:coastlines_v0_4_0_hotspots_zoom_1",
+                    "workspace": "coastlines"
                 }
             ]
         },
         "resource": {
             "@class": "featureType",
-            "name": "coastlines:coastlines_v0.4.0_shorelines_annual"
+            "name": "coastlines:coastlines_v0_4_0_hotspots_zoom_1"
         },
         "attribution": {
             "logoWidth": 0,
