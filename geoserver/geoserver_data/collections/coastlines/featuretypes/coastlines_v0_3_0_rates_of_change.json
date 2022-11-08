@@ -38,7 +38,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0.3.0_statistics"
+            "name": "coastlines:coastlines_v0_3_0_statistics"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,

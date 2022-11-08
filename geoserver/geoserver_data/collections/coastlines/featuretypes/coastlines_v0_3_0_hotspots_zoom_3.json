@@ -1,6 +1,6 @@
 {
     "featureType": {
-        "name": "coastlines_v0.3.0_hotspots_zoom_3",
+        "name": "coastlines_v0_3_0_hotspots_zoom_3",
         "nativeName": "coastlines_v0.3.0_hotspots_zoom_3",
         "namespace": {
             "name": "coastlines"
@@ -38,7 +38,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0.3.0_statistics_zoom_3"
+            "name": "coastlines:coastlines_v0_3_0_statistics_zoom_3"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,

@@ -1,12 +1,12 @@
 {
     "dataStore": {
-        "name": "coastlines_v0.3.0_statistics",
-        "description": "coastlines_v0.3.0_statistics",
+        "name": "coastlines_v0_3_0_statistics_zoom_3",
+        "description": "coastlines_v0.3.0_statistics_zoom_3",
         "type": "Shapefile",
         "enabled": true,
         "workspace": {
             "name": "coastlines"
-        },
+        },        
         "connectionParameters": {
             "entry": [
                 {
@@ -47,7 +47,7 @@
                 },
                 {
                     "@key": "url",
-                    "$": "file:coastlines_v0.3.0/coastlines_v0.3.0_rates_of_change.shp"
+                    "$": "file:coastlines_v0.3.0/coastlines_v0.3.0_hotspots_zoom_3.shp"
                 },
                 {
                     "@key": "fstype",
@@ -55,6 +55,6 @@
                 }
             ]
         },
-        "_default": false        
+        "_default": false
     }
 }

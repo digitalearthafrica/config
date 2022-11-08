@@ -1,6 +1,6 @@
 {
     "featureType": {
-        "name": "coastlines_v0.3.0",
+        "name": "coastlines_v0_3_0",
         "nativeName": "coastlines_v0.3.0",
         "namespace": {
             "name": "coastlines"
@@ -38,7 +38,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0.3.0_shapefile"
+            "name": "coastlines:coastlines_v0_3_0_shapefile"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,

@@ -1,7 +1,7 @@
 {
     "dataStore": {
-        "name": "coastlines_v0.3.0_statistics_zoom_3",
-        "description": "coastlines_v0.3.0_statistics_zoom_3",
+        "name": "coastlines_v0_3_0_statistics_zoom_1",
+        "description": "coastlines_v0.3.0_statistics_zoom_1",
         "type": "Shapefile",
         "enabled": true,
         "workspace": {
@@ -47,7 +47,7 @@
                 },
                 {
                     "@key": "url",
-                    "$": "file:coastlines_v0.3.0/coastlines_v0.3.0_hotspots_zoom_3.shp"
+                    "$": "file:coastlines_v0.3.0/coastlines_v0.3.0_hotspots_zoom_1.shp"
                 },
                 {
                     "@key": "fstype",
