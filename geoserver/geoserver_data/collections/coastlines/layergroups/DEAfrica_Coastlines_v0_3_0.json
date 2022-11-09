@@ -1,0 +1,60 @@
+{
+    "layerGroup": {
+        "name": "DEAfrica_Coastlines_v0_3_0",
+        "title": "DEAfrica Coastlines v0.3.0",
+        "mode": "SINGLE",
+        "workspace": {
+            "name": "coastlines"
+        },
+        "publishables": {
+            "published": [
+                {
+                    "@type": "layer",
+                    "name": "coastlines:coastlines_v0_3_0"
+                },
+                {
+                    "@type": "layer",
+                    "name": "coastlines:coastlines_v0_3_0_rates_of_change"
+                },
+                {
+                    "@type": "layer",
+                    "name": "coastlines:coastlines_v0_3_0_hotspots_zoom_3"
+                },
+                {
+                    "@type": "layer",
+                    "name": "coastlines:coastlines_v0_3_0_hotspots_zoom_2"
+                },
+                {
+                    "@type": "layer",
+                    "name": "coastlines:coastlines_v0_3_0_hotspots_zoom_1"
+                }
+            ]
+        },
+        "styles": {
+            "style": [
+                {
+                    "name": "coastlines:coastlines_v0_3_0"
+                },
+                {
+                    "name": "coastlines:coastlines_v0_3_0_roc"
+                },
+                {
+                    "name": "coastlines:coastlines_v0_3_0_zoom_3"
+                },
+                {
+                    "name": "coastlines:coastlines_v0_3_0_zoom_2"
+                },
+                {
+                    "name": "coastlines:coastlines_v0_3_0_zoom_1"
+                }
+            ]
+        },
+        "bounds": {
+            "minx": -17.530020617134365,
+            "maxx": 51.41527617299833,
+            "miny": -34.83347119293824,
+            "maxy": 37.358192510742306,
+            "crs": "EPSG:4326"
+        }
+    }
+}

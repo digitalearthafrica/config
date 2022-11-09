@@ -1,0 +1,25 @@
+{
+    "layer": {
+        "name": "coastlines_v0_3_0",
+        "type": "VECTOR",
+        "defaultStyle": {
+            "name": "line"
+        },
+        "styles": {
+            "@class": "linked-hash-set",
+            "style": [
+                {
+                    "name": "line"
+                }
+            ]
+        },
+        "resource": {
+            "@class": "featureType",
+            "name": "coastlines:coastlines_v0_3_0"
+        },
+        "attribution": {
+            "logoWidth": 0,
+            "logoHeight": 0
+        }
+    }
+}
