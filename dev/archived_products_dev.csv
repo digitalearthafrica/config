@@ -1,0 +1,9 @@
+product,definition
+crop_mask_eastern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_eastern.odc-product.yaml
+crop_mask_western,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_western.odc-product.yaml
+crop_mask_northern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_northern.odc-product.yaml
+crop_mask_sahel,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_sahel.odc-product.yaml
+crop_mask_southern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_southern.odc-product.yaml
+crop_mask_southeast,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_southeast.odc-product.yaml
+crop_mask_central,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_central.odc-product.yaml
+crop_mask_indian_ocean,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_indian_ocean.odc-product.yaml

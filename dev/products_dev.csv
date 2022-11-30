@@ -1,14 +1,6 @@
 product,definition
 alos_palsar_mosaic,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/alos_palsar_mosaic.odc-product.yaml
 crop_mask,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask.odc-product.yaml
-crop_mask_eastern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_eastern.odc-product.yaml
-crop_mask_western,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_western.odc-product.yaml
-crop_mask_northern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_northern.odc-product.yaml
-crop_mask_sahel,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_sahel.odc-product.yaml
-crop_mask_southern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_southern.odc-product.yaml
-crop_mask_southeast,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_southeast.odc-product.yaml
-crop_mask_central,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_central.odc-product.yaml
-crop_mask_indian_ocean,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_indian_ocean.odc-product.yaml
 ndvi_climatology_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/ndvi_climatology_ls.odc-product.yaml
 ndvi_anomaly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/ndvi_anomaly.odc-product.yaml
 nasadem,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/nasadem.odc-product.yaml
