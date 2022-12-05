@@ -1,7 +1,7 @@
 {
     "dataStore": {
-        "name": "coastlines_v0_4_0_rates_of_change_s3",
-        "description": "coastlines_v0.4.0_rates_of_change from s3",
+        "name": "coastlines_v0_4_0_rates_of_change",
+        "description": "coastlines_v0.4.0_rates_of_change",
         "type": "OGR",
         "enabled": true,
         "workspace": {
