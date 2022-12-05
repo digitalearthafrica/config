@@ -1,8 +1,8 @@
 {
     "dataStore": {
-        "name": "coastlines_v0_4_0_rates_of_change",
-        "description": "coastlines_v0.4.0_rates_of_change",
-        "type": "Shapefile",
+        "name": "coastlines_v0_4_0_rates_of_change_s3",
+        "description": "coastlines_v0.4.0_rates_of_change from s3",
+        "type": "OGR",
         "enabled": true,
         "workspace": {
             "name": "coastlines"
@@ -10,48 +10,36 @@
         "connectionParameters": {
             "entry": [
                 {
-                    "@key": "charset",
-                    "$": "ISO-8859-1"
+                    "@key": "DatasourceName",
+                    "$": "/vsis3/deafrica-services/coastlines/v0.4.0/WGS84_SHP/coastlines_v0.4.0_rates_of_change.shp"
                 },
                 {
-                    "@key": "filetype",
-                    "$": "shapefile"
+                    "@key": "min connections",
+                    "$": "1"
                 },
                 {
-                    "@key": "create spatial index",
-                    "$": "true"
-                },
-                {
-                    "@key": "memory mapped buffer",
+                    "@key": "Prime DataSources",
                     "$": "false"
                 },
                 {
-                    "@key": "timezone",
-                    "$": "GMT"
-                },
-                {
-                    "@key": "enable spatial index",
-                    "$": "true"
-                },
-                {
                     "@key": "namespace",
-                    "$": "http://coastlines"
+                    "$": "coastlines"
                 },
                 {
-                    "@key": "cache and reuse memory maps",
-                    "$": "true"
+                    "@key": "Connection timeout",
+                    "$": "20"
                 },
                 {
-                    "@key": "skipScan",
-                    "$": "true"
+                    "@key": "max connections",
+                    "$": "20"
                 },
                 {
-                    "@key": "url",
-                    "$": "file:coastlines_v0.4.0/coastlines_v0.4.0_rates_of_change.shp"
+                    "@key": "Evictor tests per run",
+                    "$": "3"
                 },
                 {
-                    "@key": "fstype",
-                    "$": "shape"
+                    "@key": "Max data source idle time",
+                    "$": "300"
                 }
             ]
         },
