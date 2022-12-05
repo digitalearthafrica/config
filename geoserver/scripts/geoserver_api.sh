@@ -31,6 +31,7 @@ function usage() {
   echo "  contact       Global contact information, get and update"
   echo "  datastores    Data store create, use with -w"
   echo "  featuretypes  GeoServer featuretypes/layers"
+  echo "  gwc           GeoServer caching settings"
   echo "  layers        GeoServer layer confg"
   echo "  layergroups   GeoServer grouping of layers"
   echo "  logging       Logging settings"
@@ -232,6 +233,9 @@ function get_object() {
         uri="/workspaces/${workspace}/datastores/${datastore}/featuretypes/${object_name}.json"
       fi
       ;;
+    gwc)
+      uri="/resource/gwc-gs.xml"
+      ;;
     layers)
       if [ -z "${workspace}" ] ; then
         clean_exit 23 "Workspace not provided."
@@ -332,6 +336,10 @@ function update_object() {
       featuretype_workspace=$(get_featuretype_workspace ${object_name})
       featuretype_datastore=$(get_featuretype_datastore ${object_name})      
       uri="/workspaces/${featuretype_workspace}/datastores/${featuretype_datastore}/featuretypes/${object_name}.json"      
+      ;;
+    gwc)
+      uri="/resource/gwc-gs.xml"
+      data_file="${data_dir}/global/${geoserver_env}/gwc-gs.xml"
       ;;
     layers)
       if [ -z "${object_name}" ] ; then
