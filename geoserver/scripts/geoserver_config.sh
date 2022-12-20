@@ -214,7 +214,8 @@ function find_all_objects() {
   # Global settings
   if [ ${update_global_settings} -eq 1 ] ; then
     global_settings_file="${data_dir}/global/${geoserver_env}/settings.json"
-    gwc_settings_file="${data_dir}/global/${geoserver_env}/gwc-gs.xml"
+    geowebcache_settings_file="${data_dir}/global/${geoserver_env}/geowebcache.xml"
+    gwc_settings_file="${data_dir}/global/${geoserver_env}/gwc-gs.xml"    
     if [ -f "${global_settings_file}" ] ; then
       echo "*** Global settings ***"
       if [ ${update_mode} -eq 1 ] ; then
@@ -228,6 +229,20 @@ function find_all_objects() {
       fi
     fi
 
+    # Update GeoWebCache settings" ] ; then
+    if [ -f "${geowebcache_settings_file}" ] ; then
+      echo "*** GeoWebCache settings ***"
+      if [ ${update_mode} -eq 1 ] ; then
+        ${geoserver_api_script} ${api_script_input} update geowebcache
+        ret_val=$?
+        if [ ${ret_val} -ne 0 ] ; then
+          clean_exit 10 "Unable to update GeoWebCache settings."
+        fi
+      else
+        echo "${geowebcache_settings_file}"
+      fi
+    fi
+    
     # Update GWC settings
     if [ -f "${gwc_settings_file}" ] ; then
       echo "*** GWC settings ***"
