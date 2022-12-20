@@ -31,6 +31,8 @@ function usage() {
   echo "  contact       Global contact information, get and update"
   echo "  datastores    Data store create, use with -w"
   echo "  featuretypes  GeoServer featuretypes/layers"
+  echo "  geowebcache   GeoWebCache settings"
+  echo "  gwc           GeoServer caching settings"
   echo "  layers        GeoServer layer confg"
   echo "  layergroups   GeoServer grouping of layers"
   echo "  logging       Logging settings"
@@ -43,13 +45,13 @@ function usage() {
   echo "Examples:"
   echo
   echo "List all workspaces:"
-  echo "  ${scriptname} -c my_collection -u admin -p geoserver -r https://localhost/geoserver/rest get workspaces"
+  echo "  ${scriptname} -c my_collection -u admin -p geoserver -r https://localhost/geoserver/rest -e dev get workspaces"
   echo
   echo "List one workspace:"
-  echo "  ${scriptname} -c my_collection -u admin -p geoserver -r https://localhost/geoserver/rest get workspaces myworkspace"
+  echo "  ${scriptname} -c my_collection -u admin -p geoserver -r https://localhost/geoserver/rest -e dev get workspaces myworkspace"
   echo
   echo "Update SLD"
-  echo "  ${scriptname} -c my_collection -u admin -p geoserver -r https://localhost/geoserver/rest update sld test_style"
+  echo "  ${scriptname} -c my_collection -u admin -p geoserver -r https://localhost/geoserver/rest -e dev update sld test_style"
   echo
 }
 
@@ -232,6 +234,12 @@ function get_object() {
         uri="/workspaces/${workspace}/datastores/${datastore}/featuretypes/${object_name}.json"
       fi
       ;;
+    geowebcache)
+      uri="/resource/gwc/geowebcache.xml"
+      ;;
+    gwc)
+      uri="/resource/gwc-gs.xml"
+      ;;
     layers)
       if [ -z "${workspace}" ] ; then
         clean_exit 23 "Workspace not provided."
@@ -332,6 +340,14 @@ function update_object() {
       featuretype_workspace=$(get_featuretype_workspace ${object_name})
       featuretype_datastore=$(get_featuretype_datastore ${object_name})      
       uri="/workspaces/${featuretype_workspace}/datastores/${featuretype_datastore}/featuretypes/${object_name}.json"      
+      ;;
+    geowebcache)
+      uri="/resource/gwc/geowebcache.xml"
+      data_file="${data_dir}/global/${geoserver_env}/geowebcache.xml"
+      ;;
+    gwc)
+      uri="/resource/gwc-gs.xml"
+      data_file="${data_dir}/global/${geoserver_env}/gwc-gs.xml"
       ;;
     layers)
       if [ -z "${object_name}" ] ; then
