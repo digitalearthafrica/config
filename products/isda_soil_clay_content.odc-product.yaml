@@ -1,0 +1,41 @@
+---
+name: isda_soil_clay_content
+description: Soil clay content predictions made by iSDA Africa
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: isda_soil_clay_content
+
+storage:
+  crs: EPSG:3857
+  resolution:
+    x: 30
+    y: -30
+
+measurements:
+  - name: mean_0_20
+    aliases: [MEAN_0_20]
+    dtype: float32
+    nodata: 0.0
+    units: '1'
+
+  - name: mean_20_50
+    aliases: [MEAN_20_50]
+    dtype: float32
+    nodata: 0.0
+    units: '1'
+
+  - name: stdev_0_20
+    aliases: [STDEV_0_20]
+    dtype: float32
+    nodata: 0.0
+    units: '1'
+
+  - name: stdev_20_50
+    aliases: [STDEV_20_50]
+    dtype: float32
+    nodata: 0.0
+    units: '1'
