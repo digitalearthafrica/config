@@ -27,4 +27,3 @@ measurements:
     dtype: float32
     nodata: 0.0
     units: '1'
-
