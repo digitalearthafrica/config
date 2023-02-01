@@ -22,7 +22,7 @@ measurements:
     nodata: 0.0
     units: 'g/kg'
     flags_definition:
-        back-transformation: "expm1(x/10)"
+      back-transformation: "expm1(x/10)"
 
   - name: mean_20_50
     aliases: [MEAN_20_50]
@@ -30,7 +30,7 @@ measurements:
     nodata: 0.0
     units: 'g/kg'
     flags_definition:
-        back-transformation: "expm1(x/10)"
+      back-transformation: "expm1(x/10)"
 
   - name: stdev_0_20
     aliases: [STDEV_0_20]
@@ -38,7 +38,7 @@ measurements:
     nodata: 0.0
     units: 'g/kg'
     flags_definition:
-        back-transformation: "expm1(x/10)"
+      back-transformation: "expm1(x/10)"
 
   - name: stdev_20_50
     aliases: [STDEV_20_50]
@@ -46,4 +46,4 @@ measurements:
     nodata: 0.0
     units: 'g/kg'
     flags_definition:
-        back-transformation: "expm1(x/10)"
+      back-transformation: "expm1(x/10)"
