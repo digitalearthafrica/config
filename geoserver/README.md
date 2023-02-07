@@ -7,9 +7,9 @@ GeoServer config is managed through the GeoServer REST API. See references below
 - [GeoServer REST API](https://docs.geoserver.org/stable/en/user/rest/)
 
 ## Scripts
-- `geoserver_api.sh`: Script used to create, update and query individual GeoServer objects through the GeoServer REST API.
-- `geoserver_config.sh`: Wrapper script to list or update all objects using geoserver_api.sh
-- `geoserver_docker.sh`: Docker wrapper script to call geoserver_config.sh. 
+- `geoserver-api.sh`: Script used to create, update and query individual GeoServer objects through the GeoServer REST API.
+- `geoserver-config.sh`: Wrapper script to list or update all objects using geoserver-api.sh
+- `geoserver-docker.sh`: Docker wrapper script to call geoserver-config.sh. 
 
 ## GeoServer Configuration
 ### Directory Structure
