@@ -8,7 +8,7 @@
 #######################################################################
 function usage() {
   echo
-  echo "Usage: ${scriptname} [OPTIONS] COMMAND"
+  echo "Usage: ${scriptname} [OPTIONS]"
   echo
   echo "GeoServer data copy script."
   echo
