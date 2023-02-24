@@ -1,0 +1,29 @@
+---
+name: isda_soil_bedrock_depth
+description: Soil bedrock depth predictions made by iSDA Africa
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: isda_soil_bedrock_depth
+
+storage:
+  crs: EPSG:3857
+  resolution:
+    x: 30
+    y: -30
+
+measurements:
+  - name: mean_0_200
+    aliases: [MEAN_0_200]
+    dtype: float32
+    nodata: .nan
+    units: "cm"
+
+  - name: stdev_0_200
+    aliases: [STDEV_0_200]
+    dtype: float32
+    nodata: .nan
+    units: "cm"

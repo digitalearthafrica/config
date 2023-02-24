@@ -1,13 +1,13 @@
 ---
-name: isda_soil_carbon_total
-description: Soil total carbon predictions made by iSDA Africa
+name: isda_soil_bulk_density
+description: Soil bulk density predictions made by iSDA Africa
 metadata_type: eo3
 
 license: CC-BY-4.0
 
 metadata:
   product:
-    name: isda_soil_carbon_total
+    name: isda_soil_bulk_density
 
 storage:
   crs: EPSG:3857
@@ -20,30 +20,30 @@ measurements:
     aliases: [MEAN_0_20]
     dtype: float32
     nodata: .nan
-    units: "g/kg"
+    units: "g/cc"
     flags_definition:
-      back-transformation: "expm1(x/10)"
+      back-transformation: "x/100"
 
   - name: mean_20_50
     aliases: [MEAN_20_50]
     dtype: float32
     nodata: .nan
-    units: "g/kg"
+    units: "g/cc"
     flags_definition:
-      back-transformation: "expm1(x/10)"
+      back-transformation: "x/100"
 
   - name: stdev_0_20
     aliases: [STDEV_0_20]
     dtype: float32
     nodata: .nan
-    units: "g/kg"
+    units: "g/cc"
     flags_definition:
-      back-transformation: "expm1(x/10)"
+      back-transformation: "x/100"
 
   - name: stdev_20_50
     aliases: [STDEV_20_50]
     dtype: float32
     nodata: .nan
-    units: "g/kg"
+    units: "g/cc"
     flags_definition:
-      back-transformation: "expm1(x/10)"
+      back-transformation: "x/100"
