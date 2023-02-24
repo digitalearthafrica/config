@@ -20,10 +20,10 @@ measurements:
     aliases: [MEAN_0_200]
     dtype: float32
     nodata: .nan
-    units: 'cm'
+    units: "cm"
 
   - name: stdev_0_200
     aliases: [STDEV_0_200]
     dtype: float32
     nodata: .nan
-    units: 'cm'
+    units: "cm"
