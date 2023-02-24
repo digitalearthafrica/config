@@ -549,7 +549,7 @@
               "style_colours"
           ]
       },
-            {
+      {
           "layer": "esa_worldcover_2021",
           "product": [
               "esa_worldcover_2021"
