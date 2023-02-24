@@ -102,7 +102,7 @@ The product uses Sentinel-1 and Sentinel-2 data to produce 11 land cover classes
 
 For more information, see https://esa-worldcover.s3.amazonaws.com/v100/2020/docs/WorldCover_PUM_V1.0.pdf
 """,
-    "product_name": "esa_worldcover_2020",
+    "product_name": "esa_worldcover",
     "time_resolution": "year",
     "bands": {
         "classification": [],
