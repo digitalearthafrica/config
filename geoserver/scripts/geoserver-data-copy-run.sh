@@ -16,7 +16,6 @@ function usage() {
   echo "  -c, --cluster         EKS cluster name"
   echo "  -s, --source-s3-uri   S3 URI for the S3 data source. E.g.: s3://deafrica-services/coastlines/v0.4.0"
   echo "  -t, --target-dir      Target directory on the GeoServer container"
-  echo "  -u, --username        Basic auth user"
   echo
   echo "Authentication environment variables:"
   echo "  AWS_ACCESS_KEY_ID          AWS access key"
