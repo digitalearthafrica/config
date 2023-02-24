@@ -20,7 +20,7 @@ measurements:
     aliases: [MEAN_0_20]
     dtype: float32
     nodata: .nan
-    units: 'g/cc'
+    units: "g/cc"
     flags_definition:
       back-transformation: "x/100"
 
@@ -28,7 +28,7 @@ measurements:
     aliases: [MEAN_20_50]
     dtype: float32
     nodata: .nan
-    units: 'g/cc'
+    units: "g/cc"
     flags_definition:
       back-transformation: "x/100"
 
@@ -36,7 +36,7 @@ measurements:
     aliases: [STDEV_0_20]
     dtype: float32
     nodata: .nan
-    units: 'g/cc'
+    units: "g/cc"
     flags_definition:
       back-transformation: "x/100"
 
@@ -44,6 +44,6 @@ measurements:
     aliases: [STDEV_20_50]
     dtype: float32
     nodata: .nan
-    units: 'g/cc'
+    units: "g/cc"
     flags_definition:
       back-transformation: "x/100"
