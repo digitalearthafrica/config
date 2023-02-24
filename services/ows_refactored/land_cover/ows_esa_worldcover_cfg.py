@@ -93,16 +93,16 @@ style_colours = {
 }
 
 layer = {
-    "title": "ESA WorldCover 2021",
-    "name": "esa_worldcover_2021",
+    "title": "ESA WorldCover 2020",
+    "name": "esa_worldcover",
     "abstract": """
-The ESA WorldCover 2021 product is a global, 10 m resolution land cover product, which Digital Earth Africa is making accessible over Africa.
+The ESA WorldCover 2020 product is a global, 10 m resolution land cover product, which Digital Earth Africa is making accessible over Africa.
 
 The product uses Sentinel-1 and Sentinel-2 data to produce 11 land cover classes, according to the GAO LCCS schema.
 
-For more information, see https://worldcover2021.esa.int/data/docs/WorldCover_PUM_V2.0.pdf
+For more information, see https://esa-worldcover.s3.amazonaws.com/v100/2020/docs/WorldCover_PUM_V1.0.pdf
 """,
-    "product_name": "esa_worldcover_2021",
+    "product_name": "esa_worldcover_2020",
     "time_resolution": "year",
     "bands": {
         "classification": [],
