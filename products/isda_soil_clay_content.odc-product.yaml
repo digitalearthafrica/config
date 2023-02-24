@@ -20,22 +20,22 @@ measurements:
     aliases: [MEAN_0_20]
     dtype: float32
     nodata: .nan
-    units: '%'
+    units: "percent"
 
   - name: mean_20_50
     aliases: [MEAN_20_50]
     dtype: float32
     nodata: .nan
-    units: '%'
+    units: "percent"
 
   - name: stdev_0_20
     aliases: [STDEV_0_20]
     dtype: float32
     nodata: .nan
-    units: '%'
+    units: "percent"
 
   - name: stdev_20_50
     aliases: [STDEV_20_50]
     dtype: float32
     nodata: .nan
-    units: '%'
+    units: "percent"
