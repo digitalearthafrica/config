@@ -483,16 +483,6 @@
           ]
       },
       {
-          "layer": "io_lulc",
-          "product": [
-              "io_lulc"
-          ],
-          "styles_count": 1,
-          "styles_list": [
-              "style_colours"
-          ]
-      },
-      {
           "layer": "ndvi_climatology_ls",
           "product": [
               "ndvi_climatology_ls"
@@ -550,9 +540,19 @@
           ]
       },
       {
-          "layer": "esa_worldcover",
+          "layer": "esa_worldcover_2020",
           "product": [
-              "esa_worldcover"
+              "esa_worldcover_2020"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_colours"
+          ]
+      },
+      {
+          "layer": "esa_worldcover_2021",
+          "product": [
+              "esa_worldcover_2021"
           ],
           "styles_count": 1,
           "styles_list": [
