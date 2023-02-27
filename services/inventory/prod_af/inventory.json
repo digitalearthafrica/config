@@ -470,16 +470,6 @@
           ]
       },
       {
-          "layer": "io_lulc",
-          "product": [
-              "io_lulc"
-          ],
-          "styles_count": 1,
-          "styles_list": [
-              "style_colours"
-          ]
-      },
-      {
           "layer": "ndvi_climatology_ls",
           "product": [
               "ndvi_climatology_ls"
