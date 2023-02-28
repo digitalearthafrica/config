@@ -9,4 +9,4 @@ COPY docker-entrypoint.sh .
 RUN chmod 755 /opt/dea-geoserver/docker-entrypoint.sh
 
 ENTRYPOINT ["/opt/dea-geoserver/docker-entrypoint.sh"]
-CMD [ "/opt/dea-geoserver/scripts/geoserver_docker.sh" ]
+CMD [ "/opt/dea-geoserver/scripts/geoserver-docker.sh" ]

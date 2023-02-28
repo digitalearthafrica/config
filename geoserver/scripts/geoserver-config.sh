@@ -579,7 +579,7 @@ typeset -i list_mode=0
 version="1.0"
 scriptname=`basename "$0"`
 tmp_file="/tmp/$$.${scriptname}"
-geoserver_api_script="./geoserver_api.sh"
+geoserver_api_script="./geoserver-api.sh"
 data_dir="../geoserver_data"
 
 # Validate input
@@ -634,7 +634,7 @@ while [[ $# -gt 0 ]]; do
       if ! [ -d "${scripts_dir}" ] ; then
         clean_exit 1 "Scripts directory not found: ${scripts_dir}"
       fi
-      geoserver_api_script="${scripts_dir}/geoserver_api.sh"
+      geoserver_api_script="${scripts_dir}/geoserver-api.sh"
       shift
       shift
       ;;
