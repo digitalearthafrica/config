@@ -334,7 +334,7 @@ ows_cfg = {
                             "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
                             "type": "python",
                         },
-                                                {
+                        {
                             "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
                             "type": "python",
                         },
