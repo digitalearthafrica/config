@@ -1,4 +1,4 @@
-efrom ows_refactored.common.ows_reslim_cfg import reslim_wms_min_zoom_15
+from ows_refactored.common.ows_reslim_cfg import reslim_wms_min_zoom_15
 from ows_refactored.vegetation.styles_ndvi_anom import (
     style_ndvi_mean,
     style_ndvi_anomaly,
