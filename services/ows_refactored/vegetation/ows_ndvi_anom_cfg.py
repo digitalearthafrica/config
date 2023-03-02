@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_wms_min_zoom_15
+efrom ows_refactored.common.ows_reslim_cfg import reslim_wms_min_zoom_15
 from ows_refactored.vegetation.styles_ndvi_anom import (
     style_ndvi_mean,
     style_ndvi_anomaly,
@@ -9,7 +9,7 @@ bands_ndvi_anom = {"ndvi_std_anomaly": [], "ndvi_mean": [], "clear_count": []}
 
 
 layer = {
-    "title": "NDVI Anomaly",
+    "title": "Mean NDVI and Anomalies",
     "name": "ndvi_anomaly",
     "abstract": """
 Standardised NDVI Anomalies provide a measure of vegetation health relative to long term average conditions by measuring the departure, in units of standard devaiations, away from the long-term mean. These monthly NDVI anomalies were calculated by combining NDVI observations from Landsat 8, Landsat 9, and Sentinel-2 for a given month, subtracting those values from the long term NDVI mean, then dividing by the long-term NDVI standard deviation. Postive values indicate vegetation is greener than average conditions, and are usually due to increased rainfall in a region. Negative values indicate additional plant stress relative to the long-term average.
