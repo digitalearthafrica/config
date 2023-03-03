@@ -169,6 +169,16 @@ ows_cfg = {
                                         },
                                     ],
                                 },
+                                {
+                                    "title": "Rolling 3-monthly surface reflectance",
+                                    "abstract": """Rolling 3-monthly surface reflectance""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_rolling_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
                             ],
                         },
                         {
