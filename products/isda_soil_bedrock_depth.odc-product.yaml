@@ -19,11 +19,11 @@ measurements:
   - name: mean_0_200
     aliases: [MEAN_0_200]
     dtype: float32
-    nodata: 0.0
-    units: '1'
+    nodata: .nan
+    units: "cm"
 
   - name: stdev_0_200
     aliases: [STDEV_0_200]
     dtype: float32
-    nodata: 0.0
-    units: '1'
+    nodata: .nan
+    units: "cm"

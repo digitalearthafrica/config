@@ -364,11 +364,11 @@ ows_cfg = {
                     "abstract": """Land Cover""",
                     "layers": [
                         {
-                            "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
+                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
                             "type": "python",
                         },
                         {
-                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg.layer",
+                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
                             "type": "python",
                         },
                         {

@@ -25,7 +25,7 @@ function clean_exit() {
 version="1.0"
 scriptname=`basename "$0"`
 
-geoserver_config_script="/opt/dea-geoserver/scripts/geoserver_config.sh"
+geoserver_config_script="/opt/dea-geoserver/scripts/geoserver-config.sh"
 geoserver_data_dir="/opt/dea-geoserver/config/geoserver/geoserver_data"
 geoserver_scripts_dir="/opt/dea-geoserver/scripts"
 username="${GEOSERVER_ADMIN_USER}"
