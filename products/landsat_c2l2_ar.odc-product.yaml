@@ -1,0 +1,266 @@
+---
+name: landsat_c2l2_ar
+description: USGS Landsat Collection 2 Level-2 Provisional Aquatic Reflectance Product
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: landsat_c2l2_ar
+
+measurements:
+  - name: RHORC_B1
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [band_1, coastal]
+
+  - name: RHORC_B2
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [band_2, blue]
+
+  - name: RHORC_B3
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [band_3, green]
+
+  - name: RHORC_B4
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [band_4, red]
+
+  - name: RHORC_B5
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [band_5, nir08]
+
+  - name: RHORC_B6
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [band_6, swir16]
+
+  - name: RHORC_B7
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [band_7, swir22]
+
+  - name: AR_B1
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ar_band_1, ar_coastal]
+
+  - name: AR_B2
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ar_band_2, ar_blue]
+
+  - name: AR_B3
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ar_band_3, ar_green]
+
+  - name: AR_B4
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ar_band_4, ar_red]
+
+  - name: AR_B5
+    dtype: "int16"
+    units: "1"
+    nodata: -9999
+    aliases: [ar_band_5, ar_nir08]
+
+  - name: WATER_MASK
+    dtype: "uint8"
+    units: "1"
+    nodata: 0
+    aliases: [water]
+
+  - name: HEIGHT
+    dtype: "int32"
+    units: "1"
+    nodata: -32767
+    aliases: [height]
+
+  - name: NO2_TROPO
+    dtype: "int16"
+    units: "1"
+    nodata: -32767
+    aliases: [tropo]
+
+  - name: OZONE
+    dtype: "uint16"
+    units: "1"
+    nodata: 65535
+    aliases: [ozone]
+
+  - name: PRESSURE
+    dtype: "uint16"
+    units: "1"
+    nodata: 65535
+    aliases: [P]
+
+  - name: SAA
+    dtype: "int16"
+    units: "1"
+    nodata: 0
+    aliases: [saa]
+
+  - name: SZA
+    dtype: "int16"
+    units: "1"
+    nodata: 0
+    aliases: [sza]
+
+  - name: VAA
+    dtype: "int16"
+    units: "1"
+    nodata: 0
+    aliases: [vaa]
+
+  - name: VZA
+    dtype: "int16"
+    units: "1"
+    nodata: 0
+    aliases: [vza]
+
+  - name: WATER_VAPOR
+    dtype: "uint16"
+    units: "1"
+    nodata: 65535
+    aliases: [watervapor]
+
+  - name: WINDSPEED
+    dtype: "uint16"
+    units: "1"
+    nodata: 65535
+    aliases: [wind]
+
+  - name: L2_FLAGS
+    dtype: "int32"
+    units: "bit_index"
+    nodata: -9999
+    aliases: [qa, ar_qa]
+    flags_definition:
+      atmfail:
+        bits: 0
+        values:
+          0: not_atmfail
+          1: atmfail
+      higlint:
+        bits: 3
+        values:
+          0: not_higlint
+          1: higlint
+      hisatzen:
+        bits: 5
+        values:
+          0: not_hisatzen
+          1: hisatzen
+      seadas_cloud:
+        bits: 7
+        values:
+          0: not_cloud
+          1: cloud
+      cloud_shadow:
+        bits: 8
+        values:
+          0: not_cloud_shadow
+          1: cloud_shadow
+      cloud:
+        bits: 9
+        values:
+          0: not_cloud
+          1: cloud
+      coccolith:
+        bits: 10
+        values:
+          0: not_coccolith
+          1: coccolith
+      turbidw:
+        bits: 11
+        values:
+          0: not_turbidw
+          1: turbidw
+      hisolzen:
+        bits: 12
+        values:
+          0: not_atmfail
+          1: atmfail
+      lowlw:
+        bits: 14
+        values:
+          0: not_lowlw
+          1: lowlw
+      chlfail:
+        bits: 15
+        values:
+          0: not_chlfail
+          1: chlfail
+      navwarn:
+        bits: 16
+        values:
+          0: not_navwarn
+          1: navwarn
+      rrswarn:
+        bits: 18
+        values:
+          0: not_rrswarn
+          1: rrswarn
+      maxaeriter:
+        bits: 19
+        values:
+          0: not_maxaeriter
+          1: maxaeriter
+      modglint:
+        bits: 20
+        values:
+          0: not_modglint
+          1: modglint
+      chlwarn:
+        bits: 21
+        values:
+          0: not_chlwarn
+          1: chlwarn
+      atmwarn:
+        bits: 22
+        values:
+          0: not_atmwarn
+          1: atmwarn
+      navfail:
+        bits: 25
+        values:
+          0: not_navfail
+          1: navfail
+      filter:
+        bits: 26
+        values:
+          0: not_filter
+          1: filter
+      neg_rhorc:
+        bits: 27
+        values:
+          0: positive_rhorc
+          1: negative_rhorc
+      neg_ar:
+        bits: 28
+        values:
+          0: positive_ar
+          1: negative_ar
+      prodfail:
+        bits: 30
+        values:
+          0: not_prodfail
+          1: prodfail
