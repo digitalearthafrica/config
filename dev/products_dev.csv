@@ -9,7 +9,7 @@ dem_cop_90,https://raw.githubusercontent.com/opendatacube/datacube-dataset-confi
 dem_srtm,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/dem_srtm.odc-product.yaml
 dem_srtm_deriv,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/dem_srtm_deriv.odc-product.yaml
 nasadem,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/nasadem.odc-product.yaml
-io_lulc,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/io_lulc_9_class.odc-product.yaml
+io_lulc,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/io_lulc.odc-product.yaml
 isda_soil_bedrock_depth,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/isda_soil_bedrock_depth.odc-product.yaml
 isda_soil_bulk_density,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/isda_soil_bulk_density.odc-product.yaml
 isda_soil_carbon_total,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/isda_soil_carbon_total.odc-product.yaml
