@@ -3,7 +3,7 @@ from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_rolling_list
 
 layer = {
-    "title": "Rolling 3-monthly GeoMAD (Sentinel-2)",
+    "title": "Rolling GeoMAD (Sentinel-2)",
     "name": "gm_s2_rolling",
     "abstract": """
 Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.
@@ -17,10 +17,10 @@ In addition, surface reflectance varabilities within the same time period can be
 
 More techincal information about the GeoMAD product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html)
 
-This product has a spatial resolution of 10 m and is available monthly, each covering a rolling 3 month period: January to March, February to April, March to May, and so on.
+This product has a spatial resolution of 10 m and is available monthly, each covering a rolling three months period: January to March, February to April, March to May, and so on.
 It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data.
 
-Rolling Monthly GeoMAD is useful for characterising landscapes with seasonal changes.
+Rolling GeoMAD is useful for characterising landscapes with seasonal changes.
 
 For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896 and https://doi.org/10.1109/IGARSS.2018.8518312
 
