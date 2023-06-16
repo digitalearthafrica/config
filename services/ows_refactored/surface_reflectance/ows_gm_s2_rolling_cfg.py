@@ -34,7 +34,7 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     #
     # "low_res_product_name": "gm_s2_semiannual_lowres",
     "bands": bands_s2_gm,
-    "dynamic": True,
+    "time_resolution": "summary",
     "resource_limits": reslim_smart5,
     "time_resolution": "month",
     "image_processing": {
@@ -48,6 +48,6 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     "native_resolution": [10.0, -10.0],
     "styling": {
         "default_style": "simple_rgb",
-        "styles": styles_gm_rolling_list,
+        "styles": styles_gm_s2_rolling_list,
     },
 }
