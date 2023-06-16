@@ -36,7 +36,7 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     "bands": bands_s2_gm,
     "dynamic": False,
     "resource_limits": reslim_smart5,
-    "time_resolution": "month",
+    "time_resolution": "summary",
     "image_processing": {
         "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_emad_nan",
         # "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",

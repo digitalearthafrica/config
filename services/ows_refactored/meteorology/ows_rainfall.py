@@ -54,7 +54,7 @@ Spanning 50°S-50°N (and all longitudes) and ranging from 1981 to near-present,
 CHIRPS is a USGS and Climate Hazards Centre initiative with funding from USAID, NASA, and NOAA. Find out more on the CHIRPS website https://www.chc.ucsb.edu/data/chirps.
 """,
     "product_name": "rainfall_chirps_monthly",
-    "time_resolution": "month",
+    "time_resolution": "summary",
     "bands": {
         "rainfall": [],
     },
