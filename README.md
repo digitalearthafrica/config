@@ -33,13 +33,14 @@ for example https://github.com/digitalearthafrica/config/compare/ows-fix-depreci
 Prod and dev config files are titled accordingly. Note any `/services` additions must be reflected in the corresponding `/inventory` json.
  - Edit the appropriate files
  - Merge changes into `/master` branch via a PR
- - Run the appropriate (prod, dev) `ows-update` workflow (external to this repository)
  - Update the translation: https://poeditor.com/join/project?hash=Iciv4SqUeH
- - Confirm correct deployment to OWS by inspecting the relevant OWS URLs and/or importing them to Terria using the 'My Data' option in the catalogue.
-     - Dev: https://ows.dev.digitalearth.africa/
-     - Unstable prod: https://ows-latest.digitalearth.africa/ 
- - Merge with stable prod by releasing a tagged version
- - Access stable prod via https://ows.digitalearth.africa/
+ - For dev OWS, confirm correct deployment by inspecting the relevant OWS URLs and/or importing them to Terria using the 'My Data' option in the catalogue.
+     - Dev: https://ows.dev.digitalearth.africa/ (stable datadube-ows release + latest config setting for dev)
+     - Unstable dev: https://ows-latest.dev.digitalearth.africa/ (latest datadube-ows + latest config setting for dev)
+ - For prod OWS, confirm correct deployment by inspecting the relevant OWS URLs and/or importing them to Terria using the 'My Data' option in the catalogue.
+     - stable prod: https://ows.digitalearth.africa/ (stable datadube-ows release + latest config setting for prod)
+
+Impact of new datadube-ows release can be checked via unstable prod: https://ows-latest.digitalearth.africa/ (latest datacube-ows + latest config setting for prod)
 
 ## Process for updating GeoServer
 GeoServer config is managed in this repo. More information on the process can be found here: [GeoServer Config](https://github.com/digitalearthafrica/config/tree/master/geoserver#digital-earth-africa-geoserver-config)
