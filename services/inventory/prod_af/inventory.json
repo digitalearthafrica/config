@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 34,
+  "total_layers_count": 35,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -540,6 +540,16 @@
           "layer": "esa_worldcover_2021",
           "product": [
               "esa_worldcover_2021"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_colours"
+          ]
+      },
+      {
+          "layer": "io_lulc",
+          "product": [
+              "io_lulc"
           ],
           "styles_count": 1,
           "styles_list": [

@@ -21,7 +21,7 @@ More technical information about the NDVI Anomaly service can be found in the Us
 This service is accessible through OGC Web Service (https://ows.digitalearth.africa/), for analysis in DE Africa Sandbox JupyterLab (https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/wiki) and for direct download click on a tile in the explorer page (https://explorer.digitalearth.africa/products/ndvi_anomaly)
 """,
     "product_name": "ndvi_anomaly",
-    "time_resolution": "month",
+    "time_resolution": "summary",
     "bands": bands_ndvi_anom,
     "resource_limits": reslim_wms_min_zoom_15,
     "image_processing": {

@@ -952,6 +952,31 @@ styles_gm_list = [
     style_gm_s2_count,
 ]
 
+styles_gm_s2_rolling_list = [
+    style_gm_simple_rgb,
+    style_gm_irg,
+    style_tmad_rgb_std,
+    style_tmad_rgb_sens,
+    style_ls_ndvi,
+    style_ls_ndwi,
+    style_gals_mndwi,
+    style_s2_ndci,
+    style_sentinel_pure_blue,
+    style_ls_pure_green,
+    style_ls_pure_red,
+    style_s2_pure_redge_1,
+    style_s2_pure_redge_2,
+    style_s2_pure_redge_3,
+    style_ls_pure_nir,
+    style_s2_pure_narrow_nir,
+    style_s2_pure_swir1,
+    style_s2_pure_swir2,
+    style_tmad_sdev_std,
+    style_tmad_edev_std,
+    style_tmad_bcdev_std,
+    style_gm_ls_count,
+]
+
 # Used in the LS8, LS8-LS9 and LS5-LS7 GeoMAD
 styles_gm_ls5789_list = [
     style_gm_simple_rgb,

@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 36,
+  "total_layers_count": 37,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -225,6 +225,37 @@
           "layer": "gm_s2_semiannual",
           "product": [
               "gm_s2_semiannual"
+          ],
+          "styles_count": 22,
+          "styles_list": [
+              "simple_rgb",
+              "infrared_green",
+              "tmad_rgb_std",
+              "tmad_rgb_sens",
+              "ndvi",
+              "ndwi",
+              "mndwi",
+              "ndci",
+              "blue",
+              "green",
+              "red",
+              "red_edge_1",
+              "red_edge_2",
+              "red_edge_3",
+              "nir",
+              "narrow_nir",
+              "swir_1",
+              "swir_2",
+              "arcsec_sdev",
+              "log_edev",
+              "log_bcdev",
+              "count"
+          ]
+      },
+      {
+          "layer": "gm_s2_rolling",
+          "product": [
+              "gm_s2_rolling"
           ],
           "styles_count": 22,
           "styles_list": [

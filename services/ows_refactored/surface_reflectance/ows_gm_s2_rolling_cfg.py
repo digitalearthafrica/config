@@ -1,10 +1,10 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_smart5
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm
-from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_list
+from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_s2_rolling_list
 
 layer = {
-    "title": "Semiannual GeoMAD (Sentinel-2)",
-    "name": "gm_s2_semiannual",
+    "title": "Rolling GeoMAD (Sentinel-2)",
+    "name": "gm_s2_rolling",
     "abstract": """
 Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.
 
@@ -17,26 +17,25 @@ In addition, surface reflectance varabilities within the same time period can be
 
 More techincal information about the GeoMAD product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html)
 
-This product has a spatial resolution of 10 m and is available semiannually for 2017 to 2021 in 6 month intervals: January–June and July–December.
-It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data 2017-2021.
+This product has a spatial resolution of 10 m and is available monthly, each covering a rolling three months period: January to March, February to April, March to May, and so on.
+It is derived from Surface Reflectance Sentinel-2 data. This product contains modified Copernicus Sentinel data.
 
-Semiannual geomedian images and the MADs are useful for characterising landscapes with seasonal changes.
+Rolling GeoMAD is useful for characterising landscapes with seasonal changes.
 
 For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.2723896 and https://doi.org/10.1109/IGARSS.2018.8518312
 
 """,
-    "product_name": "gm_s2_semiannual",
+    "product_name": "gm_s2_rolling",
     # Low product name
     #
     # Leave commented until we have an appropriate summary product.
     # (Packaged like the main product, but with much much lower
     # resolution and much much higher area covered in each dataset.
     #
-    "low_res_product_name": "gm_s2_semiannual_lowres",
+    # "low_res_product_name": "gm_s2_semiannual_lowres",
     "bands": bands_s2_gm,
-    "dynamic": False,
-    "resource_limits": reslim_smart5,
     "time_resolution": "summary",
+    "resource_limits": reslim_smart5,
     "image_processing": {
         "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_emad_nan",
         # "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
@@ -48,6 +47,6 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     "native_resolution": [10.0, -10.0],
     "styling": {
         "default_style": "simple_rgb",
-        "styles": styles_gm_list,
+        "styles": styles_gm_s2_rolling_list,
     },
 }
