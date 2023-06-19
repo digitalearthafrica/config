@@ -1,6 +1,6 @@
 ---
 name: landsat_c2l2_ar
-description: USGS Landsat Collection 2 Level-2 Provisional Aquatic Reflectance Product
+description: USGS Landsat Collection 2 Level-2 Provisional Aquatic Reflectance
 metadata_type: eo3
 
 license: CC-BY-4.0
