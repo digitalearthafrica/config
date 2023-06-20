@@ -51,3 +51,6 @@ gmw,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/
 esa_worldcover,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/esa_worldcover.odc-product.yaml
 cgls_landcover,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_landcover.odc-product.yaml
 cci_landcover,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cci_landcover.odc-product.yaml
+wsf_2015,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wsf_2015.odc-product.yaml
+wsf_2019,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wsf_2019.odc-product.yaml
+wsf_evolution,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wsf_evolution.odc-product.yaml
