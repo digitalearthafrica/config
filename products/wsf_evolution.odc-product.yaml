@@ -1,0 +1,22 @@
+---
+name: wsf_evolution
+description: The World Settlement Footprint (WSF) Evolution is a 30m resolution dataset
+  derived from Landsat-5/7 outlining the global settlement extent on a yearly basis from 1985 to 2015.
+metadata_type: eo3
+
+metadata:
+  product:
+    name: wsf_evolution
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.00026949458523585647
+    latitude: -0.00026949458523585647
+
+measurements:
+  - name: "wsfevolution"
+    aliases: [wsfevolution]
+    dtype: int32
+    nodata: 0
+    units: "1"

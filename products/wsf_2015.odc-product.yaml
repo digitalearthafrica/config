@@ -1,0 +1,22 @@
+---
+name: wsf_2015
+description: The World Settlement Footprint WSF 2015 version 2 (WSF2015 v2) is a 10m resolution binary mask
+  outlining the extent of human settlements globally for the year 2015 based on multiple datasets.
+metadata_type: eo3
+
+metadata:
+  product:
+    name: wsf_2015
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 8.983152841195215e-05
+    latitude: -8.983152841195215e-05
+
+measurements:
+  - name: "wsf2015"
+    aliases: [wsf2015]
+    dtype: uint8
+    nodata: 0
+    units: "1"
