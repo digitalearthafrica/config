@@ -14,73 +14,73 @@ measurements:
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [band_1, coastal]
+    aliases: [band_1, rh_coastal]
 
   - name: RHORC_B2
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [band_2, blue]
+    aliases: [band_2, rh_blue]
 
   - name: RHORC_B3
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [band_3, green]
+    aliases: [band_3, rh_green]
 
   - name: RHORC_B4
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [band_4, red]
+    aliases: [band_4, rh_red]
 
   - name: RHORC_B5
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [band_5, nir08]
+    aliases: [band_5, rh_nir08]
 
   - name: RHORC_B6
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [band_6, swir16]
+    aliases: [band_6, rh_swir16]
 
   - name: RHORC_B7
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [band_7, swir22]
+    aliases: [band_7, rh_swir22]
 
   - name: AR_B1
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [ar_band_1, ar_coastal]
+    aliases: [ar_band_1, coastal]
 
   - name: AR_B2
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [ar_band_2, ar_blue]
+    aliases: [ar_band_2, blue]
 
   - name: AR_B3
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [ar_band_3, ar_green]
+    aliases: [ar_band_3, green]
 
   - name: AR_B4
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [ar_band_4, ar_red]
+    aliases: [ar_band_4, red]
 
   - name: AR_B5
     dtype: "int16"
     units: "1"
     nodata: -9999
-    aliases: [ar_band_5, ar_nir08]
+    aliases: [ar_band_5, nir08]
 
   - name: WATER_MASK
     dtype: "uint8"
