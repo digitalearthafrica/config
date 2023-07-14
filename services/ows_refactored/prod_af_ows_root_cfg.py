@@ -168,6 +168,16 @@ ows_cfg = {
                                         },
                                     ],
                                 },
+                                {
+                                    "title": "Rolling surface reflectance",
+                                    "abstract": """Monthly rolling surface reflectance values are provided, calculated using a moving window of three months.""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_gm_s2_rolling_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
+                                }
                             ],
                         },
                         {
