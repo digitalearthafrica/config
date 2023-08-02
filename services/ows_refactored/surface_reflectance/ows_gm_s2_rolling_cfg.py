@@ -3,7 +3,7 @@ from ows_refactored.surface_reflectance.band_sr_cfg import bands_s2_gm
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_s2_rolling_list
 
 layer = {
-    "title": "Rolling GeoMAD (Sentinel-2)",
+    "title": "Rolling Monthly GeoMAD (Sentinel-2)",
     "name": "gm_s2_rolling",
     "abstract": """
 Individual remote sensing images can be affected by noisy data, such as clouds, cloud shadows, and haze. To produce cleaner images that can be compared more easily across time, we can create 'summary' images or 'composites' that combine multiple images into one image to reveal the median or 'typical' appearance of the landscape for a certain time period.
