@@ -40,6 +40,7 @@ ls9_st,https://raw.githubusercontent.com/digitalearthafrica/config/master/produc
 pc_s2_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/pc_s2_annual.odc-product.yaml
 s1_rtc,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s1_rtc.odc-product.yaml
 s2_l2a,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s2_l2a.odc-product.yaml
+s3_ol_2_wfr_nrt, https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s3_ol_2_wfr_nrt.odc-product.yaml
 wofs_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls.odc-product.yaml
 wofs_ls_summary_alltime,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls_summary_alltime.odc-product.yaml
 wofs_ls_summary_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls_summary_annual.odc-product.yaml
@@ -48,7 +49,8 @@ fc_ls_summary_annual,https://raw.githubusercontent.com/digitalearthafrica/config
 rainfall_chirps_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/rainfall_chirps_monthly.odc-product.yaml
 rainfall_chirps_daily,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/rainfall_chirps_daily.odc-product.yaml
 gmw,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/gmw.odc-product.yaml
-esa_worldcover,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/esa_worldcover.odc-product.yaml
+esa_worldcover_2020,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/esa_worldcover_2020.odc-product.yaml
+esa_worldcover_2021,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/esa_worldcover_2021.odc-product.yaml
 cgls_landcover,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_landcover.odc-product.yaml
 cci_landcover,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cci_landcover.odc-product.yaml
 wsf_2015,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wsf_2015.odc-product.yaml

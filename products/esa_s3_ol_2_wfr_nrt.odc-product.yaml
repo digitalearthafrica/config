@@ -1,0 +1,191 @@
+---
+name: s3_ol_2_wfr_nrt
+description: Sentinel-3 Level 2 Water Full Resolution (WFR) products in Near Real Time (NRT)
+metadata_type: eo3
+
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: s3_ol_2_wfr_nrt
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.003
+    latitude: -0.003
+
+measurements:
+  - name: "A865"
+    aliases: [A865]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+
+  - name: "A865_err"
+    aliases: [A865_err]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+
+  - name: "CHL_NN"
+    aliases: [CHL_NN]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+
+  - name: "CHL_NN_err"
+    aliases: [CHL_NN_err]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+    
+  - name: "CHL_OC4ME"
+    aliases: [CHL_OC4ME]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+
+  - name: "CHL_OC4ME_err"
+    aliases: [CHL_OC4ME_err]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+    
+  - name: "IWV"
+    aliases: [IWV]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+
+  - name: "IWV_err"
+    aliases: [IWV_err]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+    
+  - name: "Oa01_reflectance"
+    aliases: [Oa01_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+
+  - name: "Oa02_reflectance"
+    aliases: [Oa02_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "Oa03_reflectance"
+    aliases: [Oa03_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+
+  - name: "Oa04_reflectance"
+    aliases: [Oa04_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "Oa05_reflectance"
+    aliases: [Oa05_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+
+  - name: "Oa06_reflectance"
+    aliases: [Oa06_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "Oa07_reflectance"
+    aliases: [Oa07_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "Oa08_reflectance"
+    aliases: [Oa08_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+
+  - name: "Oa09_reflectance"
+    aliases: [Oa09_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "Oa10_reflectance"
+    aliases: [Oa10_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "Oa11_reflectance"
+    aliases: [Oa11_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+
+  - name: "Oa12_reflectance"
+    aliases: [Oa12_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "Oa16_reflectance"
+    aliases: [Oa16_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "Oa17_reflectance"
+    aliases: [Oa17_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+
+  - name: "Oa18_reflectance"
+    aliases: [Oa18_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+     
+  - name: "Oa21_reflectance"
+    aliases: [Oa21_reflectance]
+    units: "1"
+    dtype: uint16
+    nodata: 65535
+    
+  - name: "PAR"
+    aliases: [PAR]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+
+  - name: "PAR_err"
+    aliases: [PAR_err]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+     
+  - name: "T865"
+    aliases: [T865]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+    
+  - name: "T865_err"
+    aliases: [T865_err]
+    units: "1"
+    dtype: uint8
+    nodata: 255
+
+  - name: "wqsf"
+    aliases: [wqsf]
+    units: "1"
+    dtype: float32
+    nodata: 0
