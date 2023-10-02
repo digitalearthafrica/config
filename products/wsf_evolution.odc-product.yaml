@@ -25,5 +25,5 @@ measurements:
   - name: "idc_score"
     aliases: [idc, idcscore, idcs]
     dtype: uint8
-    nodata: .nan
+    nodata: 0
     units: "1"
