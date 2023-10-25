@@ -1,0 +1,17 @@
+{
+    "layer": {
+        "name": "waterbodies_continental_v0_2_0",
+        "type": "VECTOR",
+        "defaultStyle": {
+            "name": "polygon"
+        },
+        "resource": {
+            "@class": "featureType",
+            "name": "waterbodies1:waterbodies_continental_v0_2_0"
+        },
+        "attribution": {
+            "logoWidth": 0,
+            "logoHeight": 0
+        }
+    }
+}
