@@ -5,7 +5,7 @@
         "type": "Shapefile",
         "enabled": true,
         "workspace": {
-            "name": "waterbodies1"
+            "name": "waterbodies"
         },
         "connectionParameters": {
             "entry": [
@@ -35,7 +35,7 @@
                 },
                 {
                     "@key": "namespace",
-                    "$": "http://waterbodies1"
+                    "$": "http://waterbodies"
                 },
                 {
                     "@key": "cache and reuse memory maps",
@@ -47,7 +47,7 @@
                 },
                 {
                     "@key": "url",
-                    "$": "file:waterbodies_v0.1.0/continentalwaterbodiesv0_0_1.shp"
+                    "$": "file:waterbodies_v0.2.0/continentalwaterbodiesv0_2_0.shp"
                 },
                 {
                     "@key": "fstype",

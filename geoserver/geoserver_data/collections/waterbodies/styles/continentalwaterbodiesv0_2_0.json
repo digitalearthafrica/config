@@ -1,0 +1,13 @@
+{
+    "style": {
+        "name": "continentalwaterbodiesv0_2_0",
+        "workspace": {
+            "name": "waterbodies"
+        },
+        "format": "sld",
+        "languageVersion": {
+            "version": "1.1.0"
+        },
+        "filename": "continentalwaterbodiesv0_2_0.sld"
+    }
+}

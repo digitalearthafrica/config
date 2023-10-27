@@ -1,13 +1,14 @@
 {
     "layer": {
-        "name": "waterbodies_continental_v0_2_0",
+        "name": "continentalwaterbodiesv0_2_0",
         "type": "VECTOR",
         "defaultStyle": {
-            "name": "polygon"
+            "name": "waterbodies:continentalwaterbodiesv0_2_0",
+            "workspace": "waterbodies"
         },
         "resource": {
             "@class": "featureType",
-            "name": "waterbodies1:waterbodies_continental_v0_2_0"
+            "name": "waterbodies:continentalwaterbodiesv0_2_0"
         },
         "attribution": {
             "logoWidth": 0,
