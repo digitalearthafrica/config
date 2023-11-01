@@ -1,6 +1,6 @@
 {
     "style": {
-        "name": "continentalwaterbodiesv0_2_0",
+        "name": "waterbodies_v0_0_1",
         "workspace": {
             "name": "waterbodies"
         },
@@ -8,6 +8,6 @@
         "languageVersion": {
             "version": "1.1.0"
         },
-        "filename": "continentalwaterbodiesv0_2_0.sld"
+        "filename": "waterbodies_v0_0_1.sld"
     }
 }
