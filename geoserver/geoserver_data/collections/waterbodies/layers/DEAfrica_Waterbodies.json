@@ -8,7 +8,7 @@
         },
         "resource": {
             "@class": "featureType",
-            "name": "waterbodies:waterbodies_v0_0_1"
+            "name": "waterbodies:DEAfrica_Waterbodies"
         },
         "attribution": {
             "logoWidth": 0,
