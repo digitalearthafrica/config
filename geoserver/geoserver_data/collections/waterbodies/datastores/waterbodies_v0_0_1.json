@@ -47,7 +47,7 @@
                 },
                 {
                     "@key": "url",
-                    "$": "file:waterbodies_v0.2.0/continentalwaterbodiesv0_2_0.shp"
+                    "$": "file:waterbodies_v0.0.1/waterbodies.shp"
                 },
                 {
                     "@key": "fstype",
