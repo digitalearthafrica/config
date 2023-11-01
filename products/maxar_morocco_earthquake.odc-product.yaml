@@ -1,0 +1,33 @@
+---
+name: maxar_morocco_earthquake
+description: Maxar data related to the Morocco Earthquake
+  event in September 2023.
+metadata_type: eo3
+
+license: CC-BY-NC-4.0
+
+metadata:
+  product:
+    name: maxar_morocco_earthquake
+
+storage:
+  crs: EPSG:32629
+  resolution:
+    x: 0.47
+    y: -0.47
+
+measurements:
+  - name: ms_analytic
+    dtype: uint16
+    nodata: 0
+    units: "1"
+
+  - name: pan_analytic
+    dtype: uint16
+    nodata: 0
+    units: "1"
+
+  - name: visual
+    dtype: uint8
+    nodata: 0
+    units: "1"

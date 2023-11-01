@@ -21,3 +21,9 @@ measurements:
     dtype: int32
     nodata: 0
     units: "1"
+
+  - name: "idc_score"
+    aliases: [idc, idcscore, idcs]
+    dtype: uint8
+    nodata: 0
+    units: "1"
