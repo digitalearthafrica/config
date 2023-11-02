@@ -1,0 +1,60 @@
+{
+    "dataStore": {
+        "name": "waterbodies_v0_0_1",
+        "description": "waterbodies_v0_0_1",
+        "type": "Shapefile",
+        "enabled": true,
+        "workspace": {
+            "name": "waterbodies"
+        },
+        "connectionParameters": {
+            "entry": [
+                {
+                    "@key": "charset",
+                    "$": "ISO-8859-1"
+                },
+                {
+                    "@key": "filetype",
+                    "$": "shapefile"
+                },
+                {
+                    "@key": "create spatial index",
+                    "$": "true"
+                },
+                {
+                    "@key": "memory mapped buffer",
+                    "$": "false"
+                },
+                {
+                    "@key": "timezone",
+                    "$": "GMT"
+                },
+                {
+                    "@key": "enable spatial index",
+                    "$": "true"
+                },
+                {
+                    "@key": "namespace",
+                    "$": "http://waterbodies"
+                },
+                {
+                    "@key": "cache and reuse memory maps",
+                    "$": "true"
+                },
+                {
+                    "@key": "skipScan",
+                    "$": "true"
+                },
+                {
+                    "@key": "url",
+                    "$": "file:waterbodies_v0.0.1/waterbodies.shp"
+                },
+                {
+                    "@key": "fstype",
+                    "$": "shape"
+                }
+            ]
+        },
+        "_default": false
+    }
+}

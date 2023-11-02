@@ -37,8 +37,8 @@ function usage() {
   echo "  layergroups   GeoServer grouping of layers"
   echo "  logging       Logging settings"
   echo "  services      CSW,WMTS,WCS,WFS,WMS,WPS service settings, get and update"
-  echo "  settings      Global server settings, get and update"  
-  echo "  sld           Style layer descriptor, update"  
+  echo "  settings      Global server settings, get and update"
+  echo "  sld           Style layer descriptor, update"
   echo "  styles        Style, create and get"
   echo "  workspaces    Workspace create, get and update"
   echo
@@ -134,7 +134,7 @@ function create_object() {
         clean_exit 11 "Data store json file not found: ${data_file}"
       fi
       datastore_workspace=$(get_datastore_workspace ${object_name})
-      uri="/workspaces/${datastore_workspace}/datastores"      
+      uri="/workspaces/${datastore_workspace}/datastores"
       ;;
     featuretypes)
       data_file="${collection_dir}/featuretypes/${object_name}.json"
@@ -142,10 +142,10 @@ function create_object() {
         clean_exit 12 "featuretype json file not found: ${data_file}"
       fi
       featuretype_workspace=$(get_featuretype_workspace ${object_name})
-      featuretype_datastore=$(get_featuretype_datastore ${object_name})      
-      uri="/workspaces/${featuretype_workspace}/datastores/${featuretype_datastore}/featuretypes"      
+      featuretype_datastore=$(get_featuretype_datastore ${object_name})
+      uri="/workspaces/${featuretype_workspace}/datastores/${featuretype_datastore}/featuretypes"
       ;;
-    layers)      
+    layers)
       data_file="${collection_dir}/layers/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 13 "layer json file not found: ${data_file}"
@@ -153,7 +153,7 @@ function create_object() {
       layer_workspace=$(get_layer_workspace ${object_name})
       uri="/workspaces/${layer_workspace}/layers/${object_name}.json"
       ;;
-    layergroups)      
+    layergroups)
       data_file="${collection_dir}/layergroups/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 14 "layergroup json file not found: ${data_file}"
@@ -180,7 +180,7 @@ function create_object() {
       clean_exit 2 "Invalid object: '${object_type}'."
       ;;
   esac
-  
+
   ${curl_bin} ${curl_verbose} ${curl_flags} -u ${username}:${password} -H "${content_type_header} ${content_type}" -d @"${data_file}" -XPOST ${resturl}${uri} -w '\n%{http_code}\n' > ${tmp_file} 2>&1
   ret_val=$?
 
@@ -195,7 +195,7 @@ function create_object() {
     clean_exit 3
   fi
 
-  echo "Create successful."  
+  echo "Create successful."
 
 }
 
@@ -269,7 +269,7 @@ function get_object() {
     settings)
       uri="/settings"
       ;;
-    styles)      
+    styles)
       if ! [ -z "${workspace}" ] ; then
         uri="/workspaces/${workspace}/styles"
       else
@@ -289,8 +289,8 @@ function get_object() {
     *)
       usage
       clean_exit 2 "Invalid object: '${object_type}'."
-  esac    
-  
+  esac
+
   ${curl_bin} ${curl_verbose} ${curl_flags} -u ${username}:${password} -XGET ${resturl}${uri} > ${tmp_file} 2>&1
   cat ${tmp_file} | jq > /dev/null 2>&1
   if [ $? -eq 0 ] ; then
@@ -298,7 +298,7 @@ function get_object() {
   else
     cat ${tmp_file}
   fi
-  
+
 }
 
 #---------------------------------------------
@@ -307,8 +307,8 @@ function get_object() {
 function update_object() {
 
   object_type=`echo "${1}" | awk '{print $1}'`
-  object_name=`echo "${1}" | awk '{print $2}'`  
-  
+  object_name=`echo "${1}" | awk '{print $2}'`
+
   content_type="application/json"
 
   case "${object_type}" in
@@ -319,7 +319,7 @@ function update_object() {
     datastores)
       if [ -z "${object_name}" ] ; then
         usage
-        clean_exit 30 "No datastore provided."        
+        clean_exit 30 "No datastore provided."
       fi
       data_file="${collection_dir}/datastores/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
@@ -338,8 +338,8 @@ function update_object() {
         clean_exit 33 "Featuretype json file not found: ${data_file}"
       fi
       featuretype_workspace=$(get_featuretype_workspace ${object_name})
-      featuretype_datastore=$(get_featuretype_datastore ${object_name})      
-      uri="/workspaces/${featuretype_workspace}/datastores/${featuretype_datastore}/featuretypes/${object_name}.json"      
+      featuretype_datastore=$(get_featuretype_datastore ${object_name})
+      uri="/workspaces/${featuretype_workspace}/datastores/${featuretype_datastore}/featuretypes/${object_name}.json"
       ;;
     geowebcache)
       uri="/resource/gwc/geowebcache.xml"
@@ -371,7 +371,7 @@ function update_object() {
         clean_exit 37 "layergroup json file not found: ${data_file}"
       fi
       layergroup_workspace=$(get_layergroup_workspace ${object_name})
-      uri="/workspaces/${layergroup_workspace}/layergroups/${object_name}.json"      
+      uri="/workspaces/${layergroup_workspace}/layergroups/${object_name}.json"
       ;;
     logging)
       uri="/logging"
@@ -381,12 +381,12 @@ function update_object() {
       if [ -z "${object_name}" ] ; then
         usage
         clean_exit 38 "No service provided."
-      fi      
+      fi
       data_file="${data_dir}/global/${geoserver_env}/services/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 39 "Service json file not found: ${data_file}"
       fi
-      uri="/services/${object_name}/settings"      
+      uri="/services/${object_name}/settings"
       ;;
     settings)
       uri="/settings"
@@ -398,12 +398,18 @@ function update_object() {
         clean_exit 40 "No sld name provided."
       fi
       data_file="${collection_dir}/styles/${object_name}.sld"
-      content_type="application/vnd.ogc.sld+xml"
+
+      if (grep version=\"1\.1\.0\" ${data_file} > /dev/null 2>&1) ; then
+        content_type="application/vnd.ogc.se+xml"
+      else
+        content_type="application/vnd.ogc.sld+xml"
+      fi
+
       if ! [ -f ${data_file} ] ; then
         clean_exit 41 "Style sld file not found: ${data_file}"
       fi
       style_workspace=$(get_style_workspace ${object_name})
-      uri="/workspaces/${style_workspace}/styles/${object_name}.sld"      
+      uri="/workspaces/${style_workspace}/styles/${object_name}.sld"
     ;;
     workspaces)
       if [ -z "${object_name}" ] ; then
@@ -414,13 +420,13 @@ function update_object() {
       if ! [ -f ${data_file} ] ; then
         clean_exit 43 "Workspace config file not found: ${data_file}"
       fi
-      uri="/workspaces/${object_name}.json"      
+      uri="/workspaces/${object_name}.json"
       ;;
     *)
       usage
       clean_exit 2 "Invalid object: '${object_type}'."
   esac
-  
+
   ${curl_bin} ${curl_verbose} ${curl_flags} -u ${username}:${password} -H "${content_type_header} ${content_type}" -d @"${data_file}" -XPUT ${resturl}${uri} -w '\n%{http_code}\n' > ${tmp_file} 2>&1
   ret_val=$?
 
@@ -435,7 +441,7 @@ function update_object() {
     clean_exit 3
   fi
 
-  echo "Update successful."  
+  echo "Update successful."
 
 }
 
@@ -471,10 +477,10 @@ fi
 while [[ $# -gt 0 ]]; do
   case $1 in
     -c|--collection)
-      collection="${2}"      
+      collection="${2}"
       shift
       shift
-      ;;  
+      ;;
     -d|--datadir)
       data_dir="${2}"
       if ! [ -d "${data_dir}" ] ; then
@@ -544,10 +550,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     -*|--*)
       usage
-      clean_exit 1 "Error: Unknown option $1"      
+      clean_exit 1 "Error: Unknown option $1"
       ;;
     *)
-      command="${1}"      
+      command="${1}"
       shift
       break
       ;;
