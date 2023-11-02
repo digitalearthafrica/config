@@ -1,11 +1,11 @@
 {
     "featureType": {
-        "name": "DEAfrica_Waterbodies_v0_0_1",
+        "name": "DEAfrica_Waterbodies",
         "nativeName": "waterbodies",
         "namespace": {
             "name": "waterbodies"
         },
-        "title": "DEAfrica Waterbodies v0.0.1",
+        "title": "DEAfrica Waterbodies",
         "keywords": {
             "string": [
                 "features",

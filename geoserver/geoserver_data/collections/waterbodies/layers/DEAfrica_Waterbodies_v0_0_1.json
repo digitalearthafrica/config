@@ -1,6 +1,6 @@
 {
     "layer": {
-        "name": "waterbodies_v0_0_1",
+        "name": "DEAfrica_Waterbodies_v0_0_1",
         "type": "VECTOR",
         "defaultStyle": {
             "name": "waterbodies:waterbodies_v0_0_1",
