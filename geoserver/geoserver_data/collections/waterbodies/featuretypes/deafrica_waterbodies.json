@@ -43,7 +43,7 @@
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
         "maxFeatures": 10000,
-        "numDecimals": 2,
+        "numDecimals": 7,
         "padWithZeros": false,
         "forcedDecimal": true,
         "overridingServiceSRS": false,
