@@ -61,17 +61,23 @@
           "name": "Surface water",
           "members": [
             {
-              "type": "wms",
+              "type": "group",
               "name": "DE Africa Waterbodies",
-              "id": "deafrica_waterbodies",
-              "url": "https://geoserver.dev.digitalearth.africa/geoserver/wms",
-              "layers": "waterbodies:waterbodies_v0_0_1",
-              "featureInfoTemplate": {
-                "template": "<div style='width:600px'> <h3>Waterbody Identifier: {{UID}}<br /> Percentage of surface area (not volume) observed as wet</h3><br /> <chart id='{{UID}}' title='Waterbody {{UID}}' chart-type='lineAndPoint' preview-x-label='Date' sources='{{#terria.urlEncode}}{{timeseries}}{{/terria.urlEncode}}' column-units='Date of satellite observation,%,#'> </chart>{{>disclaimer}}</div>",
-                "partials": {
-                  "disclaimer": "This is a beta product, released for evaluation by all users. The DE Africa team is working actively to validate and improve this product. This graph shows the wet surface area of waterbodies as estimated from satellites. It does not show depth, volume, purpose of the waterbody, nor the source of the water."
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Waterbodies Historical Extent",
+                  "id": "deafrica_waterbodies",
+                  "url": "https://geoserver.digitalearth.africa/geoserver/wms",
+                  "layers": "waterbodies:DEAfrica_Waterbodies",
+                  "featureInfoTemplate": {
+                    "template": "<div style='width:600px'> <h3>Waterbody Identifier: {{UID}}<br /> Percentage of surface area (not volume) observed as wet</h3><br /> <chart id='{{UID}}' title='Waterbody {{UID}}' chart-type='lineAndPoint' preview-x-label='Date' sources='{{#terria.urlEncode}}{{timeseries}}{{/terria.urlEncode}}' column-units='Date of satellite observation,%,#'> </chart>{{>disclaimer}}</div>",
+                    "partials": {
+                      "disclaimer": "This is a beta product, released for evaluation by all users. The DE Africa team is working actively to validate and improve this product. This graph shows the wet surface area of waterbodies as estimated from satellites. It does not show depth, volume, purpose of the waterbody, nor the source of the water."
+                    }
+                  }
                 }
-              }
+              ]
             }
           ]
         }
