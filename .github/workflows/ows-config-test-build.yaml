@@ -74,7 +74,7 @@ jobs:
           datacube-ows-cfg check -i /env/config/inventory/prod_af/inventory.json
 
     - name: Remove the DB
-      run: |    
+      run: |
         docker-compose -f docker-compose.ows.yaml down
 
   upload-translation:
@@ -98,6 +98,7 @@ jobs:
       - name: Prepare the DB
         run: |
           docker-compose -f docker-compose.ows.yaml up -d
+          sleep 5
           docker-compose -f docker-compose.ows.yaml exec -T ows datacube system init
           docker-compose -f docker-compose.ows.yaml exec -T ows datacube-ows-update --schema --role postgres
 
