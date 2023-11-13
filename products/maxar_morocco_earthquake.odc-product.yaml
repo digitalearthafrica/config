@@ -17,17 +17,73 @@ storage:
     y: -0.47
 
 measurements:
-  - name: ms_analytic
+  - name: ms_analytic_band_C
     dtype: uint16
     nodata: 0
     units: "1"
+    aliases: [ms_analytic_coastal]
+
+  - name: ms_analytic_band_B
+    dtype: uint16
+    nodata: 0
+    units: "1"
+    aliases: [ms_analytic_blue]
+
+  - name: ms_analytic_band_G
+    dtype: uint16
+    nodata: 0
+    units: "1"
+    aliases: [ms_analytic_green]
+
+  - name: ms_analytic_band_Y
+    dtype: uint16
+    nodata: 0
+    units: "1"
+    aliases: [ms_analytic_yellow]
+
+  - name: ms_analytic_band_R
+    dtype: uint16
+    nodata: 0
+    units: "1"
+    aliases: [ms_analytic_red]
+
+  - name: ms_analytic_band_RE
+    dtype: uint16
+    nodata: 0
+    units: "1"
+    aliases: [ms_analytic_rededge]
+
+  - name: ms_analytic_band_N
+    dtype: uint16
+    nodata: 0
+    units: "1"
+    aliases: [ms_analytic_nir08]
+
+  - name: ms_analytic_band_N2
+    dtype: uint16
+    nodata: 0
+    units: "1"
+    aliases: [ms_analytic_nir09]
 
   - name: pan_analytic
     dtype: uint16
     nodata: 0
     units: "1"
 
-  - name: visual
+  - name: visual_band_R
     dtype: uint8
     nodata: 0
     units: "1"
+    aliases: [visual_red]
+
+  - name: visual_band_G
+    dtype: uint8
+    nodata: 0
+    units: "1"
+    aliases: [visual_green]
+
+  - name: visual_band_B
+    dtype: uint8
+    nodata: 0
+    units: "1"
+    aliases: [visual_blue]
