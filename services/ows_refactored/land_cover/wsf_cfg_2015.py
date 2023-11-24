@@ -1,12 +1,12 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 
 
-wsf_2015 = {
+style_wsf_2015 = {
     "name": "wsf_2015",
     "title": "World Settlement Footprint",
-    "abstract": "World Settlement Footprint 2015 colour",
+    "abstract": "World Settlement Footprint 2015",
     "value_map": {
-        "wsf_2015": [
+        "wsf2015": [
             {
                 "title": "World Settlement Footprint 2015",
                 "color": "#D3D3D3",
@@ -38,10 +38,10 @@ For more information, see https://austriaca.at/?arp=0x003c9b4c.
     "native_crs": "EPSG:4326",
     "native_resolution": [
         8.983152841195215e-05,
-        -8.983152841195215e-05
+        -8.983152841195215e-05,
     ],
     "styling": {
-        "default_style": "wsf_2015",
-        "styles": [wsf_2015],
+        "default_style": "style_wsf_2015",
+        "styles": [style_wsf_2015],
     },
 }
