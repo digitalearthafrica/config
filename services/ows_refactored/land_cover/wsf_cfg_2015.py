@@ -2,9 +2,9 @@ from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 
 
 style_colours = {
-    "name": "wsf_2015",
+    "name": "style_colours",
     "title": "World Settlement Footprint",
-    "abstract": "World Settlement Footprint 2015",
+    "abstract": "World Settlement Footprint 2015 colour",
     "value_map": {
         "wsf_2015": [
             {
