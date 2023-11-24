@@ -27,7 +27,7 @@ For more information, see https://austriaca.at/?arp=0x003c9b4c.
     "product_name": "wsf_2015",
     "time_resolution": "summary",
     "bands": {
-        "data": [],
+        "wsf2015": [],
     },
     "resource_limits": reslim_land_cover,
     "image_processing": {
