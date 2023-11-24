@@ -2,7 +2,7 @@ from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 
 
 style_wsf_2015 = {
-    "name": "wsf_2015",
+    "name": "wsf2015",
     "title": "World Settlement Footprint",
     "abstract": "World Settlement Footprint 2015",
     "value_map": {
