@@ -4,14 +4,6 @@ style_wsf_2015 = {
     "name": "wsf2015",
     "title": "World Settlement Footprint 2015",
     "abstract": "World Settlement Footprint 2015",
-    "needed_bands": ["wsf2015"],
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "wsf2015",
-        },
-    },
     "value_map": {
         "wsf2015": [
             {
@@ -46,7 +38,7 @@ For more information, see https://austriaca.at/?arp=0x003c9b4c.
     "native_crs": "EPSG:4326",
     "native_resolution": [8.983152841195215e-05, -8.983152841195215e-05],
     "styling": {
-        "default_style": "style_wsf_2015",
+        "default_style": "wsf2015",
         "styles": [style_wsf_2015],
     },
 }
