@@ -10,7 +10,7 @@ style_wsf_2015 = {
             {
                 "title": "World Settlement Footprint 2015",
                 "color": "#D3D3D3",
-                "values": [255],
+                "values": [1],
             }
         ]
     }
