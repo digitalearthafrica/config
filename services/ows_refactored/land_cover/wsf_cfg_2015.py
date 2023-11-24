@@ -4,6 +4,14 @@ style_wsf_2015 = {
     "name": "wsf2015",
     "title": "World Settlement Footprint 2015",
     "abstract": "World Settlement Footprint 2015",
+    "needed_bands": ["wsf2015"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "wsf2015",
+        },
+    },
     "value_map": {
         "wsf2015": [
             {
