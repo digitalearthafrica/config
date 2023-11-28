@@ -3,11 +3,11 @@ from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 style_wsf_2019 = {
     "name": "wsf_2019",
     "title": "World Settlement Footprint 2015",
-    "abstract": "World Settlement Footprint 2015",
+    "abstract": "World Settlement Footprint 2019",
     "value_map": {
         "wsf2019": [
             {
-                "title": "World Settlement Footprint 2015",
+                "title": "World Settlement Footprint 2019",
                 "color": "#D3D3D3",
                 "values": [255],
             }
