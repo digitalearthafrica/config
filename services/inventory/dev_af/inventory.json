@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 38,
+  "total_layers_count": 39,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -618,6 +618,16 @@
           "styles_count": 1,
           "styles_list": [
               "wsf_2015"
+          ]
+      },
+      {
+          "layer": "wsf_2019",
+          "product": [
+              "wsf_2019"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "wsf_2019"
           ]
       },
       {
