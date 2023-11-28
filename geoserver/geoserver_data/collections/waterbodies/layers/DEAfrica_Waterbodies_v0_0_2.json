@@ -1,0 +1,18 @@
+{
+    "layer": {
+        "name": "DEAfrica_Waterbodies_v0_0_2",
+        "type": "VECTOR",
+        "defaultStyle": {
+            "name": "waterbodies:waterbodies_v0_0_1",
+            "workspace": "waterbodies"
+        },
+        "resource": {
+            "@class": "featureType",
+            "name": "waterbodies:waterbodies_v0_0_2"
+        },
+        "attribution": {
+            "logoWidth": 0,
+            "logoHeight": 0
+        }
+    }
+}
