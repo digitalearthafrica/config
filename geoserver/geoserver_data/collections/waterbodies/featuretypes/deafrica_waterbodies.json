@@ -38,7 +38,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "waterbodies:waterbodies_v0_0_1"
+            "name": "waterbodies:waterbodies_v0_0_2"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
@@ -60,6 +60,14 @@
                 },
                 {
                     "name": "area_m2",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
+                    "name": "length_m",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
