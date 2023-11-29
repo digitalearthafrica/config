@@ -76,49 +76,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "group",
-      "name": "Land cover",
-      "members": [
-        {
-          "id": "wsf_2015",
-          "type": "wms",
-          "name": "World Settlement Footprint 2015",
-          "url": "https://ows.digitalearth.africa/",
-          "opacity": 1,
-          "layers": "wsf_2015",
-          "linkedWcsUrl": "https://ows.digitalearth.africa/",
-          "linkedWcsCoverage": "wsf_2015",
-          "tileErrorHandlingOptions": {
-            "ignoreUnknownTileErrors": true,
-            "thresholdBeforeDisablingItem": 100000
-          },
-          "shareKeys": [
-            "Root Group/LandCover/World Settlement Footprint 2015"
-          ]
-        },
-        {
-          "id": "wsf_2019",
-          "type": "wms",
-          "name": "World Settlement Footprint 2019",
-          "url": "https://ows.digitalearth.africa/",
-          "opacity": 1,
-          "layers": "wsf_2019",
-          "linkedWcsUrl": "https://ows.digitalearth.africa/",
-          "linkedWcsCoverage": "wsf_2019",
-          "tileErrorHandlingOptions": {
-            "ignoreUnknownTileErrors": true,
-            "thresholdBeforeDisablingItem": 100000
-          },
-          "shareKeys": [
-            "Root Group/LandCover/World Settlement Footprint 2019"
-          ]
-        }
-      ],
-      "shareKeys": [
-        "Root Group/LandCover"
-      ]
     }
   ],
   "corsDomains": [

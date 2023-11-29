@@ -9,7 +9,7 @@ style_wsf_2019 = {
             {
                 "title": "World Settlement Footprint 2019",
                 "color": "#D3D3D3",
-                "values": [1],
+                "values": [255],
             }
         ]
     }
@@ -36,7 +36,7 @@ For more information, see https://austriaca.at/?arp=0x003c9b4c.
         "manual_merge": False,
     },
     "native_crs": "EPSG:4326",
-    "native_resolution": [10, -10],
+    "native_resolution": [8.983152841195215e-05, -8.983152841195215e-05],
     "styling": {
         "default_style": "wsf_2019",
         "styles": [style_wsf_2019],
