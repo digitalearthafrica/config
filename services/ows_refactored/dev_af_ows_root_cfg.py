@@ -397,6 +397,10 @@ ows_cfg = {
                             "include": "ows_refactored.land_cover.ows_wsf_cfg_2019.layer",
                             "type": "python",
                         },
+                        {
+                            "include": "ows_refactored.land_cover.ows_wsf_evolution_cfg.layer",
+                            "type": "python",
+                        },
                     ],
                 },
                 {
