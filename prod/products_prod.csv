@@ -44,7 +44,8 @@ ls8_sr,https://raw.githubusercontent.com/digitalearthafrica/config/master/produc
 ls8_st,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/ls8_st.odc-product.yaml
 ls9_sr,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/ls9_sr.odc-product.yaml
 ls9_st,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/ls9_st.odc-product.yaml
-maxar_morocco_earthquake,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/maxar_morocco_earthquake.odc-product.yaml
+maxar_morocco_earthquake_4bands,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/maxar_morocco_earthquake_4bands.odc-product.yaml
+maxar_morocco_earthquake_8bands,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/maxar_morocco_earthquake_8bands.odc-product.yaml
 pc_s2_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/pc_s2_annual.odc-product.yaml
 s1_rtc,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s1_rtc.odc-product.yaml
 s2_l2a,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s2_l2a.odc-product.yaml
