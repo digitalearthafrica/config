@@ -374,12 +374,18 @@ ows_cfg = {
                     "abstract": """Land Cover""",
                     "layers": [
                         {
-                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
-                            "type": "python",
+                            "title": "ESA Worldcover",
+                            "abstract": """ESA worldcover""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                         {
                             "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
@@ -390,16 +396,22 @@ ows_cfg = {
                             "type": "python",
                         },
                         {
-                            "include": "ows_refactored.land_cover.ows_wsf_cfg_2015.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_wsf_cfg_2019.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_wsf_evolution_cfg.layer",
-                            "type": "python",
+                            "title": "World Settlement Footprint",
+                            "abstract": """World Settlement Footprint and Evolution""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.land_cover.ows_wsf_cfg_2015.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_wsf_cfg_2019.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_wsf_evolution_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                     ],
                 },

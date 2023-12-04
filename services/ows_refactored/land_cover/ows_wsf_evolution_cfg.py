@@ -32,7 +32,7 @@ style_wsf_evolution = {
 
 style_wsf_idc = {
     "name": "wsf_evolution_idc",
-    "title": "World Settlement Footprint Evolution IDC",
+    "title": "IDC Score",
     "abstract": "World Settlement Footprint Evolution IDC colours",
     "needed_bands": ["idc_score"],
     "index_function": {
