@@ -374,9 +374,13 @@ ows_cfg = {
                     "abstract": """Land Cover""",
                     "layers": [
                         {
-                            "title": "ESA Worldcover",
-                            "abstract": """ESA worldcover""",
+                            "title": "ESA datasets",
+                            "abstract": """ESA datasets""",
                             "layers": [
+                                {
+                                    "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
+                                    "type": "python",
+                                },
                                 {
                                     "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
                                     "type": "python",
@@ -386,14 +390,6 @@ ows_cfg = {
                                     "type": "python",
                                 },
                             ],
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
-                            "type": "python",
                         },
                         {
                             "title": "World Settlement Footprint",
@@ -412,6 +408,10 @@ ows_cfg = {
                                     "type": "python",
                                 },
                             ],
+                        },
+                        {
+                            "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
+                            "type": "python",
                         },
                     ],
                 },
