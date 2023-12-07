@@ -52,7 +52,7 @@ style_wsf_idc = {
         {"value": 6, "color": "#db57d3"},
     ],
     "legend": {
-        "title": "IDC _Score",
+        "title": "IDC Score",
         "begin": "1",
         "end": "6",
         "ticks_every": 1,
