@@ -374,8 +374,8 @@ ows_cfg = {
                     "abstract": """Land Cover""",
                     "layers": [
                         {
-                            "title": "ESA",
-                            "abstract": """ESA""",
+                            "title": "ESA datasets",
+                            "abstract": """ESA datasets""",
                             "layers": [
                                 {
                                     "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
