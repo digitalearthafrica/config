@@ -343,7 +343,7 @@ ows_cfg = {
                         {
                             "title": "ESA",
                             "abstract": """ESA""",
-                            "layers": [                                
+                            "layers": [
                                 {
                                     "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
                                     "type": "python",
