@@ -56,7 +56,7 @@ styles_maxar_list = [
     style_maxar_blue,
     style_maxar_green,
     style_maxar_red,
-    style_maxar_nir
+    style_maxar_nir,
 ]
 
 layer = {
