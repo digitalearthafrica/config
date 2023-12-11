@@ -15,7 +15,7 @@ style_maxar_simple_rgb = {
     "name": "simple_rgb",
     "title": "Maxar - Red, Green, Blue",
     "abstract": "Simple true-colour image, using the red, green and blue bands",
-    "components": {"red": {"visual_band_R": 1.0}, "green": {"visual_band_G": 1.0}, "blue": {"visual_band_R": 1.0}},
+    "components": {"red": {"visual_red": 1.0}, "green": {"visual_green": 1.0}, "blue": {"visual_blue": 1.0}},
     "scale_range": [0.0, 3000.0],
 }
 
@@ -23,7 +23,7 @@ style_maxar_blue = {
     "name": "blue",
     "title": "Blue",
     "abstract": "Blue band",
-    "components": {"red": {"ms_analytic_band_B": 1.0}, "green": {"ms_analytic_band_B": 1.0}, "blue": {"ms_analytic_band_B": 1.0}},
+    "components": {"red": {"blue": 1.0}, "green": {"blue": 1.0}, "blue": {"blue": 1.0}},
     "scale_range": [0.0, 3000.0],
 }
 
@@ -31,7 +31,7 @@ style_maxar_green = {
     "name": "green",
     "title": "Green",
     "abstract": "Green band",
-    "components": {"red": {"ms_analytic_band_G": 1.0}, "green": {"ms_analytic_band_G": 1.0}, "blue": {"ms_analytic_band_G": 1.0}},
+    "components": {"red": {"green": 1.0}, "green": {"green": 1.0}, "blue": {"green": 1.0}},
     "scale_range": [0.0, 3000.0],
 }
 
@@ -39,7 +39,7 @@ style_maxar_red = {
     "name": "red",
     "title": "Red",
     "abstract": "Red band",
-    "components": {"red": {"ms_analytic_band_R": 1.0}, "green": {"ms_analytic_band_R": 1.0}, "blue": {"ms_analytic_band_R": 1.0}},
+    "components": {"red": {"red": 1.0}, "green": {"red": 1.0}, "blue": {"red": 1.0}},
     "scale_range": [0.0, 3000.0],
 }
 
@@ -47,7 +47,7 @@ style_maxar_nir = {
     "name": "nir",
     "title": "NIR",
     "abstract": "NIR band",
-    "components": {"red": {"ms_analytic_band_N": 1.0}, "green": {"ms_analytic_band_N": 1.0}, "blue": {"ms_analytic_band_N": 1.0}},
+    "components": {"red": {"nir": 1.0}, "green": {"nir": 1.0}, "blue": {"nir": 1.0}},
     "scale_range": [0.0, 3000.0],
 }
 
