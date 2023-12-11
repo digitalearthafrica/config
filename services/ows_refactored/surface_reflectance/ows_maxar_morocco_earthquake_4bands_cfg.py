@@ -68,7 +68,6 @@ Maxar Open Data for the 2023 Morocco Earthquake that struck Morocco at 11:11 p.m
 
 """,
     "product_name": "maxar_morocco_earthquake_4bands",
-    
     "bands": bands_Maxar_4bands,
     "dynamic": False,
     "resource_limits": reslim_smart5,
