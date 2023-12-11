@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 40,
+  "total_layers_count": 41,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -281,6 +281,20 @@
               "log_edev",
               "log_bcdev",
               "count"
+          ]
+      },
+      {
+          "layer": "maxar_morocco_earthquake_4bands",
+          "product": [
+              "maxar_morocco_earthquake_4bands"
+          ],
+          "styles_count": 5,
+          "styles_list": [
+              "style_maxar_simple_rgb",
+              "style_maxar_blue",
+              "style_maxar_green",
+              "style_maxar_red",
+              "style_maxar_nir"
           ]
       },
       {
