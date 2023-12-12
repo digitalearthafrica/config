@@ -178,6 +178,16 @@ ows_cfg = {
                                             "type": "python",
                                         },
                                     ],
+                                },
+                                {
+                                    "title": "Maxar - Morocco Earthquake",
+                                    "abstract": """Maxar data related to the Morocco Earthquake event in September 2023, collected by GeoEye-1 and WorldView-4 satellites""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_maxar_morocco_earthquake_4bands_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
                                 }
                             ],
                         },
