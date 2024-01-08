@@ -47,7 +47,7 @@
                 },
                 {
                     "@key": "url",
-                    "$": "file:coastlines_v0.4.0/coastlines_v0.4.0_hotspots_zoom_1.shp"
+                    "$": "file:coastlines_v0.4.1/coastlines_v0.4.1_hotspots_zoom_1.shp"
                 },
                 {
                     "@key": "fstype",
