@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld"
-    xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" version="1.0.0">
+<sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" version="1.0.0">
     <sld:NamedLayer>
         <sld:Name>coastlines_v0.4.1 — shorelines_annual</sld:Name>
         <sld:UserStyle>
@@ -75,9 +74,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">
-                                <div id="130a32"></div>
-                            </sld:CssParameter>
+                            <sld:CssParameter name="stroke">#130a32</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
