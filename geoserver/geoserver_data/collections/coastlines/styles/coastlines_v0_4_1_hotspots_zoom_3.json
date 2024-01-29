@@ -1,0 +1,13 @@
+{
+  "style": {
+      "name": "coastlines_v0_4_1_hotspots_zoom_3",
+      "workspace": {
+          "name": "coastlines"
+      },
+      "format": "sld",
+      "languageVersion": {
+          "version": "1.1.0"
+      },
+      "filename": "coastlines_v0_4_1_hotspots_zoom_3.sld"
+  }
+}
