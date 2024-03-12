@@ -1,0 +1,60 @@
+{
+    "dataStore": {
+        "name": "coastlines_v0_4_1_hotspots_zoom_3",
+        "description": "coastlines_v0.4.2_hotspots_zoom_3",
+        "type": "Shapefile",
+        "enabled": true,
+        "workspace": {
+            "name": "coastlines"
+        },        
+        "connectionParameters": {
+            "entry": [
+                {
+                    "@key": "charset",
+                    "$": "ISO-8859-1"
+                },
+                {
+                    "@key": "filetype",
+                    "$": "shapefile"
+                },
+                {
+                    "@key": "create spatial index",
+                    "$": "true"
+                },
+                {
+                    "@key": "memory mapped buffer",
+                    "$": "false"
+                },
+                {
+                    "@key": "timezone",
+                    "$": "GMT"
+                },
+                {
+                    "@key": "enable spatial index",
+                    "$": "true"
+                },
+                {
+                    "@key": "namespace",
+                    "$": "http://coastlines"
+                },
+                {
+                    "@key": "cache and reuse memory maps",
+                    "$": "true"
+                },
+                {
+                    "@key": "skipScan",
+                    "$": "true"
+                },
+                {
+                    "@key": "url",
+                    "$": "file:coastlines_v0.4.2/coastlines_v0.4.2_hotspots_zoom_3.shp"
+                },
+                {
+                    "@key": "fstype",
+                    "$": "shape"
+                }
+            ]
+        },
+        "_default": false
+    }
+}
