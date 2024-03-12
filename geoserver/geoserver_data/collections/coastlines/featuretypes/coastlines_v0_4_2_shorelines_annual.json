@@ -1,7 +1,7 @@
 
     {
     "featureType": {
-        "name": "coastlines_v0_4_1_shorelines_annual",
+        "name": "coastlines_v0_4_2_shorelines_annual",
         "nativeName": "coastlines_v0.4.2_shorelines_annual",
         "namespace": {
             "name": "coastlines"
