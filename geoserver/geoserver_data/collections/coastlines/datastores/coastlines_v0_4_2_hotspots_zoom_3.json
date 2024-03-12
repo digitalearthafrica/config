@@ -1,6 +1,6 @@
 {
     "dataStore": {
-        "name": "coastlines_v0_4_1_hotspots_zoom_3",
+        "name": "coastlines_v0_4_2_hotspots_zoom_3",
         "description": "coastlines_v0.4.2_hotspots_zoom_3",
         "type": "Shapefile",
         "enabled": true,

@@ -1,6 +1,6 @@
 {
     "dataStore": {
-        "name": "coastlines_v0_4_1_rates_of_change",
+        "name": "coastlines_v0_4_2_rates_of_change",
         "description": "coastlines_v0.4.2_rates_of_change",
         "type": "Shapefile",
         "enabled": true,
