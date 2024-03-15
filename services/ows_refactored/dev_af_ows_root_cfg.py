@@ -178,6 +178,16 @@ ows_cfg = {
                                             "type": "python",
                                         },
                                     ],
+                                },
+                                {
+                                    "title": "Maxar - Morocco Earthquake",
+                                    "abstract": """Maxar data related to the Morocco Earthquake event in September 2023, collected by GeoEye-1 and WorldView-4 satellites""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_maxar_morocco_earthquake_4bands_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
                                 }
                             ],
                         },
@@ -374,27 +384,43 @@ ows_cfg = {
                     "abstract": """Land Cover""",
                     "layers": [
                         {
-                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
-                            "type": "python",
+                            "title": "ESA datasets",
+                            "abstract": """ESA datasets""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                         {
-                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
-                            "type": "python",
+                            "title": "World Settlement Footprint",
+                            "abstract": """World Settlement Footprint and Evolution""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.land_cover.ows_wsf_cfg_2015.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_wsf_cfg_2019.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_wsf_evolution_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
                         },
                         {
                             "include": "ows_refactored.land_cover.ows_io_lulc_cfg.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_wsf_cfg_2015.layer",
-                            "type": "python",
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_wsf_cfg_2019.layer",
                             "type": "python",
                         },
                     ],

@@ -1,14 +1,14 @@
 ---
-name: maxar_morocco_earthquake
+name: maxar_morocco_earthquake_4bands
 description: Maxar data related to the Morocco Earthquake
-  event in September 2023.
+  event in September 2023, collected by GeoEye-1 and WorldView-4 satellites
 metadata_type: eo3
 
 license: CC-BY-NC-4.0
 
 metadata:
   product:
-    name: maxar_morocco_earthquake
+    name: maxar_morocco_earthquake_4bands
 
 storage:
   crs: EPSG:32629
@@ -17,12 +17,6 @@ storage:
     y: -0.47
 
 measurements:
-  - name: ms_analytic_band_C
-    dtype: uint16
-    nodata: 0
-    units: "1"
-    aliases: [ms_analytic_coastal]
-
   - name: ms_analytic_band_B
     dtype: uint16
     nodata: 0
@@ -35,23 +29,11 @@ measurements:
     units: "1"
     aliases: [ms_analytic_green]
 
-  - name: ms_analytic_band_Y
-    dtype: uint16
-    nodata: 0
-    units: "1"
-    aliases: [ms_analytic_yellow]
-
   - name: ms_analytic_band_R
     dtype: uint16
     nodata: 0
     units: "1"
     aliases: [ms_analytic_red]
-
-  - name: ms_analytic_band_RE
-    dtype: uint16
-    nodata: 0
-    units: "1"
-    aliases: [ms_analytic_rededge]
 
   - name: ms_analytic_band_N
     dtype: uint16
@@ -59,16 +41,11 @@ measurements:
     units: "1"
     aliases: [ms_analytic_nir08]
 
-  - name: ms_analytic_band_N2
-    dtype: uint16
-    nodata: 0
-    units: "1"
-    aliases: [ms_analytic_nir09]
-
   - name: pan_analytic
     dtype: uint16
     nodata: 0
     units: "1"
+    aliases: [pan]
 
   - name: visual_band_R
     dtype: uint8

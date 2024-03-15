@@ -1,9 +1,8 @@
 {
     "layerGroup": {
-        "name": "DEAfrica_Coastlines",
+        "name": "DEAfrica_Coastlines_v0_4_1",
         "title": "DEAfrica Coastlines v0.4.1",
         "mode": "SINGLE",
-        "abstractTxt": "The Digital Earth Africa (DE Africa) Coastlines is a continental dataset that includes annual shorelines and rates of coastal change along the entire African coastline from 2000 to 2021.\r\n\r\nThe product combines satellite data from the Digital Earth Africa program with tidal modelling to map the typical location of the coastline at mean sea level for each year. The product enables trends of coastal erosion and growth to be examined annually at both a local and continental scale, and for patterns of coastal change to be mapped historically and updated regularly as data continues to be acquired. This allows current rates of coastal change to be compared with that observed in previous years or decades.\r\n\r\nThe ability to map shoreline positions for each year provides valuable insights into whether changes to the coastline are the result of particular events or actions, or a process of more gradual change over time. This information can enable scientists, managers and policy makers to assess impacts from the range of drivers impacting the coastlines and potentially assist planning and forecasting for future scenarios.\r\n\r\nMore information about the DE Africa Coastlines and data access can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Coastlines_specs.html)",
         "workspace": {
             "name": "coastlines"
         },
