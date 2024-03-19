@@ -58,11 +58,11 @@
         },
         {
           "type": "group",
-          "name": "Surface water",
+          "name": "Surface waterbodies",
           "members": [
             {
               "type": "wms",
-              "name": "Waterbodies Historical Extent",
+              "name": "Waterbodies Historical Extent and Surface Area Time Series",
               "id": "deafrica_waterbodies",
               "url": "https://geoserver.digitalearth.africa/geoserver/wms",
               "layers": "waterbodies:DEAfrica_Waterbodies",
