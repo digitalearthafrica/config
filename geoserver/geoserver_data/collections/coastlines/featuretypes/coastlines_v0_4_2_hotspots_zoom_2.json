@@ -38,7 +38,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0_4_1_hotspots_zoom_2"
+            "name": "coastlines:coastlines_v0_4_2_hotspots_zoom_2"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
