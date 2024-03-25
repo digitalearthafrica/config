@@ -251,6 +251,14 @@
                     "length": 24
                 },
                 {
+                    "name": "dist_2023",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
                     "name": "rate_time",
                     "minOccurs": 0,
                     "maxOccurs": 1,
