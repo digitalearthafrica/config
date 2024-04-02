@@ -1,0 +1,26 @@
+{
+    "layer": {
+        "name": "coastlines_v0_4_2_hotspots_zoom_2",
+        "type": "VECTOR",
+        "defaultStyle": {
+            "name": "point"
+        },
+        "styles": {
+            "@class": "linked-hash-set",
+            "style": [
+                {
+                    "name": "coastlines:coastlines_v0_4_2_hotspots_zoom_2",
+                    "workspace": "coastlines"
+                }
+            ]
+        },
+        "resource": {
+            "@class": "featureType",
+            "name": "coastlines:coastlines_v0_4_2_hotspots_zoom_2"
+        },
+        "attribution": {
+            "logoWidth": 0,
+            "logoHeight": 0
+        }
+    }
+}
