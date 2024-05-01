@@ -42,6 +42,7 @@ maxar_morocco_earthquake_8bands,https://raw.githubusercontent.com/digitalearthaf
 pc_s2_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/pc_s2_annual.odc-product.yaml
 s1_rtc,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s1_rtc.odc-product.yaml
 s2_l2a,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s2_l2a.odc-product.yaml
+s2_l2a_c1,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s2_c1_l2a.odc-product.yaml
 s3_ol_2_wfr_nrt,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s3_ol_2_wfr_nrt.odc-product.yaml
 wofs_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls.odc-product.yaml
 wofs_ls_summary_alltime,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls_summary_alltime.odc-product.yaml
