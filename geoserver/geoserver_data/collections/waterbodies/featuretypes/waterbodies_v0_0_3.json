@@ -75,7 +75,7 @@
                     "length": 24
                 },
                 {
-                    "name": "UID",
+                    "name": "uid",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
@@ -83,7 +83,7 @@
                     "length": 80
                 },
                 {
-                    "name": "WB_ID",
+                    "name": "wb_id",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
