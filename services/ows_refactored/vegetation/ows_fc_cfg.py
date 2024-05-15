@@ -55,7 +55,7 @@ This product has a spatial resolution of 30 m and a temporal coverage of 1980s t
 
 Fractional cover allows users to understand the large scale patterns and trends and inform evidence based decision making and policy on topics including wind and water erosion risk, soil carbon dynamics, land surface process monitoring, land management practices, vegetation studies, fuel load estimation, ecosystem modelling, and rangeland condition.
 
-The fractional cover algorithm was developed by the Joint Remote Sensing Research Program: http://data.auscover.org.au/xwiki/bin/view/Product+pages/Landsat+Seasonal+Fractional+Cover
+The fractional cover algorithm was developed by the Joint Remote Sensing Research Program. For more information on the product, see https://docs.digitalearthafrica.org/en/latest/data_specs/Fractional_Cover_specs.html
 
 More techincal information about the fractional cover product can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Fractional_Cover_specs.html)
 """,

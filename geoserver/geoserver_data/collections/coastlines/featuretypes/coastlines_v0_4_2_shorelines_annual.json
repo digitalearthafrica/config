@@ -1,31 +1,32 @@
-{
+
+    {
     "featureType": {
-        "name": "DEAfrica_Waterbodies",
-        "nativeName": "waterbodies",
+        "name": "coastlines_v0_4_2_shorelines_annual",
+        "nativeName": "coastlines_v0.4.2_shorelines_annual",
         "namespace": {
-            "name": "waterbodies"
+            "name": "coastlines"
         },
-        "title": "DEAfrica Waterbodies",
+        "title": "coastlines_v0.4.2_shorelines_annual",
         "keywords": {
             "string": [
                 "features",
-                "waterbodies"
+                "coastlines_v0.4.2_shorelines_annual"
             ]
         },
         "nativeCRS": "GEOGCS[\"WGS 84\", \n  DATUM[\"World Geodetic System 1984\", \n    SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n    AUTHORITY[\"EPSG\",\"6326\"]], \n  PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], \n  UNIT[\"degree\", 0.017453292519943295], \n  AXIS[\"Geodetic longitude\", EAST], \n  AXIS[\"Geodetic latitude\", NORTH], \n  AUTHORITY[\"EPSG\",\"4326\"]]",
         "srs": "EPSG:4326",
         "nativeBoundingBox": {
-            "minx": -17.54176858719013,
-            "maxx": 53.309029912076106,
-            "miny": -34.83245484504888,
-            "maxy": 37.55317338539227,
+            "minx": -17.530020617134365,
+            "maxx": 51.41527617299833,
+            "miny": -34.83347119293824,
+            "maxy": 37.358192510742306,
             "crs": "EPSG:4326"
         },
         "latLonBoundingBox": {
-            "minx": -17.54176858719013,
-            "maxx": 53.309029912076106,
-            "miny": -34.83245484504888,
-            "maxy": 37.55317338539227,
+            "minx": -17.530020617134365,
+            "maxx": 51.41527617299833,
+            "miny": -34.83347119293824,
+            "maxy": 37.358192510742306,
             "crs": "EPSG:4326"
         },
         "projectionPolicy": "FORCE_DECLARED",
@@ -38,14 +39,14 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "waterbodies:waterbodies_v0_0_3"
+            "name": "coastlines:coastlines_v0_4_2_shorelines_annual"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
         "maxFeatures": 10000,
         "numDecimals": 7,
         "padWithZeros": false,
-        "forcedDecimal": true,
+        "forcedDecimal": false,
         "overridingServiceSRS": false,
         "skipNumberMatched": false,
         "circularArcPresent": false,
@@ -56,26 +57,10 @@
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
-                    "binding": "org.locationtech.jts.geom.MultiPolygon"
+                    "binding": "org.locationtech.jts.geom.MultiLineString"
                 },
                 {
-                    "name": "area_m2",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
-                },
-                {
-                    "name": "length_m",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
-                },
-                {
-                    "name": "UID",
+                    "name": "year",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
@@ -83,20 +68,28 @@
                     "length": 80
                 },
                 {
-                    "name": "WB_ID",
+                    "name": "certainty",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
-                    "binding": "java.lang.Long",
-                    "length": 18
+                    "binding": "java.lang.String",
+                    "length": 80
                 },
                 {
-                    "name": "perim_m",
+                    "name": "tide_datum",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
+                    "binding": "java.lang.String",
+                    "length": 80
+                },
+                {
+                    "name": "country",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 80
                 }
             ]
         }
