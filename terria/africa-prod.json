@@ -32,7 +32,7 @@
               "name": "DE Africa Coastlines",
               "id": "deafrica_coastlines",
               "shortReport": "<i>Zoom in to view detailed rates of coastal change and individual annual shorelines</i></br></br>",
-              "url": "https://geoserver.dev.digitalearth.africa/geoserver/coastlines/wms",
+              "url": "https://geoserver.digitalearth.africa/geoserver/coastlines/wms",
               "opacity": 1,
               "chartDisclaimer": "The graph below shows the distance (in metres) from each 2000-2020 shoreline to the 2023 shoreline. Positive distances indicate that a shoreline was located towards the ocean from the 2023 shoreline; shoreline with negative distances were located further inland.",
               "layers": "DEAfrica_Coastlines_v0_4_2",
@@ -69,9 +69,116 @@
               "featureInfoTemplate": {
                 "template": "<div style='width:600px'> <h3>Waterbody Identifier: {{uid}}<br /> Percentage of surface area (not volume) observed as wet</h3><br /> <chart id='{{uid}}' title='Waterbody {{uid}}' chart-type='lineAndPoint' preview-x-label='Date' sources='{{#terria.urlEncode}}https://api.digitalearth.africa/waterbodies/waterbody/{{wb_id}}/observations/csv{{/terria.urlEncode}}' column-units='Date of satellite observation,%,#' x-column='date' y-column='percent_wet'> </chart>{{>disclaimer}}</div>",
                 "partials": {
-                  "disclaimer": "This is a beta product, released for evaluation by all users. The DE Africa team is working actively to validate and improve this product. This graph shows the wet surface area of waterbodies as estimated from satellites. It does not show depth, volume, purpose of the waterbody, nor the source of the water. The wet surface area time series uses the Digital Earth Africa Water Observations from Space product which is known to have limitations. These limitations may carry through to the wet surface area time series. For more information, visit the <a href='https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html'>Digital Earth Africa Documentation</a>"
+                  "disclaimer": "This is a provisional product, released for evaluation by all users. The DE Africa team is working actively to validate and improve this product. This graph shows the wet surface area of waterbodies as estimated from satellites. It does not show depth, volume, purpose of the waterbody, nor the source of the water. The wet surface area time series uses the Digital Earth Africa Water Observations from Space product which is known to have limitations. These limitations may carry through to the wet surface area time series. For more information, visit the <a href='https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html'>Digital Earth Africa Documentation</a>"
                 }
               }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Satellite images - Planet NICFI",
+          "description": "Norway’s International Climate and Forests Initiative (NICFI) is an international development fund to help save the world’s tropical forests while improving the livelihoods of those who live off, in, and near the forests. In September 2020, the Norwegian Ministry of Climate and Environment awarded an international contract to Kongsberg Satellite Services (KSAT), with partners Planet and Airbus, to provide comprehensive access to high-resolution satellite monitoring of the tropics. As part of this Program, Planet partners with NICFI in making high-resolution satellite imagery of the tropics available free of charge to users advancing the NICFI Purpose of reducing and reversing tropical forest loss, combating climate change, conserving biodiversity, and facilitating sustainable development. Additional information on the program can be found on the <a href='https://www.planet.com/nicfi'>NICFI program website</a>.<br>Digital Earth Africa has enabled users to view NICFI's latest monthly and biannual high-resolution (<5m) mosaics through the Maps platform. These Visual mosaics offer optimised true colour imagery ideal for visual display and interpretation. Archival Visual mosaics and Analytic products can be accessed directly from Planet following instructions on the program website.",
+          "members": [
+            {
+              "type": "group",
+              "name": "Monthly Mosaic",
+              "members": [
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI Latest PlanetScope Tropical Visual Monthly Mosaic",
+                  "description": "Latest (typically from last calendar month) Planet Monthly Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-latest-monthly",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/latest-series/45d01564-c099-42d8-b8f2-a0851accf3e7/gmap/{z}/{x}/{y}.png"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "name": "Semiannual Mosaic",
+              "members": [
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2015-12 2016-05",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2015-12",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2015-12_2016-05_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2016-06 2016-11",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2016-06",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2016-06_2016-11_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2016-12 2017-05",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2016-12",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2016-12_2017-05_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2017-06 2017-11",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2017-06",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2017-06_2017-11_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2017-12 2018-05",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2017-12",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2017-12_2018-05_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2018-06 2018-11",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2018-06",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2018-06_2018-11_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2018-12 2019-05",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2018-12",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2018-12_2019-05_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2019-06 2019-11",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2019-06",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2019-06_2019-11_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2019-12 2020-05",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2019-12",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2019-12_2020-05_mosaic/gmap/{z}/{x}/{y}.png"
+                },
+                {
+                  "type": "url-template-imagery",
+                  "name": "NICFI PlanetScope Tropical Visual Mosaic 2020-06 2020-08",
+                  "description": "Planet Biannual (generated every 6 months) Mosaic provided by the NICFI Satellite Data Program. The Visual mosaic offers optimised true colour imagery ideal for visual display and interpretation. For more information and access to additional Visual and Analytic products from Planet, visit the <a href='https://www.planet.com/nicfi'>NICFI program website</a> .",
+                  "id": "nicfi-2020-06",
+                  "opacity": 1.0,
+                  "url": "https://api.digitalearth.africa/planet/tiles/basemaps/v1/planet-tiles/planet_medres_visual_2020-06_2020-08_mosaic/gmap/{z}/{x}/{y}.png"
+                }
+              ]
             }
           ]
         }
