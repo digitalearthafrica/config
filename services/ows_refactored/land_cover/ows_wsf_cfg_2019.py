@@ -8,7 +8,7 @@ style_wsf_2019 = {
         "wsf2019": [
             {
                 "title": "World Settlement Footprint 2019",
-                "color": "#DAA06D",
+                "color": "#3B3B3B",
                 "values": [255],
             }
         ]
