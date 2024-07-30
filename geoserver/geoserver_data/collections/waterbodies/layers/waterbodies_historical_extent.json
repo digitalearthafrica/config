@@ -1,14 +1,14 @@
 {
     "layer": {
-        "name": "DEAfrica_Waterbodies_v0_0_3",
+        "name": "waterbodies_historical_extent",
         "type": "VECTOR",
         "defaultStyle": {
-            "name": "waterbodies:waterbodies_v0_0_1",
-            "workspace": "waterbodies"
+            "name": "test_waterbodies:waterbodies_default_hashed",
+            "workspace": "test_waterbodies"
         },
         "resource": {
             "@class": "featureType",
-            "name": "waterbodies:waterbodies_v0_0_3"
+            "name": "test_waterbodies:waterbodies_historical_extent"
         },
         "attribution": {
             "logoWidth": 0,

@@ -1,0 +1,128 @@
+{
+    "dataStore": {
+        "name": "waterbodies_v0_0_3",
+        "description": "waterbodies_v0_0_3",
+        "type": "PostGIS",
+        "enabled": true,
+        "workspace": {
+            "name": "waterbodies"
+        },
+        "connectionParameters": {
+            "entry": [
+                {
+                    "@key": "schema",
+                    "$": "public"
+                },
+                {
+                    "@key": "Evictor run periodicity",
+                    "$": "300"
+                },
+                {
+                    "@key": "Max open prepared statements",
+                    "$": "50"
+                },
+                {
+                    "@key": "encode functions",
+                    "$": "true"
+                },
+                {
+                    "@key": "Batch insert size",
+                    "$": "1"
+                },
+                {
+                    "@key": "preparedStatements",
+                    "$": "false"
+                },
+                {
+                    "@key": "database",
+                    "$": "waterbodies"
+                },
+                {
+                    "@key": "host",
+                    "$": "db-aurora-deafrica-dev-eks.cluster-cwomfud9e3ms.af-south-1.rds.amazonaws.com"
+                },
+                {
+                    "@key": "Loose bbox",
+                    "$": "true"
+                },
+                {
+                    "@key": "SSL mode",
+                    "$": "DISABLE"
+                },
+                {
+                    "@key": "Estimated extends",
+                    "$": "true"
+                },
+                {
+                    "@key": "fetch size",
+                    "$": "1000"
+                },
+                {
+                    "@key": "Expose primary keys",
+                    "$": "false"
+                },
+                {
+                    "@key": "validate connections",
+                    "$": "true"
+                },
+                {
+                    "@key": "Support on the fly geometry simplification",
+                    "$": "true"
+                },
+                {
+                    "@key": "Connection timeout",
+                    "$": "20"
+                },
+                {
+                    "@key": "create database",
+                    "$": "false"
+                },
+                {
+                    "@key": "Method used to simplify geometries",
+                    "$": "FAST"
+                },
+                {
+                    "@key": "port",
+                    "$": "5432"
+                },
+                {
+                    "@key": "passwd",
+                    "$": "crypt1:f+qPrYjxNx+JDsW+rZOx2JA4Om+sK0q4ebJZlF/2nck="
+                },
+                {
+                    "@key": "min connections",
+                    "$": "1"
+                },
+                {
+                    "@key": "dbtype",
+                    "$": "postgis"
+                },
+                {
+                    "@key": "namespace",
+                    "$": "http://waterbodies"
+                },
+                {
+                    "@key": "max connections",
+                    "$": "10"
+                },
+                {
+                    "@key": "Evictor tests per run",
+                    "$": "3"
+                },
+                {
+                    "@key": "Test while idle",
+                    "$": "true"
+                },
+                {
+                    "@key": "user",
+                    "$": "dba_admin"
+                },
+                {
+                    "@key": "Max connection idle time",
+                    "$": "300"
+                }
+            ]
+        },
+        "_default": false
+    }
+}
