@@ -1,7 +1,7 @@
 {
     "dataStore": {
-        "name": "waterbodies_v0_0_3",
-        "description": "waterbodies_v0_0_3",
+        "name": "waterbodies_v0_0_4",
+        "description": "waterbodies_v0_0_4",
         "type": "PostGIS",
         "enabled": true,
         "workspace": {

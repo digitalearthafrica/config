@@ -39,7 +39,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "waterbodies:waterbodies_v0_0_3"
+            "name": "waterbodies:waterbodies_v0_0_4"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
