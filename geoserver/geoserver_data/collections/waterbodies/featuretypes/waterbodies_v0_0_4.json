@@ -83,7 +83,7 @@
                     "binding": "java.lang.Double"
                 },
                 {
-                    "name": "geometry",
+                    "name": "the_geom",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
