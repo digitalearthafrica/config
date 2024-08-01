@@ -1,0 +1,13 @@
+{
+    "style": {
+        "name": "waterbodies_default_hashed",
+        "workspace": {
+            "name": "waterbodies"
+        },
+        "format": "sld",
+        "languageVersion": {
+            "version": "1.0.0"
+        },
+        "filename": "waterbodies_default_hashed.sld"
+    }
+}

@@ -1,9 +1,9 @@
 {
     "layer": {
-        "name": "DEAfrica_Waterbodies",
+        "name": "DEAfrica_Waterbodies_v0_0_4",
         "type": "VECTOR",
         "defaultStyle": {
-            "name": "waterbodies_default_hashed",
+            "name": "waterbodies:waterbodies_default_hashed",
             "workspace": "waterbodies"
         },
         "resource": {

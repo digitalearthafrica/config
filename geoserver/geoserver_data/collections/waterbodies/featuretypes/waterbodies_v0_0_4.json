@@ -1,11 +1,11 @@
 {
     "featureType": {
-        "name": "DEAfrica_Waterbodies",
+        "name": "DEAfrica_Waterbodies_v0_0_4",
         "nativeName": "waterbodies",
         "namespace": {
             "name": "waterbodies"
         },
-        "title": "DEAfrica Waterbodies",
+        "title": "DEAfrica Waterbodies v0.0.4",
         "abstract": "The Digital Earth Africa Waterbodies Service identifies more than 700,000 water bodies from over three decades of satellite observations. This service maps persistent and seasonal water bodies and the change in their water surface area over time. Mapped water bodies may include, but are not limited to, lakes, ponds, man-made reservoirs, wetlands, and segments of some river systems. On a local, regional, and continental scale, this service helps improve our understanding of surface water dynamics and water availability and can be used for monitoring water bodies such as wetlands, lakes and dams in remote and/or inaccessible locations. More information about the DE Africa Waterbodies and data access can be found in the User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html)",
         "keywords": {
             "string": [
@@ -16,17 +16,17 @@
         "nativeCRS": "GEOGCS[\"WGS 84\", \n  DATUM[\"World Geodetic System 1984\", \n    SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n    AUTHORITY[\"EPSG\",\"6326\"]], \n  PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], \n  UNIT[\"degree\", 0.017453292519943295], \n  AXIS[\"Geodetic longitude\", EAST], \n  AXIS[\"Geodetic latitude\", NORTH], \n  AUTHORITY[\"EPSG\",\"4326\"]]",
         "srs": "EPSG:4326",
         "nativeBoundingBox": {
-            "minx": -17.54176858719013,
-            "maxx": 53.309029912076106,
-            "miny": -34.83245484504888,
-            "maxy": 37.55317338539227,
+            "minx": -17.443828582763672,
+            "maxx": 54.52692413330078,
+            "miny": -34.78968048095703,
+            "maxy": 37.3135986328125,
             "crs": "EPSG:4326"
         },
         "latLonBoundingBox": {
-            "minx": -17.54176858719013,
-            "maxx": 53.309029912076106,
-            "miny": -34.83245484504888,
-            "maxy": 37.55317338539227,
+            "minx": -17.443828582763672,
+            "maxx": 54.52692413330078,
+            "miny": -34.78968048095703,
+            "maxy": 37.3135986328125,
             "crs": "EPSG:4326"
         },
         "projectionPolicy": "FORCE_DECLARED",
@@ -43,61 +43,51 @@
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
-        "maxFeatures": 10000,
-        "numDecimals": 7,
+        "internationalTitle": "",
+        "internationalAbstract": "",
+        "maxFeatures": 0,
+        "numDecimals": 0,
         "padWithZeros": false,
-        "forcedDecimal": true,
+        "forcedDecimal": false,
         "overridingServiceSRS": false,
         "skipNumberMatched": false,
         "circularArcPresent": false,
         "attributes": {
             "attribute": [
                 {
+                    "name": "wb_id",
+                    "minOccurs": 1,
+                    "maxOccurs": 1,
+                    "nillable": false,
+                    "binding": "java.lang.Integer"
+                },
+                {
+                    "name": "area_m2",
+                    "minOccurs": 1,
+                    "maxOccurs": 1,
+                    "nillable": false,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "length_m",
+                    "minOccurs": 1,
+                    "maxOccurs": 1,
+                    "nillable": false,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "perim_m",
+                    "minOccurs": 1,
+                    "maxOccurs": 1,
+                    "nillable": false,
+                    "binding": "java.lang.Double"
+                },
+                {
                     "name": "the_geom",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "nillable": true,
-                    "binding": "org.locationtech.jts.geom.MultiPolygon"
-                },
-                {
-                    "name": "area_m2",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
-                },
-                {
-                    "name": "length_m",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
-                },
-                {
-                    "name": "uid",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.String",
-                    "length": 80
-                },
-                {
-                    "name": "wb_id",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Long",
-                    "length": 18
-                },
-                {
-                    "name": "perim_m",
-                    "minOccurs": 0,
-                    "maxOccurs": 1,
-                    "nillable": true,
-                    "binding": "java.lang.Double",
-                    "length": 24
+                    "binding": "org.locationtech.jts.geom.Polygon"
                 }
             ]
         }
