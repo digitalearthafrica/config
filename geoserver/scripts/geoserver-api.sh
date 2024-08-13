@@ -60,6 +60,7 @@ function clean_exit() {
   exit_message="${2}"
 
   rm_file ${tmp_file}
+  rm_file ${data_file}.env
 
   if [ "${exit_message}" != "" ] ; then
     echo "${exit_message}"
