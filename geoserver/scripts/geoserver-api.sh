@@ -333,7 +333,7 @@ function update_object() {
         clean_exit 31 "Data store json file not found: ${data_file}"
       fi
       # Check if we need to do env var substitution
-      if ( egrep -l '.*(\${).*(}).*' ${data_file} > /dev/null 2>&1 ) ; then
+      if ( egrep -l '.*(\${).*(}).*' ${data_file} ) ; then
         echo "Replacing environment variables in ${data_file}"
         envsubst < ${data_file} > ${data_file}.env
         mv ${data_file}.env ${data_file}
