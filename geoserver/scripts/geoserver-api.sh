@@ -60,6 +60,7 @@ function clean_exit() {
   exit_message="${2}"
 
   rm_file ${tmp_file}
+  rm_file ${data_file}.env
 
   if [ "${exit_message}" != "" ] ; then
     echo "${exit_message}"
@@ -132,6 +133,11 @@ function create_object() {
       data_file="${collection_dir}/datastores/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 11 "Data store json file not found: ${data_file}"
+      fi
+      # Check if we need to do env var substitution
+      if ( egrep -l '.*(\${).*(}).*' ${data_file} > /dev/null 2>&1 ) ; then
+        echo "Replacing environment variables in ${data_file}"
+        envsubst < ${data_file} > ${data_file}.env
       fi
       datastore_workspace=$(get_datastore_workspace ${object_name})
       uri="/workspaces/${datastore_workspace}/datastores"
@@ -324,6 +330,11 @@ function update_object() {
       data_file="${collection_dir}/datastores/${object_name}.json"
       if ! [ -f ${data_file} ] ; then
         clean_exit 31 "Data store json file not found: ${data_file}"
+      fi
+      # Check if we need to do env var substitution
+      if ( egrep -l '.*(\${).*(}).*' ${data_file} > /dev/null 2>&1 ) ; then
+        echo "Replacing environment variables in ${data_file}"
+        envsubst < ${data_file} > ${data_file}.env
       fi
       datastore_workspace=$(get_datastore_workspace ${object_name})
       uri="/workspaces/${datastore_workspace}/datastores/${object_name}.json"
