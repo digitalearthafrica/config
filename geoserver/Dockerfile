@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk --no-cache add bash curl jq git
+RUN apk --no-cache add bash curl jq git envsubst
 
 WORKDIR /opt/dea-geoserver
 
