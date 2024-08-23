@@ -1,0 +1,13 @@
+{
+    "style": {
+        "name": "waterbodies_v0_0_4",
+        "workspace": {
+            "name": "waterbodies"
+        },
+        "format": "sld",
+        "languageVersion": {
+            "version": "1.0.0"
+        },
+        "filename": "waterbodies_v0_0_4.sld"
+    }
+}
