@@ -99,7 +99,7 @@
                 },
                 {
                     "@key": "namespace",
-                    "$": "http://waterbodies"
+                    "$": "https://waterbodies"
                 },
                 {
                     "@key": "max connections",
