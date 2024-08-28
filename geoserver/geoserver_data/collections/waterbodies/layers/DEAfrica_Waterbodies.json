@@ -3,12 +3,12 @@
         "name": "DEAfrica_Waterbodies",
         "type": "VECTOR",
         "defaultStyle": {
-            "name": "waterbodies:waterbodies_v0_0_3",
+            "name": "waterbodies:waterbodies_v0_0_4",
             "workspace": "waterbodies"
         },
         "resource": {
             "@class": "featureType",
-            "name": "waterbodies:waterbodies_v0_0_3"
+            "name": "waterbodies:waterbodies_v0_0_4"
         },
         "attribution": {
             "logoWidth": 0,
