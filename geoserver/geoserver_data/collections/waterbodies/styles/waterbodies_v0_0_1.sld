@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sld:StyledLayerDescriptor xmlns:sld="http://www.opengis.net/sld" xmlns="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" version="1.1.0">
-    <sld:NamedLayer>
-        <sld:Name>waterbodies_v0_0_1</sld:Name>
-        <sld:UserStyle>
-            <sld:Name>waterbodies_v0_0_1</sld:Name>
-            <sld:FeatureTypeStyle>
-                <sld:Name>name</sld:Name>
-                <sld:Rule>
-                    <sld:Name>Water body</sld:Name>
-                    <sld:PolygonSymbolizer>
-                        <sld:Fill>
-                            <sld:GraphicFill>
-                                <sld:Graphic>
-                                    <sld:ExternalGraphic>
-                                        <sld:OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="file:/opt/geoserver/data_dir/workspaces/waterbodies1/styles/deafrica_waterbodies_singlehash.png"/>
-                                        <sld:Format>image/png</sld:Format>
-                                    </sld:ExternalGraphic>
-                                    <sld:Size>9</sld:Size>
-                                </sld:Graphic>
-                            </sld:GraphicFill>
-                        </sld:Fill>
-                    </sld:PolygonSymbolizer>
-                    <sld:LineSymbolizer>
-                        <sld:Stroke>
-                            <sld:CssParameter name="stroke">#11ccff</sld:CssParameter>
-                            <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
-                            <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
-                            <sld:CssParameter name="stroke-width">2</sld:CssParameter>
-                        </sld:Stroke>
-                    </sld:LineSymbolizer>
-                </sld:Rule>
-            </sld:FeatureTypeStyle>
-        </sld:UserStyle>
-    </sld:NamedLayer>
-</sld:StyledLayerDescriptor>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:se="http://www.opengis.net/se" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" version="1.1.0">
+  <NamedLayer>
+    <se:Name>waterbodies_v0_0_1</se:Name>
+    <UserStyle>
+      <se:Name>waterbodies_v0_0_1</se:Name>
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Water body</se:Name>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:ExternalGraphic>
+                    <se:OnlineResource xlink:type="simple" xlink:href="deafrica_waterbodies_singlehash.png"/>
+                    <se:Format>image/png</se:Format>
+                  </se:ExternalGraphic>
+                  <se:Size>9</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#11ccff</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
