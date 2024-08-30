@@ -26,6 +26,10 @@ jobs:
           GEOSERVER_DOMAIN: "https://geoserver.dev.digitalearth.africa"
           GEOSERVER_CONFIG_GIT_BRANCH: ${{ github.head_ref || github.ref_name }}
           GEOSERVER_ENV: "dev"
+          DB_HOST: ${{ secrets.DEV_DB_HOST }}
+          DB_USER: ${{ secrets.DEV_DB_USER }}
+          DB_PASSWORD: ${{ secrets.DEV_DB_PASSWORD }}
+          DB_DATABASE: ${{ secrets.DEV_DB_DATABASE }}
         run: |
           cd geoserver
           echo "Build geoserver-config image"
@@ -41,4 +45,8 @@ jobs:
             -e GEOSERVER_COLLECTION_LIST=${{ env.GEOSERVER_COLLECTION_LIST }} \
             -e GEOSERVER_CONFIG_GIT_BRANCH=${{ env.GEOSERVER_CONFIG_GIT_BRANCH }} \
             -e GEOSERVER_ENV=${{ env.GEOSERVER_ENV }} \
+            -e DB_HOST=${{ env.DB_HOST }} \
+            -e DB_USER=${{ env.DB_USER }} \
+            -e DB_PASSWORD=${{ env.DB_PASSWORD }} \
+            -e DB_DATABASE=${{ env.DB_DATABASE }} \
             geoserver-config:latest
