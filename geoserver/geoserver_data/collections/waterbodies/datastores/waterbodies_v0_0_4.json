@@ -59,7 +59,7 @@
                 },
                 {
                     "@key": "Expose primary keys",
-                    "$": "false"
+                    "$": "true"
                 },
                 {
                     "@key": "validate connections",
