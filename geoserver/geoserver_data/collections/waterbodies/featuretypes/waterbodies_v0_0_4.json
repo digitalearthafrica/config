@@ -76,18 +76,19 @@
                     "binding": "java.lang.Double"
                 },
                 {
+                    "name": "uid",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String",
+                    "length": 80
+                },
+                {
                     "name": "perim_m",
                     "minOccurs": 1,
                     "maxOccurs": 1,
                     "nillable": false,
                     "binding": "java.lang.Double"
-                },
-                {
-                    "name": "timeseries",
-                    "minOccurs": 1,
-                    "maxOccurs": 1,
-                    "nillable": false,
-                    "binding": "java.lang.String"
                 },
                 {
                     "name": "geometry",
