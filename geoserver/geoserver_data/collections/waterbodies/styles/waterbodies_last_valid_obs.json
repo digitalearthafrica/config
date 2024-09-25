@@ -1,0 +1,13 @@
+{
+    "style": {
+        "name": "waterbodies_last_valid_obs",
+        "workspace": {
+            "name": "waterbodies"
+        },
+        "format": "sld",
+        "languageVersion": {
+            "version": "1.0.0"
+        },
+        "filename": "waterbodies_last_valid_obs.sld"
+    }
+}

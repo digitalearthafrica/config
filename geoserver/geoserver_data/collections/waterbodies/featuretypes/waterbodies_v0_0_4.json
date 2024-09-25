@@ -96,6 +96,31 @@
                     "maxOccurs": 1,
                     "nillable": true,
                     "binding": "org.locationtech.jts.geom.Polygon"
+                },
+                {
+                  "name": "last_obs_date",
+                  "minOccurs": 0,
+                  "maxOccurs": 0,
+                  "binding": "java.sql.Date"
+                },
+                {
+                  "name": "last_valid_obs_date",
+                  "minOccurs": 0,
+                  "maxOccurs": 0,
+                  "binding": "java.sql.Date"
+                },
+                {
+                  "name": "last_valid_obs",
+                  "minOccurs": 0,
+                  "maxOccurs": 0,
+                  "binding": "java.lang.Double",
+                  "source": "last_valid_obs"
+                },
+                {
+                  "name": "last_attrs_update_date",
+                  "minOccurs": 0,
+                  "maxOccurs": 0,
+                  "binding": "java.sql.Date"
                 }
             ]
         }
