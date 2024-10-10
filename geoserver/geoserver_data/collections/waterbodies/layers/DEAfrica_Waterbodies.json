@@ -3,7 +3,11 @@
         "name": "DEAfrica_Waterbodies",
         "type": "VECTOR",
         "defaultStyle": {
-            "name": "waterbodies:waterbodies_v0_0_5",
+            "name": "waterbodies:waterbodies_v0_0_4",
+            "workspace": "waterbodies"
+        },
+        "styles": {
+            "name": "waterbodies:waterbodies_last_valid_obs",
             "workspace": "waterbodies"
         },
         "resource": {
