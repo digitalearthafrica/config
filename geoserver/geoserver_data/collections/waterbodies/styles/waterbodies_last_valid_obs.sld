@@ -126,7 +126,7 @@
           </PolygonSymbolizer>
         </Rule>
         <Rule>
-          <Name>60 &lt; wet percentage &lt;= 70 </Name>
+          <Name>60 &lt; wet percentage &lt;= 70</Name>
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsGreaterThan>
