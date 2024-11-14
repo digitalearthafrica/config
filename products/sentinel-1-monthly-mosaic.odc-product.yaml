@@ -1,0 +1,27 @@
+---
+name: sentinel_1_monthly_mosaics
+description: "Monthly mosaics generated from Sentinel-1 GRD data."
+metadata_type: eo3
+
+metadata:
+  product:
+    name: sentinel_1_monthly_mosaics
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.0002
+    latitude: -0.0002
+
+measurements:
+  - name: "vv"
+    aliases: [VV]
+    dtype: float32
+    nodata: NaN
+    units: "1"
+
+  - name: "vh"
+    aliases: [VH]
+    dtype: float32
+    nodata: NaN
+    units: "1"
