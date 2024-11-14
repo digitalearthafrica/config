@@ -41,6 +41,7 @@ maxar_morocco_earthquake_4bands,https://raw.githubusercontent.com/digitalearthaf
 maxar_morocco_earthquake_8bands,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/maxar_morocco_earthquake_8bands.odc-product.yaml
 pc_s2_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/pc_s2_annual.odc-product.yaml
 s1_rtc,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s1_rtc.odc-product.yaml
+sentinel_1_monthly_mosaics,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/sentinel-1-monthly-mosaic.odc-product.yaml
 s2_l2a,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s2_l2a.odc-product.yaml
 s2_l2a_c1,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s2_l2a_c1.odc-product.yaml
 s3_ol_2_wfr_nrt,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s3_ol_2_wfr_nrt.odc-product.yaml
