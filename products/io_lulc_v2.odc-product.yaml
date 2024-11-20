@@ -1,0 +1,32 @@
+---
+name: io_lulc_v2
+description: Impact Observatory (ESRI) Landcover Classification 9 Class V2
+metadata_type: eo3
+
+metadata:
+  product:
+    name: io_lulc_v2
+
+measurements:
+  - name: "data"
+    aliases: [classification]
+    units: "1"
+    dtype: uint8
+    nodata: 0
+    flags_definition:
+      data:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Land Use/Land Cover class
+        values:
+          0: no data
+          1: water
+          2: trees
+          3: not used
+          4: flooded vegetation
+          5: crops
+          6: not used
+          7: built area
+          8: bare ground
+          9: snow/ice
+          10: clouds
+          11: rangeland
