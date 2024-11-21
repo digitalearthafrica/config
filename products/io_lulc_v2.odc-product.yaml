@@ -8,7 +8,7 @@ metadata:
     name: io_lulc_v2
 
 measurements:
-  - name: "data"
+  - name: "supercell"
     aliases: [classification]
     units: "1"
     dtype: uint8
