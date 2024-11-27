@@ -15,12 +15,12 @@ storage:
 
 measurements:
   - name: "VV"
-    aliases: [VV]
+    aliases: [vv]
     dtype: float32
     nodata: NaN
     units: "1"
   - name: "VH"
-    aliases: [VH]
+    aliases: [vh]
     dtype: float32
     nodata: NaN
     units: "1"
