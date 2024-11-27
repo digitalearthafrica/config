@@ -1,11 +1,11 @@
 ---
-name: sentinel_1_monthly_mosaics
+name: s1_monthly_mosaic
 description: "Monthly mosaics generated from Sentinel-1 GRD data."
 metadata_type: eo3
 
 metadata:
   product:
-    name: sentinel_1_monthly_mosaics
+    name: s1_monthly_mosaic
 
 storage:
   crs: EPSG:4326
