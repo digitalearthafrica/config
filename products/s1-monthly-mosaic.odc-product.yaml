@@ -14,14 +14,13 @@ storage:
     latitude: -0.0002
 
 measurements:
-  - name: "vv"
-    aliases: [VV]
+  - name: "VV"
+    aliases: [vv]
     dtype: float32
     nodata: NaN
     units: "1"
-
-  - name: "vh"
-    aliases: [VH]
+  - name: "VH"
+    aliases: [vh]
     dtype: float32
     nodata: NaN
     units: "1"
