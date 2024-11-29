@@ -1,17 +1,11 @@
 ---
 name: s1_monthly_mosaic
-description: "Monthly mosaics generated from Sentinel-1 GRD data."
+description: "Monthly mosaics generated from Sentinel-1 GRD by Sentinel Hub."
 metadata_type: eo3
 
 metadata:
   product:
     name: s1_monthly_mosaic
-
-storage:
-  crs: EPSG:4326
-  resolution:
-    longitude: 0.0002
-    latitude: -0.0002
 
 measurements:
   - name: "VV"
