@@ -1,6 +1,6 @@
 ---
 name: s1_monthly_mosaic
-description: "Monthly mosaics generated from Sentinel-1 GRD by Sentinel Hub."
+description: "Monthly mosaics generated from Sentinel-1 GRD data by Sentinel Hub."
 metadata_type: eo3
 
 metadata:
