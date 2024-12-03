@@ -605,9 +605,9 @@
           ]
       },
       {
-          "layer": "io_lulc",
+          "layer": "io_lulc_v2",
           "product": [
-              "io_lulc"
+              "io_lulc_v2"
           ],
           "styles_count": 1,
           "styles_list": [
