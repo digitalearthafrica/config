@@ -109,8 +109,13 @@ jobs:
             -T ows \
             datacube-ows-cfg extract -m /env/config/output/messages.po
 
+      - name: Copy messages.po from Docker container to host
+        run: |
+          docker cp $(docker compose -f docker-compose.ows.yaml ps -q ows):/env/config/output/messages.po ./output/messages.po
+
       - name: Set file permissions for messages.po
-        run: chmod 644 ./output/messages.po
+        run: |
+          sudo chmod 644 ./output/messages.po
 
       - name: Upload terms to POEditor.com
         if: github.ref == 'refs/heads/master' || github.event_name == 'release' || github.event_name == 'pull_request'
