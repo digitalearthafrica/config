@@ -1,0 +1,15 @@
+{
+  "layer": {
+    "name": "Africapolis_2020",
+    "type": "VECTOR",
+    "defaultStyle": {
+      "name": "africapolis:africapolis_2020",
+      "workspace": "africapolis"
+    },
+    "resource": {
+      "@class": "featureType",
+      "name": "africapolis:africapolis_2020"
+    },
+    "attribution": { "logoWidth": 0, "logoHeight": 0 }
+  }
+}
