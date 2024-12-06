@@ -1,15 +1,10 @@
 import os
 from poeditor import POEditorAPI
 
-# List available methods for POEditorAPI class
-def list_methods(client):
-    print("Available methods in POEditorAPI:")
-    for method in dir(client):
-        print(method)
-
 def get_languages(client, project_id):
     try:
-        languages = client.get_project_languages(project_id)
+        # Use list_project_languages instead of get_project_languages
+        languages = client.list_project_languages(project_id)  # Correct method
         print("Available languages:")
         for language in languages['languages']:
             print(f"Code: {language['code']}, Name: {language['name']}")
@@ -22,9 +17,6 @@ if __name__ == '__main__':
     
     # Initialize POEditor client
     client = POEditorAPI(api_token=api_token)
-    
-    # List all available methods for POEditorAPI
-    list_methods(client)
     
     # Fetch and display available languages
     get_languages(client, project_id)
