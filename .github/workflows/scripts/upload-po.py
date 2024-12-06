@@ -4,7 +4,7 @@ from poeditor import POEditorAPI
 def get_languages(client, project_id):
     try:
         # Fetch available languages for the project
-        languages = client.get_languages(project_id)
+        languages = client.get_project_languages(project_id)  # Correct method name
         print("Available languages:")
         for language in languages['languages']:
             print(f"Code: {language['code']}, Name: {language['name']}")
