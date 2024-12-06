@@ -3,11 +3,19 @@ from poeditor import POEditorAPI
 
 def get_languages(client, project_id):
     try:
-        # Use list_project_languages instead of get_project_languages
-        languages = client.list_project_languages(project_id)  # Correct method
-        print("Available languages:")
-        for language in languages['languages']:
-            print(f"Code: {language['code']}, Name: {language['name']}")
+        # Use list_project_languages to get the languages
+        languages = client.list_project_languages(project_id)
+        print("Raw response from list_project_languages:")
+        print(languages)  # Debugging: Print the raw response
+
+        # Check if the response has the expected structure
+        if isinstance(languages, dict) and 'languages' in languages:
+            print("Available languages:")
+            for language in languages['languages']:
+                print(f"Code: {language['code']}, Name: {language['name']}")
+        else:
+            print("Unexpected response structure. Please check the raw response.")
+            
     except Exception as e:
         print(f"Error fetching languages: {e}")
 
