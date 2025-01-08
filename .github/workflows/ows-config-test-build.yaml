@@ -50,7 +50,7 @@ jobs:
         echo "Initialising the DB"
         docker compose -f docker-compose.ows.yaml run -T ows datacube system init
         echo "Initialising OWS"
-        docker compose -f docker-compose.ows.yaml run -T ows datacube-ows-update --schema --write-role postgres
+        docker compose -f docker-compose.ows.yaml run -T ows datacube-ows-update --schema --role postgres
         echo "Starting OWS"
         docker compose -f docker-compose.ows.yaml up --detach ows
 
@@ -102,7 +102,7 @@ jobs:
           echo "Initialising the DB"
           docker compose -f docker-compose.ows.yaml run -T ows datacube system init
           echo "Initialising OWS"
-          docker compose -f docker-compose.ows.yaml run -T ows datacube-ows-update --schema --write-role postgres
+          docker compose -f docker-compose.ows.yaml run -T ows datacube-ows-update --schema --role postgres
           echo "Starting OWS"
           docker compose -f docker-compose.ows.yaml up --detach ows
 
