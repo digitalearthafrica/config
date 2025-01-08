@@ -5,16 +5,16 @@ style_colours = {
     "name": "style_colours",
     "title": "Coloured",
     "abstract": "Land cover colours",
-    "needed_bands": ["data"],
+    "needed_bands": ["supercell"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "data",
+            "band": "supercell",
         },
     },
     "value_map": {
-        "data": [
+        "supercell": [
             {
                 "title": "",
                 "abstract": "",
@@ -94,7 +94,7 @@ For more information, see https://planetarycomputer.microsoft.com/dataset/io-lul
     "product_name": "io_lulc_v2",
     "time_resolution": "summary",
     "bands": {
-        "data": [],
+        "supercell": [],
     },
     "resource_limits": reslim_land_cover,
     "image_processing": {
