@@ -1,0 +1,21 @@
+---
+name: s1_monthly_mosaic
+description: "Monthly Sentinel-1 mosaics of weighted terrain-corrected
+  backscatter."
+metadata_type: eo3
+
+metadata:
+  product:
+    name: s1_monthly_mosaic
+
+measurements:
+  - name: "VV"
+    aliases: [vv]
+    dtype: float32
+    nodata: NaN
+    units: "1"
+  - name: "VH"
+    aliases: [vh]
+    dtype: float32
+    nodata: NaN
+    units: "1"

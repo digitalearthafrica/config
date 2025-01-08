@@ -11,7 +11,7 @@ def upload_terms(file_path, project_id, api_token):
     update_results = client.update_terms_translations(
         project_id=project_id,
         file_path=file_path,
-        language_code='en',
+        language_code='fr',
         overwrite=True,
         tags='all',
     )
