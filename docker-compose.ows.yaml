@@ -1,3 +1,5 @@
+version: '3.7'
+
 services:
   postgres:
     image: postgis/postgis:12-2.5-alpine
@@ -6,11 +8,9 @@ services:
     environment:
       POSTGRES_PASSWORD: opendatacubepassword
     restart: always
-    mem_limit: 2g
-    mem_reservation: 1g
 
   ows:
-    image: opendatacube/ows:1.8.0-rc1
+    image: opendatacube/ows:latest
     environment:
       DB_HOSTNAME: postgres
       DB_USERNAME: postgres
@@ -24,9 +24,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./products:/products
+      - ./products:/env/products
       - ./services/ows_refactored:/env/config/ows_refactored/
       - ./services/inventory:/env/config/inventory/
       - ./output:/env/config/output/
-    mem_limit: 4g
-    mem_reservation: 2g
