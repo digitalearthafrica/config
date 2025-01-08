@@ -6,8 +6,6 @@ services:
     environment:
       POSTGRES_PASSWORD: opendatacubepassword
     restart: always
-    mem_limit: 2g
-    mem_reservation: 1g
 
   ows:
     image: opendatacube/ows:1.8.0-rc1
@@ -28,5 +26,3 @@ services:
       - ./services/ows_refactored:/env/config/ows_refactored/
       - ./services/inventory:/env/config/inventory/
       - ./output:/env/config/output/
-    mem_limit: 4g
-    mem_reservation: 2g
