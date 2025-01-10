@@ -14,7 +14,7 @@
         { "@key": "encode functions", "$": "true" },
         { "@key": "Batch insert size", "$": "1" },
         { "@key": "preparedStatements", "$": "false" },
-        { "@key": "database", "$": "${DB_DATABASE}" },
+        { "@key": "database", "$": "${GEOSERVER_DB_DATABASE}" },
         { "@key": "reWriteBatchedInserts", "$": "false" },
         { "@key": "host", "$": "${DB_HOST}" },
         { "@key": "Loose bbox", "$": "true" },
