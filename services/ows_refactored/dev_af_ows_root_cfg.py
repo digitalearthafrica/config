@@ -96,7 +96,6 @@ ows_cfg = {
         },
         "native_format": "GeoTIFF",
     },  # END OF wcs SECTION
-    
     "layers": [
         {
             "title": "Digital Earth Africa - OGC Web Services",
@@ -467,87 +466,7 @@ ows_cfg = {
                                     "type": "python",
                                 },
                             ],
-<<<<<<< HEAD
-                        },  
-=======
                         },
-                        {
-                            "title": "Vegetation climatology",
-                            "abstract": """Vegetation climatology""",
-                            "layers": [
-                                {
-                                    "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
-                                    "type": "python",
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    "title": "Pixel count",
-                    "abstract": """Pixel Count""",
-                    "layers": [
-                        {
-                            "include": "ows_refactored.pixel_count.ows_pc_s2_annual_cfg.layer",
-                            "type": "python",
-                        },
-                    ],
-                },
-                {
-                    "title": "Land cover",
-                    "abstract": """Land Cover""",
-                    "layers": [
-                        {
-                            "title": "ESA datasets",
-                            "abstract": """ESA datasets""",
-                            "layers": [
-                                {
-                                    "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
-                                    "type": "python",
-                                },
-                                {
-                                    "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
-                                    "type": "python",
-                                },
-                                {
-                                    "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
-                                    "type": "python",
-                                },
-                            ],
-                        },
-                        {
-                            "title": "World Settlement Footprint",
-                            "abstract": """World Settlement Footprint and Evolution""",
-                            "layers": [
-                                {
-                                    "include": "ows_refactored.land_cover.ows_wsf_cfg_2015.layer",
-                                    "type": "python",
-                                },
-                                {
-                                    "include": "ows_refactored.land_cover.ows_wsf_cfg_2019.layer",
-                                    "type": "python",
-                                },
-                                {
-                                    "include": "ows_refactored.land_cover.ows_wsf_evolution_cfg.layer",
-                                    "type": "python",
-                                },
-                            ],
-                        },
-                        {
-                            "include": "ows_refactored.land_cover.ows_io_lulc_v2_cfg.layer",
-                            "type": "python",
-                        },
-                    ],
-                },
-                {
-                    "title": "Meteorology",
-                    "abstract": """Meteorology""",
-                    "layers": [
-                        {
-                            "include": "ows_refactored.meteorology.ows_rainfall.layer",
-                            "type": "python",
-                        }
->>>>>>> d04156312046125baa25cd7969ae9ed263c53ffd
                     ],
                 },
             ],
