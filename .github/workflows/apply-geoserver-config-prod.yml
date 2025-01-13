@@ -47,6 +47,7 @@ jobs:
             -e GEOSERVER_COLLECTION_LIST=${{ env.GEOSERVER_COLLECTION_LIST }} \
             -e GEOSERVER_CONFIG_GIT_BRANCH=${{ env.GEOSERVER_CONFIG_GIT_BRANCH }} \
             -e GEOSERVER_ENV=${{ env.GEOSERVER_ENV }} \
+            -e GEOSERVER_DB_DATABASE=${{ env.GEOSERVER_DB_DATABASE }} \
             -e DB_HOST=${{ env.DB_HOST }} \
             -e DB_USER=${{ env.DB_USER }} \
             -e DB_PASSWORD=${{ env.DB_PASSWORD }} \
