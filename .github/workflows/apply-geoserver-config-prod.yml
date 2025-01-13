@@ -27,6 +27,7 @@ jobs:
           GEOSERVER_DOMAIN: "https://geoserver.digitalearth.africa"
           GEOSERVER_CONFIG_GIT_BRANCH: ${{ github.head_ref || github.ref_name }}
           GEOSERVER_ENV: "prod"
+          GEOSERVER_DB_DATABASE: ${{ secrets.GEOSERVER_DB_DATABASE }}
           DB_HOST: ${{ secrets.PROD_DB_HOST }}
           DB_USER: ${{ secrets.PROD_DB_USER }}
           DB_PASSWORD: ${{ secrets.PROD_DB_PASSWORD }}
