@@ -1,5 +1,3 @@
-version: '3.7'
-
 services:
   postgres:
     image: postgis/postgis:12-2.5-alpine
@@ -10,7 +8,7 @@ services:
     restart: always
 
   ows:
-    image: opendatacube/ows:latest
+    image: opendatacube/ows:1.8.0-rc1
     environment:
       DB_HOSTNAME: postgres
       DB_USERNAME: postgres
@@ -24,7 +22,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./products:/env/products
+      - ./products:/products
       - ./services/ows_refactored:/env/config/ows_refactored/
       - ./services/inventory:/env/config/inventory/
       - ./output:/env/config/output/
