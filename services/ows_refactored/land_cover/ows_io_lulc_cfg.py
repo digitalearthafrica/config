@@ -1,6 +1,5 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 
-
 style_colours = {
     "name": "style_colours",
     "title": "Coloured",

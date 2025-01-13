@@ -96,6 +96,7 @@ ows_cfg = {
         },
         "native_format": "GeoTIFF",
     },  # END OF wcs SECTION
+    
     "layers": [
         {
             "title": "Digital Earth Africa - OGC Web Services",
