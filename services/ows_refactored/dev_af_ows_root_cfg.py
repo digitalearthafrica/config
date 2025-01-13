@@ -466,7 +466,11 @@ ows_cfg = {
                                     "type": "python",
                                 },
                             ],
+<<<<<<< HEAD
                         },
+=======
+                        },  
+>>>>>>> 7933ae47cf86be3c1b3d0e18fe4dc7dd27f1dfdc
                     ],
                 },
             ],
