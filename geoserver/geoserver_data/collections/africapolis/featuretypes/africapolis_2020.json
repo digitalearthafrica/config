@@ -1,0 +1,144 @@
+{
+    "featureType": {
+        "name": "Africapolis_2020",
+        "nativeName": "africapolis_2020",
+        "namespace": {
+            "name": "africapolis"
+        },
+        "title": "Africapolis 2020 with urban green space indicators",
+        "abstract": "Africapolis is a geospatial database of African urban agglomeration boundaries maintained by the Sahel and West Africa Club (SWAC) at the OECD. Africapolis has been designed to provide a much-needed standardised and geospatial database on urbanisation dynamics in Africa, comparable across countries and across time. This dataset , Africapolis 2020, contains the urban agglomeration boundaries for the year 2020 with indicators of urban green space cover within the urban agglomerations, i.e., the percentage of the urban agglomeration area that has green cover (trees, shrubs, and grass), as well as the percentage of tree cover.",
+        "keywords": {
+            "string": [
+                "features",
+                "africapolis_2020"
+            ]
+        },
+        "nativeCRS": "GEOGCS[\"WGS 84\", \n  DATUM[\"World Geodetic System 1984\", \n    SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n    AUTHORITY[\"EPSG\",\"6326\"]], \n  PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], \n  UNIT[\"degree\", 0.017453292519943295], \n  AXIS[\"Geodetic longitude\", EAST], \n  AXIS[\"Geodetic latitude\", NORTH], \n  AUTHORITY[\"EPSG\",\"4326\"]]",
+        "srs": "EPSG:4326",
+        "nativeBoundingBox": {
+            "minx": -25.441370010375977,
+            "maxx": 63.93491744995117,
+            "miny": -34.95989227294922,
+            "maxy": 37.694217681884766,
+            "crs": "EPSG:4326"
+        },
+        "latLonBoundingBox": {
+            "minx": -25.441370010375977,
+            "maxx": 63.93491744995117,
+            "miny": -34.95989227294922,
+            "maxy": 37.694217681884766,
+            "crs": "EPSG:4326"
+        },
+        "projectionPolicy": "FORCE_DECLARED",
+        "enabled": true,
+        "metadata": {
+            "entry": {
+                "@key": "cachingEnabled",
+                "$": "false"
+            }
+        },
+        "store": {
+            "@class": "dataStore",
+            "name": "africapolis:africapolis_2020"
+        },
+        "serviceConfiguration": false,
+        "simpleConversionEnabled": false,
+        "internationalTitle": "",
+        "internationalAbstract": "",
+        "maxFeatures": 0,
+        "numDecimals": 0,
+        "padWithZeros": false,
+        "forcedDecimal": false,
+        "overridingServiceSRS": false,
+        "skipNumberMatched": false,
+        "circularArcPresent": false,
+        "attributes": {
+            "attribute": [
+                {
+                    "name": "agglosID",
+                    "minOccurs": 1,
+                    "maxOccurs": 1,
+                    "nillable": false,
+                    "binding": "java.lang.Integer"
+                },
+                {
+                    "name": "agglosName",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String"
+                },
+                {
+                    "name": "ISO3",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String"
+                },
+                {
+                    "name": "Pop2020",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "p_Urban_green_space_WC2020",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "p_Tree_cover_WC2020",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "p_Urban_green_space_WC2021",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "p_Tree_cover_WC2021",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "Longitude",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "Latitude",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double"
+                },
+                {
+                    "name": "color_HEX",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.String"
+                },
+                {
+                    "name": "geometry",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "org.locationtech.jts.geom.MultiPolygon"
+                }
+            ]
+        }
+    }
+}

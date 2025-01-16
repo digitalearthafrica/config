@@ -181,6 +181,26 @@
               ]
             }
           ]
+        },
+        {
+          "type": "group",
+          "name": "Urban",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Africapolis 2015 with urban green space indicators.",
+              "id": "africapolis_2015",
+              "url": "https://geoserver.digitalearth.africa/geoserver/wms",
+              "layers": "africapolis:Africapolis_2015"
+            },
+            {
+              "type": "wms",
+              "name": "Africapolis 2020 with urban green space indicators.",
+              "id": "africapolis_2020",
+              "url": "https://geoserver.digitalearth.africa/geoserver/wms",
+              "layers": "africapolis:Africapolis_2020"
+            }
+          ]
         }
       ]
     }
