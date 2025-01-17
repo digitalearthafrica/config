@@ -1,6 +1,7 @@
 ---
 name: iwmi_blue_et_monthly
-description: Monthly Incremental Evapotranspiration (ET) for Africa from the Water Accounting Plus project.
+description: Monthly Incremental Evapotranspiration (ET) for Africa from the 
+  Water Accounting Plus project.
 metadata_type: eo3
 
 metadata:
