@@ -118,56 +118,32 @@ ows_cfg = {
                             ],
                         },
                         {
-                            "title": "Satellite images",
-                            "abstract": """Satellite images""",
+                            "title": "Geomedians",
+                            "abstract": """Geomedians""",
                             "layers": [
                                 {
-                                    "title": "Surface reflectance",
-                                    "abstract": """Surface reflectance""",
-                                    "layers": [
-                                        {
-                                            "title": "Annual surface reflectance",
-                                            "abstract": """Annual surface reflectance""",
-                                            "layers": [
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layer",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls8_annual_cfg.layer",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls8_ls9_annual_cfg.layer",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls5_ls7_annual_cfg.layer",
-                                                    "type": "python",
-                                                },
-                                            ],
-                                        },
-                                        {
-                                            "title": "Semiannual surface reflectance",
-                                            "abstract": """Semiannual surface reflectance""",
-                                            "layers": [
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_semiannual_cfg.layer",
-                                                    "type": "python",
-                                                },
-                                            ],
-                                        },
-                                        {
-                                            "title": "Rolling surface reflectance",
-                                            "abstract": """Monthly rolling surface reflectance values are provided, calculated using a moving window of three months.""",
-                                            "layers": [
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_rolling_cfg.layer",
-                                                    "type": "python",
-                                                },
-                                            ],
-                                        },
-                                    ],
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls8_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls8_ls9_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls5_ls7_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_semiannual_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_rolling_cfg.layer",
+                                    "type": "python",
                                 },
                             ],
                         },
@@ -176,34 +152,16 @@ ows_cfg = {
                             "abstract": """Surface water""",
                             "layers": [
                                 {
-                                    "title": "Daily water",
-                                    "abstract": """Daily water""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.wofs.ows_wofs_ls_cfg.layer",
-                                            "type": "python",
-                                        },
-                                    ],
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_cfg.layer",
+                                    "type": "python",
                                 },
                                 {
-                                    "title": "Annual water",
-                                    "abstract": """Annual water""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
-                                            "type": "python",
-                                        }
-                                    ],
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_annual_cfg.layer",
+                                    "type": "python",
                                 },
                                 {
-                                    "title": "All-time water",
-                                    "abstract": """All-time water""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.layer",
-                                            "type": "python",
-                                        }
-                                    ],
+                                    "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.layer",
+                                    "type": "python",
                                 },
                             ],
                         },
@@ -212,48 +170,20 @@ ows_cfg = {
                             "abstract": """Vegetation""",
                             "layers": [
                                 {
-                                    "title": "Daily vegetation",
-                                    "abstract": """Daily vegetation""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
-                                            "type": "python",
-                                        },
-                                    ],
+                                    "include": "ows_refactored.vegetation.ows_fc_cfg.layer",
+                                    "type": "python",
                                 },
                                 {
-                                    "title": "Monthly vegetation",
-                                    "abstract": """Monthly vegetation""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.vegetation.ows_ndvi_anom_cfg.layer",
-                                            "type": "python",
-                                        },
-                                    ],
+                                    "include": "ows_refactored.vegetation.ows_ndvi_anom_cfg.layer",
+                                    "type": "python",
                                 },
                                 {
-                                    "title": "Annual vegetation",
-                                    "abstract": """Annual vegetation""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.vegetation.ows_fc_summary_annual_cfg.layer",
-                                            "type": "python",
-                                        },
-                                        {
-                                            "include": "ows_refactored.vegetation.ows_gmw_cfg.layer",
-                                            "type": "python",
-                                        },
-                                    ],
+                                    "include": "ows_refactored.vegetation.ows_fc_summary_annual_cfg.layer",
+                                    "type": "python",
                                 },
                                 {
-                                    "title": "Vegetation climatology",
-                                    "abstract": """Vegetation climatology""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
-                                            "type": "python",
-                                        },
-                                    ],
+                                    "include": "ows_refactored.vegetation.ows_ndvi_clim_cfg.layer",
+                                    "type": "python",
                                 },
                             ],
                         },
@@ -300,22 +230,16 @@ ows_cfg = {
                             "abstract": """Land Cover""",
                             "layers": [
                                 {
-                                    "title": "ESA datasets",
-                                    "abstract": """ESA datasets""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
-                                            "type": "python",
-                                        },
-                                        {
-                                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
-                                            "type": "python",
-                                        },
-                                        {
-                                            "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
-                                            "type": "python",
-                                        },
-                                    ],
+                                    "include": "ows_refactored.land_cover.ows_cci_landcover_cfg.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2020.layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.land_cover.ows_esa_worldcover_cfg_2021.layer",
+                                    "type": "python",
                                 },
                                 {
                                     "include": "ows_refactored.land_cover.ows_io_lulc_v2_cfg.layer",
@@ -372,30 +296,24 @@ ows_cfg = {
                                     "abstract": """Surface reflectance""",
                                     "layers": [
                                         {
-                                            "title": "Daily surface reflectance",
-                                            "abstract": """Daily surface reflectance""",
-                                            "layers": [
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layer",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls9",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls8",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls7",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls5",
-                                                    "type": "python",
-                                                },
-                                            ],
+                                            "include": "ows_refactored.surface_reflectance.ows_s2_cfg.layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls9",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls8",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls7",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls5",
+                                            "type": "python",
                                         },
                                     ],
                                 },
@@ -404,26 +322,20 @@ ows_cfg = {
                                     "abstract": """Surface temperature""",
                                     "layers": [
                                         {
-                                            "title": "Daily surface temperature",
-                                            "abstract": """Daily surface temperature""",
-                                            "layers": [
-                                                {
-                                                    "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls9",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls8",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls7",
-                                                    "type": "python",
-                                                },
-                                                {
-                                                    "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls5",
-                                                    "type": "python",
-                                                },
-                                            ],
+                                            "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls9",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls8",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls7",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls5",
+                                            "type": "python",
                                         },
                                     ],
                                 },
@@ -453,7 +365,7 @@ ows_cfg = {
                                 },
                             ],
                         },
-                        {
+                        {                                
                             "title": "Vegetation",
                             "abstract": """Vegetation""",
                             "layers": [
