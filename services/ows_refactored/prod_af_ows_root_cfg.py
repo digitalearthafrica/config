@@ -354,7 +354,7 @@ ows_cfg = {
                                 },
                             ],
                         },
-                        {                                
+                        {
                             "title": "Vegetation",
                             "abstract": """Vegetation""",
                             "layers": [
