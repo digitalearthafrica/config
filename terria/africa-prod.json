@@ -25,8 +25,9 @@
       "mergeGroupsByName": true,
       "members": [
         {
-          "type": "group",
+          "type": "wms-group",
           "name": "DE Africa Continental Services",
+          "url": "https://ows.digitalearth.africa/",
           "mergeGroupsByName": true,
           "members": [
             {
@@ -67,39 +68,14 @@
         {
           "type": "group",
           "name": "DE Africa Continental Services",
+          "url": "https://ows.digitalearth.africa/",
           "mergeGroupsByName": true,
           "members": [
             {
               "type": "wms-group",
               "name": "Surface water",
+              "url": "https://ows.digitalearth.africa/",
               "mergeGroupsByName": true, 
-              "members": [
-                {
-                  "type": "wms",
-                  "name": "Waterbodies Historical Extent and Surface Area Time Series",
-                  "id": "deafrica_waterbodies",
-                  "url": "https://geoserver.digitalearth.africa/geoserver/wms",
-                  "layers": "waterbodies:DEAfrica_Waterbodies",
-                  "featureInfoTemplate": {
-                    "template": "<div style='width:600px'> <h3>Waterbody Identifier: {{uid}}<br /> Percentage of surface area (not volume) observed as wet</h3><br /> <chart id='{{uid}}' title='Waterbody {{uid}}' chart-type='lineAndPoint' preview-x-label='Date' sources='{{#terria.urlEncode}}https://api.digitalearth.africa/waterbodies/waterbody/{{wb_id}}/observations/csv{{/terria.urlEncode}}' column-units='Date of satellite observation,%,#' x-column='date' y-column='percent_wet'> </chart>{{>disclaimer}}</div>",
-                    "partials": {
-                      "disclaimer": "This is a provisional product, released for evaluation by all users. The DE Africa team is working actively to validate and improve this product. This graph shows the wet surface area of waterbodies as estimated from satellites. It does not show depth, volume, purpose of the waterbody, nor the source of the water. The wet surface area time series uses the Digital Earth Africa Water Observations from Space product which is known to have limitations. These limitations may carry through to the wet surface area time series. For more information, visit the <a href='https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html'>Digital Earth Africa Documentation</a>"
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "wms-group",
-          "name": "DE Africa Continental Services",
-          "mergeGroupsByName": true,
-          "members": [
-            {
-              "type": "wms-group",
-              "name": "Surface water",
-              "mergeGroupsByName": true,
               "members": [
                 {
                   "type": "wms",
