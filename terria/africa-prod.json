@@ -70,7 +70,7 @@
           ]
         },
         {
-          "type": "group",
+          "type": "wms-group",
           "name": "DE Africa Continental Services",
           "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
@@ -79,7 +79,7 @@
           "mergeGroupsByName": true,
           "members": [
             {
-              "type": "wms-group",
+              "type": "group",
               "name": "Surface water",
               "url": "https://ows.digitalearth.africa/",
               "members": [
@@ -105,12 +105,13 @@
           "name": "External Datasets",
           "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
-             "DE Africa Continental Services"
+              "DE Africa Continental Services",
+              "External Datasets"
           ],
           "mergeGroupsByName": true,
           "members": [
             {
-              "type": "wms-group",
+              "type": "group",
               "name": "Satellite images",
               "url": "https://ows.digitalearth.africa/",
               "excludeMembers": [
@@ -234,19 +235,19 @@
           "name": "External Datasets",
           "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
-            "DE Africa Continental Services"
+              "DE Africa Continental Services",
+              "External Datasets"
           ],
           "mergeGroupsByName": true,
           "members": [
             {
-              "type": "wms-group",
+              "type": "group",
               "name": "Urban",
-              "url": "https://ows.digitalearth.africa/",
               "members": [
                 {
                   "type": "group",
                   "name": "Africapolis",
-                  "description": "OECD Sahel and West Africa Club (https://www.oecd.org/swac) created Africapolis to provide a much needed standardised geospatial database on urbanisation dynamics in Africa, with the aim of making urban data in Africa comparable across countries and across time. Africapolis defines an urban  agglomeration using two criteria, a boundary encompasses an area where thereis a population of 10 000 people or more and where buildings are less than 200 metres apart. The 2015 version of Africapolis is the first time where data for all 54 countries is available, which was then updated in 2020. Africapolis closes one major data gap by integrating smaller cities, i.e., those under 500 000 people.",
+                  "description": "OECD/SWAC Africapolis",
                   "members": [
                     {
                       "type": "wms",
