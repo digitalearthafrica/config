@@ -74,7 +74,6 @@
           "name": "DE Africa Continental Services",
           "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
-             "DE Africa Continental Services",
              "External Datasets"
           ],
           "mergeGroupsByName": true,
@@ -83,10 +82,6 @@
               "type": "wms-group",
               "name": "Surface water",
               "url": "https://ows.digitalearth.africa/",
-              "excludeMembers": [
-                 "DE Africa Continental Services",
-                 "External Datasets"
-              ],
               "members": [
                 {
                   "type": "wms",
@@ -110,8 +105,7 @@
           "name": "External Datasets",
           "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
-             "DE Africa Continental Services",
-             "External Datasets"
+             "DE Africa Continental Services"
           ],
           "mergeGroupsByName": true,
           "members": [
@@ -240,7 +234,7 @@
           "name": "External Datasets",
           "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
-            "DE Africa Continental Services",
+            "DE Africa Continental Services"
           ],
           "mergeGroupsByName": true,
           "members": [
