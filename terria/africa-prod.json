@@ -87,7 +87,6 @@
                  "DE Africa Continental Services",
                  "External Datasets"
               ],
-              "mergeGroupsByName": true, 
               "members": [
                 {
                   "type": "wms",
@@ -124,7 +123,6 @@
                 "DE Africa Continental Services",
                 "External Datasets"
               ],
-              "mergeGroupsByName": true,
               "members": [  
                 {
                   "type": "group",
@@ -255,7 +253,6 @@
                 "DE Africa Continental Services",
                 "External Datasets"
               ],  
-              "mergeGroupsByName": true,
               "members": [
                 {
                   "type": "group",
