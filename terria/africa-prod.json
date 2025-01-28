@@ -21,7 +21,7 @@
       "perLayerLinkedWcs": {
         "linkedWcsUrl": "https://ows.digitalearth.africa/"
       },
-      "includeMembersRegex": "^(?!.*(Coastal|Planet NICFI|Urban|Waterbodies Historical Extent and Surface Area Time Series)).*$",  
+      "includeMembersRegex": "^(?!.*(Coastal|Planet NICFI|Africapolis|Waterbodies Historical Extent and Surface Area Time Series)).*$",  
       "sortMembersBy": "name",
       "mergeGroupsByName": true,
       "members": [
