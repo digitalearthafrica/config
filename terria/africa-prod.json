@@ -21,6 +21,7 @@
       "perLayerLinkedWcs": {
         "linkedWcsUrl": "https://ows.digitalearth.africa/"
       },
+      "includeMembersRegex": "^(?!.*(Coastal|Planet NICFI|Urban|Waterbodies Historical Extent and Surface Area Time Series)).*$",  
       "sortMembersBy": "name",
       "mergeGroupsByName": true,
       "members": [
@@ -79,7 +80,7 @@
           "mergeGroupsByName": true,
           "members": [
             {
-              "type": "group",
+              "type": "wms-group",
               "name": "Surface water",
               "url": "https://ows.digitalearth.africa/",
               "members": [
@@ -111,7 +112,7 @@
           "mergeGroupsByName": true,
           "members": [
             {
-              "type": "group",
+              "type": "wms-group",
               "name": "Satellite images",
               "url": "https://ows.digitalearth.africa/",
               "excludeMembers": [
@@ -235,14 +236,17 @@
           "name": "External Datasets",
           "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
-              "DE Africa Continental Services",
-              "External Datasets"
+            "DE Africa Continental Services"
           ],
           "mergeGroupsByName": true,
           "members": [
             {
-              "type": "group",
+              "type": "wms-group",
               "name": "Urban",
+              "excludeMembers": [
+                "DE Africa Continental Services",
+                "External Datasets"
+              ],
               "members": [
                 {
                   "type": "group",
