@@ -2,16 +2,11 @@
 name: wapor_soil_moisture
 description: "WaPOR v3 Level 2 100m dekadal relative root zone soil moisture."
 metadata_type: eo3
+license: CC BY-SA 4.0
 
 metadata:
   product:
     name: wapor_soil_moisture
-
-storage:
-  crs: EPSG:4326
-  resolution:
-    longitude: 0.000976562
-    latitude: -0.000976562
 
 measurements:
   - name: "relative_soil_moisture"
@@ -19,3 +14,10 @@ measurements:
     nodata: -9999
     units: "%"
     scale_factor: 0.001
+    add_offset: 0.0
+
+load:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.0009765625
+    latitude: -0.0009765625
