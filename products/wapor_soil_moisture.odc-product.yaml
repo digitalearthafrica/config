@@ -2,7 +2,7 @@
 name: wapor_soil_moisture
 description: "WaPOR v3 Level 2 100m dekadal relative root zone soil moisture."
 metadata_type: eo3
-license: CC BY-SA 4.0
+license: CC-BY-SA-4.0
 
 metadata:
   product:
