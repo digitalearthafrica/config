@@ -1,0 +1,25 @@
+---
+name: esa_worldcereal_wintercereals
+description: >-
+  ESA WorldCereal 10m 2021 v1.0.0 wintercereals crop maps for
+  the main cereals season defined in a region (tc-wintercereals).
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: esa_worldcereal_wintercereals
+
+measurements:
+  - name: "classification"
+    dtype: uint8
+    nodata: 255
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "confidence"
+    dtype: uint8
+    nodata: 255
+    units: "%"
+    scale_factor: 1.0
+    add_offset: 0.0
