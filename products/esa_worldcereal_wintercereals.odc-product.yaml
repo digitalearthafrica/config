@@ -17,9 +17,32 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
+    flags_definition:
+      data:
+        bits: [
+          0
+          1
+          2
+          3
+          4
+          5
+          6
+          7
+        ]
+        values:
+          0: non-crop
+          100: crop
+          255: no data
+        description: Land Use/Land Cover class
   - name: "confidence"
     dtype: uint8
     nodata: 255
     units: "%"
     scale_factor: 1.0
     add_offset: 0.0
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    latitude: -8.333333333333333e-05
+    longitude: 8.333333333333333e-05
