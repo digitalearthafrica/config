@@ -1,0 +1,15 @@
+---
+name: iwmi_green_et_monthly
+description: Monthly Rainfall Evapotranspiration (ET) for Africa from the
+  Water Accounting Plus project.
+metadata_type: eo3
+
+metadata:
+  product:
+    name: iwmi_green_et_monthly
+
+measurements:
+  - name: et
+    dtype: float32
+    nodata: -9999
+    units: "mm/month"
