@@ -1,5 +1,5 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_landsat
-from ows_refactored.radar_backscatter.style_s1_cfg import styles_s1_list
+from ows_refactored.radar_backscatter.style_s1_cfg import styles_s1_list_masked
 
 bands_s1 = {"vv": [], "vh": [], "angle": [], "area": [], "mask": []}
 
@@ -39,6 +39,6 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "native_resolution": [0.0002, -0.0002],
     "styling": {
         "default_style": "vv_vh_vh_over_vv",
-        "styles": styles_s1_list,
+        "styles": styles_s1_list_masked,
     },
 }
