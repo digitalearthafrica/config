@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 40,
+  "total_layers_count": 41,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -335,6 +335,19 @@
           "layer": "s1_rtc",
           "product": [
               "s1_rtc"
+          ],
+          "styles_count": 4,
+          "styles_list": [
+              "vv_vh_vh_over_vv",
+              "vv",
+              "vh",
+              "rvi"
+          ]
+      },
+      {
+          "layer": "s1_monthly_mosaic",
+          "product": [
+              "s1_monthly_mosaic"
           ],
           "styles_count": 4,
           "styles_list": [
