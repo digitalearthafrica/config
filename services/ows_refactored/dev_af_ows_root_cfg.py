@@ -272,6 +272,16 @@ ows_cfg = {
                                     ],
                                 },
                                 {
+                                    "title": "Monthly radar backscatter",
+                                    "abstract": """Monthly radar backscatter""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.radar_backscatter.ows_sentinel1_monthly_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
+                                {
                                     "title": "Annual radar backscatter",
                                     "abstract": """Annual radar backscatter""",
                                     "layers": [
