@@ -1,7 +1,7 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_landsat
 from ows_refactored.radar_backscatter.style_s1_cfg import styles_s1_list
 
-bands_s1_mosaic = {"vv": [], "vh": []}
+bands_s1_mosaic = {"VV": ["vv"], "VH": ["vh"]}
 
 
 layer = {
