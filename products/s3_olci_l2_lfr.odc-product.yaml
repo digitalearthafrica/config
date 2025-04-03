@@ -34,6 +34,24 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
+  - name: "RC681"
+    dtype: float32
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "RC865"
+    dtype: float32
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "LQSF"
+    dtype: uint32
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
   - name: "dataMask"
     aliases: [mask]
     dtype: uint8
