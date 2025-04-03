@@ -247,12 +247,12 @@ ows_cfg = {
                             ],
                         },
                         {
-                            "title": "Radar backscatter",
-                            "abstract": """Radar backscatter""",
+                            "title": "Satellite images",
+                            "abstract": """Satellite images""",
                             "layers": [
                                 {
-                                    "title": "Daily radar backscatter",
-                                    "abstract": """Daily radar backscatter""",
+                                    "title": "Radar backscatter",
+                                    "abstract": """Radar backscatter""",
                                     "layers": [
                                         {
                                             "include": "ows_refactored.radar_backscatter.ows_sentinel1_cfg.layer",
@@ -260,26 +260,6 @@ ows_cfg = {
                                         },
                                     ],
                                 },
-                                {
-                                    "title": "Annual radar backscatter",
-                                    "abstract": """Annual radar backscatter""",
-                                    "layers": [
-                                        {
-                                            "include": "ows_refactored.radar_backscatter.ows_alos_cfg.layer",
-                                            "type": "python",
-                                        },
-                                        {
-                                            "include": "ows_refactored.radar_backscatter.ows_jers_cfg.layer",
-                                            "type": "python",
-                                        },
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            "title": "Satellite images",
-                            "abstract": """Satellite images""",
-                            "layers": [
                                 {
                                     "title": "Surface reflectance",
                                     "abstract": """Surface reflectance""",
@@ -324,6 +304,36 @@ ows_cfg = {
                                         },
                                         {
                                             "include": "ows_refactored.surface_temperature.ows_lsc2_st_cfg.layer_ls5",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            "title": "Satellite image mosaics",
+                            "abstract": """Satellite image mosaics""",
+                            "layers": [
+                                {
+                                    "title": "Monthly radar backscatter",
+                                    "abstract": """Monthly radar backscatter""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.radar_backscatter.ows_sentinel1_monthly_cfg.layer",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
+                                {
+                                    "title": "Annual radar backscatter",
+                                    "abstract": """Annual radar backscatter""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.radar_backscatter.ows_alos_cfg.layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.radar_backscatter.ows_jers_cfg.layer",
                                             "type": "python",
                                         },
                                     ],
