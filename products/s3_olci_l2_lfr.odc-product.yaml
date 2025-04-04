@@ -1,0 +1,61 @@
+---
+name: s3_olci_l2_lfr
+description: "Sentinel-3 OLCI L2 LAND"
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: s3_olci_l2_lfr
+storage:
+  crs: 'EPSG:4326'
+  resolution:
+    longitude: 0.003
+    latitude: -0.003
+measurements:
+  - name: "GIFAPAR"
+    aliases: [GI-FAPAR]
+    dtype: float32
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "IWV_L"
+    aliases: [water_vapour]
+    dtype: float32
+    nodata: 0
+    units: "kg/m²"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "OTCI"
+    aliases: [chlorophyll]
+    dtype: float32
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "RC681"
+    dtype: float32
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "RC865"
+    dtype: float32
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "LQSF"
+    dtype: uint32
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "dataMask"
+    aliases: [mask]
+    dtype: uint8
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
