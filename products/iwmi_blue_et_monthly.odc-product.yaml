@@ -9,7 +9,8 @@ metadata:
     name: iwmi_blue_et_monthly
 
 measurements:
-  - name: et
+  - name: data
     dtype: float32
     nodata: -9999
     units: "mm/month"
+    aliases: [et]
