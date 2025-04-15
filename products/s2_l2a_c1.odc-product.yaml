@@ -14,72 +14,84 @@ measurements:
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "blue"
     aliases: [band_02, B02]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "green"
     aliases: [band_03, B03]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "red"
     aliases: [band_04, B04]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "rededge1"
     aliases: [band_05, red_edge_1, B05]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "rededge2"
     aliases: [band_06, red_edge_2, B06]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "rededge3"
     aliases: [band_07, red_edge_3, B07]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "nir"
     aliases: [band_08, nir_1, B08]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "nir08"
     aliases: [band_8a, nir_narrow, nir_2, B8A]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "nir09"
     aliases: [band_09, water_vapour, B09]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "swir16"
     aliases: [band_11, swir_1, swir_16, B11]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "swir22"
     aliases: [band_12, swir_2, swir_22, B12]
     units: "1"
     dtype: uint16
     nodata: 0
+    add_offset: -1000
 
   - name: "scl"
     aliases: [mask, qa, SCL]
