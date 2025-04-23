@@ -1,0 +1,172 @@
+---
+name: s3_olci_l2_wfr
+description: "Sentinel-3 OLCI L2 WATER"
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: s3_olci_l2_wfr
+storage:
+  crs: 'EPSG:4326'
+  resolution:
+    longitude: 0.003
+    latitude: -0.003
+measurements:
+  - name: "A865"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "ADG443_NN"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B01"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B02"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B03"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B04"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B05"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B06"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B07"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B08"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B09"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B10"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B11"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B12"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B16"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B17"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B18"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B21"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "CHL_NN"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "CHL_OC4ME"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "IWV_W"
+    dtype: uint8
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "KD490_M07"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "PAR"
+    dtype: uint16
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "T865"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "TSM_NN"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "dataMask"
+    aliases: [mask]
+    dtype: uint8
+    nodata: 0
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
