@@ -1,0 +1,75 @@
+---
+name: syn_2_vg1
+description: "Level-2 VG1 SYN product"
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: syn_2_vg1
+storage:
+  crs: 'EPSG:4326'
+  resolution:
+    longitude: 0.003
+    latitude: -0.003
+measurements:
+  - name: "AG_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B0_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B2_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "B3_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "MIR_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "NDVI_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "TOA_NDVI_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "OG_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "WVG_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: "SM_VG1"
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
