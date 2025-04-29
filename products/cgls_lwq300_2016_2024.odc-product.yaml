@@ -1,0 +1,56 @@
+---
+name: cgls_lwq300_2016_2024
+description: >
+  Copernicus Global Land Service – Lake Water Quality 2016-2024 (raster 300 m),
+  global, 10-daily – version 1
+metadata_type: eo3
+
+metadata:
+  product:
+    name: cgls_lwq300_2016_2024
+
+load:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.0022
+    latitude: -0.0022
+
+measurements:
+  - name: first_obs
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: last_obs
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: n_obs_quality_risk_sum
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: num_obs
+    dtype: int32
+    nodata: 0
+    units: "1"
+  - name: stats_valid_obs_tsi_sum
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: stats_valid_obs_turbidity_sum
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: trophic_state_index
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+    aliases: [TSI]
+  - name: turbidity_mean
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "NTU"
+    aliases: [turbidity]
+  - name: turbidity_sigma
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "NTU"

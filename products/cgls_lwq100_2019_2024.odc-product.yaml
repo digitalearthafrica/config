@@ -1,0 +1,40 @@
+---
+name: cgls_lwq100_2019_2024
+description: >
+  Copernicus Global Land Service – Lake Water Quality 2019-2024 (raster 100 m),
+  global, 10-daily – version 1
+metadata_type: eo3
+
+metadata:
+  product:
+    name: cgls_lwq100_2019_2024
+
+load:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.000898
+    latitude: -0.000898
+
+measurements:
+  - name: first_obs
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: last_obs
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: num_obs
+    dtype: int32
+    nodata: 0
+    units: "1"
+  - name: trophic_state_mean
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+    aliases: [trophic_state_index, TSI]
+  - name: turbidity_blended_mean
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "NTU"
+    aliases: [turbidity]
