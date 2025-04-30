@@ -78,7 +78,7 @@ measurements:
     scale_factor: 1.0
     add_offset: 0.0
     flags_definition:
-      qa:
+      mask:
         bits: [0, 1, 2, 3, 4, 8, 16, 32, 64, 128]
         description: Sentinel-3 Core Status Flag
         values:
