@@ -14,15 +14,17 @@ storage:
     latitude: -0.003
 measurements:
   - name: "A865"
+    aliases: [aerosol_angstrom_exponent]
     dtype: float32
     nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "ADG443_NN"
+    aliases: [CDM_absorbtion_coefficient]
     dtype: float32
     nodata: NaN
-    units: "1"
+    units: "log10(1/m)"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "B01"
@@ -122,45 +124,52 @@ measurements:
     scale_factor: 1.0
     add_offset: 0.0
   - name: "CHL_NN"
+    aliases: [algal_pigment_complex_waters]
     dtype: float32
     nodata: NaN
-    units: "1"
+    units: "log10(mg/m^3)"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "CHL_OC4ME"
+    aliases: [algal_pigment_open_waters]
     dtype: float32
     nodata: NaN
-    units: "1"
+    units: "log10(mg/m^3)"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "IWV_W"
+    aliases: [integrated_water_vapour]
     dtype: uint8
     nodata: 0
-    units: "1"
+    units: "kg/m^2"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "KD490_M07"
+    aliases: [diffuse_attenuation_coefficient]
     dtype: float32
     nodata: NaN
-    units: "1"
+    units: "log10(1/m)"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "PAR"
+    aliases: [photosynthetically_active_radiation]
     dtype: uint16
     nodata: 0
-    units: "1"
+    units: "microeinstein/s/m^2"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "T865"
+    aliases: [aerosol_optical_thickness]
     dtype: float32
     nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "TSM_NN"
+    aliases: [total_suspended_matter]
     dtype: float32
     nodata: NaN
-    units: "1"
+    units: "log10(g/m^3)"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "dataMask"
