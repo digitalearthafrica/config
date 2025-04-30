@@ -1,11 +1,11 @@
 ---
-name: s3_syn_2_vg1
+name: syn_2_vg1
 description: "Sentinel-3 Level-2 VG1 SYN product"
 metadata_type: eo3
 license: CC-BY-4.0
 metadata:
   product:
-    name: s3_syn_2_vg1
+    name: syn_2_vg1
 storage:
   crs: 'EPSG:4326'
   resolution:
