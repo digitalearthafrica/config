@@ -1,5 +1,10 @@
 product,definition
 alos_palsar_mosaic,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/alos_palsar_mosaic.odc-product.yaml
+cgls_lwq300_2002_2012,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_lwq300_2002_2012.odc-product.yaml
+cgls_lwq300_2016_2024,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_lwq300_2016_2024.odc-product.yaml
+cgls_lwq100_2019_2024,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_lwq100_2019_2024.odc-product.yaml
+cgls_lwq100_2024_nrt,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_lwq100_2024_nrt.odc-product.yaml
+cgls_lwq300_2024_nrt,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_lwq300_2024_nrt.odc-product.yaml
 crop_mask,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask.odc-product.yaml
 crop_mask_eastern,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_eastern.odc-product.yaml
 crop_mask_western,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/crop_mask_western.odc-product.yaml
