@@ -49,6 +49,7 @@ s2_l2a_c1,https://raw.githubusercontent.com/digitalearthafrica/config/master/pro
 s3_ol_2_wfr_nrt,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s3_ol_2_wfr_nrt.odc-product.yaml
 s3_olci_l2_lfr,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s3_olci_l2_lfr.odc-product.yaml
 s3_olci_l2_wfr,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s3_olci_l2_wfr.odc-product.yaml
+s3_syn_2_vg1,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s3_syn_2_vg1.odc-product.yaml
 wapor_soil_moisture,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wapor_soil_moisture.odc-product.yaml
 wofs_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls.odc-product.yaml
 wofs_ls_summary_alltime,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls_summary_alltime.odc-product.yaml

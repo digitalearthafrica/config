@@ -23,26 +23,26 @@ measurements:
     dtype: uint16
     nodata: -10000
     units: "1"
-    scale_factor: 10^-4
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B2_VG1"
     dtype: uint16
     nodata: -10000
     units: "1"
-    scale_factor: 10^-4
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B3_VG1"
     dtype: uint16
     nodata: -10000
     units: "1"
-    scale_factor: 10^-4
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "MIR_VG1"
     aliases: [middle_infrared]
     dtype: uint16
     nodata: -10000
     units: "1"
-    scale_factor: 10^-4
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "NDVI_VG1"
     dtype: uint8
@@ -51,7 +51,7 @@ measurements:
     scale_factor: 0.004
     add_offset: -0.08
   - name: "TOA_NDVI_VG1"
-    dtype: unint8
+    dtype: uint8
     nodata: -1
     units: "1"
     scale_factor: 0.004
