@@ -15,47 +15,47 @@ storage:
 measurements:
   - name: "GIFAPAR"
     aliases: [GI-FAPAR]
-    dtype: float32
-    nodata: 0
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 10000
     add_offset: 0.0
   - name: "IWV_L"
     aliases: [water_vapour]
-    dtype: float32
-    nodata: 0
+    dtype: uint8
+    nodata: 255
     units: "kg/m²"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "OTCI"
     aliases: [chlorophyll]
-    dtype: float32
-    nodata: 0
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 10000
     add_offset: 0.0
   - name: "RC681"
-    dtype: float32
-    nodata: 0
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 10000
     add_offset: 0.0
   - name: "RC865"
-    dtype: float32
-    nodata: 0
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 10000
     add_offset: 0.0
   - name: "LQSF"
-    dtype: uint32
-    nodata: 0
+    dtype: float32
+    nodata: -1
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: "dataMask"
     aliases: [mask]
     dtype: uint8
-    nodata: 0
+    nodata: 255
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
