@@ -608,6 +608,31 @@
                     </sld:LineSymbolizer>
                 </sld:Rule>
                 <sld:Rule>
+                    <sld:Name>2024</sld:Name>
+                    <sld:Title>2024</sld:Title>
+                    <ogc:Filter>
+                        <ogc:And>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>year</ogc:PropertyName>
+                                <ogc:Literal>2024</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                    </ogc:Filter>
+                    <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
+                    <sld:LineSymbolizer>
+                        <sld:Stroke>
+                            <sld:CssParameter name="stroke">#ffffbf</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
+                            <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+                        </sld:Stroke>
+                    </sld:LineSymbolizer>
+                </sld:Rule>
+                <sld:Rule>
                     <sld:Name>2000</sld:Name>
                     <sld:Title>2000 (low quality shorelines)</sld:Title>
                     <ogc:Filter>
