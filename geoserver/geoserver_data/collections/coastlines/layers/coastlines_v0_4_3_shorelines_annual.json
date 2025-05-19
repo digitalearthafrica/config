@@ -9,7 +9,8 @@
             "@class": "linked-hash-set",
             "style": [
                 {
-                    "name": "line"
+                    "name": "coastlines:coastlines_v0_4_3_shorelines_annual",
+                    "workspace": "coastlines"
                 }
             ]
         },
