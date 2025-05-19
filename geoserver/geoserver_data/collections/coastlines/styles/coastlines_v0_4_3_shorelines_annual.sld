@@ -50,7 +50,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#060519</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#050417</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -75,7 +75,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#130a32</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#0f0c2e</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -100,7 +100,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#230c4d</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#1d1047</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -125,7 +125,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#370961</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#2d115f</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -150,7 +150,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#4a0b6a</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#3f0f72</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -175,7 +175,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#5b116e</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#50127b</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -200,7 +200,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#6b186e</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#611980</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -225,7 +225,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#7e1e6c</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#721f81</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -250,7 +250,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#902568</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#822581</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -275,7 +275,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#a12b62</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#932b81</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -300,7 +300,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#b33359</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#a4317e</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -325,7 +325,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#c33b4f</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#b6377a</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -350,7 +350,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#d24644</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#c73d73</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -375,7 +375,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#df5337</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#d7456c</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -400,7 +400,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#ea6329</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#e65164</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -425,7 +425,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f2751c</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#f1605d</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -450,7 +450,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f8880d</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#f7735c</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -475,7 +475,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#fb9c07</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fb8761</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -500,7 +500,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#fcb115</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fd9b6b</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -525,7 +525,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f9c72f</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#feaf78</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -550,7 +550,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f5dd4f</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fec387</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -575,7 +575,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f2f079</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fed698</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -600,7 +600,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#ffffbf</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fdeaab</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -625,7 +625,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#ffffbf</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fcfdbf</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-width">2</sld:CssParameter>
@@ -675,7 +675,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#060519</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#050417</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -700,7 +700,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#130a32</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#0f0c2e</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -725,7 +725,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#230c4d</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#1d1047</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -750,7 +750,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#370961</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#2d115f</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -775,7 +775,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#4a0b6a</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#3f0f72</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -800,7 +800,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#5b116e</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#50127b</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -825,7 +825,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#6d186e</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#611980</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -850,7 +850,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#7e1e6c</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#721f81</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -875,7 +875,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#902568</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#822581</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -900,7 +900,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#a12bc2</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#932b81</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -925,7 +925,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#b33359</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#a4317e</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -950,7 +950,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#c33b4f</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#b6377a</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -975,7 +975,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#d24644</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#c73d73</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1000,7 +1000,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#df5337</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#d7456c</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1025,7 +1025,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#ea6329</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#e65164</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1050,7 +1050,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f2751c</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#f1605d</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1075,7 +1075,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f8880d</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#f7735c</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1100,7 +1100,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#fb9c07</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fb8761</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1125,7 +1125,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#fcb115</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fd9b6b</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1150,7 +1150,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f9c72f</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#feaf78</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1175,7 +1175,7 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f5dd4f</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fec387</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
@@ -1200,14 +1200,63 @@
                     <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
                     <sld:LineSymbolizer>
                         <sld:Stroke>
-                            <sld:CssParameter name="stroke">#f2f079</sld:CssParameter>
+                            <sld:CssParameter name="stroke">#fed698</sld:CssParameter>
                             <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
                             <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
                             <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
                         </sld:Stroke>
                     </sld:LineSymbolizer>
                 </sld:Rule>
-
+                <sld:Rule>
+                    <sld:Name>2023</sld:Name>
+                    <sld:Title>2023</sld:Title>
+                    <ogc:Filter>
+                        <ogc:And>
+                            <ogc:PropertyIsNotEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsNotEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>year</ogc:PropertyName>
+                                <ogc:Literal>2023</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                    </ogc:Filter>
+                    <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
+                    <sld:LineSymbolizer>
+                        <sld:Stroke>
+                            <sld:CssParameter name="stroke">#fdeaab</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
+                        </sld:Stroke>
+                    </sld:LineSymbolizer>
+                </sld:Rule>
+                <sld:Rule>
+                    <sld:Name>2024</sld:Name>
+                    <sld:Title>2024</sld:Title>
+                    <ogc:Filter>
+                        <ogc:And>
+                            <ogc:PropertyIsNotEqualTo>
+                                <ogc:PropertyName>certainty</ogc:PropertyName>
+                                <ogc:Literal>good</ogc:Literal>
+                            </ogc:PropertyIsNotEqualTo>
+                            <ogc:PropertyIsEqualTo>
+                                <ogc:PropertyName>year</ogc:PropertyName>
+                                <ogc:Literal>2024</ogc:Literal>
+                            </ogc:PropertyIsEqualTo>
+                        </ogc:And>
+                    </ogc:Filter>
+                    <sld:MaxScaleDenominator>30000.0</sld:MaxScaleDenominator>
+                    <sld:LineSymbolizer>
+                        <sld:Stroke>
+                            <sld:CssParameter name="stroke">#fcfdbf</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linecap">square</sld:CssParameter>
+                            <sld:CssParameter name="stroke-linejoin">bevel</sld:CssParameter>
+                            <sld:CssParameter name="stroke-dasharray">5.0 3.5</sld:CssParameter>
+                        </sld:Stroke>
+                    </sld:LineSymbolizer>
+                </sld:Rule>
                 <sld:Rule>
                     <sld:MaxScaleDenominator>10000.0</sld:MaxScaleDenominator>
                     <sld:TextSymbolizer>
