@@ -63,6 +63,7 @@ esa_worldcover_2020,https://raw.githubusercontent.com/opendatacube/datacube-data
 esa_worldcover_2021,https://raw.githubusercontent.com/opendatacube/datacube-dataset-config/main/products/esa_worldcover_2021.odc-product.yaml
 esa_worldcereal_wintercereals,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_worldcereal_wintercereals.odc-product.yaml
 esa_worldcereal_temporarycrops,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_worldcereal_temporarycrops.odc-product.yaml
+esa_worldcereal_maize_active,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_worldcereal_maize_active.odc-product.yaml
 cgls_landcover,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_landcover.odc-product.yaml
 cci_landcover,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cci_landcover.odc-product.yaml
 wsf_2015,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wsf_2015.odc-product.yaml
