@@ -1,0 +1,26 @@
+{
+    "layer": {
+        "name": "coastlines_v0_4_3_shorelines_annual",
+        "type": "VECTOR",
+        "defaultStyle": {
+            "name": "line"
+        },
+        "styles": {
+            "@class": "linked-hash-set",
+            "style": [
+                {
+                    "name": "coastlines:coastlines_v0_4_3_shorelines_annual",
+                    "workspace": "coastlines"
+                }
+            ]
+        },
+        "resource": {
+            "@class": "featureType",
+            "name": "coastlines:coastlines_v0_4_3_shorelines_annual"
+        },
+        "attribution": {
+            "logoWidth": 0,
+            "logoHeight": 0
+        }
+    }
+}
