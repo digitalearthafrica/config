@@ -54,3 +54,91 @@ measurements:
     dtype: float32
     nodata: 9.96921e+36
     units: "NTU"
+  - name: Rw400_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw412_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw443_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw490_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw510_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw560_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw620_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw665_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw674_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw681_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw709_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw754_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw760_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw764_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw767_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw779_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw865_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw885_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw900_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw940_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw1020_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: RwDayNum_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
