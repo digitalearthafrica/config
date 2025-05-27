@@ -55,3 +55,59 @@ measurements:
     nodata: 9.96921e+36
     units: "NTU"
     aliases: [turbidity]
+  - name: Rw443_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw490_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw560_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw665_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw705_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw740_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw783_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw842_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw865_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw945_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw1375_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw1610_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: Rw2190_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
+  - name: RwDayNum_rep
+    dtype: float32
+    nodata: 9.96921e+36
+    units: "1"
