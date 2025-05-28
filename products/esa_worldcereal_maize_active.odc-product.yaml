@@ -2,7 +2,7 @@
 name: esa_worldcereal_maize_active
 description: >-
   ESA WorldCereal 10m 2021 v1.0.0 active cropland map for
-  main maize season defined in a region (tc-maize-main).
+  the main maize season defined in a region (tc-maize-main).
 metadata_type: eo3
 license: CC-BY-4.0
 
