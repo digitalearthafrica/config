@@ -1,14 +1,14 @@
 ---
-name: esa_worldcereal_maize_active
+name: esa_worldcereal_maize_irrigation
 description: >-
-  ESA WorldCereal 10m 2021 v1.0.0 active cropland map for
+  ESA WorldCereal 10m 2021 v1.0.0 irrigation map for
   the main maize season defined in a region (tc-maize-main).
 metadata_type: eo3
 license: CC-BY-4.0
 
 metadata:
   product:
-    name: esa_worldcereal_maize_active
+    name: esa_worldcereal_maize_irrigation
 
 measurements:
   - name: "classification"
@@ -30,11 +30,17 @@ measurements:
           7
         ]
         values:
-          0: inactive cropland
-          100: active cropland
+          0: rainfed
+          100: irrigated
           254: no crop
           255: no data
         description: Land Use/Land Cover class
+  - name: "confidence"
+    dtype: uint8
+    nodata: 255
+    units: "%"
+    scale_factor: 1.0
+    add_offset: 0.0
 
 storage:
   crs: EPSG:4326
