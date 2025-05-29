@@ -115,10 +115,6 @@ measurements:
     dtype: float32
     nodata: 9.96921e+36
     units: "1"
-  - name: Rw865_rep
-    dtype: float32
-    nodata: 9.96921e+36
-    units: "1"
   - name: Rw885_rep
     dtype: float32
     nodata: 9.96921e+36
