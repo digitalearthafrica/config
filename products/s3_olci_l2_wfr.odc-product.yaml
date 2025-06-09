@@ -70,7 +70,7 @@ measurements:
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B07"
-    aliases: "Oa06_reflectance"  
+    aliases: "Oa06_reflectance"
     dtype: uint16
     nodata: 65535
     units: "1"
