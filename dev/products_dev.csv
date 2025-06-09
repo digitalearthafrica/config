@@ -66,6 +66,7 @@ esa_worldcereal_temporarycrops,https://raw.githubusercontent.com/digitalearthafr
 esa_worldcereal_maize_active,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_worldcereal_maize_active.odc-product.yaml
 esa_worldcereal_maize_irrigation,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_worldcereal_maize_irrigation.odc-product.yaml
 esa_worldcereal_maize_main,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_worldcereal_maize_main.odc-product.yaml
+esa_worldcereal_activecropland,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_worldcereal_activecropland.odc-product.yaml
 cgls_landcover,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cgls_landcover.odc-product.yaml
 cci_landcover,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/cci_landcover.odc-product.yaml
 wsf_2015,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wsf_2015.odc-product.yaml
