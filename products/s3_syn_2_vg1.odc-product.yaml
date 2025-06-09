@@ -17,62 +17,55 @@ measurements:
     dtype: uint8
     nodata: 255
     units: "1"
-    scale_factor: 0.004
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "B0_VG1"
-    dtype: uint16
-    nodata: -10000
+    dtype: int16
+    nodata: 32767
     units: "1"
-    scale_factor: 0.0001
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "B2_VG1"
-    dtype: uint16
-    nodata: -10000
+    dtype: int16
+    nodata: 32767
     units: "1"
-    scale_factor: 0.0001
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "B3_VG1"
-    dtype: uint16
-    nodata: -10000
+    dtype: int16
+    nodata: 32767
     units: "1"
-    scale_factor: 0.0001
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "MIR_VG1"
     aliases: [middle_infrared]
-    dtype: uint16
-    nodata: -10000
+    dtype: int16
+    nodata: 32767
     units: "1"
-    scale_factor: 0.0001
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "NDVI_VG1"
-    dtype: uint8
-    nodata: -1
+    dtype: int16
+    nodata: 32767
     units: "1"
-    scale_factor: 0.004
-    add_offset: -0.08
-  - name: "TOA_NDVI_VG1"
-    dtype: uint8
-    nodata: -1
-    units: "1"
-    scale_factor: 0.004
-    add_offset: -0.08
+    scale_factor: 1.0
+    add_offset: 0
   - name: "OG_VG1"
     aliases: [total_column_ozone]
     dtype: uint8
     nodata: 255
     units: "atm.cm"
-    scale_factor: 0.004
+    scale_factor: 1.0
     add_offset: 0.0
-  - name: "WVG_VG1"
-    aliases: [total_column_water_vapour]
+  - name: "SAA_VG1"
+    dtype: int16
+    nodata: 32767
+    units: "1"
+    scale_factor: 1
+    add_offset: 0
+  - name: "SZA_VG1"
     dtype: uint8
     nodata: 255
-    units: "g/cm^2"
-    scale_factor: 0.04
-    add_offset: 0.0
-  - name: "SM_VG1"
-    dtype: uint8
-    nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
@@ -91,3 +84,28 @@ measurements:
           32: B3_good
           64: B2_good
           128: B0_good
+  - name: "TOA_NDVI_VG1"
+    dtype: int16
+    nodata: 32767
+    units: "1"
+    scale_factor: 1
+    add_offset: 0
+  - name: "VAA_VG1"
+    dtype: int16
+    nodata: 32767
+    units: "1"
+    scale_factor: 1
+    add_offset: 0.0
+  - name: "VZA_VG1"
+    dtype: uint8
+    nodata: 255
+    units: "1"
+    scale_factor: 1
+    add_offset: 0.0
+  - name: "WVG_VG1"
+    aliases: [total_column_water_vapour]
+    dtype: uint8
+    nodata: 255
+    units: "g/cm^2"
+    scale_factor: 1
+    add_offset: 0.0
