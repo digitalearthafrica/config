@@ -28,112 +28,112 @@ measurements:
     scale_factor: 0.01968504
     add_offset: -3
   - name: "B01"
-    aliases: "Oa01_reflectance"
+    aliases: [Oa01_reflectance]
     dtype: uint16
     nodata: NaN
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B02"
-    aliases: "Oa02_reflectance"
+    aliases: [Oa02_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B03"
-    aliases: "Oa03_reflectance"
+    aliases: [Oa03_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B04"
-    aliases: "Oa04_reflectance"
+    aliases: [Oa04_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B05"
-    aliases: "Oa05_reflectance"
+    aliases: [Oa05_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B06"
-    aliases: "Oa06_reflectance"
+    aliases: [Oa06_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B07"
-    aliases: "Oa06_reflectance"
+    aliases: [Oa06_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B08"
-    aliases: "Oa08_reflectance"
+    aliases: [Oa08_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B09"
-    aliases: "Oa09_reflectance"
+    aliases: [Oa09_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B10"
-    aliases: "Oa10_reflectance"
+    aliases: [Oa10_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B11"
-    aliases: "Oa10_reflectance"
+    aliases: [Oa10_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B12"
-    aliases: "Oa12_reflectance"
+    aliases: [Oa12_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B16"
-    aliases: "Oa16_reflectance"
+    aliases: [Oa16_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B17"
-    aliases: "Oa17_reflectance"
+    aliases: [Oa17_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B18"
-    aliases: "Oa18_reflectance"
+    aliases: [Oa18_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
     scale_factor: 0.00001831111
     add_offset: -0.2
   - name: "B21"
-    aliases: "Oa21_reflectance"
+    aliases: [Oa21_reflectance]
     dtype: uint16
     nodata: 65535
     units: "1"
