@@ -17,7 +17,7 @@ measurements:
     dtype: uint8
     nodata: 255
     units: "1"
-    scale_factor: 0.004
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "B0_VG1"
     dtype: int16
@@ -48,28 +48,28 @@ measurements:
     dtype: int16
     nodata: 32767
     units: "1"
-    scale_factor: 0.004
-    add_offset: -0.08
+    scale_factor: 0.0001
+    add_offset: 0.0
   - name: "OG_VG1"
     aliases: [total_column_ozone]
     dtype: uint8
     nodata: 255
     units: "atm.cm"
-    scale_factor: 0.004
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "SAA_VG1"
     aliases: [solar_azimuth_angle]
     dtype: int16
     nodata: 32767
     units: "degrees"
-    scale_factor: 1.5
-    add_offset: 0
+    scale_factor: 1.0
+    add_offset: 0.0
   - name: "SZA_VG1"
     aliases: [solar_zenith_angle]
     dtype: uint8
     nodata: 255
     units: "degrees"
-    scale_factor: 0.5
+    scale_factor: 1.0
     add_offset: 0.0
     flags_definition:
       mask:
@@ -90,26 +90,26 @@ measurements:
     dtype: int16
     nodata: 32767
     units: "1"
-    scale_factor: 0.004
-    add_offset: -0.08
+    scale_factor: 0.0001
+    add_offset: 0.0
   - name: "VAA_VG1"
     aliases: [view_azimuth_angle]
     dtype: int16
     nodata: 32767
     units: "degrees"
-    scale_factor: 1.5
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "VZA_VG1"
     aliases: [view_zenith_angle]
     dtype: uint8
     nodata: 255
     units: "degrees"
-    scale_factor: 0.5
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "WVG_VG1"
     aliases: [total_column_water_vapour]
     dtype: uint8
     nodata: 255
     units: "g/cm^2"
-    scale_factor: 0.04
+    scale_factor: 1.0
     add_offset: 0.0
