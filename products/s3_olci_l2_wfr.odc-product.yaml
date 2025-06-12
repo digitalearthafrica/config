@@ -15,167 +15,183 @@ storage:
 measurements:
   - name: "A865"
     aliases: [aerosol_angstrom_exponent]
-    dtype: float32
-    nodata: NaN
+    dtype: int16
+    nodata: 32767
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "ADG443_NN"
     aliases: [CDM_absorbtion_coefficient]
-    dtype: float32
-    nodata: NaN
+    dtype: int16
+    nodata: 32767
     units: "log10(1/m)"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B01"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa01_reflectance]
+    dtype: uint16
+    nodata: 32767
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B02"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa02_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B03"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa03_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.00001
     add_offset: 0.0
   - name: "B04"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa04_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B05"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa05_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B06"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa06_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B07"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa07_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B08"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa08_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B09"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa09_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B10"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa10_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B11"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa11_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B12"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa12_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B16"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa16_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B17"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa17_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B18"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa18_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B21"
-    dtype: float32
-    nodata: NaN
+    aliases: [Oa21_reflectance]
+    dtype: uint16
+    nodata: 65535
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "CHL_NN"
     aliases: [algal_pigment_complex_waters]
-    dtype: float32
-    nodata: NaN
+    dtype: int16
+    nodata: 32767
     units: "log10(mg/m^3)"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "CHL_OC4ME"
     aliases: [algal_pigment_open_waters]
-    dtype: float32
-    nodata: NaN
+    dtype: int16
+    nodata: 32767
     units: "log10(mg/m^3)"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "IWV_W"
     aliases: [integrated_water_vapour]
     dtype: uint8
-    nodata: 0
+    nodata: 255
     units: "kg/m^2"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "KD490_M07"
     aliases: [diffuse_attenuation_coefficient]
-    dtype: float32
-    nodata: NaN
+    dtype: int16
+    nodata: 32767
     units: "log10(1/m)"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "PAR"
     aliases: [photosynthetically_active_radiation]
     dtype: uint16
-    nodata: 0
+    nodata: 65535
     units: "microeinstein/s/m^2"
-    scale_factor: 1.0
+    scale_factor: 1
     add_offset: 0.0
   - name: "T865"
     aliases: [aerosol_optical_thickness]
-    dtype: float32
-    nodata: NaN
+    dtype: int16
+    nodata: 32767
     units: "1"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "TSM_NN"
     aliases: [total_suspended_matter]
-    dtype: float32
-    nodata: NaN
+    dtype: int16
+    nodata: 32767
     units: "log10(g/m^3)"
-    scale_factor: 1.0
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "dataMask"
     aliases: [mask]
     dtype: uint8
-    nodata: 0
+    nodata: 255
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
