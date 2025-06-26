@@ -59,7 +59,7 @@ s1_rtc,https://raw.githubusercontent.com/digitalearthafrica/config/master/produc
 s1_monthly_mosaic,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s1-monthly-mosaic.odc-product.yaml
 s2_l2a,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/esa_s2_l2a.odc-product.yaml
 s2_l2a_c1,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s2_l2a_c1.odc-product.yaml
-3_olci_l2_lfr,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s3_olci_l2_lfr.odc-product.yaml
+s3_olci_l2_lfr,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s3_olci_l2_lfr.odc-product.yaml
 wapor_soil_moisture,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wapor_soil_moisture.odc-product.yaml
 wofs_ls,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls.odc-product.yaml
 wofs_ls_summary_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wofs_ls_summary_annual.odc-product.yaml
