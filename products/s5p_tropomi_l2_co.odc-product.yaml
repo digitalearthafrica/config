@@ -1,0 +1,23 @@
+---
+name: s5p_tropomi_l2_co
+description: Sentinel-5p TROPOMI Level 2 Carbon Monoxide (CO) total column.
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: s5p_tropomi_l2_co
+
+measurements:
+  - name: CO
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    offset: 0
+  - name: dataMask
+    dtype: uint8
+    nodata: 255
+    units: '1'
+    scale_factor: 1
+    offset: 0

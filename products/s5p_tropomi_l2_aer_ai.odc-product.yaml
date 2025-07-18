@@ -1,0 +1,29 @@
+---
+name: s5p_tropomi_l2_aer_ai
+description: Sentinel-5p TROPOMI Level 2 UV Aerosol Index.
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: s5p_tropomi_l2_aer_ai
+
+measurements:
+  - name: AER_AI_340_380
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    offset: 0
+  - name: AER_AI_354_388
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    offset: 0
+  - name: dataMask
+    dtype: uint8
+    nodata: 255
+    units: '1'
+    scale_factor: 1
+    offset: 0
