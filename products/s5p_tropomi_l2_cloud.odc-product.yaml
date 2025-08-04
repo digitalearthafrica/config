@@ -1,0 +1,53 @@
+---
+name: s5p_tropomi_l2_cloud
+description: Sentinel-5p TROPOMI Level 2 Cloud fraction, albedo, top pressure.
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: s5p_tropomi_l2_cloud
+
+measurements:
+  - name: CLOUD_BASE_PRESSURE
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    add_offset: 0
+  - name: CLOUD_TOP_PRESSURE
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    add_offset: 0
+  - name: CLOUD_BASE_HEIGHT
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    add_offset: 0
+  - name: CLOUD_TOP_HEIGHT
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    add_offset: 0
+  - name: CLOUD_OPTICAL_THICKNESS
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    add_offset: 0
+  - name: CLOUD_FRACTION
+    dtype: float32
+    nodata: -9999
+    units: '1'
+    scale_factor: 1
+    add_offset: 0
+  - name: dataMask
+    dtype: uint8
+    nodata: 255
+    units: '1'
+    scale_factor: 1
+    add_offset: 0
