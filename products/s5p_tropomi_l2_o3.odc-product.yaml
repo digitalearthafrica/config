@@ -12,6 +12,7 @@ storage:
   resolution:
     longitude: 0.01
     latitude: -0.01
+
 measurements:
   - name: O3
     dtype: float32

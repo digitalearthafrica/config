@@ -13,6 +13,7 @@ storage:
   resolution:
     longitude: 0.01
     latitude: -0.01
+
 measurements:
   - name: NO2
     dtype: float32

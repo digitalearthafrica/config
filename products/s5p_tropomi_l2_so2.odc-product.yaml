@@ -12,11 +12,13 @@ storage:
   resolution:
     longitude: 0.01
     latitude: -0.01
+
 measurements:
   - name: SO2
     dtype: float32
     nodata: -9999
     units: '1'
+    units: 'DU'
     scale_factor: 1
     add_offset: 0
   - name: dataMask
