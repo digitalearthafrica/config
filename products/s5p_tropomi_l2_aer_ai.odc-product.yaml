@@ -7,7 +7,11 @@ license: CC-BY-4.0
 metadata:
   product:
     name: s5p_tropomi_l2_aer_ai
-
+storage:
+  crs: 'EPSG:4326'
+  resolution:
+    longitude: 0.01
+    latitude: -0.01
 measurements:
   - name: AER_AI_340_380
     dtype: float32
