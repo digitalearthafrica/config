@@ -2,8 +2,7 @@ from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 
 style_activecropland = {
     "name": "style_activecropland",
-    "title": "Coloured",
-    "abstract": "Land cover colours",
+    "title": "Active cropland",
     "needed_bands": ["classification"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -34,8 +33,7 @@ style_activecropland = {
 
 style_irrigated = {
     "name": "style_irrigated",
-    "title": "Coloured",
-    "abstract": "Land cover colours",
+    "title": "Irrigated",
     "needed_bands": ["classification"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -66,8 +64,7 @@ style_irrigated = {
 
 style_maize = {
     "name": "style_maize",
-    "title": "Coloured",
-    "abstract": "Land cover colours",
+    "title": "Maize",
     "needed_bands": ["classification"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -91,8 +88,7 @@ style_maize = {
 
 style_temporarycrops = {
     "name": "style_temporarycrops",
-    "title": "Coloured",
-    "abstract": "Land cover colours",
+    "title": "Temporary crops",
     "needed_bands": ["classification"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -116,8 +112,7 @@ style_temporarycrops = {
 
 style_wintercereals = {
     "name": "style_wintercereals",
-    "title": "Coloured",
-    "abstract": "Land cover colours",
+    "title": "Winter cereals",
     "needed_bands": ["classification"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -164,7 +159,7 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         -0.000083333333333,
     ],
     "styling": {
-        "default_style": "style_colours",
+        "default_style": "style_activecropland",
         "styles": [style_activecropland],
     },
 }
@@ -193,7 +188,7 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         -0.000083333333333,
     ],
     "styling": {
-        "default_style": "style_colours",
+        "default_style": "style_activecropland",
         "styles": [style_activecropland],
     },
 }
@@ -222,7 +217,7 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         -0.000083333333333,
     ],
     "styling": {
-        "default_style": "style_colours",
+        "default_style": "style_irrigated",
         "styles": [style_irrigated],
     },
 }
@@ -251,7 +246,7 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         -0.000083333333333,
     ],
     "styling": {
-        "default_style": "style_colours",
+        "default_style": "style_irrigated",
         "styles": [style_irrigated],
     },
 }
@@ -280,7 +275,7 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         -0.000083333333333,
     ],
     "styling": {
-        "default_style": "style_colours",
+        "default_style": "style_maize",
         "styles": [style_maize],
     },
 }
@@ -309,7 +304,7 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         -0.000083333333333,
     ],
     "styling": {
-        "default_style": "style_colours",
+        "default_style": "style_temporarycrops",
         "styles": [style_temporarycrops],
     },
 }
@@ -338,7 +333,7 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         -0.000083333333333,
     ],
     "styling": {
-        "default_style": "style_colours",
+        "default_style": "style_wintercereals",
         "styles": [style_wintercereals],
     },
 }
