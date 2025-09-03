@@ -144,8 +144,7 @@ activecropland_layer = {
     "title": "ESA Worldcereal Active Cropland",
     "name": "esa_worldcereal_activecropland",
     "abstract": """
-ESA WorldCereal 10m 2021 v1.0.0 active cropland map for the main cereals season defined in a region (tc-wintercereals). 
-
+ESA WorldCereal 10m 2021 v1.0.0 active cropland map for the main cereals season defined in a region (tc-wintercereals).
 For more information, see https://esa-worldcereal.org/en/products/global-maps
 """,
     "product_name": "esa_worldcereal_activecropland",
@@ -174,7 +173,7 @@ maize_active_layer = {
     "title": "ESA Worldcereal Active Maize Cropland",
     "name": "esa_worldcereal_maize_active",
     "abstract": """
-ESA WorldCereal 10m 2021 v1.0.0 active cropland map for the main maize season defined in a region (tc-maize-main). 
+ESA WorldCereal 10m 2021 v1.0.0 active cropland map for the main maize season defined in a region (tc-maize-main).
 For more information, see https://esa-worldcereal.org/en/products/global-maps
 """,
     "product_name": "esa_worldcereal_maize_active",
