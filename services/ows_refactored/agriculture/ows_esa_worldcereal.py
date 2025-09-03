@@ -1,7 +1,7 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 
 style_activecropland = {
-    "name": "style_colours",
+    "name": "style_activecropland",
     "title": "Coloured",
     "abstract": "Land cover colours",
     "needed_bands": ["classification"],
@@ -33,7 +33,7 @@ style_activecropland = {
 }
 
 style_irrigated = {
-    "name": "style_colours",
+    "name": "style_irrigated",
     "title": "Coloured",
     "abstract": "Land cover colours",
     "needed_bands": ["classification"],
@@ -65,7 +65,7 @@ style_irrigated = {
 }
 
 style_maize = {
-    "name": "style_colours",
+    "name": "style_maize",
     "title": "Coloured",
     "abstract": "Land cover colours",
     "needed_bands": ["classification"],
@@ -90,7 +90,7 @@ style_maize = {
 }
 
 style_temporarycrops = {
-    "name": "style_colours",
+    "name": "style_temporarycrops",
     "title": "Coloured",
     "abstract": "Land cover colours",
     "needed_bands": ["classification"],
@@ -115,7 +115,7 @@ style_temporarycrops = {
 }
 
 style_wintercereals = {
-    "name": "style_colours",
+    "name": "style_wintercereals",
     "title": "Coloured",
     "abstract": "Land cover colours",
     "needed_bands": ["classification"],
@@ -144,7 +144,8 @@ activecropland_layer = {
     "title": "ESA Worldcereal Active Cropland",
     "name": "esa_worldcereal_activecropland",
     "abstract": """
-ESA WorldCereal 10m 2021 v1.0.0 active cropland map for the main cereals season defined in a region (tc-wintercereals).
+ESA WorldCereal 10m 2021 v1.0.0 active cropland map for the main cereals season defined in a region (tc-wintercereals). 
+
 For more information, see https://esa-worldcereal.org/en/products/global-maps
 """,
     "product_name": "esa_worldcereal_activecropland",
@@ -173,7 +174,7 @@ maize_active_layer = {
     "title": "ESA Worldcereal Active Maize Cropland",
     "name": "esa_worldcereal_maize_active",
     "abstract": """
-ESA WorldCereal 10m 2021 v1.0.0 active cropland map for the main maize season defined in a region (tc-maize-main).
+ESA WorldCereal 10m 2021 v1.0.0 active cropland map for the main maize season defined in a region (tc-maize-main). 
 For more information, see https://esa-worldcereal.org/en/products/global-maps
 """,
     "product_name": "esa_worldcereal_maize_active",
