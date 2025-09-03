@@ -160,8 +160,8 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         "manual_merge": False,
     },
     "native_crs": "EPSG:4326",
-    "": [
-        0.native_resolution000083333333333,
+    "native_resolution": [
+        0.000083333333333,
         -0.000083333333333,
     ],
     "styling": {
@@ -334,8 +334,8 @@ For more information, see https://esa-worldcereal.org/en/products/global-maps
         "manual_merge": False,
     },
     "native_crs": "EPSG:4326",
-    "": [
-        0.native_resolution000083333333333,
+    "native_resolution": [
+        0.000083333333333,
         -0.000083333333333,
     ],
     "styling": {
