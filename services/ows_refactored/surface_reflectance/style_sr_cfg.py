@@ -1320,4 +1320,111 @@ styles_ls8c2_sr_list = [
     style_ls8c2_pq,
 ]
 
+
+# styles for Sentinel-3 OLCI L2 LAND
+
+# GIFAPAR (FAPAR)
+style_s3_gifapar = {
+    "name": "gifapar",
+    "title": "Fraction of Absorbed Photosynthetically Active Radiation (FAPAR)",
+    "abstract": "Vegetation FAPAR index",
+    "index_expression": "GIFAPAR / 10000.0",
+    "color_ramp": [
+        {"value": 0.0, "color": "#FFFFFF", "alpha": 0.0},
+        {"value": 0.1, "color": "#f7fcf5"},
+        {"value": 0.3, "color": "#c7e9c0"},
+        {"value": 0.5, "color": "#7fcdbb"},
+        {"value": 0.7, "color": "#41b6c4"},
+        {"value": 0.9, "color": "#1d91c0"},
+        {"value": 1.0, "color": "#0c2c84"},
+    ],
+}
+
+# IWV_L (Water vapour)
+style_s3_iwv = {
+    "name": "iwv_l",
+    "title": "Water vapour",
+    "abstract": "Integrated water vapour (1–70 kg/m²)",
+    "index_expression": "IWV_L",
+    "color_ramp": [
+        {"value": 1.0, "color": "#f7fbff"},
+        {"value": 10.0, "color": "#c6dbef"},
+        {"value": 30.0, "color": "#6baed6"},
+        {"value": 50.0, "color": "#2171b5"},
+        {"value": 70.0, "color": "#08306b"},
+    ],
+}
+
+# OTCI (Chlorophyll)
+style_s3_otci = {
+    "name": "otci",
+    "title": "Chlorophyll content",
+    "abstract": "OTCI - Chlorophyll concentration",
+    "index_expression": "OTCI / 10000.0",
+    "color_ramp": [
+        {"value": 0.0, "color": "#ffffcc"},
+        {"value": 0.2, "color": "#c2e699"},
+        {"value": 0.4, "color": "#78c679"},
+        {"value": 0.6, "color": "#31a354"},
+        {"value": 0.8, "color": "#006837"},
+        {"value": 1.0, "color": "#004529"},
+    ],
+}
+
+# RC681 (Red reflectance)
+style_s3_rc681 = {
+    "name": "rc681",
+    "title": "Red reflectance - RC681",
+    "abstract": "Red band (RC681) intensity",
+    "components": {
+        "red": {"rc681": 1.0},
+        "green": {"rc681": 1.0},
+        "blue": {"rc681": 1.0},
+    },
+}
+
+# RC865 (NIR reflectance)
+style_s3_rc865 = {
+    "name": "rc865",
+    "title": "NIR reflectance - RC865",
+    "abstract": "NIR band (RC865) intensity",
+    "components": {
+        "red": {"rc865": 1.0},
+        "green": {"rc865": 1.0},
+        "blue": {"rc865": 1.0},
+    },
+}
+
+# NDVI (vegetation index)
+style_s3_ndvi = {
+    "name": "ndvi",
+    "title": "NDVI - Vegetation Index",
+    "abstract": "Normalized Difference Vegetation Index computed from RC865 (NIR) and RC681 (Red)",
+    "index_expression": "(RC865 - RC681) / (RC865 + RC681)",
+    "color_ramp": [
+        {"value": -0.1, "color": "#8F3F20", "alpha": 0.0},
+        {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
+        {"value": 0.1, "color": "#A35F18"},
+        {"value": 0.2, "color": "#B88512"},
+        {"value": 0.3, "color": "#CEAC0E"},
+        {"value": 0.4, "color": "#E5D609"},
+        {"value": 0.5, "color": "#FFFF0C"},
+        {"value": 0.6, "color": "#C3DE09"},
+        {"value": 0.7, "color": "#88B808"},
+        {"value": 0.8, "color": "#529400"},
+        {"value": 0.9, "color": "#237100"},
+        {"value": 1.0, "color": "#114D04"},
+    ],
+    "legend": legend_idx_0_1_5ticks,
+}
+
+styles_s3_list = [
+    style_s3_gifapar,
+    style_s3_iwv,
+    style_s3_otci,
+    style_s3_rc681,
+    style_s3_rc865,
+    style_s3_ndvi,
+]
+
 # detangle common styles from satellite names!

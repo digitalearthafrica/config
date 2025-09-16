@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 48,
+  "total_layers_count": 49,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -732,6 +732,21 @@
           "styles_count": 1,
           "styles_list": [
               "style_wintercereals"
+          ]
+      },
+      {
+          "layer": "s3_olci_l2_lfr",
+          "product": [
+              "s3_olci_l2_lfr"
+          ],
+          "styles_count": 6,
+          "styles_list": [
+              "gifapar",
+              "iwv_l",
+              "otci",
+              "rc681",
+              "rc865",
+              "ndvi"
           ]
       }
   ]
