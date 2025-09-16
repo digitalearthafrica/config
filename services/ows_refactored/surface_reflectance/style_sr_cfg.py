@@ -1400,7 +1400,7 @@ style_s3_ndvi = {
     "name": "ndvi",
     "title": "NDVI - Vegetation Index",
     "abstract": "Normalized Difference Vegetation Index computed from RC865 (NIR) and RC681 (Red)",
-    "index_expression": "(rc865 - rc681) / (rc865 + rc681)",
+    "index_expression": "(RC865 - RC681) / (RC865 + RC681)",
     "color_ramp": [
         {"value": -0.1, "color": "#8F3F20", "alpha": 0.0},
         {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
