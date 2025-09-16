@@ -239,8 +239,8 @@ ows_cfg = {
                                             "include": "ows_refactored.agriculture.ows_esa_worldcereal.wintercereals_irrigation_layer",
                                             "type": "python",
                                         },
-                                    ]
-                                }
+                                    ],
+                                },
                             ],
                         },
                         {
@@ -335,6 +335,10 @@ ows_cfg = {
                                             "include": "ows_refactored.surface_reflectance.ows_lsc2_sr_cfg.layer_ls5",
                                             "type": "python",
                                         },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_s3_cfg.layer",
+                                            "type": "python",
+                                        },
                                     ],
                                 },
                                 {
@@ -359,6 +363,7 @@ ows_cfg = {
                                         },
                                     ],
                                 },
+                                
                             ],
                         },
                         {

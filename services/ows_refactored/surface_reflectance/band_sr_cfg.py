@@ -113,3 +113,13 @@ bands_ls8_sr = {
     "QA_PIXEL": ["pq"],
     "SR_QA_AEROSOL": ["aerosol_level"],
 }
+
+bands_s3_olci_l2_land = {
+    "GIFAPAR": ["GI-FAPAR"],
+    "IWV_L": ["water_vapour"],
+    "OTCI": ["chlorophyll"],
+    "RC681": [],
+    "RC865": [],
+    "LQSF": [],
+    "dataMask": ["mask"],
+}
