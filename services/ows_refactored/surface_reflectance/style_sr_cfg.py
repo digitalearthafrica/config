@@ -1423,8 +1423,8 @@ styles_s3_list = [
     style_s3_iwv,
     style_s3_otci,
     style_s3_rc681,
-    style_s3_rc865
-    style_s3_ndvi
+    style_s3_rc865,
+    style_s3_ndvi,
 ]
 
 # detangle common styles from satellite names!
