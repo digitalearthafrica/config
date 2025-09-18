@@ -86,4 +86,4 @@ s5p_tropomi_l2_co,https://raw.githubusercontent.com/digitalearthafrica/config/ma
 s5p_tropomi_l2_cloud,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s5p_tropomi_l2_cloud.odc-product.yaml
 s5p_tropomi_l2_ch4,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s5p_tropomi_l2_ch4.odc-product.yaml
 s5p_tropomi_l2_aer_ai,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/s5p_tropomi_l2_aer_ai.odc-product.yaml
-wqs_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wqs_annual.odc-product.yaml
+wq_annual,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/wq_annual.odc-product.yaml
