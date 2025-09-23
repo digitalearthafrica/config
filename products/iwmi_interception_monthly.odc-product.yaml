@@ -1,0 +1,15 @@
+---
+name: iwmi_interception_monthly
+description: Rainfall captured by plant surfaces (leaves, branches, stems) that evaporates before reaching the ground or soil.
+metadata_type: eo3
+
+metadata:
+  product:
+    name: iwmi_interception_monthly
+    
+measurements:
+  - name: interception
+    dtype: int16
+    nodata: -9999
+    units: mm/month
+    scale_factor: 0.1
