@@ -8,8 +8,8 @@ metadata:
     name: iwmi_transpiration_monthly
 
 measurements:
-- name: transpiration
-  dtype: int16
-  nodata: -9999
-  units: mm/month
-  scale_factor: 0.1
+  - name: transpiration
+    dtype: int16
+    nodata: -9999
+    units: mm/month
+    scale_factor: 0.1
