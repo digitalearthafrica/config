@@ -9,8 +9,9 @@ metadata:
     name: iwmi_evaporation_monthly
 
 measurements:
-  - name: evaporation
+  - name: data
     dtype: int16
     nodata: -9999
-    units: mm/month
+    units: "mm/month"
     scale_factor: 0.1
+    aliases: [evaporation]
