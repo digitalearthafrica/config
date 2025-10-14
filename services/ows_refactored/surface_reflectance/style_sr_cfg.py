@@ -1338,6 +1338,11 @@ style_s3_gifapar = {
         {"value": 0.9, "color": "#1d91c0"},
         {"value": 1.0, "color": "#0c2c84"},
     ],
+    "legend": {
+        "type": "continuous",
+        "units": "",
+        "ticks": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+    },
 }
 
 # IWV_L (Water vapour)
@@ -1353,6 +1358,11 @@ style_s3_iwv = {
         {"value": 50.0, "color": "#2171b5"},
         {"value": 70.0, "color": "#08306b"},
     ],
+    "legend": {
+        "type": "continuous",
+        "units": "kg/m²",
+        "ticks": [1, 10, 30, 50, 70]
+    },
 }
 
 # OTCI (Chlorophyll)
@@ -1369,9 +1379,14 @@ style_s3_otci = {
         {"value": 0.8, "color": "#006837"},
         {"value": 1.0, "color": "#004529"},
     ],
+    "legend": {
+        "type": "continuous",
+        "units": "",
+        "ticks": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+    },
 }
 
-# RC681 (Red reflectance)
+# RC681 (Red reflectance - single band)
 style_s3_rc681 = {
     "name": "rc681",
     "title": "Red reflectance - RC681",
@@ -1381,9 +1396,10 @@ style_s3_rc681 = {
         "green": {"rc681": 1.0},
         "blue": {"rc681": 1.0},
     },
+    "scale_range": [0.0, 10000.0],
 }
 
-# RC865 (NIR reflectance)
+# RC865 (NIR reflectance - single band)
 style_s3_rc865 = {
     "name": "rc865",
     "title": "NIR reflectance - RC865",
@@ -1393,12 +1409,13 @@ style_s3_rc865 = {
         "green": {"rc865": 1.0},
         "blue": {"rc865": 1.0},
     },
+    "scale_range": [0.0, 10000.0],
 }
 
 # NDVI (vegetation index)
 style_s3_ndvi = {
     "name": "ndvi",
-    "title": "NDVI - Vegetation Index",
+    "title": "NDVI",
     "abstract": "Normalized Difference Vegetation Index computed from RC865 (NIR) and RC681 (Red)",
     "index_expression": "(RC865 - RC681) / (RC865 + RC681)",
     "color_ramp": [
@@ -1415,9 +1432,14 @@ style_s3_ndvi = {
         {"value": 0.9, "color": "#237100"},
         {"value": 1.0, "color": "#114D04"},
     ],
-    "legend": legend_idx_0_1_5ticks,
+    "legend": {
+        "type": "continuous",
+        "units": "",
+        "ticks": [-0.1, 0.0, 0.25, 0.5, 0.75, 1.0]
+    },
 }
 
+# List of styles
 styles_s3_list = [
     style_s3_gifapar,
     style_s3_iwv,
