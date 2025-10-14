@@ -1323,11 +1323,24 @@ styles_ls8c2_sr_list = [
 
 # styles for Sentinel-3 OLCI L2 LAND
 
+# ----------------------------
+# Reusable legend
+# ----------------------------
+legend_idx_0_1_5ticks = {
+    "begin": "0.0",
+    "end": "1.0",
+    "ticks_every": "0.2",
+    "units": "unitless",
+}
+
+# ----------------------------
 # GIFAPAR (FAPAR)
+# ----------------------------
 style_s3_gifapar = {
     "name": "gifapar",
     "title": "Fraction of Absorbed Photosynthetically Active Radiation (FAPAR)",
     "abstract": "Vegetation FAPAR index",
+    "needed_bands": ["GIFAPAR"],
     "index_expression": "GIFAPAR / 10000.0",
     "color_ramp": [
         {"value": 0.0, "color": "#FFFFFF", "alpha": 0.0},
@@ -1338,18 +1351,17 @@ style_s3_gifapar = {
         {"value": 0.9, "color": "#1d91c0"},
         {"value": 1.0, "color": "#0c2c84"},
     ],
-    "legend": {
-        "type": "continuous",
-        "units": "",
-        "ticks": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
-    },
+    "legend": legend_idx_0_1_5ticks,
 }
 
+# ----------------------------
 # IWV_L (Water vapour)
+# ----------------------------
 style_s3_iwv = {
     "name": "iwv_l",
     "title": "Water vapour",
     "abstract": "Integrated water vapour (1–70 kg/m²)",
+    "needed_bands": ["IWV_L"],
     "index_expression": "IWV_L",
     "color_ramp": [
         {"value": 1.0, "color": "#f7fbff"},
@@ -1365,11 +1377,14 @@ style_s3_iwv = {
     },
 }
 
+# ----------------------------
 # OTCI (Chlorophyll)
+# ----------------------------
 style_s3_otci = {
     "name": "otci",
     "title": "Chlorophyll content",
     "abstract": "OTCI - Chlorophyll concentration",
+    "needed_bands": ["OTCI"],
     "index_expression": "OTCI / 10000.0",
     "color_ramp": [
         {"value": 0.0, "color": "#ffffcc"},
@@ -1379,46 +1394,50 @@ style_s3_otci = {
         {"value": 0.8, "color": "#006837"},
         {"value": 1.0, "color": "#004529"},
     ],
-    "legend": {
-        "type": "continuous",
-        "units": "",
-        "ticks": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
-    },
+    "legend": legend_idx_0_1_5ticks,
 }
 
+# ----------------------------
 # RC681 (Red reflectance - single band)
+# ----------------------------
 style_s3_rc681 = {
     "name": "rc681",
     "title": "Red reflectance - RC681",
     "abstract": "Red band (RC681) intensity",
+    "needed_bands": ["RC681"],
     "components": {
-        "red": {"rc681": 1.0},
-        "green": {"rc681": 1.0},
-        "blue": {"rc681": 1.0},
+        "red": {"RC681": 1.0},
+        "green": {"RC681": 1.0},
+        "blue": {"RC681": 1.0},
     },
     "scale_range": [0.0, 10000.0],
 }
 
+# ----------------------------
 # RC865 (NIR reflectance - single band)
+# ----------------------------
 style_s3_rc865 = {
     "name": "rc865",
     "title": "NIR reflectance - RC865",
     "abstract": "NIR band (RC865) intensity",
+    "needed_bands": ["RC865"],
     "components": {
-        "red": {"rc865": 1.0},
-        "green": {"rc865": 1.0},
-        "blue": {"rc865": 1.0},
+        "red": {"RC865": 1.0},
+        "green": {"RC865": 1.0},
+        "blue": {"RC865": 1.0},
     },
     "scale_range": [0.0, 10000.0],
 }
 
+# ----------------------------
 # NDVI (vegetation index)
+# ----------------------------
 style_s3_ndvi = {
     "name": "ndvi",
     "title": "NDVI",
     "abstract": "Normalized Difference Vegetation Index computed from RC865 (NIR) and RC681 (Red)",
-    "needed_bands": ["RC681", "RC865"],
-    "index_expression": "(RC865 / 10000.0 - RC681 / 10000.0) / (RC865 / 10000.0 + RC681 / 10000.0)",
+    "needed_bands": ["RC865", "RC681"],
+    "index_expression": "(RC865 - RC681) / (RC865 + RC681)",
     "color_ramp": [
         {"value": -0.1, "color": "#8F3F20", "alpha": 0.0},
         {"value": 0.0, "color": "#8F3F20", "alpha": 1.0},
@@ -1433,14 +1452,12 @@ style_s3_ndvi = {
         {"value": 0.9, "color": "#237100"},
         {"value": 1.0, "color": "#114D04"},
     ],
-    "legend": {
-        "type": "continuous",
-        "units": "",
-        "ticks": [-0.1, 0.0, 0.25, 0.5, 0.75, 1.0]
-    },
+    "legend": legend_idx_0_1_5ticks,
 }
 
+# ----------------------------
 # List of styles
+# ----------------------------
 styles_s3_list = [
     style_s3_gifapar,
     style_s3_iwv,
