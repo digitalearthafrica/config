@@ -1324,16 +1324,6 @@ styles_ls8c2_sr_list = [
 # styles for Sentinel-3 OLCI L2 LAND
 
 # ----------------------------
-# Reusable legend
-# ----------------------------
-legend_idx_0_1_5ticks = {
-    "begin": "0.0",
-    "end": "1.0",
-    "ticks_every": "0.2",
-    "units": "unitless",
-}
-
-# ----------------------------
 # GIFAPAR (FAPAR)
 # ----------------------------
 style_s3_gifapar = {
