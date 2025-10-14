@@ -3,6 +3,8 @@ from ows_refactored.common.ows_reslim_cfg import reslim_land_cover
 # ----------------------------
 # Helper function to create styles
 # ----------------------------
+
+
 def create_style(name, title, value_map):
     return {
         "name": name,
@@ -16,9 +18,12 @@ def create_style(name, title, value_map):
         "value_map": {"classification": value_map},
     }
 
+
 # ----------------------------
 # Define styles
 # ----------------------------
+
+
 style_activecropland = create_style(
     "style_activecropland",
     "Active cropland",
@@ -64,13 +69,14 @@ style_wintercereals = create_style(
 # ----------------------------
 # Helper function to create ESA WorldCereal layers
 # ----------------------------
+
+
 def create_esa_layer(product_name, title, default_style, abstract=None, single_time="2021-01-01"):
     """
     Creates a Datacube OWS layer for ESA WorldCereal with a single time for all regional tiles.
     """
     if abstract is None:
         abstract = f"ESA WorldCereal 10m 2021 v1.0.0 layer {product_name}. For more info see https://esa-worldcereal.org/en/products/global-maps"
-    
     return {
         "title": title,
         "name": product_name,
@@ -93,6 +99,7 @@ def create_esa_layer(product_name, title, default_style, abstract=None, single_t
             "styles": [default_style],
         },
     }
+
 
 # ----------------------------
 # Create all layers
