@@ -90,7 +90,6 @@ def create_esa_layer(product_name, title, default_style, abstract=None, single_t
             "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
             "always_fetch_bands": [],
             "manual_merge": False,
-            "fuse_func": "datacube_ows.utils.fuse.first",  # merge overlapping tiles
         },
         "native_crs": "EPSG:4326",
         "native_resolution": [0.000083333333333, -0.000083333333333],
