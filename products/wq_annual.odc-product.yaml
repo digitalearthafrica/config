@@ -16,225 +16,153 @@ metadata:
   product_name: wqs_annual
 
 measurements:
-  - name: chla_meris2b_msi_agm
+  - name: agm_fai
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 1.148
-    add_offset: -36.394
-  - name: chla_modis2b_msi_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 0.22
-    add_offset: 7.139
-  - name: chla_modis2b_tm_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 1.209
-    add_offset: -63.141
-  - name: hue
-    dtype: float32
-    nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: ndci_msi54_agm
+  - name: agm_hue
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 131.579
-    add_offset: 21.737
-  - name: ndci_msi64_agm
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: agm_ndvi
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 33.153
-    add_offset: 33.153
-  - name: ndci_msi74_agm
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: chla
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 33.516
-    add_offset: 33.516
-  - name: ndci_oli54_agm
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: clearwater
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 38.619
-    add_offset: 29.327
-  - name: ndci_tm43_agm
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: msi_agm_fai
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 53.157
-    add_offset: 28.088
-  - name: ndssi_bnir_oli_agm
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: msi_agm_hue
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 37.125
-    add_offset: 37.125
-  - name: ndssi_rg_msi_agm
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: msi_agm_ndvi
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 83.711
-    add_offset: 56.756
-  - name: ndssi_rg_oli_agm
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: oli_agm_fai
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 45.669
-    add_offset: 45.669
-  - name: ndssi_rg_tm_agm
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: oli_agm_hue
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 149.21
-    add_offset: 57.073
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: oli_agm_ndvi
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
   - name: owt_msi
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: owt_oli
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: spm_qiu_msi_agm
+  - name: tm_agm_fai
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 2.491
-    add_offset: -4.112
-  - name: spm_qiu_oli_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 1.687
-    add_offset: -0.322
-  - name: spm_qiu_tm_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 2.156
-    add_offset: -16.863
-  - name: ti_yu_oli_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 6.656
-    add_offset: 36.395
-  - name: ti_yu_tm_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 8.064
-    add_offset: 42.562
-  - name: tirs_st_ann_max
-    dtype: float32
-    nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: tirs_st_ann_med
+  - name: tm_agm_hue
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: tirs_st_ann_min
+  - name: tm_agm_ndvi
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: tsm_lym_msi_agm
+  - name: tsi
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 14.819
-    add_offset: -118.137
-  - name: tsm_lym_oli_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: tsm_lym_tm_agm
+  - name: tss
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 1.184
-    add_offset: -2.387
-  - name: tss_zhang_msi_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 18.04
-    add_offset: 0.0
-  - name: tss_zhang_oli_agm
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 10.032
-    add_offset: 0.0
-  - name: watermask
-    dtype: float32
-    nodata: NaN
-    units: '1'
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: wofs_ann_clearcount
-    dtype: float32
-    nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: wofs_ann_confidence
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: wofs_ann_freq
-    dtype: float32
-    nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: wofs_ann_freq_sigma
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: wofs_ann_pwater
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: wofs_ann_water
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: wofs_ann_wetcount
+  - name: wofs_ann_watermask
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: wofs_pw_threshold
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
+  - name: watermask
+    dtype: float32
+    units: "1"
+    nodata: NaN
     scale_factor: 1.0
     add_offset: 0.0
