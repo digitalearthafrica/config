@@ -1,0 +1,17 @@
+---
+name: iwmi_evaporation_monthly
+description: Loss of water from soil, water bodies,
+  and surfaces to the atmosphere as vapor.
+metadata_type: eo3
+
+metadata:
+  product:
+    name: iwmi_evaporation_monthly
+
+measurements:
+  - name: data
+    dtype: int16
+    nodata: -9999
+    units: "mm/month"
+    scale_factor: 0.1
+    aliases: [evaporation]

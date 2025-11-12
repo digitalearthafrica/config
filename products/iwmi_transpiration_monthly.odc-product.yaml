@@ -1,0 +1,16 @@
+---
+name: iwmi_transpiration_monthly
+description: Water loss from plants through stomata into the atmosphere.
+metadata_type: eo3
+
+metadata:
+  product:
+    name: iwmi_transpiration_monthly
+
+measurements:
+  - name: data
+    dtype: int16
+    nodata: -9999
+    units: "mm/month"
+    scale_factor: 0.1
+    aliases: [transpiration]
