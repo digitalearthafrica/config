@@ -14,33 +14,18 @@ from ows_refactored.common.ows_legend_cfg import legend_idx_0_1_1ticks, legend_m
 # ============================================================================
 # TOTAL SUSPENDED SOLIDS STYLES
 # ============================================================================
-color_ramp_tss_oli = [
-    {"value": 0.0, "color": "#001050", "alpha": 0.0},
-    {"value": 0.1, "color": "#001050"},
-    {"value": 0.2, "color": "#103070"},
-    {"value": 0.3, "color": "#205090"},
-    {"value": 0.4, "color": "#4080b0"},
-    {"value": 0.4, "color": "#80b0d0"},
-    {"value": 0.5, "color": "#c0d080"},
-    {"value": 0.6, "color": "#d0a040"},
-    {"value": 0.7, "color": "#a05020"},
-    {"value": 0.8, "color": "#703010"},
-    {"value": 0.9, "color": "#401000"},
-]
+color_ramp_tss= [
+        {"value": 0.0, "color": "#000000", "alpha": 0.0},
+        {"value": 0.25, "color": '#b03f03', "alpha": 0.75},
+        {"value": 0.50, "color": '#d15205'},
+        {"value": 0.75, "color": '#e96d13'},
+        {"value": 1.0, "color": '#f88a21'},
+        {"value": 1.25, "color": '#fea937'},
+        {"value": 1.50, "color": '#fec754'},
+        {"value": 1.75, "color": '#fede86'},
+        ]
 
-color_ramp_tss_msi= [
-    {"value": 0.0, "color": "#001050", "alpha": 0.0},
-    {"value": 1.0, "color": "#001050"},
-    {"value": 2.0, "color": "#103070"},
-    {"value": 3.0, "color": "#205090"},
-    {"value": 4.0, "color": "#4080b0"},
-    {"value": 5.0, "color": "#80b0d0"},
-    {"value": 6.0, "color": "#c0d080"},
-    {"value": 7.0, "color": "#d0a040"},
-    {"value": 8.0, "color": "#a05020"},
-    {"value": 9.0, "color": "#703010"},
-    
-]
+
 
 # tss styles------------------------------------------------------
 style_tss_oli = {
@@ -55,7 +40,7 @@ style_tss_oli = {
             "band": "tss_zhang_oli_agm",
         },
     },
-    "color_ramp": color_ramp_tss_oli,
+    "color_ramp": color_ramp_tss,
     "legend": legend_mean_ndvi_ticks,
 }
 
@@ -71,9 +56,163 @@ style_tss_msi= {
             "band": "tss_zhang_msi_agm",
         },
     },
-    "color_ramp": color_ramp_tss_msi,
+    "color_ramp": color_ramp_tss,
     "legend": legend_idx_0_1_1ticks,
 }
     
-   
+# ============================================================================
+# NORMALIZED DIFFERENCE SUSPENDED SEDIMENT INDEX (NDSSI) STYLES
+# ============================================================================   
+ color_ramp_ndssi = [
+    {"value": -1.0, "color": "#000000", "alpha": 0.0},
+    {"value": -0.5, "color": "#084594", "alpha": 0.8},  
+    {"value": -0.25, "color": "#4292c6"},                
+    {"value": 0.0, "color": "#9ecae1"},                  
+    {"value": 0.20, "color": "#deebf7"},                 
+    {"value": 0.40, "color": "#fee391"},                 
+    {"value": 0.60, "color": "#fec44f"},                 
+    {"value": 0.75, "color": "#fe9929"},                 
+    {"value": 0.90, "color": "#d95f0e"},                 
+    {"value": 1.0, "color": "#993404"},                  
+]
 
+
+style_ndssi_msi= {
+    "name": "tss",
+    "title": "Total Suspended Solids",
+    "abstract": "Total suspended solids concentration (mg/L)",
+    "needed_bands": ["ndssi_rg_msi_agm"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "ndssi_rg_msi_agm",
+        },
+    },
+    "color_ramp": color_ramp_ndssi,
+    "legend": legend_idx_0_1_1ticks,
+}
+
+style_ndssi_oli= {
+    "name": "tss",
+    "title": "Total Suspended Solids",
+    "abstract": "Total suspended solids concentration (mg/L)",
+    "needed_bands": ["ndssi_rg_oli_agm"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "ndssi_rg_oli_agm",
+        },
+    },
+    "color_ramp": color_ramp_ndssi,
+    "legend": legend_idx_0_1_1ticks,
+}
+
+style_ndssi_bnir_oli= {
+    "name": "tss",
+    "title": "Total Suspended Solids",
+    "abstract": "Total suspended solids concentration (mg/L)",
+    "needed_bands": ["ndssi_bnir_oli_agm"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "ndssi_bnir_oli_agm",
+        },
+    },
+    "color_ramp": color_ramp_ndssi,
+    "legend": legend_idx_0_1_1ticks,
+}
+
+
+# ============================================================================
+# TOTAL SUSPENDED MATTER (TSM) STYLES
+# ============================================================================   
+color_ramp_tsm =[
+    {"value": 0.0, "color": "#084594", "alpha": 1.0},    # 0 mg/L - Navy
+    {"value": 10.0, "color": "#2171b5"},                 # 10 mg/L - Blue
+    {"value": 25.0, "color": "#4292c6"},                 # 25 mg/L - Light blue
+    {"value": 50.0, "color": "#6baed6"},                 # 50 mg/L - Pale blue
+    {"value": 75.0, "color": "#9ecae1"},                 # 75 mg/L - Very pale blue
+    {"value": 100.0, "color": "#deebf7"},                # 100 mg/L - Almost white blue
+    {"value": 125.0, "color": "#ffffcc"},                # 125 mg/L - Pale yellow
+    {"value": 150.0, "color": "#ffeda0"},                # 150 mg/L - Light yellow
+    {"value": 175.0, "color": "#fed976"},                # 175 mg/L - Yellow
+    {"value": 200.0, "color": "#feb24c"},                # 200 mg/L - Orange
+    {"value": 225.0, "color": "#fd8d3c"},                # 225 mg/L - Dark orange
+    {"value": 250.0, "color": "#fc4e2a"},                # 250 mg/L - Red-orange
+    {"value": 275.0, "color": "#e31a1c"},                # 275 mg/L - Red
+    {"value": 300.0, "color": "#bd0026"},                # 300 mg/L - Dark red
+    {"value": 400.0, "color": "#800026"},                # 400+ mg/L - Very dark red
+]
+
+style_tsm_oli= {
+    "name": "tss",
+    "title": "concentration of particulate material in the surface water such as mud, silt, and other fine-scale debris",
+    "abstract": "Total suspended matter concentration (mg/L)",
+    "needed_bands": ["tsm_lym_oli_agm"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "tsm_lym_oli_agm",
+        },
+    },
+    "color_ramp": color_ramp_tsm,
+    "legend": legend_idx_0_1_1ticks,
+}
+
+style_tsm_msi= {
+    "name": "tss",
+    "title": "concentration of particulate material in the surface water such as mud, silt, and other fine-scale debris",
+    "abstract": "Total suspended matter concentration (mg/L)",
+    "needed_bands": ["tsm_lym_msi_agm"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "tsm_lym_msi_agm",
+        },
+    },
+    "color_ramp": color_ramp_tsm,
+    "legend": legend_idx_0_1_1ticks,
+}
+
+
+
+# ============================================================================
+# TURBIDITY INDEX(TI) STYLES
+# ============================================================================   
+color_ramp_ti= [
+        {"value": 0.0, "color": "#084594", "alpha": 1.0},   # Clear water
+        {"value": 0.05, "color": "#2171b5"},                # Very clear
+        {"value": 0.10, "color": "#4292c6"},                # Clear
+        {"value": 0.15, "color": "#6baed6"},                # Slightly turbid
+        {"value": 0.20, "color": "#9ecae1"},                
+        {"value": 0.30, "color": "#c6dbef"},                # Moderately clear
+        {"value": 0.40, "color": "#ffffcc"},                # Moderate
+        {"value": 0.50, "color": "#ffeda0"},                
+        {"value": 0.60, "color": "#fed976"},                # Moderately turbid
+        {"value": 0.70, "color": "#feb24c"},                
+        {"value": 0.80, "color": "#fd8d3c"},                # Turbid
+        {"value": 0.90, "color": "#fc4e2a"},                # Very turbid
+        {"value": 1.0, "color": "#e31a1c"},                 # Extremely turbid
+    ]
+
+
+style_tsm_msi= {
+    "name": "tss",
+    "title": "Turbidity Index",
+    "abstract": "Normalized turbidity index",
+    "needed_bands": ["ti_yu_oli_agm"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {
+            "band": "ti_yu_oli_agm",
+        },
+    },
+    "color_ramp": color_ramp_ti,
+    "legend": legend_idx_0_1_1ticks,
+}
