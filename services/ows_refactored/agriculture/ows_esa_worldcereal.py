@@ -71,19 +71,31 @@ style_wintercereals = create_style(
 # ----------------------------
 
 
-def create_esa_layer(product_name, title, default_style, abstract=None, single_time="2021-01-01"):
+def create_esa_layer(product_name, title, default_style, abstract=None):
     """
-    Creates a Datacube OWS layer for ESA WorldCereal with a single time for all regional tiles.
+    Creates a Datacube OWS layer for ESA WorldCereal.
+    Multiple ingestion timestamps exist, but they are meaningless.
+    Use mosaic_date_func to present the data as a single static 2021 mosaic.
     """
     if abstract is None:
-        abstract = f"ESA WorldCereal 10m 2021 v1.0.0 layer {product_name}. For more info see https://esa-worldcereal.org/en/products/global-maps"
+        abstract = (
+            f"ESA WorldCereal 10m 2021 v1.0.0 layer {product_name}. "
+            "For more info see https://esa-worldcereal.org/en/products/global-maps"
+        )
+
     return {
         "title": title,
         "name": product_name,
         "abstract": abstract,
         "product_name": product_name,
-        "time": single_time,  # Force single date for all regions
-        "time_resolution": "year",
+
+        # Make it a timeless mosaic layer
+        "mosaic_date_func": {
+            "function": "datacube_ows.ogc_utils.rolling_window_ndays",
+            "pass_layer_cfg": True,
+            "kwargs": {"ndays": 10000},   # large window collapses all timestamps
+        },
+
         "bands": {"classification": []},
         "resource_limits": reslim_land_cover,
         "image_processing": {
@@ -98,7 +110,6 @@ def create_esa_layer(product_name, title, default_style, abstract=None, single_t
             "styles": [default_style],
         },
     }
-
 
 # ----------------------------
 # Create all layers

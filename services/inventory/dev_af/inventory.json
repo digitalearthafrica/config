@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 49,
+  "total_layers_count": 50,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -747,6 +747,23 @@
               "rc681",
               "rc865",
               "ndvi"
+          ]
+      },
+      {
+          "layer": "s3_olci_l2_wfr",
+          "product": [
+              "s3_olci_l2_wfr"
+          ],
+          "styles_count": 8,
+          "styles_list": [
+              "chl_nn",
+              "tsm",
+              "kd490",
+              "par",
+              "a865",
+              "adg443",
+              "t865",
+              "iwv"
           ]
       }
   ]

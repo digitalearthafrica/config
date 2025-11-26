@@ -1323,15 +1323,13 @@ styles_ls8c2_sr_list = [
 
 # styles for Sentinel-3 OLCI L2 LAND
 
-# ----------------------------
 # GIFAPAR (FAPAR)
-# ----------------------------
 style_s3_gifapar = {
     "name": "gifapar",
     "title": "Fraction of Absorbed Photosynthetically Active Radiation (FAPAR)",
     "abstract": "Vegetation FAPAR index",
-    "needed_bands": ["GIFAPAR"],
-    "index_expression": "GIFAPAR / 10000.0",
+    "needed_bands": ["GI-FAPAR"],
+    "index_expression": "GI-FAPAR / 10000.0",
     "color_ramp": [
         {"value": 0.0, "color": "#FFFFFF", "alpha": 0.0},
         {"value": 0.1, "color": "#f7fcf5"},
@@ -1344,15 +1342,13 @@ style_s3_gifapar = {
     "legend": legend_idx_0_1_5ticks,
 }
 
-# ----------------------------
 # IWV_L (Water vapour)
-# ----------------------------
 style_s3_iwv = {
     "name": "iwv_l",
     "title": "Water vapour",
     "abstract": "Integrated water vapour (1–70 kg/m²)",
-    "needed_bands": ["IWV_L"],
-    "index_expression": "IWV_L",
+    "needed_bands": ["water_vapour"],
+    "index_expression": "water_vapour",
     "color_ramp": [
         {"value": 1.0, "color": "#f7fbff"},
         {"value": 10.0, "color": "#c6dbef"},
@@ -1367,15 +1363,13 @@ style_s3_iwv = {
     },
 }
 
-# ----------------------------
 # OTCI (Chlorophyll)
-# ----------------------------
 style_s3_otci = {
     "name": "otci",
     "title": "Chlorophyll content",
     "abstract": "OTCI - Chlorophyll concentration",
-    "needed_bands": ["OTCI"],
-    "index_expression": "OTCI / 10000.0",
+    "needed_bands": ["chlorophyll"],
+    "index_expression": "chlorophyll / 10000.0",
     "color_ramp": [
         {"value": 0.0, "color": "#ffffcc"},
         {"value": 0.2, "color": "#c2e699"},
@@ -1387,9 +1381,7 @@ style_s3_otci = {
     "legend": legend_idx_0_1_5ticks,
 }
 
-# ----------------------------
 # RC681 (Red reflectance - single band)
-# ----------------------------
 style_s3_rc681 = {
     "name": "rc681",
     "title": "Red reflectance - RC681",
@@ -1403,9 +1395,7 @@ style_s3_rc681 = {
     "scale_range": [0.0, 10000.0],
 }
 
-# ----------------------------
 # RC865 (NIR reflectance - single band)
-# ----------------------------
 style_s3_rc865 = {
     "name": "rc865",
     "title": "NIR reflectance - RC865",
@@ -1419,9 +1409,7 @@ style_s3_rc865 = {
     "scale_range": [0.0, 10000.0],
 }
 
-# ----------------------------
 # NDVI (vegetation index)
-# ----------------------------
 style_s3_ndvi = {
     "name": "ndvi",
     "title": "NDVI",
@@ -1445,16 +1433,151 @@ style_s3_ndvi = {
     "legend": legend_idx_0_1_5ticks,
 }
 
-# ----------------------------
 # List of styles
-# ----------------------------
-styles_s3_list = [
+styles_s3_land_list = [
     style_s3_gifapar,
     style_s3_iwv,
     style_s3_otci,
     style_s3_rc681,
     style_s3_rc865,
     style_s3_ndvi,
+]
+
+# styles for Sentinel-3 OLCI L2 WATER
+
+# CHL_NN (algal_pigment_complex_waters), scale_factor = 0.0001
+style_s3_water_chl = {
+    "name": "chl_nn",
+    "title": "Chlorophyll (NN algorithm)",
+    "abstract": "CHL_NN algal pigment concentration (log10 mg/m³)",
+    "needed_bands": ["algal_pigment_complex_waters"],
+    "index_expression": "10 ** (algal_pigment_complex_waters / 10000.0)",  
+    "color_ramp": [
+        {"value": 0.1, "color": "#ffffcc"},
+        {"value": 1, "color": "#c2e699"},
+        {"value": 5, "color": "#78c679"},
+        {"value": 20, "color": "#31a354"},
+        {"value": 50, "color": "#006837"},
+        {"value": 100, "color": "#004529"},
+    ],
+}
+
+# TSM_NN, scale_factor = 0.0001
+style_s3_water_tsm = {
+    "name": "tsm",
+    "title": "Total Suspended Matter",
+    "abstract": "TSM_NN suspended sediments (log10 g/m³)",
+    "needed_bands": ["total_suspended_matter"],
+    "index_expression": "10 ** (total_suspended_matter / 10000.0)",
+    "color_ramp": [
+        {"value": 0.1, "color": "#f7fcf0"},
+        {"value": 1, "color": "#ccebc5"},
+        {"value": 5, "color": "#7bccc4"},
+        {"value": 10, "color": "#43a2ca"},
+        {"value": 20, "color": "#0868ac"},
+        {"value": 50, "color": "#084081"},
+    ],
+}
+
+# KD490_M07, scale_factor=0.0001, log10(1/m)
+style_s3_water_kd490 = {
+    "name": "kd490",
+    "title": "Diffuse Attenuation Coefficient (KD490)",
+    "abstract": "Water clarity attenuation coefficient.",
+    "needed_bands": ["diffuse_attenuation_coefficient"],
+    "index_expression": "10 ** (diffuse_attenuation_coefficient / 10000.0)",
+    "color_ramp": [
+        {"value": 0.02, "color": "#f7fbff"},
+        {"value": 0.1, "color": "#c6dbef"},
+        {"value": 0.3, "color": "#6baed6"},
+        {"value": 0.7, "color": "#2171b5"},
+        {"value": 1.5, "color": "#08306b"},
+    ],
+}
+
+# PAR (scale_factor=1 → raw units)
+style_s3_water_par = {
+    "name": "par",
+    "title": "Photosynthetically Active Radiation",
+    "needed_bands": ["photosynthetically_active_radiation"],
+    "index_expression": "photosynthetically_active_radiation",
+    "color_ramp": [
+        {"value": 0, "color": "#fff5eb"},
+        {"value": 50, "color": "#fdcc8a"},
+        {"value": 100, "color": "#fc8d59"},
+        {"value": 200, "color": "#e34a33"},
+        {"value": 300, "color": "#b30000"},
+    ],
+}
+
+# A865 (scale_factor 0.0001, so divide by 10000)
+style_s3_water_a865 = {
+    "name": "a865",
+    "title": "Aerosol Angstrom Exponent (A865)",
+    "needed_bands": ["aerosol_angstrom_exponent"],
+    "index_expression": "aerosol_angstrom_exponent / 10000.0",
+    "color_ramp": [
+        {"value": 0.0, "color": "#ffffcc"},
+        {"value": 1.0, "color": "#c2e699"},
+        {"value": 1.5, "color": "#78c679"},
+        {"value": 2.0, "color": "#31a354"},
+    ],
+}
+
+# ADG443_NN (scale_factor 0.0001)
+style_s3_water_adg443 = {
+    "name": "adg443",
+    "title": "CDM Absorption at 443 nm",
+    "needed_bands": ["CDM_absorbtion_coefficient"],
+    "index_expression": "10 ** (CDM_absorbtion_coefficient / 10000.0)",
+    "color_ramp": [
+        {"value": 0.01, "color": "#f7fcf0"},
+        {"value": 0.05, "color": "#ccebc5"},
+        {"value": 0.1, "color": "#7bccc4"},
+        {"value": 0.2, "color": "#4eb3d3"},
+        {"value": 0.4, "color": "#08589e"},
+    ],
+}
+
+# T865 (scale_factor 0.0001)
+style_s3_water_t865 = {
+    "name": "t865",
+    "title": "Aerosol Optical Thickness (T865)",
+    "needed_bands": ["aerosol_optical_thickness"],
+    "index_expression": "aerosol_optical_thickness / 10000.0",
+    "color_ramp": [
+        {"value": 0.0, "color": "#f7fbff"},
+        {"value": 0.1, "color": "#c6dbef"},
+        {"value": 0.3, "color": "#6baed6"},
+        {"value": 0.6, "color": "#2171b5"},
+        {"value": 1.0, "color": "#08306b"},
+    ],
+}
+
+# IWV_W (scale_factor 0.0001)
+style_s3_water_iwv = {
+    "name": "iwv",
+    "title": "Integrated Water Vapour",
+    "needed_bands": ["integrated_water_vapour"],
+    "index_expression": "integrated_water_vapour / 10000.0",
+    "color_ramp": [
+        {"value": 0.5, "color": "#f7fbff"},
+        {"value": 5.0, "color": "#c6dbef"},
+        {"value": 15.0, "color": "#6baed6"},
+        {"value": 30.0, "color": "#2171b5"},
+        {"value": 50.0, "color": "#08306b"},
+    ],
+}
+
+styles_s3_water_list = [
+    style_s3_water_chl,
+    style_s3_water_tsm,
+    style_s3_water_kd490,
+    style_s3_water_par,
+    style_s3_water_a865,
+    style_s3_water_adg443,
+    style_s3_water_t865,
+    style_s3_water_iwv,
 ]
 
 # detangle common styles from satellite names!
