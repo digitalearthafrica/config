@@ -152,4 +152,3 @@ bands_s3_olci_l2_water = {
     "B21": ["Oa21_reflectance"],
     "dataMask": ["mask"],
 }
-
