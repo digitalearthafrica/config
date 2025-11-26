@@ -60,4 +60,3 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "styles": styles_s3_water_list,
     },
 }
-
