@@ -1451,7 +1451,7 @@ style_s3_water_chl = {
     "title": "Chlorophyll (NN algorithm)",
     "abstract": "CHL_NN algal pigment concentration (log10 mg/m³)",
     "needed_bands": ["algal_pigment_complex_waters"],
-    "index_expression": "10 ** (algal_pigment_complex_waters / 10000.0)",  
+    "index_expression": "10 ** (algal_pigment_complex_waters / 10000.0)",
     "color_ramp": [
         {"value": 0.1, "color": "#ffffcc"},
         {"value": 1, "color": "#c2e699"},
