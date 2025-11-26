@@ -1,5 +1,5 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_continental
-from ows_refactored.surface_reflectance.band_sr_cfg import bands_s3_olci_l2_land
+from ows_refactored.surface_reflectance.band_sr_cfg import bands_s3_olci_l2_land, bands_s3_olci_l2_water
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_s3_land_list, styles_s3_water_list
 
 layer_s3_olci_l2_land = {
@@ -60,3 +60,4 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
         "styles": styles_s3_water_list,
     },
 }
+
