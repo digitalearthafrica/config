@@ -115,7 +115,7 @@ bands_ls8_sr = {
 }
 
 bands_s3_olci_l2_land = {
-    "GIFAPAR": ["GI-FAPAR"],
+    "GIFAPAR": ["GI-FAPAR", "GI_FAPAR"],
     "IWV_L": ["water_vapour"],
     "OTCI": ["chlorophyll"],
     "RC681": [],
