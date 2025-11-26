@@ -115,6 +115,7 @@ def create_esa_layer(product_name, title, default_style, abstract=None):
 # Create all layers
 # ----------------------------
 
+
 activecropland_layer = create_esa_layer("esa_worldcereal_activecropland", "ESA WorldCereal Active Cropland", style_activecropland)
 
 maize_active_layer = create_esa_layer("esa_worldcereal_maize_active", "ESA WorldCereal Active Maize Cropland", style_activecropland)
