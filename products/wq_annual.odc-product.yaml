@@ -13,7 +13,7 @@ load:
     y: -10
 
 metadata:
-  product_name: wqs_annual
+  product_name: wq_annual
 
 measurements:
   - name: agm_fai
@@ -34,13 +34,19 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
+  - name: agm_owt
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
   - name: chla
     dtype: float32
     nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: clearwater
+  - name: clear_water
     dtype: float32
     nodata: NaN
     units: "1"
@@ -64,6 +70,12 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
+  - name: msi_agm_owt
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
   - name: oli_agm_fai
     dtype: float32
     nodata: NaN
@@ -82,19 +94,7 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: tirs_st_ann_max
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tirs_st_ann_med
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tirs_st_ann_min
+  - name: oli_agm_owt
     dtype: float32
     nodata: NaN
     units: "1"
@@ -118,13 +118,19 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
+  - name: tm_agm_owt
+    dtype: float32
+    nodata: NaN
+    units: "1"
+    scale_factor: 1.0
+    add_offset: 0.0
   - name: tsi
     dtype: float32
     nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: tss
+  - name: tsm
     dtype: float32
     nodata: NaN
     units: "1"
@@ -136,39 +142,4 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: wofs_ann_confidence
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: wofs_ann_freq_sigma
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: wofs_ann_pwater
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: wofs_ann_water
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: wofs_ann_watermask
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: wofs_pw_threshold
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
+ 
