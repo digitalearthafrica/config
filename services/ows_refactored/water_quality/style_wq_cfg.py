@@ -41,10 +41,10 @@ style_tss_oli = {
         },
     },
     "color_ramp": color_ramp_tss,
-    "legend": legend_mean_ndvi_ticks,
+    "legend": legend_idx_0_1_1ticks,
 }
 
-style_tss_msi= {
+style_tss_msi = {
     "name": "tss",
     "title": "Total Suspended Solids",
     "abstract": "Total suspended solids concentration (mg/L)",
@@ -59,7 +59,7 @@ style_tss_msi= {
     "color_ramp": color_ramp_tss,
     "legend": legend_idx_0_1_1ticks,
 }
-    
+  
 # ============================================================================
 # NORMALIZED DIFFERENCE SUSPENDED SEDIMENT INDEX (NDSSI) STYLES
 # ============================================================================   
