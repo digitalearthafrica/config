@@ -185,23 +185,23 @@ style_tsm_msi= {
 # TURBIDITY INDEX(TI) STYLES
 # ============================================================================   
 color_ramp_ti= [
-        {"value": 0.0, "color": "#084594", "alpha": 1.0},   # Clear water
-        {"value": 0.05, "color": "#2171b5"},                # Very clear
-        {"value": 0.10, "color": "#4292c6"},                # Clear
-        {"value": 0.15, "color": "#6baed6"},                # Slightly turbid
-        {"value": 0.20, "color": "#9ecae1"},                
-        {"value": 0.30, "color": "#c6dbef"},                # Moderately clear
-        {"value": 0.40, "color": "#ffffcc"},                # Moderate
-        {"value": 0.50, "color": "#ffeda0"},                
-        {"value": 0.60, "color": "#fed976"},                # Moderately turbid
-        {"value": 0.70, "color": "#feb24c"},                
-        {"value": 0.80, "color": "#fd8d3c"},                # Turbid
-        {"value": 0.90, "color": "#fc4e2a"},                # Very turbid
-        {"value": 1.0, "color": "#e31a1c"},                 # Extremely turbid
-    ]
+        {"value": 0.0, "color": "#084594", "alpha": 1.0},   
+        {"value": 0.05, "color": "#2171b5"},            
+        {"value": 0.10, "color": "#4292c6"},
+        {"value": 0.15, "color": "#6baed6"},
+        {"value": 0.20, "color": "#9ecae1"},              
+        {"value": 0.30, "color": "#c6dbef"},             
+        {"value": 0.40, "color": "#ffffcc"},
+        {"value": 0.50, "color": "#ffeda0"},             
+        {"value": 0.60, "color": "#fed976"},
+        {"value": 0.70, "color": "#feb24c"},
+        {"value": 0.80, "color": "#fd8d3c"},                
+        {"value": 0.90, "color": "#fc4e2a"},                
+        {"value": 1.0, "color": "#e31a1c"},                 
+]
 
 
-style_ti= {
+style_ti = {
     "name": "tss",
     "title": "Turbidity Index",
     "abstract": "Normalized turbidity index",
