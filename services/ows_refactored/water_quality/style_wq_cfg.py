@@ -63,7 +63,7 @@ style_tss_msi= {
 # ============================================================================
 # NORMALIZED DIFFERENCE SUSPENDED SEDIMENT INDEX (NDSSI) STYLES
 # ============================================================================   
- color_ramp_ndssi = [
+color_ramp_ndssi = [
     {"value": -1.0, "color": "#000000", "alpha": 0.0},
     {"value": -0.5, "color": "#084594", "alpha": 0.8},  
     {"value": -0.25, "color": "#4292c6"},                
@@ -167,12 +167,12 @@ style_tsm_msi= {
     "name": "tss",
     "title": "concentration of particulate material in the surface water such as mud, silt, and other fine-scale debris",
     "abstract": "Total suspended matter concentration (mg/L)",
-    "needed_bands": ["tsm_lym_msi_agm"],
+    "needed_bands": ["tsm"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "tsm_lym_msi_agm",
+            "band": "tsm",
         },
     },
     "color_ramp": color_ramp_tsm,
@@ -201,7 +201,7 @@ color_ramp_ti= [
     ]
 
 
-style_tsm_msi= {
+style_ti= {
     "name": "tss",
     "title": "Turbidity Index",
     "abstract": "Normalized turbidity index",
