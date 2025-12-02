@@ -8,13 +8,13 @@ Organized by parameter and sensor/source type.
 
 """
 
-from ows_refactored.common.ows_legend_cfg import legend_idx_0_1_1ticks, legend_mean_ndvi_ticks
+from ows_refactored.common.ows_legend_cfg import legend_idx_0_1_1ticks
 
 
 # ============================================================================
 # TOTAL SUSPENDED SOLIDS STYLES
 # ============================================================================
-color_ramp_tss= [
+color_ramp_tss = [
         {"value": 0.0, "color": "#000000", "alpha": 0.0},
         {"value": 0.25, "color": '#b03f03', "alpha": 0.75},
         {"value": 0.50, "color": '#d15205'},
@@ -77,7 +77,7 @@ color_ramp_ndssi = [
 ]
 
 
-style_ndssi_msi= {
+style_ndssi_msi = {
     "name": "tss",
     "title": "Total Suspended Solids",
     "abstract": "Total suspended solids concentration (mg/L)",
@@ -93,7 +93,7 @@ style_ndssi_msi= {
     "legend": legend_idx_0_1_1ticks,
 }
 
-style_ndssi_oli= {
+style_ndssi_oli = {
     "name": "tss",
     "title": "Total Suspended Solids",
     "abstract": "Total suspended solids concentration (mg/L)",
@@ -109,7 +109,7 @@ style_ndssi_oli= {
     "legend": legend_idx_0_1_1ticks,
 }
 
-style_ndssi_bnir_oli= {
+style_ndssi_bnir_oli = {
     "name": "tss",
     "title": "Total Suspended Solids",
     "abstract": "Total suspended solids concentration (mg/L)",
@@ -129,7 +129,7 @@ style_ndssi_bnir_oli= {
 # ============================================================================
 # TOTAL SUSPENDED MATTER (TSM) STYLES
 # ============================================================================   
-color_ramp_tsm =[
+color_ramp_tsm = [
     {"value": 0.0, "color": "#084594", "alpha": 1.0},    # 0 mg/L - Navy
     {"value": 10.0, "color": "#2171b5"},                 # 10 mg/L - Blue
     {"value": 25.0, "color": "#4292c6"},                 # 25 mg/L - Light blue
@@ -147,7 +147,7 @@ color_ramp_tsm =[
     {"value": 400.0, "color": "#800026"},                # 400+ mg/L - Very dark red
 ]
 
-style_tsm_oli= {
+style_tsm_oli = {
     "name": "tss",
     "title": "concentration of particulate material in the surface water such as mud, silt, and other fine-scale debris",
     "abstract": "Total suspended matter concentration (mg/L)",
@@ -163,7 +163,7 @@ style_tsm_oli= {
     "legend": legend_idx_0_1_1ticks,
 }
 
-style_tsm_msi= {
+style_tsm_msi = {
     "name": "tss",
     "title": "concentration of particulate material in the surface water such as mud, silt, and other fine-scale debris",
     "abstract": "Total suspended matter concentration (mg/L)",
