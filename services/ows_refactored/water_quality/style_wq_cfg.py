@@ -2,7 +2,7 @@
 Water Quality Style Configuration for Digital Earth Africa OWS
 ================================================================
 
-Style definitions for water quality parameters 
+Style definitions for water quality parameters
 Organized by parameter and sensor/source type.
 
 
@@ -10,21 +10,19 @@ Organized by parameter and sensor/source type.
 
 from ows_refactored.common.ows_legend_cfg import legend_idx_0_1_1ticks
 
-
 # ============================================================================
 # TOTAL SUSPENDED SOLIDS STYLES
 # ============================================================================
 color_ramp_tss = [
-        {"value": 0.0, "color": "#000000", "alpha": 0.0},
-        {"value": 0.25, "color": '#b03f03', "alpha": 0.75},
-        {"value": 0.50, "color": '#d15205'},
-        {"value": 0.75, "color": '#e96d13'},
-        {"value": 1.0, "color": '#f88a21'},
-        {"value": 1.25, "color": '#fea937'},
-        {"value": 1.50, "color": '#fec754'},
-        {"value": 1.75, "color": '#fede86'},
-        ]
-
+    {"value": 0.0, "color": "#000000", "alpha": 0.0},
+    {"value": 0.25, "color": "#b03f03", "alpha": 0.75},
+    {"value": 0.50, "color": "#d15205"},
+    {"value": 0.75, "color": "#e96d13"},
+    {"value": 1.0, "color": "#f88a21"},
+    {"value": 1.25, "color": "#fea937"},
+    {"value": 1.50, "color": "#fec754"},
+    {"value": 1.75, "color": "#fede86"},
+]
 
 
 # tss styles------------------------------------------------------
@@ -59,21 +57,21 @@ style_tss_msi = {
     "color_ramp": color_ramp_tss,
     "legend": legend_idx_0_1_1ticks,
 }
-  
+
 # ============================================================================
 # NORMALIZED DIFFERENCE SUSPENDED SEDIMENT INDEX (NDSSI) STYLES
-# ============================================================================   
+# ============================================================================
 color_ramp_ndssi = [
     {"value": -1.0, "color": "#000000", "alpha": 0.0},
-    {"value": -0.5, "color": "#084594", "alpha": 0.8},  
-    {"value": -0.25, "color": "#4292c6"},                
-    {"value": 0.0, "color": "#9ecae1"},                  
-    {"value": 0.20, "color": "#deebf7"},                 
-    {"value": 0.40, "color": "#fee391"},                 
-    {"value": 0.60, "color": "#fec44f"},                 
-    {"value": 0.75, "color": "#fe9929"},                 
-    {"value": 0.90, "color": "#d95f0e"},                 
-    {"value": 1.0, "color": "#993404"},                  
+    {"value": -0.5, "color": "#084594", "alpha": 0.8},
+    {"value": -0.25, "color": "#4292c6"},
+    {"value": 0.0, "color": "#9ecae1"},
+    {"value": 0.20, "color": "#deebf7"},
+    {"value": 0.40, "color": "#fee391"},
+    {"value": 0.60, "color": "#fec44f"},
+    {"value": 0.75, "color": "#fe9929"},
+    {"value": 0.90, "color": "#d95f0e"},
+    {"value": 1.0, "color": "#993404"},
 ]
 
 
@@ -128,28 +126,28 @@ style_ndssi_bnir_oli = {
 
 # ============================================================================
 # TOTAL SUSPENDED MATTER (TSM) STYLES
-# ============================================================================   
+# ============================================================================
 color_ramp_tsm = [
-    {"value": 0.0, "color": "#084594", "alpha": 1.0},    # 0 mg/L - Navy
-    {"value": 10.0, "color": "#2171b5"},                 # 10 mg/L - Blue
-    {"value": 25.0, "color": "#4292c6"},                 # 25 mg/L - Light blue
-    {"value": 50.0, "color": "#6baed6"},                 # 50 mg/L - Pale blue
-    {"value": 75.0, "color": "#9ecae1"},                 # 75 mg/L - Very pale blue
-    {"value": 100.0, "color": "#deebf7"},                # 100 mg/L - Almost white blue
-    {"value": 125.0, "color": "#ffffcc"},                # 125 mg/L - Pale yellow
-    {"value": 150.0, "color": "#ffeda0"},                # 150 mg/L - Light yellow
-    {"value": 175.0, "color": "#fed976"},                # 175 mg/L - Yellow
-    {"value": 200.0, "color": "#feb24c"},                # 200 mg/L - Orange
-    {"value": 225.0, "color": "#fd8d3c"},                # 225 mg/L - Dark orange
-    {"value": 250.0, "color": "#fc4e2a"},                # 250 mg/L - Red-orange
-    {"value": 275.0, "color": "#e31a1c"},                # 275 mg/L - Red
-    {"value": 300.0, "color": "#bd0026"},                # 300 mg/L - Dark red
-    {"value": 400.0, "color": "#800026"},                # 400+ mg/L - Very dark red
+    {"value": 0.0, "color": "#084594", "alpha": 1.0},  # 0 mg/L - Navy
+    {"value": 10.0, "color": "#2171b5"},  # 10 mg/L - Blue
+    {"value": 25.0, "color": "#4292c6"},  # 25 mg/L - Light blue
+    {"value": 50.0, "color": "#6baed6"},  # 50 mg/L - Pale blue
+    {"value": 75.0, "color": "#9ecae1"},  # 75 mg/L - Very pale blue
+    {"value": 100.0, "color": "#deebf7"},  # 100 mg/L - Almost white blue
+    {"value": 125.0, "color": "#ffffcc"},  # 125 mg/L - Pale yellow
+    {"value": 150.0, "color": "#ffeda0"},  # 150 mg/L - Light yellow
+    {"value": 175.0, "color": "#fed976"},  # 175 mg/L - Yellow
+    {"value": 200.0, "color": "#feb24c"},  # 200 mg/L - Orange
+    {"value": 225.0, "color": "#fd8d3c"},  # 225 mg/L - Dark orange
+    {"value": 250.0, "color": "#fc4e2a"},  # 250 mg/L - Red-orange
+    {"value": 275.0, "color": "#e31a1c"},  # 275 mg/L - Red
+    {"value": 300.0, "color": "#bd0026"},  # 300 mg/L - Dark red
+    {"value": 400.0, "color": "#800026"},  # 400+ mg/L - Very dark red
 ]
 
 style_tsm_oli = {
     "name": "tss",
-    "title": "concentration of particulate material in the surface water such as mud, silt, and other fine-scale debris",
+    "title": "concentration of particulate material in the surface water",
     "abstract": "Total suspended matter concentration (mg/L)",
     "needed_bands": ["tsm_lym_oli_agm"],
     "index_function": {
@@ -165,7 +163,7 @@ style_tsm_oli = {
 
 style_tsm_msi = {
     "name": "tss",
-    "title": "concentration of particulate material in the surface water such as mud, silt, and other fine-scale debris",
+    "title": "concentration of particulate material in the surface water",
     "abstract": "Total suspended matter concentration (mg/L)",
     "needed_bands": ["tsm"],
     "index_function": {
