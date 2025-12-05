@@ -4,7 +4,7 @@ bands_wq = {"tsm": [], "tsi": []}
 
 layer = {
     "title": "Total Suspended Matter",
-    "name": "water_quality_tsm",
+    "name": "wq_tsm",
     "abstract": """Total Suspended Matter (TSM) is a measure of the \
 concentration of particulate material in the surface water such as mud,
 silt, and other fine-scale debris. High concentrations of TSM can reduce \

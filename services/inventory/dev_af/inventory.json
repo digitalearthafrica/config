@@ -749,10 +749,11 @@
               "ndvi"
           ]
       },
+      
       {
-        "layer":"water_quality",
+        "layer":"wq_tsm",
         "product":[
-            "water_quality"
+            "water_quality_tsm"
         ],
         "styles_count": 1,
         "styles_list": [
