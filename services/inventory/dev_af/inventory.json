@@ -749,5 +749,15 @@
               "ndvi"
           ]
       }
+      {
+        "layer":"wq",
+        "product":[
+            "water_quality_tsm"
+        ],
+        "styles_count": 1,
+        "styles_list": [
+            "style_tsm"
+        ]
+      }
   ]
 }

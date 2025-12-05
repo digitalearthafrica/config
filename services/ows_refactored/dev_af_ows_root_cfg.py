@@ -197,6 +197,16 @@ ows_cfg = {
                                 },
                             ],
                         },
+                        {
+                            "title": "Water Quality",
+                            "abstract": """Water Quality""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.water_quality.ows_wq_tsm_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
+                        }
                     ],
                 },
                 {
