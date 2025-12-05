@@ -11,120 +11,6 @@ Organized by parameter and sensor/source type.
 from ows_refactored.common.ows_legend_cfg import legend_idx_0_1_1ticks
 
 # ============================================================================
-# TOTAL SUSPENDED SOLIDS STYLES
-# ============================================================================
-color_ramp_tss = [
-    {"value": 0.0, "color": "#000000", "alpha": 0.0},
-    {"value": 0.25, "color": "#b03f03", "alpha": 0.75},
-    {"value": 0.50, "color": "#d15205"},
-    {"value": 0.75, "color": "#e96d13"},
-    {"value": 1.0, "color": "#f88a21"},
-    {"value": 1.25, "color": "#fea937"},
-    {"value": 1.50, "color": "#fec754"},
-    {"value": 1.75, "color": "#fede86"},
-]
-
-
-# tss styles------------------------------------------------------
-style_tss_oli = {
-    "name": "tss",
-    "title": "Total Suspended Solids",
-    "abstract": "Total suspended solids concentration (mg/L)",
-    "needed_bands": ["tss_zhang_oli_agm"],
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "tss_zhang_oli_agm",
-        },
-    },
-    "color_ramp": color_ramp_tss,
-    "legend": legend_idx_0_1_1ticks,
-}
-
-style_tss_msi = {
-    "name": "tss",
-    "title": "Total Suspended Solids",
-    "abstract": "Total suspended solids concentration (mg/L)",
-    "needed_bands": ["tss_zhang_msi_agm"],
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "tss_zhang_msi_agm",
-        },
-    },
-    "color_ramp": color_ramp_tss,
-    "legend": legend_idx_0_1_1ticks,
-}
-
-# ============================================================================
-# NORMALIZED DIFFERENCE SUSPENDED SEDIMENT INDEX (NDSSI) STYLES
-# ============================================================================
-color_ramp_ndssi = [
-    {"value": -1.0, "color": "#000000", "alpha": 0.0},
-    {"value": -0.5, "color": "#084594", "alpha": 0.8},
-    {"value": -0.25, "color": "#4292c6"},
-    {"value": 0.0, "color": "#9ecae1"},
-    {"value": 0.20, "color": "#deebf7"},
-    {"value": 0.40, "color": "#fee391"},
-    {"value": 0.60, "color": "#fec44f"},
-    {"value": 0.75, "color": "#fe9929"},
-    {"value": 0.90, "color": "#d95f0e"},
-    {"value": 1.0, "color": "#993404"},
-]
-
-
-style_ndssi_msi = {
-    "name": "tss",
-    "title": "Total Suspended Solids",
-    "abstract": "Total suspended solids concentration (mg/L)",
-    "needed_bands": ["ndssi_rg_msi_agm"],
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "ndssi_rg_msi_agm",
-        },
-    },
-    "color_ramp": color_ramp_ndssi,
-    "legend": legend_idx_0_1_1ticks,
-}
-
-style_ndssi_oli = {
-    "name": "tss",
-    "title": "Total Suspended Solids",
-    "abstract": "Total suspended solids concentration (mg/L)",
-    "needed_bands": ["ndssi_rg_oli_agm"],
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "ndssi_rg_oli_agm",
-        },
-    },
-    "color_ramp": color_ramp_ndssi,
-    "legend": legend_idx_0_1_1ticks,
-}
-
-style_ndssi_bnir_oli = {
-    "name": "tss",
-    "title": "Total Suspended Solids",
-    "abstract": "Total suspended solids concentration (mg/L)",
-    "needed_bands": ["ndssi_bnir_oli_agm"],
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "ndssi_bnir_oli_agm",
-        },
-    },
-    "color_ramp": color_ramp_ndssi,
-    "legend": legend_idx_0_1_1ticks,
-}
-
-
-# ============================================================================
 # TOTAL SUSPENDED MATTER (TSM) STYLES
 # ============================================================================
 color_ramp_tsm = [
@@ -145,23 +31,7 @@ color_ramp_tsm = [
     {"value": 400.0, "color": "#800026"},  # 400+ mg/L - Very dark red
 ]
 
-style_tsm_oli = {
-    "name": "tss",
-    "title": "concentration of particulate material in the surface water",
-    "abstract": "Total suspended matter concentration (mg/L)",
-    "needed_bands": ["tsm_lym_oli_agm"],
-    "index_function": {
-        "function": "datacube_ows.band_utils.single_band",
-        "mapped_bands": True,
-        "kwargs": {
-            "band": "tsm_lym_oli_agm",
-        },
-    },
-    "color_ramp": color_ramp_tsm,
-    "legend": legend_idx_0_1_1ticks,
-}
-
-style_tsm_msi = {
+style_tsm = {
     "name": "tss",
     "title": "concentration of particulate material in the surface water",
     "abstract": "Total suspended matter concentration (mg/L)",
