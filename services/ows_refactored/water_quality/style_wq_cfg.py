@@ -32,7 +32,7 @@ color_ramp_tsm = [
 ]
 
 style_tsm = {
-    "name": "tss",
+    "name": "style_tsm",
     "title": "concentration of particulate material in the surface water",
     "abstract": "Total suspended matter concentration (mg/L)",
     "needed_bands": ["tsm"],
