@@ -1,4 +1,4 @@
-from ows_refactored.water_quality.style_wq_tsm_cfg import style_tsm
+from ows_refactored.water_quality.style_wq_cfg import style_tsm
 
 bands_wq = {"tsm": [], "tsi": []}
 

@@ -197,7 +197,7 @@ ows_cfg = {
                                 },
                             ],
                         },
-                        {
+                        {water_quality
                             "title": "Water Quality",
                             "abstract": """Water Quality""",
                             "layers": [

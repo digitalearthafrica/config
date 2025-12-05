@@ -750,9 +750,9 @@
           ]
       },
       {
-        "layer":"wq",
+        "layer":"water_quality",
         "product":[
-            "water_quality_tsm"
+            "water_quality"
         ],
         "styles_count": 1,
         "styles_list": [
