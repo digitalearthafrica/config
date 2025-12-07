@@ -1,3 +1,4 @@
+---
 name: s3_slstr
 description: "Sentinel-3 LST"
 metadata_type: eo3
@@ -32,3 +33,4 @@ measurements:
     units: "1"
     scale_factor: 10000
     add_offset: 0.0
+    
