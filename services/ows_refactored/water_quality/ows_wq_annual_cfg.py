@@ -27,7 +27,8 @@ JupyterLab and for direct download click on a tile in the explorer page \
     "native_crs": "EPSG:6933",
     "native_resolution": [10, -10],
     "styling": {
-        "default_style": "style_wq_annual_tsm",
+        # The default_style must match the style's "name" field.
+        "default_style": "wq_annual_tsm",
         "styles": [
             style_wq_annual_tsm,
         ],
