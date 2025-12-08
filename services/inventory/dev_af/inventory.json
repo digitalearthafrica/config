@@ -749,7 +749,6 @@
               "ndvi"
           ]
       },
-      
       {
         "layer":"wq_annual",
         "product":[
@@ -760,5 +759,6 @@
             "style_wq_annual_tsm"
         ]
       }
+
   ]
 }
