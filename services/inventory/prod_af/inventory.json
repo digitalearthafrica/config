@@ -1,5 +1,5 @@
 {
-  "total_layers_count": 40,
+  "total_layers_count": 41,
   "layers": [
       {
           "layer": "s2_l2a",
@@ -650,6 +650,16 @@
           "styles_list": [
               "rainfall_monthly"
           ]
+      },
+      {
+        "layer": "wq_annual",
+        "product": [
+            "wq_annual"
+        ],
+        "styles_count": 1,
+        "styles_list": [
+            "wq_annual_tsm"
+        ]
       }
   ]
 }
