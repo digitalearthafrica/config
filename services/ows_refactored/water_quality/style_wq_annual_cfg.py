@@ -31,8 +31,8 @@ color_ramp_tsm = [
     {"value": 400.0, "color": "#800026"},  # 400+ mg/L - Very dark red
 ]
 
-style_tsm = {
-    "name": "style_tsm",
+style_wq_annual_tsm = {
+    "name": "wq_annual_tsm",
     "title": "concentration of particulate material in the surface water",
     "abstract": "Total suspended matter concentration (mg/L)",
     "needed_bands": ["tsm"],

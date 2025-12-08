@@ -751,13 +751,13 @@
       },
       
       {
-        "layer":"wq_tsm",
+        "layer":"wq_annual",
         "product":[
-            "water_quality_tsm"
+            "wq_annual"
         ],
         "styles_count": 1,
         "styles_list": [
-            "style_tsm"
+            "wq_annual_tsm"
         ]
       }
   ]
