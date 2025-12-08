@@ -1,0 +1,35 @@
+---
+name: s3_slstr
+description: "Sentinel-3 LST"
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: s3_slstr
+storage:
+  crs: 'EPSG:4326'
+  resolution:
+    longitude: 0.003
+    latitude: -0.003
+measurements:
+  - name: "LST"
+    aliases: [Land_surface_temperature]
+    dtype: uint16
+    nodata: 65535
+    units: "K"
+    scale_factor: 100
+    add_offset: 0.0
+  - name: "LST_uncertainty"
+    aliases: [Land_surface_temperature_uncertainty]
+    dtype: uint16
+    nodata: 65535
+    units: "K"
+    scale_factor: 100
+    add_offset: 0.0
+  - name: "NDVI"
+    dtype: int16
+    nodata: 32767
+    units: "1"
+    scale_factor: 10000
+    add_offset: 0.0
