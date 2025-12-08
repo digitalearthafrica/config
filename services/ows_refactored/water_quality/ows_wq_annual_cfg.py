@@ -28,7 +28,7 @@ JupyterLab and for direct download click on a tile in the explorer page \
     "native_resolution": [10, -10],
     "styling": {
         # The default_style must match the style's "name" field.
-        "default_style": "wq_annual_tsm",
+        "default_style": "style_wq_annual_tsm",
         "styles": [
             style_wq_annual_tsm,
         ],
