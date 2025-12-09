@@ -23,8 +23,8 @@
                 "narrow_nir",
                 "swir_1",
                 "swir_2",
-                "scl",
-            ],
+                "scl"
+            ]
         },
         {
             "layer": "ls9_sr",
@@ -42,8 +42,8 @@
                 "nir",
                 "swir_1",
                 "swir_2",
-                "pixel_quality",
-            ],
+                "pixel_quality"
+            ]
         },
         {
             "layer": "ls8_sr",
@@ -61,8 +61,8 @@
                 "nir",
                 "swir_1",
                 "swir_2",
-                "pixel_quality",
-            ],
+                "pixel_quality"
+            ]
         },
         {
             "layer": "ls7_sr",
@@ -80,8 +80,8 @@
                 "nir",
                 "swir_1",
                 "swir_2",
-                "pixel_quality",
-            ],
+                "pixel_quality"
+            ]
         },
         {
             "layer": "ls5_sr",
@@ -99,8 +99,8 @@
                 "nir",
                 "swir_1",
                 "swir_2",
-                "pixel_quality",
-            ],
+                "pixel_quality"
+            ]
         },
         {
             "layer": "gm_s2_annual",
@@ -128,8 +128,8 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev",
-                "count",
-            ],
+                "count"
+            ]
         },
         {
             "layer": "gm_ls8_annual",
@@ -152,8 +152,8 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev",
-                "count",
-            ],
+                "count"
+            ]
         },
         {
             "layer": "gm_ls8_ls9_annual",
@@ -176,8 +176,8 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev",
-                "count",
-            ],
+                "count"
+            ]
         },
         {
             "layer": "gm_ls5_ls7_annual",
@@ -200,8 +200,8 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev",
-                "count",
-            ],
+                "count"
+            ]
         },
         {
             "layer": "gm_s2_semiannual",
@@ -229,8 +229,8 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev",
-                "count",
-            ],
+                "count"
+            ]
         },
         {
             "layer": "gm_s2_rolling",
@@ -258,8 +258,8 @@
                 "arcsec_sdev",
                 "log_edev",
                 "log_bcdev",
-                "count",
-            ],
+                "count"
+            ]
         },
         {
             "layer": "ls9_st",
@@ -268,8 +268,8 @@
             "styles_list": [
                 "surface_temperature",
                 "surface_temperature_uncertainty",
-                "surface_temperature_masked",
-            ],
+                "surface_temperature_masked"
+            ]
         },
         {
             "layer": "ls8_st",
@@ -278,8 +278,8 @@
             "styles_list": [
                 "surface_temperature",
                 "surface_temperature_uncertainty",
-                "surface_temperature_masked",
-            ],
+                "surface_temperature_masked"
+            ]
         },
         {
             "layer": "ls7_st",
@@ -288,8 +288,8 @@
             "styles_list": [
                 "surface_temperature",
                 "surface_temperature_uncertainty",
-                "surface_temperature_masked",
-            ],
+                "surface_temperature_masked"
+            ]
         },
         {
             "layer": "ls5_st",
@@ -298,38 +298,55 @@
             "styles_list": [
                 "surface_temperature",
                 "surface_temperature_uncertainty",
-                "surface_temperature_masked",
-            ],
+                "surface_temperature_masked"
+            ]
         },
         {
             "layer": "s1_rtc",
             "product": ["s1_rtc"],
             "styles_count": 4,
-            "styles_list": ["vv_vh_vh_over_vv", "vv", "vh", "rvi"],
+            "styles_list": [
+                "vv_vh_vh_over_vv",
+                 "vv",
+                 "vh",
+                 "rvi"
+                ]
         },
         {
             "layer": "s1_monthly_mosaic",
             "product": ["s1_monthly_mosaic"],
             "styles_count": 4,
-            "styles_list": ["vv_vh_vh_over_vv", "vv", "vh", "rvi"],
+            "styles_list": [
+                "vv_vh_vh_over_vv",
+                "vv",
+                "vh",
+                "rvi"
+            ]
         },
         {
             "layer": "alos_palsar_mosaic",
             "product": ["alos_palsar_mosaic"],
             "styles_count": 3,
-            "styles_list": ["hh", "hv", "hh_hv_hv_over_hh"],
+            "styles_list": [
+                "hh",
+                "hv",
+                "hh_hv_hv_over_hh"
+        ]
         },
         {
             "layer": "jers_sar_mosaic",
             "product": ["jers_sar_mosaic"],
             "styles_count": 1,
-            "styles_list": ["hh"],
+            "styles_list": ["hh"]
         },
         {
             "layer": "wofs_ls",
             "product": ["wofs_ls"],
             "styles_count": 2,
-            "styles_list": ["observations", "wet"],
+            "styles_list": [
+                "observations",
+                "wet"
+            ]
         },
         {
             "layer": "wofs_ls_summary_annual",
@@ -339,8 +356,8 @@
                 "wofs_summary_annual_frequency",
                 "legacy_wofs_summary_annual_frequency",
                 "wofs_summary_annual_wet",
-                "wofs_summary_annual_clear",
-            ],
+                "wofs_summary_annual_clear"
+            ]
         },
         {
             "layer": "wofs_ls_summary_alltime",
@@ -350,44 +367,63 @@
                 "wofs_summary_alltime_frequency",
                 "legacy_wofs_summary_alltime_frequency",
                 "wofs_summary_alltime_wet",
-                "wofs_summary_alltime_clear",
-            ],
+                "wofs_summary_alltime_clear"
+            ]
         },
         {
             "layer": "crop_mask",
             "product": ["crop_mask"],
             "styles_count": 3,
-            "styles_list": ["green", "filtered_yellow", "prob"],
+            "styles_list": [
+                "green",
+                "filtered_yellow",
+                "prob"
+            ]
         },
         {
             "layer": "dem_srtm",
             "product": ["dem_srtm"],
             "styles_count": 2,
-            "styles_list": ["greyscale", "colours"],
+            "styles_list": [
+                "greyscale",
+                 "colours"
+                ]
         },
         {
             "layer": "nasadem",
             "product": ["nasadem"],
             "styles_count": 2,
-            "styles_list": ["greyscale", "colours"],
+            "styles_list": [
+                "greyscale",
+                "colours"
+            ]
         },
         {
             "layer": "dem_cop_30",
             "product": ["dem_cop_30"],
-            "styles_count": 2,
-            "styles_list": ["greyscale", "colours"],
+            "styles_count":[
+            "greyscale",
+            "colours"
+        ]
         },
         {
             "layer": "srtm_deriv",
             "product": ["dem_srtm_deriv"],
             "styles_count": 3,
-            "styles_list": ["style_slope", "style_mrvbf", "style_mrrtf"],
+            "styles_list": [
+                "style_slope",
+                "style_mrvbf",
+                "style_mrrtf"
+            ]
         },
         {
             "layer": "fc_ls",
             "product": ["fc_ls"],
             "styles_count": 2,
-            "styles_list": ["fc_rgb_unmasked", "fc_rgb_masked"],
+            "styles_list": [
+                "fc_rgb_unmasked",
+                "fc_rgb_masked"
+            ]
         },
         {
             "layer": "fc_ls_summary_annual",
@@ -403,14 +439,14 @@
                 "non_green_veg_90",
                 "bare_ground_10",
                 "bare_ground_50",
-                "bare_ground_90",
-            ],
+                "bare_ground_90"
+            ]
         },
         {
             "layer": "gmw",
             "product": ["gmw"],
             "styles_count": 1,
-            "styles_list": ["mangrove"],
+            "styles_list": ["mangrove"]
         },
         {
             "layer": "pc_s2_annual",
@@ -420,8 +456,8 @@
                 "pc_s2_annual_clear",
                 "pc_s2_annual_total",
                 "pc_s2_annual_clear_0_5",
-                "pc_s2_annual_clear_2_5",
-            ],
+                "pc_s2_annual_clear_2_5"
+            ]
         },
         {
             "layer": "ndvi_climatology_ls",
@@ -463,8 +499,8 @@
                 "style_count_sep",
                 "style_count_oct",
                 "style_count_nov",
-                "style_count_dec",
-            ],
+                "style_count_dec"
+            ]
         },
         {
             "layer": "ndvi_anomaly",
@@ -474,43 +510,43 @@
                 "style_ndvi_anomaly",
                 "style_ndvi_mean",
                 "style_count"
-            ],
+            ]
         },
         {
             "layer": "esa_worldcover_2020",
             "product": ["esa_worldcover_2020"],
             "styles_count": 1,
-            "styles_list": ["style_colours"],
+            "styles_list": ["style_colours"]
         },
         {
             "layer": "esa_worldcover_2021",
             "product": ["esa_worldcover_2021"],
             "styles_count": 1,
-            "styles_list": ["style_colours"],
+            "styles_list": ["style_colours"]
         },
         {
             "layer": "io_lulc_v2",
             "product": ["io_lulc_v2"],
             "styles_count": 1,
-            "styles_list": ["style_colours"],
+            "styles_list": ["style_colours"]
         },
         {
             "layer": "cci_landcover",
             "product": ["cci_landcover"],
             "styles_count": 1,
-            "styles_list": ["style_colours"],
+            "styles_list": ["style_colours"]
         },
         {
             "layer": "wsf_2015",
             "product": ["wsf_2015"],
             "styles_count": 1,
-            "styles_list": ["wsf_2015"],
+            "styles_list": ["wsf_2015"]
         },
         {
             "layer": "wsf_2019",
             "product": ["wsf_2019"],
             "styles_count": 1,
-            "styles_list": ["wsf_2019"],
+            "styles_list": ["wsf_2019"]
         },
         {
             "layer": "wsf_evolution",
@@ -519,55 +555,55 @@
             "styles_list": [
                 "wsf_evolution",
                 "wsf_evolution_idc"
-            ],
+            ]
         },
         {
             "layer": "rainfall_chirps_monthly",
             "product": ["rainfall_chirps_monthly"],
             "styles_count": 1,
-            "styles_list": ["rainfall_monthly"],
+            "styles_list": ["rainfall_monthly"]
         },
         {
             "layer": "esa_worldcereal_activecropland",
             "product": ["esa_worldcereal_activecropland"],
             "styles_count": 1,
-            "styles_list": ["style_activecropland"],
+            "styles_list": ["style_activecropland"]
         },
         {
             "layer": "esa_worldcereal_maize_active",
             "product": ["esa_worldcereal_maize_active"],
             "styles_count": 1,
-            "styles_list": ["style_activecropland"],
+            "styles_list": ["style_activecropland"]
         },
         {
             "layer": "esa_worldcereal_maize_irrigation",
             "product": ["esa_worldcereal_maize_irrigation"],
             "styles_count": 1,
-            "styles_list": ["style_irrigated"],
+            "styles_list": ["style_irrigated"]
         },
         {
             "layer": "esa_worldcereal_wintercereals_irrigation",
             "product": ["esa_worldcereal_wintercereals_irrigation"],
             "styles_count": 1,
-            "styles_list": ["style_irrigated"],
+            "styles_list": ["style_irrigated"]
         },
         {
             "layer": "esa_worldcereal_maize_main",
             "product": ["esa_worldcereal_maize_main"],
             "styles_count": 1,
-            "styles_list": ["style_maize"],
+            "styles_list": ["style_maize"]
         },
         {
             "layer": "esa_worldcereal_temporarycrops",
             "product": ["esa_worldcereal_temporarycrops"],
             "styles_count": 1,
-            "styles_list": ["style_temporarycrops"],
+            "styles_list": ["style_temporarycrops"]
         },
         {
             "layer": "esa_worldcereal_wintercereals",
             "product": ["esa_worldcereal_wintercereals"],
             "styles_count": 1,
-            "styles_list": ["style_wintercereals"],
+            "styles_list": ["style_wintercereals"]
         },
         {
             "layer": "s3_olci_l2_lfr",
@@ -580,13 +616,13 @@
                 "rc681",
                 "rc865",
                 "ndvi"
-            ],
+            ]
         },
         {
             "layer": "wq_annual",
             "product": ["wq_annual"],
             "styles_count": 1,
-            "styles_list": ["style_wq_annual_tsm"],
-        },
-    ],
+            "styles_list": ["style_wq_annual_tsm"]
+        }
+    ]
 }
