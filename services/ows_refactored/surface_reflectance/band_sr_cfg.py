@@ -115,11 +115,40 @@ bands_ls8_sr = {
 }
 
 bands_s3_olci_l2_land = {
-    "GIFAPAR": ["GI-FAPAR"],
+    "GIFAPAR": ["GI-FAPAR", "GI_FAPAR"],
     "IWV_L": ["water_vapour"],
     "OTCI": ["chlorophyll"],
     "RC681": [],
     "RC865": [],
     "LQSF": [],
+    "dataMask": ["mask"],
+}
+
+bands_s3_olci_l2_water = {
+    "A865": ["aerosol_angstrom_exponent"],
+    "ADG443_NN": ["CDM_absorbtion_coefficient"],
+    "CHL_NN": ["algal_pigment_complex_waters"],
+    "CHL_OC4ME": ["algal_pigment_open_waters"],
+    "KD490_M07": ["diffuse_attenuation_coefficient"],
+    "TSM_NN": ["total_suspended_matter"],
+    "T865": ["aerosol_optical_thickness"],
+    "PAR": ["photosynthetically_active_radiation"],
+    "IWV_W": ["integrated_water_vapour"],
+    "B01": ["Oa01_reflectance"],
+    "B02": ["Oa02_reflectance"],
+    "B03": ["Oa03_reflectance"],
+    "B04": ["Oa04_reflectance"],
+    "B05": ["Oa05_reflectance"],
+    "B06": ["Oa06_reflectance"],
+    "B07": ["Oa07_reflectance"],
+    "B08": ["Oa08_reflectance"],
+    "B09": ["Oa09_reflectance"],
+    "B10": ["Oa10_reflectance"],
+    "B11": ["Oa11_reflectance"],
+    "B12": ["Oa12_reflectance"],
+    "B16": ["Oa16_reflectance"],
+    "B17": ["Oa17_reflectance"],
+    "B18": ["Oa18_reflectance"],
+    "B21": ["Oa21_reflectance"],
     "dataMask": ["mask"],
 }
