@@ -35,12 +35,12 @@ style_wq_annual_tsm = {
     "name": "style_wq_annual_tsm",
     "title": "concentration of particulate material in the surface water",
     "abstract": "Total suspended matter concentration (mg/L)",
-    "needed_bands": ["tsm"],
+    "needed_bands": ["tsm_lym_msi_agm"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {
-            "band": "tsm",
+            "band": "tsm_lym_msi_agm",
         },
     },
     "color_ramp": color_ramp_tsm,

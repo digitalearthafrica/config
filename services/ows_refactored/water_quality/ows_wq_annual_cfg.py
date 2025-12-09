@@ -1,4 +1,5 @@
-from ows_refactored.water_quality.style_wq_annual_cfg import style_wq_annual_tsm
+from ows_refactored.water_quality.style_wq_annual_cfg import \
+    style_wq_annual_tsm
 
 bands_wq = {"tsm_lym_msi_agm": []}
 
