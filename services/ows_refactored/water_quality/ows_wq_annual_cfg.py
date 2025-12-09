@@ -1,6 +1,6 @@
 from ows_refactored.water_quality.style_wq_annual_cfg import style_wq_annual_tsm
 
-bands_wq = {"tsm": [], "tsi": []}
+
 
 layer = {
     "title": "Water quality variables",
@@ -17,7 +17,7 @@ JupyterLab and for direct download click on a tile in the explorer page \
 """,
     "product_name": "wq_annual",
     "time_resolution": "annual",
-    "bands": bands_wq,
+    "bands": "tsm",
     "resource_limits": {},
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
