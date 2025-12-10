@@ -1156,17 +1156,9 @@
             "layer": "wq_annual",
             "product": ["wq_annual"],
             "styles_count": 1,
-<<<<<<< HEAD
-            "styles_list": ["style_wq_annual_tsm"]
-        }
-    ]
-=======
             "styles_list": ["style_wq_annual_tsm"],
         },
-    ],
-          ]
-      },
-      {
+       {
           "layer": "esa_worldcover_2020",
           "product": [
               "esa_worldcover_2020"
@@ -1350,5 +1342,4 @@
           ]
       }
   ]
->>>>>>> deb72f925412edefc2d88eb9a7a8ca68d172cf45
 }
