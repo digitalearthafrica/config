@@ -24,3 +24,8 @@ jobs:
       - name: yaml-lint
         run:
           yamllint products/*.yaml
+  
+      - uses: actions/eo3-validate@v1
+        with:
+          command: 'eo3-validate'
+          filepath: 'products/'
