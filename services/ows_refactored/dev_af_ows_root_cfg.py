@@ -336,7 +336,11 @@ ows_cfg = {
                                             "type": "python",
                                         },
                                         {
-                                            "include": "ows_refactored.surface_reflectance.ows_s3_cfg.layer",
+                                            "include": "ows_refactored.surface_reflectance.ows_s3_cfg.layer_s3_olci_l2_land",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.surface_reflectance.ows_s3_cfg.layer_s3_olci_l2_water",
                                             "type": "python",
                                         },
                                     ],
