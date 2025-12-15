@@ -197,6 +197,16 @@ ows_cfg = {
                                 },
                             ],
                         },
+                        {
+                            "title": "wq_annual",
+                            "abstract": """Water Quality""",
+                            "layers": [
+                                {
+                                    "include": "ows_refactored.water_quality.ows_wq_annual_cfg.layer",
+                                    "type": "python",
+                                },
+                            ],
+                        },
                     ],
                 },
                 {
