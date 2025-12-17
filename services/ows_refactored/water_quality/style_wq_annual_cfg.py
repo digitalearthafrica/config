@@ -6,6 +6,7 @@ Style definitions for water quality parameters
 Organized by parameter and sensor/source type.
 
 """
+
 # ============================================================================
 # TOTAL SUSPENDED MATTER (TSM) STYLES
 # ============================================================================
