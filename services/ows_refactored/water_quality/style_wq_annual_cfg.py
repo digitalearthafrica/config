@@ -5,16 +5,12 @@ Water Quality Style Configuration for Digital Earth Africa OWS
 Style definitions for water quality parameters
 Organized by parameter and sensor/source type.
 
-
 """
-
-from ows_refactored.common.ows_legend_cfg import legend_idx_0_1_1ticks
-
 # ============================================================================
 # TOTAL SUSPENDED MATTER (TSM) STYLES
 # ============================================================================
 color_ramp_tsm = [
-    {"value": 0.0, "color": "#084594", "alpha": 1.0},  # 0 mg/L - Navy
+    {"value": 0.0, "color": "#084594"},  # 0 mg/L - Navy
     {"value": 10.0, "color": "#2171b5"},  # 10 mg/L - Blue
     {"value": 25.0, "color": "#4292c6"},  # 25 mg/L - Light blue
     {"value": 50.0, "color": "#6baed6"},  # 50 mg/L - Pale blue
@@ -31,18 +27,29 @@ color_ramp_tsm = [
     {"value": 400.0, "color": "#800026"},  # 400+ mg/L - Very dark red
 ]
 
+legend = {
+    "show_legend": True,
+    "title": "Total Suspended Matter",
+    "units": "mg/L",
+    "begin": "0.0",
+    "end": "500.0",
+    "decimal_places": 1,
+    "ticks_every": "100",
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
 style_wq_annual_tsm = {
-    "name": "style_wq_annual_tsm",
-    "title": "concentration of particulate material in the surface water",
-    "abstract": "Total suspended matter concentration (mg/L)",
-    "needed_bands": ["tsm_lym_msi_agm"],
+    "name": "wq_annual_tsm",
+    "title": "Total Suspended Matter (TSM)",
+    "abstract": "Total suspended matter concentration (mg/L) in surface water bodies",
+    "legend": legend,
+    "needed_bands": ["tsm"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
-        "kwargs": {
-            "band": "tsm_lym_msi_agm",
-        },
+        "kwargs": {"band": "tsm"},
     },
     "color_ramp": color_ramp_tsm,
-    "legend": legend_idx_0_1_1ticks,
 }

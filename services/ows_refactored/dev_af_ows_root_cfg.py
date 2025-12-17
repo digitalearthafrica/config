@@ -163,6 +163,10 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.layer",
                                     "type": "python",
                                 },
+                                {
+                                    "include": "ows_refactored.water_quality.ows_wq_annual_cfg.layer",
+                                    "type": "python",
+                                },
                             ],
                         },
                         {
@@ -193,16 +197,6 @@ ows_cfg = {
                             "layers": [
                                 {
                                     "include": "ows_refactored.pixel_count.ows_pc_s2_annual_cfg.layer",
-                                    "type": "python",
-                                },
-                            ],
-                        },
-                        {
-                            "title": "wq_annual",
-                            "abstract": """Water Quality""",
-                            "layers": [
-                                {
-                                    "include": "ows_refactored.water_quality.ows_wq_annual_cfg.layer",
                                     "type": "python",
                                 },
                             ],
