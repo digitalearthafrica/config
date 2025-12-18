@@ -650,6 +650,17 @@
           "styles_list": [
               "rainfall_monthly"
           ]
+      },
+      {
+        "layer": "wq_annual",
+        "product": [
+            "wq_annual"
+        ],
+        "styles_count": 1,
+        "styles_list": [
+            "style_wq_annual_tsm"
+    
+        ]
       }
   ]
 }
