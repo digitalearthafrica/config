@@ -28,7 +28,7 @@ color_ramp_tsm = [
     {"value": 400.0, "color": "#800026"},  # 400+ mg/L - Very dark red
 ]
 
-legend = {
+legend_tsm = {
     "show_legend": True,
     "title": "Total Suspended Matter",
     "units": "mg/L",
@@ -45,7 +45,7 @@ style_wq_annual_tsm = {
     "name": "wq_annual_tsm",
     "title": "Total Suspended Matter (TSM)",
     "abstract": "Total suspended matter concentration (mg/L) in surface water bodies",
-    "legend": legend,
+    "legend": legend_tsm,
     "needed_bands": ["tsm"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -54,3 +54,52 @@ style_wq_annual_tsm = {
     },
     "color_ramp": color_ramp_tsm,
 }
+
+
+# ============================================================================
+# TROPHIC STATE INDEX (TSI) STYLES
+# ============================================================================
+color_ramp_tsi = [
+    {"value": 0.0, "color": "#440154"},    # 0 - Deep purple/navy (oligotrophic)
+    {"value": 10.0, "color": "#31688e"},   # 10 - Blue (oligotrophic)
+    {"value": 20.0, "color": "#35b779"},   # 20 - Cyan-blue (oligotrophic)
+    {"value": 30.0, "color": "#1f9e89"},   # 30 - Teal (oligo-mesotrophic)
+    {"value": 40.0, "color": "#26828e"},   # 40 - Dark cyan (mesotrophic)
+    {"value": 50.0, "color": "#3fbc73"},   # 50 - Green-cyan (mesotrophic)
+    {"value": 60.0, "color": "#6ece58"},   # 60 - Light green (eutrophic)
+    {"value": 70.0, "color": "#b5de2b"},   # 70 - Yellow-green (eutrophic)
+    {"value": 75.0, "color": "#fde725"},   # 75 - Yellow (eutrophic-hypereutrophic)
+    {"value": 80.0, "color": "#fca636"},   # 80 - Orange-yellow (hypereutrophic)
+    {"value": 85.0, "color": "#f1605d"},   # 85 - Orange-red (hypereutrophic)
+    {"value": 90.0, "color": "#e8576b"},   # 90 - Red (hypereutrophic)
+    {"value": 95.0, "color": "#d84c6f"},   # 95 - Red-pink (hypereutrophic)
+    {"value": 100.0, "color": "#b73779"},  # 100 - Magenta (hypereutrophic)
+    {"value": 110.0, "color": "#8c2981"},  # 110+ - Purple-magenta (hypereutrophic)
+]
+
+legend_tsi = {
+    "show_legend": True,
+    "title": "Trophic State Index",
+    "begin": "0.0",
+    "end": "100.0",
+    "decimal_places": 1,
+    "ticks_every": "5",
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
+style_wq_annual_tsi = {
+    "name": "wq_annual_tsi",
+    "title": "Trophic State Index (TSI)",
+    "abstract": "Biological productivity in surface water bodies",
+    "legend": legend_tsi,
+    "needed_bands": ["tsi"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "tsi"},
+    },
+    "color_ramp": color_ramp_tsi,
+}
+

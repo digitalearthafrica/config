@@ -658,7 +658,8 @@
             ],
             "styles_count": 1,
             "styles_list": [
-                "wq_annual_tsm"
+                "wq_annual_tsm",
+                "wq_annual_tsi"
             ]
         }
     ]

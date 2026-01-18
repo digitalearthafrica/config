@@ -771,9 +771,10 @@
             "product": [
                 "wq_annual"
             ],
-            "styles_count": 1,
+            "styles_count": 2,
             "styles_list": [
-                "wq_annual_tsm"
+                "wq_annual_tsm",
+                "wq_annual_tsi"
             ]
         }
     ]
