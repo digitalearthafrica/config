@@ -6,6 +6,7 @@ Style definitions for water quality parameters
 Organized by parameter and sensor/source type.
 
 """
+from ows_refactored.common.ows_legend_cfg import legend_mean_ndvi_ticks
 
 # ============================================================================
 # TOTAL SUSPENDED MATTER (TSM) STYLES
@@ -80,6 +81,7 @@ color_ramp_tsi = [
 legend_tsi = {
     "show_legend": True,
     "title": "Trophic State Index",
+    "units": "unitless",
     "begin": "0.0",
     "end": "100.0",
     "decimal_places": 1,
@@ -103,3 +105,38 @@ style_wq_annual_tsi = {
     "color_ramp": color_ramp_tsi,
 }
 
+# ============================================================================
+# NDVI STYLES
+# ============================================================================
+color_ramp_ndvi = [
+    {"value": 0.0, "color": "#a50026"},
+    {"value": 0.1, "color": "#d73027"},
+    {"value": 0.2, "color": "#f46d43"},
+    {"value": 0.3, "color": "#fdae61"},
+    {"value": 0.4, "color": "#fee090"},
+    {"value": 0.5, "color": "#ffffbf"},
+    {"value": 0.6, "color": "#d9ef8b"},
+    {"value": 0.7, "color": "#a6d96a"},
+    {"value": 0.8, "color": "#66bd63"},
+    {"value": 0.9, "color": "#1a9850"},
+    {"value": 1.0, "color": "#006837"},
+]
+
+style_wq_annual_ndvi = {
+    "name": "wq_annual_ndvi",
+    "title": "Normalised Difference Vegeation Index (NDVI)",
+    "abstract": "Presence of vegetation in surface water bodies",
+    "legend": legend_mean_ndvi_ticks,
+    "needed_bands": [
+        "agm_ndvi",
+        "msi_agm_ndvi",
+        "oli_agm_ndvi",
+        "tm_agm_ndvi"
+        ],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "agm_ndvi"},
+    },
+    "color_ramp": color_ramp_ndvi,
+}

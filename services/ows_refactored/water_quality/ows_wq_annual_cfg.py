@@ -1,7 +1,8 @@
 from ows_refactored.common.ows_reslim_cfg import reslim_continental
 from ows_refactored.water_quality.style_wq_annual_cfg import (
     style_wq_annual_tsm,
-    style_wq_annual_tsi)
+    style_wq_annual_tsi,
+    style_wq_annual_ndvi)
 
 layer = {
     "title": "Annual Water Quality Variables",
@@ -39,6 +40,7 @@ click on a tile in the explorer page (https://explorer.dev.digitalearth.africa/p
         "styles": [
             style_wq_annual_tsm,
             style_wq_annual_tsi,
+            style_wq_annual_ndvi,
         ],
     },
 }
