@@ -771,11 +771,12 @@
             "product": [
                 "wq_annual"
             ],
-            "styles_count": 2,
+            "styles_count": 4,
             "styles_list": [
                 "wq_annual_tsm",
                 "wq_annual_tsi",
-                "wq_annual_ndvi"
+                "wq_annual_ndvi",
+                "wq_annual_fai"
             ]
         }
     ]

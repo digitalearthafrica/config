@@ -122,11 +122,24 @@ color_ramp_ndvi = [
     {"value": 1.0, "color": "#006837"},
 ]
 
+legend_fai = {
+    "show_legend": True,
+    "title": "Floating Algal Index",
+    "units": "unitless",
+    "begin": "-0.05",
+    "end": "1.0",
+    "decimal_places": 2,
+    "ticks_every": "5",
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
 style_wq_annual_ndvi = {
     "name": "wq_annual_ndvi",
     "title": "Normalised Difference Vegeation Index (NDVI)",
     "abstract": "Presence of vegetation in surface water bodies",
-    "legend": legend_mean_ndvi_ticks,
+    "legend": legend_fai,
     "needed_bands": [
         "agm_ndvi",
         "msi_agm_ndvi",
@@ -139,4 +152,37 @@ style_wq_annual_ndvi = {
         "kwargs": {"band": "agm_ndvi"},
     },
     "color_ramp": color_ramp_ndvi,
+}
+
+# ============================================================================
+# FAI STYLES
+# ============================================================================
+
+color_ramp_fai = [
+    {"value": -0.1, "color": "#00004d"},
+    {"value": 0.0, "color": "#00ffff"},
+    {"value": 0.1, "color": "#00ff00"},
+    {"value": 0.2, "color": "#ffff00"},
+    {"value": 0.3, "color": "#ff8000"},
+    {"value": 0.4, "color": "#ff0000"},
+    {"value": 0.5, "color": "#8b0000"}, 
+]
+
+style_wq_annual_fai = {
+    "name": "wq_annual_fai",
+    "title": "Floating Algal Index (FAI)",
+    "abstract": "Presence of algal blooms in surface water bodies",
+    "legend": legend_fai,
+    "needed_bands": [
+        "agm_fai",
+        "msi_agm_fai",
+        "oli_agm_fai",
+        "tm_agm_fai"
+        ],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "agm_fai"},
+    },
+    "color_ramp": color_ramp_fai,
 }
