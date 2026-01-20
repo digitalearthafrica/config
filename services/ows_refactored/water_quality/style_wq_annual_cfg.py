@@ -132,7 +132,7 @@ style_wq_annual_ndvi = {
         "msi_agm_ndvi",
         "oli_agm_ndvi",
         "tm_agm_ndvi"
-        ],
+    ],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -152,7 +152,7 @@ color_ramp_fai = [
     {"value": 0.2, "color": "#ffff00"},
     {"value": 0.3, "color": "#ff8000"},
     {"value": 0.4, "color": "#ff0000"},
-    {"value": 0.5, "color": "#8b0000"}, 
+    {"value": 0.5, "color": "#8b0000"},
 ]
 
 legend_fai = {
@@ -178,7 +178,7 @@ style_wq_annual_fai = {
         "msi_agm_fai",
         "oli_agm_fai",
         "tm_agm_fai"
-        ],
+    ],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -191,7 +191,7 @@ style_wq_annual_fai = {
 # HUE STYLES
 # ============================================================================
 color_ramp_hue = [
-    {"value": 0, "color": "#ff0000"}, 
+    {"value": 0, "color": "#ff0000"},
     {"value": 30, "color": "#ff8000"},
     {"value": 60, "color": "#ffff00"},
     {"value": 90, "color": "#80ff00"},
@@ -229,7 +229,7 @@ style_wq_annual_hue = {
         "msi_agm_hue",
         "oli_agm_hue",
         "tm_agm_hue"
-        ],
+    ],
     "index_function": {
         "functions": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,

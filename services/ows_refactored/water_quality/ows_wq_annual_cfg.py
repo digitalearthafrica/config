@@ -45,7 +45,6 @@ click on a tile in the explorer page (https://explorer.dev.digitalearth.africa/p
             style_wq_annual_ndvi,
             style_wq_annual_fai,
             style_wq_annual_hue
-
         ],
     },
 }
