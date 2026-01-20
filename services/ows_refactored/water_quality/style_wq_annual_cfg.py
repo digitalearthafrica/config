@@ -122,24 +122,11 @@ color_ramp_ndvi = [
     {"value": 1.0, "color": "#006837"},
 ]
 
-legend_fai = {
-    "show_legend": True,
-    "title": "Floating Algal Index",
-    "units": "unitless",
-    "begin": "-0.05",
-    "end": "1.0",
-    "decimal_places": 2,
-    "ticks_every": "5",
-    "width": 4.5,
-    "height": 2.1,
-    "strip_location": [0.1, 0.4, 0.8, 0.2],
-}
-
 style_wq_annual_ndvi = {
     "name": "wq_annual_ndvi",
     "title": "Normalised Difference Vegeation Index (NDVI)",
     "abstract": "Presence of vegetation in surface water bodies",
-    "legend": legend_fai,
+    "legend": legend_mean_ndvi_ticks,
     "needed_bands": [
         "agm_ndvi",
         "msi_agm_ndvi",
@@ -168,6 +155,19 @@ color_ramp_fai = [
     {"value": 0.5, "color": "#8b0000"}, 
 ]
 
+legend_fai = {
+    "show_legend": True,
+    "title": "Floating Algal Index",
+    "units": "unitless",
+    "begin": "-0.05",
+    "end": "1.0",
+    "decimal_places": 2,
+    "ticks_every": "5",
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
 style_wq_annual_fai = {
     "name": "wq_annual_fai",
     "title": "Floating Algal Index (FAI)",
@@ -185,4 +185,55 @@ style_wq_annual_fai = {
         "kwargs": {"band": "agm_fai"},
     },
     "color_ramp": color_ramp_fai,
+}
+
+# ============================================================================
+# HUE STYLES
+# ============================================================================
+color_ramp_hue = [
+    {"value": 0, "color": "#ff0000"}, 
+    {"value": 30, "color": "#ff8000"},
+    {"value": 60, "color": "#ffff00"},
+    {"value": 90, "color": "#80ff00"},
+    {"value": 120, "color": "#00ff00"},
+    {"value": 150, "color": "#00ff80"},
+    {"value": 180, "color": "#00ffff"},
+    {"value": 210, "color": "#0080ff"},
+    {"value": 240, "color": "#0000ff"},
+    {"value": 270, "color": "#8000ff"},
+    {"value": 300, "color": "#ff00ff"},
+    {"value": 330, "color": "#ff0080"},
+    {"value": 360, "color": "#ff0000"},
+]
+
+legend_hue = {
+    "show_legend": True,
+    "title": "Hue Angle",
+    "units": "degrees",
+    "begin": "0",
+    "end": "360",
+    "decimal_places": 0,
+    "ticks_every": "30",
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
+style_wq_annual_hue = {
+    "name": "wq_annual_hue",
+    "title": "Floating Algal Index (FAI)",
+    "abstract": "Surface water body colour",
+    "legend": legend_hue,
+    "needed_bands": [
+        "agm_hue",
+        "msi_agm_hue",
+        "oli_agm_hue",
+        "tm_agm_hue"
+        ],
+    "index_function": {
+        "functions": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "agm_hue"},
+    },
+    "color_ramp": color_ramp_hue,
 }
