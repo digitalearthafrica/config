@@ -18,7 +18,7 @@ measurements:
     dtype: uint16
     nodata: 65535
     units: "1"
-    scale_factor: 10000
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "IWV_L"
     aliases: [water_vapour]
@@ -32,19 +32,19 @@ measurements:
     dtype: uint16
     nodata: 65535
     units: "1"
-    scale_factor: 10000
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "RC681"
     dtype: uint16
     nodata: 65535
     units: "1"
-    scale_factor: 10000
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "RC865"
     dtype: uint16
     nodata: 65535
     units: "1"
-    scale_factor: 10000
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "LQSF"
     dtype: float32
