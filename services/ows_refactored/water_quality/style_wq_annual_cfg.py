@@ -231,7 +231,7 @@ style_wq_annual_hue = {
         "tm_agm_hue"
     ],
     "index_function": {
-        "functions": "datacube_ows.band_utils.single_band",
+        "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {"band": "agm_hue"},
     },
