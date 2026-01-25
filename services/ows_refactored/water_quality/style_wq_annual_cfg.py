@@ -292,3 +292,97 @@ style_wq_annual_owt = {
     "include_in_feature_info": True,
     "color_ramp": color_ramp_owt,
 }
+
+# ============================================================================
+# CHLA STYLES
+# ============================================================================
+color_ramp_chla = [
+    {"value": 0.1,   "color": "#081d58"},  # Very low Chl-a (deep blue)
+    {"value": 0.5,   "color": "#253494"},  # Low
+    {"value": 1.0,   "color": "#225ea8"},  # Oligotrophic
+    {"value": 2.0,   "color": "#1d91c0"},  # Low–moderate
+    {"value": 5.0,   "color": "#41b6c4"},  # Mesotrophic
+    {"value": 10.0,  "color": "#7fcdbb"},  # Moderate productivity
+    {"value": 20.0,  "color": "#c7e9b4"},  # Productive
+    {"value": 40.0,  "color": "#ffffcc"},  # High productivity
+    {"value": 60.0,  "color": "#fed976"},  # Eutrophic
+    {"value": 100.0, "color": "#feb24c"},  # High eutrophic
+    {"value": 150.0, "color": "#fd8d3c"},  # Bloom onset
+    {"value": 200.0, "color": "#f03b20"},  # Bloom
+    {"value": 300.0, "color": "#560b1a"},  # Severe bloom
+]
+
+legend_chla = {
+    "begin": "0.1",
+    "end": "300",
+    "ticks_every": "20",
+    "units": "mg/m³",
+    "decimal_places": 0,
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
+style_wq_annual_chla = {
+    "name": "wq_annual_chla",
+    "title": "Chlorophyll-a Concentration",
+    "abstract": (
+        "Chlorophyll-a concentration (mg/m³) as an indicator of phytoplankton "
+        "biomass and water productivity."
+    ),
+    "legend": legend_chla,
+    "needed_bands": ["chla"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "chla"},
+    },
+    "include_in_feature_info": True,
+    "color_ramp": color_ramp_chla,
+}
+
+# ============================================================================
+# TIRS STYLES
+# ============================================================================
+color_ramp_tirs = [
+    {"value": -5.0, "color": "#313695"},  # Extreme cold
+    {"value": 0.0,  "color": "#4575b4"},  # Freezing
+    {"value": 5.0,  "color": "#74add1"},  # Cold
+    {"value": 10.0, "color": "#abd9e9"},  # Cool
+    {"value": 15.0, "color": "#e0f3f8"},  # Mild
+    {"value": 20.0, "color": "#ffffbf"},  # Neutral
+    {"value": 25.0, "color": "#fee090"},  # Warm
+    {"value": 30.0, "color": "#fdae61"},  # Hot
+    {"value": 35.0, "color": "#f46d43"},  # Very hot
+    {"value": 40.0, "color": "#d73027"},  # Extreme heat
+]
+
+legend_tirs = {
+    "begin": "-5",
+    "end": "40",
+    "ticks_every": "5",
+    "units": "°C",
+    "decimal_places": 0,
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
+style_wq_annual_tirs= {
+    "name": "wq_annual_temp_mean",
+    "title": "Mean Water Temperature",
+    "abstract": "Annual mean surface water temperature",
+    "legend": legend_tirs,
+    "needed_bands": [
+        "tirs_st_ann_max",
+        "tirs_st_ann_med",
+        "tirs_st_ann_min"
+    ],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "tirs_st_ann_max"},
+    },
+    "include_in_feature_info": True,
+    "color_ramp": color_ramp_tirs,
+}

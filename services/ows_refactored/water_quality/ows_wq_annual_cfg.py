@@ -5,7 +5,9 @@ from ows_refactored.water_quality.style_wq_annual_cfg import (
     style_wq_annual_ndvi,
     style_wq_annual_fai,
     style_wq_annual_hue,
-    style_wq_annual_owt)
+    style_wq_annual_owt,
+    style_wq_annual_chla,
+    style_wq_annual_tirs)
 
 layer = {
     "title": "Annual Water Quality Variables",
@@ -46,7 +48,9 @@ click on a tile in the explorer page (https://explorer.dev.digitalearth.africa/p
             style_wq_annual_ndvi,
             style_wq_annual_fai,
             style_wq_annual_hue,
-            style_wq_annual_owt
+            style_wq_annual_owt,
+            style_wq_annual_tirs,
+            style_wq_annual_chla
         ],
     },
 }
