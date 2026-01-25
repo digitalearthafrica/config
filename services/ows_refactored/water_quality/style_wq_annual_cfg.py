@@ -36,7 +36,7 @@ style_wq_annual_tsm = {
     "needed_bands": ["tsm"],
     "include_in_feature_info": True,
     "color_ramp": [
-        {"value": 0.0, "color": "#000004", "alpha":0.3},
+        {"value": 0.0, "color": "#000004", "alpha": 0.3},
         {"value": 10.0, "color": "#1b0c41"},
         {"value": 25.0, "color": "#3b0f70"},
         {"value": 50.0, "color": "#5c126e"},
