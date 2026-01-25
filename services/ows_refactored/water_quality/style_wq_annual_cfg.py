@@ -369,9 +369,9 @@ legend_tirs = {
 }
 
 style_wq_annual_tirs = {
-    "name": "wq_annual_temp_mean",
-    "title": "Mean Water Temperature",
-    "abstract": "Annual mean surface water temperature",
+    "name": "wq_annual_tirs",
+    "title": "Water Temperature",
+    "abstract": "Annual min,max and median surface water temperature",
     "legend": legend_tirs,
     "needed_bands": [
         "tirs_st_ann_max",
