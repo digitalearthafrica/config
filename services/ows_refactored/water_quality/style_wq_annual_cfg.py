@@ -36,7 +36,7 @@ style_wq_annual_tsm = {
     "needed_bands": ["tsm"],
     "include_in_feature_info": True,
     "color_ramp": [
-        {"value": 0.0,   "color": "#000004","alpha":0.3},  # magma low (very dark)
+        {"value": 0.0,   "color": "#000004","alpha":0.3},
         {"value": 10.0,  "color": "#1b0c41"},
         {"value": 25.0,  "color": "#3b0f70"},
         {"value": 50.0,  "color": "#5c126e"},
@@ -50,7 +50,7 @@ style_wq_annual_tsm = {
         {"value": 250.0, "color": "#f6c141"},
         {"value": 275.0, "color": "#f1db6d"},
         {"value": 300.0, "color": "#fcf3a1"},
-        {"value": 400.0, "color": "#fcfdbf"},  # magma high (bright)
+        {"value": 400.0, "color": "#fcfdbf"},
     ],
 }
 
@@ -236,19 +236,19 @@ style_wq_annual_hue = {
 # OWT STYLES
 # ============================================================================
 color_ramp_owt = [
-    {"value": 1,  "color": "#7a0177"},# OWT1 – Hypereutrophic, scum, vegetation-like (magenta)
-    {"value": 2,  "color": "#41b6c4"},# OWT2 – Common case waters (teal)
-    {"value": 3,  "color": "#2c7bb6"},# OWT3 – Clear waters (blue)
-    {"value": 4,  "color": "#1a9850"},# OWT4 – Turbid, high organic content (green)
-    {"value": 5,  "color": "#a6611a"},# OWT5 – Sediment-laden (brown)
-    {"value": 6,  "color": "#66c2a5"},# OWT6 – Balanced constituents (green-cyan)
-    {"value": 7,  "color": "#d73027"},# OWT7 – Highly productive, cyanobacteria (red)
-    {"value": 8,  "color": "#fdae61"},# OWT8 – Productive, cyano, Rrs peak ~700 nm (orange)
-    {"value": 9,  "color": "#74add1"},# OWT9 – Like OWT2, higher shortwave Rrs (light blue)
-    {"value": 10, "color": "#542788"},# OWT10 – CDOM-rich (dark purple)
-    {"value": 11, "color": "#2d004b"},# OWT11 – CDOM + cyano + NAP absorption (very dark purple)
-    {"value": 12, "color": "#fee08b"},# OWT12 – Turbid, moderately productive, cyano (yellow)
-    {"value": 13, "color": "#081d58"},# OWT13 – Very clear blue waters (deep navy)
+    {"value": 1,  "color": "#7a0177"},
+    {"value": 2,  "color": "#41b6c4"},
+    {"value": 3,  "color": "#2c7bb6"},
+    {"value": 4,  "color": "#1a9850"},
+    {"value": 5,  "color": "#a6611a"},
+    {"value": 6,  "color": "#66c2a5"},
+    {"value": 7,  "color": "#d73027"},
+    {"value": 8,  "color": "#fdae61"},
+    {"value": 9,  "color": "#74add1"},
+    {"value": 10, "color": "#542788"},
+    {"value": 11, "color": "#2d004b"},
+    {"value": 12, "color": "#fee08b"},
+    {"value": 13, "color": "#081d58"},
 ]
 
 legend_owt = {
@@ -297,19 +297,19 @@ style_wq_annual_owt = {
 # CHLA STYLES
 # ============================================================================
 color_ramp_chla = [
-    {"value": 0.1,   "color": "#081d58"},# Very low Chl-a (deep blue)
-    {"value": 0.5,   "color": "#253494"},# Low
-    {"value": 1.0,   "color": "#225ea8"},# Oligotrophic
-    {"value": 2.0,   "color": "#1d91c0"},# Low–moderate
-    {"value": 5.0,   "color": "#41b6c4"},# Mesotrophic
-    {"value": 10.0,  "color": "#7fcdbb"},# Moderate productivity
-    {"value": 20.0,  "color": "#c7e9b4"},# Productive
-    {"value": 40.0,  "color": "#ffffcc"},# High productivity
-    {"value": 60.0,  "color": "#fed976"},# Eutrophic
-    {"value": 100.0, "color": "#feb24c"},# High eutrophic
-    {"value": 150.0, "color": "#fd8d3c"},# Bloom onset
-    {"value": 200.0, "color": "#f03b20"},# Bloom
-    {"value": 300.0, "color": "#560b1a"},# Severe bloom
+    {"value": 0.1,   "color": "#081d58"},
+    {"value": 0.5,   "color": "#253494"},
+    {"value": 1.0,   "color": "#225ea8"},
+    {"value": 2.0,   "color": "#1d91c0"},
+    {"value": 5.0,   "color": "#41b6c4"},
+    {"value": 10.0,  "color": "#7fcdbb"},
+    {"value": 20.0,  "color": "#c7e9b4"},
+    {"value": 40.0,  "color": "#ffffcc"},
+    {"value": 60.0,  "color": "#fed976"},
+    {"value": 100.0, "color": "#feb24c"},
+    {"value": 150.0, "color": "#fd8d3c"},
+    {"value": 200.0, "color": "#f03b20"},
+    {"value": 300.0, "color": "#560b1a"},
 ]
 
 legend_chla = {
@@ -368,7 +368,7 @@ legend_tirs = {
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
 
-style_wq_annual_tirs= {
+style_wq_annual_tirs = {
     "name": "wq_annual_temp_mean",
     "title": "Mean Water Temperature",
     "abstract": "Annual mean surface water temperature",
