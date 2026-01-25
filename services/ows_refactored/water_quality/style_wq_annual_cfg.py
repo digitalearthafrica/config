@@ -11,24 +11,6 @@ from ows_refactored.common.ows_legend_cfg import legend_mean_ndvi_ticks
 # ============================================================================
 # TOTAL SUSPENDED MATTER (TSM) STYLES
 # ============================================================================
-color_ramp_tsm = [
-    {"value": 0.0, "color": "#084594"},  # 0 mg/L - Navy
-    {"value": 10.0, "color": "#2171b5"},  # 10 mg/L - Blue
-    {"value": 25.0, "color": "#4292c6"},  # 25 mg/L - Light blue
-    {"value": 50.0, "color": "#6baed6"},  # 50 mg/L - Pale blue
-    {"value": 75.0, "color": "#9ecae1"},  # 75 mg/L - Very pale blue
-    {"value": 100.0, "color": "#deebf7"},  # 100 mg/L - Almost white blue
-    {"value": 125.0, "color": "#ffffcc"},  # 125 mg/L - Pale yellow
-    {"value": 150.0, "color": "#ffeda0"},  # 150 mg/L - Light yellow
-    {"value": 175.0, "color": "#fed976"},  # 175 mg/L - Yellow
-    {"value": 200.0, "color": "#feb24c"},  # 200 mg/L - Orange
-    {"value": 225.0, "color": "#fd8d3c"},  # 225 mg/L - Dark orange
-    {"value": 250.0, "color": "#fc4e2a"},  # 250 mg/L - Red-orange
-    {"value": 275.0, "color": "#e31a1c"},  # 275 mg/L - Red
-    {"value": 300.0, "color": "#bd0026"},  # 300 mg/L - Dark red
-    {"value": 400.0, "color": "#800026"},  # 400+ mg/L - Very dark red
-]
-
 legend_tsm = {
     "show_legend": True,
     "title": "Total Suspended Matter",
@@ -44,40 +26,37 @@ legend_tsm = {
 
 style_wq_annual_tsm = {
     "name": "wq_annual_tsm",
-    "title": "Total Suspended Matter (TSM)",
-    "abstract": "Total suspended matter concentration (mg/L) in surface water bodies",
-    "legend": legend_tsm,
-    "needed_bands": ["tsm"],
+    "title": "Total Suspended Matter",
+    "abstract": "Total suspended matter concentration (mg/L)",
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {"band": "tsm"},
     },
-    "color_ramp": color_ramp_tsm,
+    "needed_bands": ["tsm"],
+    "include_in_feature_info": True,
+    "color_ramp": [
+        {"value": 0.0,   "color": "#000004","alpha":0.3},  # magma low (very dark)
+        {"value": 10.0,  "color": "#1b0c41"},
+        {"value": 25.0,  "color": "#3b0f70"},
+        {"value": 50.0,  "color": "#5c126e"},
+        {"value": 75.0,  "color": "#7a1f6a"},
+        {"value": 100.0, "color": "#9a2a63"},
+        {"value": 125.0, "color": "#ba3655"},
+        {"value": 150.0, "color": "#d44842"},
+        {"value": 175.0, "color": "#e8602d"},
+        {"value": 200.0, "color": "#f57d15"},
+        {"value": 225.0, "color": "#fca50a"},
+        {"value": 250.0, "color": "#f6c141"},
+        {"value": 275.0, "color": "#f1db6d"},
+        {"value": 300.0, "color": "#fcf3a1"},
+        {"value": 400.0, "color": "#fcfdbf"},  # magma high (bright)
+    ],
 }
-
 
 # ============================================================================
 # TROPHIC STATE INDEX (TSI) STYLES
 # ============================================================================
-color_ramp_tsi = [
-    {"value": 0.0, "color": "#440154"},    # 0 - Deep purple/navy (oligotrophic)
-    {"value": 10.0, "color": "#31688e"},   # 10 - Blue (oligotrophic)
-    {"value": 20.0, "color": "#35b779"},   # 20 - Cyan-blue (oligotrophic)
-    {"value": 30.0, "color": "#1f9e89"},   # 30 - Teal (oligo-mesotrophic)
-    {"value": 40.0, "color": "#26828e"},   # 40 - Dark cyan (mesotrophic)
-    {"value": 50.0, "color": "#3fbc73"},   # 50 - Green-cyan (mesotrophic)
-    {"value": 60.0, "color": "#6ece58"},   # 60 - Light green (eutrophic)
-    {"value": 70.0, "color": "#b5de2b"},   # 70 - Yellow-green (eutrophic)
-    {"value": 75.0, "color": "#fde725"},   # 75 - Yellow (eutrophic-hypereutrophic)
-    {"value": 80.0, "color": "#fca636"},   # 80 - Orange-yellow (hypereutrophic)
-    {"value": 85.0, "color": "#f1605d"},   # 85 - Orange-red (hypereutrophic)
-    {"value": 90.0, "color": "#e8576b"},   # 90 - Red (hypereutrophic)
-    {"value": 95.0, "color": "#d84c6f"},   # 95 - Red-pink (hypereutrophic)
-    {"value": 100.0, "color": "#b73779"},  # 100 - Magenta (hypereutrophic)
-    {"value": 110.0, "color": "#8c2981"},  # 110+ - Purple-magenta (hypereutrophic)
-]
-
 legend_tsi = {
     "show_legend": True,
     "title": "Trophic State Index",
@@ -93,16 +72,31 @@ legend_tsi = {
 
 style_wq_annual_tsi = {
     "name": "wq_annual_tsi",
-    "title": "Trophic State Index (TSI)",
+    "title": "Trophic State Index",
     "abstract": "Biological productivity in surface water bodies",
     "legend": legend_tsi,
-    "needed_bands": ["tsi"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
         "kwargs": {"band": "tsi"},
     },
-    "color_ramp": color_ramp_tsi,
+    "needed_bands": ["tsi"],
+    "include_in_feature_info": True,
+    "color_ramp": [
+        {"value": 0.0, "color": "#5e4fa2"},    # 0 - Purple (oligotrophic)
+        {"value": 10.0, "color": "#3288bd"},   # 10 - Blue
+        {"value": 20.0, "color": "#66c2a5"},   # 20 - Cyan
+        {"value": 30.0, "color": "#abdda4"},   # 30 - Light cyan-green
+        {"value": 40.0, "color": "#e6f598"},   # 40 - Pale green-yellow (mesotrophic)
+        {"value": 50.0, "color": "#ffffbf"},   # 50 - Pale yellow
+        {"value": 60.0, "color": "#fee08b"},   # 60 - Light yellow
+        {"value": 70.0, "color": "#fdae61"},   # 70 - Orange-yellow (eutrophic)
+        {"value": 75.0, "color": "#f46d43"},   # 75 - Orange
+        {"value": 80.0, "color": "#d53e4f"},   # 80 - Red-orange
+        {"value": 90.0, "color": "#9e0142"},   # 90 - Dark red (hypereutrophic)
+        {"value": 100.0, "color": "#67001f"},  # 100 - Very dark red
+        {"value": 110.0, "color": "#4d0013"},  # 110+ - Extremely dark red
+    ],
 }
 
 # ============================================================================
@@ -236,4 +230,65 @@ style_wq_annual_hue = {
         "kwargs": {"band": "agm_hue"},
     },
     "color_ramp": color_ramp_hue,
+}
+
+# ============================================================================
+# OWT STYLES
+# ============================================================================
+color_ramp_owt = [
+    {"value": 1,  "color": "#7a0177"},  # OWT1 – Hypereutrophic, scum, vegetation-like (magenta)
+    {"value": 2,  "color": "#41b6c4"},  # OWT2 – Common case waters (teal)
+    {"value": 3,  "color": "#2c7bb6"},  # OWT3 – Clear waters (blue)
+    {"value": 4,  "color": "#1a9850"},  # OWT4 – Turbid, high organic content (green)
+    {"value": 5,  "color": "#a6611a"},  # OWT5 – Sediment-laden (brown)
+    {"value": 6,  "color": "#66c2a5"},  # OWT6 – Balanced constituents (green-cyan)
+    {"value": 7,  "color": "#d73027"},  # OWT7 – Highly productive, cyanobacteria (red)
+    {"value": 8,  "color": "#fdae61"},  # OWT8 – Productive, cyano, Rrs peak ~700 nm (orange)
+    {"value": 9,  "color": "#74add1"},  # OWT9 – Like OWT2, higher shortwave Rrs (light blue)
+    {"value": 10, "color": "#542788"},  # OWT10 – CDOM-rich (dark purple)
+    {"value": 11, "color": "#2d004b"},  # OWT11 – CDOM + cyano + NAP absorption (very dark purple)
+    {"value": 12, "color": "#fee08b"},  # OWT12 – Turbid, moderately productive, cyano (yellow)
+    {"value": 13, "color": "#081d58"},  # OWT13 – Very clear blue waters (deep navy)
+]
+
+legend_owt = {
+    "type": "categorical",
+    "items": [
+        {"value": 1,  "label": "OWT1 – Hypereutrophic, cyanobacterial scum"},
+        {"value": 2,  "label": "OWT2 – Common case waters"},
+        {"value": 3,  "label": "OWT3 – Clear waters"},
+        {"value": 4,  "label": "OWT4 – Turbid, organic-rich"},
+        {"value": 5,  "label": "OWT5 – Sediment-laden"},
+        {"value": 6,  "label": "OWT6 – Balanced optical constituents"},
+        {"value": 7,  "label": "OWT7 – Highly productive, cyanobacteria"},
+        {"value": 8,  "label": "OWT8 – Productive, cyano, Rrs peak ~700 nm"},
+        {"value": 9,  "label": "OWT9 – OWT2-like, high shortwave Rrs"},
+        {"value": 10, "label": "OWT10 – CDOM-rich"},
+        {"value": 11, "label": "OWT11 – CDOM + cyanobacteria + NAP"},
+        {"value": 12, "label": "OWT12 – Turbid, moderately productive"},
+        {"value": 13, "label": "OWT13 – Very clear blue waters"},
+    ],
+}
+
+style_wq_annual_owt = {
+    "name": "wq_annual_owt",
+    "title": "Optical Water Types (OWT)",
+    "abstract": (
+        "Optical Water Types classification for inland waters following "
+        "Spyrakos et al. (2018), based on dominant optical and biogeochemical properties."
+    ),
+    "legend": legend_owt,
+    "needed_bands": [
+        "agm_owt",
+        "msi_agm_owt",
+        "oli_agm_owt",
+        "tm_agm_owt"
+    ],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "agm_owt"},
+    },
+    "include_in_feature_info": True,
+    "color_ramp": color_ramp_owt,
 }
