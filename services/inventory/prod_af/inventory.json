@@ -650,6 +650,76 @@
           "styles_list": [
               "rainfall_monthly"
           ]
+      },
+      {
+          "layer": "esa_worldcereal_activecropland",
+          "product": [
+              "esa_worldcereal_activecropland"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_activecropland"
+          ]
+      },
+      {
+          "layer": "esa_worldcereal_maize_active",
+          "product": [
+              "esa_worldcereal_maize_active"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_activecropland"
+          ]
+      },
+      {
+          "layer": "esa_worldcereal_maize_irrigation",
+          "product": [
+              "esa_worldcereal_maize_irrigation"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_irrigated"
+          ]
+      },
+      {
+          "layer": "esa_worldcereal_wintercereals_irrigation",
+          "product": [
+              "esa_worldcereal_wintercereals_irrigation"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_irrigated"
+          ]
+      },
+      {
+          "layer": "esa_worldcereal_maize_main",
+          "product": [
+              "esa_worldcereal_maize_main"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_maize"
+          ]
+      },
+      {
+          "layer": "esa_worldcereal_temporarycrops",
+          "product": [
+              "esa_worldcereal_temporarycrops"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_temporarycrops"
+          ]
+      },
+      {
+          "layer": "esa_worldcereal_wintercereals",
+          "product": [
+              "esa_worldcereal_wintercereals"
+          ],
+          "styles_count": 1,
+          "styles_list": [
+              "style_wintercereals"
+          ]
       }
   ]
 }
