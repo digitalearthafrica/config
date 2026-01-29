@@ -193,6 +193,22 @@ ows_cfg = {
                     "abstract": """External Datasets""",
                     "layers": [
                         {
+                            "title": "Agriculture",
+                            "abstract": """Agriculture""",
+                            "layers": [
+                                {
+                                    "title": "ESA WorldCereal",
+                                    "abstract": """ESA WorldCereal""",
+                                    "layers": [
+                                        {
+                                            "include": "ows_refactored.agriculture.ows_esa_worldcereal.activecropland_layer",
+                                            "type": "python",
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        {                        
                             "title": "Elevation and topography",
                             "abstract": """Digital elevation models and topographic indices""",
                             "layers": [
