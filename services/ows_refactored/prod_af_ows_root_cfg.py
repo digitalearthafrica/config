@@ -208,7 +208,7 @@ ows_cfg = {
                                 },
                             ],
                         },
-                        {                        
+                        {
                             "title": "Elevation and topography",
                             "abstract": """Digital elevation models and topographic indices""",
                             "layers": [
