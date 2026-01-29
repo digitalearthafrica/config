@@ -201,7 +201,31 @@ ows_cfg = {
                                     "abstract": """ESA WorldCereal""",
                                     "layers": [
                                         {
+                                            "include": "ows_refactored.agriculture.ows_esa_worldcereal.temporarycrops_layer",
+                                            "type": "python",
+                                        },
+                                        {
                                             "include": "ows_refactored.agriculture.ows_esa_worldcereal.activecropland_layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.agriculture.ows_esa_worldcereal.maize_main_layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.agriculture.ows_esa_worldcereal.maize_active_layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.agriculture.ows_esa_worldcereal.maize_irrigation_layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.agriculture.ows_esa_worldcereal.wintercereals_layer",
+                                            "type": "python",
+                                        },
+                                        {
+                                            "include": "ows_refactored.agriculture.ows_esa_worldcereal.wintercereals_irrigation_layer",
                                             "type": "python",
                                         },
                                     ],
