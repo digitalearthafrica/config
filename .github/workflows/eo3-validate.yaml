@@ -1,0 +1,23 @@
+name: EO3 Validate Products
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "products/**"
+      - ".github/workflows/eo3-validate.yaml"
+  push:
+    paths:
+      - "products/**"
+      - ".github/workflows/eo3-validate.yaml"
+jobs:
+  eo3-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: EO3 validate product definitions
+        uses: actions/eo3-validate@v1
+        with:
+          command: eo3-validate
+          filepath: products/
