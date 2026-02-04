@@ -16,8 +16,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: EO3 validate product definitions
-        uses: opendatacube/eo3-validate@v1
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          command: eo3-validate
-          filepath: products/
+          python-version: '3.x'
+
+      - name: Install eo3-validate tool
+        run: |
+          pip install eodatasets3
+
+      - name: Run EO3 validation
+        run: |
+          eo3-validate products/
