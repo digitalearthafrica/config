@@ -18,7 +18,6 @@ storage:
 
 measurements:
   - name: "wsfevolution"
-    aliases: [wsfevolution]
     dtype: int32
     nodata: 0
     units: "1"
