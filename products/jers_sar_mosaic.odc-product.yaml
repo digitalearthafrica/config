@@ -19,22 +19,19 @@ storage:
 
 measurements:
   - name: "hh"
-    aliases: [hh]
     dtype: uint16
     nodata: 0
     units: "1"
   - name: "date"
-    aliases: [date]
     dtype: uint16
     nodata: 0
     units: "1"
   - name: "linci"
-    aliases: [local incidence angle, linci, incidence]
+    aliases: [local incidence angle, incidence]
     dtype: uint8
     nodata: 0
     units: "1"
   - name: "mask"
-    aliases: [mask]
     dtype: uint8
     nodata: 0
     units: "1"
