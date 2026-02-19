@@ -17,25 +17,25 @@ measurements:
   - name: CLOUD_BASE_PRESSURE
     dtype: float32
     nodata: -9999
-    units: '1'
+    units: 'pa'
     scale_factor: 1
     add_offset: 0
   - name: CLOUD_TOP_PRESSURE
     dtype: float32
     nodata: -9999
-    units: '1'
+    units: 'pa'
     scale_factor: 1
     add_offset: 0
   - name: CLOUD_BASE_HEIGHT
     dtype: float32
     nodata: -9999
-    units: '1'
+    units: 'm'
     scale_factor: 1
     add_offset: 0
   - name: CLOUD_TOP_HEIGHT
     dtype: float32
     nodata: -9999
-    units: '1'
+    units: 'm'
     scale_factor: 1
     add_offset: 0
   - name: CLOUD_OPTICAL_THICKNESS
