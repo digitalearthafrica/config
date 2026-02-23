@@ -18,23 +18,23 @@ load:
 measurements:
   - name: chla_mean
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "mg/m³"
   - name: chla_uncertainty
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "%"
   - name: first_obs
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: floating_cyanobacteria
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: last_obs
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: num_obs
     dtype: int32
@@ -46,96 +46,96 @@ measurements:
     units: "1"
   - name: trophic_state_index
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
     aliases: [TSI]
   - name: tsm_mean
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "g/m³"
     aliases: [TSM]
   - name: tsm_uncertainty
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "%"
   - name: turbidity_mean
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "NTU"
     aliases: [turbidity]
   - name: Rw400_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw412_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw443_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw490_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw510_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw560_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw620_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw665_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw674_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw681_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw709_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw754_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw779_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw885_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw900_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw1020_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: RwDayNum_rep
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw_relative_uncertainty
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
   - name: Rw_relative_uncertainty_unbiased
     dtype: float32
-    nodata: 9.96921e+36
+    nodata: nan
     units: "1"
