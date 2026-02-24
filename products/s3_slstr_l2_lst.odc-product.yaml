@@ -40,7 +40,7 @@ measurements:
     nodata: 65535
     flags_definition:
       qa:
-        bits: [0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15]
+        bits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
         description: Quality Flags
         values:
           0: coastline
@@ -49,6 +49,8 @@ measurements:
           3: land
           4: inland water
           5: unfilled
+          6: spare
+          7: spare
           8: cosmetic
           9: duplicate
           10: day
