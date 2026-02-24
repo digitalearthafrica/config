@@ -33,10 +33,27 @@ measurements:
     units: "1"
     scale_factor: 10000
     add_offset: 0.0
-  - name: "dataMask"
+  - name: "CONFIDENCE"
     aliases: [mask]
-    dtype: uint8
-    nodata: 255
+    dtype: uint16
     units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
+    nodata: 65535
+    flags_definition:
+      qa:
+        bits: [0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15]
+        description: Quality Flags
+        values:
+          0: coastline
+          1: ocean
+          2: tidal
+          3: land
+          4: inland water
+          5: unfilled
+          8: cosmetic
+          9: duplicate
+          10: day
+          11: twilight
+          12: sun glint
+          13: snow
+          14: summary cloud
+          15: summary pointing
