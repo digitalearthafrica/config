@@ -2,6 +2,7 @@
 name: iwmi_transpiration_monthly
 description: Water loss from plants through stomata into the atmosphere.
 metadata_type: eo3
+license: CC-BY-4.0
 
 metadata:
   product:

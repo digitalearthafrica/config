@@ -1,0 +1,36 @@
+name: EO3 Validate Products
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "products/**"
+      - ".github/workflows/eo3-validate.yaml"
+  push:
+    paths:
+      - "products/**"
+      - ".github/workflows/eo3-validate.yaml"
+jobs:
+  eo3-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gdal-bin libgdal-dev
+
+      - name: Install eo3-validate tool
+        run: |
+          pip install --upgrade pip
+          pip install eodatasets3
+
+      - name: Run EO3 validation
+        run: |
+          eo3-validate products/
