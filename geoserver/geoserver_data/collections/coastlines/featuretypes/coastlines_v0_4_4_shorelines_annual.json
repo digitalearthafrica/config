@@ -1,7 +1,7 @@
 
     {
     "featureType": {
-        "name": "coastlines_v0_4_4_shorelines_annual",
+        "name": "coastlines_v0.4.4_shorelines_annual",
         "nativeName": "coastlines_v0.4.4_shorelines_annual",
         "namespace": {
             "name": "coastlines"
@@ -19,14 +19,14 @@
             "minx": -17.530020617134365,
             "maxx": 51.41527617299833,
             "miny": -34.83347119293824,
-            "maxy": 37.358192510.4.406,
+            "maxy": 37.358192510742306,
             "crs": "EPSG:4326"
         },
         "latLonBoundingBox": {
             "minx": -17.530020617134365,
             "maxx": 51.41527617299833,
             "miny": -34.83347119293824,
-            "maxy": 37.358192510.4.406,
+            "maxy": 37.358192510742306,
             "crs": "EPSG:4326"
         },
         "projectionPolicy": "FORCE_DECLARED",
@@ -39,7 +39,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0_4_4_shorelines_annual"
+            "name": "coastlines:coastlines_v0.4.4_shorelines_annual"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
