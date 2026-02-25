@@ -53,18 +53,36 @@ measurements:
     scale_factor: 1.0
     add_offset: 0.0
     flags_definition:
-      qa:
-        bits: [1, 2, 3, 4, 5, 6, 7, 8]
-        description: Quality Flags
-        values:
-          1: soil1
-          2: soil2
-          3: aerosol1
-          4: aerosol2
-          5: view angle1
-          6: view angle2
-          7: bad data1
-          8: bad data2
+    soil:
+      bits: [0, 1]
+      values:
+        0: Poor
+        1: Fair
+        2: Good
+        3: Very good
+      description: Soil quality indicator
+    aerosol:
+      bits: [2, 3]
+      values:
+        0: Poor
+        1: Fair
+        2: Good
+        3: Very good
+      description: Aerosol quality indicator
+    view_angle:
+      bits: [4, 5]
+      values:
+        0: Poor
+        1: Fair
+        2: Good
+        3: Very good
+      description: View angle quality indicator
+    bad_data:
+      bits: [6, 7]
+      values:
+        0: Poor
+        3: Very good
+      description: Bad data indicator
   - name: "dataMask"
     aliases: [mask]
     dtype: uint8
