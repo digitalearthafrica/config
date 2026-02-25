@@ -1,6 +1,7 @@
 ---
 name: s5p_tropomi_l2_ch4
-description: Sentinel-5p TROPOMI Level 2 Methane (CH4) total column.
+description: |
+  Sentinel-5P TROPOMI Level 2 Methane (CH4) column-averaged mixing ratio.
 metadata_type: eo3
 license: CC-BY-4.0
 
