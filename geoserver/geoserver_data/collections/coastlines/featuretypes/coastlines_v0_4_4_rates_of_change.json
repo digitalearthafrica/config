@@ -38,7 +38,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0.4.4_rates_of_change"
+            "name": "coastlines:coastlines_v0_4_4_rates_of_change"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,

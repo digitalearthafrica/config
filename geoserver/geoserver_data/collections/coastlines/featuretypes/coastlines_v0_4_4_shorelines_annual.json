@@ -39,7 +39,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "coastlines:coastlines_v0.4.4_shorelines_annual"
+            "name": "coastlines:coastlines_v0_4_4_shorelines_annual"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,
