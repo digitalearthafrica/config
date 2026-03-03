@@ -52,6 +52,37 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
+    flags_definition:
+      soil:
+        bits: [0, 1]
+        values:
+          0: Poor
+          1: Fair
+          2: Good
+          3: Very good
+        description: Soil quality indicator
+      aerosol:
+        bits: [2, 3]
+        values:
+          0: Poor
+          1: Fair
+          2: Good
+          3: Very good
+        description: Aerosol quality indicator
+      view_angle:
+        bits: [4, 5]
+        values:
+          0: Poor
+          1: Fair
+          2: Good
+          3: Very good
+        description: View angle quality indicator
+      bad_data:
+        bits: [6, 7]
+        values:
+          0: Poor
+          3: Very good
+        description: Bad data indicator
   - name: "dataMask"
     aliases: [mask]
     dtype: uint8
