@@ -17,6 +17,10 @@ metadata:
 
 measurements:
   - name: agm_fai
+    alias:
+      - fai
+      - FAI
+      - floating_algae_index
     dtype: float32
     nodata: NaN
     units: "1"
