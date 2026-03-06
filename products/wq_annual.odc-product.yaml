@@ -17,7 +17,7 @@ metadata:
 
 measurements:
   - name: agm_fai
-    alias:
+    aliases:
       - fai
       - FAI
       - floating_algae_index
