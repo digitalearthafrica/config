@@ -52,54 +52,6 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: msi_agm_fai
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: msi_agm_hue
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: msi_agm_ndvi
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: msi_agm_owt
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: oli_agm_fai
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: oli_agm_hue
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: oli_agm_ndvi
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: oli_agm_owt
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
   - name: tirs_st_ann_max
     dtype: float32
     nodata: NaN
@@ -116,30 +68,6 @@ measurements:
     dtype: float32
     nodata: NaN
     units: '1'
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tm_agm_fai
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tm_agm_hue
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tm_agm_ndvi
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tm_agm_owt
-    dtype: float32
-    nodata: NaN
-    units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: tsi
