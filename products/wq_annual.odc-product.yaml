@@ -55,22 +55,23 @@ measurements:
     scale_factor: 1.0
     add_offset: 0.0
     flags_definition:
-      bits: [0, 1, 2, 3]
-      values:
-        1: eutrophic_and_blue_green
-        2: eutrophic_and_blue_green
-        3: oligotrophic_clear
-        4: eutrophic_and_blue_green
-        5: eutrophic_and_blue_green
-        6: hyper_eutrophic_green_brown
-        7: hyper_eutrophic_green_brown
-        8: hyper_eutrophic_green_brown
-        9: oligotrophic_clear
-        10: hyper_eutrophic_green_brown
-        11: eutrophic_and_blue_green
-        12: eutrophic_and_blue_green
-        13: oligotrophic_clear
-      description: optical water type classes
+      mask:
+        bits: [0, 1, 2, 3]
+        values:
+          1: eutrophic_and_blue_green
+          2: eutrophic_and_blue_green
+          3: oligotrophic_clear
+          4: eutrophic_and_blue_green
+          5: eutrophic_and_blue_green
+          6: hyper_eutrophic_green_brown
+          7: hyper_eutrophic_green_brown
+          8: hyper_eutrophic_green_brown
+          9: oligotrophic_clear
+          10: hyper_eutrophic_green_brown
+          11: eutrophic_and_blue_green
+          12: eutrophic_and_blue_green
+          13: oligotrophic_clear
+        description: optical water type classes
   - name: chla
     aliases:
       - CHLA
