@@ -55,6 +55,7 @@ measurements:
     scale_factor: 1.0
     add_offset: 0.0
     flags_definition:
+      bits: [0,1,2,3]
       values:
         1: eutrophic_and_blue_green
         2: eutrophic_and_blue_green
