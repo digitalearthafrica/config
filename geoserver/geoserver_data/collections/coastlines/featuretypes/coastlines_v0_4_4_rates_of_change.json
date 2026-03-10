@@ -299,6 +299,14 @@
                     "length": 24
                 },
                 {
+                    "name": "dist_2025",
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "nillable": true,
+                    "binding": "java.lang.Double",
+                    "length": 24
+                },
+                {
                     "name": "angle_mean",
                     "minOccurs": 0,
                     "maxOccurs": 1,
