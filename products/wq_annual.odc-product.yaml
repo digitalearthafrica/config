@@ -17,30 +17,65 @@ metadata:
 
 measurements:
   - name: agm_fai
+    aliases:
+      - fai
+      - FAI
+      - floating_algae_index
     dtype: float32
     nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: agm_hue
+    aliases:
+      - hue
+      - HUE
     dtype: float32
     nodata: NaN
-    units: "1"
+    units: "degrees"
     scale_factor: 1.0
     add_offset: 0.0
   - name: agm_ndvi
+    aliases:
+      - ndvi
+      - NDVI
     dtype: float32
     nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: agm_owt
+    aliases:
+      - owt
+      - OWT
+      - optical_water_type
     dtype: float32
     nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
+    flags_definition:
+      mask:
+        bits: [0, 1, 2, 3]
+        values:
+          1: eutrophic_and_blue_green
+          2: eutrophic_and_blue_green
+          3: oligotrophic_clear
+          4: eutrophic_and_blue_green
+          5: eutrophic_and_blue_green
+          6: hyper_eutrophic_green_brown
+          7: hyper_eutrophic_green_brown
+          8: hyper_eutrophic_green_brown
+          9: oligotrophic_clear
+          10: hyper_eutrophic_green_brown
+          11: eutrophic_and_blue_green
+          12: eutrophic_and_blue_green
+          13: oligotrophic_clear
+        description: optical water type classes
   - name: chla
+    aliases:
+      - CHLA
+      - chlorophyll_a
     dtype: float32
     nodata: NaN
     units: "1"
@@ -52,103 +87,46 @@ measurements:
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
-  - name: msi_agm_fai
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: msi_agm_hue
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: msi_agm_ndvi
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: msi_agm_owt
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: oli_agm_fai
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: oli_agm_hue
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: oli_agm_ndvi
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: oli_agm_owt
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
   - name: tirs_st_ann_max
+    aliases:
+      - st_max
+      - max_surface_temperature
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: 'degrees Celsius'
     scale_factor: 1.0
     add_offset: 0.0
   - name: tirs_st_ann_med
+    aliases:
+      - st_median
+      - median_surface_temperature
     dtype: float32
     nodata: NaN
-    units: '1'
+    units: 'degrees Celsius'
     scale_factor: 1.0
     add_offset: 0.0
   - name: tirs_st_ann_min
+    aliases:
+      - st_min
+      - min_surface_temperature
     dtype: float32
     nodata: NaN
-    units: '1'
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tm_agm_fai
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tm_agm_hue
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tm_agm_ndvi
-    dtype: float32
-    nodata: NaN
-    units: "1"
-    scale_factor: 1.0
-    add_offset: 0.0
-  - name: tm_agm_owt
-    dtype: float32
-    nodata: NaN
-    units: "1"
+    units: 'degrees Celsius'
     scale_factor: 1.0
     add_offset: 0.0
   - name: tsi
+    aliases:
+      - TSI
+      - trophic_state_index
     dtype: float32
     nodata: NaN
     units: "1"
     scale_factor: 1.0
     add_offset: 0.0
   - name: tsm
+    aliases:
+      - TSM
+      - total_suspended_matter
     dtype: float32
     nodata: NaN
     units: "1"
