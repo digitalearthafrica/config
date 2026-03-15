@@ -5,7 +5,7 @@
       "id": "deafrica_terria_prod",
       "type": "wms-group",
       "name": "Digital Earth Africa data catalogue",
-      "url": "https://ows.digitalearth.africa/",
+      "url": "https://ows.dev.digitalearth.africa/",
       "itemProperties": {
         "availableDiffStyles": [
           "ndvi",
@@ -19,7 +19,7 @@
       "excludeMembers": [],
       "isOpen": true,
       "perLayerLinkedWcs": {
-        "linkedWcsUrl": "https://ows.digitalearth.africa/"
+        "linkedWcsUrl": "https://ows.dev.digitalearth.africa/"
       },
       "sortMembersBy": "name",
       "mergeGroupsByName": true,
@@ -28,7 +28,7 @@
           "type": "wms-group",
           "name": "DE Africa Continental Services",
           "id": "DE-Africa",
-          "url": "https://ows.digitalearth.africa/",
+          "url": "https://ows.dev.digitalearth.africa/",
           "excludeMembers": [
             "External Datasets"
           ],
@@ -92,7 +92,7 @@
           "type": "wms-group",
           "name": "External Datasets",
           "id": "External",
-          "url": "https://ows.digitalearth.africa/",
+          "url": "https://ows.dev.digitalearth.africa/",
           "excludeMembers": [
             "DE Africa Continental Services"
           ],
