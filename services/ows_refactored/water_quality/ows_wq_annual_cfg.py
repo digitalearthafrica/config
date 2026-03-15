@@ -41,7 +41,7 @@ click on a tile in the explorer page (https://explorer.dev.digitalearth.africa/p
         "fuse_func": None,
         "manual_merge": False,
     },
-    "styling": { 
+    "styling": {
         "default_style": "wq_annual_tsm",
         "styles": [
             style_wq_annual_tsm,
