@@ -667,7 +667,7 @@
                 "wq_annual_chla",
                 "wq_annual_tirs",
                 "wq_annual_water_mask",
-                "wq_annual_clear_mask"
+                "wq_annual_clear_water"
             ]
         },
         {
