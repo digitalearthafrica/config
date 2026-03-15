@@ -54,7 +54,7 @@ click on a tile in the explorer page (https://explorer.dev.digitalearth.africa/p
             style_wq_annual_tirs,
             style_wq_annual_chla,
             style_wq_annual_water_mask,
-            style_wq_annual_clear_water
+            style_wq_annual_clear_water,
         ],
     },
 }
