@@ -386,3 +386,73 @@ style_wq_annual_tirs = {
     "include_in_feature_info": True,
     "color_ramp": color_ramp_tirs,
 }
+
+# ============================================================================
+# WATER MASK STYLES
+# ============================================================================
+color_ramp_mask= [
+    {"value": 0.0,  "color": "#000000", "alpha": 0.0},
+    {"value": 1.0, "color": "#4393c3"},
+]
+
+legend_water_mask = {
+    "begin": "0.0",
+    "end": "1.0",
+    "ticks_every": "1.0",
+    "decimal_places": 0,
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
+style_wq_annual_water_mask = {
+    "name": "wq_annual_water_mask",
+    "title": "Water Mask",
+    "abstract": "Binary water presence mask derived from WOfS",
+    "legend": legend_water_mask,
+    "needed_bands": [
+        "water_mask"
+    ],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "water_mask"},
+    },
+    "include_in_feature_info": True,
+    "color_ramp": color_ramp_mask,
+}
+
+# ============================================================================
+# CLEAR WATER STYLES
+# ============================================================================
+color_ramp_clear_water= [
+    {"value": 0.0,  "color": "#000000", "alpha": 0.0},
+    {"value": 1.0, "color": "#4393c3"},
+]
+
+legend_clear_water = {
+    "begin": "0.0",
+    "end": "1.0",
+    "ticks_every": "1.0",
+    "decimal_places": 0,
+    "width": 4.5,
+    "height": 2.1,
+    "strip_location": [0.1, 0.4, 0.8, 0.2],
+}
+
+style_wq_annual_clear_water = {
+    "name": "wq_annual_clear_water",
+    "title": "Clear Water",
+    "abstract": "Observations classified as clear (non-turbid) water",
+    "legend": legend_clear_water,
+    "needed_bands": [
+        "clear_water"
+    ],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "clear_water"},
+    },
+    "include_in_feature_info": True,
+    "color_ramp": color_ramp_clear_water,
+}
