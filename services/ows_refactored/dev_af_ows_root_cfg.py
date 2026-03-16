@@ -163,6 +163,10 @@ ows_cfg = {
                                     "include": "ows_refactored.wofs.ows_wofs_ls_alltime_cfg.layer",
                                     "type": "python",
                                 },
+                                {
+                                    "include": "ows_refactored.water_quality.ows_wq_annual_cfg.layer",
+                                    "type": "python",
+                                },
                             ],
                         },
                         {
