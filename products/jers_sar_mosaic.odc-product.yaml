@@ -4,6 +4,7 @@ description: JERS-1 SAR annual mosaic tiles generated for use in the Data Cube
   25m pixel spacing, WGS84. These tiles are derived from the orignal JAXA
   mosaics with conversion to GeoTIFF.
 metadata_type: eo3
+license: JAXA
 
 metadata:
   product:
@@ -18,22 +19,19 @@ storage:
 
 measurements:
   - name: "hh"
-    aliases: [hh]
     dtype: uint16
     nodata: 0
     units: "1"
   - name: "date"
-    aliases: [date]
     dtype: uint16
     nodata: 0
     units: "1"
   - name: "linci"
-    aliases: [local incidence angle, linci, incidence]
+    aliases: [local incidence angle, incidence]
     dtype: uint8
     nodata: 0
     units: "1"
   - name: "mask"
-    aliases: [mask]
     dtype: uint8
     nodata: 0
     units: "1"

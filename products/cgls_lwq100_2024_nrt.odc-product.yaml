@@ -4,6 +4,7 @@ description: >
   Copernicus Global Land Service – Lake Water Quality 2024 - present
   (raster 100 m), global, 10-daily – version 2
 metadata_type: eo3
+license: Copernicus
 
 metadata:
   product:

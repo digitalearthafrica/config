@@ -3,6 +3,7 @@ name: s1_monthly_mosaic
 description: "Monthly Sentinel-1 mosaics of weighted terrain-corrected
   backscatter."
 metadata_type: eo3
+license: Copernicus
 
 metadata:
   product:

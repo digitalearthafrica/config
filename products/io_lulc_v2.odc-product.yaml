@@ -2,6 +2,7 @@
 name: io_lulc_v2
 description: Impact Observatory (ESRI) Landcover Classification 9 Class V2
 metadata_type: eo3
+license: CC-BY-4.0
 
 metadata:
   product:
