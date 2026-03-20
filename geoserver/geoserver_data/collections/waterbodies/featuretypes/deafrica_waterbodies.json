@@ -1,6 +1,6 @@
 {
     "featureType": {
-        "name": "DEAfrica_Waterbodies_2026",
+        "name": "DEAfrica_Waterbodies",
         "nativeName": "waterbodies_historical_extent",
         "namespace": {
             "name": "waterbodies"
@@ -39,7 +39,7 @@
         },
         "store": {
             "@class": "dataStore",
-            "name": "waterbodies:waterbodies_v0_0_6"
+            "name": "waterbodies:waterbodies_v0_0_5"
         },
         "serviceConfiguration": false,
         "simpleConversionEnabled": false,

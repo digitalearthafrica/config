@@ -1,6 +1,6 @@
 {
     "layer": {
-        "name": "DEAfrica_Waterbodies_2026",
+        "name": "DEAfrica_Waterbodies",
         "type": "VECTOR",
         "defaultStyle": {
             "name": "waterbodies:waterbodies_v0_0_4",
