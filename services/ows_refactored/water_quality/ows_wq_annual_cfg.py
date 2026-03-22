@@ -7,9 +7,11 @@ from ows_refactored.water_quality.style_wq_annual_cfg import (
     style_wq_annual_hue,
     style_wq_annual_owt,
     style_wq_annual_chla,
-    style_wq_annual_tirs,
     style_wq_annual_water_mask,
-    style_wq_annual_clear_water)
+    style_wq_annual_clear_water,
+    style_wq_annual_tirs_max,
+    style_wq_annual_tirs_med,
+    style_wq_annual_tirs_min)
 
 bands_wq_annual = {
     "agm_fai": ["fai", "FAI", "floating_algae_index"],
@@ -63,10 +65,12 @@ click on a tile in the explorer page (https://explorer.dev.digitalearth.africa/p
             style_wq_annual_fai,
             style_wq_annual_hue,
             style_wq_annual_owt,
-            style_wq_annual_tirs,
             style_wq_annual_chla,
             style_wq_annual_water_mask,
             style_wq_annual_clear_water,
+            style_wq_annual_tirs_max,
+            style_wq_annual_tirs_med,
+            style_wq_annual_tirs_min,
         ],
     },
 }
