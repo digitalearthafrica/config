@@ -28,6 +28,7 @@ style_wq_annual_tsm = {
     "name": "wq_annual_tsm",
     "title": "Total Suspended Matter",
     "abstract": "Total suspended matter concentration (mg/L)",
+    "legend": legend_tsm,
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -121,12 +122,7 @@ style_wq_annual_ndvi = {
     "title": "Normalised Difference Vegeation Index (NDVI)",
     "abstract": "Presence of vegetation in surface water bodies",
     "legend": legend_mean_ndvi_ticks,
-    "needed_bands": [
-        "agm_ndvi",
-        "msi_agm_ndvi",
-        "oli_agm_ndvi",
-        "tm_agm_ndvi"
-    ],
+    "needed_bands": ["agm_ndvi"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -167,12 +163,7 @@ style_wq_annual_fai = {
     "title": "Floating Algal Index (FAI)",
     "abstract": "Presence of algal blooms in surface water bodies",
     "legend": legend_fai,
-    "needed_bands": [
-        "agm_fai",
-        "msi_agm_fai",
-        "oli_agm_fai",
-        "tm_agm_fai"
-    ],
+    "needed_bands": ["agm_fai"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -215,15 +206,10 @@ legend_hue = {
 
 style_wq_annual_hue = {
     "name": "wq_annual_hue",
-    "title": "Floating Algal Index (FAI)",
+    "title": "Surface Water Body Colour (Hue Angle)",
     "abstract": "Surface water body colour",
     "legend": legend_hue,
-    "needed_bands": [
-        "agm_hue",
-        "msi_agm_hue",
-        "oli_agm_hue",
-        "tm_agm_hue"
-    ],
+    "needed_bands": ["agm_hue"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -278,12 +264,7 @@ style_wq_annual_owt = {
         "Spyrakos et al. (2018), based on dominant optical and biogeochemical properties."
     ),
     "legend": legend_owt,
-    "needed_bands": [
-        "agm_owt",
-        "msi_agm_owt",
-        "oli_agm_owt",
-        "tm_agm_owt"
-    ],
+    "needed_bands": ["agm_owt"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -368,16 +349,12 @@ legend_tirs = {
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
 
-style_wq_annual_tirs = {
-    "name": "wq_annual_tirs",
-    "title": "Water Temperature",
-    "abstract": "Annual min,max and median surface water temperature",
+style_wq_annual_tirs_max = {
+    "name": "wq_annual_tirs_max",
+    "title": "Water Temperature - Annual Maximum",
+    "abstract": "Annual maximum surface water temperature",
     "legend": legend_tirs,
-    "needed_bands": [
-        "tirs_st_ann_max",
-        "tirs_st_ann_med",
-        "tirs_st_ann_min"
-    ],
+    "needed_bands": ["tirs_st_ann_max"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -387,6 +364,35 @@ style_wq_annual_tirs = {
     "color_ramp": color_ramp_tirs,
 }
 
+style_wq_annual_tirs_med = {
+    "name": "wq_annual_tirs_med",
+    "title": "Water Temperature - Annual Median",
+    "abstract": "Annual median surface water temperature",
+    "legend": legend_tirs,
+    "needed_bands": ["tirs_st_ann_med"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "tirs_st_ann_med"},
+    },
+    "include_in_feature_info": True,
+    "color_ramp": color_ramp_tirs,
+}
+
+style_wq_annual_tirs_min = {
+    "name": "wq_annual_tirs_min",
+    "title": "Water Temperature - Annual Minimum",
+    "abstract": "Annual minimum surface water temperature",
+    "legend": legend_tirs,
+    "needed_bands": ["tirs_st_ann_min"],
+    "index_function": {
+        "function": "datacube_ows.band_utils.single_band",
+        "mapped_bands": True,
+        "kwargs": {"band": "tirs_st_ann_min"},
+    },
+    "include_in_feature_info": True,
+    "color_ramp": color_ramp_tirs,
+}
 # ============================================================================
 # WATER MASK STYLES
 # ============================================================================
@@ -410,9 +416,7 @@ style_wq_annual_water_mask = {
     "title": "Water Mask",
     "abstract": "Binary water presence mask derived from WOfS",
     "legend": legend_water_mask,
-    "needed_bands": [
-        "water_mask"
-    ],
+    "needed_bands": ["water_mask"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
@@ -445,9 +449,7 @@ style_wq_annual_clear_water = {
     "title": "Clear Water",
     "abstract": "Observations classified as clear (non-turbid) water",
     "legend": legend_clear_water,
-    "needed_bands": [
-        "clear_water"
-    ],
+    "needed_bands": ["clear_water"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
         "mapped_bands": True,
