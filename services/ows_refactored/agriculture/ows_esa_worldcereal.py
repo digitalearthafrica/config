@@ -96,6 +96,7 @@ def create_esa_layer(product_name, title, default_style, abstract=None):
             "kwargs": {"ndays": 10000},   # large window collapses all timestamps
         },
 
+        "time_resolution": "summary",
         "bands": {"classification": []},
         "resource_limits": reslim_land_cover,
         "image_processing": {
