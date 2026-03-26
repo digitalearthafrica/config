@@ -13,8 +13,7 @@ from ows_refactored.common.ows_legend_cfg import legend_mean_ndvi_ticks
 # ============================================================================
 legend_tsm = {
     "show_legend": True,
-    "title": "Total Suspended Matter",
-    "units": "mg/L",
+    "title": "TSM(Index)",
     "begin": "0.0",
     "end": "500.0",
     "decimal_places": 1,
@@ -26,7 +25,7 @@ legend_tsm = {
 
 style_wq_annual_tsm = {
     "name": "wq_annual_tsm",
-    "title": "Total Suspended Matter",
+    "title": "TSM (Index)",
     "abstract": "Total suspended matter concentration (mg/L)",
     "legend": legend_tsm,
     "index_function": {
@@ -151,7 +150,7 @@ color_ramp_fai = [
 legend_fai = {
     "show_legend": True,
     "title": "Floating Algal Index",
-    "units": "unitless",
+    "units": "Index",
     "begin": "-0.05",
     "end": "1.0",
     "decimal_places": 2,
