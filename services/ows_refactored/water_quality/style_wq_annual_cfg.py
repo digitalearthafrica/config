@@ -16,9 +16,9 @@ legend_tsm = {
     "title": "TSM(Index)",
     "begin": "0.0",
     "end": "500.0",
-    "decimal_places": 1,
+    "decimal_places": 0,
     "ticks_every": "100",
-    "width": 4.5,
+    "width": 5.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -36,7 +36,7 @@ style_wq_annual_tsm = {
     "needed_bands": ["tsm"],
     "include_in_feature_info": True,
     "color_ramp": [
-        {"value": 0.0, "color": "#000004", "alpha": 0.3},
+        {"value": 0.0, "color": "#000004"},
         {"value": 10.0, "color": "#1b0c41"},
         {"value": 25.0, "color": "#3b0f70"},
         {"value": 50.0, "color": "#5c126e"},
@@ -135,8 +135,6 @@ style_wq_annual_ndvi = {
 # ============================================================================
 
 color_ramp_fai = [
-    {"value": -0.05, "color": "#08306b"},
-    {"value": 0.0,   "color": "#2171b5"},
     {"value": 0.05,  "color": "#6baed6"},
     {"value": 0.1,   "color": "#c7e9c0"},
     {"value": 0.2,   "color": "#a1d99b"},
