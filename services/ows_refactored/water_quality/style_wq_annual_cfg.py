@@ -61,12 +61,12 @@ style_wq_annual_tsm = {
 legend_tsi = {
     "show_legend": True,
     "title": "Trophic State Index",
-    "units": "unitless",
+    "units": "Index",
     "begin": "0.0",
     "end": "100.0",
-    "decimal_places": 1,
-    "ticks_every": "5",
-    "width": 4.5,
+    "decimal_places": 0,
+    "ticks_every": "10",
+    "width": 5.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -84,19 +84,19 @@ style_wq_annual_tsi = {
     "needed_bands": ["tsi"],
     "include_in_feature_info": True,
     "color_ramp": [
-        {"value": 0.0, "color": "#5e4fa2"},    # 0 - Purple (oligotrophic)
-        {"value": 10.0, "color": "#3288bd"},   # 10 - Blue
-        {"value": 20.0, "color": "#66c2a5"},   # 20 - Cyan
-        {"value": 30.0, "color": "#abdda4"},   # 30 - Light cyan-green
-        {"value": 40.0, "color": "#e6f598"},   # 40 - Pale green-yellow (mesotrophic)
-        {"value": 50.0, "color": "#ffffbf"},   # 50 - Pale yellow
-        {"value": 60.0, "color": "#fee08b"},   # 60 - Light yellow
-        {"value": 70.0, "color": "#fdae61"},   # 70 - Orange-yellow (eutrophic)
-        {"value": 75.0, "color": "#f46d43"},   # 75 - Orange
-        {"value": 80.0, "color": "#d53e4f"},   # 80 - Red-orange
-        {"value": 90.0, "color": "#9e0142"},   # 90 - Dark red (hypereutrophic)
-        {"value": 100.0, "color": "#67001f"},  # 100 - Very dark red
-        {"value": 110.0, "color": "#4d0013"},  # 110+ - Extremely dark red
+        {"value": 0.0, "color": "#3f007d"},
+        {"value": 10.0, "color": "#1a6faf"},
+        {"value": 20.0, "color": "#1b9e77"},
+        {"value": 30.0, "color": "#41ab5d"},
+        {"value": 40.0, "color": "#78c679"},
+        {"value": 50.0, "color": "#c8a800"},
+        {"value": 60.0, "color": "#e07b00"},
+        {"value": 70.0, "color": "#d94701"},
+        {"value": 75.0, "color": "#c41a14"},
+        {"value": 80.0, "color": "#a50026"},
+        {"value": 90.0, "color": "#67001f"},
+        {"value": 100.0, "color": "#40000f"},
+        {"value": 110.0, "color": "#2a0009"},
     ],
 }
 
