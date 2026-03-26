@@ -296,17 +296,18 @@ color_ramp_chla = [
 legend_chla = {
     "begin": "0.1",
     "end": "300",
-    "ticks_every": "20",
+    "scale": "log",
+    "ticks": [0.1, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 300],
     "units": "mg/m³",
-    "decimal_places": 0,
-    "width": 4.5,
+    "decimal_places": 1,
+    "width": 5.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
 
 style_wq_annual_chla = {
     "name": "wq_annual_chla",
-    "title": "Chlorophyll-a Concentration",
+    "title": "Chl-A (Index)",
     "abstract": (
         "Chlorophyll-a concentration (mg/m³) as an indicator of phytoplankton "
         "biomass and water productivity."
