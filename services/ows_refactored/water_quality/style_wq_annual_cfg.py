@@ -136,13 +136,16 @@ style_wq_annual_ndvi = {
 # ============================================================================
 
 color_ramp_fai = [
-    {"value": -0.1, "color": "#00004d"},
-    {"value": 0.0, "color": "#00ffff"},
-    {"value": 0.1, "color": "#00ff00"},
-    {"value": 0.2, "color": "#ffff00"},
-    {"value": 0.3, "color": "#ff8000"},
-    {"value": 0.4, "color": "#ff0000"},
-    {"value": 0.5, "color": "#8b0000"},
+    {"value": -0.05, "color": "#08306b"},
+    {"value": 0.0,   "color": "#2171b5"},
+    {"value": 0.05,  "color": "#6baed6"},
+    {"value": 0.1,   "color": "#c7e9c0"},
+    {"value": 0.2,   "color": "#a1d99b"},
+    {"value": 0.3,   "color": "#fddd6a"},
+    {"value": 0.4,   "color": "#fd8d3c"},
+    {"value": 0.5,   "color": "#e31a1c"},
+    {"value": 0.7,   "color": "#800026"},
+    {"value": 1.0,   "color": "#3d0012"},
 ]
 
 legend_fai = {
@@ -152,8 +155,8 @@ legend_fai = {
     "begin": "-0.05",
     "end": "1.0",
     "decimal_places": 2,
-    "ticks_every": "5",
-    "width": 4.5,
+    "ticks_every": "0.1",
+    "width": 5.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -161,7 +164,11 @@ legend_fai = {
 style_wq_annual_fai = {
     "name": "wq_annual_fai",
     "title": "Floating Algal Index (FAI)",
-    "abstract": "Presence of algal blooms in surface water bodies",
+    "abstract": (
+        "Presence and density of floating algal blooms in surface water bodies, "
+        "derived from the Floating Algal Index. Negative values indicate open water; "
+        "positive values indicate increasing algal or aquatic vegetation cover."
+    ),
     "legend": legend_fai,
     "needed_bands": ["agm_fai"],
     "index_function": {
@@ -169,6 +176,7 @@ style_wq_annual_fai = {
         "mapped_bands": True,
         "kwargs": {"band": "agm_fai"},
     },
+    "include_in_feature_info": True,
     "color_ramp": color_ramp_fai,
 }
 
@@ -294,6 +302,8 @@ color_ramp_chla = [
 ]
 
 legend_chla = {
+    "show_legend": True,
+    "title": "Chl-A (Index)",
     "begin": "0.1",
     "end": "300",
     "scale": "log",
@@ -339,10 +349,12 @@ color_ramp_tirs = [
 ]
 
 legend_tirs = {
+    "show_legend": True,
+    "title": "Surface Water Temperature",
     "begin": "-5",
     "end": "40",
     "ticks_every": "5",
-    "units": "°C",
+    "units": " Deg C",
     "decimal_places": 0,
     "width": 4.5,
     "height": 2.1,
@@ -402,6 +414,8 @@ color_ramp_mask = [
 ]
 
 legend_water_mask = {
+    "show_legend": True,
+    "title": "Water Mask",
     "begin": "0.0",
     "end": "1.0",
     "ticks_every": "1.0",
@@ -435,6 +449,8 @@ color_ramp_clear_water = [
 ]
 
 legend_clear_water = {
+    "show_legend": True,
+    "title": "Clear Water Mask",
     "begin": "0.0",
     "end": "1.0",
     "ticks_every": "1.0",
