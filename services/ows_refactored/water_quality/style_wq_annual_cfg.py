@@ -298,7 +298,6 @@ legend_chla = {
     "end": "300",
     "scale": "log",
     "ticks": [0.1, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 300],
-    "units": "mg/m³",
     "decimal_places": 1,
     "width": 5.5,
     "height": 2.1,
