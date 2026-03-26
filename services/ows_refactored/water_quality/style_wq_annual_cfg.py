@@ -226,21 +226,6 @@ style_wq_annual_hue = {
 # ============================================================================
 # OWT STYLES
 # ============================================================================
-color_ramp_owt = [
-    {"value": 1, "color": "#7a0177"},
-    {"value": 2, "color": "#41b6c4"},
-    {"value": 3, "color": "#2c7bb6"},
-    {"value": 4, "color": "#1a9850"},
-    {"value": 5, "color": "#a6611a"},
-    {"value": 6, "color": "#66c2a5"},
-    {"value": 7, "color": "#d73027"},
-    {"value": 8, "color": "#fdae61"},
-    {"value": 9, "color": "#74add1"},
-    {"value": 10, "color": "#542788"},
-    {"value": 11, "color": "#2d004b"},
-    {"value": 12, "color": "#fee08b"},
-    {"value": 13, "color": "#081d58"},
-]
 
 legend_owt = {
     "type": "categorical",
@@ -276,7 +261,23 @@ style_wq_annual_owt = {
         "kwargs": {"band": "agm_owt"},
     },
     "include_in_feature_info": True,
-    "color_ramp": color_ramp_owt,
+    "value_map": {                          # replaces color_ramp entirely
+        "agm_owt": [
+            {"title": "OWT1 – Hypereutrophic, cyanobacterial scum",        "values": [1],  "color": "#7a0177"},
+            {"title": "OWT2 – Common case waters",                          "values": [2],  "color": "#41b6c4"},
+            {"title": "OWT3 – Clear waters",                                "values": [3],  "color": "#2c7bb6"},
+            {"title": "OWT4 – Turbid, organic-rich",                        "values": [4],  "color": "#1a9850"},
+            {"title": "OWT5 – Sediment-laden",                              "values": [5],  "color": "#a6611a"},
+            {"title": "OWT6 – Balanced optical constituents",               "values": [6],  "color": "#66c2a5"},
+            {"title": "OWT7 – Highly productive, cyanobacteria",            "values": [7],  "color": "#d73027"},
+            {"title": "OWT8 – Productive, cyano, Rrs peak ~700 nm",        "values": [8],  "color": "#fdae61"},
+            {"title": "OWT9 – OWT2-like, high shortwave Rrs",              "values": [9],  "color": "#74add1"},
+            {"title": "OWT10 – CDOM-rich",                                  "values": [10], "color": "#542788"},
+            {"title": "OWT11 – CDOM + cyanobacteria + NAP",                "values": [11], "color": "#2d004b"},
+            {"title": "OWT12 – Turbid, moderately productive",              "values": [12], "color": "#fee08b"},
+            {"title": "OWT13 – Very clear blue waters",                     "values": [13], "color": "#081d58"},
+        ]
+    },
 }
 
 # ============================================================================
