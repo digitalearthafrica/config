@@ -13,20 +13,19 @@ from ows_refactored.common.ows_legend_cfg import legend_mean_ndvi_ticks
 # ============================================================================
 legend_tsm = {
     "show_legend": True,
-    "title": "Total Suspended Matter",
-    "units": "mg/L",
+    "title": "TSM(Index)",
     "begin": "0.0",
     "end": "500.0",
-    "decimal_places": 1,
+    "decimal_places": 0,
     "ticks_every": "100",
-    "width": 4.5,
+    "width": 5.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
 
 style_wq_annual_tsm = {
     "name": "wq_annual_tsm",
-    "title": "Total Suspended Matter",
+    "title": "TSM (Index)",
     "abstract": "Total suspended matter concentration (mg/L)",
     "legend": legend_tsm,
     "index_function": {
@@ -37,7 +36,7 @@ style_wq_annual_tsm = {
     "needed_bands": ["tsm"],
     "include_in_feature_info": True,
     "color_ramp": [
-        {"value": 0.0, "color": "#000004", "alpha": 0.3},
+        {"value": 0.0, "color": "#000004"},
         {"value": 10.0, "color": "#1b0c41"},
         {"value": 25.0, "color": "#3b0f70"},
         {"value": 50.0, "color": "#5c126e"},
@@ -61,12 +60,12 @@ style_wq_annual_tsm = {
 legend_tsi = {
     "show_legend": True,
     "title": "Trophic State Index",
-    "units": "unitless",
+    "units": "Index",
     "begin": "0.0",
     "end": "100.0",
-    "decimal_places": 1,
-    "ticks_every": "5",
-    "width": 4.5,
+    "decimal_places": 0,
+    "ticks_every": "10",
+    "width": 5.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -84,19 +83,19 @@ style_wq_annual_tsi = {
     "needed_bands": ["tsi"],
     "include_in_feature_info": True,
     "color_ramp": [
-        {"value": 0.0, "color": "#5e4fa2"},    # 0 - Purple (oligotrophic)
-        {"value": 10.0, "color": "#3288bd"},   # 10 - Blue
-        {"value": 20.0, "color": "#66c2a5"},   # 20 - Cyan
-        {"value": 30.0, "color": "#abdda4"},   # 30 - Light cyan-green
-        {"value": 40.0, "color": "#e6f598"},   # 40 - Pale green-yellow (mesotrophic)
-        {"value": 50.0, "color": "#ffffbf"},   # 50 - Pale yellow
-        {"value": 60.0, "color": "#fee08b"},   # 60 - Light yellow
-        {"value": 70.0, "color": "#fdae61"},   # 70 - Orange-yellow (eutrophic)
-        {"value": 75.0, "color": "#f46d43"},   # 75 - Orange
-        {"value": 80.0, "color": "#d53e4f"},   # 80 - Red-orange
-        {"value": 90.0, "color": "#9e0142"},   # 90 - Dark red (hypereutrophic)
-        {"value": 100.0, "color": "#67001f"},  # 100 - Very dark red
-        {"value": 110.0, "color": "#4d0013"},  # 110+ - Extremely dark red
+        {"value": 0.0, "color": "#3f007d"},
+        {"value": 10.0, "color": "#1a6faf"},
+        {"value": 20.0, "color": "#1b9e77"},
+        {"value": 30.0, "color": "#41ab5d"},
+        {"value": 40.0, "color": "#78c679"},
+        {"value": 50.0, "color": "#c8a800"},
+        {"value": 60.0, "color": "#e07b00"},
+        {"value": 70.0, "color": "#d94701"},
+        {"value": 75.0, "color": "#c41a14"},
+        {"value": 80.0, "color": "#a50026"},
+        {"value": 90.0, "color": "#67001f"},
+        {"value": 100.0, "color": "#40000f"},
+        {"value": 110.0, "color": "#2a0009"},
     ],
 }
 
@@ -136,24 +135,25 @@ style_wq_annual_ndvi = {
 # ============================================================================
 
 color_ramp_fai = [
-    {"value": -0.1, "color": "#00004d"},
-    {"value": 0.0, "color": "#00ffff"},
-    {"value": 0.1, "color": "#00ff00"},
-    {"value": 0.2, "color": "#ffff00"},
-    {"value": 0.3, "color": "#ff8000"},
-    {"value": 0.4, "color": "#ff0000"},
-    {"value": 0.5, "color": "#8b0000"},
+    {"value": 0.05, "color": "#6baed6"},
+    {"value": 0.1, "color": "#c7e9c0"},
+    {"value": 0.2, "color": "#a1d99b"},
+    {"value": 0.3, "color": "#fddd6a"},
+    {"value": 0.4, "color": "#fd8d3c"},
+    {"value": 0.5, "color": "#e31a1c"},
+    {"value": 0.7, "color": "#800026"},
+    {"value": 1.0, "color": "#3d0012"},
 ]
 
 legend_fai = {
     "show_legend": True,
     "title": "Floating Algal Index",
-    "units": "unitless",
+    "units": "Index",
     "begin": "-0.05",
     "end": "1.0",
     "decimal_places": 2,
-    "ticks_every": "5",
-    "width": 4.5,
+    "ticks_every": "0.1",
+    "width": 5.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -161,7 +161,11 @@ legend_fai = {
 style_wq_annual_fai = {
     "name": "wq_annual_fai",
     "title": "Floating Algal Index (FAI)",
-    "abstract": "Presence of algal blooms in surface water bodies",
+    "abstract": (
+        "Presence and density of floating algal blooms in surface water bodies, "
+        "derived from the Floating Algal Index. Negative values indicate open water; "
+        "positive values indicate increasing algal or aquatic vegetation cover."
+    ),
     "legend": legend_fai,
     "needed_bands": ["agm_fai"],
     "index_function": {
@@ -169,6 +173,7 @@ style_wq_annual_fai = {
         "mapped_bands": True,
         "kwargs": {"band": "agm_fai"},
     },
+    "include_in_feature_info": True,
     "color_ramp": color_ramp_fai,
 }
 
@@ -221,21 +226,6 @@ style_wq_annual_hue = {
 # ============================================================================
 # OWT STYLES
 # ============================================================================
-color_ramp_owt = [
-    {"value": 1, "color": "#7a0177"},
-    {"value": 2, "color": "#41b6c4"},
-    {"value": 3, "color": "#2c7bb6"},
-    {"value": 4, "color": "#1a9850"},
-    {"value": 5, "color": "#a6611a"},
-    {"value": 6, "color": "#66c2a5"},
-    {"value": 7, "color": "#d73027"},
-    {"value": 8, "color": "#fdae61"},
-    {"value": 9, "color": "#74add1"},
-    {"value": 10, "color": "#542788"},
-    {"value": 11, "color": "#2d004b"},
-    {"value": 12, "color": "#fee08b"},
-    {"value": 13, "color": "#081d58"},
-]
 
 legend_owt = {
     "type": "categorical",
@@ -271,7 +261,23 @@ style_wq_annual_owt = {
         "kwargs": {"band": "agm_owt"},
     },
     "include_in_feature_info": True,
-    "color_ramp": color_ramp_owt,
+    "value_map": {                          # replaces color_ramp entirely
+        "agm_owt": [
+            {"title": "OWT1 – Hypereutrophic, cyanobacterial scum", "values": [1], "color": "#7a0177"},
+            {"title": "OWT2 – Common case waters", "values": [2], "color": "#41b6c4"},
+            {"title": "OWT3 – Clear waters", "values": [3], "color": "#2c7bb6"},
+            {"title": "OWT4 – Turbid, organic-rich", "values": [4], "color": "#1a9850"},
+            {"title": "OWT5 – Sediment-laden", "values": [5], "color": "#a6611a"},
+            {"title": "OWT6 – Balanced optical constituents", "values": [6], "color": "#66c2a5"},
+            {"title": "OWT7 – Highly productive, cyanobacteria", "values": [7], "color": "#d73027"},
+            {"title": "OWT8 – Productive, cyano, Rrs peak ~700 nm", "values": [8], "color": "#fdae61"},
+            {"title": "OWT9 – OWT2-like, high shortwave Rrs", "values": [9], "color": "#74add1"},
+            {"title": "OWT10 – CDOM-rich", "values": [10], "color": "#542788"},
+            {"title": "OWT11 – CDOM + cyanobacteria + NAP", "values": [11], "color": "#2d004b"},
+            {"title": "OWT12 – Turbid, moderately productive", "values": [12], "color": "#fee08b"},
+            {"title": "OWT13 – Very clear blue waters", "values": [13], "color": "#081d58"},
+        ]
+    },
 }
 
 # ============================================================================
@@ -294,19 +300,21 @@ color_ramp_chla = [
 ]
 
 legend_chla = {
+    "show_legend": True,
+    "title": "Chl-A (Index)",
     "begin": "0.1",
     "end": "300",
-    "ticks_every": "20",
-    "units": "mg/m³",
-    "decimal_places": 0,
-    "width": 4.5,
+    "scale": "log",
+    "ticks": [0.1, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 300],
+    "decimal_places": 1,
+    "width": 5.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
 
 style_wq_annual_chla = {
     "name": "wq_annual_chla",
-    "title": "Chlorophyll-a Concentration",
+    "title": "Chl-A (Index)",
     "abstract": (
         "Chlorophyll-a concentration (mg/m³) as an indicator of phytoplankton "
         "biomass and water productivity."
@@ -339,10 +347,12 @@ color_ramp_tirs = [
 ]
 
 legend_tirs = {
+    "show_legend": True,
+    "title": "Surface Water Temperature",
     "begin": "-5",
     "end": "40",
     "ticks_every": "5",
-    "units": "°C",
+    "units": " Deg C",
     "decimal_places": 0,
     "width": 4.5,
     "height": 2.1,
@@ -402,6 +412,8 @@ color_ramp_mask = [
 ]
 
 legend_water_mask = {
+    "show_legend": True,
+    "title": "Water Mask",
     "begin": "0.0",
     "end": "1.0",
     "ticks_every": "1.0",
@@ -435,6 +447,8 @@ color_ramp_clear_water = [
 ]
 
 legend_clear_water = {
+    "show_legend": True,
+    "title": "Clear Water Mask",
     "begin": "0.0",
     "end": "1.0",
     "ticks_every": "1.0",
