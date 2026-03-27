@@ -48,7 +48,7 @@ click on a tile in the explorer page (https://explorer.dev.digitalearth.africa/p
     "default_time": "latest",
     "bands": bands_wq_annual,
     "native_crs": "EPSG:6933",
-    "native_resolution": [10.0, 10.0],
+    "native_resolution": [10.0, -10.0],
     "resource_limits": reslim_continental,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",

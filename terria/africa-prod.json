@@ -5,7 +5,7 @@
       "id": "deafrica_terria_prod",
       "type": "wms-group",
       "name": "Digital Earth Africa data catalogue",
-      "url": "https://ows.dev.digitalearth.africa/",
+      "url": "https://ows.digitalearth.africa/",
       "itemProperties": {
         "availableDiffStyles": [
           "ndvi",
@@ -19,7 +19,7 @@
       "excludeMembers": [],
       "isOpen": true,
       "perLayerLinkedWcs": {
-        "linkedWcsUrl": "https://ows.dev.digitalearth.africa/"
+        "linkedWcsUrl": "https://ows.digitalearth.africa/"
       },
       "sortMembersBy": "name",
       "mergeGroupsByName": true,
@@ -28,7 +28,7 @@
           "type": "wms-group",
           "name": "DE Africa Continental Services",
           "id": "DE-Africa",
-          "url": "https://ows.dev.digitalearth.africa/",
+          "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
             "External Datasets"
           ],
@@ -78,9 +78,9 @@
                   "url": "https://geoserver.digitalearth.africa/geoserver/wms",
                   "layers": "waterbodies:DEAfrica_Waterbodies",
                   "featureInfoTemplate": {
-                    "template": "<div style='width:600px'> <h3>Waterbody Identifier: {{uid}}<br /> Percentage of surface area (not volume) observed as wet</h3><br /> <chart id='{{uid}}' title='Waterbody {{uid}}' chart-type='lineAndPoint' preview-x-label='Date' sources='{{#terria.urlEncode}}https://api.digitalearth.africa/waterbodies/waterbody/{{wb_id}}/observations/csv{{/terria.urlEncode}}' column-units='Date of satellite observation,%,#' x-column='date' y-column='percent_wet'> </chart>{{>disclaimer}}</div>",
+                    "template": "<div style='width:600px'> <h3>Waterbody Identifier: {{uid}}<br /> Percentage of surface area (not volume) observed as wet</h3><br /> <chart id='{{uid}}' title='Waterbody {{uid}}' chart-type='lineAndPoint' preview-x-label='Date' sources='{{#terria.urlEncode}}https://api.digitalearth.africa/waterbodies/waterbody/{{wb_id}}/observations/csv{{/terria.urlEncode}}' column-units='Date of satellite observation,%,#' x-column='date' y-column='percent_wet'> </chart> <h3> Average Total Suspended Matter (TSM) </h3><br /> <chart id='{{uid}}' title='Waterbody {{uid}}' chart-type='lineAndPoint' preview-x-label='Date' sources='{{#terria.urlEncode}}https://api.digitalearth.africa/waterbodies/waterbody/{{wb_id}}/water_quality_maps/csv{{/terria.urlEncode}}' column-units='Date of satellite observation,%,#' x-column='date' y-column='median_tsm'> </chart>{{>disclaimer}}</div>",
                     "partials": {
-                      "disclaimer": "This is a provisional product, released for evaluation by all users. The DE Africa team is working actively to validate and improve this product. This graph shows the wet surface area of waterbodies as estimated from satellites. It does not show depth, volume, purpose of the waterbody, nor the source of the water. The wet surface area time series uses the Digital Earth Africa Water Observations from Space product which is known to have limitations. These limitations may carry through to the wet surface area time series. For more information, visit the <a href='https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html'>Digital Earth Africa Documentation</a>"
+                      "disclaimer": "The Waterbodies and Water Quality Monitoring Services are provisional products, released for evaluation by all users. The DE Africa team is working actively to validate and improve these products. The top graph shows the wet surface area of waterbodies as estimated from satellites. It does not show depth, volume, purpose of the waterbody, nor the source of the water. The wet surface area time series uses the Digital Earth Africa Water Observations from Space product which is known to have limitations. These limitations may carry through to the wet surface area time series. For more information, visit the <a href='https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html'>Digital Earth Africa Documentation</a>"
                     }
                   }
                 }
@@ -92,7 +92,7 @@
           "type": "wms-group",
           "name": "External Datasets",
           "id": "External",
-          "url": "https://ows.dev.digitalearth.africa/",
+          "url": "https://ows.digitalearth.africa/",
           "excludeMembers": [
             "DE Africa Continental Services"
           ],
