@@ -18,7 +18,7 @@ legend_tsm = {
     "end": "500.0",
     "decimal_places": 0,
     "ticks_every": "100",
-    "width": 5.5,
+    "width": 9.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -65,7 +65,7 @@ legend_tsi = {
     "end": "100.0",
     "decimal_places": 0,
     "ticks_every": "10",
-    "width": 5.5,
+    "width": 9.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -307,7 +307,7 @@ legend_chla = {
     "scale": "log",
     "ticks": [0.1, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 300],
     "decimal_places": 1,
-    "width": 5.5,
+    "width": 9.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
