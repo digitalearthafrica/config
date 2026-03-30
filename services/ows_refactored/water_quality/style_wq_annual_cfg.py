@@ -253,7 +253,7 @@ style_wq_annual_owt = {
         "Optical Water Types classification for inland waters following "
         "Spyrakos et al. (2018), based on dominant optical and biogeochemical properties."
     ),
-    "legend": legend_owt,
+    "legend": {"width": 3.0, "height": 5.5},
     "needed_bands": ["agm_owt"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -261,7 +261,7 @@ style_wq_annual_owt = {
         "kwargs": {"band": "agm_owt"},
     },
     "include_in_feature_info": True,
-    "value_map": {                          # replaces color_ramp entirely
+    "value_map": {
         "agm_owt": [
             {"title": "OWT1 – Hypereutrophic, cyanobacterial scum", "values": [1], "color": "#7a0177"},
             {"title": "OWT2 – Common case waters", "values": [2], "color": "#41b6c4"},
