@@ -12,6 +12,7 @@ def mask_by_emad_nan(data, band, band_mapper=None):
         emad = "EMAD"
     return ~numpy.isnan(data[emad])
 
+
 # Copied from commit 66c808b version of datacube-ows.time_utils.rolling_window_ndays.
 # to solve error in ESA WorldCereal layers where the mosaic_date_func is not
 # working as expected for datacube-ows version 1.8.42.
@@ -21,7 +22,7 @@ def rolling_window_ndays(
     available_dates,
     layer_cfg,
     ndays: int = 6,
-) :
+):
     if ndays > len(available_dates):
         days = available_dates
         idx = -len(available_dates)
