@@ -39,7 +39,7 @@ More technical information about the Water Quality Service can be found in the
 User Guide (https://docs.digitalearthafrica.org/en/latest/data_specs/<insert page>.html)
 This service is accessible through OGC Web Service (https://ows.digitalearth.africa/),
 for analysis in DE Africa Sandbox (sandbox.digitalearth.africa) and for direct download
-click on a tile in the explorer page (https://explorer.dev.digitalearth.africa/products/wq_annual).
+click on a tile in the explorer page (https://explorer.digitalearth.africa/products/wq_annual).
 """,
     "name": "wq_annual",
     "product_name": "wq_annual",
