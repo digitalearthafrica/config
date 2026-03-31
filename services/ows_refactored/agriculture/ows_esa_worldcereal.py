@@ -91,7 +91,9 @@ def create_esa_layer(product_name, title, default_style, abstract=None):
 
         # Make it a timeless mosaic layer
         "mosaic_date_func": {
-            "function": "datacube_ows.ogc_utils.rolling_window_ndays",
+            # TODO: Remove and use datacube_ows.time_utils.rolling_window_ndays
+            # when datacube-ows is upgraded to ghcr.io/opendatacube/ows:1.9.11 or later.
+            "function": "ows_refactored.common.ows_util_tools.rolling_window_ndays",
             "pass_layer_cfg": True,
             "kwargs": {"ndays": 10000},   # large window collapses all timestamps
         },
