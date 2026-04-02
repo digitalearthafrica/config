@@ -18,7 +18,7 @@ legend_tsm = {
     "end": "500.0",
     "decimal_places": 0,
     "ticks_every": "100",
-    "width": 5.5,
+    "width": 9.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -65,7 +65,7 @@ legend_tsi = {
     "end": "100.0",
     "decimal_places": 0,
     "ticks_every": "10",
-    "width": 5.5,
+    "width": 9.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -253,7 +253,7 @@ style_wq_annual_owt = {
         "Optical Water Types classification for inland waters following "
         "Spyrakos et al. (2018), based on dominant optical and biogeochemical properties."
     ),
-    "legend": legend_owt,
+    "legend": {"width": 3.0, "height": 5.5},
     "needed_bands": ["agm_owt"],
     "index_function": {
         "function": "datacube_ows.band_utils.single_band",
@@ -261,7 +261,7 @@ style_wq_annual_owt = {
         "kwargs": {"band": "agm_owt"},
     },
     "include_in_feature_info": True,
-    "value_map": {                          # replaces color_ramp entirely
+    "value_map": {
         "agm_owt": [
             {"title": "OWT1 – Hypereutrophic, cyanobacterial scum", "values": [1], "color": "#7a0177"},
             {"title": "OWT2 – Common case waters", "values": [2], "color": "#41b6c4"},
@@ -307,7 +307,7 @@ legend_chla = {
     "scale": "log",
     "ticks": [0.1, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 300],
     "decimal_places": 1,
-    "width": 5.5,
+    "width": 9.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
