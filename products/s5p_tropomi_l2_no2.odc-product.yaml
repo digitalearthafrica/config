@@ -18,7 +18,7 @@ measurements:
   - name: NO2
     dtype: float32
     nodata: -9999
-    units: '1'
+    units: 'mol/m^2'
     scale_factor: 1
     add_offset: 0
   - name: dataMask
