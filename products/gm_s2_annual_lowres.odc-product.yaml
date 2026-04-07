@@ -2,6 +2,7 @@
 name: gm_s2_annual_lowres
 metadata_type: eo3
 description: Annual Geometric Median, Sentinel-2 - Low Resolution mosaic
+license: CC-BY-4.0
 metadata:
   product:
     name: gm_s2_annual_lowres
@@ -95,7 +96,7 @@ measurements:
     aliases:
       - emad
       - edev
-      - SDEV
+      - EDEV
   - name: BCMAD
     dtype: float32
     units: "1"

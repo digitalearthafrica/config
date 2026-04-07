@@ -4,6 +4,7 @@ description: The World Settlement Footprint (WSF) 2019 is a 10m resolution
   binary mask outlining the extent of human settlements globally derived by
   means of 2019 multitemporal Sentinel-1 (S1) and Sentinel-2 (S2) imagery.
 metadata_type: eo3
+license: CC-BY-4.0
 
 metadata:
   product:
@@ -17,7 +18,6 @@ storage:
 
 measurements:
   - name: "wsf2019"
-    aliases: [wsf2019]
     dtype: uint8
     nodata: 0
     units: "1"
