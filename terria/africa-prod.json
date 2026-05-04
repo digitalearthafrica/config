@@ -69,7 +69,7 @@
             },
             {
               "type": "group",
-              "name": "Surface water - Waterbodies",
+              "name": "Surface Water - Waterbodies",
               "members": [
                 {
                   "type": "wms",
