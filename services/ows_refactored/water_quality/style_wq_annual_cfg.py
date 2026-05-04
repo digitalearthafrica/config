@@ -149,7 +149,7 @@ legend_fai = {
     "show_legend": True,
     "title": "Floating Algal Index",
     "units": "Index",
-    "begin": "-0.05",
+    "begin": "0.05",
     "end": "1.0",
     "decimal_places": 2,
     "ticks_every": "0.1",
