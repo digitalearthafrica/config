@@ -147,8 +147,8 @@ ows_cfg = {
                             ],
                         },
                         {
-                            "title": "Surface water",
-                            "abstract": """Surface water""",
+                            "title": "Surface Water",
+                            "abstract": """Surface Water""",
                             "layers": [
                                 {
                                     "title": "Water Observations from Space (WOfS)",
