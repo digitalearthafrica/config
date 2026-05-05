@@ -4,6 +4,7 @@ description: >
   Copernicus Global Land Service – Lake Water Quality 2019-2024 (raster 100 m),
   global, 10-daily – version 1
 metadata_type: eo3
+license: Copernicus
 
 metadata:
   product:
@@ -18,11 +19,11 @@ load:
 measurements:
   - name: first_obs
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: last_obs
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: num_obs
     dtype: int32
@@ -30,67 +31,67 @@ measurements:
     units: "1"
   - name: trophic_state_mean
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
     aliases: [trophic_state_index, TSI]
   - name: turbidity_blended_mean
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "NTU"
     aliases: [turbidity]
   - name: Rw443_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw490_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw560_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw665_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw705_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw740_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw783_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw842_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw865_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw945_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw1375_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw1610_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: Rw2190_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
   - name: RwDayNum_rep
     dtype: float32
-    nodata: nan
+    nodata: .nan
     units: "1"
