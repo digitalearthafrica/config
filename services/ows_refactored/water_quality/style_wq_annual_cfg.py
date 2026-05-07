@@ -149,7 +149,7 @@ legend_fai = {
     "show_legend": True,
     "title": "Floating Algal Index",
     "units": "Index",
-    "begin": "-0.05",
+    "begin": "0.05",
     "end": "1.0",
     "decimal_places": 2,
     "ticks_every": "0.1",
@@ -295,17 +295,14 @@ color_ramp_chla = [
     {"value": 60.0, "color": "#fed976"},
     {"value": 100.0, "color": "#feb24c"},
     {"value": 150.0, "color": "#fd8d3c"},
-    {"value": 200.0, "color": "#f03b20"},
-    {"value": 300.0, "color": "#560b1a"},
 ]
 
 legend_chla = {
     "show_legend": True,
     "title": "Chl-A (Index)",
     "begin": "0.1",
-    "end": "300",
-    "scale": "log",
-    "ticks": [0.1, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 300],
+    "end": "150",
+    "ticks": [0.1, 1, 5, 10, 20, 40, 60, 100, 150],
     "decimal_places": 1,
     "width": 9.5,
     "height": 2.1,
