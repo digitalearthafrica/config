@@ -147,8 +147,8 @@ ows_cfg = {
                             ],
                         },
                         {
-                            "title": "Surface water",
-                            "abstract": """Surface water""",
+                            "title": "Surface Water - Water Observations",
+                            "abstract": """Surface Water - Water Observations""",
                             "layers": [
                                 {
                                     "title": "Water Observations from Space (WOfS)",
@@ -168,6 +168,12 @@ ows_cfg = {
                                         },
                                     ],
                                 },
+                            ],
+                        },
+                        {
+                            "title": "Surface Water - Water Quality",
+                            "abstract": """Surface Water - Water Quality""",
+                            "layers": [
                                 {
                                     "title": "Water Quality Monitoring Service (WQMS)",
                                     "abstract": """Water Quality Monitoring Service (WQMS)""",
