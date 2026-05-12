@@ -284,26 +284,22 @@ style_wq_annual_owt = {
 # CHLA STYLES
 # ============================================================================
 color_ramp_chla = [
-    {"value": 0.1, "color": "#081d58"},
-    {"value": 0.5, "color": "#253494"},
-    {"value": 1.0, "color": "#225ea8"},
-    {"value": 2.0, "color": "#1d91c0"},
-    {"value": 5.0, "color": "#41b6c4"},
-    {"value": 10.0, "color": "#7fcdbb"},
-    {"value": 20.0, "color": "#c7e9b4"},
-    {"value": 40.0, "color": "#ffffcc"},
-    {"value": 60.0, "color": "#fed976"},
-    {"value": 100.0, "color": "#feb24c"},
-    {"value": 150.0, "color": "#fd8d3c"},
+    {"value": 0, "color": "#081d58"},
+    {"value": 25, "color": "#253494"},
+    {"value": 50, "color": "#225ea8"},
+    {"value": 75, "color": "#1d91c0"},
+    {"value": 100, "color": "#41b6c4"},
+    {"value": 125, "color": "#7fcdbb"},
+    {"value": 150, "color": "#c7e9b4"},
 ]
 
 legend_chla = {
     "show_legend": True,
     "title": "Chl-A (Index)",
-    "begin": "0.1",
+    "begin": "0",
     "end": "150",
-    "ticks": [0.1, 1, 5, 10, 20, 40, 60, 100, 150],
-    "decimal_places": 1,
+    "ticks_every": "25",
+    "decimal_places": 0,
     "width": 9.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
