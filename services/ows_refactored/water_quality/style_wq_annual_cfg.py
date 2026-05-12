@@ -153,7 +153,7 @@ legend_fai = {
     "end": "1.0",
     "decimal_places": 2,
     "ticks_every": "0.1",
-    "width": 5.5,
+    "width": 9.5,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
@@ -300,7 +300,7 @@ legend_chla = {
     "end": "150",
     "ticks_every": "25",
     "decimal_places": 0,
-    "width": 9.5,
+    "width": 14.0,
     "height": 2.1,
     "strip_location": [0.1, 0.4, 0.8, 0.2],
 }
