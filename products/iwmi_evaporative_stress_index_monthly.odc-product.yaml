@@ -1,0 +1,19 @@
+---
+name: iwmi_evaporative_stress_index_monthly
+description: Indicates the level of stress on the environment
+  by quantifying how actual evapotranspiration (ET) deviates
+  from its potential (PET) under normal conditions.
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: iwmi_evaporative_stress_index_monthly
+
+measurements:
+  - name: data
+    dtype: int16
+    nodata: -9999
+    units: "unitless"
+    scale_factor: 0.1
+    aliases: [esi]
