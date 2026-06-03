@@ -20,7 +20,7 @@ iwmi_blue_et_monthly,https://raw.githubusercontent.com/digitalearthafrica/config
 iwmi_green_et_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/iwmi_green_et_monthly.odc-product.yaml
 iwmi_evaporation_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/iwmi_evaporation_monthly.odc-product.yaml
 iwmi_interception_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/iwmi_interception_monthly.odc-product.yaml
-iwmi_benificial_fraction_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/iwmi_benificial_fraction_monthly.odc-product.yaml
+iwmi_beneficial_fraction_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/iwmi_beneficial_fraction_monthly.odc-product.yaml
 iwmi_et_fraction_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/iwmi_et_fraction_monthly.odc-product.yaml
 iwmi_evaporative_stress_index_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/iwmi_evaporative_stress_index_monthly.odc-product.yaml
 iwmi_number_of_rainydays_monthly,https://raw.githubusercontent.com/digitalearthafrica/config/master/products/iwmi_number_of_rainydays_monthly.odc-product.yaml

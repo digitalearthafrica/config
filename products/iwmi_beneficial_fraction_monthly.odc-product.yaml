@@ -1,5 +1,5 @@
 ---
-name: iwmi_benificial_fraction_monthly
+name: iwmi_beneficial_fraction_monthly
 description: Amount of water transpired by plants or evaporated
   from surfaces that contribute to a productive purpose.
 metadata_type: eo3
@@ -7,7 +7,7 @@ license: CC-BY-4.0
 
 metadata:
   product:
-    name: iwmi_benificial_fraction_monthly
+    name: iwmi_beneficial_fraction_monthly
 
 measurements:
   - name: data
@@ -15,4 +15,4 @@ measurements:
     nodata: -9999
     units: "unitless"
     scale_factor: 0.1
-    aliases: [benificial_fraction]
+    aliases: [beneficial_fraction]
