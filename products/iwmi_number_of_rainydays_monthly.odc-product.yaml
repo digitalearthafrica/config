@@ -17,4 +17,5 @@ measurements:
     dtype: int16
     nodata: -9999
     units: "count"
+    scale_factor: 0.1
     aliases: [nRD]
