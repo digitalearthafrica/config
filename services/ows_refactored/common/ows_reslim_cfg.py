@@ -153,3 +153,19 @@ reslim_wofs_dry = {
 reslim_alos_palsar = reslim_continental
 
 reslim_land_cover = reslim_continental
+
+# Low-res summary layers (gm_*_lowres). Tiny dataset count continentally
+# (~5-29 datasets), so no zoom guard is needed -- let them render at every
+# zoom instead of drawing the zoomed-out placeholder. Only affects direct
+# requests to these (hidden) layers; the parent layers' low_res_product_name
+# substitution is governed by the parent's own resource_limits, not this.
+reslim_lowres = {
+    "wms": {
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
+        "min_zoom_factor": 0.0,
+        "dataset_cache_rules": dataset_cache_rules,
+    },
+    "wcs": {
+        "max_datasets": 32,  # Defaults to no dataset limit
+    },
+}
