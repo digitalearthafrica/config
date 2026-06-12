@@ -1,0 +1,18 @@
+---
+name: iwmi_et_fraction_monthly
+description: Indicates which fraction of the total inflow of water
+  is consumed and which part is converted into renewable resources.
+metadata_type: eo3
+license: CC-BY-4.0
+
+metadata:
+  product:
+    name: iwmi_et_fraction_monthly
+
+measurements:
+  - name: data
+    dtype: int16
+    nodata: -9999
+    units: "unitless"
+    scale_factor: 0.1
+    aliases: [et_fraction]
