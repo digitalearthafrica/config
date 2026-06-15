@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_continental
+from ows_refactored.common.ows_reslim_cfg import reslim_continental, reslim_lowres
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls8_gm
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls5789_list
 
@@ -44,6 +44,37 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
         # "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": ["EMAD"],
         "manual_merge": False,  # True
+        "apply_solar_corrections": False,
+    },
+    "native_crs": "EPSG:6933",
+    "native_resolution": [30.0, -30.0],
+    "styling": {
+        "default_style": "simple_rgb",
+        "styles": styles_gm_ls5789_list,
+    }
+}
+
+# Standalone layer for the low-resolution summary product.
+# datacube-ows-update only generates product_ranges for products that are
+# configured as named layers, so the parent layer's low_res_product_name
+# substitution never kicks in until this layer exists and has ranges.
+# NOTE: "hide" is a no-op on the deployed OWS 1.8.42 (the key is not read from
+# layer config until 1.9.x), so on Dev this layer WILL appear in
+# GetCapabilities. Kept for forward-compatibility once OWS is upgraded.
+lowres_layer = {
+    "title": "Annual GeoMAD (Landsat 8) - Low Resolution",
+    "name": "gm_ls8_annual_lowres",
+    "abstract": "Low-resolution summary mosaic of the Annual GeoMAD (Landsat 8). Used by OWS to serve gm_ls8_annual at low (continental) zoom levels.",
+    "product_name": "gm_ls8_annual_lowres",
+    "hide": True,
+    "bands": bands_ls8_gm,
+    "dynamic": False,
+    "resource_limits": reslim_lowres,
+    "time_resolution": "year",
+    "image_processing": {
+        "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_emad_nan",
+        "always_fetch_bands": ["EMAD"],
+        "manual_merge": False,
         "apply_solar_corrections": False,
     },
     "native_crs": "EPSG:6933",

@@ -145,6 +145,32 @@ ows_cfg = {
                                     "include": "ows_refactored.surface_reflectance.ows_gm_s2_rolling_cfg.layer",
                                     "type": "python",
                                 },
+                                # Low-resolution summary layers. Configured as named
+                                # layers so datacube-ows-update generates product_ranges
+                                # for them, enabling the parent layers' low_res_product_name
+                                # substitution at continental zoom. They carry "hide": True
+                                # (no-op until OWS is upgraded past 1.8.42, so they are
+                                # currently visible in GetCapabilities on Dev).
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_annual_cfg.lowres_layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls8_annual_cfg.lowres_layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls8_ls9_annual_cfg.lowres_layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_ls5_ls7_annual_cfg.lowres_layer",
+                                    "type": "python",
+                                },
+                                {
+                                    "include": "ows_refactored.surface_reflectance.ows_gm_s2_semiannual_cfg.lowres_layer",
+                                    "type": "python",
+                                },
                             ],
                         },
                         {
