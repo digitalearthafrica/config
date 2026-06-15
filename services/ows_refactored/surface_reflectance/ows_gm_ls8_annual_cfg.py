@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_continental, reslim_lowres
+from ows_refactored.common.ows_reslim_cfg import reslim_geomad, reslim_lowres
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_ls8_gm
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_gm_ls5789_list
 
@@ -37,7 +37,7 @@ For more information on the algorithm, see https://doi.org/10.1109/TGRS.2017.272
     "low_res_product_name": "gm_ls8_annual_lowres",
     "bands": bands_ls8_gm,
     "dynamic": False,
-    "resource_limits": reslim_continental,
+    "resource_limits": reslim_geomad,
     "time_resolution": "year",
     "image_processing": {
         "extent_mask_func": "ows_refactored.common.ows_util_tools.mask_by_emad_nan",
