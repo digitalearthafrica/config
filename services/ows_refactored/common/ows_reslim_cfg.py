@@ -114,6 +114,27 @@ reslim_continental = {
     },
 }
 
+# GeoMAD parent layers (gm_*) that define a low_res_product_name.
+# On a request "zoomed out too far" (zoom_factor < min_zoom_factor) OWS serves
+# the low-res summary product instead of the full-res data. The continental/
+# sub-continental tiles that were timing out (504) sit at zoom_factor ~12-23
+# (regional tiles are ~180), so min_zoom_factor must sit above ~23 to catch
+# them while leaving regional tiles on full-res. zoom_factor is derived from
+# the request bbox/pixel size only (independent of layer native resolution),
+# so the same value applies to both the S2 (10m) and Landsat (30m) geomedians.
+# NB: must be min_zoom_factor (a 1.8.x key) -- min_zoom_level only exists in
+# datacube-ows 1.9.x and is silently ignored on the deployed 1.8.42.
+reslim_geomad = {
+    "wms": {
+        "zoomed_out_fill_colour": [150, 180, 200, 160],
+        "min_zoom_factor": 30.0,
+        "dataset_cache_rules": dataset_cache_rules,
+    },
+    "wcs": {
+        "max_datasets": 32,  # Defaults to no dataset limit
+    },
+}
+
 reslim_wofs = {
     "wms": {
         "zoomed_out_fill_colour": [150, 180, 200, 160],
