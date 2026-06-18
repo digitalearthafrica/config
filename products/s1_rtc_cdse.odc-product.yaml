@@ -1,6 +1,7 @@
 ---
 name: s1_rtc_cdse
-description: Sentinel 1 Gamma0 normalised radar backscatter generated via CDSE Batch Processing
+description: Sentinel 1 Gamma0 normalised radar backscatter
+  generated via CDSE Batch Processing
 metadata_type: eo3
 
 license: CC-BY-4.0
