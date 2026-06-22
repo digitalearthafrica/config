@@ -1,5 +1,5 @@
 ---
-name: iwmi_number_of_rainydays_monthly
+name: iwmi_number_of_rainy_days_monthly
 description: Rainy days are defined as days when precipitation
   (P) exceeds 0.1(P \u003E 0.1).However, this threshold can be
   adjusted based on local recommendations to better reflect
@@ -10,7 +10,7 @@ license: CC-BY-4.0
 
 metadata:
   product:
-    name: iwmi_number_of_rainydays_monthly
+    name: iwmi_number_of_rainy_days_monthly
 
 measurements:
   - name: data
