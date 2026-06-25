@@ -37,8 +37,7 @@ measurements:
     dtype: uint16
     units: '1'
     nodata: 65535
-    aliases: 
-      - mask
+    aliases: [mask]
     flags_definition:
       coastline:
         bits: 0
