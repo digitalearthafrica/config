@@ -33,29 +33,65 @@ measurements:
     units: "1"
     scale_factor: 0.0001
     add_offset: 0.0
-  - name: "CONFIDENCE"
-    aliases: [mask]
+  - name: CONFIDENCE
     dtype: uint16
-    units: "1"
+    units: '1'
     nodata: 65535
+    aliases: [mask]
     flags_definition:
-      qa:
-        bits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-        description: Quality Flags
-        values:
-          0: coastline
-          1: ocean
-          2: tidal
-          3: land
-          4: inland water
-          5: unfilled
-          6: spare
-          7: spare
-          8: cosmetic
-          9: duplicate
-          10: day
-          11: twilight
-          12: sun glint
-          13: snow
-          14: summary cloud
-          15: summary pointing
+      coastline:
+        bits: 0
+        values: {0: false, 1: true}
+        description: Coastline
+      ocean:
+        bits: 1
+        values: {0: false, 1: true}
+        description: Ocean
+      tidal:
+        bits: 2
+        values: {0: false, 1: true}
+        description: Tidal
+      land:
+        bits: 3
+        values: {0: false, 1: true}
+        description: Land
+      inland_water:
+        bits: 4
+        values: {0: false, 1: true}
+        description: Inland water
+      unfilled:
+        bits: 5
+        values: {0: false, 1: true}
+        description: Unfilled
+      cosmetic:
+        bits: 8
+        values: {0: false, 1: true}
+        description: Cosmetic defect
+      duplicate:
+        bits: 9
+        values: {0: false, 1: true}
+        description: Duplicate
+      day:
+        bits: 10
+        values: {0: false, 1: true}
+        description: Day
+      twilight:
+        bits: 11
+        values: {0: false, 1: true}
+        description: Twilight
+      sun_glint:
+        bits: 12
+        values: {0: false, 1: true}
+        description: Sun glint
+      snow:
+        bits: 13
+        values: {0: false, 1: true}
+        description: Snow
+      summary_cloud:
+        bits: 14
+        values: {0: false, 1: true}
+        description: Summary cloud
+      summary_pointing:
+        bits: 15
+        values: {0: false, 1: true}
+        description: Summary pointing
