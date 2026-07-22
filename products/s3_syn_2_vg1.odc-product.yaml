@@ -9,8 +9,8 @@ metadata:
 storage:
   crs: 'EPSG:4326'
   resolution:
-    longitude: 0.003
-    latitude: -0.003
+    longitude: 0.01
+    latitude: -0.01
 measurements:
   - name: "AG_VG1"
     aliases: [aerosol_optical_thickness]
