@@ -46,7 +46,7 @@ measurements:
     dtype: uint16
     nodata: 65535
     units: "1"
-    scale_factor: 0.00001
+    scale_factor: 0.0001
     add_offset: 0.0
   - name: "B04"
     aliases: [Oa04_reflectance]
@@ -158,7 +158,7 @@ measurements:
     dtype: uint8
     nodata: 255
     units: "kg/m^2"
-    scale_factor: 0.0001
+    scale_factor: 1.0
     add_offset: 0.0
   - name: "KD490_M07"
     aliases: [diffuse_attenuation_coefficient]
