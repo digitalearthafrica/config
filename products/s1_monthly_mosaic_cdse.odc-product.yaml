@@ -1,5 +1,5 @@
 ---
-name: s1_monthly_mosaic
+name: s1_monthly_mosaic_cdse
 description: "Monthly Sentinel-1 mosaics of weighted terrain-corrected
   backscatter generated via CDSE batch processing."
 metadata_type: eo3
@@ -7,7 +7,7 @@ license: Copernicus
 
 metadata:
   product:
-    name: s1_monthly_mosaic
+    name: s1_monthly_mosaic_cdse
 
 measurements:
   - name: "VV"
