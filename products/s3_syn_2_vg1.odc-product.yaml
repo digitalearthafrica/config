@@ -71,21 +71,6 @@ measurements:
     units: "degrees"
     scale_factor: 1.0
     add_offset: 0.0
-    flags_definition:
-      mask:
-        bits: [0, 1, 2, 3, 4, 8, 16, 32, 64, 128]
-        description: Sentinel-3 Core Status Flag
-        values:
-          0: clear
-          1: shadow
-          2: uncertain
-          3: cloud
-          4: ice_or_snow
-          8: land
-          16: MIR_good
-          32: B3_good
-          64: B2_good
-          128: B0_good
   - name: "TOA_NDVI_VG1"
     dtype: int16
     nodata: 32767
