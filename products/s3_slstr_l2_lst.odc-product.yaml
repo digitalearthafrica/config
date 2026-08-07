@@ -10,8 +10,8 @@ metadata:
 storage:
   crs: 'EPSG:4326'
   resolution:
-    longitude: 0.003
-    latitude: -0.003
+    longitude: 0.01
+    latitude: -0.01
 measurements:
   - name: "LST"
     aliases: [Land_surface_temperature]
