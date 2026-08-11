@@ -9,6 +9,12 @@ metadata:
   product:
     name: s1_monthly_mosaic
 
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.0002
+    latitude: -0.0002
+
 measurements:
   - name: "VV"
     aliases: [vv]
