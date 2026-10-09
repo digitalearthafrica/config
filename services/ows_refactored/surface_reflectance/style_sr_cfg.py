@@ -1328,8 +1328,8 @@ style_s3_gifapar = {
     "name": "gifapar",
     "title": "Fraction of Absorbed Photosynthetically Active Radiation (FAPAR)",
     "abstract": "Vegetation FAPAR index",
-    "needed_bands": ["GI-FAPAR"],
-    "index_expression": "GI-FAPAR / 10000.0",
+    "needed_bands": ["GI_FAPAR"],
+    "index_expression": "GI_FAPAR / 10000.0",
     "color_ramp": [
         {"value": 0.0, "color": "#FFFFFF", "alpha": 0.0},
         {"value": 0.1, "color": "#f7fcf5"},
