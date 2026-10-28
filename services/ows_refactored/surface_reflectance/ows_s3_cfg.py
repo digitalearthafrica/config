@@ -18,7 +18,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
-        "manual_merge": False, 
+        "manual_merge": False,
     },
     "native_crs": "EPSG:4326",
     "native_resolution": [0.0002, -0.0002],
