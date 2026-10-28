@@ -1,4 +1,4 @@
-from ows_refactored.common.ows_reslim_cfg import reslim_continental
+from ows_refactored.common.ows_reslim_cfg import reslim_landsat
 from ows_refactored.surface_reflectance.band_sr_cfg import bands_s3_olci_l2_land, bands_s3_olci_l2_water
 from ows_refactored.surface_reflectance.style_sr_cfg import styles_s3_land_list, styles_s3_water_list
 
@@ -14,16 +14,14 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "s3_olci_l2_lfr",
     "bands": bands_s3_olci_l2_land,
-    "dynamic": True,
-    "resource_limits": reslim_continental,
+    "resource_limits": reslim_landsat,
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
-        "manual_merge": False,  # True
-        "apply_solar_corrections": False,
+        "manual_merge": False,
     },
     "native_crs": "EPSG:4326",
-    "native_resolution": [0.003, -0.003],
+    "native_resolution": [0.0002, -0.0002],
     "styling": {
         "default_style": "gifapar",
         "styles": styles_s3_land_list,
@@ -42,18 +40,16 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
 """,
     "product_name": "s3_olci_l2_wfr",
     "bands": bands_s3_olci_l2_water,
-    "dynamic": True,
-    "resource_limits": reslim_continental,
+    "resource_limits": reslim_landsat,
 
     "image_processing": {
         "extent_mask_func": "datacube_ows.ogc_utils.mask_by_val",
         "always_fetch_bands": [],
         "manual_merge": False,
-        "apply_solar_corrections": False,
     },
 
     "native_crs": "EPSG:4326",
-    "native_resolution": [0.003, -0.003],
+    "native_resolution": [0.0002, -0.0002],
 
     "styling": {
         "default_style": "chl_nn",
