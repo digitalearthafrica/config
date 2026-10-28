@@ -53,7 +53,7 @@ This product is accessible through OGC Web Service (https://ows.digitalearth.afr
     },
 
     "native_crs": "EPSG:4326",
-    "native_resolution": [0.003, -0.003],
+    "native_resolution": [0.0002, -0.0002],
 
     "styling": {
         "default_style": "chl_nn",
