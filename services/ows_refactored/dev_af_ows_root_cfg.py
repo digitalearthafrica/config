@@ -229,16 +229,6 @@ ows_cfg = {
                                 },
                             ],
                         },
-                        {
-                            "title": "Pixel count",
-                            "abstract": """Pixel Count""",
-                            "layers": [
-                                {
-                                    "include": "ows_refactored.pixel_count.ows_pc_s2_annual_cfg.layer",
-                                    "type": "python",
-                                },
-                            ],
-                        },
                     ],
                 },
                 {
