@@ -1,5 +1,5 @@
 {
-    "total_layers_count": 56,
+    "total_layers_count": 55,
     "layers": [
         {
             "layer": "s2_l2a",
@@ -651,19 +651,6 @@
             "styles_count": 1,
             "styles_list": [
                 "mangrove"
-            ]
-        },
-        {
-            "layer": "pc_s2_annual",
-            "product": [
-                "pc_s2_annual"
-            ],
-            "styles_count": 4,
-            "styles_list": [
-                "pc_s2_annual_clear",
-                "pc_s2_annual_total",
-                "pc_s2_annual_clear_0_5",
-                "pc_s2_annual_clear_2_5"
             ]
         },
         {
